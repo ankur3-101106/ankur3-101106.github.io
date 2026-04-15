@@ -2058,8 +2058,6 @@
 
         backdrop-filter: blur(6px);
         -webkit-backdrop-filter: blur(6px);
-
-        border-radius: 8px;
         padding: var(--ifm-navbar-padding-vertical)var(--ifm-navbar-padding-horizontal);
         display: flex;
     }
