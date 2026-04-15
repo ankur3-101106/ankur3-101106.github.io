@@ -1,0 +1,3526 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-SE/u3" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Unit - 3 | Ankur's Page</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://ankur3-101106.github.io/docs/SE/u3 /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Unit - 3 | Ankur's Page"/><meta data-rh=true name=description content="Requirements Engineering"/><meta data-rh=true property=og:description content="Requirements Engineering"/><link data-rh=true rel=icon href=/img/favicon.jpg /><link data-rh=true rel=canonical href=https://ankur3-101106.github.io/docs/SE/u3 /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/SE/u3 hreflang=en /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/SE/u3 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/se---apr-21","name":"SE - APR 21","position":1},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/SE/u3","name":"Unit - 3","position":2}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Ankur's Page RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Ankur's Page Atom Feed"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/assets/css/styles.79cc0816.css /><script src=/assets/js/runtime~main.a4e55100.js defer></script><script src=/assets/js/main.a8d17c9e.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-142")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon.jpg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Ankur's Page</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/intro>Notes</a><a class="navbar__item navbar__link" href=/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/intro><span title="Tutorial Intro" class=linkLabel_WmDU>Tutorial Intro</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ncs---apr-16><span title="NCS - APR 16" class=categoryLinkLabel_W154>NCS - APR 16</span></a><button aria-label="Expand sidebar category 'NCS - APR 16'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/docs/category/se---apr-21><span title="SE - APR 21" class=categoryLinkLabel_W154>SE - APR 21</span></a><button aria-label="Collapse sidebar category 'SE - APR 21'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u1><span title="Unit - 1" class=linkLabel_WmDU>Unit - 1</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u2><span title="Unit - 2" class=linkLabel_WmDU>Unit - 2</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/SE/u3><span title="Unit - 3" class=linkLabel_WmDU>Unit - 3</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u4><span title="Unit - 4" class=linkLabel_WmDU>Unit - 4</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u5><span title="Unit - 5" class=linkLabel_WmDU>Unit - 5</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u6><span title="Unit - 6" class=linkLabel_WmDU>Unit - 6</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u7><span title="Unit - 7" class=linkLabel_WmDU>Unit - 7</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u8><span title="Unit - 8" class=linkLabel_WmDU>Unit - 8</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/os---apr-23><span title="OS - APR 23" class=categoryLinkLabel_W154>OS - APR 23</span></a><button aria-label="Expand sidebar category 'OS - APR 23'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/cry---apr-25><span title="CRY - APR 25" class=categoryLinkLabel_W154>CRY - APR 25</span></a><button aria-label="Expand sidebar category 'CRY - APR 25'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ppfd---apr-30><span title="PPFD - APR 30" class=categoryLinkLabel_W154>PPFD - APR 30</span></a><button aria-label="Expand sidebar category 'PPFD - APR 30'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/category/se---apr-21><span>SE - APR 21</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Unit - 3</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Unit - 3</h1></header>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></span>TITLE</div><div class=admonitionContent_BuS1><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=requirements-engineering>Requirements Engineering<a href=#requirements-engineering class=hash-link aria-label="Direct link to Requirements Engineering" title="Direct link to Requirements Engineering" translate=no>​</a></h2></div></div>
+<hr/>
+<h1>1. Problem Recognition</h1>
+<p>Problem Recognition is the first and most critical step in software development. Before building any system, we must clearly understand:</p>
+<ul>
+<li class="">What problem exists</li>
+<li class="">Why it exists</li>
+<li class="">Who is affected</li>
+<li class="">What impact it creates</li>
+</ul>
+<p>Many software failures occur because teams jump directly to solutions without properly defining the real problem.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-concept-of-problem-recognition>1.1 Concept of Problem Recognition<a href=#11-concept-of-problem-recognition class=hash-link aria-label="Direct link to 1.1 Concept of Problem Recognition" title="Direct link to 1.1 Concept of Problem Recognition" translate=no>​</a></h2>
+<p>Problem recognition focuses on identifying the actual need or gap that requires a software solution.</p>
+<p>It ensures:</p>
+<ul>
+<li class="">Clear understanding of current issues</li>
+<li class="">Alignment with business objectives</li>
+<li class="">Avoidance of unnecessary development</li>
+<li class="">Strong foundation for requirements engineering</li>
+</ul>
+<p>Correct problem recognition prevents:</p>
+<ul>
+<li class="">Building wrong solutions</li>
+<li class="">Wasting resources</li>
+<li class="">Scope confusion</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=111-definition-of-problem-recognition>1.1.1 Definition of Problem Recognition<a href=#111-definition-of-problem-recognition class=hash-link aria-label="Direct link to 1.1.1 Definition of Problem Recognition" title="Direct link to 1.1.1 Definition of Problem Recognition" translate=no>​</a></h3>
+<p>Problem Recognition is:</p>
+<blockquote>
+<p>The systematic identification and analysis of an existing issue, inefficiency, opportunity, or regulatory requirement that necessitates a software-based solution.</p>
+</blockquote>
+<p>It involves:</p>
+<ul>
+<li class="">Understanding current system limitations</li>
+<li class="">Identifying stakeholder needs</li>
+<li class="">Evaluating impact and urgency</li>
+</ul>
+<p>It answers:</p>
+<ul>
+<li class="">What is wrong?</li>
+<li class="">Why does it matter?</li>
+<li class="">Who is affected?</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=112-identifying-business-pain-points>1.1.2 Identifying Business Pain Points<a href=#112-identifying-business-pain-points class=hash-link aria-label="Direct link to 1.1.2 Identifying Business Pain Points" title="Direct link to 1.1.2 Identifying Business Pain Points" translate=no>​</a></h3>
+<p>Business pain points are operational problems that negatively impact performance.</p>
+<p>Examples:</p>
+<ul>
+<li class="">Manual data entry causing delays</li>
+<li class="">High customer complaint rate</li>
+<li class="">Inventory mismanagement</li>
+<li class="">Slow transaction processing</li>
+</ul>
+<p>Pain points often cause:</p>
+<ul>
+<li class="">Increased cost</li>
+<li class="">Reduced efficiency</li>
+<li class="">Customer dissatisfaction</li>
+<li class="">Revenue loss</li>
+</ul>
+<p>Recognizing these issues helps define the need for automation or system improvement.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=113-identifying-market-opportunities>1.1.3 Identifying Market Opportunities<a href=#113-identifying-market-opportunities class=hash-link aria-label="Direct link to 1.1.3 Identifying Market Opportunities" title="Direct link to 1.1.3 Identifying Market Opportunities" translate=no>​</a></h3>
+<p>Not all problems are failures — some are opportunities.</p>
+<p>Market opportunity recognition involves:</p>
+<ul>
+<li class="">Identifying unmet customer needs</li>
+<li class="">Detecting gaps in competitor offerings</li>
+<li class="">Observing technology trends</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li class="">Introducing online booking in a traditional service</li>
+<li class="">Mobile app for previously offline services</li>
+<li class="">AI-based personalization</li>
+</ul>
+<p>Opportunity-driven software focuses on:</p>
+<ul>
+<li class="">Innovation</li>
+<li class="">Competitive advantage</li>
+<li class="">Market expansion</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=114-legal-or-regulatory-necessities>1.1.4 Legal or Regulatory Necessities<a href=#114-legal-or-regulatory-necessities class=hash-link aria-label="Direct link to 1.1.4 Legal or Regulatory Necessities" title="Direct link to 1.1.4 Legal or Regulatory Necessities" translate=no>​</a></h3>
+<p>Sometimes problems arise due to compliance requirements.</p>
+<p>Examples:</p>
+<ul>
+<li class="">Data protection laws (privacy regulations)</li>
+<li class="">Financial reporting standards</li>
+<li class="">Government compliance systems</li>
+</ul>
+<p>Failure to comply can result in:</p>
+<ul>
+<li class="">Legal penalties</li>
+<li class="">Business shutdown</li>
+<li class="">Reputation damage</li>
+</ul>
+<p>Recognizing legal necessity ensures:</p>
+<ul>
+<li class="">Regulatory compliance</li>
+<li class="">Secure system design</li>
+<li class="">Proper documentation</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=115-defining-core-problem-without-jumping-to-solution>1.1.5 Defining Core Problem Without Jumping to Solution<a href=#115-defining-core-problem-without-jumping-to-solution class=hash-link aria-label="Direct link to 1.1.5 Defining Core Problem Without Jumping to Solution" title="Direct link to 1.1.5 Defining Core Problem Without Jumping to Solution" translate=no>​</a></h3>
+<p>One of the biggest mistakes in software engineering is proposing a solution before understanding the problem.</p>
+<p>Incorrect approach:</p>
+<p>“We need a mobile app.”</p>
+<p>Correct approach:</p>
+<p>“Our customers struggle to access our services remotely.”</p>
+<p>Solution comes after problem clarity.</p>
+<p>Steps to define core problem:</p>
+<ol>
+<li class="">Identify symptoms</li>
+<li class="">Analyze root cause</li>
+<li class="">Separate problem from solution</li>
+<li class="">Validate with stakeholders</li>
+</ol>
+<p>Problem clarification flow:</p>
+<!-- -->
+<p>This ensures:</p>
+<ul>
+<li class="">Correct understanding</li>
+<li class="">Reduced misalignment</li>
+<li class="">Effective solution design</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=116-example-grocery-delivery-scenario>1.1.6 Example: Grocery Delivery Scenario<a href=#116-example-grocery-delivery-scenario class=hash-link aria-label="Direct link to 1.1.6 Example: Grocery Delivery Scenario" title="Direct link to 1.1.6 Example: Grocery Delivery Scenario" translate=no>​</a></h3>
+<p>Problem Scenario:</p>
+<p>Customers face long queues at grocery stores.</p>
+<p>Incorrect solution approach:</p>
+<p>“Let’s build a grocery app.”</p>
+<p>Proper problem recognition process:</p>
+<ol>
+<li class="">Identify issue<!-- -->
+<ul>
+<li class="">Long waiting time</li>
+<li class="">Crowded stores</li>
+</ul>
+</li>
+<li class="">Analyze causes<!-- -->
+<ul>
+<li class="">Limited checkout counters</li>
+<li class="">High demand during peak hours</li>
+</ul>
+</li>
+<li class="">Define core problem<!-- -->
+<ul>
+<li class="">Customers need faster and more convenient purchasing options.</li>
+</ul>
+</li>
+<li class="">Explore solutions<!-- -->
+<ul>
+<li class="">Online ordering</li>
+<li class="">Scheduled delivery</li>
+<li class="">Self-checkout systems</li>
+</ul>
+</li>
+</ol>
+<p>Problem recognition ensures:</p>
+<ul>
+<li class="">Solution addresses actual need</li>
+<li class="">Business goals align with user expectations</li>
+<li class="">Development is justified</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=key-takeaways>Key Takeaways<a href=#key-takeaways class=hash-link aria-label="Direct link to Key Takeaways" title="Direct link to Key Takeaways" translate=no>​</a></h2>
+<ul>
+<li class="">Problem recognition precedes requirement gathering.</li>
+<li class="">It identifies root causes, not just symptoms.</li>
+<li class="">Clear problem definition reduces project failure risk.</li>
+<li class="">Solutions must emerge after thorough problem analysis.</li>
+</ul>
+<hr/>
+<hr/>
+<h1>2. Requirements Engineering</h1>
+<p>Requirements Engineering (RE) is the structured process of discovering, analyzing, documenting, validating, and managing system requirements.</p>
+<p>It answers:</p>
+<ul>
+<li class="">What should the system do?</li>
+<li class="">What constraints must it follow?</li>
+<li class="">What are stakeholder expectations?</li>
+</ul>
+<p>Requirements Engineering ensures:</p>
+<ul>
+<li class="">The right system is built</li>
+<li class="">Stakeholders agree on scope</li>
+<li class="">Risks are minimized early</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-requirements-engineering-tasks>2.1 Requirements Engineering Tasks<a href=#21-requirements-engineering-tasks class=hash-link aria-label="Direct link to 2.1 Requirements Engineering Tasks" title="Direct link to 2.1 Requirements Engineering Tasks" translate=no>​</a></h2>
+<p>Requirements Engineering consists of multiple systematic tasks performed in sequence.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=211-inception>2.1.1 Inception<a href=#211-inception class=hash-link aria-label="Direct link to 2.1.1 Inception" title="Direct link to 2.1.1 Inception" translate=no>​</a></h3>
+<p>Inception is the starting point of Requirements Engineering.</p>
+<p>Purpose:</p>
+<ul>
+<li class="">Understand problem context</li>
+<li class="">Identify stakeholders</li>
+<li class="">Define project boundaries</li>
+<li class="">Clarify business objectives</li>
+</ul>
+<p>It sets the foundation for all subsequent activities.</p>
+<hr/>
+<p><strong>2.1.1.1 Identify Stakeholders</strong></p>
+<p>Stakeholders include:</p>
+<ul>
+<li class="">Clients</li>
+<li class="">End users</li>
+<li class="">Project managers</li>
+<li class="">Developers</li>
+<li class="">Regulatory authorities</li>
+</ul>
+<p>Stakeholders can be:</p>
+<ul>
+<li class="">Primary (direct system users)</li>
+<li class="">Secondary (indirectly affected parties)</li>
+</ul>
+<p>Why stakeholder identification is important:</p>
+<ul>
+<li class="">Prevent missing requirements</li>
+<li class="">Avoid conflicts later</li>
+<li class="">Ensure proper communication</li>
+</ul>
+<p>Failure to identify stakeholders can lead to:</p>
+<ul>
+<li class="">Incomplete requirements</li>
+<li class="">Rework</li>
+<li class="">Dissatisfied users</li>
+</ul>
+<hr/>
+<p><strong>2.1.1.2 Define Initial Scope</strong></p>
+<p>Initial scope defines:</p>
+<ul>
+<li class="">System boundaries</li>
+<li class="">Major features</li>
+<li class="">High-level objectives</li>
+<li class="">Constraints</li>
+</ul>
+<p>Scope answers:</p>
+<ul>
+<li class="">What will be included?</li>
+<li class="">What will not be included?</li>
+</ul>
+<p>Clear scope prevents:</p>
+<ul>
+<li class="">Scope creep</li>
+<li class="">Resource wastage</li>
+<li class="">Misaligned expectations</li>
+</ul>
+<p>Scope identification flow:</p>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=212-elicitation>2.1.2 Elicitation<a href=#212-elicitation class=hash-link aria-label="Direct link to 2.1.2 Elicitation" title="Direct link to 2.1.2 Elicitation" translate=no>​</a></h3>
+<p>Elicitation is the process of gathering detailed requirements from stakeholders.</p>
+<p>It aims to uncover:</p>
+<ul>
+<li class="">Functional requirements</li>
+<li class="">Non-functional requirements</li>
+<li class="">Constraints</li>
+<li class="">Assumptions</li>
+</ul>
+<p>Challenges in elicitation:</p>
+<ul>
+<li class="">Stakeholders may not clearly express needs</li>
+<li class="">Requirements may conflict</li>
+<li class="">Hidden requirements may exist</li>
+</ul>
+<hr/>
+<p><strong>2.1.2.1 Interviews</strong></p>
+<p>Structured or unstructured discussions with stakeholders.</p>
+<p>Advantages:</p>
+<ul>
+<li class="">Direct interaction</li>
+<li class="">Clarification possible</li>
+<li class="">Detailed understanding</li>
+</ul>
+<p>Types:</p>
+<ul>
+<li class="">Structured interviews (fixed questions)</li>
+<li class="">Semi-structured interviews</li>
+<li class="">Open-ended interviews</li>
+</ul>
+<p>Risk:</p>
+<ul>
+<li class="">Bias</li>
+<li class="">Misinterpretation</li>
+<li class="">Incomplete responses</li>
+</ul>
+<hr/>
+<p><strong>2.1.2.2 Surveys / Questionnaires</strong></p>
+<p>Used when:</p>
+<ul>
+<li class="">Large number of stakeholders</li>
+<li class="">Geographically distributed users</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li class="">Collect broad feedback</li>
+<li class="">Cost-effective</li>
+</ul>
+<p>Limitation:</p>
+<ul>
+<li class="">Lack of deep clarification</li>
+<li class="">May not capture complex requirements</li>
+</ul>
+<hr/>
+<p><strong>2.1.2.3 Workshops</strong></p>
+<p>Interactive group sessions involving:</p>
+<ul>
+<li class="">Stakeholders</li>
+<li class="">Analysts</li>
+<li class="">Developers</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Faster requirement clarification</li>
+<li class="">Conflict resolution</li>
+<li class="">Consensus building</li>
+</ul>
+<p>Often used in:</p>
+<ul>
+<li class="">Agile development</li>
+<li class="">Large enterprise projects</li>
+</ul>
+<hr/>
+<p><strong>2.1.2.4 Observation</strong></p>
+<p>Also known as ethnographic study.</p>
+<p>Analyst observes:</p>
+<ul>
+<li class="">Current system usage</li>
+<li class="">User behavior</li>
+<li class="">Workflow processes</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Identifies hidden requirements</li>
+<li class="">Detects inefficiencies</li>
+<li class="">Reveals real-world usage patterns</li>
+</ul>
+<p>Especially useful when:</p>
+<ul>
+<li class="">Users cannot clearly explain processes</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=213-elaboration>2.1.3 Elaboration<a href=#213-elaboration class=hash-link aria-label="Direct link to 2.1.3 Elaboration" title="Direct link to 2.1.3 Elaboration" translate=no>​</a></h3>
+<p>Elaboration refines and expands initial requirements.</p>
+<p>It focuses on:</p>
+<ul>
+<li class="">Detailed analysis</li>
+<li class="">Modeling</li>
+<li class="">Requirement structuring</li>
+<li class="">Removing ambiguity</li>
+</ul>
+<p>Elaboration ensures:</p>
+<ul>
+<li class="">Technical feasibility</li>
+<li class="">Logical consistency</li>
+<li class="">Clear documentation</li>
+</ul>
+<hr/>
+<p><strong>2.1.3.1 Use Cases</strong></p>
+<p>Use cases describe:</p>
+<ul>
+<li class="">Interaction between user (actor) and system</li>
+<li class="">System behavior in response to user actions</li>
+</ul>
+<p>Components:</p>
+<ul>
+<li class="">Actor</li>
+<li class="">Main flow</li>
+<li class="">Alternate flow</li>
+<li class="">Preconditions</li>
+<li class="">Postconditions</li>
+</ul>
+<p>Example:</p>
+<!-- -->
+<p>Benefits:</p>
+<ul>
+<li class="">Clarifies system functionality</li>
+<li class="">Provides basis for testing</li>
+<li class="">Improves requirement completeness</li>
+</ul>
+<hr/>
+<p><strong>2.1.3.2 User Stories</strong></p>
+<p>Common in Agile methodology.</p>
+<p>Format:</p>
+<blockquote>
+<p>As a [user], I want [feature] so that [benefit].</p>
+</blockquote>
+<p>Example:</p>
+<p>“As a customer, I want to track my order so that I can know delivery status.”</p>
+<p>Characteristics:</p>
+<ul>
+<li class="">Simple</li>
+<li class="">User-focused</li>
+<li class="">Incremental</li>
+</ul>
+<p>Used for:</p>
+<ul>
+<li class="">Sprint planning</li>
+<li class="">Backlog creation</li>
+</ul>
+<hr/>
+<p><strong>2.1.3.3 Data Flow Diagrams</strong></p>
+<p>DFDs model:</p>
+<ul>
+<li class="">Data movement</li>
+<li class="">Processing steps</li>
+<li class="">Data storage</li>
+</ul>
+<p>Example:</p>
+<!-- -->
+<p>Benefits:</p>
+<ul>
+<li class="">Visual clarity</li>
+<li class="">Identifies missing processes</li>
+<li class="">Detects data inconsistencies</li>
+</ul>
+<p>DFDs help validate:</p>
+<ul>
+<li class="">Data dependencies</li>
+<li class="">Logical flow</li>
+<li class="">System completeness</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary>Summary<a href=#summary class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>Requirements Engineering includes:</p>
+<ul>
+<li class="">Inception → Identify stakeholders & define scope</li>
+<li class="">Elicitation → Gather detailed requirements</li>
+<li class="">Elaboration → Refine and model requirements</li>
+</ul>
+<p>These tasks ensure:</p>
+<ul>
+<li class="">Clear understanding of system needs</li>
+<li class="">Reduced development risk</li>
+<li class="">Strong foundation for design and implementation</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=214-negotiation>2.1.4 Negotiation<a href=#214-negotiation class=hash-link aria-label="Direct link to 2.1.4 Negotiation" title="Direct link to 2.1.4 Negotiation" translate=no>​</a></h3>
+<p>Negotiation occurs after elicitation and elaboration when requirements may:</p>
+<ul>
+<li class="">Conflict with each other</li>
+<li class="">Exceed budget</li>
+<li class="">Be technically infeasible</li>
+<li class="">Compete for priority</li>
+</ul>
+<p>The goal of negotiation is to:</p>
+<ul>
+<li class="">Resolve conflicts</li>
+<li class="">Balance constraints</li>
+<li class="">Reach stakeholder agreement</li>
+</ul>
+<p>Negotiation ensures the final requirement set is:</p>
+<ul>
+<li class="">Realistic</li>
+<li class="">Feasible</li>
+<li class="">Prioritized</li>
+<li class="">Accepted by all stakeholders</li>
+</ul>
+<hr/>
+<p><strong>2.1.4.1 Conflict Resolution Between Stakeholders</strong></p>
+<p>Conflicts may arise due to:</p>
+<ul>
+<li class="">Different business goals</li>
+<li class="">Limited resources</li>
+<li class="">Opposing priorities</li>
+<li class="">Technical limitations</li>
+</ul>
+<p>Example conflict:</p>
+<ul>
+<li class="">Marketing wants advanced features</li>
+<li class="">Finance wants minimal cost</li>
+<li class="">Developers highlight technical complexity</li>
+</ul>
+<p>Resolution techniques:</p>
+<ul>
+<li class="">Structured discussions</li>
+<li class="">Prioritization frameworks</li>
+<li class="">Trade-off analysis</li>
+<li class="">Mediated decision-making</li>
+</ul>
+<p>Conflict resolution flow:</p>
+<!-- -->
+<p>Effective resolution prevents:</p>
+<ul>
+<li class="">Scope disputes</li>
+<li class="">Delays</li>
+<li class="">Stakeholder dissatisfaction</li>
+</ul>
+<hr/>
+<p><strong>2.1.4.2 Requirement Prioritization</strong></p>
+<p>Not all requirements can be implemented immediately.</p>
+<p>Prioritization helps decide:</p>
+<ul>
+<li class="">Which features are essential</li>
+<li class="">Which can be deferred</li>
+</ul>
+<p>Common prioritization techniques:</p>
+<ul>
+<li class="">MoSCoW Method<!-- -->
+<ul>
+<li class="">Must Have</li>
+<li class="">Should Have</li>
+<li class="">Could Have</li>
+<li class="">Won’t Have</li>
+</ul>
+</li>
+<li class="">Business Value vs Cost Analysis</li>
+<li class="">Risk-based prioritization</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Efficient resource usage</li>
+<li class="">Faster delivery of critical features</li>
+<li class="">Controlled scope</li>
+</ul>
+<hr/>
+<p><strong>2.1.4.3 Budget and Feasibility Consideration</strong></p>
+<p>Requirements must be evaluated for:</p>
+<ul>
+<li class="">Technical feasibility</li>
+<li class="">Financial feasibility</li>
+<li class="">Operational feasibility</li>
+</ul>
+<p>Feasibility questions:</p>
+<ul>
+<li class="">Can we build this with available technology?</li>
+<li class="">Do we have required skills?</li>
+<li class="">Is it within budget?</li>
+<li class="">Is it achievable within time constraints?</li>
+</ul>
+<p>Unfeasible requirements must be:</p>
+<ul>
+<li class="">Modified</li>
+<li class="">Deferred</li>
+<li class="">Removed</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=215-specification>2.1.5 Specification<a href=#215-specification class=hash-link aria-label="Direct link to 2.1.5 Specification" title="Direct link to 2.1.5 Specification" translate=no>​</a></h3>
+<p>Specification converts refined requirements into structured documentation.</p>
+<p>It ensures:</p>
+<ul>
+<li class="">Clarity</li>
+<li class="">Completeness</li>
+<li class="">Formal communication</li>
+<li class="">Legal agreement between client and developer</li>
+</ul>
+<hr/>
+<p><strong>2.1.5.1 Software Requirements Specification (SRS)</strong></p>
+<p>SRS is a formal document describing:</p>
+<ul>
+<li class="">Functional requirements</li>
+<li class="">Non-functional requirements</li>
+<li class="">System constraints</li>
+<li class="">Interfaces</li>
+<li class="">Assumptions</li>
+</ul>
+<p>Typical SRS structure:</p>
+<ul>
+<li class="">Introduction</li>
+<li class="">Overall description</li>
+<li class="">Specific requirements</li>
+<li class="">Appendices</li>
+</ul>
+<p>Characteristics of good SRS:</p>
+<ul>
+<li class="">Correct</li>
+<li class="">Complete</li>
+<li class="">Consistent</li>
+<li class="">Unambiguous</li>
+<li class="">Verifiable</li>
+</ul>
+<p>SRS acts as:</p>
+<ul>
+<li class="">Contract between client and developer</li>
+<li class="">Basis for design and testing</li>
+</ul>
+<hr/>
+<p><strong>2.1.5.2 Product Backlog</strong></p>
+<p>Used primarily in Agile development.</p>
+<p>Product Backlog is:</p>
+<ul>
+<li class="">A prioritized list of features</li>
+<li class="">Continuously updated</li>
+<li class="">Maintained by Product Owner</li>
+</ul>
+<p>Contains:</p>
+<ul>
+<li class="">User stories</li>
+<li class="">Enhancements</li>
+<li class="">Bug fixes</li>
+<li class="">Technical tasks</li>
+</ul>
+<p>Backlog supports:</p>
+<ul>
+<li class="">Incremental development</li>
+<li class="">Sprint planning</li>
+<li class="">Dynamic requirement changes</li>
+</ul>
+<hr/>
+<p><strong>2.1.5.3 Formal Requirement Statements</strong></p>
+<p>Formal statements must be:</p>
+<ul>
+<li class="">Clear</li>
+<li class="">Testable</li>
+<li class="">Measurable</li>
+</ul>
+<p>Example of good requirement:</p>
+<p>“The system shall authenticate users within 2 seconds.”</p>
+<p>Avoid vague terms like:</p>
+<ul>
+<li class="">Fast</li>
+<li class="">User-friendly</li>
+<li class="">Efficient</li>
+</ul>
+<p>Formal requirements enable:</p>
+<ul>
+<li class="">Objective validation</li>
+<li class="">Precise testing</li>
+<li class="">Reduced ambiguity</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=216-validation>2.1.6 Validation<a href=#216-validation class=hash-link aria-label="Direct link to 2.1.6 Validation" title="Direct link to 2.1.6 Validation" translate=no>​</a></h3>
+<p>Validation ensures:</p>
+<ul>
+<li class="">Requirements accurately represent stakeholder needs</li>
+<li class="">Requirements are complete and consistent</li>
+<li class="">No contradictions exist</li>
+</ul>
+<p>Validation answers:</p>
+<blockquote>
+<p>Are we building the right system?</p>
+</blockquote>
+<hr/>
+<p><strong>2.1.6.1 Formal Technical Reviews</strong></p>
+<p>Structured evaluation sessions involving:</p>
+<ul>
+<li class="">Analysts</li>
+<li class="">Developers</li>
+<li class="">Testers</li>
+<li class="">Stakeholders</li>
+</ul>
+<p>Objectives:</p>
+<ul>
+<li class="">Identify missing requirements</li>
+<li class="">Detect inconsistencies</li>
+<li class="">Ensure feasibility</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Early defect detection</li>
+<li class="">Reduced rework cost</li>
+</ul>
+<hr/>
+<p><strong>2.1.6.2 Walkthroughs</strong></p>
+<p>Informal review process where:</p>
+<ul>
+<li class="">Author presents requirements</li>
+<li class="">Team discusses and asks questions</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li class="">Encourages collaboration</li>
+<li class="">Easy to conduct</li>
+<li class="">Improves understanding</li>
+</ul>
+<p>Less formal than inspections but still effective.</p>
+<hr/>
+<p><strong>2.1.6.3 Detecting Missing or Inconsistent Requirements</strong></p>
+<p>Validation checks for:</p>
+<ul>
+<li class="">Missing functionality</li>
+<li class="">Conflicting requirements</li>
+<li class="">Incomplete descriptions</li>
+<li class="">Unclear constraints</li>
+</ul>
+<p>Example inconsistency:</p>
+<p>Requirement A: “System supports 10,000 users.”</p>
+<p>Requirement B: “System designed for small business use.”</p>
+<p>Such conflicts must be resolved before development.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=217-requirements-management>2.1.7 Requirements Management<a href=#217-requirements-management class=hash-link aria-label="Direct link to 2.1.7 Requirements Management" title="Direct link to 2.1.7 Requirements Management" translate=no>​</a></h3>
+<p>Requirements Management ensures:</p>
+<ul>
+<li class="">Requirements are tracked</li>
+<li class="">Changes are controlled</li>
+<li class="">Documentation stays updated</li>
+</ul>
+<p>It continues throughout the project lifecycle.</p>
+<hr/>
+<p><strong>2.1.7.1 Version Control</strong></p>
+<p>Each requirement document version is tracked.</p>
+<p>Purpose:</p>
+<ul>
+<li class="">Record changes</li>
+<li class="">Maintain history</li>
+<li class="">Prevent confusion</li>
+</ul>
+<p>Version control tools:</p>
+<ul>
+<li class="">Git</li>
+<li class="">Document management systems</li>
+</ul>
+<p>Ensures traceability and accountability.</p>
+<hr/>
+<p><strong>2.1.7.2 Traceability Matrix</strong></p>
+<p>Requirements Traceability Matrix (RTM) links:</p>
+<ul>
+<li class="">Requirements</li>
+<li class="">Design elements</li>
+<li class="">Test cases</li>
+<li class="">Implementation components</li>
+</ul>
+<p>Example flow:</p>
+<!-- -->
+<p>Benefits:</p>
+<ul>
+<li class="">Ensures no requirement is missed</li>
+<li class="">Supports impact analysis</li>
+<li class="">Improves test coverage</li>
+</ul>
+<hr/>
+<p><strong>2.1.7.3 Managing Requirement Changes</strong></p>
+<p>Requirements may change due to:</p>
+<ul>
+<li class="">Market evolution</li>
+<li class="">Stakeholder feedback</li>
+<li class="">Technical limitations</li>
+</ul>
+<p>Change management steps:</p>
+<ol>
+<li class="">Change request submission</li>
+<li class="">Impact analysis</li>
+<li class="">Approval decision</li>
+<li class="">Implementation</li>
+<li class="">Documentation update</li>
+</ol>
+<p>Change control flow:</p>
+<!-- -->
+<p>Controlled change management prevents:</p>
+<ul>
+<li class="">Scope creep</li>
+<li class="">Budget overrun</li>
+<li class="">Project instability</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-1>Summary<a href=#summary-1 class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>Requirements Engineering Tasks include:</p>
+<ul>
+<li class="">Inception</li>
+<li class="">Elicitation</li>
+<li class="">Elaboration</li>
+<li class="">Negotiation</li>
+<li class="">Specification</li>
+<li class="">Validation</li>
+<li class="">Requirements Management</li>
+</ul>
+<p>Together, they ensure:</p>
+<ul>
+<li class="">Clear system definition</li>
+<li class="">Controlled scope</li>
+<li class="">Reduced risk</li>
+<li class="">Successful software delivery</li>
+</ul>
+<hr/>
+<hr/>
+<h1>3. Introduction to Software Engineering Process</h1>
+<p>A Software Engineering Process defines the structured approach used to develop and maintain software systems.</p>
+<p>It provides:</p>
+<ul>
+<li class="">Discipline</li>
+<li class="">Predictability</li>
+<li class="">Quality control</li>
+<li class="">Risk reduction</li>
+</ul>
+<p>Without a defined process, development becomes:</p>
+<ul>
+<li class="">Unstructured</li>
+<li class="">Difficult to manage</li>
+<li class="">Error-prone</li>
+<li class="">Unpredictable</li>
+</ul>
+<p>A process ensures that software development is systematic rather than chaotic.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=31-what-is-a-software-process>3.1 What is a Software Process?<a href=#31-what-is-a-software-process class=hash-link aria-label="Direct link to 3.1 What is a Software Process?" title="Direct link to 3.1 What is a Software Process?" translate=no>​</a></h2>
+<p>A Software Process is:</p>
+<blockquote>
+<p>A structured set of activities required to develop a software system from initial concept to maintenance.</p>
+</blockquote>
+<p>It defines:</p>
+<ul>
+<li class="">What activities must be performed</li>
+<li class="">In what sequence</li>
+<li class="">By whom</li>
+<li class="">With what outputs</li>
+</ul>
+<p>A process includes:</p>
+<ul>
+<li class="">Methods</li>
+<li class="">Tools</li>
+<li class="">Standards</li>
+<li class="">Documentation practices</li>
+</ul>
+<p>The purpose of a software process is to:</p>
+<ul>
+<li class="">Deliver quality software</li>
+<li class="">Meet deadlines</li>
+<li class="">Control cost</li>
+<li class="">Reduce risk</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=311-structured-set-of-activities>3.1.1 Structured Set of Activities<a href=#311-structured-set-of-activities class=hash-link aria-label="Direct link to 3.1.1 Structured Set of Activities" title="Direct link to 3.1.1 Structured Set of Activities" translate=no>​</a></h3>
+<p>A structured process ensures that software development follows a logical order.</p>
+<p>These activities are not random; they are:</p>
+<ul>
+<li class="">Organized</li>
+<li class="">Defined</li>
+<li class="">Controlled</li>
+<li class="">Measurable</li>
+</ul>
+<p>General process structure:</p>
+<!-- -->
+<p>Each activity:</p>
+<ul>
+<li class="">Produces specific deliverables</li>
+<li class="">Has defined responsibilities</li>
+<li class="">Is subject to quality checks</li>
+</ul>
+<p>Structure ensures:</p>
+<ul>
+<li class="">Consistency</li>
+<li class="">Traceability</li>
+<li class="">Accountability</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=32-core-process-activities>3.2 Core Process Activities<a href=#32-core-process-activities class=hash-link aria-label="Direct link to 3.2 Core Process Activities" title="Direct link to 3.2 Core Process Activities" translate=no>​</a></h2>
+<p>Every software process, regardless of model (Waterfall, Agile, Spiral), includes four fundamental activities:</p>
+<ol>
+<li class="">Specification</li>
+<li class="">Design & Implementation</li>
+<li class="">Validation</li>
+<li class="">Evolution</li>
+</ol>
+<p>These activities form the foundation of all process models.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=321-specification>3.2.1 Specification<a href=#321-specification class=hash-link aria-label="Direct link to 3.2.1 Specification" title="Direct link to 3.2.1 Specification" translate=no>​</a></h3>
+<p>Specification defines:</p>
+<ul>
+<li class="">What the system should do</li>
+<li class="">Functional requirements</li>
+<li class="">Non-functional requirements</li>
+<li class="">Constraints</li>
+</ul>
+<p>It answers:</p>
+<blockquote>
+<p>What problem is being solved?</p>
+</blockquote>
+<p>Specification includes:</p>
+<ul>
+<li class="">Requirement gathering</li>
+<li class="">Requirement analysis</li>
+<li class="">Documentation (SRS)</li>
+</ul>
+<p>Outcome:</p>
+<ul>
+<li class="">Clear understanding of system objectives</li>
+<li class="">Approved requirement document</li>
+</ul>
+<p>Poor specification leads to:</p>
+<ul>
+<li class="">Misaligned development</li>
+<li class="">Rework</li>
+<li class="">Project failure</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=322-design--implementation>3.2.2 Design & Implementation<a href=#322-design--implementation class=hash-link aria-label="Direct link to 3.2.2 Design & Implementation" title="Direct link to 3.2.2 Design & Implementation" translate=no>​</a></h3>
+<p>This phase transforms requirements into working software.</p>
+<p>Design involves:</p>
+<ul>
+<li class="">System architecture</li>
+<li class="">Database design</li>
+<li class="">Interface design</li>
+<li class="">Module design</li>
+</ul>
+<p>Implementation involves:</p>
+<ul>
+<li class="">Writing code</li>
+<li class="">Integrating components</li>
+<li class="">Following coding standards</li>
+</ul>
+<p>Design ensures:</p>
+<ul>
+<li class="">Scalability</li>
+<li class="">Maintainability</li>
+<li class="">Performance</li>
+</ul>
+<p>Implementation converts design into executable software.</p>
+<p>Design & Implementation flow:</p>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=323-validation>3.2.3 Validation<a href=#323-validation class=hash-link aria-label="Direct link to 3.2.3 Validation" title="Direct link to 3.2.3 Validation" translate=no>​</a></h3>
+<p>Validation ensures:</p>
+<ul>
+<li class="">The system meets specified requirements</li>
+<li class="">The software behaves correctly</li>
+<li class="">Defects are identified and corrected</li>
+</ul>
+<p>Includes:</p>
+<ul>
+<li class="">Unit testing</li>
+<li class="">Integration testing</li>
+<li class="">System testing</li>
+<li class="">User acceptance testing</li>
+</ul>
+<p>Validation answers:</p>
+<blockquote>
+<p>Are we building the product right?</p>
+</blockquote>
+<p>Testing reduces:</p>
+<ul>
+<li class="">Defects</li>
+<li class="">Risk</li>
+<li class="">Post-deployment failures</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=324-evolution>3.2.4 Evolution<a href=#324-evolution class=hash-link aria-label="Direct link to 3.2.4 Evolution" title="Direct link to 3.2.4 Evolution" translate=no>​</a></h3>
+<p>Software does not remain static after deployment.</p>
+<p>Evolution includes:</p>
+<ul>
+<li class="">Corrective maintenance (fixing bugs)</li>
+<li class="">Adaptive maintenance (adapting to environment changes)</li>
+<li class="">Perfective maintenance (adding improvements)</li>
+<li class="">Preventive maintenance (improving maintainability)</li>
+</ul>
+<p>Reasons for evolution:</p>
+<ul>
+<li class="">Changing business needs</li>
+<li class="">New regulations</li>
+<li class="">Technological updates</li>
+<li class="">Performance optimization</li>
+</ul>
+<p>Evolution flow:</p>
+<!-- -->
+<p>Software evolution is often the longest phase in the lifecycle.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-2>Summary<a href=#summary-2 class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>A Software Engineering Process:</p>
+<ul>
+<li class="">Is a structured set of activities</li>
+<li class="">Provides discipline and control</li>
+<li class="">Ensures systematic development</li>
+</ul>
+<p>Core activities:</p>
+<ol>
+<li class="">Specification → Define what to build</li>
+<li class="">Design & Implementation → Build the system</li>
+<li class="">Validation → Verify correctness</li>
+<li class="">Evolution → Maintain and improve system</li>
+</ol>
+<p>These activities exist in all software development models.</p>
+<hr/>
+<hr/>
+<h1>4. Software Process Models</h1>
+<p>Software Process Models define the structured approach used to organize and manage software development activities.</p>
+<p>Each model provides:</p>
+<ul>
+<li class="">A framework for executing process activities</li>
+<li class="">Guidelines for sequencing tasks</li>
+<li class="">Methods for managing risk and change</li>
+</ul>
+<p>Different models are suitable for different project types, sizes, and risk levels.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=41-waterfall-model>4.1 Waterfall Model<a href=#41-waterfall-model class=hash-link aria-label="Direct link to 4.1 Waterfall Model" title="Direct link to 4.1 Waterfall Model" translate=no>​</a></h2>
+<p>The Waterfall Model is a <strong>linear and sequential</strong> software development model.</p>
+<p>Development flows downward through distinct phases.</p>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=phases-of-waterfall-model>Phases of Waterfall Model:<a href=#phases-of-waterfall-model class=hash-link aria-label="Direct link to Phases of Waterfall Model:" title="Direct link to Phases of Waterfall Model:" translate=no>​</a></h3>
+<ol>
+<li class="">Requirements</li>
+<li class="">Design</li>
+<li class="">Implementation</li>
+<li class="">Testing</li>
+<li class="">Maintenance</li>
+</ol>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=characteristics>Characteristics:<a href=#characteristics class=hash-link aria-label="Direct link to Characteristics:" title="Direct link to Characteristics:" translate=no>​</a></h3>
+<ul>
+<li class="">Each phase must be completed before the next begins</li>
+<li class="">No overlapping phases</li>
+<li class="">Heavy documentation</li>
+<li class="">Clear milestone-based progress</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=advantages>Advantages:<a href=#advantages class=hash-link aria-label="Direct link to Advantages:" title="Direct link to Advantages:" translate=no>​</a></h3>
+<ul>
+<li class="">Simple and easy to understand</li>
+<li class="">Well-defined structure</li>
+<li class="">Good for small projects with stable requirements</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=disadvantages>Disadvantages:<a href=#disadvantages class=hash-link aria-label="Direct link to Disadvantages:" title="Direct link to Disadvantages:" translate=no>​</a></h3>
+<ul>
+<li class="">Difficult to accommodate changes</li>
+<li class="">Late detection of issues</li>
+<li class="">Not suitable for complex or evolving projects</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=suitable-when>Suitable When:<a href=#suitable-when class=hash-link aria-label="Direct link to Suitable When:" title="Direct link to Suitable When:" translate=no>​</a></h3>
+<ul>
+<li class="">Requirements are clear and stable</li>
+<li class="">Technology is well understood</li>
+<li class="">Risk is low</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=42-incremental-model>4.2 Incremental Model<a href=#42-incremental-model class=hash-link aria-label="Direct link to 4.2 Incremental Model" title="Direct link to 4.2 Incremental Model" translate=no>​</a></h2>
+<p>The Incremental Model develops the system in <strong>small functional increments</strong>.</p>
+<p>Each increment delivers a portion of the total functionality.</p>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=characteristics-1>Characteristics:<a href=#characteristics-1 class=hash-link aria-label="Direct link to Characteristics:" title="Direct link to Characteristics:" translate=no>​</a></h3>
+<ul>
+<li class="">System divided into modules</li>
+<li class="">Each increment adds new functionality</li>
+<li class="">Early delivery of working software</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=advantages-1>Advantages:<a href=#advantages-1 class=hash-link aria-label="Direct link to Advantages:" title="Direct link to Advantages:" translate=no>​</a></h3>
+<ul>
+<li class="">Reduced risk</li>
+<li class="">Early customer feedback</li>
+<li class="">Easier testing and debugging</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=disadvantages-1>Disadvantages:<a href=#disadvantages-1 class=hash-link aria-label="Direct link to Disadvantages:" title="Direct link to Disadvantages:" translate=no>​</a></h3>
+<ul>
+<li class="">Requires good architecture planning</li>
+<li class="">Integration complexity</li>
+<li class="">May require strong management control</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=suitable-when-1>Suitable When:<a href=#suitable-when-1 class=hash-link aria-label="Direct link to Suitable When:" title="Direct link to Suitable When:" translate=no>​</a></h3>
+<ul>
+<li class="">Requirements are partially known</li>
+<li class="">Need early delivery</li>
+<li class="">Large projects with modular structure</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=43-spiral-model>4.3 Spiral Model<a href=#43-spiral-model class=hash-link aria-label="Direct link to 4.3 Spiral Model" title="Direct link to 4.3 Spiral Model" translate=no>​</a></h2>
+<p>The Spiral Model is a <strong>risk-driven process model</strong> combining iterative development and systematic risk analysis.</p>
+<p>Each cycle (spiral) includes:</p>
+<ol>
+<li class="">Planning</li>
+<li class="">Risk Analysis</li>
+<li class="">Engineering</li>
+<li class="">Evaluation</li>
+</ol>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=characteristics-2>Characteristics:<a href=#characteristics-2 class=hash-link aria-label="Direct link to Characteristics:" title="Direct link to Characteristics:" translate=no>​</a></h3>
+<ul>
+<li class="">Iterative cycles</li>
+<li class="">Emphasis on risk assessment</li>
+<li class="">Suitable for large and complex systems</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=advantages-2>Advantages:<a href=#advantages-2 class=hash-link aria-label="Direct link to Advantages:" title="Direct link to Advantages:" translate=no>​</a></h3>
+<ul>
+<li class="">Early identification of risks</li>
+<li class="">Flexible and adaptable</li>
+<li class="">Continuous refinement</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=disadvantages-2>Disadvantages:<a href=#disadvantages-2 class=hash-link aria-label="Direct link to Disadvantages:" title="Direct link to Disadvantages:" translate=no>​</a></h3>
+<ul>
+<li class="">Complex to manage</li>
+<li class="">Expensive</li>
+<li class="">Requires risk assessment expertise</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=suitable-when-2>Suitable When:<a href=#suitable-when-2 class=hash-link aria-label="Direct link to Suitable When:" title="Direct link to Suitable When:" translate=no>​</a></h3>
+<ul>
+<li class="">Project is large</li>
+<li class="">Risk is high</li>
+<li class="">Requirements are unclear</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=44-agile-process-model>4.4 Agile Process Model<a href=#44-agile-process-model class=hash-link aria-label="Direct link to 4.4 Agile Process Model" title="Direct link to 4.4 Agile Process Model" translate=no>​</a></h2>
+<p>Agile is an <strong>iterative and incremental</strong> approach focusing on flexibility, collaboration, and customer involvement.</p>
+<p>Development occurs in short cycles called <strong>Sprints</strong> (1–4 weeks).</p>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=characteristics-3>Characteristics:<a href=#characteristics-3 class=hash-link aria-label="Direct link to Characteristics:" title="Direct link to Characteristics:" translate=no>​</a></h3>
+<ul>
+<li class="">Short development cycles</li>
+<li class="">Continuous customer feedback</li>
+<li class="">Adaptive planning</li>
+<li class="">Working software delivered frequently</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=advantages-3>Advantages:<a href=#advantages-3 class=hash-link aria-label="Direct link to Advantages:" title="Direct link to Advantages:" translate=no>​</a></h3>
+<ul>
+<li class="">Handles changing requirements</li>
+<li class="">Early and continuous delivery</li>
+<li class="">High customer involvement</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=disadvantages-3>Disadvantages:<a href=#disadvantages-3 class=hash-link aria-label="Direct link to Disadvantages:" title="Direct link to Disadvantages:" translate=no>​</a></h3>
+<ul>
+<li class="">Less documentation</li>
+<li class="">Requires strong team collaboration</li>
+<li class="">Not ideal for very large or regulated projects without adaptation</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=suitable-when-3>Suitable When:<a href=#suitable-when-3 class=hash-link aria-label="Direct link to Suitable When:" title="Direct link to Suitable When:" translate=no>​</a></h3>
+<ul>
+<li class="">Requirements change frequently</li>
+<li class="">Customer involvement is high</li>
+<li class="">Rapid development is needed</li>
+</ul>
+<p>Common Agile frameworks:</p>
+<ul>
+<li class="">Scrum</li>
+<li class="">Extreme Programming (XP)</li>
+<li class="">Kanban</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=comparison-overview>Comparison Overview<a href=#comparison-overview class=hash-link aria-label="Direct link to Comparison Overview" title="Direct link to Comparison Overview" translate=no>​</a></h2>
+<table><thead><tr><th>Model<th>Flexibility<th>Risk Handling<th>Documentation<th>Suitable For<tbody><tr><td>Waterfall<td>Low<td>Low<td>High<td>Stable projects<tr><td>Incremental<td>Medium<td>Medium<td>Moderate<td>Modular systems<tr><td>Spiral<td>High<td>High<td>Moderate<td>High-risk projects<tr><td>Agile<td>Very High<td>Medium<td>Low to Moderate<td>Dynamic projects</table>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=key-understanding>Key Understanding<a href=#key-understanding class=hash-link aria-label="Direct link to Key Understanding" title="Direct link to Key Understanding" translate=no>​</a></h2>
+<ul>
+<li class="">No single model fits all projects.</li>
+<li class="">Model selection depends on:<!-- -->
+<ul>
+<li class="">Requirement stability</li>
+<li class="">Risk level</li>
+<li class="">Project size</li>
+<li class="">Customer involvement</li>
+</ul>
+</li>
+</ul>
+<p>Choosing the right process model significantly impacts project success.</p>
+<hr/>
+<hr/>
+<h1>5. Introduction to Requirements Engineering</h1>
+<p>Requirements Engineering focuses on identifying, analyzing, documenting, validating, and managing system requirements.</p>
+<p>Before designing or coding a system, it is essential to clearly define what the system must do and under what constraints it must operate.</p>
+<p>A poorly defined requirement is one of the primary causes of software failure.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=51-what-is-a-requirement>5.1 What is a Requirement?<a href=#51-what-is-a-requirement class=hash-link aria-label="Direct link to 5.1 What is a Requirement?" title="Direct link to 5.1 What is a Requirement?" translate=no>​</a></h2>
+<p>A Requirement is:</p>
+<blockquote>
+<p>A condition, capability, or constraint that a system must satisfy to meet stakeholder needs.</p>
+</blockquote>
+<p>Requirements describe:</p>
+<ul>
+<li class="">Services the system must provide</li>
+<li class="">Constraints under which the system must operate</li>
+</ul>
+<p>Requirements must be:</p>
+<ul>
+<li class="">Clear</li>
+<li class="">Complete</li>
+<li class="">Consistent</li>
+<li class="">Verifiable</li>
+<li class="">Feasible</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=511-service-provided-by-system>5.1.1 Service Provided by System<a href=#511-service-provided-by-system class=hash-link aria-label="Direct link to 5.1.1 Service Provided by System" title="Direct link to 5.1.1 Service Provided by System" translate=no>​</a></h3>
+<p>A requirement can describe a <strong>service or functionality</strong> that the system must deliver.</p>
+<p>This includes:</p>
+<ul>
+<li class="">Input processing</li>
+<li class="">Output generation</li>
+<li class="">Data storage</li>
+<li class="">Business logic execution</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li class="">The system shall allow users to register.</li>
+<li class="">The system shall generate monthly reports.</li>
+<li class="">The system shall calculate tax automatically.</li>
+</ul>
+<p>Services define:</p>
+<ul>
+<li class="">What the system does</li>
+<li class="">How users interact with it</li>
+<li class="">System responses to inputs</li>
+</ul>
+<p>Service requirements form the core functional capabilities of the system.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=512-constraint-on-the-system>5.1.2 Constraint on the System<a href=#512-constraint-on-the-system class=hash-link aria-label="Direct link to 5.1.2 Constraint on the System" title="Direct link to 5.1.2 Constraint on the System" translate=no>​</a></h3>
+<p>Requirements may also specify constraints.</p>
+<p>Constraints limit or restrict:</p>
+<ul>
+<li class="">How the system is built</li>
+<li class="">How it performs</li>
+<li class="">What technologies are used</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li class="">The system shall operate on Windows and Linux.</li>
+<li class="">The application must comply with data protection regulations.</li>
+<li class="">The response time shall not exceed 2 seconds.</li>
+</ul>
+<p>Constraints ensure:</p>
+<ul>
+<li class="">Legal compliance</li>
+<li class="">Performance standards</li>
+<li class="">Technical compatibility</li>
+</ul>
+<p>Constraints do not describe functionality but restrict system behavior or implementation.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=52-types-of-requirements>5.2 Types of Requirements<a href=#52-types-of-requirements class=hash-link aria-label="Direct link to 5.2 Types of Requirements" title="Direct link to 5.2 Types of Requirements" translate=no>​</a></h2>
+<p>Requirements are broadly categorized into:</p>
+<ol>
+<li class="">Functional Requirements</li>
+<li class="">Non-Functional Requirements</li>
+</ol>
+<p>Both are equally important.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=521-functional-requirements>5.2.1 Functional Requirements<a href=#521-functional-requirements class=hash-link aria-label="Direct link to 5.2.1 Functional Requirements" title="Direct link to 5.2.1 Functional Requirements" translate=no>​</a></h3>
+<p>Functional requirements describe:</p>
+<ul>
+<li class="">What the system should do</li>
+<li class="">Specific behaviors or functions</li>
+<li class="">Business logic</li>
+</ul>
+<p>They define system behavior in response to:</p>
+<ul>
+<li class="">User input</li>
+<li class="">System events</li>
+<li class="">Data conditions</li>
+</ul>
+<p>Functional requirements are typically expressed as:</p>
+<ul>
+<li class="">Use cases</li>
+<li class="">User stories</li>
+<li class="">Detailed statements</li>
+</ul>
+<hr/>
+<p><strong>5.2.1.1 System Behavior</strong></p>
+<p>System behavior includes:</p>
+<ul>
+<li class="">Input handling</li>
+<li class="">Processing rules</li>
+<li class="">Output generation</li>
+<li class="">Interaction flow</li>
+</ul>
+<p>Example behavior:</p>
+<p>If user enters valid credentials → System grants access.</p>
+<p>If user enters invalid credentials → System displays error message.</p>
+<p>Behavior defines:</p>
+<ul>
+<li class="">Logical operations</li>
+<li class="">State transitions</li>
+<li class="">Decision-making logic</li>
+</ul>
+<p>Example behavior flow:</p>
+<!-- -->
+<hr/>
+<p><strong>5.2.1.2 Example: Login Functionality</strong></p>
+<p>Functional Requirement Example:</p>
+<ul>
+<li class="">The system shall allow registered users to log in using username and password.</li>
+<li class="">The system shall validate credentials against the database.</li>
+<li class="">The system shall display an error message for invalid login attempts.</li>
+</ul>
+<p>This requirement describes:</p>
+<ul>
+<li class="">Input: Username and password</li>
+<li class="">Processing: Validation</li>
+<li class="">Output: Access or error</li>
+</ul>
+<p>It clearly defines system behavior.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=522-non-functional-requirements>5.2.2 Non-Functional Requirements<a href=#522-non-functional-requirements class=hash-link aria-label="Direct link to 5.2.2 Non-Functional Requirements" title="Direct link to 5.2.2 Non-Functional Requirements" translate=no>​</a></h3>
+<p>Non-functional requirements (NFRs) describe:</p>
+<ul>
+<li class="">How the system performs</li>
+<li class="">Quality attributes</li>
+<li class="">Constraints</li>
+</ul>
+<p>They define system quality rather than specific functionality.</p>
+<p>Common categories include:</p>
+<ul>
+<li class="">Performance</li>
+<li class="">Security</li>
+<li class="">Usability</li>
+<li class="">Reliability</li>
+<li class="">Scalability</li>
+</ul>
+<p>Non-functional requirements often determine overall user satisfaction.</p>
+<hr/>
+<p><strong>5.2.2.1 Performance</strong></p>
+<p>Performance requirements specify:</p>
+<ul>
+<li class="">Response time</li>
+<li class="">Throughput</li>
+<li class="">Load handling capacity</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li class="">The system shall process 1000 transactions per minute.</li>
+<li class="">Page load time shall not exceed 2 seconds.</li>
+</ul>
+<p>Performance affects:</p>
+<ul>
+<li class="">User experience</li>
+<li class="">System efficiency</li>
+<li class="">Scalability</li>
+</ul>
+<hr/>
+<p><strong>5.2.2.2 Security</strong></p>
+<p>Security requirements define:</p>
+<ul>
+<li class="">Authentication mechanisms</li>
+<li class="">Authorization levels</li>
+<li class="">Data protection methods</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li class="">All passwords must be encrypted.</li>
+<li class="">The system shall implement two-factor authentication.</li>
+<li class="">User sessions shall expire after 10 minutes of inactivity.</li>
+</ul>
+<p>Security protects:</p>
+<ul>
+<li class="">Sensitive data</li>
+<li class="">System integrity</li>
+<li class="">User privacy</li>
+</ul>
+<hr/>
+<p><strong>5.2.2.3 Usability</strong></p>
+<p>Usability requirements define:</p>
+<ul>
+<li class="">Ease of use</li>
+<li class="">User interface standards</li>
+<li class="">Accessibility</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li class="">The interface shall be accessible to users with disabilities.</li>
+<li class="">New users shall complete basic tasks within 5 minutes of training.</li>
+</ul>
+<p>Good usability ensures:</p>
+<ul>
+<li class="">User satisfaction</li>
+<li class="">Reduced training cost</li>
+<li class="">Higher adoption rate</li>
+</ul>
+<hr/>
+<p><strong>5.2.2.4 Example: Response Time Constraint</strong></p>
+<p>Example Non-Functional Requirement:</p>
+<ul>
+<li class="">The system shall respond to user queries within 2 seconds under normal load.</li>
+</ul>
+<p>This requirement:</p>
+<ul>
+<li class="">Does not describe what the system does</li>
+<li class="">Describes how fast it performs</li>
+</ul>
+<p>Response time constraints ensure:</p>
+<ul>
+<li class="">Smooth user interaction</li>
+<li class="">Reduced frustration</li>
+<li class="">Competitive advantage</li>
+</ul>
+<p>Performance validation flow:</p>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-3>Summary<a href=#summary-3 class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>Requirement = Service + Constraint</p>
+<p>Functional Requirements:</p>
+<ul>
+<li class="">Describe what the system does</li>
+<li class="">Define system behavior</li>
+</ul>
+<p>Non-Functional Requirements:</p>
+<ul>
+<li class="">Describe how the system performs</li>
+<li class="">Define quality attributes</li>
+</ul>
+<p>Both are essential for:</p>
+<ul>
+<li class="">Complete system specification</li>
+<li class="">Accurate design</li>
+<li class="">Proper testing</li>
+<li class="">Successful deployment</li>
+</ul>
+<hr/>
+<hr/>
+<h1>6. Requirements Engineering Process</h1>
+<p>The Requirements Engineering (RE) Process is a systematic approach to discovering, analyzing, documenting, and validating system requirements.</p>
+<p>It ensures that:</p>
+<ul>
+<li class="">Stakeholder needs are clearly understood</li>
+<li class="">Requirements are structured and feasible</li>
+<li class="">Errors are detected early</li>
+<li class="">The foundation for design and testing is strong</li>
+</ul>
+<p>The RE process typically includes:</p>
+<ol>
+<li class="">Elicitation</li>
+<li class="">Analysis</li>
+<li class="">Specification</li>
+<li class="">Validation</li>
+</ol>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=61-elicitation>6.1 Elicitation<a href=#61-elicitation class=hash-link aria-label="Direct link to 6.1 Elicitation" title="Direct link to 6.1 Elicitation" translate=no>​</a></h2>
+<p>Elicitation is the process of gathering requirements from stakeholders.</p>
+<p>It focuses on discovering:</p>
+<ul>
+<li class="">What users need</li>
+<li class="">What business expects</li>
+<li class="">What constraints exist</li>
+</ul>
+<p>Challenges in elicitation:</p>
+<ul>
+<li class="">Stakeholders may not clearly express needs</li>
+<li class="">Requirements may be hidden</li>
+<li class="">Conflicting opinions may exist</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=611-interviews>6.1.1 Interviews<a href=#611-interviews class=hash-link aria-label="Direct link to 6.1.1 Interviews" title="Direct link to 6.1.1 Interviews" translate=no>​</a></h3>
+<p>Interviews involve direct interaction with stakeholders.</p>
+<p>Types:</p>
+<ul>
+<li class="">Structured interviews (fixed questions)</li>
+<li class="">Semi-structured interviews</li>
+<li class="">Unstructured interviews</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li class="">Detailed clarification</li>
+<li class="">Immediate feedback</li>
+<li class="">Deeper understanding</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li class="">Time-consuming</li>
+<li class="">Risk of biased responses</li>
+</ul>
+<p>Interview flow:</p>
+<!-- -->
+<p>Interviews are most effective when stakeholders:</p>
+<ul>
+<li class="">Have domain knowledge</li>
+<li class="">Are decision-makers</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=612-questionnaires>6.1.2 Questionnaires<a href=#612-questionnaires class=hash-link aria-label="Direct link to 6.1.2 Questionnaires" title="Direct link to 6.1.2 Questionnaires" translate=no>​</a></h3>
+<p>Questionnaires are written sets of questions distributed to multiple stakeholders.</p>
+<p>Suitable when:</p>
+<ul>
+<li class="">Large number of users</li>
+<li class="">Geographically dispersed stakeholders</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li class="">Cost-effective</li>
+<li class="">Quick data collection</li>
+</ul>
+<p>Limitations:</p>
+<ul>
+<li class="">Limited clarification</li>
+<li class="">Risk of incomplete answers</li>
+</ul>
+<p>Best used for:</p>
+<ul>
+<li class="">Collecting quantitative data</li>
+<li class="">Gathering general feedback</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=613-observation>6.1.3 Observation<a href=#613-observation class=hash-link aria-label="Direct link to 6.1.3 Observation" title="Direct link to 6.1.3 Observation" translate=no>​</a></h3>
+<p>Observation involves watching users perform tasks in their natural work environment.</p>
+<p>Also called:</p>
+<ul>
+<li class="">Ethnographic study</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Identifies hidden requirements</li>
+<li class="">Detects inefficiencies</li>
+<li class="">Reveals actual workflows</li>
+</ul>
+<p>Useful when:</p>
+<ul>
+<li class="">Users cannot clearly articulate their processes</li>
+</ul>
+<p>Observation captures real-world behavior rather than assumed behavior.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=62-analysis>6.2 Analysis<a href=#62-analysis class=hash-link aria-label="Direct link to 6.2 Analysis" title="Direct link to 6.2 Analysis" translate=no>​</a></h2>
+<p>After elicitation, requirements are analyzed to ensure clarity and feasibility.</p>
+<p>Analysis focuses on:</p>
+<ul>
+<li class="">Removing ambiguity</li>
+<li class="">Resolving conflicts</li>
+<li class="">Prioritizing requirements</li>
+<li class="">Assessing feasibility</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=621-conflict-resolution>6.2.1 Conflict Resolution<a href=#621-conflict-resolution class=hash-link aria-label="Direct link to 6.2.1 Conflict Resolution" title="Direct link to 6.2.1 Conflict Resolution" translate=no>​</a></h3>
+<p>Conflicts may arise due to:</p>
+<ul>
+<li class="">Different stakeholder expectations</li>
+<li class="">Limited resources</li>
+<li class="">Technical limitations</li>
+</ul>
+<p>Conflict resolution involves:</p>
+<ul>
+<li class="">Discussion and negotiation</li>
+<li class="">Trade-off analysis</li>
+<li class="">Impact assessment</li>
+</ul>
+<p>Conflict resolution process:</p>
+<!-- -->
+<p>Resolving conflicts early prevents:</p>
+<ul>
+<li class="">Development delays</li>
+<li class="">Budget overruns</li>
+<li class="">Stakeholder dissatisfaction</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=622-requirement-prioritization>6.2.2 Requirement Prioritization<a href=#622-requirement-prioritization class=hash-link aria-label="Direct link to 6.2.2 Requirement Prioritization" title="Direct link to 6.2.2 Requirement Prioritization" translate=no>​</a></h3>
+<p>Not all requirements can be implemented simultaneously.</p>
+<p>Prioritization helps decide:</p>
+<ul>
+<li class="">Which features are essential</li>
+<li class="">Which can be delayed</li>
+</ul>
+<p>Common methods:</p>
+<ul>
+<li class="">MoSCoW method<!-- -->
+<ul>
+<li class="">Must Have</li>
+<li class="">Should Have</li>
+<li class="">Could Have</li>
+<li class="">Won’t Have</li>
+</ul>
+</li>
+<li class="">Business value analysis</li>
+<li class="">Risk-based prioritization</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Efficient resource use</li>
+<li class="">Faster delivery of critical features</li>
+<li class="">Controlled scope</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=63-specification>6.3 Specification<a href=#63-specification class=hash-link aria-label="Direct link to 6.3 Specification" title="Direct link to 6.3 Specification" translate=no>​</a></h2>
+<p>Specification converts analyzed requirements into structured documentation.</p>
+<p>It ensures:</p>
+<ul>
+<li class="">Clear communication</li>
+<li class="">Formal agreement</li>
+<li class="">Reference for design and testing</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=631-clear-documentation-of-requirements>6.3.1 Clear Documentation of Requirements<a href=#631-clear-documentation-of-requirements class=hash-link aria-label="Direct link to 6.3.1 Clear Documentation of Requirements" title="Direct link to 6.3.1 Clear Documentation of Requirements" translate=no>​</a></h3>
+<p>Requirements must be documented in a:</p>
+<ul>
+<li class="">Clear</li>
+<li class="">Precise</li>
+<li class="">Unambiguous</li>
+<li class="">Testable format</li>
+</ul>
+<p>Example of clear requirement:</p>
+<p>“The system shall process user login within 2 seconds.”</p>
+<p>Avoid vague terms such as:</p>
+<ul>
+<li class="">Fast</li>
+<li class="">Easy</li>
+<li class="">User-friendly</li>
+</ul>
+<p>Clear documentation enables:</p>
+<ul>
+<li class="">Accurate implementation</li>
+<li class="">Effective testing</li>
+<li class="">Reduced misinterpretation</li>
+</ul>
+<p>Specification often results in:</p>
+<ul>
+<li class="">Software Requirements Specification (SRS)</li>
+<li class="">Product backlog (Agile projects)</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=64-validation>6.4 Validation<a href=#64-validation class=hash-link aria-label="Direct link to 6.4 Validation" title="Direct link to 6.4 Validation" translate=no>​</a></h2>
+<p>Validation ensures that documented requirements:</p>
+<ul>
+<li class="">Accurately reflect stakeholder needs</li>
+<li class="">Are complete</li>
+<li class="">Are consistent</li>
+<li class="">Are feasible</li>
+</ul>
+<p>Validation answers:</p>
+<blockquote>
+<p>Are we building the right system?</p>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=641-correctness-check>6.4.1 Correctness Check<a href=#641-correctness-check class=hash-link aria-label="Direct link to 6.4.1 Correctness Check" title="Direct link to 6.4.1 Correctness Check" translate=no>​</a></h3>
+<p>Ensures that:</p>
+<ul>
+<li class="">Requirements match stakeholder expectations</li>
+<li class="">No incorrect functionality is included</li>
+</ul>
+<p>Methods:</p>
+<ul>
+<li class="">Stakeholder review</li>
+<li class="">Requirement walkthroughs</li>
+<li class="">Prototype validation</li>
+</ul>
+<p>Incorrect requirements can lead to building the wrong system.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=642-completeness-check>6.4.2 Completeness Check<a href=#642-completeness-check class=hash-link aria-label="Direct link to 6.4.2 Completeness Check" title="Direct link to 6.4.2 Completeness Check" translate=no>​</a></h3>
+<p>Ensures that:</p>
+<ul>
+<li class="">All required functionalities are documented</li>
+<li class="">No important feature is missing</li>
+<li class="">All constraints are identified</li>
+</ul>
+<p>Checklist example:</p>
+<ul>
+<li class="">Are all user roles covered?</li>
+<li class="">Are error conditions specified?</li>
+<li class="">Are performance requirements included?</li>
+</ul>
+<p>Incomplete requirements result in:</p>
+<ul>
+<li class="">System gaps</li>
+<li class="">Rework</li>
+<li class="">User dissatisfaction</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=643-consistency-check>6.4.3 Consistency Check<a href=#643-consistency-check class=hash-link aria-label="Direct link to 6.4.3 Consistency Check" title="Direct link to 6.4.3 Consistency Check" translate=no>​</a></h3>
+<p>Ensures that:</p>
+<ul>
+<li class="">No requirement contradicts another</li>
+<li class="">Terminology is uniform</li>
+<li class="">System constraints are aligned</li>
+</ul>
+<p>Example inconsistency:</p>
+<p>Requirement A: “System supports unlimited users.”</p>
+<p>Requirement B: “System supports maximum 1000 users.”</p>
+<p>Such conflicts must be resolved before development begins.</p>
+<p>Consistency ensures:</p>
+<ul>
+<li class="">Logical integrity</li>
+<li class="">Smooth implementation</li>
+<li class="">Reduced confusion</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=overall-requirements-engineering-flow>Overall Requirements Engineering Flow<a href=#overall-requirements-engineering-flow class=hash-link aria-label="Direct link to Overall Requirements Engineering Flow" title="Direct link to Overall Requirements Engineering Flow" translate=no>​</a></h2>
+<!-- -->
+<p>This structured process ensures:</p>
+<ul>
+<li class="">Clear understanding</li>
+<li class="">Controlled development</li>
+<li class="">Reduced project risk</li>
+</ul>
+<hr/>
+<hr/>
+<h1>7. Software Requirements Specification (SRS)</h1>
+<p>The Software Requirements Specification (SRS) is one of the most important documents in software engineering.</p>
+<p>It formally defines:</p>
+<ul>
+<li class="">What the system must do</li>
+<li class="">How it must behave</li>
+<li class="">What constraints it must follow</li>
+</ul>
+<p>The SRS serves as:</p>
+<ul>
+<li class="">A contract between client and developer</li>
+<li class="">A reference for design and testing</li>
+<li class="">A baseline for project control</li>
+</ul>
+<p>A well-written SRS reduces:</p>
+<ul>
+<li class="">Miscommunication</li>
+<li class="">Rework</li>
+<li class="">Project failure risk</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=71-what-is-srs>7.1 What is SRS?<a href=#71-what-is-srs class=hash-link aria-label="Direct link to 7.1 What is SRS?" title="Direct link to 7.1 What is SRS?" translate=no>​</a></h2>
+<p>An SRS is a structured document that clearly describes system requirements.</p>
+<p>It ensures:</p>
+<ul>
+<li class="">Agreement between stakeholders</li>
+<li class="">Clear communication</li>
+<li class="">Traceability</li>
+<li class="">Quality control</li>
+</ul>
+<p>It is created after:</p>
+<ul>
+<li class="">Requirements elicitation</li>
+<li class="">Requirements analysis</li>
+<li class="">Requirement negotiation</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=711-formal-requirement-document>7.1.1 Formal Requirement Document<a href=#711-formal-requirement-document class=hash-link aria-label="Direct link to 7.1.1 Formal Requirement Document" title="Direct link to 7.1.1 Formal Requirement Document" translate=no>​</a></h3>
+<p>SRS is a formal document, meaning:</p>
+<ul>
+<li class="">It follows a structured format</li>
+<li class="">It uses precise language</li>
+<li class="">It avoids ambiguity</li>
+<li class="">It is approved by stakeholders</li>
+</ul>
+<p>Characteristics of formal documentation:</p>
+<ul>
+<li class="">Clear terminology</li>
+<li class="">Defined scope</li>
+<li class="">Measurable statements</li>
+<li class="">Version control</li>
+</ul>
+<p>Example of formal requirement:</p>
+<p>“The system shall authenticate users within 2 seconds.”</p>
+<p>Avoid informal wording such as:</p>
+<ul>
+<li class="">The system should be fast</li>
+<li class="">The interface should look nice</li>
+</ul>
+<p>Formal documentation enables:</p>
+<ul>
+<li class="">Accurate implementation</li>
+<li class="">Objective testing</li>
+<li class="">Legal accountability</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=712-ieee-definition>7.1.2 IEEE Definition<a href=#712-ieee-definition class=hash-link aria-label="Direct link to 7.1.2 IEEE Definition" title="Direct link to 7.1.2 IEEE Definition" translate=no>​</a></h3>
+<p>According to IEEE (Institute of Electrical and Electronics Engineers):</p>
+<blockquote>
+<p>An SRS is a document that describes the behavior of a system and the constraints under which it must operate.</p>
+</blockquote>
+<p>IEEE recommends standard formats such as:</p>
+<ul>
+<li class="">IEEE 830 (older standard)</li>
+<li class="">ISO/IEC/IEEE 29148 (modern standard)</li>
+</ul>
+<p>IEEE standards emphasize:</p>
+<ul>
+<li class="">Clarity</li>
+<li class="">Completeness</li>
+<li class="">Consistency</li>
+<li class="">Verifiability</li>
+</ul>
+<p>Using IEEE standards ensures:</p>
+<ul>
+<li class="">Professional documentation</li>
+<li class="">Industry acceptance</li>
+<li class="">Structured requirement presentation</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=72-contents-of-srs-document>7.2 Contents of SRS Document<a href=#72-contents-of-srs-document class=hash-link aria-label="Direct link to 7.2 Contents of SRS Document" title="Direct link to 7.2 Contents of SRS Document" translate=no>​</a></h2>
+<p>An SRS typically contains the following sections:</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=721-introduction>7.2.1 Introduction<a href=#721-introduction class=hash-link aria-label="Direct link to 7.2.1 Introduction" title="Direct link to 7.2.1 Introduction" translate=no>​</a></h3>
+<p>The Introduction section includes:</p>
+<ul>
+<li class="">Purpose of the system</li>
+<li class="">Scope of the project</li>
+<li class="">Definitions and acronyms</li>
+<li class="">References</li>
+<li class="">Document overview</li>
+</ul>
+<p>It answers:</p>
+<ul>
+<li class="">Why is the system being built?</li>
+<li class="">What is its objective?</li>
+</ul>
+<p>Purpose:</p>
+<ul>
+<li class="">Provide context</li>
+<li class="">Set boundaries</li>
+<li class="">Clarify terminology</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=722-overall-description>7.2.2 Overall Description<a href=#722-overall-description class=hash-link aria-label="Direct link to 7.2.2 Overall Description" title="Direct link to 7.2.2 Overall Description" translate=no>​</a></h3>
+<p>This section gives a high-level overview of the system.</p>
+<p>Includes:</p>
+<ul>
+<li class="">Product perspective</li>
+<li class="">Product functions</li>
+<li class="">User classes</li>
+<li class="">Operating environment</li>
+<li class="">Design constraints</li>
+<li class="">Assumptions and dependencies</li>
+</ul>
+<p>It describes:</p>
+<ul>
+<li class="">How the system fits into the larger environment</li>
+<li class="">Who will use the system</li>
+<li class="">Technical platform details</li>
+</ul>
+<p>This section avoids too much detail and focuses on big-picture understanding.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=723-functional-requirements>7.2.3 Functional Requirements<a href=#723-functional-requirements class=hash-link aria-label="Direct link to 7.2.3 Functional Requirements" title="Direct link to 7.2.3 Functional Requirements" translate=no>​</a></h3>
+<p>Functional requirements describe:</p>
+<ul>
+<li class="">System behavior</li>
+<li class="">Specific services</li>
+<li class="">Inputs and outputs</li>
+<li class="">Business logic</li>
+</ul>
+<p>They answer:</p>
+<blockquote>
+<p>What should the system do?</p>
+</blockquote>
+<p>Example:</p>
+<ul>
+<li class="">The system shall allow users to create accounts.</li>
+<li class="">The system shall generate monthly sales reports.</li>
+</ul>
+<p>Functional requirements are often derived from:</p>
+<ul>
+<li class="">Use cases</li>
+<li class="">User stories</li>
+<li class="">Process models</li>
+</ul>
+<p>They must be:</p>
+<ul>
+<li class="">Clear</li>
+<li class="">Testable</li>
+<li class="">Specific</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=724-non-functional-requirements>7.2.4 Non-Functional Requirements<a href=#724-non-functional-requirements class=hash-link aria-label="Direct link to 7.2.4 Non-Functional Requirements" title="Direct link to 7.2.4 Non-Functional Requirements" translate=no>​</a></h3>
+<p>Non-functional requirements define:</p>
+<ul>
+<li class="">Quality attributes</li>
+<li class="">Performance standards</li>
+<li class="">Security constraints</li>
+<li class="">Usability requirements</li>
+</ul>
+<p>They answer:</p>
+<blockquote>
+<p>How should the system perform?</p>
+</blockquote>
+<p>Examples:</p>
+<ul>
+<li class="">The system shall support 10,000 concurrent users.</li>
+<li class="">The system shall respond within 2 seconds.</li>
+<li class="">All data shall be encrypted.</li>
+</ul>
+<p>Non-functional requirements strongly impact:</p>
+<ul>
+<li class="">System architecture</li>
+<li class="">Technology selection</li>
+<li class="">Design decisions</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=725-system-models>7.2.5 System Models<a href=#725-system-models class=hash-link aria-label="Direct link to 7.2.5 System Models" title="Direct link to 7.2.5 System Models" translate=no>​</a></h3>
+<p>System models visually represent requirements.</p>
+<p>They help improve clarity and understanding.</p>
+<p>Common models:</p>
+<ul>
+<li class="">Use Case Diagrams</li>
+<li class="">Data Flow Diagrams (DFDs)</li>
+<li class="">Entity-Relationship (ER) Diagrams</li>
+<li class="">State Diagrams</li>
+</ul>
+<p>Example Use Case Diagram:</p>
+<!-- -->
+<p>Models help:</p>
+<ul>
+<li class="">Detect missing functionality</li>
+<li class="">Identify logical errors</li>
+<li class="">Improve stakeholder communication</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=726-constraints--assumptions>7.2.6 Constraints & Assumptions<a href=#726-constraints--assumptions class=hash-link aria-label="Direct link to 7.2.6 Constraints & Assumptions" title="Direct link to 7.2.6 Constraints & Assumptions" translate=no>​</a></h3>
+<p>Constraints restrict system development.</p>
+<p>Examples:</p>
+<ul>
+<li class="">Must operate on Windows platform</li>
+<li class="">Must comply with data protection laws</li>
+<li class="">Must integrate with existing system</li>
+</ul>
+<p>Assumptions are conditions believed to be true during development.</p>
+<p>Examples:</p>
+<ul>
+<li class="">Internet connection will be available</li>
+<li class="">Users have basic computer knowledge</li>
+</ul>
+<p>Constraints and assumptions help:</p>
+<ul>
+<li class="">Clarify limitations</li>
+<li class="">Identify risks</li>
+<li class="">Guide system design</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=structure-overview-of-srs>Structure Overview of SRS<a href=#structure-overview-of-srs class=hash-link aria-label="Direct link to Structure Overview of SRS" title="Direct link to Structure Overview of SRS" translate=no>​</a></h2>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=73-characteristics-of-good-srs>7.3 Characteristics of Good SRS<a href=#73-characteristics-of-good-srs class=hash-link aria-label="Direct link to 7.3 Characteristics of Good SRS" title="Direct link to 7.3 Characteristics of Good SRS" translate=no>​</a></h2>
+<p>A good Software Requirements Specification (SRS) must meet certain quality criteria to ensure reliability and clarity.</p>
+<p>IEEE standards define several characteristics that a high-quality SRS should possess.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=731-correct>7.3.1 Correct<a href=#731-correct class=hash-link aria-label="Direct link to 7.3.1 Correct" title="Direct link to 7.3.1 Correct" translate=no>​</a></h3>
+<p>An SRS is correct if:</p>
+<ul>
+<li class="">Every requirement reflects actual stakeholder needs</li>
+<li class="">No incorrect functionality is included</li>
+</ul>
+<p>Correctness ensures:</p>
+<ul>
+<li class="">The right system is built</li>
+<li class="">Stakeholder expectations are met</li>
+</ul>
+<p>To ensure correctness:</p>
+<ul>
+<li class="">Conduct stakeholder reviews</li>
+<li class="">Validate with prototypes</li>
+<li class="">Confirm business rules</li>
+</ul>
+<p>Incorrect requirements may result in:</p>
+<ul>
+<li class="">Building the wrong system</li>
+<li class="">Costly rework</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=732-complete>7.3.2 Complete<a href=#732-complete class=hash-link aria-label="Direct link to 7.3.2 Complete" title="Direct link to 7.3.2 Complete" translate=no>​</a></h3>
+<p>An SRS is complete if:</p>
+<ul>
+<li class="">All required functionality is documented</li>
+<li class="">All constraints are identified</li>
+<li class="">All user interactions are covered</li>
+<li class="">All exceptional conditions are specified</li>
+</ul>
+<p>Completeness includes:</p>
+<ul>
+<li class="">Functional requirements</li>
+<li class="">Non-functional requirements</li>
+<li class="">Interface requirements</li>
+<li class="">Error handling</li>
+</ul>
+<p>Incomplete SRS leads to:</p>
+<ul>
+<li class="">Missing features</li>
+<li class="">Design gaps</li>
+<li class="">System failure</li>
+</ul>
+<p>Checklist for completeness:</p>
+<ul>
+<li class="">Are all user roles defined?</li>
+<li class="">Are error cases described?</li>
+<li class="">Are performance requirements included?</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=733-consistent>7.3.3 Consistent<a href=#733-consistent class=hash-link aria-label="Direct link to 7.3.3 Consistent" title="Direct link to 7.3.3 Consistent" translate=no>​</a></h3>
+<p>An SRS is consistent if:</p>
+<ul>
+<li class="">No requirements contradict each other</li>
+<li class="">Terminology is uniform throughout the document</li>
+</ul>
+<p>Example inconsistency:</p>
+<ul>
+<li class="">Requirement A: System supports unlimited users.</li>
+<li class="">Requirement B: System supports maximum 500 users.</li>
+</ul>
+<p>Consistency ensures:</p>
+<ul>
+<li class="">Logical clarity</li>
+<li class="">Smooth implementation</li>
+<li class="">Reduced confusion</li>
+</ul>
+<p>Consistency checks are typically done through:</p>
+<ul>
+<li class="">Formal reviews</li>
+<li class="">Cross-referencing requirements</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=734-unambiguous>7.3.4 Unambiguous<a href=#734-unambiguous class=hash-link aria-label="Direct link to 7.3.4 Unambiguous" title="Direct link to 7.3.4 Unambiguous" translate=no>​</a></h3>
+<p>An SRS is unambiguous if:</p>
+<ul>
+<li class="">Each requirement has only one clear interpretation</li>
+</ul>
+<p>Avoid vague words like:</p>
+<ul>
+<li class="">Fast</li>
+<li class="">Efficient</li>
+<li class="">User-friendly</li>
+<li class="">Secure</li>
+</ul>
+<p>Ambiguous requirement example:</p>
+<p>“The system shall load quickly.”</p>
+<p>Unambiguous version:</p>
+<p>“The system shall load within 2 seconds under normal operating conditions.”</p>
+<p>Clarity ensures:</p>
+<ul>
+<li class="">Accurate implementation</li>
+<li class="">Reliable testing</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=735-verifiable>7.3.5 Verifiable<a href=#735-verifiable class=hash-link aria-label="Direct link to 7.3.5 Verifiable" title="Direct link to 7.3.5 Verifiable" translate=no>​</a></h3>
+<p>An SRS is verifiable if:</p>
+<ul>
+<li class="">Each requirement can be tested or measured</li>
+</ul>
+<p>Example of non-verifiable requirement:</p>
+<p>“The system shall be easy to use.”</p>
+<p>Verifiable version:</p>
+<p>“A new user shall complete registration within 3 minutes without assistance.”</p>
+<p>Verification methods:</p>
+<ul>
+<li class="">Testing</li>
+<li class="">Inspection</li>
+<li class="">Demonstration</li>
+<li class="">Analysis</li>
+</ul>
+<p>Verifiability ensures objective validation.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=74-importance-of-requirements-specification>7.4 Importance of Requirements Specification<a href=#74-importance-of-requirements-specification class=hash-link aria-label="Direct link to 7.4 Importance of Requirements Specification" title="Direct link to 7.4 Importance of Requirements Specification" translate=no>​</a></h2>
+<p>Requirements Specification plays a crucial role in software development.</p>
+<p>It acts as the foundation of the entire project lifecycle.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=741-reduce-development-cost>7.4.1 Reduce Development Cost<a href=#741-reduce-development-cost class=hash-link aria-label="Direct link to 7.4.1 Reduce Development Cost" title="Direct link to 7.4.1 Reduce Development Cost" translate=no>​</a></h3>
+<p>Errors detected in the requirement stage are:</p>
+<ul>
+<li class="">Much cheaper to fix</li>
+<li class="">Easier to correct</li>
+</ul>
+<p>Cost of fixing defects increases significantly in later stages:</p>
+<ul>
+<li class="">Design stage → Higher cost</li>
+<li class="">Coding stage → Even higher</li>
+<li class="">Post-deployment → Extremely expensive</li>
+</ul>
+<p>Clear SRS reduces:</p>
+<ul>
+<li class="">Rework</li>
+<li class="">Budget overruns</li>
+<li class="">Project delays</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=742-avoid-misunderstandings>7.4.2 Avoid Misunderstandings<a href=#742-avoid-misunderstandings class=hash-link aria-label="Direct link to 7.4.2 Avoid Misunderstandings" title="Direct link to 7.4.2 Avoid Misunderstandings" translate=no>​</a></h3>
+<p>SRS provides:</p>
+<ul>
+<li class="">Clear communication between stakeholders</li>
+<li class="">Defined expectations</li>
+<li class="">Agreed-upon scope</li>
+</ul>
+<p>Without SRS:</p>
+<ul>
+<li class="">Developers may misunderstand requirements</li>
+<li class="">Clients may expect different outcomes</li>
+<li class="">Scope confusion may occur</li>
+</ul>
+<p>SRS ensures alignment between:</p>
+<ul>
+<li class="">Client</li>
+<li class="">Development team</li>
+<li class="">Testers</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=743-contract-between-client--developer>7.4.3 Contract Between Client & Developer<a href=#743-contract-between-client--developer class=hash-link aria-label="Direct link to 7.4.3 Contract Between Client & Developer" title="Direct link to 7.4.3 Contract Between Client & Developer" translate=no>​</a></h3>
+<p>SRS acts as:</p>
+<ul>
+<li class="">A formal agreement</li>
+<li class="">A legal reference document</li>
+</ul>
+<p>It defines:</p>
+<ul>
+<li class="">What will be delivered</li>
+<li class="">What will not be delivered</li>
+<li class="">Performance standards</li>
+</ul>
+<p>In case of disputes:</p>
+<ul>
+<li class="">SRS serves as evidence</li>
+<li class="">Scope clarification is possible</li>
+</ul>
+<p>It protects both:</p>
+<ul>
+<li class="">Client interests</li>
+<li class="">Developer obligations</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=744-basis-for-design-testing--maintenance>7.4.4 Basis for Design, Testing & Maintenance<a href=#744-basis-for-design-testing--maintenance class=hash-link aria-label="Direct link to 7.4.4 Basis for Design, Testing & Maintenance" title="Direct link to 7.4.4 Basis for Design, Testing & Maintenance" translate=no>​</a></h3>
+<p>SRS serves as input for:</p>
+<ul>
+<li class="">System design</li>
+<li class="">Code development</li>
+<li class="">Test case creation</li>
+<li class="">Future maintenance</li>
+</ul>
+<p>Traceability flow:</p>
+<!-- -->
+<p>Each requirement in SRS should:</p>
+<ul>
+<li class="">Map to design components</li>
+<li class="">Map to test cases</li>
+<li class="">Be traceable to implementation</li>
+</ul>
+<p>Strong SRS ensures:</p>
+<ul>
+<li class="">Structured development</li>
+<li class="">Complete testing</li>
+<li class="">Easier system upgrades</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-4>Summary<a href=#summary-4 class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>Characteristics of Good SRS:</p>
+<ul>
+<li class="">Correct</li>
+<li class="">Complete</li>
+<li class="">Consistent</li>
+<li class="">Unambiguous</li>
+<li class="">Verifiable</li>
+</ul>
+<p>Importance:</p>
+<ul>
+<li class="">Reduces cost</li>
+<li class="">Prevents misunderstanding</li>
+<li class="">Acts as contract</li>
+<li class="">Supports design, testing, and maintenance</li>
+</ul>
+<p>A well-prepared SRS significantly increases the probability of project success.</p>
+<hr/>
+<hr/>
+<h1>8. Use Cases & Functional Specification</h1>
+<p>Use Cases are a powerful technique used in Requirements Engineering to describe system functionality from the user’s perspective.</p>
+<p>They help answer:</p>
+<ul>
+<li class="">How users interact with the system</li>
+<li class="">What services the system provides</li>
+<li class="">What happens during normal and exceptional scenarios</li>
+</ul>
+<p>Use Cases focus on <strong>external behavior</strong>, not internal implementation.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=81-use-cases--basics>8.1 Use Cases – Basics<a href=#81-use-cases--basics class=hash-link aria-label="Direct link to 8.1 Use Cases – Basics" title="Direct link to 8.1 Use Cases – Basics" translate=no>​</a></h2>
+<p>Use Cases describe functional requirements in a structured, user-oriented manner.</p>
+<p>They are especially useful during:</p>
+<ul>
+<li class="">Requirements analysis</li>
+<li class="">System modeling</li>
+<li class="">Functional specification preparation</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=811-definition-of-use-case>8.1.1 Definition of Use Case<a href=#811-definition-of-use-case class=hash-link aria-label="Direct link to 8.1.1 Definition of Use Case" title="Direct link to 8.1.1 Definition of Use Case" translate=no>​</a></h3>
+<p>A Use Case is:</p>
+<blockquote>
+<p>A description of a sequence of actions performed by a system to achieve a goal for an actor.</p>
+</blockquote>
+<p>It captures:</p>
+<ul>
+<li class="">User goal</li>
+<li class="">System response</li>
+<li class="">Interaction flow</li>
+</ul>
+<p>Use Cases describe:</p>
+<ul>
+<li class="">What the system does</li>
+<li class="">Not how it does it</li>
+</ul>
+<p>Example:</p>
+<p>Use Case: "Login to System"</p>
+<p>Goal:</p>
+<p>Allow registered user to access system securely.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=812-interaction-between-actor-and-system>8.1.2 Interaction Between Actor and System<a href=#812-interaction-between-actor-and-system class=hash-link aria-label="Direct link to 8.1.2 Interaction Between Actor and System" title="Direct link to 8.1.2 Interaction Between Actor and System" translate=no>​</a></h3>
+<p>A Use Case models interaction between:</p>
+<ul>
+<li class="">Actor (external entity)</li>
+<li class="">System (software under development)</li>
+</ul>
+<p>Interaction flow typically includes:</p>
+<ol>
+<li class="">Actor initiates action</li>
+<li class="">System processes request</li>
+<li class="">System returns response</li>
+</ol>
+<p>Example flow:</p>
+<!-- -->
+<p>This interaction defines:</p>
+<ul>
+<li class="">Input</li>
+<li class="">Processing</li>
+<li class="">Output</li>
+</ul>
+<p>Use Cases focus only on externally visible behavior.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=82-components-of-a-use-case>8.2 Components of a Use Case<a href=#82-components-of-a-use-case class=hash-link aria-label="Direct link to 8.2 Components of a Use Case" title="Direct link to 8.2 Components of a Use Case" translate=no>​</a></h2>
+<p>A Use Case Diagram includes several core elements.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=821-actor>8.2.1 Actor<a href=#821-actor class=hash-link aria-label="Direct link to 8.2.1 Actor" title="Direct link to 8.2.1 Actor" translate=no>​</a></h3>
+<p>An Actor represents:</p>
+<ul>
+<li class="">A user</li>
+<li class="">Another system</li>
+<li class="">An external entity</li>
+</ul>
+<p>Actors are external to the system.</p>
+<p>They initiate interaction.</p>
+<p>In diagrams, actors are represented as stick figures.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=822-use-case>8.2.2 Use Case<a href=#822-use-case class=hash-link aria-label="Direct link to 8.2.2 Use Case" title="Direct link to 8.2.2 Use Case" translate=no>​</a></h3>
+<p>A Use Case represents:</p>
+<ul>
+<li class="">A system function</li>
+<li class="">A service provided to an actor</li>
+</ul>
+<p>It is shown as an oval in diagrams.</p>
+<p>Examples:</p>
+<ul>
+<li class="">Login</li>
+<li class="">Register</li>
+<li class="">Generate Report</li>
+<li class="">Place Order</li>
+</ul>
+<p>Each use case should represent a <strong>single goal</strong>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=823-system-boundary>8.2.3 System Boundary<a href=#823-system-boundary class=hash-link aria-label="Direct link to 8.2.3 System Boundary" title="Direct link to 8.2.3 System Boundary" translate=no>​</a></h3>
+<p>The System Boundary defines:</p>
+<ul>
+<li class="">What is inside the system</li>
+<li class="">What is outside the system</li>
+</ul>
+<p>It is represented as a rectangle enclosing use cases.</p>
+<p>Purpose:</p>
+<ul>
+<li class="">Clarifies scope</li>
+<li class="">Defines system limits</li>
+<li class="">Avoids confusion about responsibilities</li>
+</ul>
+<p>Example diagram:</p>
+<!-- -->
+<p>Everything inside the rectangle is part of the system.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=824-relationships-association-include-extend>8.2.4 Relationships (Association, Include, Extend)<a href=#824-relationships-association-include-extend class=hash-link aria-label="Direct link to 8.2.4 Relationships (Association, Include, Extend)" title="Direct link to 8.2.4 Relationships (Association, Include, Extend)" translate=no>​</a></h3>
+<p>Use Case diagrams show relationships between actors and use cases.</p>
+<hr/>
+<p><strong>Association</strong></p>
+<ul>
+<li class="">Direct interaction between actor and use case</li>
+<li class="">Represented by a line</li>
+</ul>
+<p>Example:</p>
+<p>User → Login</p>
+<hr/>
+<p><strong>Include Relationship</strong></p>
+<ul>
+<li class="">One use case always includes another</li>
+<li class="">Common reusable functionality</li>
+<li class="">Represented by «include»</li>
+</ul>
+<p>Example:</p>
+<p>Login may include:</p>
+<ul>
+<li class="">Validate Credentials</li>
+</ul>
+<!-- -->
+<p>Used for:</p>
+<ul>
+<li class="">Reusable common functions</li>
+<li class="">Mandatory behavior</li>
+</ul>
+<hr/>
+<p><strong>Extend Relationship</strong></p>
+<ul>
+<li class="">Optional or conditional behavior</li>
+<li class="">Represented by «extend»</li>
+</ul>
+<p>Example:</p>
+<p>Login may extend:</p>
+<ul>
+<li class="">Two-Factor Authentication</li>
+</ul>
+<!-- -->
+<p>Used when:</p>
+<ul>
+<li class="">Additional behavior is triggered under specific conditions</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=83-actors>8.3 Actors<a href=#83-actors class=hash-link aria-label="Direct link to 8.3 Actors" title="Direct link to 8.3 Actors" translate=no>​</a></h2>
+<p>Actors represent external entities interacting with the system.</p>
+<p>They define:</p>
+<ul>
+<li class="">Who uses the system</li>
+<li class="">Who receives services</li>
+</ul>
+<p>Actors are not part of the system.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=831-primary-actor>8.3.1 Primary Actor<a href=#831-primary-actor class=hash-link aria-label="Direct link to 8.3.1 Primary Actor" title="Direct link to 8.3.1 Primary Actor" translate=no>​</a></h3>
+<p>Primary Actor:</p>
+<ul>
+<li class="">Initiates the use case</li>
+<li class="">Has a goal to achieve</li>
+<li class="">Directly benefits from system functionality</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li class="">Customer</li>
+<li class="">Admin</li>
+<li class="">Student</li>
+</ul>
+<p>Primary actors drive the interaction.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=832-secondary-actor>8.3.2 Secondary Actor<a href=#832-secondary-actor class=hash-link aria-label="Direct link to 8.3.2 Secondary Actor" title="Direct link to 8.3.2 Secondary Actor" translate=no>​</a></h3>
+<p>Secondary Actor:</p>
+<ul>
+<li class="">Supports the primary actor</li>
+<li class="">Provides services to the system</li>
+<li class="">May be external systems</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li class="">Payment Gateway</li>
+<li class="">Email Server</li>
+<li class="">External Database</li>
+</ul>
+<p>Secondary actors do not initiate use cases but assist in completing them.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=example-online-shopping-system>Example: Online Shopping System<a href=#example-online-shopping-system class=hash-link aria-label="Direct link to Example: Online Shopping System" title="Direct link to Example: Online Shopping System" translate=no>​</a></h2>
+<p>Actors:</p>
+<ul>
+<li class="">Customer (Primary)</li>
+<li class="">Payment Gateway (Secondary)</li>
+</ul>
+<p>Use Cases:</p>
+<ul>
+<li class="">Register</li>
+<li class="">Login</li>
+<li class="">Place Order</li>
+<li class="">Make Payment</li>
+</ul>
+<p>Example Diagram:</p>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=importance-of-use-cases>Importance of Use Cases<a href=#importance-of-use-cases class=hash-link aria-label="Direct link to Importance of Use Cases" title="Direct link to Importance of Use Cases" translate=no>​</a></h2>
+<p>Use Cases:</p>
+<ul>
+<li class="">Clarify system behavior</li>
+<li class="">Improve requirement understanding</li>
+<li class="">Provide basis for functional specification</li>
+<li class="">Help create test cases</li>
+<li class="">Support stakeholder communication</li>
+</ul>
+<p>They bridge the gap between:</p>
+<ul>
+<li class="">Business requirements</li>
+<li class="">Technical implementation</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=84-use-case-diagram>8.4 Use Case Diagram<a href=#84-use-case-diagram class=hash-link aria-label="Direct link to 8.4 Use Case Diagram" title="Direct link to 8.4 Use Case Diagram" translate=no>​</a></h2>
+<p>A Use Case Diagram is a visual representation of the interactions between actors and the system.</p>
+<p>It is part of UML (Unified Modeling Language).</p>
+<p>It focuses on:</p>
+<ul>
+<li class="">System functionality</li>
+<li class="">External interactions</li>
+<li class="">High-level system behavior</li>
+</ul>
+<p>It does <strong>not</strong> show:</p>
+<ul>
+<li class="">Internal logic</li>
+<li class="">Data flow</li>
+<li class="">Implementation details</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=841-purpose>8.4.1 Purpose<a href=#841-purpose class=hash-link aria-label="Direct link to 8.4.1 Purpose" title="Direct link to 8.4.1 Purpose" translate=no>​</a></h3>
+<p>The main purpose of a Use Case Diagram is to:</p>
+<ul>
+<li class="">Provide a high-level overview of system functionality</li>
+<li class="">Identify system scope</li>
+<li class="">Show actor-system interaction</li>
+<li class="">Help stakeholders understand system features</li>
+</ul>
+<p>It is useful during:</p>
+<ul>
+<li class="">Requirement analysis</li>
+<li class="">Stakeholder discussions</li>
+<li class="">System documentation</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Simple and easy to understand</li>
+<li class="">Non-technical stakeholders can interpret it</li>
+<li class="">Helps detect missing functionalities</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=842-notation>8.4.2 Notation<a href=#842-notation class=hash-link aria-label="Direct link to 8.4.2 Notation" title="Direct link to 8.4.2 Notation" translate=no>​</a></h3>
+<p>Use Case Diagrams use standard UML symbols.</p>
+<hr/>
+<p><strong>8.4.2.1 Stick Figure – Actor</strong></p>
+<ul>
+<li class="">Represents a user or external entity</li>
+<li class="">Positioned outside the system boundary</li>
+<li class="">Initiates interaction</li>
+</ul>
+<p>Example:</p>
+<!-- -->
+<p>Actors can be:</p>
+<ul>
+<li class="">Human users</li>
+<li class="">External systems</li>
+<li class="">Devices</li>
+</ul>
+<hr/>
+<p><strong>8.4.2.2 Oval – Use Case</strong></p>
+<ul>
+<li class="">Represents a system function</li>
+<li class="">Placed inside system boundary</li>
+<li class="">Named using verb phrases</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li class="">Login</li>
+<li class="">Register</li>
+<li class="">Submit Form</li>
+<li class="">Generate Report</li>
+</ul>
+<p>Use cases represent goals.</p>
+<hr/>
+<p><strong>8.4.2.3 Rectangle – System Boundary</strong></p>
+<ul>
+<li class="">Represents the scope of the system</li>
+<li class="">Encloses all use cases</li>
+<li class="">Separates system from external world</li>
+</ul>
+<p>Example:</p>
+<!-- -->
+<p>Everything inside the rectangle is system functionality.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=85-example-online-examination-system>8.5 Example: Online Examination System<a href=#85-example-online-examination-system class=hash-link aria-label="Direct link to 8.5 Example: Online Examination System" title="Direct link to 8.5 Example: Online Examination System" translate=no>​</a></h2>
+<p>Let us model a simple Online Examination System.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=851-actors-student-admin>8.5.1 Actors (Student, Admin)<a href=#851-actors-student-admin class=hash-link aria-label="Direct link to 8.5.1 Actors (Student, Admin)" title="Direct link to 8.5.1 Actors (Student, Admin)" translate=no>​</a></h3>
+<p>Primary Actors:</p>
+<ul>
+<li class="">Student</li>
+<li class="">Admin</li>
+</ul>
+<p>Student performs:</p>
+<ul>
+<li class="">Login</li>
+<li class="">Fill Exam Form</li>
+<li class="">Pay Fees</li>
+<li class="">Download Hall Ticket</li>
+</ul>
+<p>Admin performs:</p>
+<ul>
+<li class="">Manage Exams</li>
+<li class="">Approve Applications</li>
+<li class="">Generate Reports</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=852-use-cases-login-fill-exam-form-pay-fees-download-hall-ticket>8.5.2 Use Cases (Login, Fill Exam Form, Pay Fees, Download Hall Ticket)<a href=#852-use-cases-login-fill-exam-form-pay-fees-download-hall-ticket class=hash-link aria-label="Direct link to 8.5.2 Use Cases (Login, Fill Exam Form, Pay Fees, Download Hall Ticket)" title="Direct link to 8.5.2 Use Cases (Login, Fill Exam Form, Pay Fees, Download Hall Ticket)" translate=no>​</a></h3>
+<p>Example Use Case Diagram:</p>
+<!-- -->
+<p>This diagram shows:</p>
+<ul>
+<li class="">Who interacts with system</li>
+<li class="">What functionalities exist</li>
+<li class="">Clear system boundary</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=86-use-case-example--login>8.6 Use Case Example – Login<a href=#86-use-case-example--login class=hash-link aria-label="Direct link to 8.6 Use Case Example – Login" title="Direct link to 8.6 Use Case Example – Login" translate=no>​</a></h2>
+<p>A detailed use case includes structured description.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=861-precondition>8.6.1 Precondition<a href=#861-precondition class=hash-link aria-label="Direct link to 8.6.1 Precondition" title="Direct link to 8.6.1 Precondition" translate=no>​</a></h3>
+<p>Preconditions are conditions that must be true before the use case begins.</p>
+<p>For Login:</p>
+<ul>
+<li class="">User must be registered</li>
+<li class="">System must be operational</li>
+<li class="">User must have valid credentials</li>
+</ul>
+<p>Preconditions ensure the use case can start properly.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=862-main-flow>8.6.2 Main Flow<a href=#862-main-flow class=hash-link aria-label="Direct link to 8.6.2 Main Flow" title="Direct link to 8.6.2 Main Flow" translate=no>​</a></h3>
+<p>Main Flow (Normal Flow) describes standard successful execution.</p>
+<p>Example:</p>
+<ol>
+<li class="">User enters username and password</li>
+<li class="">System validates credentials</li>
+<li class="">System checks account status</li>
+<li class="">System grants access</li>
+<li class="">Dashboard is displayed</li>
+</ol>
+<p>Flow diagram:</p>
+<!-- -->
+<p>Main flow represents ideal successful scenario.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=863-postcondition>8.6.3 Postcondition<a href=#863-postcondition class=hash-link aria-label="Direct link to 8.6.3 Postcondition" title="Direct link to 8.6.3 Postcondition" translate=no>​</a></h3>
+<p>Postconditions describe system state after successful completion.</p>
+<p>For Login:</p>
+<ul>
+<li class="">User session is created</li>
+<li class="">User is redirected to dashboard</li>
+<li class="">Authentication token is generated</li>
+</ul>
+<p>If login fails:</p>
+<ul>
+<li class="">No session created</li>
+<li class="">Error message displayed</li>
+</ul>
+<p>Postconditions confirm the outcome of use case execution.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-5>Summary<a href=#summary-5 class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>Use Case Diagram:</p>
+<ul>
+<li class="">Shows high-level system functionality</li>
+<li class="">Uses UML notation</li>
+<li class="">Defines actors and system boundary</li>
+</ul>
+<p>Use Case Description:</p>
+<ul>
+<li class="">Includes precondition</li>
+<li class="">Defines main flow</li>
+<li class="">Specifies postcondition</li>
+</ul>
+<p>Use Cases help in:</p>
+<ul>
+<li class="">Requirement clarity</li>
+<li class="">Functional specification</li>
+<li class="">Test case design</li>
+<li class="">Stakeholder communication</li>
+</ul>
+<hr/>
+<hr/>
+<h1>9. Functional Specification</h1>
+<p>Functional Specification is a detailed document that describes <strong>what the system must do</strong> in a structured and precise manner.</p>
+<p>It is derived from:</p>
+<ul>
+<li class="">Requirements Engineering</li>
+<li class="">Use Cases</li>
+<li class="">Stakeholder discussions</li>
+</ul>
+<p>It converts high-level requirements into clear, implementable functional statements.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=91-introduction-to-functional-specification>9.1 Introduction to Functional Specification<a href=#91-introduction-to-functional-specification class=hash-link aria-label="Direct link to 9.1 Introduction to Functional Specification" title="Direct link to 9.1 Introduction to Functional Specification" translate=no>​</a></h2>
+<p>Functional Specification bridges the gap between:</p>
+<ul>
+<li class="">Requirement analysis</li>
+<li class="">System design</li>
+</ul>
+<p>It provides developers with:</p>
+<ul>
+<li class="">Clear instructions</li>
+<li class="">Detailed behavior descriptions</li>
+<li class="">Structured feature breakdown</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=911-definition>9.1.1 Definition<a href=#911-definition class=hash-link aria-label="Direct link to 9.1.1 Definition" title="Direct link to 9.1.1 Definition" translate=no>​</a></h3>
+<p>A Functional Specification is:</p>
+<blockquote>
+<p>A formal document that describes the functional behavior of a system in detail, specifying what the system shall do in response to user inputs and system events.</p>
+</blockquote>
+<p>It focuses only on:</p>
+<ul>
+<li class="">Functional behavior</li>
+<li class="">System services</li>
+<li class="">User interactions</li>
+</ul>
+<p>It does not describe:</p>
+<ul>
+<li class="">Internal design</li>
+<li class="">Algorithms</li>
+<li class="">Implementation details</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=912-conversion-of-use-cases-to-functional-requirements>9.1.2 Conversion of Use Cases to Functional Requirements<a href=#912-conversion-of-use-cases-to-functional-requirements class=hash-link aria-label="Direct link to 9.1.2 Conversion of Use Cases to Functional Requirements" title="Direct link to 9.1.2 Conversion of Use Cases to Functional Requirements" translate=no>​</a></h3>
+<p>Use Cases describe interaction scenarios.</p>
+<p>Functional Specification converts those scenarios into:</p>
+<ul>
+<li class="">Clear, testable statements</li>
+</ul>
+<p>Example:</p>
+<p>Use Case: Login</p>
+<p>Converted Functional Requirements:</p>
+<ul>
+<li class="">The system shall display a login form.</li>
+<li class="">The system shall validate user credentials.</li>
+<li class="">The system shall allow access upon successful authentication.</li>
+<li class="">The system shall display an error message for invalid credentials.</li>
+</ul>
+<p>Conversion Flow:</p>
+<!-- -->
+<p>Each step in a use case becomes one or more functional requirements.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=92-functional-specification-structure>9.2 Functional Specification Structure<a href=#92-functional-specification-structure class=hash-link aria-label="Direct link to 9.2 Functional Specification Structure" title="Direct link to 9.2 Functional Specification Structure" translate=no>​</a></h2>
+<p>A well-structured functional specification ensures clarity and completeness.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=921-introduction>9.2.1 Introduction<a href=#921-introduction class=hash-link aria-label="Direct link to 9.2.1 Introduction" title="Direct link to 9.2.1 Introduction" translate=no>​</a></h3>
+<p>This section includes:</p>
+<ul>
+<li class="">Purpose of the document</li>
+<li class="">Scope of functionality</li>
+<li class="">Definitions and terminology</li>
+<li class="">References</li>
+</ul>
+<p>It clarifies:</p>
+<ul>
+<li class="">What this document covers</li>
+<li class="">Who should use it</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=922-system-overview>9.2.2 System Overview<a href=#922-system-overview class=hash-link aria-label="Direct link to 9.2.2 System Overview" title="Direct link to 9.2.2 System Overview" translate=no>​</a></h3>
+<p>Provides high-level description of:</p>
+<ul>
+<li class="">System objectives</li>
+<li class="">Major features</li>
+<li class="">User roles</li>
+<li class="">System boundaries</li>
+</ul>
+<p>This section gives context before detailed requirements.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=923-functional-requirements>9.2.3 Functional Requirements<a href=#923-functional-requirements class=hash-link aria-label="Direct link to 9.2.3 Functional Requirements" title="Direct link to 9.2.3 Functional Requirements" translate=no>​</a></h3>
+<p>Core section of the document.</p>
+<p>Describes:</p>
+<ul>
+<li class="">System behavior</li>
+<li class="">Processing logic</li>
+<li class="">Feature-specific requirements</li>
+</ul>
+<p>Requirements must be:</p>
+<ul>
+<li class="">Clear</li>
+<li class="">Numbered</li>
+<li class="">Testable</li>
+<li class="">Specific</li>
+</ul>
+<p>Example:</p>
+<p>FR-1: The system shall allow students to register online.</p>
+<p>FR-2: The system shall verify email address during registration.</p>
+<p>Functional requirements are often grouped by:</p>
+<ul>
+<li class="">Modules</li>
+<li class="">Features</li>
+<li class="">User roles</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=924-input--output-description>9.2.4 Input / Output Description<a href=#924-input--output-description class=hash-link aria-label="Direct link to 9.2.4 Input / Output Description" title="Direct link to 9.2.4 Input / Output Description" translate=no>​</a></h3>
+<p>Defines:</p>
+<ul>
+<li class="">Input data</li>
+<li class="">Input validation rules</li>
+<li class="">Output format</li>
+<li class="">Display behavior</li>
+</ul>
+<p>Example:</p>
+<p>Input:</p>
+<ul>
+<li class="">Username (String, max 20 characters)</li>
+<li class="">Password (Minimum 8 characters)</li>
+</ul>
+<p>Output:</p>
+<ul>
+<li class="">Success message</li>
+<li class="">Error message</li>
+</ul>
+<p>This section ensures:</p>
+<ul>
+<li class="">Clarity for developers</li>
+<li class="">Accurate UI development</li>
+<li class="">Correct data handling</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=925-business-rules>9.2.5 Business Rules<a href=#925-business-rules class=hash-link aria-label="Direct link to 9.2.5 Business Rules" title="Direct link to 9.2.5 Business Rules" translate=no>​</a></h3>
+<p>Business Rules define:</p>
+<ul>
+<li class="">Logical constraints</li>
+<li class="">Domain policies</li>
+<li class="">Calculation rules</li>
+<li class="">Eligibility conditions</li>
+</ul>
+<p>Examples:</p>
+<ul>
+<li class="">A student can register for a maximum of 5 exams.</li>
+<li class="">Payment must be completed before hall ticket generation.</li>
+</ul>
+<p>Business rules are critical because:</p>
+<ul>
+<li class="">They define domain logic</li>
+<li class="">They ensure compliance</li>
+<li class="">They prevent invalid operations</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=926-error-handling>9.2.6 Error Handling<a href=#926-error-handling class=hash-link aria-label="Direct link to 9.2.6 Error Handling" title="Direct link to 9.2.6 Error Handling" translate=no>​</a></h3>
+<p>Specifies how the system handles:</p>
+<ul>
+<li class="">Invalid inputs</li>
+<li class="">System failures</li>
+<li class="">Security violations</li>
+<li class="">Network issues</li>
+</ul>
+<p>Example:</p>
+<ul>
+<li class="">If payment fails, display transaction failure message.</li>
+<li class="">If server is unavailable, show maintenance notification.</li>
+</ul>
+<p>Proper error handling improves:</p>
+<ul>
+<li class="">System reliability</li>
+<li class="">User experience</li>
+<li class="">Fault tolerance</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=93-relationship-between-use-cases--functional-specification>9.3 Relationship Between Use Cases & Functional Specification<a href=#93-relationship-between-use-cases--functional-specification class=hash-link aria-label="Direct link to 9.3 Relationship Between Use Cases & Functional Specification" title="Direct link to 9.3 Relationship Between Use Cases & Functional Specification" translate=no>​</a></h2>
+<p>Use Cases and Functional Specification are closely connected.</p>
+<p>Use Cases describe scenarios.</p>
+<p>Functional Specification defines detailed behavior.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=931-one-use-case--multiple-functional-requirements>9.3.1 One Use Case → Multiple Functional Requirements<a href=#931-one-use-case--multiple-functional-requirements class=hash-link aria-label="Direct link to 9.3.1 One Use Case → Multiple Functional Requirements" title="Direct link to 9.3.1 One Use Case → Multiple Functional Requirements" translate=no>​</a></h3>
+<p>A single Use Case may generate multiple functional requirements.</p>
+<p>Example:</p>
+<p>Use Case: Online Exam Registration</p>
+<p>Derived Requirements:</p>
+<ul>
+<li class="">Display exam list</li>
+<li class="">Validate eligibility</li>
+<li class="">Process payment</li>
+<li class="">Generate confirmation</li>
+</ul>
+<p>One use case expands into several functional statements.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=932-completeness>9.3.2 Completeness<a href=#932-completeness class=hash-link aria-label="Direct link to 9.3.2 Completeness" title="Direct link to 9.3.2 Completeness" translate=no>​</a></h3>
+<p>Functional Specification ensures:</p>
+<ul>
+<li class="">All Use Cases are covered</li>
+<li class="">No scenario is missed</li>
+<li class="">All alternate flows are included</li>
+</ul>
+<p>Completeness ensures no feature gap.</p>
+<p>Mapping example:</p>
+<!-- -->
+<p>If any use case has no mapped requirement → incomplete specification.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=933-testability>9.3.3 Testability<a href=#933-testability class=hash-link aria-label="Direct link to 9.3.3 Testability" title="Direct link to 9.3.3 Testability" translate=no>​</a></h3>
+<p>Functional requirements must be:</p>
+<ul>
+<li class="">Measurable</li>
+<li class="">Verifiable</li>
+</ul>
+<p>Each requirement should:</p>
+<ul>
+<li class="">Map to at least one test case</li>
+</ul>
+<p>Example:</p>
+<p>Requirement:</p>
+<p>“The system shall respond within 2 seconds.”</p>
+<p>Test Case:</p>
+<p>Measure response time under normal load.</p>
+<p>Testability ensures:</p>
+<ul>
+<li class="">Quality assurance</li>
+<li class="">Objective validation</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=934-traceability>9.3.4 Traceability<a href=#934-traceability class=hash-link aria-label="Direct link to 9.3.4 Traceability" title="Direct link to 9.3.4 Traceability" translate=no>​</a></h3>
+<p>Traceability ensures:</p>
+<ul>
+<li class="">Each requirement is linked to its source</li>
+<li class="">Each requirement is implemented</li>
+<li class="">Each requirement is tested</li>
+</ul>
+<p>Traceability Flow:</p>
+<!-- -->
+<p>Traceability helps:</p>
+<ul>
+<li class="">Impact analysis during changes</li>
+<li class="">Requirement management</li>
+<li class="">Quality control</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-6>Summary<a href=#summary-6 class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>Functional Specification:</p>
+<ul>
+<li class="">Converts use cases into detailed requirements</li>
+<li class="">Provides structured functional documentation</li>
+<li class="">Supports development and testing</li>
+</ul>
+<p>Relationship:</p>
+<ul>
+<li class="">Use Cases → High-level interaction</li>
+<li class="">Functional Specification → Detailed implementation behavior</li>
+</ul>
+<p>Together they ensure:</p>
+<ul>
+<li class="">Completeness</li>
+<li class="">Testability</li>
+<li class="">Traceability</li>
+<li class="">Clear system behavior</li>
+</ul>
+<hr/>
+<hr/>
+<h1>10. Requirements Validation</h1>
+<p>Requirements Validation is a critical activity performed after requirements specification and before system design.</p>
+<p>It ensures that:</p>
+<ul>
+<li class="">Documented requirements truly reflect stakeholder needs</li>
+<li class="">Requirements are complete and consistent</li>
+<li class="">No major errors exist before development begins</li>
+</ul>
+<p>Validation helps answer:</p>
+<blockquote>
+<p>Are we building the right system?</p>
+</blockquote>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=101-definition-of-requirements-validation>10.1 Definition of Requirements Validation<a href=#101-definition-of-requirements-validation class=hash-link aria-label="Direct link to 10.1 Definition of Requirements Validation" title="Direct link to 10.1 Definition of Requirements Validation" translate=no>​</a></h2>
+<p>Requirements Validation is:</p>
+<blockquote>
+<p>The process of evaluating the documented requirements to ensure they accurately represent stakeholder needs and are suitable for development.</p>
+</blockquote>
+<p>It involves:</p>
+<ul>
+<li class="">Reviewing requirements</li>
+<li class="">Checking quality attributes</li>
+<li class="">Identifying inconsistencies</li>
+<li class="">Detecting missing requirements</li>
+</ul>
+<p>Validation focuses on correctness of requirements from a stakeholder perspective.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=102-need-for-requirements-validation>10.2 Need for Requirements Validation<a href=#102-need-for-requirements-validation class=hash-link aria-label="Direct link to 10.2 Need for Requirements Validation" title="Direct link to 10.2 Need for Requirements Validation" translate=no>​</a></h2>
+<p>Requirements errors are among the most expensive defects in software projects.</p>
+<p>Validation is necessary because:</p>
+<ul>
+<li class="">Requirements define the foundation of the system</li>
+<li class="">Errors at this stage affect all later stages</li>
+</ul>
+<p>The cost of fixing errors increases dramatically in later phases:</p>
+<ul>
+<li class="">Requirement phase → Low cost</li>
+<li class="">Design phase → Higher</li>
+<li class="">Coding phase → Very high</li>
+<li class="">Post-deployment → Extremely high</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1021-prevent-wrong-system-development>10.2.1 Prevent Wrong System Development<a href=#1021-prevent-wrong-system-development class=hash-link aria-label="Direct link to 10.2.1 Prevent Wrong System Development" title="Direct link to 10.2.1 Prevent Wrong System Development" translate=no>​</a></h3>
+<p>If requirements are incorrect:</p>
+<ul>
+<li class="">The system may not meet user needs</li>
+<li class="">Stakeholders may reject the final product</li>
+</ul>
+<p>Example:</p>
+<p>If login security is not specified properly → System becomes vulnerable.</p>
+<p>Validation ensures:</p>
+<ul>
+<li class="">Right problem is addressed</li>
+<li class="">Correct functionality is defined</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1022-avoid-costly-rework>10.2.2 Avoid Costly Rework<a href=#1022-avoid-costly-rework class=hash-link aria-label="Direct link to 10.2.2 Avoid Costly Rework" title="Direct link to 10.2.2 Avoid Costly Rework" translate=no>​</a></h3>
+<p>Rework occurs when:</p>
+<ul>
+<li class="">Requirements are misunderstood</li>
+<li class="">Features are missing</li>
+<li class="">Functionality is incorrect</li>
+</ul>
+<p>Fixing issues during development is expensive.</p>
+<p>Validation at early stage:</p>
+<ul>
+<li class="">Detects defects early</li>
+<li class="">Reduces rework</li>
+<li class="">Saves cost and time</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1023-improve-user-satisfaction>10.2.3 Improve User Satisfaction<a href=#1023-improve-user-satisfaction class=hash-link aria-label="Direct link to 10.2.3 Improve User Satisfaction" title="Direct link to 10.2.3 Improve User Satisfaction" translate=no>​</a></h3>
+<p>Validated requirements ensure:</p>
+<ul>
+<li class="">Stakeholder expectations are aligned</li>
+<li class="">Business objectives are met</li>
+<li class="">System behaves as intended</li>
+</ul>
+<p>Satisfied users are more likely to:</p>
+<ul>
+<li class="">Accept the system</li>
+<li class="">Continue using it</li>
+<li class="">Recommend it</li>
+</ul>
+<p>User involvement in validation increases acceptance.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1024-reduce-project-failure-risk>10.2.4 Reduce Project Failure Risk<a href=#1024-reduce-project-failure-risk class=hash-link aria-label="Direct link to 10.2.4 Reduce Project Failure Risk" title="Direct link to 10.2.4 Reduce Project Failure Risk" translate=no>​</a></h3>
+<p>Common causes of project failure:</p>
+<ul>
+<li class="">Poor requirement understanding</li>
+<li class="">Scope creep</li>
+<li class="">Conflicting expectations</li>
+</ul>
+<p>Validation reduces risk by:</p>
+<ul>
+<li class="">Clarifying requirements</li>
+<li class="">Ensuring feasibility</li>
+<li class="">Confirming stakeholder agreement</li>
+</ul>
+<p>Proper validation increases project success probability.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=103-verification-vs-validation>10.3 Verification vs Validation<a href=#103-verification-vs-validation class=hash-link aria-label="Direct link to 10.3 Verification vs Validation" title="Direct link to 10.3 Verification vs Validation" translate=no>​</a></h2>
+<p>Verification and Validation are related but different concepts.</p>
+<p>Verification:</p>
+<blockquote>
+<p>Are we building the product right?</p>
+</blockquote>
+<p>Validation:</p>
+<blockquote>
+<p>Are we building the right product?</p>
+</blockquote>
+<p>Comparison:</p>
+<table><thead><tr><th>Aspect<th>Verification<th>Validation<tbody><tr><td>Focus<td>Internal consistency<td>Stakeholder needs<tr><td>Stage<td>Throughout development<td>After requirement specification<tr><td>Method<td>Reviews, inspections<td>Reviews, stakeholder approval<tr><td>Objective<td>Correct implementation<td>Correct requirements</table>
+<p>Verification checks correctness of documentation.</p>
+<p>Validation checks correctness of intent.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=104-objectives-of-requirements-validation>10.4 Objectives of Requirements Validation<a href=#104-objectives-of-requirements-validation class=hash-link aria-label="Direct link to 10.4 Objectives of Requirements Validation" title="Direct link to 10.4 Objectives of Requirements Validation" translate=no>​</a></h2>
+<p>Requirements validation ensures that the SRS has the following qualities:</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1041-correct>10.4.1 Correct<a href=#1041-correct class=hash-link aria-label="Direct link to 10.4.1 Correct" title="Direct link to 10.4.1 Correct" translate=no>​</a></h3>
+<p>Each requirement must:</p>
+<ul>
+<li class="">Reflect actual stakeholder needs</li>
+<li class="">Not contain incorrect functionality</li>
+</ul>
+<p>Incorrect requirements lead to wrong system design.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1042-complete>10.4.2 Complete<a href=#1042-complete class=hash-link aria-label="Direct link to 10.4.2 Complete" title="Direct link to 10.4.2 Complete" translate=no>​</a></h3>
+<p>Requirements must include:</p>
+<ul>
+<li class="">All functional requirements</li>
+<li class="">All non-functional requirements</li>
+<li class="">All constraints</li>
+</ul>
+<p>No important feature should be missing.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1043-consistent>10.4.3 Consistent<a href=#1043-consistent class=hash-link aria-label="Direct link to 10.4.3 Consistent" title="Direct link to 10.4.3 Consistent" translate=no>​</a></h3>
+<p>Requirements must:</p>
+<ul>
+<li class="">Not contradict each other</li>
+<li class="">Use uniform terminology</li>
+</ul>
+<p>Example inconsistency:</p>
+<p>Requirement A: Maximum 500 users</p>
+<p>Requirement B: Unlimited users</p>
+<p>Such conflicts must be resolved.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1044-unambiguous>10.4.4 Unambiguous<a href=#1044-unambiguous class=hash-link aria-label="Direct link to 10.4.4 Unambiguous" title="Direct link to 10.4.4 Unambiguous" translate=no>​</a></h3>
+<p>Each requirement must have:</p>
+<ul>
+<li class="">Only one clear interpretation</li>
+</ul>
+<p>Avoid vague words like:</p>
+<ul>
+<li class="">Fast</li>
+<li class="">Secure</li>
+<li class="">User-friendly</li>
+</ul>
+<p>Instead use measurable statements.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1045-feasible>10.4.5 Feasible<a href=#1045-feasible class=hash-link aria-label="Direct link to 10.4.5 Feasible" title="Direct link to 10.4.5 Feasible" translate=no>​</a></h3>
+<p>Requirements must be:</p>
+<ul>
+<li class="">Technically achievable</li>
+<li class="">Within budget</li>
+<li class="">Realistic within schedule</li>
+</ul>
+<p>Example of infeasible requirement:</p>
+<p>“System shall support 1 million users instantly with no infrastructure planning.”</p>
+<p>Feasibility ensures practical development.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1046-testable>10.4.6 Testable<a href=#1046-testable class=hash-link aria-label="Direct link to 10.4.6 Testable" title="Direct link to 10.4.6 Testable" translate=no>​</a></h3>
+<p>Each requirement must be:</p>
+<ul>
+<li class="">Measurable</li>
+<li class="">Verifiable</li>
+</ul>
+<p>Example:</p>
+<p>Non-testable:</p>
+<p>“System shall be easy to use.”</p>
+<p>Testable:</p>
+<p>“New user shall complete registration within 3 minutes.”</p>
+<p>Testability ensures objective evaluation.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1047-traceable>10.4.7 Traceable<a href=#1047-traceable class=hash-link aria-label="Direct link to 10.4.7 Traceable" title="Direct link to 10.4.7 Traceable" translate=no>​</a></h3>
+<p>Each requirement should:</p>
+<ul>
+<li class="">Have a unique identifier</li>
+<li class="">Be linked to source</li>
+<li class="">Be linked to design and test cases</li>
+</ul>
+<p>Traceability ensures:</p>
+<ul>
+<li class="">Impact analysis during changes</li>
+<li class="">No requirement is lost</li>
+<li class="">Complete test coverage</li>
+</ul>
+<p>Traceability flow:</p>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-7>Summary<a href=#summary-7 class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>Requirements Validation:</p>
+<ul>
+<li class="">Ensures system correctness before development</li>
+<li class="">Reduces cost and risk</li>
+<li class="">Improves quality</li>
+<li class="">Increases stakeholder satisfaction</li>
+</ul>
+<p>Objectives include:</p>
+<ul>
+<li class="">Correct</li>
+<li class="">Complete</li>
+<li class="">Consistent</li>
+<li class="">Unambiguous</li>
+<li class="">Feasible</li>
+<li class="">Testable</li>
+<li class="">Traceable</li>
+</ul>
+<p>Early validation significantly improves software project success.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=105-validation-checklist>10.5 Validation Checklist<a href=#105-validation-checklist class=hash-link aria-label="Direct link to 10.5 Validation Checklist" title="Direct link to 10.5 Validation Checklist" translate=no>​</a></h2>
+<p>A Validation Checklist is used to systematically verify the quality and completeness of the SRS document.</p>
+<p>It helps reviewers ensure that:</p>
+<ul>
+<li class="">No important requirement is missing</li>
+<li class="">No ambiguity exists</li>
+<li class="">All constraints are clearly defined</li>
+<li class="">Requirements are realistic and testable</li>
+</ul>
+<p>Using a checklist improves consistency during review.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1051-function-completeness>10.5.1 Function Completeness<a href=#1051-function-completeness class=hash-link aria-label="Direct link to 10.5.1 Function Completeness" title="Direct link to 10.5.1 Function Completeness" translate=no>​</a></h3>
+<p>Check whether:</p>
+<ul>
+<li class="">All required system functions are documented</li>
+<li class="">All user roles are covered</li>
+<li class="">All use cases are represented</li>
+<li class="">All alternate flows are included</li>
+</ul>
+<p>Questions to ask:</p>
+<ul>
+<li class="">Does every actor have defined functions?</li>
+<li class="">Are error scenarios specified?</li>
+<li class="">Are boundary conditions included?</li>
+</ul>
+<p>Missing functions can lead to:</p>
+<ul>
+<li class="">System gaps</li>
+<li class="">User dissatisfaction</li>
+<li class="">Rework</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1052-non-functional-requirements-specified>10.5.2 Non-Functional Requirements Specified<a href=#1052-non-functional-requirements-specified class=hash-link aria-label="Direct link to 10.5.2 Non-Functional Requirements Specified" title="Direct link to 10.5.2 Non-Functional Requirements Specified" translate=no>​</a></h3>
+<p>Ensure that:</p>
+<ul>
+<li class="">Performance requirements are defined</li>
+<li class="">Security constraints are included</li>
+<li class="">Usability standards are mentioned</li>
+<li class="">Reliability requirements are stated</li>
+</ul>
+<p>Common mistake:</p>
+<p>Focusing only on functionality and ignoring quality attributes.</p>
+<p>Checklist example:</p>
+<ul>
+<li class="">Is response time specified?</li>
+<li class="">Is data encryption defined?</li>
+<li class="">Are availability targets included?</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1053-realistic-requirements>10.5.3 Realistic Requirements<a href=#1053-realistic-requirements class=hash-link aria-label="Direct link to 10.5.3 Realistic Requirements" title="Direct link to 10.5.3 Realistic Requirements" translate=no>​</a></h3>
+<p>Requirements must be:</p>
+<ul>
+<li class="">Technically feasible</li>
+<li class="">Achievable within budget</li>
+<li class="">Realistic within schedule</li>
+</ul>
+<p>Unrealistic example:</p>
+<p>“The system shall handle unlimited users instantly.”</p>
+<p>Checklist:</p>
+<ul>
+<li class="">Do we have required infrastructure?</li>
+<li class="">Are skills available?</li>
+<li class="">Is budget sufficient?</li>
+</ul>
+<p>Feasibility reduces project risk.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1054-measurable--testable-requirements>10.5.4 Measurable & Testable Requirements<a href=#1054-measurable--testable-requirements class=hash-link aria-label="Direct link to 10.5.4 Measurable & Testable Requirements" title="Direct link to 10.5.4 Measurable & Testable Requirements" translate=no>​</a></h3>
+<p>Each requirement must be:</p>
+<ul>
+<li class="">Quantifiable</li>
+<li class="">Verifiable</li>
+</ul>
+<p>Bad example:</p>
+<p>“The system shall be efficient.”</p>
+<p>Good example:</p>
+<p>“The system shall process transactions within 2 seconds under normal load.”</p>
+<p>Checklist:</p>
+<ul>
+<li class="">Can this requirement be tested?</li>
+<li class="">Can we measure its performance?</li>
+</ul>
+<p>If it cannot be tested, it should be rewritten.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1055-clear-constraints>10.5.5 Clear Constraints<a href=#1055-clear-constraints class=hash-link aria-label="Direct link to 10.5.5 Clear Constraints" title="Direct link to 10.5.5 Clear Constraints" translate=no>​</a></h3>
+<p>Constraints must be clearly defined.</p>
+<p>Examples:</p>
+<ul>
+<li class="">Platform constraints (Windows, Linux)</li>
+<li class="">Legal constraints (data protection laws)</li>
+<li class="">Hardware limitations</li>
+</ul>
+<p>Checklist:</p>
+<ul>
+<li class="">Are regulatory requirements specified?</li>
+<li class="">Are integration dependencies documented?</li>
+<li class="">Are design limitations mentioned?</li>
+</ul>
+<p>Clear constraints guide architecture decisions.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1056-conflict-detection>10.5.6 Conflict Detection<a href=#1056-conflict-detection class=hash-link aria-label="Direct link to 10.5.6 Conflict Detection" title="Direct link to 10.5.6 Conflict Detection" translate=no>​</a></h3>
+<p>Check for contradictions within requirements.</p>
+<p>Example conflict:</p>
+<ul>
+<li class="">System shall support unlimited users.</li>
+<li class="">System supports maximum 1000 concurrent users.</li>
+</ul>
+<p>Checklist:</p>
+<ul>
+<li class="">Do any requirements contradict each other?</li>
+<li class="">Are terminology and definitions consistent?</li>
+<li class="">Are units of measurement uniform?</li>
+</ul>
+<p>Conflict detection prevents confusion during development.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=106-requirements-validation-techniques>10.6 Requirements Validation Techniques<a href=#106-requirements-validation-techniques class=hash-link aria-label="Direct link to 10.6 Requirements Validation Techniques" title="Direct link to 10.6 Requirements Validation Techniques" translate=no>​</a></h2>
+<p>Validation techniques help detect errors, omissions, and inconsistencies in requirements.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1061-requirements-reviews>10.6.1 Requirements Reviews<a href=#1061-requirements-reviews class=hash-link aria-label="Direct link to 10.6.1 Requirements Reviews" title="Direct link to 10.6.1 Requirements Reviews" translate=no>​</a></h3>
+<p>Formal evaluation of SRS by stakeholders and technical team.</p>
+<p>Participants may include:</p>
+<ul>
+<li class="">Project Manager</li>
+<li class="">Developers</li>
+<li class="">Testers</li>
+<li class="">Business Analysts</li>
+<li class="">Clients</li>
+</ul>
+<p>Objectives:</p>
+<ul>
+<li class="">Identify missing requirements</li>
+<li class="">Detect ambiguity</li>
+<li class="">Ensure feasibility</li>
+</ul>
+<p>Review flow:</p>
+<!-- -->
+<p>Benefits:</p>
+<ul>
+<li class="">Early defect detection</li>
+<li class="">Reduced rework cost</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1062-prototyping>10.6.2 Prototyping<a href=#1062-prototyping class=hash-link aria-label="Direct link to 10.6.2 Prototyping" title="Direct link to 10.6.2 Prototyping" translate=no>​</a></h3>
+<p>Prototyping involves building a working model of the system to validate requirements.</p>
+<p>It helps stakeholders:</p>
+<ul>
+<li class="">Visualize system behavior</li>
+<li class="">Provide feedback</li>
+<li class="">Clarify expectations</li>
+</ul>
+<hr/>
+<p><strong>10.6.2.1 Throwaway Prototype</strong></p>
+<ul>
+<li class="">Built quickly for requirement clarification</li>
+<li class="">Discarded after validation</li>
+<li class="">Not part of final system</li>
+</ul>
+<p>Purpose:</p>
+<ul>
+<li class="">Understand unclear requirements</li>
+<li class="">Demonstrate interface concepts</li>
+</ul>
+<p>Advantage:</p>
+<ul>
+<li class="">Fast feedback</li>
+</ul>
+<hr/>
+<p><strong>10.6.2.2 Evolutionary Prototype</strong></p>
+<ul>
+<li class="">Gradually refined into final system</li>
+<li class="">Improved iteratively</li>
+<li class="">Becomes part of final product</li>
+</ul>
+<p>Suitable for:</p>
+<ul>
+<li class="">Complex systems</li>
+<li class="">Unclear or evolving requirements</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1063-model-validation>10.6.3 Model Validation<a href=#1063-model-validation class=hash-link aria-label="Direct link to 10.6.3 Model Validation" title="Direct link to 10.6.3 Model Validation" translate=no>​</a></h3>
+<p>System models help visually validate requirements.</p>
+<p>Models improve clarity and detect logical errors.</p>
+<hr/>
+<p><strong>10.6.3.1 Use Case Diagrams</strong></p>
+<ul>
+<li class="">Validate system functionality</li>
+<li class="">Confirm actor interactions</li>
+<li class="">Identify missing use cases</li>
+</ul>
+<p>Example:</p>
+<!-- -->
+<p>Ensures complete coverage of user interactions.</p>
+<hr/>
+<p><strong>10.6.3.2 DFDs (Data Flow Diagrams)</strong></p>
+<ul>
+<li class="">Validate data movement</li>
+<li class="">Identify missing processes</li>
+<li class="">Detect redundant data flow</li>
+</ul>
+<p>Example:</p>
+<!-- -->
+<p>Helps verify logical consistency.</p>
+<hr/>
+<p><strong>10.6.3.3 ER Diagrams</strong></p>
+<ul>
+<li class="">Validate data relationships</li>
+<li class="">Ensure database consistency</li>
+<li class="">Identify missing entities</li>
+</ul>
+<p>Example:</p>
+<!-- -->
+<p>Helps detect structural data issues.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1064-requirements-based-testing>10.6.4 Requirements-Based Testing<a href=#1064-requirements-based-testing class=hash-link aria-label="Direct link to 10.6.4 Requirements-Based Testing" title="Direct link to 10.6.4 Requirements-Based Testing" translate=no>​</a></h3>
+<p>Test cases are derived directly from requirements.</p>
+<p>Each requirement should have:</p>
+<ul>
+<li class="">At least one corresponding test case</li>
+</ul>
+<p>Purpose:</p>
+<ul>
+<li class="">Ensure every requirement is verifiable</li>
+<li class="">Detect ambiguous or incomplete requirements</li>
+</ul>
+<p>Traceability example:</p>
+<!-- -->
+<p>This ensures coverage and accountability.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1065-user-acceptance-testing>10.6.5 User Acceptance Testing<a href=#1065-user-acceptance-testing class=hash-link aria-label="Direct link to 10.6.5 User Acceptance Testing" title="Direct link to 10.6.5 User Acceptance Testing" translate=no>​</a></h3>
+<p>User Acceptance Testing (UAT):</p>
+<ul>
+<li class="">Performed by end users</li>
+<li class="">Validates system against real-world needs</li>
+</ul>
+<p>Objectives:</p>
+<ul>
+<li class="">Confirm requirements are met</li>
+<li class="">Validate business functionality</li>
+<li class="">Obtain stakeholder approval</li>
+</ul>
+<p>UAT ensures final system matches stakeholder expectations.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-8>Summary<a href=#summary-8 class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>Validation Checklist ensures:</p>
+<ul>
+<li class="">Completeness</li>
+<li class="">Realism</li>
+<li class="">Measurability</li>
+<li class="">Conflict detection</li>
+</ul>
+<p>Validation Techniques include:</p>
+<ul>
+<li class="">Reviews</li>
+<li class="">Prototyping</li>
+<li class="">Model validation</li>
+<li class="">Requirements-based testing</li>
+<li class="">User acceptance testing</li>
+</ul>
+<p>Proper validation significantly reduces:</p>
+<ul>
+<li class="">Development risk</li>
+<li class="">Cost overruns</li>
+<li class="">Requirement-related failures</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=107-requirements-validation-process>10.7 Requirements Validation Process<a href=#107-requirements-validation-process class=hash-link aria-label="Direct link to 10.7 Requirements Validation Process" title="Direct link to 10.7 Requirements Validation Process" translate=no>​</a></h2>
+<p>The Requirements Validation Process is a structured sequence of activities performed to ensure that the documented requirements are correct, complete, and acceptable to stakeholders.</p>
+<p>It ensures early detection of defects before design and implementation begin.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1071-prepare-srs>10.7.1 Prepare SRS<a href=#1071-prepare-srs class=hash-link aria-label="Direct link to 10.7.1 Prepare SRS" title="Direct link to 10.7.1 Prepare SRS" translate=no>​</a></h3>
+<p>The first step is to prepare the Software Requirements Specification (SRS).</p>
+<p>The SRS must:</p>
+<ul>
+<li class="">Contain all functional and non-functional requirements</li>
+<li class="">Be clearly structured</li>
+<li class="">Use precise language</li>
+<li class="">Include constraints and assumptions</li>
+</ul>
+<p>Preparation ensures there is a formal document ready for evaluation.</p>
+<p>Without a prepared SRS, validation cannot proceed effectively.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1072-select-techniques>10.7.2 Select Techniques<a href=#1072-select-techniques class=hash-link aria-label="Direct link to 10.7.2 Select Techniques" title="Direct link to 10.7.2 Select Techniques" translate=no>​</a></h3>
+<p>Next, appropriate validation techniques are selected.</p>
+<p>Techniques may include:</p>
+<ul>
+<li class="">Requirements reviews</li>
+<li class="">Prototyping</li>
+<li class="">Model validation</li>
+<li class="">Requirements-based testing</li>
+<li class="">User acceptance testing</li>
+</ul>
+<p>Selection depends on:</p>
+<ul>
+<li class="">Project size</li>
+<li class="">Complexity</li>
+<li class="">Stakeholder involvement</li>
+<li class="">Risk level</li>
+</ul>
+<p>Choosing the right technique improves validation effectiveness.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1073-conduct-reviews>10.7.3 Conduct Reviews<a href=#1073-conduct-reviews class=hash-link aria-label="Direct link to 10.7.3 Conduct Reviews" title="Direct link to 10.7.3 Conduct Reviews" translate=no>​</a></h3>
+<p>Formal or informal reviews are conducted.</p>
+<p>Participants may include:</p>
+<ul>
+<li class="">Project Manager</li>
+<li class="">Developers</li>
+<li class="">Testers</li>
+<li class="">Business Analysts</li>
+<li class="">Stakeholders</li>
+</ul>
+<p>Objectives:</p>
+<ul>
+<li class="">Identify unclear requirements</li>
+<li class="">Detect missing functionality</li>
+<li class="">Check feasibility</li>
+<li class="">Detect contradictions</li>
+</ul>
+<p>Reviews encourage collaborative evaluation.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1074-identify-defects>10.7.4 Identify Defects<a href=#1074-identify-defects class=hash-link aria-label="Direct link to 10.7.4 Identify Defects" title="Direct link to 10.7.4 Identify Defects" translate=no>​</a></h3>
+<p>During validation, defects are identified such as:</p>
+<ul>
+<li class="">Ambiguity</li>
+<li class="">Incompleteness</li>
+<li class="">Inconsistency</li>
+<li class="">Unrealistic requirements</li>
+<li class="">Missing constraints</li>
+</ul>
+<p>All defects must be:</p>
+<ul>
+<li class="">Documented</li>
+<li class="">Classified</li>
+<li class="">Tracked</li>
+</ul>
+<p>Early defect identification prevents costly rework later.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1075-modify-requirements>10.7.5 Modify Requirements<a href=#1075-modify-requirements class=hash-link aria-label="Direct link to 10.7.5 Modify Requirements" title="Direct link to 10.7.5 Modify Requirements" translate=no>​</a></h3>
+<p>After defects are identified:</p>
+<ul>
+<li class="">Requirements are revised</li>
+<li class="">Ambiguities are clarified</li>
+<li class="">Missing requirements are added</li>
+<li class="">Conflicts are resolved</li>
+</ul>
+<p>Updated SRS must reflect:</p>
+<ul>
+<li class="">Corrected statements</li>
+<li class="">Approved changes</li>
+</ul>
+<p>This step improves requirement quality.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1076-obtain-stakeholder-approval>10.7.6 Obtain Stakeholder Approval<a href=#1076-obtain-stakeholder-approval class=hash-link aria-label="Direct link to 10.7.6 Obtain Stakeholder Approval" title="Direct link to 10.7.6 Obtain Stakeholder Approval" translate=no>​</a></h3>
+<p>Final step is stakeholder approval.</p>
+<p>Stakeholders:</p>
+<ul>
+<li class="">Review revised SRS</li>
+<li class="">Confirm correctness</li>
+<li class="">Provide formal sign-off</li>
+</ul>
+<p>Approval ensures:</p>
+<ul>
+<li class="">Agreement on scope</li>
+<li class="">Reduced disputes</li>
+<li class="">Controlled development start</li>
+</ul>
+<p>Validation process flow:</p>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=108-common-problems-in-requirements-validation>10.8 Common Problems in Requirements Validation<a href=#108-common-problems-in-requirements-validation class=hash-link aria-label="Direct link to 10.8 Common Problems in Requirements Validation" title="Direct link to 10.8 Common Problems in Requirements Validation" translate=no>​</a></h2>
+<p>Despite structured processes, validation may face challenges.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1081-stakeholder-unavailability>10.8.1 Stakeholder Unavailability<a href=#1081-stakeholder-unavailability class=hash-link aria-label="Direct link to 10.8.1 Stakeholder Unavailability" title="Direct link to 10.8.1 Stakeholder Unavailability" translate=no>​</a></h3>
+<p>Stakeholders may be:</p>
+<ul>
+<li class="">Busy</li>
+<li class="">Unresponsive</li>
+<li class="">Indecisive</li>
+</ul>
+<p>Impact:</p>
+<ul>
+<li class="">Delayed approvals</li>
+<li class="">Incomplete feedback</li>
+<li class="">Validation gaps</li>
+</ul>
+<p>Without stakeholder input, requirements may remain inaccurate.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1082-changing-user-needs>10.8.2 Changing User Needs<a href=#1082-changing-user-needs class=hash-link aria-label="Direct link to 10.8.2 Changing User Needs" title="Direct link to 10.8.2 Changing User Needs" translate=no>​</a></h3>
+<p>User needs may change due to:</p>
+<ul>
+<li class="">Market changes</li>
+<li class="">Business strategy updates</li>
+<li class="">Regulatory changes</li>
+</ul>
+<p>Frequent changes may:</p>
+<ul>
+<li class="">Cause instability</li>
+<li class="">Delay validation</li>
+<li class="">Increase project risk</li>
+</ul>
+<p>Change management mechanisms are essential.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1083-miscommunication>10.8.3 Miscommunication<a href=#1083-miscommunication class=hash-link aria-label="Direct link to 10.8.3 Miscommunication" title="Direct link to 10.8.3 Miscommunication" translate=no>​</a></h3>
+<p>Miscommunication may occur between:</p>
+<ul>
+<li class="">Analysts and stakeholders</li>
+<li class="">Developers and analysts</li>
+<li class="">Technical and non-technical teams</li>
+</ul>
+<p>Consequences:</p>
+<ul>
+<li class="">Incorrect interpretation</li>
+<li class="">Conflicting requirements</li>
+<li class="">Rework</li>
+</ul>
+<p>Clear documentation and structured reviews reduce this risk.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1084-technical-jargon>10.8.4 Technical Jargon<a href=#1084-technical-jargon class=hash-link aria-label="Direct link to 10.8.4 Technical Jargon" title="Direct link to 10.8.4 Technical Jargon" translate=no>​</a></h3>
+<p>Using complex technical language may:</p>
+<ul>
+<li class="">Confuse non-technical stakeholders</li>
+<li class="">Lead to incorrect approvals</li>
+</ul>
+<p>Example:</p>
+<p>Using database normalization terms without explanation.</p>
+<p>Requirements should use:</p>
+<ul>
+<li class="">Clear language</li>
+<li class="">Simple terminology</li>
+<li class="">Supporting diagrams</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1085-lack-of-domain-knowledge>10.8.5 Lack of Domain Knowledge<a href=#1085-lack-of-domain-knowledge class=hash-link aria-label="Direct link to 10.8.5 Lack of Domain Knowledge" title="Direct link to 10.8.5 Lack of Domain Knowledge" translate=no>​</a></h3>
+<p>If analysts lack domain expertise:</p>
+<ul>
+<li class="">Important business rules may be missed</li>
+<li class="">Incorrect assumptions may be made</li>
+</ul>
+<p>Example:</p>
+<p>Developing banking software without understanding financial regulations.</p>
+<p>Domain knowledge is essential for accurate validation.</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=109-outcome-of-requirements-validation>10.9 Outcome of Requirements Validation<a href=#109-outcome-of-requirements-validation class=hash-link aria-label="Direct link to 10.9 Outcome of Requirements Validation" title="Direct link to 10.9 Outcome of Requirements Validation" translate=no>​</a></h2>
+<p>Proper validation produces significant benefits.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1091-reduced-errors>10.9.1 Reduced Errors<a href=#1091-reduced-errors class=hash-link aria-label="Direct link to 10.9.1 Reduced Errors" title="Direct link to 10.9.1 Reduced Errors" translate=no>​</a></h3>
+<p>Early detection of:</p>
+<ul>
+<li class="">Ambiguities</li>
+<li class="">Missing requirements</li>
+<li class="">Conflicts</li>
+</ul>
+<p>Leads to:</p>
+<ul>
+<li class="">Fewer defects during coding</li>
+<li class="">Reduced rework</li>
+<li class="">Improved quality</li>
+</ul>
+<p>Fixing errors early is cheaper and easier.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1092-reduced-development-risk>10.9.2 Reduced Development Risk<a href=#1092-reduced-development-risk class=hash-link aria-label="Direct link to 10.9.2 Reduced Development Risk" title="Direct link to 10.9.2 Reduced Development Risk" translate=no>​</a></h3>
+<p>Validation ensures:</p>
+<ul>
+<li class="">Requirements are feasible</li>
+<li class="">Scope is controlled</li>
+<li class="">Stakeholders are aligned</li>
+</ul>
+<p>This reduces:</p>
+<ul>
+<li class="">Budget overruns</li>
+<li class="">Project delays</li>
+<li class="">Failure probability</li>
+</ul>
+<p>Risk reduction improves project stability.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1093-higher-user-satisfaction>10.9.3 Higher User Satisfaction<a href=#1093-higher-user-satisfaction class=hash-link aria-label="Direct link to 10.9.3 Higher User Satisfaction" title="Direct link to 10.9.3 Higher User Satisfaction" translate=no>​</a></h3>
+<p>Validated requirements reflect:</p>
+<ul>
+<li class="">Actual user needs</li>
+<li class="">Business objectives</li>
+</ul>
+<p>Satisfied users are more likely to:</p>
+<ul>
+<li class="">Accept the system</li>
+<li class="">Continue using it</li>
+<li class="">Provide positive feedback</li>
+</ul>
+<p>User involvement improves system acceptance.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1094-strong-foundation-for-design--testing>10.9.4 Strong Foundation for Design & Testing<a href=#1094-strong-foundation-for-design--testing class=hash-link aria-label="Direct link to 10.9.4 Strong Foundation for Design & Testing" title="Direct link to 10.9.4 Strong Foundation for Design & Testing" translate=no>​</a></h3>
+<p>Validated requirements serve as:</p>
+<ul>
+<li class="">Input for system design</li>
+<li class="">Basis for test case development</li>
+<li class="">Reference for maintenance</li>
+</ul>
+<p>Traceability ensures:</p>
+<!-- -->
+<p>Strong foundation leads to:</p>
+<ul>
+<li class="">Structured development</li>
+<li class="">Effective testing</li>
+<li class="">Long-term maintainability</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=final-summary>Final Summary<a href=#final-summary class=hash-link aria-label="Direct link to Final Summary" title="Direct link to Final Summary" translate=no>​</a></h2>
+<p>Requirements Validation Process:</p>
+<ul>
+<li class="">Structured</li>
+<li class="">Iterative</li>
+<li class="">Stakeholder-driven</li>
+</ul>
+<p>Common Challenges:</p>
+<ul>
+<li class="">Stakeholder issues</li>
+<li class="">Requirement changes</li>
+<li class="">Communication gaps</li>
+<li class="">Knowledge limitations</li>
+</ul>
+<p>Outcomes:</p>
+<ul>
+<li class="">Reduced errors</li>
+<li class="">Reduced risk</li>
+<li class="">Higher satisfaction</li>
+<li class="">Strong development foundation</li>
+</ul>
+<p>Proper validation significantly increases the likelihood of project success.</p>
+<hr/>
+<hr/></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/ankur3-101106/docs/SE/u3.mdx target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/SE/u2><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Unit - 2</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/SE/u4><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Unit - 4</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#requirements-engineering class="table-of-contents__link toc-highlight">Requirements Engineering</a><li><a href=#11-concept-of-problem-recognition class="table-of-contents__link toc-highlight">1.1 Concept of Problem Recognition</a><ul><li><a href=#111-definition-of-problem-recognition class="table-of-contents__link toc-highlight">1.1.1 Definition of Problem Recognition</a><li><a href=#112-identifying-business-pain-points class="table-of-contents__link toc-highlight">1.1.2 Identifying Business Pain Points</a><li><a href=#113-identifying-market-opportunities class="table-of-contents__link toc-highlight">1.1.3 Identifying Market Opportunities</a><li><a href=#114-legal-or-regulatory-necessities class="table-of-contents__link toc-highlight">1.1.4 Legal or Regulatory Necessities</a><li><a href=#115-defining-core-problem-without-jumping-to-solution class="table-of-contents__link toc-highlight">1.1.5 Defining Core Problem Without Jumping to Solution</a><li><a href=#116-example-grocery-delivery-scenario class="table-of-contents__link toc-highlight">1.1.6 Example: Grocery Delivery Scenario</a></ul><li><a href=#key-takeaways class="table-of-contents__link toc-highlight">Key Takeaways</a><li><a href=#21-requirements-engineering-tasks class="table-of-contents__link toc-highlight">2.1 Requirements Engineering Tasks</a><ul><li><a href=#211-inception class="table-of-contents__link toc-highlight">2.1.1 Inception</a><li><a href=#212-elicitation class="table-of-contents__link toc-highlight">2.1.2 Elicitation</a><li><a href=#213-elaboration class="table-of-contents__link toc-highlight">2.1.3 Elaboration</a></ul><li><a href=#summary class="table-of-contents__link toc-highlight">Summary</a><ul><li><a href=#214-negotiation class="table-of-contents__link toc-highlight">2.1.4 Negotiation</a><li><a href=#215-specification class="table-of-contents__link toc-highlight">2.1.5 Specification</a><li><a href=#216-validation class="table-of-contents__link toc-highlight">2.1.6 Validation</a><li><a href=#217-requirements-management class="table-of-contents__link toc-highlight">2.1.7 Requirements Management</a></ul><li><a href=#summary-1 class="table-of-contents__link toc-highlight">Summary</a><li><a href=#31-what-is-a-software-process class="table-of-contents__link toc-highlight">3.1 What is a Software Process?</a><ul><li><a href=#311-structured-set-of-activities class="table-of-contents__link toc-highlight">3.1.1 Structured Set of Activities</a></ul><li><a href=#32-core-process-activities class="table-of-contents__link toc-highlight">3.2 Core Process Activities</a><ul><li><a href=#321-specification class="table-of-contents__link toc-highlight">3.2.1 Specification</a><li><a href=#322-design--implementation class="table-of-contents__link toc-highlight">3.2.2 Design & Implementation</a><li><a href=#323-validation class="table-of-contents__link toc-highlight">3.2.3 Validation</a><li><a href=#324-evolution class="table-of-contents__link toc-highlight">3.2.4 Evolution</a></ul><li><a href=#summary-2 class="table-of-contents__link toc-highlight">Summary</a><li><a href=#41-waterfall-model class="table-of-contents__link toc-highlight">4.1 Waterfall Model</a><ul><li><a href=#phases-of-waterfall-model class="table-of-contents__link toc-highlight">Phases of Waterfall Model:</a><li><a href=#characteristics class="table-of-contents__link toc-highlight">Characteristics:</a><li><a href=#advantages class="table-of-contents__link toc-highlight">Advantages:</a><li><a href=#disadvantages class="table-of-contents__link toc-highlight">Disadvantages:</a><li><a href=#suitable-when class="table-of-contents__link toc-highlight">Suitable When:</a></ul><li><a href=#42-incremental-model class="table-of-contents__link toc-highlight">4.2 Incremental Model</a><ul><li><a href=#characteristics-1 class="table-of-contents__link toc-highlight">Characteristics:</a><li><a href=#advantages-1 class="table-of-contents__link toc-highlight">Advantages:</a><li><a href=#disadvantages-1 class="table-of-contents__link toc-highlight">Disadvantages:</a><li><a href=#suitable-when-1 class="table-of-contents__link toc-highlight">Suitable When:</a></ul><li><a href=#43-spiral-model class="table-of-contents__link toc-highlight">4.3 Spiral Model</a><ul><li><a href=#characteristics-2 class="table-of-contents__link toc-highlight">Characteristics:</a><li><a href=#advantages-2 class="table-of-contents__link toc-highlight">Advantages:</a><li><a href=#disadvantages-2 class="table-of-contents__link toc-highlight">Disadvantages:</a><li><a href=#suitable-when-2 class="table-of-contents__link toc-highlight">Suitable When:</a></ul><li><a href=#44-agile-process-model class="table-of-contents__link toc-highlight">4.4 Agile Process Model</a><ul><li><a href=#characteristics-3 class="table-of-contents__link toc-highlight">Characteristics:</a><li><a href=#advantages-3 class="table-of-contents__link toc-highlight">Advantages:</a><li><a href=#disadvantages-3 class="table-of-contents__link toc-highlight">Disadvantages:</a><li><a href=#suitable-when-3 class="table-of-contents__link toc-highlight">Suitable When:</a></ul><li><a href=#comparison-overview class="table-of-contents__link toc-highlight">Comparison Overview</a><li><a href=#key-understanding class="table-of-contents__link toc-highlight">Key Understanding</a><li><a href=#51-what-is-a-requirement class="table-of-contents__link toc-highlight">5.1 What is a Requirement?</a><ul><li><a href=#511-service-provided-by-system class="table-of-contents__link toc-highlight">5.1.1 Service Provided by System</a><li><a href=#512-constraint-on-the-system class="table-of-contents__link toc-highlight">5.1.2 Constraint on the System</a></ul><li><a href=#52-types-of-requirements class="table-of-contents__link toc-highlight">5.2 Types of Requirements</a><ul><li><a href=#521-functional-requirements class="table-of-contents__link toc-highlight">5.2.1 Functional Requirements</a><li><a href=#522-non-functional-requirements class="table-of-contents__link toc-highlight">5.2.2 Non-Functional Requirements</a></ul><li><a href=#summary-3 class="table-of-contents__link toc-highlight">Summary</a><li><a href=#61-elicitation class="table-of-contents__link toc-highlight">6.1 Elicitation</a><ul><li><a href=#611-interviews class="table-of-contents__link toc-highlight">6.1.1 Interviews</a><li><a href=#612-questionnaires class="table-of-contents__link toc-highlight">6.1.2 Questionnaires</a><li><a href=#613-observation class="table-of-contents__link toc-highlight">6.1.3 Observation</a></ul><li><a href=#62-analysis class="table-of-contents__link toc-highlight">6.2 Analysis</a><ul><li><a href=#621-conflict-resolution class="table-of-contents__link toc-highlight">6.2.1 Conflict Resolution</a><li><a href=#622-requirement-prioritization class="table-of-contents__link toc-highlight">6.2.2 Requirement Prioritization</a></ul><li><a href=#63-specification class="table-of-contents__link toc-highlight">6.3 Specification</a><ul><li><a href=#631-clear-documentation-of-requirements class="table-of-contents__link toc-highlight">6.3.1 Clear Documentation of Requirements</a></ul><li><a href=#64-validation class="table-of-contents__link toc-highlight">6.4 Validation</a><ul><li><a href=#641-correctness-check class="table-of-contents__link toc-highlight">6.4.1 Correctness Check</a><li><a href=#642-completeness-check class="table-of-contents__link toc-highlight">6.4.2 Completeness Check</a><li><a href=#643-consistency-check class="table-of-contents__link toc-highlight">6.4.3 Consistency Check</a></ul><li><a href=#overall-requirements-engineering-flow class="table-of-contents__link toc-highlight">Overall Requirements Engineering Flow</a><li><a href=#71-what-is-srs class="table-of-contents__link toc-highlight">7.1 What is SRS?</a><ul><li><a href=#711-formal-requirement-document class="table-of-contents__link toc-highlight">7.1.1 Formal Requirement Document</a><li><a href=#712-ieee-definition class="table-of-contents__link toc-highlight">7.1.2 IEEE Definition</a></ul><li><a href=#72-contents-of-srs-document class="table-of-contents__link toc-highlight">7.2 Contents of SRS Document</a><ul><li><a href=#721-introduction class="table-of-contents__link toc-highlight">7.2.1 Introduction</a><li><a href=#722-overall-description class="table-of-contents__link toc-highlight">7.2.2 Overall Description</a><li><a href=#723-functional-requirements class="table-of-contents__link toc-highlight">7.2.3 Functional Requirements</a><li><a href=#724-non-functional-requirements class="table-of-contents__link toc-highlight">7.2.4 Non-Functional Requirements</a><li><a href=#725-system-models class="table-of-contents__link toc-highlight">7.2.5 System Models</a><li><a href=#726-constraints--assumptions class="table-of-contents__link toc-highlight">7.2.6 Constraints & Assumptions</a></ul><li><a href=#structure-overview-of-srs class="table-of-contents__link toc-highlight">Structure Overview of SRS</a><li><a href=#73-characteristics-of-good-srs class="table-of-contents__link toc-highlight">7.3 Characteristics of Good SRS</a><ul><li><a href=#731-correct class="table-of-contents__link toc-highlight">7.3.1 Correct</a><li><a href=#732-complete class="table-of-contents__link toc-highlight">7.3.2 Complete</a><li><a href=#733-consistent class="table-of-contents__link toc-highlight">7.3.3 Consistent</a><li><a href=#734-unambiguous class="table-of-contents__link toc-highlight">7.3.4 Unambiguous</a><li><a href=#735-verifiable class="table-of-contents__link toc-highlight">7.3.5 Verifiable</a></ul><li><a href=#74-importance-of-requirements-specification class="table-of-contents__link toc-highlight">7.4 Importance of Requirements Specification</a><ul><li><a href=#741-reduce-development-cost class="table-of-contents__link toc-highlight">7.4.1 Reduce Development Cost</a><li><a href=#742-avoid-misunderstandings class="table-of-contents__link toc-highlight">7.4.2 Avoid Misunderstandings</a><li><a href=#743-contract-between-client--developer class="table-of-contents__link toc-highlight">7.4.3 Contract Between Client & Developer</a><li><a href=#744-basis-for-design-testing--maintenance class="table-of-contents__link toc-highlight">7.4.4 Basis for Design, Testing & Maintenance</a></ul><li><a href=#summary-4 class="table-of-contents__link toc-highlight">Summary</a><li><a href=#81-use-cases--basics class="table-of-contents__link toc-highlight">8.1 Use Cases – Basics</a><ul><li><a href=#811-definition-of-use-case class="table-of-contents__link toc-highlight">8.1.1 Definition of Use Case</a><li><a href=#812-interaction-between-actor-and-system class="table-of-contents__link toc-highlight">8.1.2 Interaction Between Actor and System</a></ul><li><a href=#82-components-of-a-use-case class="table-of-contents__link toc-highlight">8.2 Components of a Use Case</a><ul><li><a href=#821-actor class="table-of-contents__link toc-highlight">8.2.1 Actor</a><li><a href=#822-use-case class="table-of-contents__link toc-highlight">8.2.2 Use Case</a><li><a href=#823-system-boundary class="table-of-contents__link toc-highlight">8.2.3 System Boundary</a><li><a href=#824-relationships-association-include-extend class="table-of-contents__link toc-highlight">8.2.4 Relationships (Association, Include, Extend)</a></ul><li><a href=#83-actors class="table-of-contents__link toc-highlight">8.3 Actors</a><ul><li><a href=#831-primary-actor class="table-of-contents__link toc-highlight">8.3.1 Primary Actor</a><li><a href=#832-secondary-actor class="table-of-contents__link toc-highlight">8.3.2 Secondary Actor</a></ul><li><a href=#example-online-shopping-system class="table-of-contents__link toc-highlight">Example: Online Shopping System</a><li><a href=#importance-of-use-cases class="table-of-contents__link toc-highlight">Importance of Use Cases</a><li><a href=#84-use-case-diagram class="table-of-contents__link toc-highlight">8.4 Use Case Diagram</a><ul><li><a href=#841-purpose class="table-of-contents__link toc-highlight">8.4.1 Purpose</a><li><a href=#842-notation class="table-of-contents__link toc-highlight">8.4.2 Notation</a></ul><li><a href=#85-example-online-examination-system class="table-of-contents__link toc-highlight">8.5 Example: Online Examination System</a><ul><li><a href=#851-actors-student-admin class="table-of-contents__link toc-highlight">8.5.1 Actors (Student, Admin)</a><li><a href=#852-use-cases-login-fill-exam-form-pay-fees-download-hall-ticket class="table-of-contents__link toc-highlight">8.5.2 Use Cases (Login, Fill Exam Form, Pay Fees, Download Hall Ticket)</a></ul><li><a href=#86-use-case-example--login class="table-of-contents__link toc-highlight">8.6 Use Case Example – Login</a><ul><li><a href=#861-precondition class="table-of-contents__link toc-highlight">8.6.1 Precondition</a><li><a href=#862-main-flow class="table-of-contents__link toc-highlight">8.6.2 Main Flow</a><li><a href=#863-postcondition class="table-of-contents__link toc-highlight">8.6.3 Postcondition</a></ul><li><a href=#summary-5 class="table-of-contents__link toc-highlight">Summary</a><li><a href=#91-introduction-to-functional-specification class="table-of-contents__link toc-highlight">9.1 Introduction to Functional Specification</a><ul><li><a href=#911-definition class="table-of-contents__link toc-highlight">9.1.1 Definition</a><li><a href=#912-conversion-of-use-cases-to-functional-requirements class="table-of-contents__link toc-highlight">9.1.2 Conversion of Use Cases to Functional Requirements</a></ul><li><a href=#92-functional-specification-structure class="table-of-contents__link toc-highlight">9.2 Functional Specification Structure</a><ul><li><a href=#921-introduction class="table-of-contents__link toc-highlight">9.2.1 Introduction</a><li><a href=#922-system-overview class="table-of-contents__link toc-highlight">9.2.2 System Overview</a><li><a href=#923-functional-requirements class="table-of-contents__link toc-highlight">9.2.3 Functional Requirements</a><li><a href=#924-input--output-description class="table-of-contents__link toc-highlight">9.2.4 Input / Output Description</a><li><a href=#925-business-rules class="table-of-contents__link toc-highlight">9.2.5 Business Rules</a><li><a href=#926-error-handling class="table-of-contents__link toc-highlight">9.2.6 Error Handling</a></ul><li><a href=#93-relationship-between-use-cases--functional-specification class="table-of-contents__link toc-highlight">9.3 Relationship Between Use Cases & Functional Specification</a><ul><li><a href=#931-one-use-case--multiple-functional-requirements class="table-of-contents__link toc-highlight">9.3.1 One Use Case → Multiple Functional Requirements</a><li><a href=#932-completeness class="table-of-contents__link toc-highlight">9.3.2 Completeness</a><li><a href=#933-testability class="table-of-contents__link toc-highlight">9.3.3 Testability</a><li><a href=#934-traceability class="table-of-contents__link toc-highlight">9.3.4 Traceability</a></ul><li><a href=#summary-6 class="table-of-contents__link toc-highlight">Summary</a><li><a href=#101-definition-of-requirements-validation class="table-of-contents__link toc-highlight">10.1 Definition of Requirements Validation</a><li><a href=#102-need-for-requirements-validation class="table-of-contents__link toc-highlight">10.2 Need for Requirements Validation</a><ul><li><a href=#1021-prevent-wrong-system-development class="table-of-contents__link toc-highlight">10.2.1 Prevent Wrong System Development</a><li><a href=#1022-avoid-costly-rework class="table-of-contents__link toc-highlight">10.2.2 Avoid Costly Rework</a><li><a href=#1023-improve-user-satisfaction class="table-of-contents__link toc-highlight">10.2.3 Improve User Satisfaction</a><li><a href=#1024-reduce-project-failure-risk class="table-of-contents__link toc-highlight">10.2.4 Reduce Project Failure Risk</a></ul><li><a href=#103-verification-vs-validation class="table-of-contents__link toc-highlight">10.3 Verification vs Validation</a><li><a href=#104-objectives-of-requirements-validation class="table-of-contents__link toc-highlight">10.4 Objectives of Requirements Validation</a><ul><li><a href=#1041-correct class="table-of-contents__link toc-highlight">10.4.1 Correct</a><li><a href=#1042-complete class="table-of-contents__link toc-highlight">10.4.2 Complete</a><li><a href=#1043-consistent class="table-of-contents__link toc-highlight">10.4.3 Consistent</a><li><a href=#1044-unambiguous class="table-of-contents__link toc-highlight">10.4.4 Unambiguous</a><li><a href=#1045-feasible class="table-of-contents__link toc-highlight">10.4.5 Feasible</a><li><a href=#1046-testable class="table-of-contents__link toc-highlight">10.4.6 Testable</a><li><a href=#1047-traceable class="table-of-contents__link toc-highlight">10.4.7 Traceable</a></ul><li><a href=#summary-7 class="table-of-contents__link toc-highlight">Summary</a><li><a href=#105-validation-checklist class="table-of-contents__link toc-highlight">10.5 Validation Checklist</a><ul><li><a href=#1051-function-completeness class="table-of-contents__link toc-highlight">10.5.1 Function Completeness</a><li><a href=#1052-non-functional-requirements-specified class="table-of-contents__link toc-highlight">10.5.2 Non-Functional Requirements Specified</a><li><a href=#1053-realistic-requirements class="table-of-contents__link toc-highlight">10.5.3 Realistic Requirements</a><li><a href=#1054-measurable--testable-requirements class="table-of-contents__link toc-highlight">10.5.4 Measurable & Testable Requirements</a><li><a href=#1055-clear-constraints class="table-of-contents__link toc-highlight">10.5.5 Clear Constraints</a><li><a href=#1056-conflict-detection class="table-of-contents__link toc-highlight">10.5.6 Conflict Detection</a></ul><li><a href=#106-requirements-validation-techniques class="table-of-contents__link toc-highlight">10.6 Requirements Validation Techniques</a><ul><li><a href=#1061-requirements-reviews class="table-of-contents__link toc-highlight">10.6.1 Requirements Reviews</a><li><a href=#1062-prototyping class="table-of-contents__link toc-highlight">10.6.2 Prototyping</a><li><a href=#1063-model-validation class="table-of-contents__link toc-highlight">10.6.3 Model Validation</a><li><a href=#1064-requirements-based-testing class="table-of-contents__link toc-highlight">10.6.4 Requirements-Based Testing</a><li><a href=#1065-user-acceptance-testing class="table-of-contents__link toc-highlight">10.6.5 User Acceptance Testing</a></ul><li><a href=#summary-8 class="table-of-contents__link toc-highlight">Summary</a><li><a href=#107-requirements-validation-process class="table-of-contents__link toc-highlight">10.7 Requirements Validation Process</a><ul><li><a href=#1071-prepare-srs class="table-of-contents__link toc-highlight">10.7.1 Prepare SRS</a><li><a href=#1072-select-techniques class="table-of-contents__link toc-highlight">10.7.2 Select Techniques</a><li><a href=#1073-conduct-reviews class="table-of-contents__link toc-highlight">10.7.3 Conduct Reviews</a><li><a href=#1074-identify-defects class="table-of-contents__link toc-highlight">10.7.4 Identify Defects</a><li><a href=#1075-modify-requirements class="table-of-contents__link toc-highlight">10.7.5 Modify Requirements</a><li><a href=#1076-obtain-stakeholder-approval class="table-of-contents__link toc-highlight">10.7.6 Obtain Stakeholder Approval</a></ul><li><a href=#108-common-problems-in-requirements-validation class="table-of-contents__link toc-highlight">10.8 Common Problems in Requirements Validation</a><ul><li><a href=#1081-stakeholder-unavailability class="table-of-contents__link toc-highlight">10.8.1 Stakeholder Unavailability</a><li><a href=#1082-changing-user-needs class="table-of-contents__link toc-highlight">10.8.2 Changing User Needs</a><li><a href=#1083-miscommunication class="table-of-contents__link toc-highlight">10.8.3 Miscommunication</a><li><a href=#1084-technical-jargon class="table-of-contents__link toc-highlight">10.8.4 Technical Jargon</a><li><a href=#1085-lack-of-domain-knowledge class="table-of-contents__link toc-highlight">10.8.5 Lack of Domain Knowledge</a></ul><li><a href=#109-outcome-of-requirements-validation class="table-of-contents__link toc-highlight">10.9 Outcome of Requirements Validation</a><ul><li><a href=#1091-reduced-errors class="table-of-contents__link toc-highlight">10.9.1 Reduced Errors</a><li><a href=#1092-reduced-development-risk class="table-of-contents__link toc-highlight">10.9.2 Reduced Development Risk</a><li><a href=#1093-higher-user-satisfaction class="table-of-contents__link toc-highlight">10.9.3 Higher User Satisfaction</a><li><a href=#1094-strong-foundation-for-design--testing class="table-of-contents__link toc-highlight">10.9.4 Strong Foundation for Design & Testing</a></ul><li><a href=#final-summary class="table-of-contents__link toc-highlight">Final Summary</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro>Notes</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog>Blog</a><li class=footer__item><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Ankur</div></div></div></footer></div></body>
