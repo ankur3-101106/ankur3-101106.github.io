@@ -1,0 +1,1827 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-NCS/u3" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Unit - 3 | Ankur's Page</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://ankur3-101106.github.io/docs/NCS/u3 /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Unit - 3 | Ankur's Page"/><meta data-rh=true name=description content="Proxy & VPNs"/><meta data-rh=true property=og:description content="Proxy & VPNs"/><link data-rh=true rel=icon href=/img/favicon.jpg /><link data-rh=true rel=canonical href=https://ankur3-101106.github.io/docs/NCS/u3 /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/NCS/u3 hreflang=en /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/NCS/u3 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/ncs---apr-16","name":"NCS - APR 16","position":1},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/NCS/u3","name":"Unit - 3","position":2}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Ankur's Page RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Ankur's Page Atom Feed"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/assets/css/styles.51fb367b.css /><script src=/assets/js/runtime~main.e1c50756.js defer></script><script src=/assets/js/main.a8d17c9e.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-142")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon.jpg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Ankur's Page</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/intro>Notes</a><a class="navbar__item navbar__link" href=/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/intro><span title=Introduction class=linkLabel_WmDU>Introduction</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/docs/category/ncs---apr-16><span title="NCS - APR 16" class=categoryLinkLabel_W154>NCS - APR 16</span></a><button aria-label="Collapse sidebar category 'NCS - APR 16'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/NCS/u1><span title="Unit - 1" class=linkLabel_WmDU>Unit - 1</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/NCS/u2><span title="Unit - 2" class=linkLabel_WmDU>Unit - 2</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/NCS/u3><span title="Unit - 3" class=linkLabel_WmDU>Unit - 3</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/NCS/u4><span title="Unit - 4" class=linkLabel_WmDU>Unit - 4</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/NCS/u5><span title="Unit - 5" class=linkLabel_WmDU>Unit - 5</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/se---apr-21><span title="SE - APR 21" class=categoryLinkLabel_W154>SE - APR 21</span></a><button aria-label="Expand sidebar category 'SE - APR 21'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/os---apr-23><span title="OS - APR 23" class=categoryLinkLabel_W154>OS - APR 23</span></a><button aria-label="Expand sidebar category 'OS - APR 23'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/cry---apr-25><span title="CRY - APR 25" class=categoryLinkLabel_W154>CRY - APR 25</span></a><button aria-label="Expand sidebar category 'CRY - APR 25'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ppfd---apr-30><span title="PPFD - APR 30" class=categoryLinkLabel_W154>PPFD - APR 30</span></a><button aria-label="Expand sidebar category 'PPFD - APR 30'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/category/ncs---apr-16><span>NCS - APR 16</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Unit - 3</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Unit - 3</h1></header>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></span>Title</div><div class=admonitionContent_BuS1><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=proxy--vpns>Proxy & VPNs<a href=#proxy--vpns class=hash-link aria-label="Direct link to Proxy & VPNs" title="Direct link to Proxy & VPNs" translate=no>​</a></h2></div></div>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-virtual-private-network-vpn>1. Virtual Private Network (VPN)<a href=#1-virtual-private-network-vpn class=hash-link aria-label="Direct link to 1. Virtual Private Network (VPN)" title="Direct link to 1. Virtual Private Network (VPN)" translate=no>​</a></h2>
+<p>A Virtual Private Network (VPN) is a secure networking technology that creates an encrypted connection over a public network such as the Internet.</p>
+<p>It allows users to:</p>
+<ul>
+<li class="">Connect securely to remote networks</li>
+<li class="">Protect sensitive data</li>
+<li class="">Maintain privacy while browsing</li>
+</ul>
+<p>VPN is widely used in:</p>
+<ul>
+<li class="">Corporate networks</li>
+<li class="">Remote work environments</li>
+<li class="">Secure online communication</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-definition-of-vpn>1.1 Definition of VPN<a href=#11-definition-of-vpn class=hash-link aria-label="Direct link to 1.1 Definition of VPN" title="Direct link to 1.1 Definition of VPN" translate=no>​</a></h3>
+<p>A VPN is:</p>
+<blockquote>
+<p>A technology that establishes a secure, encrypted tunnel between a user’s device and a remote network over the Internet.</p>
+</blockquote>
+<p>The key idea behind VPN:</p>
+<ul>
+<li class="">Use a public network (Internet)</li>
+<li class="">Create a private communication channel</li>
+</ul>
+<p>Basic VPN Architecture:</p>
+<!-- -->
+<p>Without VPN:</p>
+<ul>
+<li class="">Traffic travels openly through ISP</li>
+<li class="">IP address is visible</li>
+</ul>
+<p>With VPN:</p>
+<ul>
+<li class="">Traffic is encrypted</li>
+<li class="">IP address is masked</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-purpose-of-vpn>1.2 Purpose of VPN<a href=#12-purpose-of-vpn class=hash-link aria-label="Direct link to 1.2 Purpose of VPN" title="Direct link to 1.2 Purpose of VPN" translate=no>​</a></h3>
+<p>The main purpose of a VPN is to ensure secure and private communication over an untrusted network.</p>
+<p>VPN provides:</p>
+<ul>
+<li class="">Confidentiality</li>
+<li class="">Integrity</li>
+<li class="">Authentication</li>
+<li class="">Privacy</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=121-secure-and-encrypted-connection>1.2.1 Secure and Encrypted Connection<a href=#121-secure-and-encrypted-connection class=hash-link aria-label="Direct link to 1.2.1 Secure and Encrypted Connection" title="Direct link to 1.2.1 Secure and Encrypted Connection" translate=no>​</a></h4>
+<p>VPN encrypts data before transmission.</p>
+<p>Encryption ensures:</p>
+<ul>
+<li class="">Unauthorized users cannot read data</li>
+<li class="">Protection against hackers</li>
+<li class="">Protection on public Wi-Fi networks</li>
+</ul>
+<p>Encryption Process:</p>
+<!-- -->
+<p>Common encryption protocols:</p>
+<ul>
+<li class="">IPsec</li>
+<li class="">SSL/TLS</li>
+<li class="">OpenVPN</li>
+<li class="">WireGuard</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=122-protect-online-privacy>1.2.2 Protect Online Privacy<a href=#122-protect-online-privacy class=hash-link aria-label="Direct link to 1.2.2 Protect Online Privacy" title="Direct link to 1.2.2 Protect Online Privacy" translate=no>​</a></h4>
+<p>VPN hides the user’s real IP address.</p>
+<p>Instead of:</p>
+<p>User → Website</p>
+<p>It becomes:</p>
+<p>User → VPN Server → Website</p>
+<p>Example:</p>
+<!-- -->
+<p>Benefits:</p>
+<ul>
+<li class="">Prevent ISP tracking</li>
+<li class="">Avoid targeted ads</li>
+<li class="">Protect against surveillance</li>
+<li class="">Anonymous browsing</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=123-secure-data-transmission>1.2.3 Secure Data Transmission<a href=#123-secure-data-transmission class=hash-link aria-label="Direct link to 1.2.3 Secure Data Transmission" title="Direct link to 1.2.3 Secure Data Transmission" translate=no>​</a></h4>
+<p>VPN ensures data integrity and confidentiality during transmission.</p>
+<p>It protects against:</p>
+<ul>
+<li class="">Man-in-the-middle attacks</li>
+<li class="">Packet sniffing</li>
+<li class="">Data interception</li>
+</ul>
+<p>Data remains:</p>
+<ul>
+<li class="">Encrypted</li>
+<li class="">Authenticated</li>
+<li class="">Secure</li>
+</ul>
+<p>Especially important for:</p>
+<ul>
+<li class="">Banking transactions</li>
+<li class="">Corporate data</li>
+<li class="">Government communication</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=124-access-restricted-content>1.2.4 Access Restricted Content<a href=#124-access-restricted-content class=hash-link aria-label="Direct link to 1.2.4 Access Restricted Content" title="Direct link to 1.2.4 Access Restricted Content" translate=no>​</a></h4>
+<p>VPN allows bypassing:</p>
+<ul>
+<li class="">Geo-restrictions</li>
+<li class="">Government censorship</li>
+<li class="">Workplace restrictions</li>
+</ul>
+<p>Example:</p>
+<p>If a website is blocked in a country:</p>
+<ul>
+<li class="">Connect to VPN server in another country</li>
+<li class="">Access content through that server</li>
+</ul>
+<p>Flow:</p>
+<!-- -->
+<p>This enables:</p>
+<ul>
+<li class="">Streaming region-locked content</li>
+<li class="">Accessing blocked services</li>
+<li class="">Bypassing firewalls</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary>Summary<a href=#summary class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h3>
+<p>VPN:</p>
+<ul>
+<li class="">Creates encrypted tunnel</li>
+<li class="">Protects privacy</li>
+<li class="">Secures communication</li>
+<li class="">Masks IP address</li>
+<li class="">Bypasses restrictions</li>
+</ul>
+<p>Core Benefits:</p>
+<ul>
+<li class="">Confidentiality</li>
+<li class="">Integrity</li>
+<li class="">Authentication</li>
+<li class="">Privacy</li>
+</ul>
+<p>VPN is essential for:</p>
+<ul>
+<li class="">Remote employees</li>
+<li class="">Public Wi-Fi users</li>
+<li class="">Enterprises</li>
+<li class="">Privacy-conscious individuals</li>
+</ul>
+<hr/>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-types-of-vpn>2. Types of VPN<a href=#2-types-of-vpn class=hash-link aria-label="Direct link to 2. Types of VPN" title="Direct link to 2. Types of VPN" translate=no>​</a></h2>
+<p>VPNs are classified based on:</p>
+<ul>
+<li class="">Connection type</li>
+<li class="">Deployment architecture</li>
+<li class="">Underlying protocol</li>
+<li class="">Intended usage</li>
+</ul>
+<p>Each VPN type serves different organizational and security needs.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-remote-access-vpn>2.1 Remote Access VPN<a href=#21-remote-access-vpn class=hash-link aria-label="Direct link to 2.1 Remote Access VPN" title="Direct link to 2.1 Remote Access VPN" translate=no>​</a></h3>
+<p>A Remote Access VPN allows individual users to connect securely to a private network from a remote location.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=211-purpose>2.1.1 Purpose<a href=#211-purpose class=hash-link aria-label="Direct link to 2.1.1 Purpose" title="Direct link to 2.1.1 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">Provide secure access to internal company resources</li>
+<li class="">Enable remote work</li>
+<li class="">Protect data over public networks</li>
+</ul>
+<p>It creates an encrypted tunnel between:</p>
+<ul>
+<li class="">User’s device</li>
+<li class="">Corporate VPN server</li>
+</ul>
+<p>Architecture:</p>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=212-use-case-employees-working-remotely>2.1.2 Use Case (Employees Working Remotely)<a href=#212-use-case-employees-working-remotely class=hash-link aria-label="Direct link to 2.1.2 Use Case (Employees Working Remotely)" title="Direct link to 2.1.2 Use Case (Employees Working Remotely)" translate=no>​</a></h4>
+<p>Scenario:</p>
+<ul>
+<li class="">Employee works from home</li>
+<li class="">Connects to company server</li>
+<li class="">Accesses internal applications</li>
+</ul>
+<p>Common use:</p>
+<ul>
+<li class="">IT employees</li>
+<li class="">Remote staff</li>
+<li class="">Traveling employees</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Secure access to files</li>
+<li class="">Secure access to databases</li>
+<li class="">Access to internal ERP systems</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=22-site-to-site-vpn>2.2 Site-to-Site VPN<a href=#22-site-to-site-vpn class=hash-link aria-label="Direct link to 2.2 Site-to-Site VPN" title="Direct link to 2.2 Site-to-Site VPN" translate=no>​</a></h3>
+<p>Site-to-Site VPN connects two or more networks securely over the Internet.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=221-purpose>2.2.1 Purpose<a href=#221-purpose class=hash-link aria-label="Direct link to 2.2.1 Purpose" title="Direct link to 2.2.1 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">Connect branch offices</li>
+<li class="">Share resources between locations</li>
+<li class="">Maintain secure communication</li>
+</ul>
+<p>Instead of individual users connecting:</p>
+<ul>
+<li class="">Entire networks are connected</li>
+</ul>
+<p>Architecture:</p>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=222-use-case-multiple-office-locations>2.2.2 Use Case (Multiple Office Locations)<a href=#222-use-case-multiple-office-locations class=hash-link aria-label="Direct link to 2.2.2 Use Case (Multiple Office Locations)" title="Direct link to 2.2.2 Use Case (Multiple Office Locations)" translate=no>​</a></h4>
+<p>Example:</p>
+<ul>
+<li class="">Headquarters in Mumbai</li>
+<li class="">Branch office in Delhi</li>
+</ul>
+<p>Both offices:</p>
+<ul>
+<li class="">Share internal database</li>
+<li class="">Share file servers</li>
+<li class="">Communicate securely</li>
+</ul>
+<p>Used by:</p>
+<ul>
+<li class="">Banks</li>
+<li class="">Corporations</li>
+<li class="">Government organizations</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=23-intranet-based-vpn>2.3 Intranet-Based VPN<a href=#23-intranet-based-vpn class=hash-link aria-label="Direct link to 2.3 Intranet-Based VPN" title="Direct link to 2.3 Intranet-Based VPN" translate=no>​</a></h3>
+<p>Intranet VPN connects multiple internal branches of the same organization.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=231-purpose>2.3.1 Purpose<a href=#231-purpose class=hash-link aria-label="Direct link to 2.3.1 Purpose" title="Direct link to 2.3.1 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">Secure internal communication</li>
+<li class="">Connect multiple company branches</li>
+<li class="">Enable centralized management</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=232-use-case-internal-communication-across-branches>2.3.2 Use Case (Internal Communication Across Branches)<a href=#232-use-case-internal-communication-across-branches class=hash-link aria-label="Direct link to 2.3.2 Use Case (Internal Communication Across Branches)" title="Direct link to 2.3.2 Use Case (Internal Communication Across Branches)" translate=no>​</a></h4>
+<p>Example:</p>
+<ul>
+<li class="">Company has offices in 5 cities</li>
+<li class="">All need access to central server</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Private communication</li>
+<li class="">Unified corporate network</li>
+<li class="">Reduced leased line cost</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=24-extranet-based-vpn>2.4 Extranet-Based VPN<a href=#24-extranet-based-vpn class=hash-link aria-label="Direct link to 2.4 Extranet-Based VPN" title="Direct link to 2.4 Extranet-Based VPN" translate=no>​</a></h3>
+<p>Extranet VPN connects an organization to external partners.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=241-purpose>2.4.1 Purpose<a href=#241-purpose class=hash-link aria-label="Direct link to 2.4.1 Purpose" title="Direct link to 2.4.1 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">Secure communication with vendors</li>
+<li class="">Allow limited partner access</li>
+<li class="">Share selected resources securely</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=242-use-case-partner-organization-communication>2.4.2 Use Case (Partner Organization Communication)<a href=#242-use-case-partner-organization-communication class=hash-link aria-label="Direct link to 2.4.2 Use Case (Partner Organization Communication)" title="Direct link to 2.4.2 Use Case (Partner Organization Communication)" translate=no>​</a></h4>
+<p>Example:</p>
+<ul>
+<li class="">Manufacturer connects with supplier</li>
+<li class="">Supplier accesses limited inventory system</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Controlled partner access</li>
+<li class="">Data sharing with restrictions</li>
+<li class="">Business collaboration</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=25-ssltls-vpn>2.5 SSL/TLS VPN<a href=#25-ssltls-vpn class=hash-link aria-label="Direct link to 2.5 SSL/TLS VPN" title="Direct link to 2.5 SSL/TLS VPN" translate=no>​</a></h3>
+<p>SSL/TLS VPN uses Secure Socket Layer (SSL) or Transport Layer Security (TLS) protocols.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=251-purpose>2.5.1 Purpose<a href=#251-purpose class=hash-link aria-label="Direct link to 2.5.1 Purpose" title="Direct link to 2.5.1 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">Secure remote access via web browser</li>
+<li class="">Encrypted HTTPS-based communication</li>
+</ul>
+<p>Works at:</p>
+<ul>
+<li class="">Application Layer</li>
+</ul>
+<p>Architecture:</p>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=252-use-case-browser-based-secure-access>2.5.2 Use Case (Browser-Based Secure Access)<a href=#252-use-case-browser-based-secure-access class=hash-link aria-label="Direct link to 2.5.2 Use Case (Browser-Based Secure Access)" title="Direct link to 2.5.2 Use Case (Browser-Based Secure Access)" translate=no>​</a></h4>
+<p>User:</p>
+<ul>
+<li class="">Opens browser</li>
+<li class="">Logs into VPN portal</li>
+<li class="">Accesses web-based applications</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li class="">No complex client installation</li>
+<li class="">Easy deployment</li>
+<li class="">Firewall friendly</li>
+</ul>
+<p>Used in:</p>
+<ul>
+<li class="">Universities</li>
+<li class="">Corporate portals</li>
+<li class="">Remote dashboards</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=26-ipsec-vpn>2.6 IPsec VPN<a href=#26-ipsec-vpn class=hash-link aria-label="Direct link to 2.6 IPsec VPN" title="Direct link to 2.6 IPsec VPN" translate=no>​</a></h3>
+<p>IPsec VPN uses Internet Protocol Security for encryption and authentication.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=261-purpose>2.6.1 Purpose<a href=#261-purpose class=hash-link aria-label="Direct link to 2.6.1 Purpose" title="Direct link to 2.6.1 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">Secure network-layer communication</li>
+<li class="">Provide strong encryption and authentication</li>
+</ul>
+<p>Operates at:</p>
+<ul>
+<li class="">Network Layer</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=262-use-case-site-to-site--remote-access>2.6.2 Use Case (Site-to-Site & Remote Access)<a href=#262-use-case-site-to-site--remote-access class=hash-link aria-label="Direct link to 2.6.2 Use Case (Site-to-Site & Remote Access)" title="Direct link to 2.6.2 Use Case (Site-to-Site & Remote Access)" translate=no>​</a></h4>
+<p>Common use:</p>
+<ul>
+<li class="">Branch office connectivity</li>
+<li class="">Corporate remote access</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Strong encryption (AES)</li>
+<li class="">Authentication</li>
+<li class="">Integrity protection</li>
+</ul>
+<p>Widely used in enterprise networks.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=27-pptp-vpn>2.7 PPTP VPN<a href=#27-pptp-vpn class=hash-link aria-label="Direct link to 2.7 PPTP VPN" title="Direct link to 2.7 PPTP VPN" translate=no>​</a></h3>
+<p>PPTP (Point-to-Point Tunneling Protocol) is an older VPN protocol.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=271-purpose>2.7.1 Purpose<a href=#271-purpose class=hash-link aria-label="Direct link to 2.7.1 Purpose" title="Direct link to 2.7.1 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">Create VPN tunnels over PPP</li>
+<li class="">Simple and easy configuration</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=272-security-concerns>2.7.2 Security Concerns<a href=#272-security-concerns class=hash-link aria-label="Direct link to 2.7.2 Security Concerns" title="Direct link to 2.7.2 Security Concerns" translate=no>​</a></h4>
+<p>Weaknesses:</p>
+<ul>
+<li class="">Weak encryption</li>
+<li class="">Vulnerable to brute-force attacks</li>
+<li class="">Easily cracked authentication</li>
+</ul>
+<p>Not recommended for modern security.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=273-legacy-usage>2.7.3 Legacy Usage<a href=#273-legacy-usage class=hash-link aria-label="Direct link to 2.7.3 Legacy Usage" title="Direct link to 2.7.3 Legacy Usage" translate=no>​</a></h4>
+<p>Still found in:</p>
+<ul>
+<li class="">Older systems</li>
+<li class="">Basic home routers</li>
+<li class="">Low-security environments</li>
+</ul>
+<p>Mostly replaced by:</p>
+<ul>
+<li class="">L2TP/IPsec</li>
+<li class="">OpenVPN</li>
+<li class="">WireGuard</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=28-l2tpipsec-vpn>2.8 L2TP/IPsec VPN<a href=#28-l2tpipsec-vpn class=hash-link aria-label="Direct link to 2.8 L2TP/IPsec VPN" title="Direct link to 2.8 L2TP/IPsec VPN" translate=no>​</a></h3>
+<p>L2TP combined with IPsec provides enhanced security.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=281-purpose>2.8.1 Purpose<a href=#281-purpose class=hash-link aria-label="Direct link to 2.8.1 Purpose" title="Direct link to 2.8.1 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">Provide secure tunneling</li>
+<li class="">Combine Layer 2 tunneling with IPsec encryption</li>
+</ul>
+<p>L2TP handles:</p>
+<ul>
+<li class="">Tunneling</li>
+</ul>
+<p>IPsec handles:</p>
+<ul>
+<li class="">Encryption</li>
+<li class="">Authentication</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=282-enhanced-security-over-pptp>2.8.2 Enhanced Security Over PPTP<a href=#282-enhanced-security-over-pptp class=hash-link aria-label="Direct link to 2.8.2 Enhanced Security Over PPTP" title="Direct link to 2.8.2 Enhanced Security Over PPTP" translate=no>​</a></h4>
+<p>Advantages:</p>
+<ul>
+<li class="">Stronger encryption</li>
+<li class="">Better authentication</li>
+<li class="">More secure than PPTP</li>
+</ul>
+<p>Used in:</p>
+<ul>
+<li class="">Windows VPN clients</li>
+<li class="">Enterprise remote access</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-1>Summary<a href=#summary-1 class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>VPN Types Overview:</p>
+<table><thead><tr><th>Type<th>Purpose<th>Use Case<tbody><tr><td>Remote Access<td>Individual secure access<td>Remote employees<tr><td>Site-to-Site<td>Connect networks<td>Branch offices<tr><td>Intranet VPN<td>Internal branch connection<td>Corporate networks<tr><td>Extranet VPN<td>Partner access<td>Vendor communication<tr><td>SSL/TLS VPN<td>Browser-based secure access<td>Web portals<tr><td>IPsec VPN<td>Strong encryption<td>Enterprise networking<tr><td>PPTP<td>Basic VPN<td>Legacy systems<tr><td>L2TP/IPsec<td>Secure remote access<td>Modern OS support</table>
+<hr/>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-tunneling-protocols>3. Tunneling Protocols<a href=#3-tunneling-protocols class=hash-link aria-label="Direct link to 3. Tunneling Protocols" title="Direct link to 3. Tunneling Protocols" translate=no>​</a></h2>
+<p>Tunneling protocols are used in VPNs to create secure communication channels over public networks.</p>
+<p>Tunneling means:</p>
+<blockquote>
+<p>Encapsulating one packet inside another packet to securely transmit it across an insecure network.</p>
+</blockquote>
+<p>Basic tunneling concept:</p>
+<!-- -->
+<p>The outer packet carries the encrypted inner packet safely across the Internet.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=31-overview-of-tunneling-protocols>3.1 Overview of Tunneling Protocols<a href=#31-overview-of-tunneling-protocols class=hash-link aria-label="Direct link to 3.1 Overview of Tunneling Protocols" title="Direct link to 3.1 Overview of Tunneling Protocols" translate=no>​</a></h3>
+<p>Tunneling protocols:</p>
+<ul>
+<li class="">Create encrypted communication channels</li>
+<li class="">Encapsulate data packets</li>
+<li class="">Provide authentication and integrity</li>
+<li class="">Protect data from interception</li>
+</ul>
+<p>Common VPN tunneling protocols:</p>
+<ul>
+<li class="">PPTP</li>
+<li class="">L2TP</li>
+<li class="">IPsec</li>
+<li class="">SSTP</li>
+<li class="">OpenVPN</li>
+<li class="">WireGuard</li>
+<li class="">IKEv2/IPsec</li>
+</ul>
+<p>They differ in:</p>
+<ul>
+<li class="">Security strength</li>
+<li class="">Speed</li>
+<li class="">Encryption method</li>
+<li class="">Compatibility</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=32-pptp-point-to-point-tunneling-protocol>3.2 PPTP (Point-to-Point Tunneling Protocol)<a href=#32-pptp-point-to-point-tunneling-protocol class=hash-link aria-label="Direct link to 3.2 PPTP (Point-to-Point Tunneling Protocol)" title="Direct link to 3.2 PPTP (Point-to-Point Tunneling Protocol)" translate=no>​</a></h3>
+<p>PPTP is one of the earliest VPN tunneling protocols.</p>
+<p>It was developed by:</p>
+<ul>
+<li class="">Microsoft and other vendors</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=321-purpose>3.2.1 Purpose<a href=#321-purpose class=hash-link aria-label="Direct link to 3.2.1 Purpose" title="Direct link to 3.2.1 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">Create VPN tunnels over PPP (Point-to-Point Protocol)</li>
+<li class="">Provide remote access connectivity</li>
+</ul>
+<p>It encapsulates PPP frames inside GRE (Generic Routing Encapsulation).</p>
+<p>Architecture:</p>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=322-security-level>3.2.2 Security Level<a href=#322-security-level class=hash-link aria-label="Direct link to 3.2.2 Security Level" title="Direct link to 3.2.2 Security Level" translate=no>​</a></h4>
+<p>Security is considered weak.</p>
+<p>Weaknesses:</p>
+<ul>
+<li class="">Uses outdated encryption (MPPE)</li>
+<li class="">Vulnerable to brute-force attacks</li>
+<li class="">Authentication flaws</li>
+</ul>
+<p>Today:</p>
+<ul>
+<li class="">Not recommended for secure environments</li>
+<li class="">Used only in legacy systems</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=33-l2tp-layer-2-tunneling-protocol>3.3 L2TP (Layer 2 Tunneling Protocol)<a href=#33-l2tp-layer-2-tunneling-protocol class=hash-link aria-label="Direct link to 3.3 L2TP (Layer 2 Tunneling Protocol)" title="Direct link to 3.3 L2TP (Layer 2 Tunneling Protocol)" translate=no>​</a></h3>
+<p>L2TP is a tunneling protocol that combines features of:</p>
+<ul>
+<li class="">PPTP</li>
+<li class="">Cisco’s L2F</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=331-purpose>3.3.1 Purpose<a href=#331-purpose class=hash-link aria-label="Direct link to 3.3.1 Purpose" title="Direct link to 3.3.1 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">Provide tunneling mechanism</li>
+<li class="">Transport PPP frames</li>
+</ul>
+<p>Important:</p>
+<ul>
+<li class="">L2TP itself does NOT provide encryption</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=332-combined-with-ipsec>3.3.2 Combined with IPsec<a href=#332-combined-with-ipsec class=hash-link aria-label="Direct link to 3.3.2 Combined with IPsec" title="Direct link to 3.3.2 Combined with IPsec" translate=no>​</a></h4>
+<p>Because L2TP lacks encryption, it is commonly combined with IPsec.</p>
+<p>L2TP handles:</p>
+<ul>
+<li class="">Tunneling</li>
+</ul>
+<p>IPsec handles:</p>
+<ul>
+<li class="">Encryption</li>
+<li class="">Authentication</li>
+<li class="">Integrity</li>
+</ul>
+<p>Architecture:</p>
+<!-- -->
+<p>Security level:</p>
+<ul>
+<li class="">Much stronger than PPTP</li>
+<li class="">Widely supported in modern systems</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=34-ipsec>3.4 IPsec<a href=#34-ipsec class=hash-link aria-label="Direct link to 3.4 IPsec" title="Direct link to 3.4 IPsec" translate=no>​</a></h3>
+<p>IPsec (Internet Protocol Security) is a suite of protocols that secure IP communication.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=341-purpose>3.4.1 Purpose<a href=#341-purpose class=hash-link aria-label="Direct link to 3.4.1 Purpose" title="Direct link to 3.4.1 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">Provide secure communication at Network Layer</li>
+<li class="">Encrypt and authenticate IP packets</li>
+</ul>
+<p>IPsec works in two modes:</p>
+<ul>
+<li class="">Transport Mode</li>
+<li class="">Tunnel Mode</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=342-authentication-and-encryption>3.4.2 Authentication and Encryption<a href=#342-authentication-and-encryption class=hash-link aria-label="Direct link to 3.4.2 Authentication and Encryption" title="Direct link to 3.4.2 Authentication and Encryption" translate=no>​</a></h4>
+<p>IPsec provides:</p>
+<ol>
+<li class="">Confidentiality (Encryption)</li>
+<li class="">Integrity (Hash verification)</li>
+<li class="">Authentication</li>
+<li class="">Anti-replay protection</li>
+</ol>
+<p>IPsec uses:</p>
+<ul>
+<li class="">AES encryption</li>
+<li class="">SHA hashing</li>
+<li class="">IKE for key exchange</li>
+</ul>
+<p>Widely used in:</p>
+<ul>
+<li class="">Site-to-Site VPN</li>
+<li class="">Enterprise networks</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=35-sstp-secure-socket-tunneling-protocol>3.5 SSTP (Secure Socket Tunneling Protocol)<a href=#35-sstp-secure-socket-tunneling-protocol class=hash-link aria-label="Direct link to 3.5 SSTP (Secure Socket Tunneling Protocol)" title="Direct link to 3.5 SSTP (Secure Socket Tunneling Protocol)" translate=no>​</a></h3>
+<p>SSTP is developed by Microsoft.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=351-developed-by-microsoft>3.5.1 Developed by Microsoft<a href=#351-developed-by-microsoft class=hash-link aria-label="Direct link to 3.5.1 Developed by Microsoft" title="Direct link to 3.5.1 Developed by Microsoft" translate=no>​</a></h4>
+<ul>
+<li class="">Introduced in Windows Vista</li>
+<li class="">Designed to bypass firewall restrictions</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=352-operates-over-ssltls>3.5.2 Operates over SSL/TLS<a href=#352-operates-over-ssltls class=hash-link aria-label="Direct link to 3.5.2 Operates over SSL/TLS" title="Direct link to 3.5.2 Operates over SSL/TLS" translate=no>​</a></h4>
+<p>SSTP uses:</p>
+<ul>
+<li class="">TCP port 443</li>
+<li class="">SSL/TLS encryption</li>
+</ul>
+<p>This makes it:</p>
+<ul>
+<li class="">Firewall-friendly</li>
+<li class="">Hard to block</li>
+</ul>
+<p>Security:</p>
+<ul>
+<li class="">Strong encryption</li>
+<li class="">Suitable for corporate use</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=36-openvpn>3.6 OpenVPN<a href=#36-openvpn class=hash-link aria-label="Direct link to 3.6 OpenVPN" title="Direct link to 3.6 OpenVPN" translate=no>​</a></h3>
+<p>OpenVPN is an open-source VPN protocol.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=361-open-source-protocol>3.6.1 Open-Source Protocol<a href=#361-open-source-protocol class=hash-link aria-label="Direct link to 3.6.1 Open-Source Protocol" title="Direct link to 3.6.1 Open-Source Protocol" translate=no>​</a></h4>
+<ul>
+<li class="">Free</li>
+<li class="">Highly configurable</li>
+<li class="">Cross-platform</li>
+</ul>
+<p>Used by:</p>
+<ul>
+<li class="">Enterprises</li>
+<li class="">Commercial VPN providers</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=362-uses-ssltls>3.6.2 Uses SSL/TLS<a href=#362-uses-ssltls class=hash-link aria-label="Direct link to 3.6.2 Uses SSL/TLS" title="Direct link to 3.6.2 Uses SSL/TLS" translate=no>​</a></h4>
+<p>OpenVPN relies on:</p>
+<ul>
+<li class="">SSL/TLS for encryption</li>
+<li class="">OpenSSL library</li>
+</ul>
+<p>Supports:</p>
+<ul>
+<li class="">AES encryption</li>
+<li class="">Strong authentication</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=363-high-security>3.6.3 High Security<a href=#363-high-security class=hash-link aria-label="Direct link to 3.6.3 High Security" title="Direct link to 3.6.3 High Security" translate=no>​</a></h4>
+<p>Advantages:</p>
+<ul>
+<li class="">Very secure</li>
+<li class="">Open-source (audited)</li>
+<li class="">Supports UDP and TCP</li>
+<li class="">Highly flexible</li>
+</ul>
+<p>Widely trusted for:</p>
+<ul>
+<li class="">Commercial VPN services</li>
+<li class="">Enterprise deployment</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=37-wireguard>3.7 WireGuard<a href=#37-wireguard class=hash-link aria-label="Direct link to 3.7 WireGuard" title="Direct link to 3.7 WireGuard" translate=no>​</a></h3>
+<p>WireGuard is a modern VPN protocol.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=371-modern-lightweight-protocol>3.7.1 Modern Lightweight Protocol<a href=#371-modern-lightweight-protocol class=hash-link aria-label="Direct link to 3.7.1 Modern Lightweight Protocol" title="Direct link to 3.7.1 Modern Lightweight Protocol" translate=no>​</a></h4>
+<ul>
+<li class="">Introduced in 2016</li>
+<li class="">Designed for simplicity</li>
+<li class="">Very small codebase</li>
+</ul>
+<p>Uses modern cryptography:</p>
+<ul>
+<li class="">ChaCha20</li>
+<li class="">Poly1305</li>
+<li class="">Curve25519</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=372-simplicity-and-performance>3.7.2 Simplicity and Performance<a href=#372-simplicity-and-performance class=hash-link aria-label="Direct link to 3.7.2 Simplicity and Performance" title="Direct link to 3.7.2 Simplicity and Performance" translate=no>​</a></h4>
+<p>Advantages:</p>
+<ul>
+<li class="">Very fast</li>
+<li class="">Easy to configure</li>
+<li class="">Lower overhead</li>
+<li class="">More efficient than IPsec</li>
+</ul>
+<p>Architecture:</p>
+<!-- -->
+<p>Used in:</p>
+<ul>
+<li class="">Modern VPN services</li>
+<li class="">Mobile applications</li>
+<li class="">Linux kernel integration</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=38-ikev2ipsec>3.8 IKEv2/IPsec<a href=#38-ikev2ipsec class=hash-link aria-label="Direct link to 3.8 IKEv2/IPsec" title="Direct link to 3.8 IKEv2/IPsec" translate=no>​</a></h3>
+<p>IKEv2 combined with IPsec is a strong and reliable VPN solution.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=381-strong-security>3.8.1 Strong Security<a href=#381-strong-security class=hash-link aria-label="Direct link to 3.8.1 Strong Security" title="Direct link to 3.8.1 Strong Security" translate=no>​</a></h4>
+<p>IKEv2 handles:</p>
+<ul>
+<li class="">Key exchange</li>
+<li class="">Authentication</li>
+<li class="">Session management</li>
+</ul>
+<p>IPsec handles:</p>
+<ul>
+<li class="">Encryption</li>
+<li class="">Data protection</li>
+</ul>
+<p>Benefits:</p>
+<ul>
+<li class="">Strong encryption</li>
+<li class="">Stable connection</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=382-mobile-device-support>3.8.2 Mobile Device Support<a href=#382-mobile-device-support class=hash-link aria-label="Direct link to 3.8.2 Mobile Device Support" title="Direct link to 3.8.2 Mobile Device Support" translate=no>​</a></h4>
+<p>Key advantage:</p>
+<ul>
+<li class="">Automatic reconnection</li>
+<li class="">Mobility support (MOBIKE)</li>
+</ul>
+<p>Ideal for:</p>
+<ul>
+<li class="">Smartphones</li>
+<li class="">Mobile users</li>
+<li class="">Switching networks (WiFi → Mobile data)</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=comparison-of-tunneling-protocols>Comparison of Tunneling Protocols<a href=#comparison-of-tunneling-protocols class=hash-link aria-label="Direct link to Comparison of Tunneling Protocols" title="Direct link to Comparison of Tunneling Protocols" translate=no>​</a></h2>
+<table><thead><tr><th>Protocol<th>Security<th>Speed<th>Usage<tbody><tr><td>PPTP<td>Weak<td>Fast<td>Legacy<tr><td>L2TP/IPsec<td>Strong<td>Moderate<td>Enterprise<tr><td>IPsec<td>Very Strong<td>Moderate<td>Site-to-Site<tr><td>SSTP<td>Strong<td>Moderate<td>Windows<tr><td>OpenVPN<td>Very Strong<td>Moderate<td>Commercial VPN<tr><td>WireGuard<td>Very Strong<td>Very Fast<td>Modern VPN<tr><td>IKEv2/IPsec<td>Very Strong<td>Fast<td>Mobile</table>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-2>Summary<a href=#summary-2 class=hash-link aria-label="Direct link to Summary" title="Direct link to Summary" translate=no>​</a></h2>
+<p>Tunneling Protocols:</p>
+<ul>
+<li class="">Create secure VPN tunnels</li>
+<li class="">Encapsulate packets</li>
+<li class="">Provide encryption and authentication</li>
+</ul>
+<p>Modern recommended protocols:</p>
+<ul>
+<li class="">OpenVPN</li>
+<li class="">WireGuard</li>
+<li class="">IKEv2/IPsec</li>
+</ul>
+<p>Outdated protocol:</p>
+<ul>
+<li class="">PPTP</li>
+</ul>
+<hr/>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-tunnel-mode-and-transport-mode>4. Tunnel Mode and Transport Mode<a href=#4-tunnel-mode-and-transport-mode class=hash-link aria-label="Direct link to 4. Tunnel Mode and Transport Mode" title="Direct link to 4. Tunnel Mode and Transport Mode" translate=no>​</a></h2>
+<p>Tunnel Mode and Transport Mode are the <strong>two operational modes of IPsec</strong> that determine <strong>how security is applied to IP packets</strong>.</p>
+<p>They define:</p>
+<ul>
+<li class="">What portion of the packet is encrypted/authenticated</li>
+<li class="">Whether a new IP header is added</li>
+<li class="">Whether internal IP addresses are hidden</li>
+<li class="">The type of VPN scenario in which they are used</li>
+</ul>
+<p>IPsec can operate in either mode depending on the security requirement.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=41-overview-of-ipsec-modes>4.1 Overview of IPsec Modes<a href=#41-overview-of-ipsec-modes class=hash-link aria-label="Direct link to 4.1 Overview of IPsec Modes" title="Direct link to 4.1 Overview of IPsec Modes" translate=no>​</a></h3>
+<p>According to the PDF (page 29) :</p>
+<p>In the context of VPNs and IPsec, <strong>Tunnel Mode</strong> and <strong>Transport Mode</strong> are two different ways IPsec secures communication between devices or networks.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=core-difference>Core Difference<a href=#core-difference class=hash-link aria-label="Direct link to Core Difference" title="Direct link to Core Difference" translate=no>​</a></h4>
+<table><thead><tr><th>Mode<th>What is Protected<tbody><tr><td>Tunnel Mode<td>Entire IP packet<tr><td>Transport Mode<td>Only the payload (data)</table>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=conceptual-flow-of-ipsec-modes>Conceptual Flow of IPsec Modes<a href=#conceptual-flow-of-ipsec-modes class=hash-link aria-label="Direct link to Conceptual Flow of IPsec Modes" title="Direct link to Conceptual Flow of IPsec Modes" translate=no>​</a></h4>
+<!-- -->
+<p>The selected mode determines <strong>encapsulation structure and security level</strong>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=42-tunnel-mode>4.2 Tunnel Mode<a href=#42-tunnel-mode class=hash-link aria-label="Direct link to 4.2 Tunnel Mode" title="Direct link to 4.2 Tunnel Mode" translate=no>​</a></h3>
+<p>(Refer pages 30–31, 49 )</p>
+<p>Tunnel Mode is typically used for <strong>VPNs between networks</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=421-purpose>4.2.1 Purpose<a href=#421-purpose class=hash-link aria-label="Direct link to 4.2.1 Purpose" title="Direct link to 4.2.1 Purpose" translate=no>​</a></h4>
+<p>Tunnel Mode is used to:</p>
+<ul>
+<li class="">Create secure VPN tunnels between networks</li>
+<li class="">Secure communication between two VPN gateways</li>
+<li class="">Hide internal network structure</li>
+</ul>
+<p>It is most commonly used in:</p>
+<ul>
+<li class=""><strong>Site-to-Site VPNs</strong></li>
+<li class="">Network-to-Network communication</li>
+</ul>
+<p>Its primary objective is:</p>
+<blockquote>
+<p>To encapsulate and protect the entire original IP packet.</p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=422-encapsulation-of-entire-ip-packet>4.2.2 Encapsulation of Entire IP Packet<a href=#422-encapsulation-of-entire-ip-packet class=hash-link aria-label="Direct link to 4.2.2 Encapsulation of Entire IP Packet" title="Direct link to 4.2.2 Encapsulation of Entire IP Packet" translate=no>​</a></h4>
+<p>As per page 30 :</p>
+<p>In Tunnel Mode, the <strong>entire original IP packet (including its IP header)</strong> is encapsulated inside a new IP packet.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=structure-transformation>Structure Transformation<a href=#structure-transformation class=hash-link aria-label="Direct link to Structure Transformation" title="Direct link to Structure Transformation" translate=no>​</a></h4>
+<p><strong>Before IPsec:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">[Original IP Header][Data]</span><br/></div></code></pre></div></div>
+<p><strong>After Tunnel Mode:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">[New IP Header][IPsec Header][Original IP Header][Data]</span><br/></div></code></pre></div></div>
+<p>The complete original packet becomes encrypted payload.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=tunnel-mode-encapsulation-flow>Tunnel Mode Encapsulation Flow<a href=#tunnel-mode-encapsulation-flow class=hash-link aria-label="Direct link to Tunnel Mode Encapsulation Flow" title="Direct link to Tunnel Mode Encapsulation Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=423-header-modification>4.2.3 Header Modification<a href=#423-header-modification class=hash-link aria-label="Direct link to 4.2.3 Header Modification" title="Direct link to 4.2.3 Header Modification" translate=no>​</a></h4>
+<p>According to page 31 :</p>
+<ul>
+<li class="">The original IP header is <strong>hidden inside the encrypted portion</strong>.</li>
+<li class="">A <strong>new IP header</strong> is added.</li>
+<li class="">The new header contains:<!-- -->
+<ul>
+<li class="">Source: VPN Gateway A</li>
+<li class="">Destination: VPN Gateway B</li>
+</ul>
+</li>
+</ul>
+<p>This ensures:</p>
+<ul>
+<li class="">Internal IP addresses are hidden</li>
+<li class="">Network topology remains private</li>
+<li class="">Only gateway addresses are visible on the internet</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=424-use-case-site-to-site-vpn>4.2.4 Use Case (Site-to-Site VPN)<a href=#424-use-case-site-to-site-vpn class=hash-link aria-label="Direct link to 4.2.4 Use Case (Site-to-Site VPN)" title="Direct link to 4.2.4 Use Case (Site-to-Site VPN)" translate=no>​</a></h4>
+<p>Tunnel Mode is commonly used in:</p>
+<ul>
+<li class="">Site-to-Site VPNs</li>
+<li class="">Inter-branch communication</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=example-scenario>Example Scenario<a href=#example-scenario class=hash-link aria-label="Direct link to Example Scenario" title="Direct link to Example Scenario" translate=no>​</a></h4>
+<p>Branch Office (192.168.2.0/24)</p>
+<p>Head Office (192.168.1.0/24)</p>
+<!-- -->
+<p>Steps:</p>
+<ol>
+<li class="">Host sends packet.</li>
+<li class="">Gateway encrypts entire packet.</li>
+<li class="">New IP header added.</li>
+<li class="">Packet travels securely.</li>
+<li class="">Destination gateway decrypts and forwards.</li>
+</ol>
+<p>✔ Entire networks communicate as if directly connected.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=43-transport-mode>4.3 Transport Mode<a href=#43-transport-mode class=hash-link aria-label="Direct link to 4.3 Transport Mode" title="Direct link to 4.3 Transport Mode" translate=no>​</a></h3>
+<p>(Refer pages 32–34, 49 )</p>
+<p>Transport Mode is used for <strong>end-to-end communication between two devices</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=431-purpose>4.3.1 Purpose<a href=#431-purpose class=hash-link aria-label="Direct link to 4.3.1 Purpose" title="Direct link to 4.3.1 Purpose" translate=no>​</a></h4>
+<p>Transport Mode is used for:</p>
+<ul>
+<li class="">Host-to-Host communication</li>
+<li class="">Secure end-to-end device communication</li>
+<li class="">Remote access VPN scenarios</li>
+</ul>
+<p>Its objective:</p>
+<blockquote>
+<p>To secure the data while keeping routing information visible.</p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=432-encrypts-payload-only>4.3.2 Encrypts Payload Only<a href=#432-encrypts-payload-only class=hash-link aria-label="Direct link to 4.3.2 Encrypts Payload Only" title="Direct link to 4.3.2 Encrypts Payload Only" translate=no>​</a></h4>
+<p>As per page 32 :</p>
+<p>In Transport Mode:</p>
+<ul>
+<li class="">Only the <strong>payload (data)</strong> is encrypted.</li>
+<li class="">The original IP header remains unchanged.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=structure-transformation-1>Structure Transformation<a href=#structure-transformation-1 class=hash-link aria-label="Direct link to Structure Transformation" title="Direct link to Structure Transformation" translate=no>​</a></h4>
+<p><strong>Before IPsec:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">[IP Header][Data]</span><br/></div></code></pre></div></div>
+<p><strong>After Transport Mode:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">[Original IP Header][IPsec Header][Encrypted Data]</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=transport-mode-processing-flow>Transport Mode Processing Flow<a href=#transport-mode-processing-flow class=hash-link aria-label="Direct link to Transport Mode Processing Flow" title="Direct link to Transport Mode Processing Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=433-original-header-remains-intact>4.3.3 Original Header Remains Intact<a href=#433-original-header-remains-intact class=hash-link aria-label="Direct link to 4.3.3 Original Header Remains Intact" title="Direct link to 4.3.3 Original Header Remains Intact" translate=no>​</a></h4>
+<p>From page 34 :</p>
+<ul>
+<li class="">The original IP header is <strong>not modified</strong>.</li>
+<li class="">Source and destination IP addresses remain visible.</li>
+<li class="">Additional security headers are added for authentication/integrity.</li>
+</ul>
+<p>Implications:</p>
+<ul>
+<li class="">Routers can read routing information.</li>
+<li class="">Internal IP addresses are visible.</li>
+<li class="">Less overhead compared to Tunnel Mode.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=434-use-case-end-to-end-communication>4.3.4 Use Case (End-to-End Communication)<a href=#434-use-case-end-to-end-communication class=hash-link aria-label="Direct link to 4.3.4 Use Case (End-to-End Communication)" title="Direct link to 4.3.4 Use Case (End-to-End Communication)" translate=no>​</a></h4>
+<p>Used in:</p>
+<ul>
+<li class="">Device-to-Device communication</li>
+<li class="">Point-to-Point connections</li>
+<li class="">Some Remote Access VPN implementations</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=example>Example<a href=#example class=hash-link aria-label="Direct link to Example" title="Direct link to Example" translate=no>​</a></h4>
+<p>Laptop ↔ Server</p>
+<!-- -->
+<p>Steps:</p>
+<ol>
+<li class="">Laptop sends packet.</li>
+<li class="">Only data is encrypted.</li>
+<li class="">IP header remains visible.</li>
+<li class="">Server decrypts payload.</li>
+</ol>
+<p>✔ Faster than Tunnel Mode</p>
+<p>✔ Lower overhead</p>
+<p>✔ Suitable for direct host communication</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=tunnel-mode-vs-transport-mode-comparison>Tunnel Mode vs Transport Mode (Comparison)<a href=#tunnel-mode-vs-transport-mode-comparison class=hash-link aria-label="Direct link to Tunnel Mode vs Transport Mode (Comparison)" title="Direct link to Tunnel Mode vs Transport Mode (Comparison)" translate=no>​</a></h3>
+<table><thead><tr><th>Feature<th>Tunnel Mode<th>Transport Mode<tbody><tr><td>Encrypts<td>Entire IP packet<td>Payload only<tr><td>Original IP Header<td>Hidden<td>Remains intact<tr><td>New IP Header Added<td>Yes<td>No<tr><td>Internal IP Hidden<td>Yes<td>No<tr><td>Used For<td>Site-to-Site VPN<td>End-to-End<tr><td>Overhead<td>Higher<td>Lower</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=key-exam-points>Key Exam Points<a href=#key-exam-points class=hash-link aria-label="Direct link to Key Exam Points" title="Direct link to Key Exam Points" translate=no>​</a></h3>
+<ol>
+<li class="">Tunnel Mode encrypts entire IP packet including original header.</li>
+<li class="">Transport Mode encrypts only the payload.</li>
+<li class="">Tunnel Mode adds a new IP header.</li>
+<li class="">Tunnel Mode is used in Site-to-Site VPN.</li>
+<li class="">Transport Mode is used in End-to-End communication.</li>
+<li class="">Tunnel Mode hides internal IP addresses.</li>
+<li class="">Transport Mode keeps routing header visible.</li>
+</ol>
+<hr/>
+<hr/>
+<p>&lt;aside> 💡</p>
+<p>Till here for MID SEM</p>
+<p>&lt;/aside></p>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-authentication-header-ah>5. Authentication Header (AH)<a href=#5-authentication-header-ah class=hash-link aria-label="Direct link to 5. Authentication Header (AH)" title="Direct link to 5. Authentication Header (AH)" translate=no>​</a></h2>
+<p>Authentication Header (AH) is one of the <strong>two main protocols of IPsec</strong>, the other being ESP (Encapsulating Security Payload).</p>
+<p>AH is designed to provide:</p>
+<ul>
+<li class="">Authentication</li>
+<li class="">Data Integrity</li>
+<li class="">Anti-Replay Protection</li>
+</ul>
+<p>It does <strong>NOT provide encryption (confidentiality)</strong>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=51-introduction-to-ah>5.1 Introduction to AH<a href=#51-introduction-to-ah class=hash-link aria-label="Direct link to 5.1 Introduction to AH" title="Direct link to 5.1 Introduction to AH" translate=no>​</a></h3>
+<p>According to page 35 :</p>
+<blockquote>
+<p>The Authentication Header (AH) is one of the two main protocols used in IPsec to provide security services for IP packets.</p>
+</blockquote>
+<p>AH can be used:</p>
+<ul>
+<li class="">In <strong>Tunnel Mode</strong></li>
+<li class="">In <strong>Transport Mode</strong></li>
+</ul>
+<p>It is inserted:</p>
+<p>Between the original IP header and the upper-layer protocol (e.g., TCP/UDP).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=position-of-ah-in-packet>Position of AH in Packet<a href=#position-of-ah-in-packet class=hash-link aria-label="Direct link to Position of AH in Packet" title="Direct link to Position of AH in Packet" translate=no>​</a></h4>
+<!-- -->
+<p>AH protects the packet by adding cryptographic verification data.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=52-purpose-of-ah>5.2 Purpose of AH<a href=#52-purpose-of-ah class=hash-link aria-label="Direct link to 5.2 Purpose of AH" title="Direct link to 5.2 Purpose of AH" translate=no>​</a></h3>
+<p>(Refer pages 37–39 )</p>
+<p>AH provides <strong>security services focused on trust and integrity</strong>, not secrecy.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=521-authentication>5.2.1 Authentication<a href=#521-authentication class=hash-link aria-label="Direct link to 5.2.1 Authentication" title="Direct link to 5.2.1 Authentication" translate=no>​</a></h4>
+<p>Authentication ensures:</p>
+<ul>
+<li class="">The sender is genuine</li>
+<li class="">The packet truly comes from the claimed source</li>
+</ul>
+<p>AH achieves authentication using a <strong>cryptographic hash function</strong>.</p>
+<p>Process:</p>
+<ol>
+<li class="">Sender computes hash of packet contents.</li>
+<li class="">Hash is placed inside AH header.</li>
+<li class="">Receiver recomputes hash.</li>
+<li class="">If both hashes match → packet is authentic.</li>
+</ol>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=authentication-flow>Authentication Flow<a href=#authentication-flow class=hash-link aria-label="Direct link to Authentication Flow" title="Direct link to Authentication Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=522-data-integrity>5.2.2 Data Integrity<a href=#522-data-integrity class=hash-link aria-label="Direct link to 5.2.2 Data Integrity" title="Direct link to 5.2.2 Data Integrity" translate=no>​</a></h4>
+<p>According to page 37 :</p>
+<p>Integrity ensures:</p>
+<blockquote>
+<p>The contents of the IP packet have not been altered during transmission.</p>
+</blockquote>
+<p>AH calculates a cryptographic hash known as:</p>
+<p><strong>Integrity Check Value (ICV)</strong></p>
+<p>If even 1 bit changes in transit:</p>
+<ul>
+<li class="">The hash will differ</li>
+<li class="">Packet will be rejected</li>
+</ul>
+<p>✔ Prevents tampering</p>
+<p>✔ Detects modification</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=523-anti-replay-protection>5.2.3 Anti-Replay Protection<a href=#523-anti-replay-protection class=hash-link aria-label="Direct link to 5.2.3 Anti-Replay Protection" title="Direct link to 5.2.3 Anti-Replay Protection" translate=no>​</a></h4>
+<p>(Page 38 )</p>
+<p>AH protects against <strong>replay attacks</strong>.</p>
+<p>Replay attack = attacker captures a valid packet and resends it later.</p>
+<p>AH prevents this using:</p>
+<ul>
+<li class="">A <strong>Sequence Number field</strong></li>
+</ul>
+<p>How it works:</p>
+<ol>
+<li class="">Each packet gets a unique sequence number.</li>
+<li class="">Receiver checks order of packets.</li>
+<li class="">Duplicate or out-of-order packets are rejected.</li>
+</ol>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=anti-replay-flow>Anti-Replay Flow<a href=#anti-replay-flow class=hash-link aria-label="Direct link to Anti-Replay Flow" title="Direct link to Anti-Replay Flow" translate=no>​</a></h4>
+<!-- -->
+<p>✔ Protects against repeated transmission attacks</p>
+<p>✔ Ensures freshness of packets</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=524-no-confidentiality-no-encryption>5.2.4 No Confidentiality (No Encryption)<a href=#524-no-confidentiality-no-encryption class=hash-link aria-label="Direct link to 5.2.4 No Confidentiality (No Encryption)" title="Direct link to 5.2.4 No Confidentiality (No Encryption)" translate=no>​</a></h4>
+<p>(Page 39 )</p>
+<p>Important:</p>
+<p>AH does NOT encrypt data.</p>
+<p>This means:</p>
+<ul>
+<li class="">Data remains visible</li>
+<li class="">Only integrity and authenticity are protected</li>
+</ul>
+<p>So AH provides:</p>
+<p>✔ Authentication</p>
+<p>✔ Integrity</p>
+<p>✔ Anti-Replay</p>
+<p>But NOT:</p>
+<p>✘ Confidentiality</p>
+<p>If encryption is required → ESP must be used.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=53-structure-of-ah>5.3 Structure of AH<a href=#53-structure-of-ah class=hash-link aria-label="Direct link to 5.3 Structure of AH" title="Direct link to 5.3 Structure of AH" translate=no>​</a></h3>
+<p>(Refer pages 40–41 )</p>
+<p>AH is inserted between:</p>
+<p>Original IP header and upper-layer protocol.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ah-packet-structure>AH Packet Structure<a href=#ah-packet-structure class=hash-link aria-label="Direct link to AH Packet Structure" title="Direct link to AH Packet Structure" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<p>The AH header contains several fields:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=531-next-header>5.3.1 Next Header<a href=#531-next-header class=hash-link aria-label="Direct link to 5.3.1 Next Header" title="Direct link to 5.3.1 Next Header" translate=no>​</a></h4>
+<ul>
+<li class="">Identifies the type of next header.</li>
+<li class="">Indicates upper-layer protocol (TCP, UDP, etc.)</li>
+<li class="">Helps receiver know what comes after AH.</li>
+</ul>
+<p>Example:</p>
+<ul>
+<li class="">TCP</li>
+<li class="">UDP</li>
+<li class="">ICMP</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=532-payload-length>5.3.2 Payload Length<a href=#532-payload-length class=hash-link aria-label="Direct link to 5.3.2 Payload Length" title="Direct link to 5.3.2 Payload Length" translate=no>​</a></h4>
+<ul>
+<li class="">Specifies length of AH header.</li>
+<li class="">Indicates how much data is covered.</li>
+<li class="">Used for parsing packet correctly.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=533-reserved-field>5.3.3 Reserved Field<a href=#533-reserved-field class=hash-link aria-label="Direct link to 5.3.3 Reserved Field" title="Direct link to 5.3.3 Reserved Field" translate=no>​</a></h4>
+<ul>
+<li class="">Reserved for future use.</li>
+<li class="">Currently set to zero.</li>
+<li class="">Ensures future compatibility.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=534-security-parameters-index-spi>5.3.4 Security Parameters Index (SPI)<a href=#534-security-parameters-index-spi class=hash-link aria-label="Direct link to 5.3.4 Security Parameters Index (SPI)" title="Direct link to 5.3.4 Security Parameters Index (SPI)" translate=no>​</a></h4>
+<ul>
+<li class="">Unique identifier for a Security Association (SA).</li>
+<li class="">Tells receiver which SA to use.</li>
+<li class="">Helps identify cryptographic keys and algorithms.</li>
+</ul>
+<p>Important concept:</p>
+<p>Each secure connection has its own SA.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=535-sequence-number>5.3.5 Sequence Number<a href=#535-sequence-number class=hash-link aria-label="Direct link to 5.3.5 Sequence Number" title="Direct link to 5.3.5 Sequence Number" translate=no>​</a></h4>
+<ul>
+<li class="">Prevents replay attacks.</li>
+<li class="">Incremented for each packet.</li>
+<li class="">Ensures packet uniqueness.</li>
+</ul>
+<p>If repeated → rejected.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=536-authentication-data-icv>5.3.6 Authentication Data (ICV)<a href=#536-authentication-data-icv class=hash-link aria-label="Direct link to 5.3.6 Authentication Data (ICV)" title="Direct link to 5.3.6 Authentication Data (ICV)" translate=no>​</a></h4>
+<p>This is the most important field.</p>
+<ul>
+<li class="">Contains cryptographic hash value.</li>
+<li class="">Known as <strong>Integrity Check Value (ICV)</strong>.</li>
+<li class="">Ensures authenticity and integrity.</li>
+</ul>
+<p>If ICV mismatch:</p>
+<ul>
+<li class="">Packet discarded.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ah-header-layout-summary>AH Header Layout Summary<a href=#ah-header-layout-summary class=hash-link aria-label="Direct link to AH Header Layout Summary" title="Direct link to AH Header Layout Summary" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=ah-summary-table>AH Summary Table<a href=#ah-summary-table class=hash-link aria-label="Direct link to AH Summary Table" title="Direct link to AH Summary Table" translate=no>​</a></h3>
+<table><thead><tr><th>Feature<th>Provided by AH<tbody><tr><td>Authentication<td>Yes<tr><td>Data Integrity<td>Yes<tr><td>Anti-Replay<td>Yes<tr><td>Encryption<td>No<tr><td>Uses Cryptographic Hash<td>Yes<tr><td>Uses Sequence Numbers<td>Yes</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=important-exam-points>Important Exam Points<a href=#important-exam-points class=hash-link aria-label="Direct link to Important Exam Points" title="Direct link to Important Exam Points" translate=no>​</a></h3>
+<ol>
+<li class="">AH is one of two main IPsec protocols.</li>
+<li class="">AH provides authentication and integrity.</li>
+<li class="">AH does not provide encryption.</li>
+<li class="">AH prevents replay attacks using sequence numbers.</li>
+<li class="">AH includes SPI and ICV fields.</li>
+<li class="">ICV ensures packet integrity.</li>
+<li class="">AH is inserted between IP header and upper-layer protocol.</li>
+</ol>
+<hr/>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-ipsec-protocol-suite>6. IPsec Protocol Suite<a href=#6-ipsec-protocol-suite class=hash-link aria-label="Direct link to 6. IPsec Protocol Suite" title="Direct link to 6. IPsec Protocol Suite" translate=no>​</a></h2>
+<p>IPsec (Internet Protocol Security) is a <strong>comprehensive suite of protocols</strong> designed to secure IP communications.</p>
+<p>It provides:</p>
+<ul>
+<li class="">Authentication</li>
+<li class="">Integrity</li>
+<li class="">Confidentiality</li>
+<li class="">Replay Protection</li>
+</ul>
+<p>IPsec is widely used to establish <strong>Virtual Private Networks (VPNs)</strong> and secure communication over IP networks.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=61-overview-of-ipsec>6.1 Overview of IPsec<a href=#61-overview-of-ipsec class=hash-link aria-label="Direct link to 6.1 Overview of IPsec" title="Direct link to 6.1 Overview of IPsec" translate=no>​</a></h3>
+<p>According to page 43 :</p>
+<p>IPsec is a collection of protocols and standards that secure IP packets by applying cryptographic protection.</p>
+<p>It works at the <strong>Network Layer (Layer 3)</strong> of the OSI model.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=security-services-provided-by-ipsec>Security Services Provided by IPsec<a href=#security-services-provided-by-ipsec class=hash-link aria-label="Direct link to Security Services Provided by IPsec" title="Direct link to Security Services Provided by IPsec" translate=no>​</a></h4>
+<table><thead><tr><th>Security Service<th>Meaning<tbody><tr><td>Authentication<td>Verifies sender identity<tr><td>Integrity<td>Ensures data not altered<tr><td>Confidentiality<td>Encrypts data<tr><td>Replay Protection<td>Prevents reused packets</table>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=high-level-working-of-ipsec>High-Level Working of IPsec<a href=#high-level-working-of-ipsec class=hash-link aria-label="Direct link to High-Level Working of IPsec" title="Direct link to High-Level Working of IPsec" translate=no>​</a></h4>
+<!-- -->
+<p>IPsec uses multiple components to achieve this protection.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=62-components-of-ipsec>6.2 Components of IPsec<a href=#62-components-of-ipsec class=hash-link aria-label="Direct link to 6.2 Components of IPsec" title="Direct link to 6.2 Components of IPsec" translate=no>​</a></h3>
+<p>(Page 43–48 )</p>
+<p>The IPsec suite consists of:</p>
+<ol>
+<li class="">Authentication Header (AH)</li>
+<li class="">Encapsulating Security Payload (ESP)</li>
+<li class="">Security Associations (SA)</li>
+<li class="">Internet Key Exchange (IKE)</li>
+<li class="">Key Management</li>
+</ol>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=621-authentication-header-ah>6.2.1 Authentication Header (AH)<a href=#621-authentication-header-ah class=hash-link aria-label="Direct link to 6.2.1 Authentication Header (AH)" title="Direct link to 6.2.1 Authentication Header (AH)" translate=no>​</a></h3>
+<p>(Page 44 )</p>
+<p>AH provides:</p>
+<ul>
+<li class="">Authentication</li>
+<li class="">Integrity</li>
+<li class="">Anti-Replay Protection</li>
+</ul>
+<p>It does NOT provide encryption.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=services-of-ah>Services of AH<a href=#services-of-ah class=hash-link aria-label="Direct link to Services of AH" title="Direct link to Services of AH" translate=no>​</a></h4>
+<table><thead><tr><th>Feature<th>Provided<tbody><tr><td>Authentication<td>Yes<tr><td>Integrity<td>Yes<tr><td>Confidentiality<td>No<tr><td>Anti-Replay<td>Yes</table>
+<p>AH ensures that the packet:</p>
+<ul>
+<li class="">Came from the correct sender</li>
+<li class="">Was not modified in transit</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=622-encapsulating-security-payload-esp>6.2.2 Encapsulating Security Payload (ESP)<a href=#622-encapsulating-security-payload-esp class=hash-link aria-label="Direct link to 6.2.2 Encapsulating Security Payload (ESP)" title="Direct link to 6.2.2 Encapsulating Security Payload (ESP)" translate=no>​</a></h4>
+<p>(Page 45 )</p>
+<p>ESP provides:</p>
+<ul>
+<li class="">Confidentiality</li>
+<li class="">Authentication</li>
+<li class="">Integrity</li>
+<li class="">Optional Anti-Replay</li>
+</ul>
+<p>ESP is more commonly used than AH because it supports encryption.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6221-confidentiality><strong>6.2.2.1 Confidentiality</strong><a href=#6221-confidentiality class=hash-link aria-label="Direct link to 6221-confidentiality" title="Direct link to 6221-confidentiality" translate=no>​</a></h4>
+<p>ESP encrypts the payload of the IP packet.</p>
+<p>This ensures:</p>
+<ul>
+<li class="">Data remains secret</li>
+<li class="">Unauthorized users cannot read it</li>
+</ul>
+<p>Encryption protects sensitive information during transmission.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6222-authentication><strong>6.2.2.2 Authentication</strong><a href=#6222-authentication class=hash-link aria-label="Direct link to 6222-authentication" title="Direct link to 6222-authentication" translate=no>​</a></h4>
+<p>ESP verifies:</p>
+<ul>
+<li class="">Sender identity</li>
+<li class="">Validity of packet</li>
+</ul>
+<p>Authentication prevents spoofing.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6223-integrity><strong>6.2.2.3 Integrity</strong><a href=#6223-integrity class=hash-link aria-label="Direct link to 6223-integrity" title="Direct link to 6223-integrity" translate=no>​</a></h4>
+<p>ESP ensures:</p>
+<ul>
+<li class="">Data has not been modified</li>
+<li class="">Any tampering is detected</li>
+</ul>
+<p>It uses cryptographic hash functions similar to AH.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6224-optional-anti-replay><strong>6.2.2.4 Optional Anti-Replay</strong><a href=#6224-optional-anti-replay class=hash-link aria-label="Direct link to 6224-optional-anti-replay" title="Direct link to 6224-optional-anti-replay" translate=no>​</a></h4>
+<p>ESP can include:</p>
+<ul>
+<li class="">Sequence numbers</li>
+<li class="">Packet freshness verification</li>
+</ul>
+<p>This prevents attackers from resending captured packets.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=esp-working-flow>ESP Working Flow<a href=#esp-working-flow class=hash-link aria-label="Direct link to ESP Working Flow" title="Direct link to ESP Working Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=623-security-associations-sa>6.2.3 Security Associations (SA)<a href=#623-security-associations-sa class=hash-link aria-label="Direct link to 6.2.3 Security Associations (SA)" title="Direct link to 6.2.3 Security Associations (SA)" translate=no>​</a></h4>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6231-definition><strong>6.2.3.1 Definition</strong><a href=#6231-definition class=hash-link aria-label="Direct link to 6231-definition" title="Direct link to 6231-definition" translate=no>​</a></h4>
+<p>A Security Association (SA) is:</p>
+<blockquote>
+<p>A one-way logical connection between two entities for secure communication.</p>
+</blockquote>
+<p>Each direction of communication requires a separate SA.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6232-attributes><strong>6.2.3.2 Attributes</strong><a href=#6232-attributes class=hash-link aria-label="Direct link to 6232-attributes" title="Direct link to 6232-attributes" translate=no>​</a></h4>
+<p>Each SA includes:</p>
+<ul>
+<li class="">Security protocol (AH or ESP)</li>
+<li class="">Cryptographic algorithms</li>
+<li class="">Encryption keys</li>
+<li class="">Authentication keys</li>
+<li class="">Lifetime parameters</li>
+</ul>
+<p>SA defines how packets should be protected.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6233-establishment-via-ike><strong>6.2.3.3 Establishment via IKE</strong><a href=#6233-establishment-via-ike class=hash-link aria-label="Direct link to 6233-establishment-via-ike" title="Direct link to 6233-establishment-via-ike" translate=no>​</a></h4>
+<p>Security Associations are established through:</p>
+<p>Internet Key Exchange (IKE)</p>
+<p>IKE negotiates:</p>
+<ul>
+<li class="">Algorithms</li>
+<li class="">Keys</li>
+<li class="">Authentication methods</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=sa-establishment-flow>SA Establishment Flow<a href=#sa-establishment-flow class=hash-link aria-label="Direct link to SA Establishment Flow" title="Direct link to SA Establishment Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=624-internet-key-exchange-ike>6.2.4 Internet Key Exchange (IKE)<a href=#624-internet-key-exchange-ike class=hash-link aria-label="Direct link to 6.2.4 Internet Key Exchange (IKE)" title="Direct link to 6.2.4 Internet Key Exchange (IKE)" translate=no>​</a></h4>
+<p>IKE automates:</p>
+<ul>
+<li class="">Negotiation</li>
+<li class="">Authentication</li>
+<li class="">Key exchange</li>
+</ul>
+<p>It establishes and manages Security Associations.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6241-purpose><strong>6.2.4.1 Purpose</strong><a href=#6241-purpose class=hash-link aria-label="Direct link to 6241-purpose" title="Direct link to 6241-purpose" translate=no>​</a></h4>
+<p>IKE is used to:</p>
+<ul>
+<li class="">Automatically negotiate secure parameters</li>
+<li class="">Establish trusted communication channel</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6242-authentication><strong>6.2.4.2 Authentication</strong><a href=#6242-authentication class=hash-link aria-label="Direct link to 6242-authentication" title="Direct link to 6242-authentication" translate=no>​</a></h4>
+<p>IKE authenticates communicating parties using:</p>
+<ul>
+<li class="">Pre-shared keys (PSK)</li>
+<li class="">Digital certificates</li>
+</ul>
+<p>This prevents unauthorized access.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6243-key-management><strong>6.2.4.3 Key Management</strong><a href=#6243-key-management class=hash-link aria-label="Direct link to 6243-key-management" title="Direct link to 6243-key-management" translate=no>​</a></h4>
+<p>IKE handles:</p>
+<ul>
+<li class="">Exchange of cryptographic keys</li>
+<li class="">Secure distribution</li>
+<li class="">Key refresh</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6244-phase-1-and-phase-2><strong>6.2.4.4 Phase 1 and Phase 2</strong><a href=#6244-phase-1-and-phase-2 class=hash-link aria-label="Direct link to 6244-phase-1-and-phase-2" title="Direct link to 6244-phase-1-and-phase-2" translate=no>​</a></h4>
+<p>IKE operates in two phases:</p>
+<table><thead><tr><th>Phase<th>Function<tbody><tr><td>Phase 1<td>Establish secure channel<tr><td>Phase 2<td>Negotiate IPsec SAs</table>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ike-two-phase-process>IKE Two-Phase Process<a href=#ike-two-phase-process class=hash-link aria-label="Direct link to IKE Two-Phase Process" title="Direct link to IKE Two-Phase Process" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=625-key-management>6.2.5 Key Management<a href=#625-key-management class=hash-link aria-label="Direct link to 6.2.5 Key Management" title="Direct link to 6.2.5 Key Management" translate=no>​</a></h4>
+<p>Key Management involves:</p>
+<ul>
+<li class="">Generating</li>
+<li class="">Distributing</li>
+<li class="">Managing cryptographic keys</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6251-manual-keys><strong>6.2.5.1 Manual Keys</strong><a href=#6251-manual-keys class=hash-link aria-label="Direct link to 6251-manual-keys" title="Direct link to 6251-manual-keys" translate=no>​</a></h4>
+<p>Keys are:</p>
+<ul>
+<li class="">Configured manually</li>
+<li class="">Entered by administrator</li>
+</ul>
+<p>Disadvantages:</p>
+<ul>
+<li class="">Not scalable</li>
+<li class="">Hard to maintain</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6252-automated-keys><strong>6.2.5.2 Automated Keys</strong><a href=#6252-automated-keys class=hash-link aria-label="Direct link to 6252-automated-keys" title="Direct link to 6252-automated-keys" translate=no>​</a></h4>
+<p>Keys are:</p>
+<ul>
+<li class="">Generated dynamically</li>
+<li class="">Exchanged using IKE</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li class="">More secure</li>
+<li class="">Easier management</li>
+<li class="">Scalable</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=6253-lifetime-management><strong>6.2.5.3 Lifetime Management</strong><a href=#6253-lifetime-management class=hash-link aria-label="Direct link to 6253-lifetime-management" title="Direct link to 6253-lifetime-management" translate=no>​</a></h4>
+<p>Keys and SAs have:</p>
+<ul>
+<li class="">Defined validity period</li>
+<li class="">Expressed in time (seconds)</li>
+<li class="">Or data volume (kilobytes)</li>
+</ul>
+<p>After expiration:</p>
+<ul>
+<li class="">Keys are renegotiated</li>
+<li class="">New secure session established</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=key-lifecycle-flow>Key Lifecycle Flow<a href=#key-lifecycle-flow class=hash-link aria-label="Direct link to Key Lifecycle Flow" title="Direct link to Key Lifecycle Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=complete-ipsec-architecture-overview>Complete IPsec Architecture Overview<a href=#complete-ipsec-architecture-overview class=hash-link aria-label="Direct link to Complete IPsec Architecture Overview" title="Direct link to Complete IPsec Architecture Overview" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-table>Summary Table<a href=#summary-table class=hash-link aria-label="Direct link to Summary Table" title="Direct link to Summary Table" translate=no>​</a></h3>
+<table><thead><tr><th>Component<th>Function<tbody><tr><td>AH<td>Authentication & Integrity<tr><td>ESP<td>Encryption + Authentication<tr><td>SA<td>Defines security parameters<tr><td>IKE<td>Negotiates keys & SAs<tr><td>Key Management<td>Handles lifecycle of keys</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=important-exam-points-1>Important Exam Points<a href=#important-exam-points-1 class=hash-link aria-label="Direct link to Important Exam Points" title="Direct link to Important Exam Points" translate=no>​</a></h3>
+<ol>
+<li class="">IPsec secures IP communication at Network Layer.</li>
+<li class="">IPsec provides authentication, integrity, confidentiality, replay protection.</li>
+<li class="">AH does not provide encryption.</li>
+<li class="">ESP provides encryption.</li>
+<li class="">SA is a one-way secure logical connection.</li>
+<li class="">IKE negotiates and manages SAs.</li>
+<li class="">IKE has Phase 1 and Phase 2.</li>
+<li class="">Keys can be manual or automated.</li>
+<li class="">Keys have defined lifetime.</li>
+</ol>
+<hr/>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-ike-phase-1>7. IKE Phase 1<a href=#7-ike-phase-1 class=hash-link aria-label="Direct link to 7. IKE Phase 1" title="Direct link to 7. IKE Phase 1" translate=no>​</a></h2>
+<p>Internet Key Exchange (IKE) is part of the IPsec suite and is responsible for:</p>
+<ul>
+<li class="">Negotiating security parameters</li>
+<li class="">Authenticating communicating parties</li>
+<li class="">Establishing secure channels</li>
+<li class="">Managing cryptographic keys</li>
+</ul>
+<p>IKE operates in <strong>two phases</strong>, and Phase 1 is the foundation for secure IPsec communication.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=71-objective-of-ike-phase-1>7.1 Objective of IKE Phase 1<a href=#71-objective-of-ike-phase-1 class=hash-link aria-label="Direct link to 7.1 Objective of IKE Phase 1" title="Direct link to 7.1 Objective of IKE Phase 1" translate=no>​</a></h3>
+<p>According to page 51 :</p>
+<p>The objective of IKE Phase 1 is:</p>
+<blockquote>
+<p>To establish a secure, authenticated communication channel and negotiate a shared secret key for further use in Phase 2.</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=key-goals>Key Goals<a href=#key-goals class=hash-link aria-label="Direct link to Key Goals" title="Direct link to Key Goals" translate=no>​</a></h4>
+<ul>
+<li class="">Authenticate both parties</li>
+<li class="">Establish a secure channel</li>
+<li class="">Negotiate encryption algorithms</li>
+<li class="">Create a secure IKE Security Association (IKE SA)</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=ike-phase-1-overview-flow>IKE Phase 1 Overview Flow<a href=#ike-phase-1-overview-flow class=hash-link aria-label="Direct link to IKE Phase 1 Overview Flow" title="Direct link to IKE Phase 1 Overview Flow" translate=no>​</a></h4>
+<!-- -->
+<p>Phase 1 creates a secure tunnel used in Phase 2.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=72-authentication-methods>7.2 Authentication Methods<a href=#72-authentication-methods class=hash-link aria-label="Direct link to 7.2 Authentication Methods" title="Direct link to 7.2 Authentication Methods" translate=no>​</a></h3>
+<p>Authentication ensures:</p>
+<ul>
+<li class="">The identity of both communicating devices</li>
+<li class="">Protection against unauthorized access</li>
+</ul>
+<p>IKE Phase 1 supports multiple authentication methods.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=721-pre-shared-keys-psk>7.2.1 Pre-Shared Keys (PSK)<a href=#721-pre-shared-keys-psk class=hash-link aria-label="Direct link to 7.2.1 Pre-Shared Keys (PSK)" title="Direct link to 7.2.1 Pre-Shared Keys (PSK)" translate=no>​</a></h4>
+<p>Pre-Shared Key (PSK):</p>
+<ul>
+<li class="">A secret key manually configured on both devices</li>
+<li class="">Must be identical on both sides</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=how-psk-works>How PSK Works<a href=#how-psk-works class=hash-link aria-label="Direct link to How PSK Works" title="Direct link to How PSK Works" translate=no>​</a></h4>
+<ol>
+<li class="">Both parties configure the same secret key.</li>
+<li class="">During negotiation, the key is used to authenticate.</li>
+<li class="">If keys match → authentication successful.</li>
+</ol>
+<hr/>
+<!-- -->
+<p>✔ Simple to configure</p>
+<p>✔ Suitable for small environments</p>
+<p>✘ Not scalable for large networks</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=722-digital-certificates>7.2.2 Digital Certificates<a href=#722-digital-certificates class=hash-link aria-label="Direct link to 7.2.2 Digital Certificates" title="Direct link to 7.2.2 Digital Certificates" translate=no>​</a></h4>
+<p>Digital certificates provide stronger authentication.</p>
+<ul>
+<li class="">Based on Public Key Infrastructure (PKI)</li>
+<li class="">Issued by a trusted Certificate Authority (CA)</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=how-it-works>How It Works<a href=#how-it-works class=hash-link aria-label="Direct link to How It Works" title="Direct link to How It Works" translate=no>​</a></h4>
+<ol>
+<li class="">Each device has a certificate.</li>
+<li class="">Certificates are exchanged.</li>
+<li class="">Certificates are verified.</li>
+<li class="">Secure connection established.</li>
+</ol>
+<hr/>
+<!-- -->
+<p>✔ More secure than PSK</p>
+<p>✔ Scalable</p>
+<p>✔ Used in enterprise environments</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=73-encryption-algorithm-negotiation>7.3 Encryption Algorithm Negotiation<a href=#73-encryption-algorithm-negotiation class=hash-link aria-label="Direct link to 7.3 Encryption Algorithm Negotiation" title="Direct link to 7.3 Encryption Algorithm Negotiation" translate=no>​</a></h3>
+<p>During Phase 1, both parties negotiate which encryption algorithm will be used to secure IKE communication.</p>
+<p>Purpose:</p>
+<blockquote>
+<p>To protect confidentiality of IKE exchanges.</p>
+</blockquote>
+<p>Common algorithms:</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=731-des-data-encryption-standard>7.3.1 DES (Data Encryption Standard)<a href=#731-des-data-encryption-standard class=hash-link aria-label="Direct link to 7.3.1 DES (Data Encryption Standard)" title="Direct link to 7.3.1 DES (Data Encryption Standard)" translate=no>​</a></h4>
+<ul>
+<li class="">Older encryption algorithm</li>
+<li class="">Uses 56-bit key</li>
+<li class="">Considered weak today</li>
+</ul>
+<p>✔ Historically used</p>
+<p>✘ Not recommended for modern security</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=732-3des-triple-des>7.3.2 3DES (Triple DES)<a href=#732-3des-triple-des class=hash-link aria-label="Direct link to 7.3.2 3DES (Triple DES)" title="Direct link to 7.3.2 3DES (Triple DES)" translate=no>​</a></h4>
+<ul>
+<li class="">Applies DES three times</li>
+<li class="">Stronger than DES</li>
+<li class="">Slower due to triple processing</li>
+</ul>
+<p>✔ More secure than DES</p>
+<p>✘ Slower performance</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=733-aes-advanced-encryption-standard>7.3.3 AES (Advanced Encryption Standard)<a href=#733-aes-advanced-encryption-standard class=hash-link aria-label="Direct link to 7.3.3 AES (Advanced Encryption Standard)" title="Direct link to 7.3.3 AES (Advanced Encryption Standard)" translate=no>​</a></h4>
+<ul>
+<li class="">Modern encryption algorithm</li>
+<li class="">Supports 128, 192, 256-bit keys</li>
+<li class="">Strong and efficient</li>
+</ul>
+<p>✔ Highly secure</p>
+<p>✔ Widely used</p>
+<p>✔ Recommended standard</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=algorithm-negotiation-flow>Algorithm Negotiation Flow<a href=#algorithm-negotiation-flow class=hash-link aria-label="Direct link to Algorithm Negotiation Flow" title="Direct link to Algorithm Negotiation Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=74-lifetime-negotiation>7.4 Lifetime Negotiation<a href=#74-lifetime-negotiation class=hash-link aria-label="Direct link to 7.4 Lifetime Negotiation" title="Direct link to 7.4 Lifetime Negotiation" translate=no>​</a></h3>
+<p>(Page 53 & 55 )</p>
+<p>Lifetime negotiation defines:</p>
+<blockquote>
+<p>How long the negotiated keys and Security Associations remain valid.</p>
+</blockquote>
+<p>Parameters may be expressed in:</p>
+<ul>
+<li class="">Seconds</li>
+<li class="">Kilobytes of transmitted data</li>
+</ul>
+<p>When lifetime expires:</p>
+<ul>
+<li class="">Keys are renegotiated</li>
+<li class="">New secure session established</li>
+</ul>
+<hr/>
+<!-- -->
+<p>✔ Prevents long-term key exposure</p>
+<p>✔ Improves security</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=75-main-mode>7.5 Main Mode<a href=#75-main-mode class=hash-link aria-label="Direct link to 7.5 Main Mode" title="Direct link to 7.5 Main Mode" translate=no>​</a></h3>
+<p>Main Mode is one method of performing IKE Phase 1 negotiation.</p>
+<p>It uses:</p>
+<ul>
+<li class="">Three-message exchange process</li>
+<li class="">More secure</li>
+<li class="">Slower than Aggressive Mode</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=751-secure-but-slower>7.5.1 Secure but Slower<a href=#751-secure-but-slower class=hash-link aria-label="Direct link to 7.5.1 Secure but Slower" title="Direct link to 7.5.1 Secure but Slower" translate=no>​</a></h4>
+<p>Main Mode:</p>
+<ul>
+<li class="">Provides identity protection</li>
+<li class="">Hides identities during negotiation</li>
+<li class="">Requires more communication steps</li>
+</ul>
+<p>✔ Higher security</p>
+<p>✘ Slower negotiation</p>
+<hr/>
+<!-- -->
+<p>Secure but requires more exchanges.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=76-aggressive-mode>7.6 Aggressive Mode<a href=#76-aggressive-mode class=hash-link aria-label="Direct link to 7.6 Aggressive Mode" title="Direct link to 7.6 Aggressive Mode" translate=no>​</a></h3>
+<p>Aggressive Mode is an alternative to Main Mode.</p>
+<p>It:</p>
+<ul>
+<li class="">Uses fewer messages</li>
+<li class="">Faster negotiation</li>
+<li class="">Slightly less secure</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=761-faster-but-less-secure>7.6.1 Faster but Less Secure<a href=#761-faster-but-less-secure class=hash-link aria-label="Direct link to 7.6.1 Faster but Less Secure" title="Direct link to 7.6.1 Faster but Less Secure" translate=no>​</a></h4>
+<p>Aggressive Mode:</p>
+<ul>
+<li class="">Exchanges information more quickly</li>
+<li class="">Some identity information transmitted in clear</li>
+<li class="">Less identity protection</li>
+</ul>
+<p>✔ Faster setup</p>
+<p>✘ Lower security compared to Main Mode</p>
+<hr/>
+<!-- -->
+<p>Fewer messages → faster but less secure.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=77-establishment-of-ike-security-association>7.7 Establishment of IKE Security Association<a href=#77-establishment-of-ike-security-association class=hash-link aria-label="Direct link to 7.7 Establishment of IKE Security Association" title="Direct link to 7.7 Establishment of IKE Security Association" translate=no>​</a></h3>
+<p>After successful Phase 1:</p>
+<ul>
+<li class="">A secure IKE Security Association (IKE SA) is established.</li>
+<li class="">Negotiated parameters are stored.</li>
+<li class="">Keying material derived for Phase 2.</li>
+</ul>
+<p>IKE SA includes:</p>
+<ul>
+<li class="">Agreed encryption algorithm</li>
+<li class="">Authentication method</li>
+<li class="">Shared secret keys</li>
+<li class="">Lifetime</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=final-establishment-flow>Final Establishment Flow<a href=#final-establishment-flow class=hash-link aria-label="Direct link to Final Establishment Flow" title="Direct link to Final Establishment Flow" translate=no>​</a></h4>
+<!-- -->
+<p>Phase 1 establishes the secure control channel.</p>
+<p>Phase 2 will create IPsec SAs for actual data protection.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-table--ike-phase-1>Summary Table – IKE Phase 1<a href=#summary-table--ike-phase-1 class=hash-link aria-label="Direct link to Summary Table – IKE Phase 1" title="Direct link to Summary Table – IKE Phase 1" translate=no>​</a></h3>
+<table><thead><tr><th>Feature<th>Description<tbody><tr><td>Objective<td>Establish secure authenticated channel<tr><td>Authentication Methods<td>PSK, Digital Certificates<tr><td>Encryption Algorithms<td>DES, 3DES, AES<tr><td>Lifetime<td>Defines SA validity period<tr><td>Modes<td>Main Mode, Aggressive Mode<tr><td>Output<td>IKE Security Association</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=important-exam-points-2>Important Exam Points<a href=#important-exam-points-2 class=hash-link aria-label="Direct link to Important Exam Points" title="Direct link to Important Exam Points" translate=no>​</a></h3>
+<ol>
+<li class="">IKE Phase 1 establishes a secure authenticated channel.</li>
+<li class="">It negotiates encryption algorithms and authentication methods.</li>
+<li class="">Supports PSK and Digital Certificates.</li>
+<li class="">AES is most secure among DES, 3DES, AES.</li>
+<li class="">Lifetime defines validity of SA.</li>
+<li class="">Main Mode is more secure but slower.</li>
+<li class="">Aggressive Mode is faster but less secure.</li>
+<li class="">Phase 1 results in creation of IKE SA.</li>
+</ol>
+<hr/>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=8-implementation-of-vpns>8. Implementation of VPNs<a href=#8-implementation-of-vpns class=hash-link aria-label="Direct link to 8. Implementation of VPNs" title="Direct link to 8. Implementation of VPNs" translate=no>​</a></h2>
+<p>VPN implementation involves setting up a <strong>secure and encrypted communication channel</strong> over an existing network (typically the Internet).</p>
+<p>Different VPN implementations are used depending on:</p>
+<ul>
+<li class="">Type of users (individual vs network)</li>
+<li class="">Security requirements</li>
+<li class="">Scale of deployment</li>
+<li class="">Infrastructure availability</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=81-overview-of-vpn-implementation>8.1 Overview of VPN Implementation<a href=#81-overview-of-vpn-implementation class=hash-link aria-label="Direct link to 8.1 Overview of VPN Implementation" title="Direct link to 8.1 Overview of VPN Implementation" translate=no>​</a></h3>
+<p>According to page 58 :</p>
+<p>VPN implementation involves:</p>
+<ul>
+<li class="">Configuring secure communication</li>
+<li class="">Choosing appropriate protocols</li>
+<li class="">Establishing authentication mechanisms</li>
+<li class="">Managing encryption</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=general-vpn-implementation-flow>General VPN Implementation Flow<a href=#general-vpn-implementation-flow class=hash-link aria-label="Direct link to General VPN Implementation Flow" title="Direct link to General VPN Implementation Flow" translate=no>​</a></h4>
+<!-- -->
+<p>VPNs can be implemented as:</p>
+<ul>
+<li class="">Remote Access VPN</li>
+<li class="">Site-to-Site VPN</li>
+<li class="">SSL/TLS VPN</li>
+<li class="">Clientless VPN</li>
+<li class="">OpenVPN</li>
+<li class="">WireGuard</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=82-remote-access-vpn-implementation>8.2 Remote Access VPN Implementation<a href=#82-remote-access-vpn-implementation class=hash-link aria-label="Direct link to 8.2 Remote Access VPN Implementation" title="Direct link to 8.2 Remote Access VPN Implementation" translate=no>​</a></h3>
+<p>Remote Access VPN provides secure access to a private network for <strong>individual users or remote devices</strong>.</p>
+<p>Used when:</p>
+<ul>
+<li class="">Employees work from home</li>
+<li class="">Users travel</li>
+<li class="">Remote workforce needs secure access</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=821-vpn-client-software>8.2.1 VPN Client Software<a href=#821-vpn-client-software class=hash-link aria-label="Direct link to 8.2.1 VPN Client Software" title="Direct link to 8.2.1 VPN Client Software" translate=no>​</a></h4>
+<p>Users must install:</p>
+<ul>
+<li class="">VPN client software on their devices</li>
+</ul>
+<p>This software:</p>
+<ul>
+<li class="">Initiates connection</li>
+<li class="">Handles encryption</li>
+<li class="">Manages authentication</li>
+</ul>
+<hr/>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=822-authentication>8.2.2 Authentication<a href=#822-authentication class=hash-link aria-label="Direct link to 8.2.2 Authentication" title="Direct link to 8.2.2 Authentication" translate=no>​</a></h4>
+<p>Users authenticate using:</p>
+<ul>
+<li class="">Username and password</li>
+<li class="">Sometimes two-factor authentication</li>
+</ul>
+<p>Purpose:</p>
+<ul>
+<li class="">Ensure only authorized users access network</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=823-encryption-protocols>8.2.3 Encryption Protocols<a href=#823-encryption-protocols class=hash-link aria-label="Direct link to 8.2.3 Encryption Protocols" title="Direct link to 8.2.3 Encryption Protocols" translate=no>​</a></h4>
+<p>Encryption protocols used:</p>
+<ul>
+<li class="">PPTP</li>
+<li class="">L2TP/IPsec</li>
+<li class="">IKEv2/IPsec</li>
+<li class="">SSL/TLS</li>
+</ul>
+<p>These protocols ensure secure data transmission.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=824-examples-ssl-vpn-ipsec-client-vpn>8.2.4 Examples (SSL VPN, IPsec Client VPN)<a href=#824-examples-ssl-vpn-ipsec-client-vpn class=hash-link aria-label="Direct link to 8.2.4 Examples (SSL VPN, IPsec Client VPN)" title="Direct link to 8.2.4 Examples (SSL VPN, IPsec Client VPN)" translate=no>​</a></h4>
+<p>Examples include:</p>
+<ul>
+<li class="">SSL VPNs (web-based VPNs)</li>
+<li class="">IPsec-based client VPNs</li>
+</ul>
+<p>These allow secure remote connectivity.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=83-site-to-site-vpn-implementation>8.3 Site-to-Site VPN Implementation<a href=#83-site-to-site-vpn-implementation class=hash-link aria-label="Direct link to 8.3 Site-to-Site VPN Implementation" title="Direct link to 8.3 Site-to-Site VPN Implementation" translate=no>​</a></h3>
+<p>Site-to-Site VPN connects <strong>entire networks</strong> securely.</p>
+<p>Used for:</p>
+<ul>
+<li class="">Multi-branch companies</li>
+<li class="">Inter-office communication</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=831-vpn-gateway--firewall>8.3.1 VPN Gateway / Firewall<a href=#831-vpn-gateway--firewall class=hash-link aria-label="Direct link to 8.3.1 VPN Gateway / Firewall" title="Direct link to 8.3.1 VPN Gateway / Firewall" translate=no>​</a></h4>
+<p>Each site uses:</p>
+<ul>
+<li class="">VPN Gateway</li>
+<li class="">Firewall device</li>
+</ul>
+<p>These devices:</p>
+<ul>
+<li class="">Establish secure tunnels</li>
+<li class="">Manage encryption</li>
+<li class="">Authenticate other gateway</li>
+</ul>
+<hr/>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=832-gateway-authentication>8.3.2 Gateway Authentication<a href=#832-gateway-authentication class=hash-link aria-label="Direct link to 8.3.2 Gateway Authentication" title="Direct link to 8.3.2 Gateway Authentication" translate=no>​</a></h4>
+<p>Gateways authenticate using:</p>
+<ul>
+<li class="">Pre-shared keys</li>
+<li class="">Digital certificates</li>
+</ul>
+<p>Ensures trusted communication between sites.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=833-ipsec-encryption>8.3.3 IPsec Encryption<a href=#833-ipsec-encryption class=hash-link aria-label="Direct link to 8.3.3 IPsec Encryption" title="Direct link to 8.3.3 IPsec Encryption" translate=no>​</a></h4>
+<p>IPsec is commonly used for:</p>
+<ul>
+<li class="">Tunneling</li>
+<li class="">Encryption</li>
+<li class="">Secure communication</li>
+</ul>
+<p>Provides:</p>
+<ul>
+<li class="">Authentication</li>
+<li class="">Integrity</li>
+<li class="">Confidentiality</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=834-mpls-vpn>8.3.4 MPLS VPN<a href=#834-mpls-vpn class=hash-link aria-label="Direct link to 8.3.4 MPLS VPN" title="Direct link to 8.3.4 MPLS VPN" translate=no>​</a></h4>
+<p>MPLS (Multiprotocol Label Switching) VPNs:</p>
+<ul>
+<li class="">Used in enterprise networks</li>
+<li class="">Provide secure site connectivity</li>
+<li class="">Operate through service providers</li>
+</ul>
+<p>Used for scalable, reliable enterprise networking.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=84-ssltls-vpn-implementation>8.4 SSL/TLS VPN Implementation<a href=#84-ssltls-vpn-implementation class=hash-link aria-label="Direct link to 8.4 SSL/TLS VPN Implementation" title="Direct link to 8.4 SSL/TLS VPN Implementation" translate=no>​</a></h3>
+<p>(Page 63–64 )</p>
+<p>SSL/TLS VPN provides secure access using:</p>
+<ul>
+<li class="">Web browser</li>
+<li class="">SSL/TLS encryption</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=841-web-browser-interface>8.4.1 Web Browser Interface<a href=#841-web-browser-interface class=hash-link aria-label="Direct link to 8.4.1 Web Browser Interface" title="Direct link to 8.4.1 Web Browser Interface" translate=no>​</a></h4>
+<p>Users connect to:</p>
+<ul>
+<li class="">Secure web portal</li>
+</ul>
+<p>No complex client installation required (in some cases).</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=842-authentication>8.4.2 Authentication<a href=#842-authentication class=hash-link aria-label="Direct link to 8.4.2 Authentication" title="Direct link to 8.4.2 Authentication" translate=no>​</a></h4>
+<p>Users log in using:</p>
+<ul>
+<li class="">Credentials</li>
+<li class="">Often two-factor authentication</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=843-ssltls-encryption>8.4.3 SSL/TLS Encryption<a href=#843-ssltls-encryption class=hash-link aria-label="Direct link to 8.4.3 SSL/TLS Encryption" title="Direct link to 8.4.3 SSL/TLS Encryption" translate=no>​</a></h4>
+<p>Communication is secured using:</p>
+<ul>
+<li class="">SSL/TLS protocols</li>
+</ul>
+<p>Provides:</p>
+<ul>
+<li class="">Encryption</li>
+<li class="">Authentication</li>
+<li class="">Data protection</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=844-examples-cisco-anyconnect-openvpn>8.4.4 Examples (Cisco AnyConnect, OpenVPN)<a href=#844-examples-cisco-anyconnect-openvpn class=hash-link aria-label="Direct link to 8.4.4 Examples (Cisco AnyConnect, OpenVPN)" title="Direct link to 8.4.4 Examples (Cisco AnyConnect, OpenVPN)" translate=no>​</a></h4>
+<p>Examples include:</p>
+<ul>
+<li class="">Cisco AnyConnect</li>
+<li class="">OpenVPN with SSL/TLS</li>
+</ul>
+<p>These solutions provide secure remote access.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=85-clientless-vpn>8.5 Clientless VPN<a href=#85-clientless-vpn class=hash-link aria-label="Direct link to 8.5 Clientless VPN" title="Direct link to 8.5 Clientless VPN" translate=no>​</a></h3>
+<p>Clientless VPN allows secure access:</p>
+<ul>
+<li class="">Without installing client software</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=851-web-based-access>8.5.1 Web-Based Access<a href=#851-web-based-access class=hash-link aria-label="Direct link to 8.5.1 Web-Based Access" title="Direct link to 8.5.1 Web-Based Access" translate=no>​</a></h4>
+<p>Users access resources via:</p>
+<ul>
+<li class="">Standard web browser</li>
+<li class="">Secure portal</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=852-no-client-software-required>8.5.2 No Client Software Required<a href=#852-no-client-software-required class=hash-link aria-label="Direct link to 8.5.2 No Client Software Required" title="Direct link to 8.5.2 No Client Software Required" translate=no>​</a></h4>
+<p>Advantages:</p>
+<ul>
+<li class="">Easy to use</li>
+<li class="">No installation</li>
+<li class="">Suitable for temporary access</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=853-examples-cisco-ssl-vpn-juniper-secure-access>8.5.3 Examples (Cisco SSL VPN, Juniper Secure Access)<a href=#853-examples-cisco-ssl-vpn-juniper-secure-access class=hash-link aria-label="Direct link to 8.5.3 Examples (Cisco SSL VPN, Juniper Secure Access)" title="Direct link to 8.5.3 Examples (Cisco SSL VPN, Juniper Secure Access)" translate=no>​</a></h4>
+<p>Examples include:</p>
+<ul>
+<li class="">Cisco SSL VPN</li>
+<li class="">Juniper Networks Secure Access</li>
+</ul>
+<p>Used for web-based secure access.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=86-openvpn-implementation>8.6 OpenVPN Implementation<a href=#86-openvpn-implementation class=hash-link aria-label="Direct link to 8.6 OpenVPN Implementation" title="Direct link to 8.6 OpenVPN Implementation" translate=no>​</a></h3>
+<p>OpenVPN is an open-source VPN solution.</p>
+<p>Provides:</p>
+<ul>
+<li class="">Flexibility</li>
+<li class="">High security</li>
+<li class="">SSL/TLS encryption</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=861-openvpn-software>8.6.1 OpenVPN Software<a href=#861-openvpn-software class=hash-link aria-label="Direct link to 8.6.1 OpenVPN Software" title="Direct link to 8.6.1 OpenVPN Software" translate=no>​</a></h4>
+<p>OpenVPN software must be installed on:</p>
+<ul>
+<li class="">Client</li>
+<li class="">Server</li>
+</ul>
+<hr/>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=862-authentication-methods>8.6.2 Authentication Methods<a href=#862-authentication-methods class=hash-link aria-label="Direct link to 8.6.2 Authentication Methods" title="Direct link to 8.6.2 Authentication Methods" translate=no>​</a></h4>
+<p>Authentication methods include:</p>
+<ul>
+<li class="">Username/password</li>
+<li class="">Digital certificates</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=863-ssltls-encryption>8.6.3 SSL/TLS Encryption<a href=#863-ssltls-encryption class=hash-link aria-label="Direct link to 8.6.3 SSL/TLS Encryption" title="Direct link to 8.6.3 SSL/TLS Encryption" translate=no>​</a></h4>
+<p>OpenVPN uses:</p>
+<ul>
+<li class="">SSL/TLS for secure communication</li>
+<li class="">Secure key exchange</li>
+</ul>
+<p>Commonly used for:</p>
+<ul>
+<li class="">Site-to-site VPN</li>
+<li class="">Remote access VPN</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=87-wireguard-implementation>8.7 WireGuard Implementation<a href=#87-wireguard-implementation class=hash-link aria-label="Direct link to 8.7 WireGuard Implementation" title="Direct link to 8.7 WireGuard Implementation" translate=no>​</a></h3>
+<p>WireGuard is:</p>
+<ul>
+<li class="">Modern</li>
+<li class="">Lightweight</li>
+<li class="">Open-source VPN protocol</li>
+</ul>
+<p>Known for:</p>
+<ul>
+<li class="">Simplicity</li>
+<li class="">High performance</li>
+<li class="">Modern cryptography</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=871-software-installation>8.7.1 Software Installation<a href=#871-software-installation class=hash-link aria-label="Direct link to 8.7.1 Software Installation" title="Direct link to 8.7.1 Software Installation" translate=no>​</a></h4>
+<p>WireGuard software installed on:</p>
+<ul>
+<li class="">Client devices</li>
+<li class="">Server devices</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=872-publicprivate-key-authentication>8.7.2 Public/Private Key Authentication<a href=#872-publicprivate-key-authentication class=hash-link aria-label="Direct link to 8.7.2 Public/Private Key Authentication" title="Direct link to 8.7.2 Public/Private Key Authentication" translate=no>​</a></h4>
+<p>WireGuard uses:</p>
+<ul>
+<li class="">Public keys</li>
+<li class="">Private keys</li>
+</ul>
+<p>Each device:</p>
+<ul>
+<li class="">Has a key pair</li>
+<li class="">Exchanges public keys</li>
+<li class="">Establishes secure tunnel</li>
+</ul>
+<hr/>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=873-modern-cryptography>8.7.3 Modern Cryptography<a href=#873-modern-cryptography class=hash-link aria-label="Direct link to 8.7.3 Modern Cryptography" title="Direct link to 8.7.3 Modern Cryptography" translate=no>​</a></h4>
+<p>WireGuard uses:</p>
+<ul>
+<li class="">Modern cryptographic algorithms</li>
+<li class="">Efficient codebase</li>
+<li class="">Improved performance</li>
+</ul>
+<p>Advantages:</p>
+<ul>
+<li class="">Faster than traditional VPNs</li>
+<li class="">Easier configuration</li>
+<li class="">Smaller attack surface</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=complete-vpn-implementation-overview>Complete VPN Implementation Overview<a href=#complete-vpn-implementation-overview class=hash-link aria-label="Direct link to Complete VPN Implementation Overview" title="Direct link to Complete VPN Implementation Overview" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=summary-table-1>Summary Table<a href=#summary-table-1 class=hash-link aria-label="Direct link to Summary Table" title="Direct link to Summary Table" translate=no>​</a></h3>
+<table><thead><tr><th>VPN Type<th>Used For<th>Requires Client?<th>Protocol Used<tbody><tr><td>Remote Access<td>Individual users<td>Yes<td>IPsec, SSL<tr><td>Site-to-Site<td>Network connection<td>No (gateway-based)<td>IPsec<tr><td>SSL/TLS VPN<td>Browser access<td>Sometimes<td>SSL/TLS<tr><td>Clientless VPN<td>Web-based access<td>No<td>SSL<tr><td>OpenVPN<td>Flexible deployment<td>Yes<td>SSL/TLS<tr><td>WireGuard<td>Modern VPN<td>Yes<td>Modern cryptography</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=important-exam-points-3>Important Exam Points<a href=#important-exam-points-3 class=hash-link aria-label="Direct link to Important Exam Points" title="Direct link to Important Exam Points" translate=no>​</a></h3>
+<ol>
+<li class="">VPN implementation creates secure encrypted communication.</li>
+<li class="">Remote Access VPN requires client software.</li>
+<li class="">Site-to-Site VPN uses VPN gateways and IPsec.</li>
+<li class="">SSL/TLS VPN uses web browser interface.</li>
+<li class="">Clientless VPN requires no client installation.</li>
+<li class="">OpenVPN uses SSL/TLS encryption.</li>
+<li class="">WireGuard uses public/private key authentication.</li>
+<li class="">MPLS VPN is used in enterprise site connectivity.</li>
+</ol>
+<hr/>
+<hr/></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/ankur3-101106/docs/NCS/u3.mdx target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/NCS/u2><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Unit - 2</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/NCS/u4><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Unit - 4</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#proxy--vpns class="table-of-contents__link toc-highlight">Proxy & VPNs</a><li><a href=#1-virtual-private-network-vpn class="table-of-contents__link toc-highlight">1. Virtual Private Network (VPN)</a><ul><li><a href=#11-definition-of-vpn class="table-of-contents__link toc-highlight">1.1 Definition of VPN</a><li><a href=#12-purpose-of-vpn class="table-of-contents__link toc-highlight">1.2 Purpose of VPN</a><ul><li><a href=#121-secure-and-encrypted-connection class="table-of-contents__link toc-highlight">1.2.1 Secure and Encrypted Connection</a><li><a href=#122-protect-online-privacy class="table-of-contents__link toc-highlight">1.2.2 Protect Online Privacy</a><li><a href=#123-secure-data-transmission class="table-of-contents__link toc-highlight">1.2.3 Secure Data Transmission</a><li><a href=#124-access-restricted-content class="table-of-contents__link toc-highlight">1.2.4 Access Restricted Content</a></ul><li><a href=#summary class="table-of-contents__link toc-highlight">Summary</a></ul><li><a href=#2-types-of-vpn class="table-of-contents__link toc-highlight">2. Types of VPN</a><ul><li><a href=#21-remote-access-vpn class="table-of-contents__link toc-highlight">2.1 Remote Access VPN</a><ul><li><a href=#211-purpose class="table-of-contents__link toc-highlight">2.1.1 Purpose</a><li><a href=#212-use-case-employees-working-remotely class="table-of-contents__link toc-highlight">2.1.2 Use Case (Employees Working Remotely)</a></ul><li><a href=#22-site-to-site-vpn class="table-of-contents__link toc-highlight">2.2 Site-to-Site VPN</a><ul><li><a href=#221-purpose class="table-of-contents__link toc-highlight">2.2.1 Purpose</a><li><a href=#222-use-case-multiple-office-locations class="table-of-contents__link toc-highlight">2.2.2 Use Case (Multiple Office Locations)</a></ul><li><a href=#23-intranet-based-vpn class="table-of-contents__link toc-highlight">2.3 Intranet-Based VPN</a><ul><li><a href=#231-purpose class="table-of-contents__link toc-highlight">2.3.1 Purpose</a><li><a href=#232-use-case-internal-communication-across-branches class="table-of-contents__link toc-highlight">2.3.2 Use Case (Internal Communication Across Branches)</a></ul><li><a href=#24-extranet-based-vpn class="table-of-contents__link toc-highlight">2.4 Extranet-Based VPN</a><ul><li><a href=#241-purpose class="table-of-contents__link toc-highlight">2.4.1 Purpose</a><li><a href=#242-use-case-partner-organization-communication class="table-of-contents__link toc-highlight">2.4.2 Use Case (Partner Organization Communication)</a></ul><li><a href=#25-ssltls-vpn class="table-of-contents__link toc-highlight">2.5 SSL/TLS VPN</a><ul><li><a href=#251-purpose class="table-of-contents__link toc-highlight">2.5.1 Purpose</a><li><a href=#252-use-case-browser-based-secure-access class="table-of-contents__link toc-highlight">2.5.2 Use Case (Browser-Based Secure Access)</a></ul><li><a href=#26-ipsec-vpn class="table-of-contents__link toc-highlight">2.6 IPsec VPN</a><ul><li><a href=#261-purpose class="table-of-contents__link toc-highlight">2.6.1 Purpose</a><li><a href=#262-use-case-site-to-site--remote-access class="table-of-contents__link toc-highlight">2.6.2 Use Case (Site-to-Site & Remote Access)</a></ul><li><a href=#27-pptp-vpn class="table-of-contents__link toc-highlight">2.7 PPTP VPN</a><ul><li><a href=#271-purpose class="table-of-contents__link toc-highlight">2.7.1 Purpose</a><li><a href=#272-security-concerns class="table-of-contents__link toc-highlight">2.7.2 Security Concerns</a><li><a href=#273-legacy-usage class="table-of-contents__link toc-highlight">2.7.3 Legacy Usage</a></ul><li><a href=#28-l2tpipsec-vpn class="table-of-contents__link toc-highlight">2.8 L2TP/IPsec VPN</a><ul><li><a href=#281-purpose class="table-of-contents__link toc-highlight">2.8.1 Purpose</a><li><a href=#282-enhanced-security-over-pptp class="table-of-contents__link toc-highlight">2.8.2 Enhanced Security Over PPTP</a></ul></ul><li><a href=#summary-1 class="table-of-contents__link toc-highlight">Summary</a><li><a href=#3-tunneling-protocols class="table-of-contents__link toc-highlight">3. Tunneling Protocols</a><ul><li><a href=#31-overview-of-tunneling-protocols class="table-of-contents__link toc-highlight">3.1 Overview of Tunneling Protocols</a><li><a href=#32-pptp-point-to-point-tunneling-protocol class="table-of-contents__link toc-highlight">3.2 PPTP (Point-to-Point Tunneling Protocol)</a><ul><li><a href=#321-purpose class="table-of-contents__link toc-highlight">3.2.1 Purpose</a><li><a href=#322-security-level class="table-of-contents__link toc-highlight">3.2.2 Security Level</a></ul><li><a href=#33-l2tp-layer-2-tunneling-protocol class="table-of-contents__link toc-highlight">3.3 L2TP (Layer 2 Tunneling Protocol)</a><ul><li><a href=#331-purpose class="table-of-contents__link toc-highlight">3.3.1 Purpose</a><li><a href=#332-combined-with-ipsec class="table-of-contents__link toc-highlight">3.3.2 Combined with IPsec</a></ul><li><a href=#34-ipsec class="table-of-contents__link toc-highlight">3.4 IPsec</a><ul><li><a href=#341-purpose class="table-of-contents__link toc-highlight">3.4.1 Purpose</a><li><a href=#342-authentication-and-encryption class="table-of-contents__link toc-highlight">3.4.2 Authentication and Encryption</a></ul><li><a href=#35-sstp-secure-socket-tunneling-protocol class="table-of-contents__link toc-highlight">3.5 SSTP (Secure Socket Tunneling Protocol)</a><ul><li><a href=#351-developed-by-microsoft class="table-of-contents__link toc-highlight">3.5.1 Developed by Microsoft</a><li><a href=#352-operates-over-ssltls class="table-of-contents__link toc-highlight">3.5.2 Operates over SSL/TLS</a></ul><li><a href=#36-openvpn class="table-of-contents__link toc-highlight">3.6 OpenVPN</a><ul><li><a href=#361-open-source-protocol class="table-of-contents__link toc-highlight">3.6.1 Open-Source Protocol</a><li><a href=#362-uses-ssltls class="table-of-contents__link toc-highlight">3.6.2 Uses SSL/TLS</a><li><a href=#363-high-security class="table-of-contents__link toc-highlight">3.6.3 High Security</a></ul><li><a href=#37-wireguard class="table-of-contents__link toc-highlight">3.7 WireGuard</a><ul><li><a href=#371-modern-lightweight-protocol class="table-of-contents__link toc-highlight">3.7.1 Modern Lightweight Protocol</a><li><a href=#372-simplicity-and-performance class="table-of-contents__link toc-highlight">3.7.2 Simplicity and Performance</a></ul><li><a href=#38-ikev2ipsec class="table-of-contents__link toc-highlight">3.8 IKEv2/IPsec</a><ul><li><a href=#381-strong-security class="table-of-contents__link toc-highlight">3.8.1 Strong Security</a><li><a href=#382-mobile-device-support class="table-of-contents__link toc-highlight">3.8.2 Mobile Device Support</a></ul></ul><li><a href=#comparison-of-tunneling-protocols class="table-of-contents__link toc-highlight">Comparison of Tunneling Protocols</a><li><a href=#summary-2 class="table-of-contents__link toc-highlight">Summary</a><li><a href=#4-tunnel-mode-and-transport-mode class="table-of-contents__link toc-highlight">4. Tunnel Mode and Transport Mode</a><ul><li><a href=#41-overview-of-ipsec-modes class="table-of-contents__link toc-highlight">4.1 Overview of IPsec Modes</a><ul><li><a href=#core-difference class="table-of-contents__link toc-highlight">Core Difference</a><li><a href=#conceptual-flow-of-ipsec-modes class="table-of-contents__link toc-highlight">Conceptual Flow of IPsec Modes</a></ul><li><a href=#42-tunnel-mode class="table-of-contents__link toc-highlight">4.2 Tunnel Mode</a><ul><li><a href=#421-purpose class="table-of-contents__link toc-highlight">4.2.1 Purpose</a><li><a href=#422-encapsulation-of-entire-ip-packet class="table-of-contents__link toc-highlight">4.2.2 Encapsulation of Entire IP Packet</a><li><a href=#structure-transformation class="table-of-contents__link toc-highlight">Structure Transformation</a><li><a href=#tunnel-mode-encapsulation-flow class="table-of-contents__link toc-highlight">Tunnel Mode Encapsulation Flow</a><li><a href=#423-header-modification class="table-of-contents__link toc-highlight">4.2.3 Header Modification</a><li><a href=#424-use-case-site-to-site-vpn class="table-of-contents__link toc-highlight">4.2.4 Use Case (Site-to-Site VPN)</a><li><a href=#example-scenario class="table-of-contents__link toc-highlight">Example Scenario</a></ul><li><a href=#43-transport-mode class="table-of-contents__link toc-highlight">4.3 Transport Mode</a><ul><li><a href=#431-purpose class="table-of-contents__link toc-highlight">4.3.1 Purpose</a><li><a href=#432-encrypts-payload-only class="table-of-contents__link toc-highlight">4.3.2 Encrypts Payload Only</a><li><a href=#structure-transformation-1 class="table-of-contents__link toc-highlight">Structure Transformation</a><li><a href=#transport-mode-processing-flow class="table-of-contents__link toc-highlight">Transport Mode Processing Flow</a><li><a href=#433-original-header-remains-intact class="table-of-contents__link toc-highlight">4.3.3 Original Header Remains Intact</a><li><a href=#434-use-case-end-to-end-communication class="table-of-contents__link toc-highlight">4.3.4 Use Case (End-to-End Communication)</a><li><a href=#example class="table-of-contents__link toc-highlight">Example</a></ul><li><a href=#tunnel-mode-vs-transport-mode-comparison class="table-of-contents__link toc-highlight">Tunnel Mode vs Transport Mode (Comparison)</a><li><a href=#key-exam-points class="table-of-contents__link toc-highlight">Key Exam Points</a></ul><li><a href=#5-authentication-header-ah class="table-of-contents__link toc-highlight">5. Authentication Header (AH)</a><ul><li><a href=#51-introduction-to-ah class="table-of-contents__link toc-highlight">5.1 Introduction to AH</a><ul><li><a href=#position-of-ah-in-packet class="table-of-contents__link toc-highlight">Position of AH in Packet</a></ul><li><a href=#52-purpose-of-ah class="table-of-contents__link toc-highlight">5.2 Purpose of AH</a><ul><li><a href=#521-authentication class="table-of-contents__link toc-highlight">5.2.1 Authentication</a><li><a href=#authentication-flow class="table-of-contents__link toc-highlight">Authentication Flow</a><li><a href=#522-data-integrity class="table-of-contents__link toc-highlight">5.2.2 Data Integrity</a><li><a href=#523-anti-replay-protection class="table-of-contents__link toc-highlight">5.2.3 Anti-Replay Protection</a><li><a href=#anti-replay-flow class="table-of-contents__link toc-highlight">Anti-Replay Flow</a><li><a href=#524-no-confidentiality-no-encryption class="table-of-contents__link toc-highlight">5.2.4 No Confidentiality (No Encryption)</a></ul><li><a href=#53-structure-of-ah class="table-of-contents__link toc-highlight">5.3 Structure of AH</a><ul><li><a href=#ah-packet-structure class="table-of-contents__link toc-highlight">AH Packet Structure</a><li><a href=#531-next-header class="table-of-contents__link toc-highlight">5.3.1 Next Header</a><li><a href=#532-payload-length class="table-of-contents__link toc-highlight">5.3.2 Payload Length</a><li><a href=#533-reserved-field class="table-of-contents__link toc-highlight">5.3.3 Reserved Field</a><li><a href=#534-security-parameters-index-spi class="table-of-contents__link toc-highlight">5.3.4 Security Parameters Index (SPI)</a><li><a href=#535-sequence-number class="table-of-contents__link toc-highlight">5.3.5 Sequence Number</a><li><a href=#536-authentication-data-icv class="table-of-contents__link toc-highlight">5.3.6 Authentication Data (ICV)</a><li><a href=#ah-header-layout-summary class="table-of-contents__link toc-highlight">AH Header Layout Summary</a></ul><li><a href=#ah-summary-table class="table-of-contents__link toc-highlight">AH Summary Table</a><li><a href=#important-exam-points class="table-of-contents__link toc-highlight">Important Exam Points</a></ul><li><a href=#6-ipsec-protocol-suite class="table-of-contents__link toc-highlight">6. IPsec Protocol Suite</a><ul><li><a href=#61-overview-of-ipsec class="table-of-contents__link toc-highlight">6.1 Overview of IPsec</a><ul><li><a href=#security-services-provided-by-ipsec class="table-of-contents__link toc-highlight">Security Services Provided by IPsec</a><li><a href=#high-level-working-of-ipsec class="table-of-contents__link toc-highlight">High-Level Working of IPsec</a></ul><li><a href=#62-components-of-ipsec class="table-of-contents__link toc-highlight">6.2 Components of IPsec</a><li><a href=#621-authentication-header-ah class="table-of-contents__link toc-highlight">6.2.1 Authentication Header (AH)</a><ul><li><a href=#services-of-ah class="table-of-contents__link toc-highlight">Services of AH</a><li><a href=#622-encapsulating-security-payload-esp class="table-of-contents__link toc-highlight">6.2.2 Encapsulating Security Payload (ESP)</a><li><a href=#6221-confidentiality class="table-of-contents__link toc-highlight"><strong>6.2.2.1 Confidentiality</strong></a><li><a href=#6222-authentication class="table-of-contents__link toc-highlight"><strong>6.2.2.2 Authentication</strong></a><li><a href=#6223-integrity class="table-of-contents__link toc-highlight"><strong>6.2.2.3 Integrity</strong></a><li><a href=#6224-optional-anti-replay class="table-of-contents__link toc-highlight"><strong>6.2.2.4 Optional Anti-Replay</strong></a><li><a href=#esp-working-flow class="table-of-contents__link toc-highlight">ESP Working Flow</a><li><a href=#623-security-associations-sa class="table-of-contents__link toc-highlight">6.2.3 Security Associations (SA)</a><li><a href=#6231-definition class="table-of-contents__link toc-highlight"><strong>6.2.3.1 Definition</strong></a><li><a href=#6232-attributes class="table-of-contents__link toc-highlight"><strong>6.2.3.2 Attributes</strong></a><li><a href=#6233-establishment-via-ike class="table-of-contents__link toc-highlight"><strong>6.2.3.3 Establishment via IKE</strong></a><li><a href=#sa-establishment-flow class="table-of-contents__link toc-highlight">SA Establishment Flow</a><li><a href=#624-internet-key-exchange-ike class="table-of-contents__link toc-highlight">6.2.4 Internet Key Exchange (IKE)</a><li><a href=#6241-purpose class="table-of-contents__link toc-highlight"><strong>6.2.4.1 Purpose</strong></a><li><a href=#6242-authentication class="table-of-contents__link toc-highlight"><strong>6.2.4.2 Authentication</strong></a><li><a href=#6243-key-management class="table-of-contents__link toc-highlight"><strong>6.2.4.3 Key Management</strong></a><li><a href=#6244-phase-1-and-phase-2 class="table-of-contents__link toc-highlight"><strong>6.2.4.4 Phase 1 and Phase 2</strong></a><li><a href=#ike-two-phase-process class="table-of-contents__link toc-highlight">IKE Two-Phase Process</a><li><a href=#625-key-management class="table-of-contents__link toc-highlight">6.2.5 Key Management</a><li><a href=#6251-manual-keys class="table-of-contents__link toc-highlight"><strong>6.2.5.1 Manual Keys</strong></a><li><a href=#6252-automated-keys class="table-of-contents__link toc-highlight"><strong>6.2.5.2 Automated Keys</strong></a><li><a href=#6253-lifetime-management class="table-of-contents__link toc-highlight"><strong>6.2.5.3 Lifetime Management</strong></a><li><a href=#key-lifecycle-flow class="table-of-contents__link toc-highlight">Key Lifecycle Flow</a></ul><li><a href=#complete-ipsec-architecture-overview class="table-of-contents__link toc-highlight">Complete IPsec Architecture Overview</a><li><a href=#summary-table class="table-of-contents__link toc-highlight">Summary Table</a><li><a href=#important-exam-points-1 class="table-of-contents__link toc-highlight">Important Exam Points</a></ul><li><a href=#7-ike-phase-1 class="table-of-contents__link toc-highlight">7. IKE Phase 1</a><ul><li><a href=#71-objective-of-ike-phase-1 class="table-of-contents__link toc-highlight">7.1 Objective of IKE Phase 1</a><ul><li><a href=#key-goals class="table-of-contents__link toc-highlight">Key Goals</a><li><a href=#ike-phase-1-overview-flow class="table-of-contents__link toc-highlight">IKE Phase 1 Overview Flow</a></ul><li><a href=#72-authentication-methods class="table-of-contents__link toc-highlight">7.2 Authentication Methods</a><ul><li><a href=#721-pre-shared-keys-psk class="table-of-contents__link toc-highlight">7.2.1 Pre-Shared Keys (PSK)</a><li><a href=#how-psk-works class="table-of-contents__link toc-highlight">How PSK Works</a><li><a href=#722-digital-certificates class="table-of-contents__link toc-highlight">7.2.2 Digital Certificates</a><li><a href=#how-it-works class="table-of-contents__link toc-highlight">How It Works</a></ul><li><a href=#73-encryption-algorithm-negotiation class="table-of-contents__link toc-highlight">7.3 Encryption Algorithm Negotiation</a><ul><li><a href=#731-des-data-encryption-standard class="table-of-contents__link toc-highlight">7.3.1 DES (Data Encryption Standard)</a><li><a href=#732-3des-triple-des class="table-of-contents__link toc-highlight">7.3.2 3DES (Triple DES)</a><li><a href=#733-aes-advanced-encryption-standard class="table-of-contents__link toc-highlight">7.3.3 AES (Advanced Encryption Standard)</a><li><a href=#algorithm-negotiation-flow class="table-of-contents__link toc-highlight">Algorithm Negotiation Flow</a></ul><li><a href=#74-lifetime-negotiation class="table-of-contents__link toc-highlight">7.4 Lifetime Negotiation</a><li><a href=#75-main-mode class="table-of-contents__link toc-highlight">7.5 Main Mode</a><ul><li><a href=#751-secure-but-slower class="table-of-contents__link toc-highlight">7.5.1 Secure but Slower</a></ul><li><a href=#76-aggressive-mode class="table-of-contents__link toc-highlight">7.6 Aggressive Mode</a><ul><li><a href=#761-faster-but-less-secure class="table-of-contents__link toc-highlight">7.6.1 Faster but Less Secure</a></ul><li><a href=#77-establishment-of-ike-security-association class="table-of-contents__link toc-highlight">7.7 Establishment of IKE Security Association</a><ul><li><a href=#final-establishment-flow class="table-of-contents__link toc-highlight">Final Establishment Flow</a></ul><li><a href=#summary-table--ike-phase-1 class="table-of-contents__link toc-highlight">Summary Table – IKE Phase 1</a><li><a href=#important-exam-points-2 class="table-of-contents__link toc-highlight">Important Exam Points</a></ul><li><a href=#8-implementation-of-vpns class="table-of-contents__link toc-highlight">8. Implementation of VPNs</a><ul><li><a href=#81-overview-of-vpn-implementation class="table-of-contents__link toc-highlight">8.1 Overview of VPN Implementation</a><ul><li><a href=#general-vpn-implementation-flow class="table-of-contents__link toc-highlight">General VPN Implementation Flow</a></ul><li><a href=#82-remote-access-vpn-implementation class="table-of-contents__link toc-highlight">8.2 Remote Access VPN Implementation</a><ul><li><a href=#821-vpn-client-software class="table-of-contents__link toc-highlight">8.2.1 VPN Client Software</a><li><a href=#822-authentication class="table-of-contents__link toc-highlight">8.2.2 Authentication</a><li><a href=#823-encryption-protocols class="table-of-contents__link toc-highlight">8.2.3 Encryption Protocols</a><li><a href=#824-examples-ssl-vpn-ipsec-client-vpn class="table-of-contents__link toc-highlight">8.2.4 Examples (SSL VPN, IPsec Client VPN)</a></ul><li><a href=#83-site-to-site-vpn-implementation class="table-of-contents__link toc-highlight">8.3 Site-to-Site VPN Implementation</a><ul><li><a href=#831-vpn-gateway--firewall class="table-of-contents__link toc-highlight">8.3.1 VPN Gateway / Firewall</a><li><a href=#832-gateway-authentication class="table-of-contents__link toc-highlight">8.3.2 Gateway Authentication</a><li><a href=#833-ipsec-encryption class="table-of-contents__link toc-highlight">8.3.3 IPsec Encryption</a><li><a href=#834-mpls-vpn class="table-of-contents__link toc-highlight">8.3.4 MPLS VPN</a></ul><li><a href=#84-ssltls-vpn-implementation class="table-of-contents__link toc-highlight">8.4 SSL/TLS VPN Implementation</a><ul><li><a href=#841-web-browser-interface class="table-of-contents__link toc-highlight">8.4.1 Web Browser Interface</a><li><a href=#842-authentication class="table-of-contents__link toc-highlight">8.4.2 Authentication</a><li><a href=#843-ssltls-encryption class="table-of-contents__link toc-highlight">8.4.3 SSL/TLS Encryption</a><li><a href=#844-examples-cisco-anyconnect-openvpn class="table-of-contents__link toc-highlight">8.4.4 Examples (Cisco AnyConnect, OpenVPN)</a></ul><li><a href=#85-clientless-vpn class="table-of-contents__link toc-highlight">8.5 Clientless VPN</a><ul><li><a href=#851-web-based-access class="table-of-contents__link toc-highlight">8.5.1 Web-Based Access</a><li><a href=#852-no-client-software-required class="table-of-contents__link toc-highlight">8.5.2 No Client Software Required</a><li><a href=#853-examples-cisco-ssl-vpn-juniper-secure-access class="table-of-contents__link toc-highlight">8.5.3 Examples (Cisco SSL VPN, Juniper Secure Access)</a></ul><li><a href=#86-openvpn-implementation class="table-of-contents__link toc-highlight">8.6 OpenVPN Implementation</a><ul><li><a href=#861-openvpn-software class="table-of-contents__link toc-highlight">8.6.1 OpenVPN Software</a><li><a href=#862-authentication-methods class="table-of-contents__link toc-highlight">8.6.2 Authentication Methods</a><li><a href=#863-ssltls-encryption class="table-of-contents__link toc-highlight">8.6.3 SSL/TLS Encryption</a></ul><li><a href=#87-wireguard-implementation class="table-of-contents__link toc-highlight">8.7 WireGuard Implementation</a><ul><li><a href=#871-software-installation class="table-of-contents__link toc-highlight">8.7.1 Software Installation</a><li><a href=#872-publicprivate-key-authentication class="table-of-contents__link toc-highlight">8.7.2 Public/Private Key Authentication</a><li><a href=#873-modern-cryptography class="table-of-contents__link toc-highlight">8.7.3 Modern Cryptography</a></ul><li><a href=#complete-vpn-implementation-overview class="table-of-contents__link toc-highlight">Complete VPN Implementation Overview</a><li><a href=#summary-table-1 class="table-of-contents__link toc-highlight">Summary Table</a><li><a href=#important-exam-points-3 class="table-of-contents__link toc-highlight">Important Exam Points</a></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro>Notes</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog>Blog</a><li class=footer__item><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Ankur</div></div></div></footer></div></body>

@@ -1,0 +1,2610 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-NCS/u5" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Unit - 5 | Ankur's Page</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://ankur3-101106.github.io/docs/NCS/u5 /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Unit - 5 | Ankur's Page"/><meta data-rh=true name=description content="Network Penetration Testing"/><meta data-rh=true property=og:description content="Network Penetration Testing"/><link data-rh=true rel=icon href=/img/favicon.jpg /><link data-rh=true rel=canonical href=https://ankur3-101106.github.io/docs/NCS/u5 /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/NCS/u5 hreflang=en /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/NCS/u5 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/ncs---apr-16","name":"NCS - APR 16","position":1},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/NCS/u5","name":"Unit - 5","position":2}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Ankur's Page RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Ankur's Page Atom Feed"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/assets/css/styles.51fb367b.css /><script src=/assets/js/runtime~main.e1c50756.js defer></script><script src=/assets/js/main.a8d17c9e.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-142")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon.jpg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Ankur's Page</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/intro>Notes</a><a class="navbar__item navbar__link" href=/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/intro><span title=Introduction class=linkLabel_WmDU>Introduction</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/docs/category/ncs---apr-16><span title="NCS - APR 16" class=categoryLinkLabel_W154>NCS - APR 16</span></a><button aria-label="Collapse sidebar category 'NCS - APR 16'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/NCS/u1><span title="Unit - 1" class=linkLabel_WmDU>Unit - 1</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/NCS/u2><span title="Unit - 2" class=linkLabel_WmDU>Unit - 2</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/NCS/u3><span title="Unit - 3" class=linkLabel_WmDU>Unit - 3</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/NCS/u4><span title="Unit - 4" class=linkLabel_WmDU>Unit - 4</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/NCS/u5><span title="Unit - 5" class=linkLabel_WmDU>Unit - 5</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/se---apr-21><span title="SE - APR 21" class=categoryLinkLabel_W154>SE - APR 21</span></a><button aria-label="Expand sidebar category 'SE - APR 21'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/os---apr-23><span title="OS - APR 23" class=categoryLinkLabel_W154>OS - APR 23</span></a><button aria-label="Expand sidebar category 'OS - APR 23'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/cry---apr-25><span title="CRY - APR 25" class=categoryLinkLabel_W154>CRY - APR 25</span></a><button aria-label="Expand sidebar category 'CRY - APR 25'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ppfd---apr-30><span title="PPFD - APR 30" class=categoryLinkLabel_W154>PPFD - APR 30</span></a><button aria-label="Expand sidebar category 'PPFD - APR 30'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/category/ncs---apr-16><span>NCS - APR 16</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Unit - 5</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Unit - 5</h1></header>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></span>Title</div><div class=admonitionContent_BuS1><p>Network Penetration Testing</div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-information-security>1. Information Security<a href=#1-information-security class=hash-link aria-label="Direct link to 1. Information Security" title="Direct link to 1. Information Security" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-network-penetration-testing>1.1 Network Penetration Testing<a href=#11-network-penetration-testing class=hash-link aria-label="Direct link to 1.1 Network Penetration Testing" title="Direct link to 1.1 Network Penetration Testing" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=111-definition-of-penetration-testing>1.1.1 Definition of Penetration Testing<a href=#111-definition-of-penetration-testing class=hash-link aria-label="Direct link to 1.1.1 Definition of Penetration Testing" title="Direct link to 1.1.1 Definition of Penetration Testing" translate=no>​</a></h4>
+<p>Network penetration testing (pentesting) is a <strong>security assessment technique</strong> in which a system, network, or application is <strong>intentionally tested by simulating real-world attacks</strong> to identify vulnerabilities.</p>
+<ul>
+<li class="">It involves:<!-- -->
+<ul>
+<li class="">attempting to exploit weaknesses</li>
+<li class="">identifying security flaws</li>
+</ul>
+</li>
+<li class="">Conducted in a <strong>controlled and authorized manner</strong></li>
+<li class="">Helps understand how an attacker could compromise a system</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=112-purpose-of-penetration-testing>1.1.2 Purpose of Penetration Testing<a href=#112-purpose-of-penetration-testing class=hash-link aria-label="Direct link to 1.1.2 Purpose of Penetration Testing" title="Direct link to 1.1.2 Purpose of Penetration Testing" translate=no>​</a></h4>
+<ul>
+<li class="">To identify <strong>security vulnerabilities</strong> before attackers do</li>
+<li class="">To evaluate the <strong>effectiveness of security controls</strong></li>
+<li class="">To test:<!-- -->
+<ul>
+<li class="">firewalls</li>
+<li class="">intrusion detection systems</li>
+<li class="">authentication mechanisms</li>
+</ul>
+</li>
+<li class="">Helps organizations:<!-- -->
+<ul>
+<li class="">strengthen defenses</li>
+<li class="">reduce risk of cyber attacks</li>
+<li class="">improve overall security posture</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=113-goals-identify-vulnerabilities-simulate-attacks-improve-security>1.1.3 Goals (Identify vulnerabilities, simulate attacks, improve security)<a href=#113-goals-identify-vulnerabilities-simulate-attacks-improve-security class=hash-link aria-label="Direct link to 1.1.3 Goals (Identify vulnerabilities, simulate attacks, improve security)" title="Direct link to 1.1.3 Goals (Identify vulnerabilities, simulate attacks, improve security)" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Identify Vulnerabilities</strong>
+<ul>
+<li class="">Detect weaknesses in:<!-- -->
+<ul>
+<li class="">network configurations</li>
+<li class="">operating systems</li>
+<li class="">applications</li>
+</ul>
+</li>
+<li class="">Includes:<!-- -->
+<ul>
+<li class="">missing patches</li>
+<li class="">insecure settings</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class=""><strong>Simulate Real-World Attacks</strong>
+<ul>
+<li class="">Mimics techniques used by attackers:<!-- -->
+<ul>
+<li class="">scanning</li>
+<li class="">exploitation</li>
+<li class="">privilege escalation</li>
+</ul>
+</li>
+<li class="">Helps understand potential attack paths</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<ul>
+<li class=""><strong>Improve Security</strong>
+<ul>
+<li class="">Provides recommendations to fix vulnerabilities</li>
+<li class="">Helps in:<!-- -->
+<ul>
+<li class="">patch management</li>
+<li class="">system hardening</li>
+<li class="">policy improvements</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Penetration testing = <strong>authorized simulated attack</strong></li>
+<li class="">Focuses on:<!-- -->
+<ul>
+<li class="">identifying vulnerabilities</li>
+<li class="">testing defenses</li>
+<li class="">improving security</li>
+</ul>
+</li>
+<li class="">Combines:<!-- -->
+<ul>
+<li class="">automated tools</li>
+<li class="">manual techniques</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-steps-for-network-penetration-testing>2. Steps for Network Penetration Testing<a href=#2-steps-for-network-penetration-testing class=hash-link aria-label="Direct link to 2. Steps for Network Penetration Testing" title="Direct link to 2. Steps for Network Penetration Testing" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-planning-and-preparation>2.1 Planning and Preparation<a href=#21-planning-and-preparation class=hash-link aria-label="Direct link to 2.1 Planning and Preparation" title="Direct link to 2.1 Planning and Preparation" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=211-define-objectives>2.1.1 Define Objectives<a href=#211-define-objectives class=hash-link aria-label="Direct link to 2.1.1 Define Objectives" title="Direct link to 2.1.1 Define Objectives" translate=no>​</a></h4>
+<ul>
+<li class="">Clearly define the <strong>goals of the penetration test</strong>.</li>
+<li class="">Objectives may include:<!-- -->
+<ul>
+<li class="">identifying vulnerabilities</li>
+<li class="">testing security controls</li>
+<li class="">evaluating incident response</li>
+</ul>
+</li>
+<li class="">Helps determine:<!-- -->
+<ul>
+<li class="">scope of testing</li>
+<li class="">systems to be tested</li>
+<li class="">depth of analysis</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=212-gather-information>2.1.2 Gather Information<a href=#212-gather-information class=hash-link aria-label="Direct link to 2.1.2 Gather Information" title="Direct link to 2.1.2 Gather Information" translate=no>​</a></h4>
+<ul>
+<li class="">Collect basic information about the target:<!-- -->
+<ul>
+<li class="">network architecture</li>
+<li class="">IP ranges</li>
+<li class="">domain details</li>
+</ul>
+</li>
+<li class="">Sources:<!-- -->
+<ul>
+<li class="">public records</li>
+<li class="">organizational data</li>
+<li class="">technical documentation</li>
+</ul>
+</li>
+<li class="">Helps in building a <strong>testing strategy</strong>.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=213-obtain-permissions>2.1.3 Obtain Permissions<a href=#213-obtain-permissions class=hash-link aria-label="Direct link to 2.1.3 Obtain Permissions" title="Direct link to 2.1.3 Obtain Permissions" translate=no>​</a></h4>
+<ul>
+<li class="">Ensure <strong>legal authorization</strong> before testing.</li>
+<li class="">Define:<!-- -->
+<ul>
+<li class="">scope of engagement</li>
+<li class="">allowed techniques</li>
+<li class="">time duration</li>
+</ul>
+</li>
+<li class="">Important to avoid:<!-- -->
+<ul>
+<li class="">legal issues</li>
+<li class="">unintended system damage</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=22-reconnaissance>2.2 Reconnaissance<a href=#22-reconnaissance class=hash-link aria-label="Direct link to 2.2 Reconnaissance" title="Direct link to 2.2 Reconnaissance" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=221-passive-reconnaissance>2.2.1 Passive Reconnaissance<a href=#221-passive-reconnaissance class=hash-link aria-label="Direct link to 2.2.1 Passive Reconnaissance" title="Direct link to 2.2.1 Passive Reconnaissance" translate=no>​</a></h4>
+<ul>
+<li class="">Collect information <strong>without directly interacting</strong> with the target.</li>
+<li class="">Methods:<!-- -->
+<ul>
+<li class="">searching public databases</li>
+<li class="">social media analysis</li>
+<li class="">DNS records lookup</li>
+</ul>
+</li>
+<li class="">No risk of detection.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=222-active-reconnaissance>2.2.2 Active Reconnaissance<a href=#222-active-reconnaissance class=hash-link aria-label="Direct link to 2.2.2 Active Reconnaissance" title="Direct link to 2.2.2 Active Reconnaissance" translate=no>​</a></h4>
+<ul>
+<li class="">Directly interacts with the target system.</li>
+<li class="">Methods:<!-- -->
+<ul>
+<li class="">network scanning</li>
+<li class="">port scanning</li>
+<li class="">service detection</li>
+</ul>
+</li>
+<li class="">Higher accuracy but may be detected.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=223-tools-used-whois-netcraft-shodan-nslookup-wappalyzer>2.2.3 Tools Used (WHOIS, Netcraft, Shodan, NSLOOKUP, Wappalyzer)<a href=#223-tools-used-whois-netcraft-shodan-nslookup-wappalyzer class=hash-link aria-label="Direct link to 2.2.3 Tools Used (WHOIS, Netcraft, Shodan, NSLOOKUP, Wappalyzer)" title="Direct link to 2.2.3 Tools Used (WHOIS, Netcraft, Shodan, NSLOOKUP, Wappalyzer)" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>WHOIS</strong>
+<ul>
+<li class="">provides domain registration details</li>
+</ul>
+</li>
+<li class=""><strong>Netcraft</strong>
+<ul>
+<li class="">identifies hosting and technologies</li>
+</ul>
+</li>
+<li class=""><strong>Shodan</strong>
+<ul>
+<li class="">search engine for internet-connected devices</li>
+</ul>
+</li>
+<li class=""><strong>NSLOOKUP</strong>
+<ul>
+<li class="">retrieves DNS information</li>
+</ul>
+</li>
+<li class=""><strong>Wappalyzer</strong>
+<ul>
+<li class="">detects technologies used by websites</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=23-vulnerability-analysis>2.3 Vulnerability Analysis<a href=#23-vulnerability-analysis class=hash-link aria-label="Direct link to 2.3 Vulnerability Analysis" title="Direct link to 2.3 Vulnerability Analysis" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=231-automated-scanning>2.3.1 Automated Scanning<a href=#231-automated-scanning class=hash-link aria-label="Direct link to 2.3.1 Automated Scanning" title="Direct link to 2.3.1 Automated Scanning" translate=no>​</a></h4>
+<ul>
+<li class="">Uses tools to detect vulnerabilities:<!-- -->
+<ul>
+<li class="">Nessus</li>
+<li class="">OpenVAS</li>
+</ul>
+</li>
+<li class="">Identifies:<!-- -->
+<ul>
+<li class="">known vulnerabilities</li>
+<li class="">misconfigurations</li>
+</ul>
+</li>
+<li class="">Fast and efficient.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=232-manual-analysis>2.3.2 Manual Analysis<a href=#232-manual-analysis class=hash-link aria-label="Direct link to 2.3.2 Manual Analysis" title="Direct link to 2.3.2 Manual Analysis" translate=no>​</a></h4>
+<ul>
+<li class="">Security expert analyzes results manually.</li>
+<li class="">Helps:<!-- -->
+<ul>
+<li class="">verify findings</li>
+<li class="">reduce false positives</li>
+<li class="">discover complex vulnerabilities</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=24-exploitation>2.4 Exploitation<a href=#24-exploitation class=hash-link aria-label="Direct link to 2.4 Exploitation" title="Direct link to 2.4 Exploitation" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=241-exploiting-vulnerabilities>2.4.1 Exploiting Vulnerabilities<a href=#241-exploiting-vulnerabilities class=hash-link aria-label="Direct link to 2.4.1 Exploiting Vulnerabilities" title="Direct link to 2.4.1 Exploiting Vulnerabilities" translate=no>​</a></h4>
+<ul>
+<li class="">Attempt to <strong>exploit identified weaknesses</strong>.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">SQL injection</li>
+<li class="">buffer overflow</li>
+<li class="">password attacks</li>
+</ul>
+</li>
+<li class="">Goal:<!-- -->
+<ul>
+<li class="">gain unauthorized access</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=242-privilege-escalation>2.4.2 Privilege Escalation<a href=#242-privilege-escalation class=hash-link aria-label="Direct link to 2.4.2 Privilege Escalation" title="Direct link to 2.4.2 Privilege Escalation" translate=no>​</a></h4>
+<ul>
+<li class="">After gaining access, attacker tries to:<!-- -->
+<ul>
+<li class="">increase access level</li>
+<li class="">gain administrative control</li>
+</ul>
+</li>
+<li class="">Techniques:<!-- -->
+<ul>
+<li class="">exploiting system flaws</li>
+<li class="">misconfigured permissions</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=25-post-exploitation>2.5 Post-Exploitation<a href=#25-post-exploitation class=hash-link aria-label="Direct link to 2.5 Post-Exploitation" title="Direct link to 2.5 Post-Exploitation" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=251-maintaining-access>2.5.1 Maintaining Access<a href=#251-maintaining-access class=hash-link aria-label="Direct link to 2.5.1 Maintaining Access" title="Direct link to 2.5.1 Maintaining Access" translate=no>​</a></h4>
+<ul>
+<li class="">Attacker ensures continued access to system.</li>
+<li class="">Methods:<!-- -->
+<ul>
+<li class="">backdoors</li>
+<li class="">persistence mechanisms</li>
+</ul>
+</li>
+<li class="">Used to:<!-- -->
+<ul>
+<li class="">monitor system</li>
+<li class="">perform further actions</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=252-pivoting-across-network>2.5.2 Pivoting Across Network<a href=#252-pivoting-across-network class=hash-link aria-label="Direct link to 2.5.2 Pivoting Across Network" title="Direct link to 2.5.2 Pivoting Across Network" translate=no>​</a></h4>
+<ul>
+<li class="">Moving from one compromised system to others.</li>
+<li class="">Helps:<!-- -->
+<ul>
+<li class="">expand attack scope</li>
+<li class="">access internal systems</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=26-documentation-and-reporting>2.6 Documentation and Reporting<a href=#26-documentation-and-reporting class=hash-link aria-label="Direct link to 2.6 Documentation and Reporting" title="Direct link to 2.6 Documentation and Reporting" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=261-recording-findings>2.6.1 Recording Findings<a href=#261-recording-findings class=hash-link aria-label="Direct link to 2.6.1 Recording Findings" title="Direct link to 2.6.1 Recording Findings" translate=no>​</a></h4>
+<ul>
+<li class="">Document all discovered vulnerabilities.</li>
+<li class="">Includes:<!-- -->
+<ul>
+<li class="">vulnerability details</li>
+<li class="">affected systems</li>
+<li class="">severity levels</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=262-preparing-reports>2.6.2 Preparing Reports<a href=#262-preparing-reports class=hash-link aria-label="Direct link to 2.6.2 Preparing Reports" title="Direct link to 2.6.2 Preparing Reports" translate=no>​</a></h4>
+<ul>
+<li class="">Create structured reports for stakeholders.</li>
+<li class="">Includes:<!-- -->
+<ul>
+<li class="">executive summary</li>
+<li class="">technical details</li>
+<li class="">recommendations</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=27-follow-up>2.7 Follow-Up<a href=#27-follow-up class=hash-link aria-label="Direct link to 2.7 Follow-Up" title="Direct link to 2.7 Follow-Up" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=271-fix-verification>2.7.1 Fix Verification<a href=#271-fix-verification class=hash-link aria-label="Direct link to 2.7.1 Fix Verification" title="Direct link to 2.7.1 Fix Verification" translate=no>​</a></h4>
+<ul>
+<li class="">After fixes are applied:<!-- -->
+<ul>
+<li class="">re-test systems</li>
+<li class="">verify vulnerabilities are resolved</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=272-security-improvements>2.7.2 Security Improvements<a href=#272-security-improvements class=hash-link aria-label="Direct link to 2.7.2 Security Improvements" title="Direct link to 2.7.2 Security Improvements" translate=no>​</a></h4>
+<ul>
+<li class="">Implement long-term improvements:<!-- -->
+<ul>
+<li class="">patch management</li>
+<li class="">policy updates</li>
+<li class="">employee training</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-overall-penetration-testing-process>🔄 Overall Penetration Testing Process<a href=#-overall-penetration-testing-process class=hash-link aria-label="Direct link to 🔄 Overall Penetration Testing Process" title="Direct link to 🔄 Overall Penetration Testing Process" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-1>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-1 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Penetration testing is a <strong>structured process</strong></li>
+<li class="">Key phases:<!-- -->
+<ul>
+<li class="">planning</li>
+<li class="">recon</li>
+<li class="">analysis</li>
+<li class="">exploitation</li>
+<li class="">reporting</li>
+</ul>
+</li>
+<li class="">Final step (follow-up) ensures:<!-- -->
+<ul>
+<li class="">vulnerabilities are fixed</li>
+<li class="">security is improved</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-reconnaissance-tools-and-techniques>3. Reconnaissance Tools and Techniques<a href=#3-reconnaissance-tools-and-techniques class=hash-link aria-label="Direct link to 3. Reconnaissance Tools and Techniques" title="Direct link to 3. Reconnaissance Tools and Techniques" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=31-whois>3.1 WHOIS<a href=#31-whois class=hash-link aria-label="Direct link to 3.1 WHOIS" title="Direct link to 3.1 WHOIS" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=311-definition>3.1.1 Definition<a href=#311-definition class=hash-link aria-label="Direct link to 3.1.1 Definition" title="Direct link to 3.1.1 Definition" translate=no>​</a></h4>
+<p>WHOIS is a protocol and tool used to <strong>retrieve information about domain names and IP addresses</strong>.</p>
+<ul>
+<li class="">Provides publicly available registration details.</li>
+<li class="">Used in reconnaissance to gather <strong>initial target information</strong>.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=312-role-of-icann>3.1.2 Role of ICANN<a href=#312-role-of-icann class=hash-link aria-label="Direct link to 3.1.2 Role of ICANN" title="Direct link to 3.1.2 Role of ICANN" translate=no>​</a></h4>
+<ul>
+<li class="">ICANN manages domain name registrations globally.</li>
+<li class="">Responsible for:<!-- -->
+<ul>
+<li class="">allocating domain names</li>
+<li class="">maintaining WHOIS databases</li>
+</ul>
+</li>
+<li class="">Ensures:<!-- -->
+<ul>
+<li class="">uniqueness of domain names</li>
+<li class="">proper record keeping</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=313-domain-information-gathering>3.1.3 Domain Information Gathering<a href=#313-domain-information-gathering class=hash-link aria-label="Direct link to 3.1.3 Domain Information Gathering" title="Direct link to 3.1.3 Domain Information Gathering" translate=no>​</a></h4>
+<ul>
+<li class="">WHOIS provides:<!-- -->
+<ul>
+<li class="">domain owner details</li>
+<li class="">registration date</li>
+<li class="">expiry date</li>
+<li class="">registrar information</li>
+<li class="">contact details</li>
+</ul>
+</li>
+<li class="">Useful for:<!-- -->
+<ul>
+<li class="">identifying target organization</li>
+<li class="">gathering attack surface information</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=32-nslookup>3.2 NSLOOKUP<a href=#32-nslookup class=hash-link aria-label="Direct link to 3.2 NSLOOKUP" title="Direct link to 3.2 NSLOOKUP" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=321-definition>3.2.1 Definition<a href=#321-definition class=hash-link aria-label="Direct link to 3.2.1 Definition" title="Direct link to 3.2.1 Definition" translate=no>​</a></h4>
+<p>NSLOOKUP is a command-line tool used to <strong>query DNS servers</strong> and obtain domain-related information.</p>
+<ul>
+<li class="">Available in most operating systems.</li>
+<li class="">Used for DNS troubleshooting and reconnaissance.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=322-dns-query-function>3.2.2 DNS Query Function<a href=#322-dns-query-function class=hash-link aria-label="Direct link to 3.2.2 DNS Query Function" title="Direct link to 3.2.2 DNS Query Function" translate=no>​</a></h4>
+<ul>
+<li class="">Queries DNS servers to retrieve:<!-- -->
+<ul>
+<li class="">IP addresses</li>
+<li class="">mail servers (MX records)</li>
+<li class="">name servers (NS records)</li>
+</ul>
+</li>
+<li class="">Helps understand DNS structure of a target.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=323-mapping-domain-to-ip>3.2.3 Mapping Domain to IP<a href=#323-mapping-domain-to-ip class=hash-link aria-label="Direct link to 3.2.3 Mapping Domain to IP" title="Direct link to 3.2.3 Mapping Domain to IP" translate=no>​</a></h4>
+<ul>
+<li class="">Converts domain names into IP addresses.</li>
+</ul>
+<p>Example:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token function" style=color:#d73a49>nslookup</span><span class="token plain"> example.com</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Output shows:<!-- -->
+<ul>
+<li class="">resolved IP address</li>
+<li class="">DNS server used</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=33-wappalyzer>3.3 Wappalyzer<a href=#33-wappalyzer class=hash-link aria-label="Direct link to 3.3 Wappalyzer" title="Direct link to 3.3 Wappalyzer" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=331-definition>3.3.1 Definition<a href=#331-definition class=hash-link aria-label="Direct link to 3.3.1 Definition" title="Direct link to 3.3.1 Definition" translate=no>​</a></h4>
+<p>Wappalyzer is a tool used to <strong>identify technologies used by websites</strong>.</p>
+<ul>
+<li class="">Available as:<!-- -->
+<ul>
+<li class="">browser extension</li>
+<li class="">web tool</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=332-technology-detection>3.3.2 Technology Detection<a href=#332-technology-detection class=hash-link aria-label="Direct link to 3.3.2 Technology Detection" title="Direct link to 3.3.2 Technology Detection" translate=no>​</a></h4>
+<ul>
+<li class="">Detects:<!-- -->
+<ul>
+<li class="">web servers (Apache, Nginx)</li>
+<li class="">frameworks (React, Angular)</li>
+<li class="">CMS (WordPress, Joomla)</li>
+<li class="">analytics tools</li>
+</ul>
+</li>
+<li class="">Helps identify <strong>technology stack</strong> of target.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=333-use-in-reconnaissance>3.3.3 Use in Reconnaissance<a href=#333-use-in-reconnaissance class=hash-link aria-label="Direct link to 3.3.3 Use in Reconnaissance" title="Direct link to 3.3.3 Use in Reconnaissance" translate=no>​</a></h4>
+<ul>
+<li class="">Allows attacker to:<!-- -->
+<ul>
+<li class="">identify vulnerabilities in specific technologies</li>
+<li class="">choose targeted exploits</li>
+</ul>
+</li>
+<li class="">Example:<!-- -->
+<ul>
+<li class="">detecting outdated CMS → known vulnerabilities</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=34-nmap--zenmap>3.4 Nmap / Zenmap<a href=#34-nmap--zenmap class=hash-link aria-label="Direct link to 3.4 Nmap / Zenmap" title="Direct link to 3.4 Nmap / Zenmap" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=341-definition>3.4.1 Definition<a href=#341-definition class=hash-link aria-label="Direct link to 3.4.1 Definition" title="Direct link to 3.4.1 Definition" translate=no>​</a></h4>
+<p>Nmap is a powerful tool used for <strong>network discovery and security auditing</strong>.<br/>
+<!-- -->Zenmap is the GUI version of Nmap.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=342-host-discovery>3.4.2 Host Discovery<a href=#342-host-discovery class=hash-link aria-label="Direct link to 3.4.2 Host Discovery" title="Direct link to 3.4.2 Host Discovery" translate=no>​</a></h4>
+<ul>
+<li class="">Identifies active devices on the network.</li>
+</ul>
+<p>Example:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">nmap </span><span class="token parameter variable" style=color:#36acaa>-sn</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>192.168</span><span class="token plain">.1.0/24</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Shows which hosts are <strong>online</strong>.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=343-service-detection>3.4.3 Service Detection<a href=#343-service-detection class=hash-link aria-label="Direct link to 3.4.3 Service Detection" title="Direct link to 3.4.3 Service Detection" translate=no>​</a></h4>
+<ul>
+<li class="">Detects open ports and running services.</li>
+</ul>
+<p>Example:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">nmap </span><span class="token parameter variable" style=color:#36acaa>-sV</span><span class="token plain"> target_ip</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Provides:<!-- -->
+<ul>
+<li class="">service name</li>
+<li class="">version information</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=344-os-fingerprinting>3.4.4 OS Fingerprinting<a href=#344-os-fingerprinting class=hash-link aria-label="Direct link to 3.4.4 OS Fingerprinting" title="Direct link to 3.4.4 OS Fingerprinting" translate=no>​</a></h4>
+<ul>
+<li class="">Identifies operating system of target.</li>
+</ul>
+<p>Example:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">nmap </span><span class="token parameter variable" style=color:#36acaa>-O</span><span class="token plain"> target_ip</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Helps attackers tailor exploits.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=35-angry-ip-scanner>3.5 Angry IP Scanner<a href=#35-angry-ip-scanner class=hash-link aria-label="Direct link to 3.5 Angry IP Scanner" title="Direct link to 3.5 Angry IP Scanner" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=351-definition>3.5.1 Definition<a href=#351-definition class=hash-link aria-label="Direct link to 3.5.1 Definition" title="Direct link to 3.5.1 Definition" translate=no>​</a></h4>
+<p>Angry IP Scanner is a fast and lightweight tool used to <strong>scan IP addresses and ports</strong>.</p>
+<ul>
+<li class="">Open-source and cross-platform.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=352-ip-and-port-scanning>3.5.2 IP and Port Scanning<a href=#352-ip-and-port-scanning class=hash-link aria-label="Direct link to 3.5.2 IP and Port Scanning" title="Direct link to 3.5.2 IP and Port Scanning" translate=no>​</a></h4>
+<ul>
+<li class="">Scans:<!-- -->
+<ul>
+<li class="">IP ranges</li>
+<li class="">open ports</li>
+</ul>
+</li>
+<li class="">Provides:<!-- -->
+<ul>
+<li class="">active hosts</li>
+<li class="">hostname</li>
+<li class="">MAC address</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=353-use-cases>3.5.3 Use Cases<a href=#353-use-cases class=hash-link aria-label="Direct link to 3.5.3 Use Cases" title="Direct link to 3.5.3 Use Cases" translate=no>​</a></h4>
+<ul>
+<li class="">Network administrators:<!-- -->
+<ul>
+<li class="">monitor network devices</li>
+</ul>
+</li>
+<li class="">Security analysts:<!-- -->
+<ul>
+<li class="">identify open ports</li>
+<li class="">detect vulnerabilities</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-reconnaissance-workflow>🔄 Reconnaissance Workflow<a href=#-reconnaissance-workflow class=hash-link aria-label="Direct link to 🔄 Reconnaissance Workflow" title="Direct link to 🔄 Reconnaissance Workflow" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-2>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-2 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Reconnaissance = <strong>information gathering phase</strong></li>
+<li class="">Tools used:<!-- -->
+<ul>
+<li class="">WHOIS → domain info</li>
+<li class="">NSLOOKUP → DNS data</li>
+<li class="">Wappalyzer → technology stack</li>
+<li class="">Nmap → network scanning</li>
+<li class="">Angry IP Scanner → IP/port scanning</li>
+</ul>
+</li>
+<li class="">Helps in:<!-- -->
+<ul>
+<li class="">identifying targets</li>
+<li class="">planning attacks</li>
+<li class="">discovering vulnerabilities</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-banner-grabbing-and-os-detection>4. Banner Grabbing and OS Detection<a href=#4-banner-grabbing-and-os-detection class=hash-link aria-label="Direct link to 4. Banner Grabbing and OS Detection" title="Direct link to 4. Banner Grabbing and OS Detection" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=41-banner-grabbing>4.1 Banner Grabbing<a href=#41-banner-grabbing class=hash-link aria-label="Direct link to 4.1 Banner Grabbing" title="Direct link to 4.1 Banner Grabbing" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=411-definition>4.1.1 Definition<a href=#411-definition class=hash-link aria-label="Direct link to 4.1.1 Definition" title="Direct link to 4.1.1 Definition" translate=no>​</a></h4>
+<p>Banner grabbing is a technique used to <strong>collect information about a system or service</strong> by analyzing the banner (response message) returned by a server.</p>
+<ul>
+<li class="">A banner may include:<!-- -->
+<ul>
+<li class="">software name</li>
+<li class="">version number</li>
+<li class="">operating system details</li>
+</ul>
+</li>
+<li class="">Helps identify what is running on a target system.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=412-purpose>4.1.2 Purpose<a href=#412-purpose class=hash-link aria-label="Direct link to 4.1.2 Purpose" title="Direct link to 4.1.2 Purpose" translate=no>​</a></h4>
+<ul>
+<li class="">To gather <strong>service and system information</strong>.</li>
+<li class="">Helps attackers or testers:<!-- -->
+<ul>
+<li class="">identify software versions</li>
+<li class="">detect outdated or vulnerable services</li>
+</ul>
+</li>
+<li class="">Used for:<!-- -->
+<ul>
+<li class="">vulnerability assessment</li>
+<li class="">penetration testing</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=413-tools-telnet-nmap-netcat>4.1.3 Tools (Telnet, Nmap, Netcat)<a href=#413-tools-telnet-nmap-netcat class=hash-link aria-label="Direct link to 4.1.3 Tools (Telnet, Nmap, Netcat)" title="Direct link to 4.1.3 Tools (Telnet, Nmap, Netcat)" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Telnet</strong>
+<ul>
+<li class="">Connects to a remote service and displays banner.</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">telnet example.com </span><span class="token number" style=color:#36acaa>80</span><br/></div></code></pre></div></div>
+<hr/>
+<ul>
+<li class=""><strong>Nmap</strong>
+<ul>
+<li class="">Performs banner grabbing using service detection.</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">nmap </span><span class="token parameter variable" style=color:#36acaa>-sV</span><span class="token plain"> target_ip</span><br/></div></code></pre></div></div>
+<hr/>
+<ul>
+<li class=""><strong>Netcat (nc)</strong>
+<ul>
+<li class="">Reads banner information from services.</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token function" style=color:#d73a49>nc</span><span class="token plain"> target_ip </span><span class="token number" style=color:#36acaa>80</span><br/></div></code></pre></div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=42-open-port-and-service-identification>4.2 Open Port and Service Identification<a href=#42-open-port-and-service-identification class=hash-link aria-label="Direct link to 4.2 Open Port and Service Identification" title="Direct link to 4.2 Open Port and Service Identification" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=421-importance-of-open-ports>4.2.1 Importance of Open Ports<a href=#421-importance-of-open-ports class=hash-link aria-label="Direct link to 4.2.1 Importance of Open Ports" title="Direct link to 4.2.1 Importance of Open Ports" translate=no>​</a></h4>
+<ul>
+<li class="">Open ports indicate <strong>active services</strong> running on a system.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">Port 80 → HTTP</li>
+<li class="">Port 443 → HTTPS</li>
+<li class="">Port 22 → SSH</li>
+</ul>
+</li>
+<li class="">Helps identify:<!-- -->
+<ul>
+<li class="">available services</li>
+<li class="">potential vulnerabilities</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=422-entry-points-for-attack>4.2.2 Entry Points for Attack<a href=#422-entry-points-for-attack class=hash-link aria-label="Direct link to 4.2.2 Entry Points for Attack" title="Direct link to 4.2.2 Entry Points for Attack" translate=no>​</a></h4>
+<ul>
+<li class="">Open ports act as <strong>entry points</strong> into a system.</li>
+<li class="">If a service is:<!-- -->
+<ul>
+<li class="">outdated</li>
+<li class="">misconfigured</li>
+</ul>
+</li>
+</ul>
+<p>→ it can be exploited.</p>
+<ul>
+<li class="">Example:<!-- -->
+<ul>
+<li class="">open FTP port with weak credentials</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=43-os-detection>4.3 OS Detection<a href=#43-os-detection class=hash-link aria-label="Direct link to 4.3 OS Detection" title="Direct link to 4.3 OS Detection" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=431-identifying-operating-system>4.3.1 Identifying Operating System<a href=#431-identifying-operating-system class=hash-link aria-label="Direct link to 4.3.1 Identifying Operating System" title="Direct link to 4.3.1 Identifying Operating System" translate=no>​</a></h4>
+<ul>
+<li class="">OS detection identifies the <strong>operating system of the target machine</strong>.</li>
+<li class="">Methods:<!-- -->
+<ul>
+<li class="">analyzing network responses</li>
+<li class="">examining TCP/IP stack behavior</li>
+</ul>
+</li>
+<li class="">Tools:<!-- -->
+<ul>
+<li class="">Nmap (<code>-O</code> option)</li>
+</ul>
+</li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">nmap </span><span class="token parameter variable" style=color:#36acaa>-O</span><span class="token plain"> target_ip</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">Output may include:<!-- -->
+<ul>
+<li class="">OS type (Linux, Windows)</li>
+<li class="">version details</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=432-targeted-exploitation>4.3.2 Targeted Exploitation<a href=#432-targeted-exploitation class=hash-link aria-label="Direct link to 4.3.2 Targeted Exploitation" title="Direct link to 4.3.2 Targeted Exploitation" translate=no>​</a></h4>
+<ul>
+<li class="">Knowing the OS allows attackers to:<!-- -->
+<ul>
+<li class="">select appropriate exploits</li>
+<li class="">target specific vulnerabilities</li>
+</ul>
+</li>
+<li class="">Example:<!-- -->
+<ul>
+<li class="">Windows system → exploit SMB vulnerability</li>
+<li class="">Linux system → exploit SSH misconfiguration</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-combined-workflow>🔄 Combined Workflow<a href=#-combined-workflow class=hash-link aria-label="Direct link to 🔄 Combined Workflow" title="Direct link to 🔄 Combined Workflow" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-3>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-3 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Banner grabbing reveals:<!-- -->
+<ul>
+<li class="">service name</li>
+<li class="">version</li>
+</ul>
+</li>
+<li class="">Open ports indicate:<!-- -->
+<ul>
+<li class="">running services</li>
+<li class="">possible vulnerabilities</li>
+</ul>
+</li>
+<li class="">OS detection helps:<!-- -->
+<ul>
+<li class="">tailor attacks</li>
+<li class="">improve testing accuracy</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-prevention-measures>🔐 Prevention Measures<a href=#-prevention-measures class=hash-link aria-label="Direct link to 🔐 Prevention Measures" title="Direct link to 🔐 Prevention Measures" translate=no>​</a></h3>
+<ul>
+<li class="">Disable unnecessary services</li>
+<li class="">Close unused ports</li>
+<li class="">Use firewalls</li>
+<li class="">Hide or modify banners</li>
+<li class="">Regularly update software</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-vulnerability-analysis>5. Vulnerability Analysis<a href=#5-vulnerability-analysis class=hash-link aria-label="Direct link to 5. Vulnerability Analysis" title="Direct link to 5. Vulnerability Analysis" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=51-overview-of-vulnerability>5.1 Overview of Vulnerability<a href=#51-overview-of-vulnerability class=hash-link aria-label="Direct link to 5.1 Overview of Vulnerability" title="Direct link to 5.1 Overview of Vulnerability" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=511-definition>5.1.1 Definition<a href=#511-definition class=hash-link aria-label="Direct link to 5.1.1 Definition" title="Direct link to 5.1.1 Definition" translate=no>​</a></h4>
+<p>A vulnerability is a <strong>weakness or flaw in a system, network, or application</strong> that can be exploited by an attacker to gain unauthorized access or cause damage.</p>
+<ul>
+<li class="">Exists due to:<!-- -->
+<ul>
+<li class="">software bugs</li>
+<li class="">misconfigurations</li>
+<li class="">poor security practices</li>
+</ul>
+</li>
+<li class="">Can lead to:<!-- -->
+<ul>
+<li class="">data breaches</li>
+<li class="">system compromise</li>
+<li class="">service disruption</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=512-types-of-vulnerabilities>5.1.2 Types of Vulnerabilities<a href=#512-types-of-vulnerabilities class=hash-link aria-label="Direct link to 5.1.2 Types of Vulnerabilities" title="Direct link to 5.1.2 Types of Vulnerabilities" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Network Vulnerabilities</strong>
+<ul>
+<li class="">weak firewall rules</li>
+<li class="">open ports</li>
+</ul>
+</li>
+<li class=""><strong>System Vulnerabilities</strong>
+<ul>
+<li class="">outdated operating systems</li>
+<li class="">unpatched software</li>
+</ul>
+</li>
+<li class=""><strong>Application Vulnerabilities</strong>
+<ul>
+<li class="">SQL injection</li>
+<li class="">cross-site scripting (XSS)</li>
+</ul>
+</li>
+<li class=""><strong>Human Vulnerabilities</strong>
+<ul>
+<li class="">weak passwords</li>
+<li class="">social engineering</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=52-classification-of-vulnerabilities>5.2 Classification of Vulnerabilities<a href=#52-classification-of-vulnerabilities class=hash-link aria-label="Direct link to 5.2 Classification of Vulnerabilities" title="Direct link to 5.2 Classification of Vulnerabilities" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=521-vendor-originated>5.2.1 Vendor-Originated<a href=#521-vendor-originated class=hash-link aria-label="Direct link to 5.2.1 Vendor-Originated" title="Direct link to 5.2.1 Vendor-Originated" translate=no>​</a></h4>
+<ul>
+<li class="">Caused by flaws in <strong>software or hardware provided by vendors</strong>.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">software bugs</li>
+<li class="">unpatched security flaws</li>
+</ul>
+</li>
+<li class="">Solution:<!-- -->
+<ul>
+<li class="">apply updates and patches</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=522-system-administration-originated>5.2.2 System Administration-Originated<a href=#522-system-administration-originated class=hash-link aria-label="Direct link to 5.2.2 System Administration-Originated" title="Direct link to 5.2.2 System Administration-Originated" translate=no>​</a></h4>
+<ul>
+<li class="">Caused by <strong>misconfiguration or poor management</strong>.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">weak firewall settings</li>
+<li class="">default credentials</li>
+<li class="">unnecessary services running</li>
+</ul>
+</li>
+<li class="">Solution:<!-- -->
+<ul>
+<li class="">proper configuration</li>
+<li class="">regular audits</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=523-user-originated>5.2.3 User-Originated<a href=#523-user-originated class=hash-link aria-label="Direct link to 5.2.3 User-Originated" title="Direct link to 5.2.3 User-Originated" translate=no>​</a></h4>
+<ul>
+<li class="">Caused by <strong>user behavior or mistakes</strong>.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">weak passwords</li>
+<li class="">clicking malicious links</li>
+<li class="">ignoring security policies</li>
+</ul>
+</li>
+<li class="">Solution:<!-- -->
+<ul>
+<li class="">user awareness and training</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=53-vulnerability-scanners>5.3 Vulnerability Scanners<a href=#53-vulnerability-scanners class=hash-link aria-label="Direct link to 5.3 Vulnerability Scanners" title="Direct link to 5.3 Vulnerability Scanners" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=531-role-of-scanners>5.3.1 Role of Scanners<a href=#531-role-of-scanners class=hash-link aria-label="Direct link to 5.3.1 Role of Scanners" title="Direct link to 5.3.1 Role of Scanners" translate=no>​</a></h4>
+<p>Vulnerability scanners are tools used to <strong>identify security weaknesses automatically</strong>.</p>
+<ul>
+<li class="">They:<!-- -->
+<ul>
+<li class="">scan systems and networks</li>
+<li class="">detect known vulnerabilities</li>
+<li class="">generate reports</li>
+</ul>
+</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">Nessus</li>
+<li class="">OpenVAS</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=532-automated-security-auditing>5.3.2 Automated Security Auditing<a href=#532-automated-security-auditing class=hash-link aria-label="Direct link to 5.3.2 Automated Security Auditing" title="Direct link to 5.3.2 Automated Security Auditing" translate=no>​</a></h4>
+<ul>
+<li class="">Scanners perform automated checks for:<!-- -->
+<ul>
+<li class="">missing patches</li>
+<li class="">insecure configurations</li>
+<li class="">outdated software</li>
+</ul>
+</li>
+<li class="">Benefits:<!-- -->
+<ul>
+<li class="">fast and efficient</li>
+<li class="">reduces manual effort</li>
+<li class="">improves accuracy</li>
+</ul>
+</li>
+<li class="">Limitation:<!-- -->
+<ul>
+<li class="">may produce false positives/negatives</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=54-types-of-vulnerability-scanners>5.4 Types of Vulnerability Scanners<a href=#54-types-of-vulnerability-scanners class=hash-link aria-label="Direct link to 5.4 Types of Vulnerability Scanners" title="Direct link to 5.4 Types of Vulnerability Scanners" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=541-network-vulnerability-scanners>5.4.1 Network Vulnerability Scanners<a href=#541-network-vulnerability-scanners class=hash-link aria-label="Direct link to 5.4.1 Network Vulnerability Scanners" title="Direct link to 5.4.1 Network Vulnerability Scanners" translate=no>​</a></h4>
+<ul>
+<li class="">Scan entire networks to identify:<!-- -->
+<ul>
+<li class="">open ports</li>
+<li class="">exposed services</li>
+</ul>
+</li>
+<li class="">Example:<!-- -->
+<ul>
+<li class="">Nessus</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=542-web-application-scanners>5.4.2 Web Application Scanners<a href=#542-web-application-scanners class=hash-link aria-label="Direct link to 5.4.2 Web Application Scanners" title="Direct link to 5.4.2 Web Application Scanners" translate=no>​</a></h4>
+<ul>
+<li class="">Detect vulnerabilities in web apps.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">SQL injection</li>
+<li class="">XSS</li>
+<li class="">authentication flaws</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=543-host-based-scanners>5.4.3 Host-Based Scanners<a href=#543-host-based-scanners class=hash-link aria-label="Direct link to 5.4.3 Host-Based Scanners" title="Direct link to 5.4.3 Host-Based Scanners" translate=no>​</a></h4>
+<ul>
+<li class="">Installed on individual systems.</li>
+<li class="">Scan:<!-- -->
+<ul>
+<li class="">OS vulnerabilities</li>
+<li class="">installed software</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=544-database-scanners>5.4.4 Database Scanners<a href=#544-database-scanners class=hash-link aria-label="Direct link to 5.4.4 Database Scanners" title="Direct link to 5.4.4 Database Scanners" translate=no>​</a></h4>
+<ul>
+<li class="">Focus on database systems.</li>
+<li class="">Detect:<!-- -->
+<ul>
+<li class="">weak configurations</li>
+<li class="">unauthorized access</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=545-mobile-application-scanners>5.4.5 Mobile Application Scanners<a href=#545-mobile-application-scanners class=hash-link aria-label="Direct link to 5.4.5 Mobile Application Scanners" title="Direct link to 5.4.5 Mobile Application Scanners" translate=no>​</a></h4>
+<ul>
+<li class="">Analyze mobile apps for:<!-- -->
+<ul>
+<li class="">insecure data storage</li>
+<li class="">weak authentication</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=546-cloud-based-scanners>5.4.6 Cloud-Based Scanners<a href=#546-cloud-based-scanners class=hash-link aria-label="Direct link to 5.4.6 Cloud-Based Scanners" title="Direct link to 5.4.6 Cloud-Based Scanners" translate=no>​</a></h4>
+<ul>
+<li class="">Scan cloud infrastructure.</li>
+<li class="">Identify:<!-- -->
+<ul>
+<li class="">misconfigured cloud services</li>
+<li class="">exposed storage</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=547-passive-scanners>5.4.7 Passive Scanners<a href=#547-passive-scanners class=hash-link aria-label="Direct link to 5.4.7 Passive Scanners" title="Direct link to 5.4.7 Passive Scanners" translate=no>​</a></h4>
+<ul>
+<li class="">Monitor network traffic without active scanning.</li>
+<li class="">Do not interact directly with systems.</li>
+<li class="">Useful for:<!-- -->
+<ul>
+<li class="">continuous monitoring</li>
+<li class="">low-risk environments</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-vulnerability-analysis-workflow>🔄 Vulnerability Analysis Workflow<a href=#-vulnerability-analysis-workflow class=hash-link aria-label="Direct link to 🔄 Vulnerability Analysis Workflow" title="Direct link to 🔄 Vulnerability Analysis Workflow" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-4>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-4 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Vulnerability = <strong>security weakness</strong></li>
+<li class="">Types:<!-- -->
+<ul>
+<li class="">network, system, application, human</li>
+</ul>
+</li>
+<li class="">Classification:<!-- -->
+<ul>
+<li class="">vendor, admin, user</li>
+</ul>
+</li>
+<li class="">Scanners:<!-- -->
+<ul>
+<li class="">automate detection</li>
+<li class="">improve efficiency</li>
+</ul>
+</li>
+<li class="">Important to combine:<!-- -->
+<ul>
+<li class="">automated tools + manual analysis</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-best-practices>🔐 Best Practices<a href=#-best-practices class=hash-link aria-label="Direct link to 🔐 Best Practices" title="Direct link to 🔐 Best Practices" translate=no>​</a></h3>
+<ul>
+<li class="">Regular vulnerability scanning</li>
+<li class="">Timely patch updates</li>
+<li class="">Secure configurations</li>
+<li class="">User awareness training</li>
+<li class="">Continuous monitoring</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-false-positive-and-false-negative>6. False Positive and False Negative<a href=#6-false-positive-and-false-negative class=hash-link aria-label="Direct link to 6. False Positive and False Negative" title="Direct link to 6. False Positive and False Negative" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=61-false-negative>6.1 False Negative<a href=#61-false-negative class=hash-link aria-label="Direct link to 6.1 False Negative" title="Direct link to 6.1 False Negative" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=611-definition>6.1.1 Definition<a href=#611-definition class=hash-link aria-label="Direct link to 6.1.1 Definition" title="Direct link to 6.1.1 Definition" translate=no>​</a></h4>
+<p>A False Negative occurs when a <strong>vulnerability actually exists</strong>, but the scanning tool or analysis <strong>fails to detect it</strong>.</p>
+<ul>
+<li class="">The system is <strong>incorrectly marked as secure</strong>.</li>
+<li class="">The vulnerability remains hidden and unaddressed.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=612-security-risks>6.1.2 Security Risks<a href=#612-security-risks class=hash-link aria-label="Direct link to 6.1.2 Security Risks" title="Direct link to 6.1.2 Security Risks" translate=no>​</a></h4>
+<ul>
+<li class="">Highly dangerous because:<!-- -->
+<ul>
+<li class="">real threats go unnoticed</li>
+<li class="">attackers can exploit undetected vulnerabilities</li>
+</ul>
+</li>
+<li class="">Leads to:<!-- -->
+<ul>
+<li class="">false sense of security</li>
+<li class="">increased risk of breaches</li>
+</ul>
+</li>
+<li class="">Example:<!-- -->
+<ul>
+<li class="">a vulnerable service is running, but scanner does not report it</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=62-false-positive>6.2 False Positive<a href=#62-false-positive class=hash-link aria-label="Direct link to 6.2 False Positive" title="Direct link to 6.2 False Positive" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=621-definition>6.2.1 Definition<a href=#621-definition class=hash-link aria-label="Direct link to 6.2.1 Definition" title="Direct link to 6.2.1 Definition" translate=no>​</a></h4>
+<p>A False Positive occurs when a <strong>scanner reports a vulnerability that does not actually exist</strong>.</p>
+<ul>
+<li class="">The system is <strong>incorrectly flagged as vulnerable</strong>.</li>
+<li class="">Leads to unnecessary investigation.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=622-impact-on-analysis>6.2.2 Impact on Analysis<a href=#622-impact-on-analysis class=hash-link aria-label="Direct link to 6.2.2 Impact on Analysis" title="Direct link to 6.2.2 Impact on Analysis" translate=no>​</a></h4>
+<ul>
+<li class="">Causes:<!-- -->
+<ul>
+<li class="">wasted time and resources</li>
+<li class="">unnecessary fixes or patches</li>
+</ul>
+</li>
+<li class="">May lead to:<!-- -->
+<ul>
+<li class="">confusion in reports</li>
+<li class="">reduced trust in scanning tools</li>
+</ul>
+</li>
+<li class="">Example:<!-- -->
+<ul>
+<li class="">scanner flags a secure system as vulnerable</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-comparison-important>🔄 Comparison (Important)<a href=#-comparison-important class=hash-link aria-label="Direct link to 🔄 Comparison (Important)" title="Direct link to 🔄 Comparison (Important)" translate=no>​</a></h3>
+<table><thead><tr><th>Aspect<th>False Negative<th>False Positive<tbody><tr><td>Meaning<td>Missed vulnerability<td>Incorrect vulnerability reported<tr><td>Risk Level<td>High (dangerous)<td>Low (inconvenience)<tr><td>Impact<td>Security breach possible<td>Wasted effort<tr><td>Example<td>Vulnerability not detected<td>Non-existent issue flagged</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-5>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-5 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>False Negative = dangerous</strong>
+<ul>
+<li class="">real vulnerability missed</li>
+</ul>
+</li>
+<li class=""><strong>False Positive = misleading</strong>
+<ul>
+<li class="">fake vulnerability reported</li>
+</ul>
+</li>
+<li class="">Best approach:<!-- -->
+<ul>
+<li class="">combine automated tools with manual verification</li>
+<li class="">validate scan results carefully</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-exploitation-phase>7. Exploitation Phase<a href=#7-exploitation-phase class=hash-link aria-label="Direct link to 7. Exploitation Phase" title="Direct link to 7. Exploitation Phase" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=71-exploitation-techniques>7.1 Exploitation Techniques<a href=#71-exploitation-techniques class=hash-link aria-label="Direct link to 7.1 Exploitation Techniques" title="Direct link to 7.1 Exploitation Techniques" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=711-password-cracking>7.1.1 Password Cracking<a href=#711-password-cracking class=hash-link aria-label="Direct link to 7.1.1 Password Cracking" title="Direct link to 7.1.1 Password Cracking" translate=no>​</a></h4>
+<p>Password cracking is the process of <strong>recovering or guessing passwords</strong> to gain unauthorized access.</p>
+<ul>
+<li class="">Common methods:<!-- -->
+<ul>
+<li class=""><strong>Brute Force Attack</strong>
+<ul>
+<li class="">tries all possible combinations</li>
+</ul>
+</li>
+<li class=""><strong>Dictionary Attack</strong>
+<ul>
+<li class="">uses a list of common passwords</li>
+</ul>
+</li>
+<li class=""><strong>Credential Stuffing</strong>
+<ul>
+<li class="">uses leaked credentials</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">Targets:<!-- -->
+<ul>
+<li class="">user accounts</li>
+<li class="">admin panels</li>
+<li class="">network services</li>
+</ul>
+</li>
+<li class="">Risks:<!-- -->
+<ul>
+<li class="">unauthorized access</li>
+<li class="">data theft</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=712-sql-injection>7.1.2 SQL Injection<a href=#712-sql-injection class=hash-link aria-label="Direct link to 7.1.2 SQL Injection" title="Direct link to 7.1.2 SQL Injection" translate=no>​</a></h4>
+<p>SQL Injection is an attack where malicious SQL queries are <strong>inserted into input fields</strong> to manipulate a database.</p>
+<ul>
+<li class="">Occurs when:<!-- -->
+<ul>
+<li class="">input validation is weak</li>
+</ul>
+</li>
+<li class="">Attacker can:<!-- -->
+<ul>
+<li class="">bypass authentication</li>
+<li class="">retrieve sensitive data</li>
+<li class="">modify or delete records</li>
+</ul>
+</li>
+</ul>
+<p>Example:</p>
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token string" style=color:#e3116c>' OR '</span><span class="token number" style=color:#36acaa>1</span><span class="token string" style=color:#e3116c>'='</span><span class="token number" style=color:#36acaa>1</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">This can trick a login system into granting access.</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=713-buffer-overflow>7.1.3 Buffer Overflow<a href=#713-buffer-overflow class=hash-link aria-label="Direct link to 7.1.3 Buffer Overflow" title="Direct link to 7.1.3 Buffer Overflow" translate=no>​</a></h4>
+<p>Buffer overflow occurs when a program writes <strong>more data into a buffer than it can hold</strong>.</p>
+<ul>
+<li class="">Causes:<!-- -->
+<ul>
+<li class="">improper memory handling</li>
+</ul>
+</li>
+<li class="">Results:<!-- -->
+<ul>
+<li class="">overwriting adjacent memory</li>
+<li class="">execution of malicious code</li>
+</ul>
+</li>
+<li class="">Can lead to:<!-- -->
+<ul>
+<li class="">system crashes</li>
+<li class="">remote code execution</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=72-privilege-escalation>7.2 Privilege Escalation<a href=#72-privilege-escalation class=hash-link aria-label="Direct link to 7.2 Privilege Escalation" title="Direct link to 7.2 Privilege Escalation" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=721-gaining-higher-access>7.2.1 Gaining Higher Access<a href=#721-gaining-higher-access class=hash-link aria-label="Direct link to 7.2.1 Gaining Higher Access" title="Direct link to 7.2.1 Gaining Higher Access" translate=no>​</a></h4>
+<p>Privilege escalation is the process of <strong>increasing access rights</strong> after initial compromise.</p>
+<ul>
+<li class="">Types:<!-- -->
+<ul>
+<li class=""><strong>Vertical escalation</strong>
+<ul>
+<li class="">user → admin</li>
+</ul>
+</li>
+<li class=""><strong>Horizontal escalation</strong>
+<ul>
+<li class="">one user → another user</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">Techniques:<!-- -->
+<ul>
+<li class="">exploiting system vulnerabilities</li>
+<li class="">abusing misconfigured permissions</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=722-system-control>7.2.2 System Control<a href=#722-system-control class=hash-link aria-label="Direct link to 7.2.2 System Control" title="Direct link to 7.2.2 System Control" translate=no>​</a></h4>
+<ul>
+<li class="">After escalation, attacker can:<!-- -->
+<ul>
+<li class="">gain full control of system</li>
+<li class="">access sensitive data</li>
+<li class="">modify system settings</li>
+</ul>
+</li>
+<li class="">Possible actions:<!-- -->
+<ul>
+<li class="">install malware</li>
+<li class="">create backdoors</li>
+<li class="">disable security controls</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-6>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-6 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Exploitation phase = <strong>using vulnerabilities to gain access</strong></li>
+<li class="">Common techniques:<!-- -->
+<ul>
+<li class="">password cracking</li>
+<li class="">SQL injection</li>
+<li class="">buffer overflow</li>
+</ul>
+</li>
+<li class="">Privilege escalation:<!-- -->
+<ul>
+<li class="">increases access level</li>
+<li class="">leads to full system control</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-prevention-measures-1>🔐 Prevention Measures<a href=#-prevention-measures-1 class=hash-link aria-label="Direct link to 🔐 Prevention Measures" title="Direct link to 🔐 Prevention Measures" translate=no>​</a></h3>
+<ul>
+<li class="">Use strong passwords and MFA</li>
+<li class="">Validate and sanitize inputs</li>
+<li class="">Apply secure coding practices</li>
+<li class="">Regularly update and patch systems</li>
+<li class="">Implement least privilege principle</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=8-common-network-vulnerabilities>8. Common Network Vulnerabilities<a href=#8-common-network-vulnerabilities class=hash-link aria-label="Direct link to 8. Common Network Vulnerabilities" title="Direct link to 8. Common Network Vulnerabilities" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=81-open-ports-and-services>8.1 Open Ports and Services<a href=#81-open-ports-and-services class=hash-link aria-label="Direct link to 8.1 Open Ports and Services" title="Direct link to 8.1 Open Ports and Services" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=811-description>8.1.1 Description<a href=#811-description class=hash-link aria-label="Direct link to 8.1.1 Description" title="Direct link to 8.1.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Open ports indicate <strong>active services</strong> running on a system.</li>
+<li class="">Unnecessary or exposed services increase attack surface.</li>
+<li class="">Attackers scan ports to find:<!-- -->
+<ul>
+<li class="">vulnerable services</li>
+<li class="">outdated software</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=812-prevention>8.1.2 Prevention<a href=#812-prevention class=hash-link aria-label="Direct link to 8.1.2 Prevention" title="Direct link to 8.1.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Close unused ports</li>
+<li class="">Disable unnecessary services</li>
+<li class="">Use firewalls to restrict access</li>
+<li class="">Regularly audit open ports</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=82-weak-passwords>8.2 Weak Passwords<a href=#82-weak-passwords class=hash-link aria-label="Direct link to 8.2 Weak Passwords" title="Direct link to 8.2 Weak Passwords" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=821-description>8.2.1 Description<a href=#821-description class=hash-link aria-label="Direct link to 8.2.1 Description" title="Direct link to 8.2.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Weak passwords are:<!-- -->
+<ul>
+<li class="">short</li>
+<li class="">predictable</li>
+<li class="">reused across systems</li>
+</ul>
+</li>
+<li class="">Easily cracked using:<!-- -->
+<ul>
+<li class="">brute force</li>
+<li class="">dictionary attacks</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=822-prevention>8.2.2 Prevention<a href=#822-prevention class=hash-link aria-label="Direct link to 8.2.2 Prevention" title="Direct link to 8.2.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Use strong passwords (length + complexity)</li>
+<li class="">Enable multi-factor authentication (MFA)</li>
+<li class="">Enforce password policies</li>
+<li class="">Avoid password reuse</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=83-misconfigured-firewalls>8.3 Misconfigured Firewalls<a href=#83-misconfigured-firewalls class=hash-link aria-label="Direct link to 8.3 Misconfigured Firewalls" title="Direct link to 8.3 Misconfigured Firewalls" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=831-description>8.3.1 Description<a href=#831-description class=hash-link aria-label="Direct link to 8.3.1 Description" title="Direct link to 8.3.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Improper firewall settings may:<!-- -->
+<ul>
+<li class="">allow unauthorized traffic</li>
+<li class="">expose internal systems</li>
+</ul>
+</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">open all ports</li>
+<li class="">weak rule configurations</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=832-prevention>8.3.2 Prevention<a href=#832-prevention class=hash-link aria-label="Direct link to 8.3.2 Prevention" title="Direct link to 8.3.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Define strict firewall rules</li>
+<li class="">Allow only necessary traffic</li>
+<li class="">Regularly review configurations</li>
+<li class="">Use intrusion detection/prevention systems</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=84-outdated-software>8.4 Outdated Software<a href=#84-outdated-software class=hash-link aria-label="Direct link to 8.4 Outdated Software" title="Direct link to 8.4 Outdated Software" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=841-description>8.4.1 Description<a href=#841-description class=hash-link aria-label="Direct link to 8.4.1 Description" title="Direct link to 8.4.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Old software contains <strong>known vulnerabilities</strong>.</li>
+<li class="">Attackers exploit unpatched systems.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=842-prevention>8.4.2 Prevention<a href=#842-prevention class=hash-link aria-label="Direct link to 8.4.2 Prevention" title="Direct link to 8.4.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Regularly update software</li>
+<li class="">Apply security patches</li>
+<li class="">Use automated patch management</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=85-insecure-wireless-networks>8.5 Insecure Wireless Networks<a href=#85-insecure-wireless-networks class=hash-link aria-label="Direct link to 8.5 Insecure Wireless Networks" title="Direct link to 8.5 Insecure Wireless Networks" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=851-description>8.5.1 Description<a href=#851-description class=hash-link aria-label="Direct link to 8.5.1 Description" title="Direct link to 8.5.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Weak Wi-Fi security:<!-- -->
+<ul>
+<li class="">no encryption</li>
+<li class="">weak passwords</li>
+</ul>
+</li>
+<li class="">Allows unauthorized access.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=852-prevention>8.5.2 Prevention<a href=#852-prevention class=hash-link aria-label="Direct link to 8.5.2 Prevention" title="Direct link to 8.5.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Use WPA3/WPA2 encryption</li>
+<li class="">Disable WPS</li>
+<li class="">Use strong passwords</li>
+<li class="">Monitor connected devices</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=86-network-sniffing-vulnerability>8.6 Network Sniffing Vulnerability<a href=#86-network-sniffing-vulnerability class=hash-link aria-label="Direct link to 8.6 Network Sniffing Vulnerability" title="Direct link to 8.6 Network Sniffing Vulnerability" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=861-description>8.6.1 Description<a href=#861-description class=hash-link aria-label="Direct link to 8.6.1 Description" title="Direct link to 8.6.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Data transmitted in <strong>unencrypted form</strong> can be intercepted.</li>
+<li class="">Attackers use sniffing tools to capture sensitive data.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=862-prevention>8.6.2 Prevention<a href=#862-prevention class=hash-link aria-label="Direct link to 8.6.2 Prevention" title="Direct link to 8.6.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Use encryption (HTTPS, SSL/TLS)</li>
+<li class="">Use VPN</li>
+<li class="">Avoid unsecured networks</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=87-man-in-the-middle-attacks>8.7 Man-in-the-Middle Attacks<a href=#87-man-in-the-middle-attacks class=hash-link aria-label="Direct link to 8.7 Man-in-the-Middle Attacks" title="Direct link to 8.7 Man-in-the-Middle Attacks" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=871-description>8.7.1 Description<a href=#871-description class=hash-link aria-label="Direct link to 8.7.1 Description" title="Direct link to 8.7.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Attacker intercepts communication between two parties.</li>
+<li class="">Can:<!-- -->
+<ul>
+<li class="">read data</li>
+<li class="">modify data</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=872-prevention>8.7.2 Prevention<a href=#872-prevention class=hash-link aria-label="Direct link to 8.7.2 Prevention" title="Direct link to 8.7.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Use encrypted communication (HTTPS)</li>
+<li class="">Implement secure authentication</li>
+<li class="">Use VPN</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=88-denial-of-service-dos-vulnerabilities>8.8 Denial-of-Service (DoS) Vulnerabilities<a href=#88-denial-of-service-dos-vulnerabilities class=hash-link aria-label="Direct link to 8.8 Denial-of-Service (DoS) Vulnerabilities" title="Direct link to 8.8 Denial-of-Service (DoS) Vulnerabilities" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=881-description>8.8.1 Description<a href=#881-description class=hash-link aria-label="Direct link to 8.8.1 Description" title="Direct link to 8.8.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Systems can be overwhelmed with excessive traffic.</li>
+<li class="">Causes service unavailability.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=882-prevention>8.8.2 Prevention<a href=#882-prevention class=hash-link aria-label="Direct link to 8.8.2 Prevention" title="Direct link to 8.8.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Use rate limiting</li>
+<li class="">Deploy load balancers</li>
+<li class="">Use DDoS protection services</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=89-protocol-vulnerabilities>8.9 Protocol Vulnerabilities<a href=#89-protocol-vulnerabilities class=hash-link aria-label="Direct link to 8.9 Protocol Vulnerabilities" title="Direct link to 8.9 Protocol Vulnerabilities" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=891-description>8.9.1 Description<a href=#891-description class=hash-link aria-label="Direct link to 8.9.1 Description" title="Direct link to 8.9.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Weaknesses in network protocols (e.g., HTTP, FTP).</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">lack of encryption</li>
+<li class="">insecure authentication</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=892-prevention>8.9.2 Prevention<a href=#892-prevention class=hash-link aria-label="Direct link to 8.9.2 Prevention" title="Direct link to 8.9.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Use secure protocols (HTTPS, SFTP)</li>
+<li class="">Disable insecure protocols</li>
+<li class="">Update protocol configurations</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=810-web-application-vulnerabilities>8.10 Web Application Vulnerabilities<a href=#810-web-application-vulnerabilities class=hash-link aria-label="Direct link to 8.10 Web Application Vulnerabilities" title="Direct link to 8.10 Web Application Vulnerabilities" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8101-description>8.10.1 Description<a href=#8101-description class=hash-link aria-label="Direct link to 8.10.1 Description" title="Direct link to 8.10.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Flaws in web applications:<!-- -->
+<ul>
+<li class="">SQL injection</li>
+<li class="">XSS</li>
+<li class="">authentication bypass</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8102-prevention>8.10.2 Prevention<a href=#8102-prevention class=hash-link aria-label="Direct link to 8.10.2 Prevention" title="Direct link to 8.10.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Validate user input</li>
+<li class="">Use secure coding practices</li>
+<li class="">Perform regular testing</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=811-physical-security-weaknesses>8.11 Physical Security Weaknesses<a href=#811-physical-security-weaknesses class=hash-link aria-label="Direct link to 8.11 Physical Security Weaknesses" title="Direct link to 8.11 Physical Security Weaknesses" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8111-description>8.11.1 Description<a href=#8111-description class=hash-link aria-label="Direct link to 8.11.1 Description" title="Direct link to 8.11.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Lack of physical protection of devices.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">unlocked server rooms</li>
+<li class="">unauthorized physical access</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8112-prevention>8.11.2 Prevention<a href=#8112-prevention class=hash-link aria-label="Direct link to 8.11.2 Prevention" title="Direct link to 8.11.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Restrict physical access</li>
+<li class="">Use locks and surveillance</li>
+<li class="">Implement access control systems</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=812-social-engineering>8.12 Social Engineering<a href=#812-social-engineering class=hash-link aria-label="Direct link to 8.12 Social Engineering" title="Direct link to 8.12 Social Engineering" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8121-description>8.12.1 Description<a href=#8121-description class=hash-link aria-label="Direct link to 8.12.1 Description" title="Direct link to 8.12.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Manipulating users to reveal sensitive information.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">phishing</li>
+<li class="">impersonation</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8122-prevention>8.12.2 Prevention<a href=#8122-prevention class=hash-link aria-label="Direct link to 8.12.2 Prevention" title="Direct link to 8.12.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">User awareness training</li>
+<li class="">Verify identities</li>
+<li class="">Avoid sharing sensitive data</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=813-insufficient-logging-and-monitoring>8.13 Insufficient Logging and Monitoring<a href=#813-insufficient-logging-and-monitoring class=hash-link aria-label="Direct link to 8.13 Insufficient Logging and Monitoring" title="Direct link to 8.13 Insufficient Logging and Monitoring" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8131-description>8.13.1 Description<a href=#8131-description class=hash-link aria-label="Direct link to 8.13.1 Description" title="Direct link to 8.13.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Lack of proper logs prevents detection of attacks.</li>
+<li class="">Security incidents go unnoticed.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8132-prevention>8.13.2 Prevention<a href=#8132-prevention class=hash-link aria-label="Direct link to 8.13.2 Prevention" title="Direct link to 8.13.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Enable logging</li>
+<li class="">Monitor network activity</li>
+<li class="">Use SIEM tools</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=814-default-configurations>8.14 Default Configurations<a href=#814-default-configurations class=hash-link aria-label="Direct link to 8.14 Default Configurations" title="Direct link to 8.14 Default Configurations" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8141-description>8.14.1 Description<a href=#8141-description class=hash-link aria-label="Direct link to 8.14.1 Description" title="Direct link to 8.14.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Systems left with default settings:<!-- -->
+<ul>
+<li class="">default passwords</li>
+<li class="">default ports</li>
+</ul>
+</li>
+<li class="">Easily exploited.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8142-prevention>8.14.2 Prevention<a href=#8142-prevention class=hash-link aria-label="Direct link to 8.14.2 Prevention" title="Direct link to 8.14.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Change default credentials</li>
+<li class="">Customize configurations</li>
+<li class="">Harden systems</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=815-insecure-network-architecture>8.15 Insecure Network Architecture<a href=#815-insecure-network-architecture class=hash-link aria-label="Direct link to 8.15 Insecure Network Architecture" title="Direct link to 8.15 Insecure Network Architecture" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8151-description>8.15.1 Description<a href=#8151-description class=hash-link aria-label="Direct link to 8.15.1 Description" title="Direct link to 8.15.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Poor network design:<!-- -->
+<ul>
+<li class="">no segmentation</li>
+<li class="">flat network structure</li>
+</ul>
+</li>
+<li class="">Increases attack impact.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8152-prevention>8.15.2 Prevention<a href=#8152-prevention class=hash-link aria-label="Direct link to 8.15.2 Prevention" title="Direct link to 8.15.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Use network segmentation</li>
+<li class="">Implement firewalls and VLANs</li>
+<li class="">Design secure architecture</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=816-vpn-vulnerabilities>8.16 VPN Vulnerabilities<a href=#816-vpn-vulnerabilities class=hash-link aria-label="Direct link to 8.16 VPN Vulnerabilities" title="Direct link to 8.16 VPN Vulnerabilities" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8161-description>8.16.1 Description<a href=#8161-description class=hash-link aria-label="Direct link to 8.16.1 Description" title="Direct link to 8.16.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Weak VPN configurations:<!-- -->
+<ul>
+<li class="">weak encryption</li>
+<li class="">outdated protocols</li>
+</ul>
+</li>
+<li class="">Can expose remote access.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8162-prevention>8.16.2 Prevention<a href=#8162-prevention class=hash-link aria-label="Direct link to 8.16.2 Prevention" title="Direct link to 8.16.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Use strong encryption</li>
+<li class="">Update VPN software</li>
+<li class="">Enable multi-factor authentication</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=817-iot-device-vulnerabilities>8.17 IoT Device Vulnerabilities<a href=#817-iot-device-vulnerabilities class=hash-link aria-label="Direct link to 8.17 IoT Device Vulnerabilities" title="Direct link to 8.17 IoT Device Vulnerabilities" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8171-description>8.17.1 Description<a href=#8171-description class=hash-link aria-label="Direct link to 8.17.1 Description" title="Direct link to 8.17.1 Description" translate=no>​</a></h4>
+<ul>
+<li class="">IoT devices often lack strong security.</li>
+<li class="">Issues:<!-- -->
+<ul>
+<li class="">default credentials</li>
+<li class="">outdated firmware</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=8172-prevention>8.17.2 Prevention<a href=#8172-prevention class=hash-link aria-label="Direct link to 8.17.2 Prevention" title="Direct link to 8.17.2 Prevention" translate=no>​</a></h4>
+<ul>
+<li class="">Change default settings</li>
+<li class="">Update firmware regularly</li>
+<li class="">Isolate IoT devices on separate network</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-7>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-7 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Vulnerabilities exist in:<!-- -->
+<ul>
+<li class="">network</li>
+<li class="">systems</li>
+<li class="">users</li>
+</ul>
+</li>
+<li class="">Common causes:<!-- -->
+<ul>
+<li class="">weak passwords</li>
+<li class="">misconfigurations</li>
+<li class="">outdated systems</li>
+</ul>
+</li>
+<li class="">Prevention requires:<!-- -->
+<ul>
+<li class="">regular updates</li>
+<li class="">monitoring</li>
+<li class="">strong security practices</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=9-zero-day-vulnerability>9. Zero-Day Vulnerability<a href=#9-zero-day-vulnerability class=hash-link aria-label="Direct link to 9. Zero-Day Vulnerability" title="Direct link to 9. Zero-Day Vulnerability" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=91-definition>9.1 Definition<a href=#91-definition class=hash-link aria-label="Direct link to 9.1 Definition" title="Direct link to 9.1 Definition" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=911-unknown-vulnerability>9.1.1 Unknown Vulnerability<a href=#911-unknown-vulnerability class=hash-link aria-label="Direct link to 9.1.1 Unknown Vulnerability" title="Direct link to 9.1.1 Unknown Vulnerability" translate=no>​</a></h4>
+<p>A zero-day vulnerability is a <strong>previously unknown security flaw</strong> in software, hardware, or systems that is <strong>not yet discovered or patched by the vendor</strong>.</p>
+<ul>
+<li class="">“Zero-day” means:<!-- -->
+<ul>
+<li class="">developers have <strong>0 days to fix it</strong></li>
+</ul>
+</li>
+<li class="">It is unknown to:<!-- -->
+<ul>
+<li class="">software developers</li>
+<li class="">security teams</li>
+</ul>
+</li>
+<li class="">But may already be known to attackers.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=912-zero-day-attack-concept>9.1.2 Zero-Day Attack Concept<a href=#912-zero-day-attack-concept class=hash-link aria-label="Direct link to 9.1.2 Zero-Day Attack Concept" title="Direct link to 9.1.2 Zero-Day Attack Concept" translate=no>​</a></h4>
+<ul>
+<li class="">A zero-day attack occurs when attackers <strong>exploit the vulnerability before a fix is available</strong>.</li>
+<li class="">Key characteristics:<!-- -->
+<ul>
+<li class="">no existing patch</li>
+<li class="">no signature for detection</li>
+<li class="">highly difficult to defend</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=92-risks>9.2 Risks<a href=#92-risks class=hash-link aria-label="Direct link to 9.2 Risks" title="Direct link to 9.2 Risks" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=921-exploitation-before-patch>9.2.1 Exploitation Before Patch<a href=#921-exploitation-before-patch class=hash-link aria-label="Direct link to 9.2.1 Exploitation Before Patch" title="Direct link to 9.2.1 Exploitation Before Patch" translate=no>​</a></h4>
+<ul>
+<li class="">Systems remain vulnerable because:<!-- -->
+<ul>
+<li class="">no fix is available</li>
+<li class="">users are unaware of the threat</li>
+</ul>
+</li>
+<li class="">Attackers can:<!-- -->
+<ul>
+<li class="">gain unauthorized access</li>
+<li class="">steal sensitive data</li>
+<li class="">compromise systems</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=922-high-severity>9.2.2 High Severity<a href=#922-high-severity class=hash-link aria-label="Direct link to 9.2.2 High Severity" title="Direct link to 9.2.2 High Severity" translate=no>​</a></h4>
+<ul>
+<li class="">Zero-day vulnerabilities are <strong>extremely dangerous</strong>.</li>
+<li class="">Reasons:<!-- -->
+<ul>
+<li class="">no immediate defense</li>
+<li class="">high success rate for attackers</li>
+<li class="">can affect large number of systems</li>
+</ul>
+</li>
+<li class="">Impact includes:<!-- -->
+<ul>
+<li class="">data breaches</li>
+<li class="">system compromise</li>
+<li class="">widespread attacks</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-additional-points-full-coverage>🔐 Additional Points (Full Coverage)<a href=#-additional-points-full-coverage class=hash-link aria-label="Direct link to 🔐 Additional Points (Full Coverage)" title="Direct link to 🔐 Additional Points (Full Coverage)" translate=no>​</a></h3>
+<ul>
+<li class="">Often targeted in:<!-- -->
+<ul>
+<li class="">operating systems</li>
+<li class="">web browsers</li>
+<li class="">enterprise software</li>
+</ul>
+</li>
+<li class="">Used in:<!-- -->
+<ul>
+<li class="">advanced persistent threats (APTs)</li>
+<li class="">targeted cyber attacks</li>
+</ul>
+</li>
+<li class="">Lifecycle:<!-- -->
+<ul>
+<li class="">vulnerability exists</li>
+<li class="">attacker discovers</li>
+<li class="">exploit used</li>
+<li class="">vendor releases patch</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-prevention--mitigation>🔐 Prevention / Mitigation<a href=#-prevention--mitigation class=hash-link aria-label="Direct link to 🔐 Prevention / Mitigation" title="Direct link to 🔐 Prevention / Mitigation" translate=no>​</a></h3>
+<ul>
+<li class="">Apply updates and patches as soon as available</li>
+<li class="">Use <strong>intrusion detection/prevention systems (IDS/IPS)</strong></li>
+<li class="">Implement <strong>behavior-based detection</strong></li>
+<li class="">Use <strong>least privilege principle</strong></li>
+<li class="">Regularly monitor systems</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-8>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-8 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Zero-day = <strong>unknown vulnerability</strong></li>
+<li class="">Zero-day attack = <strong>exploit before patch</strong></li>
+<li class="">High risk due to:<!-- -->
+<ul>
+<li class="">no defense</li>
+<li class="">no detection signatures</li>
+</ul>
+</li>
+<li class="">Requires:<!-- -->
+<ul>
+<li class="">proactive security</li>
+<li class="">monitoring</li>
+<li class="">rapid patching</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=10-network-diagram-in-penetration-testing>10. Network Diagram in Penetration Testing<a href=#10-network-diagram-in-penetration-testing class=hash-link aria-label="Direct link to 10. Network Diagram in Penetration Testing" title="Direct link to 10. Network Diagram in Penetration Testing" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=101-definition>10.1 Definition<a href=#101-definition class=hash-link aria-label="Direct link to 10.1 Definition" title="Direct link to 10.1 Definition" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1011-visual-representation-of-network>10.1.1 Visual Representation of Network<a href=#1011-visual-representation-of-network class=hash-link aria-label="Direct link to 10.1.1 Visual Representation of Network" title="Direct link to 10.1.1 Visual Representation of Network" translate=no>​</a></h4>
+<p>A network diagram is a <strong>graphical representation of a network structure</strong>, showing how different devices and systems are connected.</p>
+<ul>
+<li class="">Displays:<!-- -->
+<ul>
+<li class="">network layout</li>
+<li class="">communication paths</li>
+<li class="">connections between devices</li>
+</ul>
+</li>
+<li class="">Used in penetration testing to:<!-- -->
+<ul>
+<li class="">understand the target environment</li>
+<li class="">plan attack strategies</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1012-components-routers-servers-firewalls>10.1.2 Components (routers, servers, firewalls)<a href=#1012-components-routers-servers-firewalls class=hash-link aria-label="Direct link to 10.1.2 Components (routers, servers, firewalls)" title="Direct link to 10.1.2 Components (routers, servers, firewalls)" translate=no>​</a></h4>
+<p>A network diagram typically includes:</p>
+<ul>
+<li class=""><strong>Routers</strong>
+<ul>
+<li class="">connect different networks</li>
+<li class="">route traffic between them</li>
+</ul>
+</li>
+<li class=""><strong>Servers</strong>
+<ul>
+<li class="">provide services (web, database, file servers)</li>
+<li class="">store and process data</li>
+</ul>
+</li>
+<li class=""><strong>Firewalls</strong>
+<ul>
+<li class="">control traffic flow</li>
+<li class="">protect internal network</li>
+</ul>
+</li>
+<li class=""><strong>Switches</strong>
+<ul>
+<li class="">connect devices within a network</li>
+</ul>
+</li>
+<li class=""><strong>Clients</strong>
+<ul>
+<li class="">user devices (PCs, laptops, mobiles)</li>
+</ul>
+</li>
+<li class=""><strong>Internet / External Network</strong>
+<ul>
+<li class="">represents external connectivity</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=102-importance>10.2 Importance<a href=#102-importance class=hash-link aria-label="Direct link to 10.2 Importance" title="Direct link to 10.2 Importance" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1021-understanding-network-architecture>10.2.1 Understanding Network Architecture<a href=#1021-understanding-network-architecture class=hash-link aria-label="Direct link to 10.2.1 Understanding Network Architecture" title="Direct link to 10.2.1 Understanding Network Architecture" translate=no>​</a></h4>
+<ul>
+<li class="">Helps security professionals:<!-- -->
+<ul>
+<li class="">visualize network structure</li>
+<li class="">understand how systems interact</li>
+</ul>
+</li>
+<li class="">Provides insight into:<!-- -->
+<ul>
+<li class="">data flow</li>
+<li class="">network segmentation</li>
+<li class="">security layers</li>
+</ul>
+</li>
+<li class="">Useful for:<!-- -->
+<ul>
+<li class="">planning penetration tests</li>
+<li class="">identifying critical systems</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1022-identifying-weak-points>10.2.2 Identifying Weak Points<a href=#1022-identifying-weak-points class=hash-link aria-label="Direct link to 10.2.2 Identifying Weak Points" title="Direct link to 10.2.2 Identifying Weak Points" translate=no>​</a></h4>
+<ul>
+<li class="">Helps locate:<!-- -->
+<ul>
+<li class="">exposed systems</li>
+<li class="">misconfigured devices</li>
+<li class="">insecure connections</li>
+</ul>
+</li>
+<li class="">Enables identification of:<!-- -->
+<ul>
+<li class="">entry points for attackers</li>
+<li class="">potential attack paths</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-role-in-penetration-testing-workflow>🔄 Role in Penetration Testing Workflow<a href=#-role-in-penetration-testing-workflow class=hash-link aria-label="Direct link to 🔄 Role in Penetration Testing Workflow" title="Direct link to 🔄 Role in Penetration Testing Workflow" translate=no>​</a></h3>
+<ul>
+<li class="">Used during:<!-- -->
+<ul>
+<li class="">reconnaissance</li>
+<li class="">planning</li>
+<li class="">vulnerability analysis</li>
+</ul>
+</li>
+<li class="">Helps in:<!-- -->
+<ul>
+<li class="">mapping attack surface</li>
+<li class="">prioritizing targets</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-9>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-9 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Network diagram = <strong>visual map of network</strong></li>
+<li class="">Includes:<!-- -->
+<ul>
+<li class="">routers, servers, firewalls, clients</li>
+</ul>
+</li>
+<li class="">Important for:<!-- -->
+<ul>
+<li class="">understanding structure</li>
+<li class="">identifying vulnerabilities</li>
+</ul>
+</li>
+<li class="">Used to:<!-- -->
+<ul>
+<li class="">plan attacks</li>
+<li class="">analyze risks</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-burp-suite-proxy>11. Burp Suite Proxy<a href=#11-burp-suite-proxy class=hash-link aria-label="Direct link to 11. Burp Suite Proxy" title="Direct link to 11. Burp Suite Proxy" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=111-introduction>11.1 Introduction<a href=#111-introduction class=hash-link aria-label="Direct link to 11.1 Introduction" title="Direct link to 11.1 Introduction" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1111-definition>11.1.1 Definition<a href=#1111-definition class=hash-link aria-label="Direct link to 11.1.1 Definition" title="Direct link to 11.1.1 Definition" translate=no>​</a></h4>
+<p>Burp Suite is a widely used tool for <strong>web application security testing</strong> that acts as an <strong>intercepting proxy</strong> between a user’s browser and the web server.</p>
+<ul>
+<li class="">It captures and analyzes HTTP/HTTPS traffic.</li>
+<li class="">Allows testers to:<!-- -->
+<ul>
+<li class="">inspect requests and responses</li>
+<li class="">modify data in transit</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1112-role-in-web-security-testing>11.1.2 Role in Web Security Testing<a href=#1112-role-in-web-security-testing class=hash-link aria-label="Direct link to 11.1.2 Role in Web Security Testing" title="Direct link to 11.1.2 Role in Web Security Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Acts as a <strong>middle layer</strong> between client and server.</li>
+<li class="">Helps in:<!-- -->
+<ul>
+<li class="">identifying vulnerabilities</li>
+<li class="">testing application behavior</li>
+<li class="">analyzing communication</li>
+</ul>
+</li>
+<li class="">Common use cases:<!-- -->
+<ul>
+<li class="">detecting input validation flaws</li>
+<li class="">testing authentication mechanisms</li>
+<li class="">finding web vulnerabilities (SQLi, XSS)</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=112-features>11.2 Features<a href=#112-features class=hash-link aria-label="Direct link to 11.2 Features" title="Direct link to 11.2 Features" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1121-interception-and-modification>11.2.1 Interception and Modification<a href=#1121-interception-and-modification class=hash-link aria-label="Direct link to 11.2.1 Interception and Modification" title="Direct link to 11.2.1 Interception and Modification" translate=no>​</a></h4>
+<ul>
+<li class="">Intercepts HTTP/HTTPS requests and responses.</li>
+<li class="">Allows:<!-- -->
+<ul>
+<li class="">viewing raw data</li>
+<li class="">modifying parameters before sending</li>
+</ul>
+</li>
+<li class="">Useful for:<!-- -->
+<ul>
+<li class="">testing input validation</li>
+<li class="">bypassing restrictions</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1122-request-and-response-tampering>11.2.2 Request and Response Tampering<a href=#1122-request-and-response-tampering class=hash-link aria-label="Direct link to 11.2.2 Request and Response Tampering" title="Direct link to 11.2.2 Request and Response Tampering" translate=no>​</a></h4>
+<ul>
+<li class="">Modify:<!-- -->
+<ul>
+<li class="">form inputs</li>
+<li class="">headers</li>
+<li class="">cookies</li>
+</ul>
+</li>
+<li class="">Helps identify:<!-- -->
+<ul>
+<li class="">security flaws</li>
+<li class="">improper validation</li>
+</ul>
+</li>
+<li class="">Example:<!-- -->
+<ul>
+<li class="">changing user role in request</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1123-decoder-tool>11.2.3 Decoder Tool<a href=#1123-decoder-tool class=hash-link aria-label="Direct link to 11.2.3 Decoder Tool" title="Direct link to 11.2.3 Decoder Tool" translate=no>​</a></h4>
+<ul>
+<li class="">Encodes and decodes data.</li>
+<li class="">Supports formats like:<!-- -->
+<ul>
+<li class="">Base64</li>
+<li class="">URL encoding</li>
+</ul>
+</li>
+<li class="">Useful for:<!-- -->
+<ul>
+<li class="">analyzing encoded payloads</li>
+<li class="">understanding hidden data</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1124-extensions-tool>11.2.4 Extensions Tool<a href=#1124-extensions-tool class=hash-link aria-label="Direct link to 11.2.4 Extensions Tool" title="Direct link to 11.2.4 Extensions Tool" translate=no>​</a></h4>
+<ul>
+<li class="">Allows adding plugins to extend functionality.</li>
+<li class="">Provides:<!-- -->
+<ul>
+<li class="">additional scanning tools</li>
+<li class="">automation capabilities</li>
+</ul>
+</li>
+<li class="">Supports integration with:<!-- -->
+<ul>
+<li class="">third-party tools</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1125-repeater-tool>11.2.5 Repeater Tool<a href=#1125-repeater-tool class=hash-link aria-label="Direct link to 11.2.5 Repeater Tool" title="Direct link to 11.2.5 Repeater Tool" translate=no>​</a></h4>
+<ul>
+<li class="">Allows sending the same request multiple times.</li>
+<li class="">Used for:<!-- -->
+<ul>
+<li class="">testing different inputs</li>
+<li class="">analyzing responses</li>
+</ul>
+</li>
+<li class="">Helps in:<!-- -->
+<ul>
+<li class="">manual testing</li>
+<li class="">vulnerability verification</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1126-intruder-tool>11.2.6 Intruder Tool<a href=#1126-intruder-tool class=hash-link aria-label="Direct link to 11.2.6 Intruder Tool" title="Direct link to 11.2.6 Intruder Tool" translate=no>​</a></h4>
+<ul>
+<li class="">Automates attacks by sending multiple payloads.</li>
+<li class="">Used for:<!-- -->
+<ul>
+<li class="">brute force attacks</li>
+<li class="">fuzzing inputs</li>
+<li class="">testing parameters</li>
+</ul>
+</li>
+<li class="">Supports:<!-- -->
+<ul>
+<li class="">different attack types (sniper, cluster bomb)</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-burp-suite-workflow>🔄 Burp Suite Workflow<a href=#-burp-suite-workflow class=hash-link aria-label="Direct link to 🔄 Burp Suite Workflow" title="Direct link to 🔄 Burp Suite Workflow" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-10>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-10 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Burp Suite = <strong>intercepting proxy tool</strong></li>
+<li class="">Used for:<!-- -->
+<ul>
+<li class="">web security testing</li>
+<li class="">vulnerability analysis</li>
+</ul>
+</li>
+<li class="">Key features:<!-- -->
+<ul>
+<li class="">interception</li>
+<li class="">tampering</li>
+<li class="">repeater</li>
+<li class="">intruder</li>
+</ul>
+</li>
+<li class="">Helps detect:<!-- -->
+<ul>
+<li class="">SQL injection</li>
+<li class="">XSS</li>
+<li class="">authentication flaws</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-best-practices-1>🔐 Best Practices<a href=#-best-practices-1 class=hash-link aria-label="Direct link to 🔐 Best Practices" title="Direct link to 🔐 Best Practices" translate=no>​</a></h3>
+<ul>
+<li class="">Use in authorized environments only</li>
+<li class="">Combine with manual testing</li>
+<li class="">Validate findings carefully</li>
+<li class="">Keep tool updated</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-owasp-zap-proxy>12. OWASP ZAP Proxy<a href=#12-owasp-zap-proxy class=hash-link aria-label="Direct link to 12. OWASP ZAP Proxy" title="Direct link to 12. OWASP ZAP Proxy" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=121-introduction>12.1 Introduction<a href=#121-introduction class=hash-link aria-label="Direct link to 12.1 Introduction" title="Direct link to 12.1 Introduction" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1211-definition>12.1.1 Definition<a href=#1211-definition class=hash-link aria-label="Direct link to 12.1.1 Definition" title="Direct link to 12.1.1 Definition" translate=no>​</a></h4>
+<p>OWASP ZAP is an <strong>open-source web application security testing tool</strong> used to find vulnerabilities in web applications.</p>
+<ul>
+<li class="">Works as an <strong>intercepting proxy</strong> between browser and server</li>
+<li class="">Helps in:<!-- -->
+<ul>
+<li class="">scanning web applications</li>
+<li class="">detecting security issues</li>
+<li class="">analyzing HTTP/HTTPS traffic</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1212-owasp-organization>12.1.2 OWASP Organization<a href=#1212-owasp-organization class=hash-link aria-label="Direct link to 12.1.2 OWASP Organization" title="Direct link to 12.1.2 OWASP Organization" translate=no>​</a></h4>
+<p>OWASP is a global organization focused on improving software security.</p>
+<ul>
+<li class="">Provides:<!-- -->
+<ul>
+<li class="">free security tools (like ZAP)</li>
+<li class="">security guidelines</li>
+<li class="">best practices</li>
+</ul>
+</li>
+<li class="">Known for:<!-- -->
+<ul>
+<li class="">OWASP Top 10 (common web vulnerabilities)</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=122-features>12.2 Features<a href=#122-features class=hash-link aria-label="Direct link to 12.2 Features" title="Direct link to 12.2 Features" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1221-automated-scanning>12.2.1 Automated Scanning<a href=#1221-automated-scanning class=hash-link aria-label="Direct link to 12.2.1 Automated Scanning" title="Direct link to 12.2.1 Automated Scanning" translate=no>​</a></h4>
+<ul>
+<li class="">Automatically scans web applications for vulnerabilities.</li>
+<li class="">Detects:<!-- -->
+<ul>
+<li class="">SQL injection</li>
+<li class="">cross-site scripting (XSS)</li>
+<li class="">security misconfigurations</li>
+</ul>
+</li>
+<li class="">Useful for:<!-- -->
+<ul>
+<li class="">quick security assessments</li>
+<li class="">beginners</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1222-manual-testing>12.2.2 Manual Testing<a href=#1222-manual-testing class=hash-link aria-label="Direct link to 12.2.2 Manual Testing" title="Direct link to 12.2.2 Manual Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Allows testers to manually inspect and manipulate requests.</li>
+<li class="">Helps in:<!-- -->
+<ul>
+<li class="">deeper analysis</li>
+<li class="">finding complex vulnerabilities</li>
+</ul>
+</li>
+<li class="">Provides better control than automated scanning.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1223-active-scanning>12.2.3 Active Scanning<a href=#1223-active-scanning class=hash-link aria-label="Direct link to 12.2.3 Active Scanning" title="Direct link to 12.2.3 Active Scanning" translate=no>​</a></h4>
+<ul>
+<li class="">Actively sends malicious payloads to test vulnerabilities.</li>
+<li class="">Interacts directly with the application.</li>
+<li class="">Can identify:<!-- -->
+<ul>
+<li class="">exploitable weaknesses</li>
+</ul>
+</li>
+<li class="">More thorough but:<!-- -->
+<ul>
+<li class="">may affect application performance</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1224-passive-scanning>12.2.4 Passive Scanning<a href=#1224-passive-scanning class=hash-link aria-label="Direct link to 12.2.4 Passive Scanning" title="Direct link to 12.2.4 Passive Scanning" translate=no>​</a></h4>
+<ul>
+<li class="">Observes traffic without modifying it.</li>
+<li class="">Detects:<!-- -->
+<ul>
+<li class="">security issues without sending attacks</li>
+</ul>
+</li>
+<li class="">Safe and non-intrusive.</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1225-open-source-nature>12.2.5 Open Source Nature<a href=#1225-open-source-nature class=hash-link aria-label="Direct link to 12.2.5 Open Source Nature" title="Direct link to 12.2.5 Open Source Nature" translate=no>​</a></h4>
+<ul>
+<li class="">Free and open-source tool.</li>
+<li class="">Benefits:<!-- -->
+<ul>
+<li class="">customizable</li>
+<li class="">community-supported</li>
+<li class="">regularly updated</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-owasp-zap-workflow>🔄 OWASP ZAP Workflow<a href=#-owasp-zap-workflow class=hash-link aria-label="Direct link to 🔄 OWASP ZAP Workflow" title="Direct link to 🔄 OWASP ZAP Workflow" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-11>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-11 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">OWASP ZAP = <strong>open-source security testing tool</strong></li>
+<li class="">Developed by:<!-- -->
+<ul>
+<li class="">OWASP organization</li>
+</ul>
+</li>
+<li class="">Features:<!-- -->
+<ul>
+<li class="">automated scanning</li>
+<li class="">manual testing</li>
+<li class="">active + passive scanning</li>
+</ul>
+</li>
+<li class="">Used for:<!-- -->
+<ul>
+<li class="">detecting web vulnerabilities</li>
+<li class="">improving application security</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-best-practices-2>🔐 Best Practices<a href=#-best-practices-2 class=hash-link aria-label="Direct link to 🔐 Best Practices" title="Direct link to 🔐 Best Practices" translate=no>​</a></h3>
+<ul>
+<li class="">Use both:<!-- -->
+<ul>
+<li class="">automated + manual testing</li>
+</ul>
+</li>
+<li class="">Validate scan results</li>
+<li class="">Regularly update tool</li>
+<li class="">Use in authorized environments only</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=13-post-exploitation>13. Post-Exploitation<a href=#13-post-exploitation class=hash-link aria-label="Direct link to 13. Post-Exploitation" title="Direct link to 13. Post-Exploitation" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=131-maintaining-access>13.1 Maintaining Access<a href=#131-maintaining-access class=hash-link aria-label="Direct link to 13.1 Maintaining Access" title="Direct link to 13.1 Maintaining Access" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1311-persistence-techniques>13.1.1 Persistence Techniques<a href=#1311-persistence-techniques class=hash-link aria-label="Direct link to 13.1.1 Persistence Techniques" title="Direct link to 13.1.1 Persistence Techniques" translate=no>​</a></h4>
+<ul>
+<li class="">Maintaining access means ensuring <strong>continued control over a compromised system</strong> even after initial exploitation.</li>
+<li class="">Attackers (or testers in controlled environments) use persistence techniques to:<!-- -->
+<ul>
+<li class="">avoid losing access</li>
+<li class="">monitor system activity</li>
+<li class="">perform further actions later</li>
+</ul>
+</li>
+<li class="">Common persistence techniques:<!-- -->
+<ul>
+<li class=""><strong>Backdoors</strong>
+<ul>
+<li class="">hidden access mechanisms</li>
+</ul>
+</li>
+<li class=""><strong>Creating new user accounts</strong>
+<ul>
+<li class="">especially with admin privileges</li>
+</ul>
+</li>
+<li class=""><strong>Modifying startup scripts/services</strong>
+<ul>
+<li class="">ensures access after reboot</li>
+</ul>
+</li>
+<li class=""><strong>Scheduled tasks</strong>
+<ul>
+<li class="">automatically execute malicious scripts</li>
+</ul>
+</li>
+<li class=""><strong>Registry modifications (Windows)</strong>
+<ul>
+<li class="">maintain persistence</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">Risks:<!-- -->
+<ul>
+<li class="">long-term unauthorized access</li>
+<li class="">continuous data theft</li>
+<li class="">system compromise</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=132-pivoting>13.2 Pivoting<a href=#132-pivoting class=hash-link aria-label="Direct link to 13.2 Pivoting" title="Direct link to 13.2 Pivoting" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1321-expanding-attack-scope>13.2.1 Expanding Attack Scope<a href=#1321-expanding-attack-scope class=hash-link aria-label="Direct link to 13.2.1 Expanding Attack Scope" title="Direct link to 13.2.1 Expanding Attack Scope" translate=no>​</a></h4>
+<ul>
+<li class="">Pivoting is the process of using a <strong>compromised system as a stepping stone</strong> to attack other systems in the network.</li>
+<li class="">Purpose:<!-- -->
+<ul>
+<li class="">expand reach inside network</li>
+<li class="">access internal systems not directly exposed</li>
+</ul>
+</li>
+<li class="">Example:<!-- -->
+<ul>
+<li class="">attacker compromises one machine → uses it to scan internal network</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1322-lateral-movement>13.2.2 Lateral Movement<a href=#1322-lateral-movement class=hash-link aria-label="Direct link to 13.2.2 Lateral Movement" title="Direct link to 13.2.2 Lateral Movement" translate=no>​</a></h4>
+<ul>
+<li class="">Lateral movement refers to <strong>moving from one system to another within the same network</strong>.</li>
+<li class="">Techniques:<!-- -->
+<ul>
+<li class="">credential reuse</li>
+<li class="">exploiting trust relationships</li>
+<li class="">using shared resources</li>
+</ul>
+</li>
+<li class="">Goal:<!-- -->
+<ul>
+<li class="">gain access to:<!-- -->
+<ul>
+<li class="">sensitive systems</li>
+<li class="">databases</li>
+<li class="">servers</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-12>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-12 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Post-exploitation occurs <strong>after initial access</strong></li>
+<li class="">Two main activities:<!-- -->
+<ul>
+<li class="">maintaining access (persistence)</li>
+<li class="">pivoting (expanding attack scope)</li>
+</ul>
+</li>
+<li class="">Lateral movement allows:<!-- -->
+<ul>
+<li class="">deeper network compromise</li>
+</ul>
+</li>
+<li class="">Critical phase for:<!-- -->
+<ul>
+<li class="">assessing impact</li>
+<li class="">understanding real-world attack scenarios</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-prevention-measures-2>🔐 Prevention Measures<a href=#-prevention-measures-2 class=hash-link aria-label="Direct link to 🔐 Prevention Measures" title="Direct link to 🔐 Prevention Measures" translate=no>​</a></h3>
+<ul>
+<li class="">Monitor system activity continuously</li>
+<li class="">Use strong access controls</li>
+<li class="">Implement network segmentation</li>
+<li class="">Use multi-factor authentication</li>
+<li class="">Regularly audit user accounts and permissions</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=14-documentation-and-reporting-detailed>14. Documentation and Reporting (Detailed)<a href=#14-documentation-and-reporting-detailed class=hash-link aria-label="Direct link to 14. Documentation and Reporting (Detailed)" title="Direct link to 14. Documentation and Reporting (Detailed)" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=141-vulnerability-details>14.1 Vulnerability Details<a href=#141-vulnerability-details class=hash-link aria-label="Direct link to 14.1 Vulnerability Details" title="Direct link to 14.1 Vulnerability Details" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1411-vulnerability-identifier>14.1.1 Vulnerability Identifier<a href=#1411-vulnerability-identifier class=hash-link aria-label="Direct link to 14.1.1 Vulnerability Identifier" title="Direct link to 14.1.1 Vulnerability Identifier" translate=no>​</a></h4>
+<ul>
+<li class="">A unique identifier assigned to each vulnerability.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">internal ID (e.g., VULN-001)</li>
+<li class="">external IDs (e.g., CVE numbers)</li>
+</ul>
+</li>
+<li class="">Helps in:<!-- -->
+<ul>
+<li class="">tracking vulnerabilities</li>
+<li class="">referencing issues in reports</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1412-description>14.1.2 Description<a href=#1412-description class=hash-link aria-label="Direct link to 14.1.2 Description" title="Direct link to 14.1.2 Description" translate=no>​</a></h4>
+<ul>
+<li class="">Provides a clear explanation of the vulnerability.</li>
+<li class="">Includes:<!-- -->
+<ul>
+<li class="">what the vulnerability is</li>
+<li class="">how it occurs</li>
+<li class="">why it is a problem</li>
+</ul>
+</li>
+<li class="">Should be:<!-- -->
+<ul>
+<li class="">simple for management</li>
+<li class="">detailed for technical teams</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1413-location--affected-component>14.1.3 Location / Affected Component<a href=#1413-location--affected-component class=hash-link aria-label="Direct link to 14.1.3 Location / Affected Component" title="Direct link to 14.1.3 Location / Affected Component" translate=no>​</a></h4>
+<ul>
+<li class="">Specifies where the vulnerability exists.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">specific server</li>
+<li class="">application module</li>
+<li class="">API endpoint</li>
+<li class="">network device</li>
+</ul>
+</li>
+<li class="">Helps in:<!-- -->
+<ul>
+<li class="">identifying affected assets</li>
+<li class="">targeting fixes</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1414-risk-level>14.1.4 Risk Level<a href=#1414-risk-level class=hash-link aria-label="Direct link to 14.1.4 Risk Level" title="Direct link to 14.1.4 Risk Level" translate=no>​</a></h4>
+<ul>
+<li class="">Indicates severity of vulnerability.</li>
+<li class="">Common levels:<!-- -->
+<ul>
+<li class="">Critical</li>
+<li class="">High</li>
+<li class="">Medium</li>
+<li class="">Low</li>
+</ul>
+</li>
+<li class="">Based on:<!-- -->
+<ul>
+<li class="">exploitability</li>
+<li class="">potential impact</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=142-technical-details>14.2 Technical Details<a href=#142-technical-details class=hash-link aria-label="Direct link to 14.2 Technical Details" title="Direct link to 14.2 Technical Details" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1421-cve-id>14.2.1 CVE ID<a href=#1421-cve-id class=hash-link aria-label="Direct link to 14.2.1 CVE ID" title="Direct link to 14.2.1 CVE ID" translate=no>​</a></h4>
+<ul>
+<li class="">CVE (Common Vulnerabilities and Exposures) is a <strong>standard identifier</strong> for known vulnerabilities.</li>
+<li class="">Format:<!-- -->
+<ul>
+<li class="">CVE-YYYY-XXXX</li>
+</ul>
+</li>
+<li class="">Helps in:<!-- -->
+<ul>
+<li class="">referencing known issues</li>
+<li class="">accessing vulnerability databases</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1422-attack-vector>14.2.2 Attack Vector<a href=#1422-attack-vector class=hash-link aria-label="Direct link to 14.2.2 Attack Vector" title="Direct link to 14.2.2 Attack Vector" translate=no>​</a></h4>
+<ul>
+<li class="">Describes how the vulnerability can be exploited.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">network-based</li>
+<li class="">local access</li>
+<li class="">web-based input</li>
+</ul>
+</li>
+<li class="">Helps understand:<!-- -->
+<ul>
+<li class="">attack path</li>
+<li class="">required conditions</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1423-impact>14.2.3 Impact<a href=#1423-impact class=hash-link aria-label="Direct link to 14.2.3 Impact" title="Direct link to 14.2.3 Impact" translate=no>​</a></h4>
+<ul>
+<li class="">Describes consequences of exploitation.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">data leakage</li>
+<li class="">system compromise</li>
+<li class="">privilege escalation</li>
+</ul>
+</li>
+<li class="">Helps prioritize fixes.</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=143-evidence-and-proof>14.3 Evidence and Proof<a href=#143-evidence-and-proof class=hash-link aria-label="Direct link to 14.3 Evidence and Proof" title="Direct link to 14.3 Evidence and Proof" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1431-evidence-collection>14.3.1 Evidence Collection<a href=#1431-evidence-collection class=hash-link aria-label="Direct link to 14.3.1 Evidence Collection" title="Direct link to 14.3.1 Evidence Collection" translate=no>​</a></h4>
+<ul>
+<li class="">Collect proof of vulnerability existence.</li>
+<li class="">Includes:<!-- -->
+<ul>
+<li class="">logs</li>
+<li class="">screenshots</li>
+<li class="">captured packets</li>
+<li class="">tool outputs</li>
+</ul>
+</li>
+<li class="">Ensures:<!-- -->
+<ul>
+<li class="">credibility of findings</li>
+<li class="">reproducibility</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1432-proof-of-concept>14.3.2 Proof-of-Concept<a href=#1432-proof-of-concept class=hash-link aria-label="Direct link to 14.3.2 Proof-of-Concept" title="Direct link to 14.3.2 Proof-of-Concept" translate=no>​</a></h4>
+<ul>
+<li class="">Demonstrates how the vulnerability can be exploited.</li>
+<li class="">May include:<!-- -->
+<ul>
+<li class="">sample payloads</li>
+<li class="">step-by-step exploitation</li>
+</ul>
+</li>
+<li class="">Shows:<!-- -->
+<ul>
+<li class="">real impact</li>
+<li class="">severity of issue</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=144-remediation-details>14.4 Remediation Details<a href=#144-remediation-details class=hash-link aria-label="Direct link to 14.4 Remediation Details" title="Direct link to 14.4 Remediation Details" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1441-recommendations>14.4.1 Recommendations<a href=#1441-recommendations class=hash-link aria-label="Direct link to 14.4.1 Recommendations" title="Direct link to 14.4.1 Recommendations" translate=no>​</a></h4>
+<ul>
+<li class="">Suggested actions to fix the vulnerability.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">apply patches</li>
+<li class="">update configurations</li>
+<li class="">improve input validation</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1442-affected-versions>14.4.2 Affected Versions<a href=#1442-affected-versions class=hash-link aria-label="Direct link to 14.4.2 Affected Versions" title="Direct link to 14.4.2 Affected Versions" translate=no>​</a></h4>
+<ul>
+<li class="">Lists versions of software impacted.</li>
+<li class="">Helps:<!-- -->
+<ul>
+<li class="">identify vulnerable systems</li>
+<li class="">prioritize updates</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1443-mitigation-techniques>14.4.3 Mitigation Techniques<a href=#1443-mitigation-techniques class=hash-link aria-label="Direct link to 14.4.3 Mitigation Techniques" title="Direct link to 14.4.3 Mitigation Techniques" translate=no>​</a></h4>
+<ul>
+<li class="">Temporary or permanent solutions.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">firewall rules</li>
+<li class="">disabling vulnerable features</li>
+<li class="">applying security controls</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1444-dependencies>14.4.4 Dependencies<a href=#1444-dependencies class=hash-link aria-label="Direct link to 14.4.4 Dependencies" title="Direct link to 14.4.4 Dependencies" translate=no>​</a></h4>
+<ul>
+<li class="">Identifies related components affecting vulnerability.</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">libraries</li>
+<li class="">third-party software</li>
+</ul>
+</li>
+<li class="">Important for:<!-- -->
+<ul>
+<li class="">complete resolution</li>
+<li class="">avoiding partial fixes</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=145-compliance-and-risk>14.5 Compliance and Risk<a href=#145-compliance-and-risk class=hash-link aria-label="Direct link to 14.5 Compliance and Risk" title="Direct link to 14.5 Compliance and Risk" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1451-regulatory-compliance>14.5.1 Regulatory Compliance<a href=#1451-regulatory-compliance class=hash-link aria-label="Direct link to 14.5.1 Regulatory Compliance" title="Direct link to 14.5.1 Regulatory Compliance" translate=no>​</a></h4>
+<ul>
+<li class="">Checks if vulnerability affects compliance with standards:</li>
+<li class="">Examples:<!-- -->
+<ul>
+<li class="">PCI DSS</li>
+<li class="">HIPAA</li>
+<li class="">ISO standards</li>
+</ul>
+</li>
+<li class="">Helps organizations:<!-- -->
+<ul>
+<li class="">meet legal requirements</li>
+<li class="">avoid penalties</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1452-ease-of-exploitation>14.5.2 Ease of Exploitation<a href=#1452-ease-of-exploitation class=hash-link aria-label="Direct link to 14.5.2 Ease of Exploitation" title="Direct link to 14.5.2 Ease of Exploitation" translate=no>​</a></h4>
+<ul>
+<li class="">Indicates how easily the vulnerability can be exploited.</li>
+<li class="">Factors:<!-- -->
+<ul>
+<li class="">required skill level</li>
+<li class="">availability of tools</li>
+<li class="">access requirements</li>
+</ul>
+</li>
+<li class="">Categories:<!-- -->
+<ul>
+<li class="">Easy</li>
+<li class="">Moderate</li>
+<li class="">Difficult</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-reporting-workflow>🔄 Reporting Workflow<a href=#-reporting-workflow class=hash-link aria-label="Direct link to 🔄 Reporting Workflow" title="Direct link to 🔄 Reporting Workflow" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-points-exam-ready-13>🔐 Key Points (Exam Ready)<a href=#-key-points-exam-ready-13 class=hash-link aria-label="Direct link to 🔐 Key Points (Exam Ready)" title="Direct link to 🔐 Key Points (Exam Ready)" translate=no>​</a></h3>
+<ul>
+<li class="">Documentation is critical in penetration testing</li>
+<li class="">Report must include:<!-- -->
+<ul>
+<li class="">vulnerability details</li>
+<li class="">technical data</li>
+<li class="">evidence</li>
+<li class="">remediation</li>
+</ul>
+</li>
+<li class="">Good report =<!-- -->
+<ul>
+<li class="">clear</li>
+<li class="">structured</li>
+<li class="">actionable</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 align=center><a data-footnote-ref=true href=#user-content-fn-1>END</a></h2></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/ankur3-101106/docs/NCS/u5.mdx target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/NCS/u4><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Unit - 4</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/category/se---apr-21><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>SE - APR 21</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#1-information-security class="table-of-contents__link toc-highlight">1. Information Security</a><ul><li><a href=#11-network-penetration-testing class="table-of-contents__link toc-highlight">1.1 Network Penetration Testing</a><ul><li><a href=#111-definition-of-penetration-testing class="table-of-contents__link toc-highlight">1.1.1 Definition of Penetration Testing</a><li><a href=#112-purpose-of-penetration-testing class="table-of-contents__link toc-highlight">1.1.2 Purpose of Penetration Testing</a><li><a href=#113-goals-identify-vulnerabilities-simulate-attacks-improve-security class="table-of-contents__link toc-highlight">1.1.3 Goals (Identify vulnerabilities, simulate attacks, improve security)</a></ul><li><a href=#-key-points-exam-ready class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a></ul><li><a href=#2-steps-for-network-penetration-testing class="table-of-contents__link toc-highlight">2. Steps for Network Penetration Testing</a><ul><li><a href=#21-planning-and-preparation class="table-of-contents__link toc-highlight">2.1 Planning and Preparation</a><ul><li><a href=#211-define-objectives class="table-of-contents__link toc-highlight">2.1.1 Define Objectives</a><li><a href=#212-gather-information class="table-of-contents__link toc-highlight">2.1.2 Gather Information</a><li><a href=#213-obtain-permissions class="table-of-contents__link toc-highlight">2.1.3 Obtain Permissions</a></ul><li><a href=#22-reconnaissance class="table-of-contents__link toc-highlight">2.2 Reconnaissance</a><ul><li><a href=#221-passive-reconnaissance class="table-of-contents__link toc-highlight">2.2.1 Passive Reconnaissance</a><li><a href=#222-active-reconnaissance class="table-of-contents__link toc-highlight">2.2.2 Active Reconnaissance</a><li><a href=#223-tools-used-whois-netcraft-shodan-nslookup-wappalyzer class="table-of-contents__link toc-highlight">2.2.3 Tools Used (WHOIS, Netcraft, Shodan, NSLOOKUP, Wappalyzer)</a></ul><li><a href=#23-vulnerability-analysis class="table-of-contents__link toc-highlight">2.3 Vulnerability Analysis</a><ul><li><a href=#231-automated-scanning class="table-of-contents__link toc-highlight">2.3.1 Automated Scanning</a><li><a href=#232-manual-analysis class="table-of-contents__link toc-highlight">2.3.2 Manual Analysis</a></ul><li><a href=#24-exploitation class="table-of-contents__link toc-highlight">2.4 Exploitation</a><ul><li><a href=#241-exploiting-vulnerabilities class="table-of-contents__link toc-highlight">2.4.1 Exploiting Vulnerabilities</a><li><a href=#242-privilege-escalation class="table-of-contents__link toc-highlight">2.4.2 Privilege Escalation</a></ul><li><a href=#25-post-exploitation class="table-of-contents__link toc-highlight">2.5 Post-Exploitation</a><ul><li><a href=#251-maintaining-access class="table-of-contents__link toc-highlight">2.5.1 Maintaining Access</a><li><a href=#252-pivoting-across-network class="table-of-contents__link toc-highlight">2.5.2 Pivoting Across Network</a></ul><li><a href=#26-documentation-and-reporting class="table-of-contents__link toc-highlight">2.6 Documentation and Reporting</a><ul><li><a href=#261-recording-findings class="table-of-contents__link toc-highlight">2.6.1 Recording Findings</a><li><a href=#262-preparing-reports class="table-of-contents__link toc-highlight">2.6.2 Preparing Reports</a></ul><li><a href=#27-follow-up class="table-of-contents__link toc-highlight">2.7 Follow-Up</a><ul><li><a href=#271-fix-verification class="table-of-contents__link toc-highlight">2.7.1 Fix Verification</a><li><a href=#272-security-improvements class="table-of-contents__link toc-highlight">2.7.2 Security Improvements</a></ul><li><a href=#-overall-penetration-testing-process class="table-of-contents__link toc-highlight">🔄 Overall Penetration Testing Process</a><li><a href=#-key-points-exam-ready-1 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a></ul><li><a href=#3-reconnaissance-tools-and-techniques class="table-of-contents__link toc-highlight">3. Reconnaissance Tools and Techniques</a><ul><li><a href=#31-whois class="table-of-contents__link toc-highlight">3.1 WHOIS</a><ul><li><a href=#311-definition class="table-of-contents__link toc-highlight">3.1.1 Definition</a><li><a href=#312-role-of-icann class="table-of-contents__link toc-highlight">3.1.2 Role of ICANN</a><li><a href=#313-domain-information-gathering class="table-of-contents__link toc-highlight">3.1.3 Domain Information Gathering</a></ul><li><a href=#32-nslookup class="table-of-contents__link toc-highlight">3.2 NSLOOKUP</a><ul><li><a href=#321-definition class="table-of-contents__link toc-highlight">3.2.1 Definition</a><li><a href=#322-dns-query-function class="table-of-contents__link toc-highlight">3.2.2 DNS Query Function</a><li><a href=#323-mapping-domain-to-ip class="table-of-contents__link toc-highlight">3.2.3 Mapping Domain to IP</a></ul><li><a href=#33-wappalyzer class="table-of-contents__link toc-highlight">3.3 Wappalyzer</a><ul><li><a href=#331-definition class="table-of-contents__link toc-highlight">3.3.1 Definition</a><li><a href=#332-technology-detection class="table-of-contents__link toc-highlight">3.3.2 Technology Detection</a><li><a href=#333-use-in-reconnaissance class="table-of-contents__link toc-highlight">3.3.3 Use in Reconnaissance</a></ul><li><a href=#34-nmap--zenmap class="table-of-contents__link toc-highlight">3.4 Nmap / Zenmap</a><ul><li><a href=#341-definition class="table-of-contents__link toc-highlight">3.4.1 Definition</a><li><a href=#342-host-discovery class="table-of-contents__link toc-highlight">3.4.2 Host Discovery</a><li><a href=#343-service-detection class="table-of-contents__link toc-highlight">3.4.3 Service Detection</a><li><a href=#344-os-fingerprinting class="table-of-contents__link toc-highlight">3.4.4 OS Fingerprinting</a></ul><li><a href=#35-angry-ip-scanner class="table-of-contents__link toc-highlight">3.5 Angry IP Scanner</a><ul><li><a href=#351-definition class="table-of-contents__link toc-highlight">3.5.1 Definition</a><li><a href=#352-ip-and-port-scanning class="table-of-contents__link toc-highlight">3.5.2 IP and Port Scanning</a><li><a href=#353-use-cases class="table-of-contents__link toc-highlight">3.5.3 Use Cases</a></ul><li><a href=#-reconnaissance-workflow class="table-of-contents__link toc-highlight">🔄 Reconnaissance Workflow</a><li><a href=#-key-points-exam-ready-2 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a></ul><li><a href=#4-banner-grabbing-and-os-detection class="table-of-contents__link toc-highlight">4. Banner Grabbing and OS Detection</a><ul><li><a href=#41-banner-grabbing class="table-of-contents__link toc-highlight">4.1 Banner Grabbing</a><ul><li><a href=#411-definition class="table-of-contents__link toc-highlight">4.1.1 Definition</a><li><a href=#412-purpose class="table-of-contents__link toc-highlight">4.1.2 Purpose</a><li><a href=#413-tools-telnet-nmap-netcat class="table-of-contents__link toc-highlight">4.1.3 Tools (Telnet, Nmap, Netcat)</a></ul><li><a href=#42-open-port-and-service-identification class="table-of-contents__link toc-highlight">4.2 Open Port and Service Identification</a><ul><li><a href=#421-importance-of-open-ports class="table-of-contents__link toc-highlight">4.2.1 Importance of Open Ports</a><li><a href=#422-entry-points-for-attack class="table-of-contents__link toc-highlight">4.2.2 Entry Points for Attack</a></ul><li><a href=#43-os-detection class="table-of-contents__link toc-highlight">4.3 OS Detection</a><ul><li><a href=#431-identifying-operating-system class="table-of-contents__link toc-highlight">4.3.1 Identifying Operating System</a><li><a href=#432-targeted-exploitation class="table-of-contents__link toc-highlight">4.3.2 Targeted Exploitation</a></ul><li><a href=#-combined-workflow class="table-of-contents__link toc-highlight">🔄 Combined Workflow</a><li><a href=#-key-points-exam-ready-3 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a><li><a href=#-prevention-measures class="table-of-contents__link toc-highlight">🔐 Prevention Measures</a></ul><li><a href=#5-vulnerability-analysis class="table-of-contents__link toc-highlight">5. Vulnerability Analysis</a><ul><li><a href=#51-overview-of-vulnerability class="table-of-contents__link toc-highlight">5.1 Overview of Vulnerability</a><ul><li><a href=#511-definition class="table-of-contents__link toc-highlight">5.1.1 Definition</a><li><a href=#512-types-of-vulnerabilities class="table-of-contents__link toc-highlight">5.1.2 Types of Vulnerabilities</a></ul><li><a href=#52-classification-of-vulnerabilities class="table-of-contents__link toc-highlight">5.2 Classification of Vulnerabilities</a><ul><li><a href=#521-vendor-originated class="table-of-contents__link toc-highlight">5.2.1 Vendor-Originated</a><li><a href=#522-system-administration-originated class="table-of-contents__link toc-highlight">5.2.2 System Administration-Originated</a><li><a href=#523-user-originated class="table-of-contents__link toc-highlight">5.2.3 User-Originated</a></ul><li><a href=#53-vulnerability-scanners class="table-of-contents__link toc-highlight">5.3 Vulnerability Scanners</a><ul><li><a href=#531-role-of-scanners class="table-of-contents__link toc-highlight">5.3.1 Role of Scanners</a><li><a href=#532-automated-security-auditing class="table-of-contents__link toc-highlight">5.3.2 Automated Security Auditing</a></ul><li><a href=#54-types-of-vulnerability-scanners class="table-of-contents__link toc-highlight">5.4 Types of Vulnerability Scanners</a><ul><li><a href=#541-network-vulnerability-scanners class="table-of-contents__link toc-highlight">5.4.1 Network Vulnerability Scanners</a><li><a href=#542-web-application-scanners class="table-of-contents__link toc-highlight">5.4.2 Web Application Scanners</a><li><a href=#543-host-based-scanners class="table-of-contents__link toc-highlight">5.4.3 Host-Based Scanners</a><li><a href=#544-database-scanners class="table-of-contents__link toc-highlight">5.4.4 Database Scanners</a><li><a href=#545-mobile-application-scanners class="table-of-contents__link toc-highlight">5.4.5 Mobile Application Scanners</a><li><a href=#546-cloud-based-scanners class="table-of-contents__link toc-highlight">5.4.6 Cloud-Based Scanners</a><li><a href=#547-passive-scanners class="table-of-contents__link toc-highlight">5.4.7 Passive Scanners</a></ul><li><a href=#-vulnerability-analysis-workflow class="table-of-contents__link toc-highlight">🔄 Vulnerability Analysis Workflow</a><li><a href=#-key-points-exam-ready-4 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a><li><a href=#-best-practices class="table-of-contents__link toc-highlight">🔐 Best Practices</a></ul><li><a href=#6-false-positive-and-false-negative class="table-of-contents__link toc-highlight">6. False Positive and False Negative</a><ul><li><a href=#61-false-negative class="table-of-contents__link toc-highlight">6.1 False Negative</a><ul><li><a href=#611-definition class="table-of-contents__link toc-highlight">6.1.1 Definition</a><li><a href=#612-security-risks class="table-of-contents__link toc-highlight">6.1.2 Security Risks</a></ul><li><a href=#62-false-positive class="table-of-contents__link toc-highlight">6.2 False Positive</a><ul><li><a href=#621-definition class="table-of-contents__link toc-highlight">6.2.1 Definition</a><li><a href=#622-impact-on-analysis class="table-of-contents__link toc-highlight">6.2.2 Impact on Analysis</a></ul><li><a href=#-comparison-important class="table-of-contents__link toc-highlight">🔄 Comparison (Important)</a><li><a href=#-key-points-exam-ready-5 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a></ul><li><a href=#7-exploitation-phase class="table-of-contents__link toc-highlight">7. Exploitation Phase</a><ul><li><a href=#71-exploitation-techniques class="table-of-contents__link toc-highlight">7.1 Exploitation Techniques</a><ul><li><a href=#711-password-cracking class="table-of-contents__link toc-highlight">7.1.1 Password Cracking</a><li><a href=#712-sql-injection class="table-of-contents__link toc-highlight">7.1.2 SQL Injection</a><li><a href=#713-buffer-overflow class="table-of-contents__link toc-highlight">7.1.3 Buffer Overflow</a></ul><li><a href=#72-privilege-escalation class="table-of-contents__link toc-highlight">7.2 Privilege Escalation</a><ul><li><a href=#721-gaining-higher-access class="table-of-contents__link toc-highlight">7.2.1 Gaining Higher Access</a><li><a href=#722-system-control class="table-of-contents__link toc-highlight">7.2.2 System Control</a></ul><li><a href=#-key-points-exam-ready-6 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a><li><a href=#-prevention-measures-1 class="table-of-contents__link toc-highlight">🔐 Prevention Measures</a></ul><li><a href=#8-common-network-vulnerabilities class="table-of-contents__link toc-highlight">8. Common Network Vulnerabilities</a><ul><li><a href=#81-open-ports-and-services class="table-of-contents__link toc-highlight">8.1 Open Ports and Services</a><ul><li><a href=#811-description class="table-of-contents__link toc-highlight">8.1.1 Description</a><li><a href=#812-prevention class="table-of-contents__link toc-highlight">8.1.2 Prevention</a></ul><li><a href=#82-weak-passwords class="table-of-contents__link toc-highlight">8.2 Weak Passwords</a><ul><li><a href=#821-description class="table-of-contents__link toc-highlight">8.2.1 Description</a><li><a href=#822-prevention class="table-of-contents__link toc-highlight">8.2.2 Prevention</a></ul><li><a href=#83-misconfigured-firewalls class="table-of-contents__link toc-highlight">8.3 Misconfigured Firewalls</a><ul><li><a href=#831-description class="table-of-contents__link toc-highlight">8.3.1 Description</a><li><a href=#832-prevention class="table-of-contents__link toc-highlight">8.3.2 Prevention</a></ul><li><a href=#84-outdated-software class="table-of-contents__link toc-highlight">8.4 Outdated Software</a><ul><li><a href=#841-description class="table-of-contents__link toc-highlight">8.4.1 Description</a><li><a href=#842-prevention class="table-of-contents__link toc-highlight">8.4.2 Prevention</a></ul><li><a href=#85-insecure-wireless-networks class="table-of-contents__link toc-highlight">8.5 Insecure Wireless Networks</a><ul><li><a href=#851-description class="table-of-contents__link toc-highlight">8.5.1 Description</a><li><a href=#852-prevention class="table-of-contents__link toc-highlight">8.5.2 Prevention</a></ul><li><a href=#86-network-sniffing-vulnerability class="table-of-contents__link toc-highlight">8.6 Network Sniffing Vulnerability</a><ul><li><a href=#861-description class="table-of-contents__link toc-highlight">8.6.1 Description</a><li><a href=#862-prevention class="table-of-contents__link toc-highlight">8.6.2 Prevention</a></ul><li><a href=#87-man-in-the-middle-attacks class="table-of-contents__link toc-highlight">8.7 Man-in-the-Middle Attacks</a><ul><li><a href=#871-description class="table-of-contents__link toc-highlight">8.7.1 Description</a><li><a href=#872-prevention class="table-of-contents__link toc-highlight">8.7.2 Prevention</a></ul><li><a href=#88-denial-of-service-dos-vulnerabilities class="table-of-contents__link toc-highlight">8.8 Denial-of-Service (DoS) Vulnerabilities</a><ul><li><a href=#881-description class="table-of-contents__link toc-highlight">8.8.1 Description</a><li><a href=#882-prevention class="table-of-contents__link toc-highlight">8.8.2 Prevention</a></ul><li><a href=#89-protocol-vulnerabilities class="table-of-contents__link toc-highlight">8.9 Protocol Vulnerabilities</a><ul><li><a href=#891-description class="table-of-contents__link toc-highlight">8.9.1 Description</a><li><a href=#892-prevention class="table-of-contents__link toc-highlight">8.9.2 Prevention</a></ul><li><a href=#810-web-application-vulnerabilities class="table-of-contents__link toc-highlight">8.10 Web Application Vulnerabilities</a><ul><li><a href=#8101-description class="table-of-contents__link toc-highlight">8.10.1 Description</a><li><a href=#8102-prevention class="table-of-contents__link toc-highlight">8.10.2 Prevention</a></ul><li><a href=#811-physical-security-weaknesses class="table-of-contents__link toc-highlight">8.11 Physical Security Weaknesses</a><ul><li><a href=#8111-description class="table-of-contents__link toc-highlight">8.11.1 Description</a><li><a href=#8112-prevention class="table-of-contents__link toc-highlight">8.11.2 Prevention</a></ul><li><a href=#812-social-engineering class="table-of-contents__link toc-highlight">8.12 Social Engineering</a><ul><li><a href=#8121-description class="table-of-contents__link toc-highlight">8.12.1 Description</a><li><a href=#8122-prevention class="table-of-contents__link toc-highlight">8.12.2 Prevention</a></ul><li><a href=#813-insufficient-logging-and-monitoring class="table-of-contents__link toc-highlight">8.13 Insufficient Logging and Monitoring</a><ul><li><a href=#8131-description class="table-of-contents__link toc-highlight">8.13.1 Description</a><li><a href=#8132-prevention class="table-of-contents__link toc-highlight">8.13.2 Prevention</a></ul><li><a href=#814-default-configurations class="table-of-contents__link toc-highlight">8.14 Default Configurations</a><ul><li><a href=#8141-description class="table-of-contents__link toc-highlight">8.14.1 Description</a><li><a href=#8142-prevention class="table-of-contents__link toc-highlight">8.14.2 Prevention</a></ul><li><a href=#815-insecure-network-architecture class="table-of-contents__link toc-highlight">8.15 Insecure Network Architecture</a><ul><li><a href=#8151-description class="table-of-contents__link toc-highlight">8.15.1 Description</a><li><a href=#8152-prevention class="table-of-contents__link toc-highlight">8.15.2 Prevention</a></ul><li><a href=#816-vpn-vulnerabilities class="table-of-contents__link toc-highlight">8.16 VPN Vulnerabilities</a><ul><li><a href=#8161-description class="table-of-contents__link toc-highlight">8.16.1 Description</a><li><a href=#8162-prevention class="table-of-contents__link toc-highlight">8.16.2 Prevention</a></ul><li><a href=#817-iot-device-vulnerabilities class="table-of-contents__link toc-highlight">8.17 IoT Device Vulnerabilities</a><ul><li><a href=#8171-description class="table-of-contents__link toc-highlight">8.17.1 Description</a><li><a href=#8172-prevention class="table-of-contents__link toc-highlight">8.17.2 Prevention</a></ul><li><a href=#-key-points-exam-ready-7 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a></ul><li><a href=#9-zero-day-vulnerability class="table-of-contents__link toc-highlight">9. Zero-Day Vulnerability</a><ul><li><a href=#91-definition class="table-of-contents__link toc-highlight">9.1 Definition</a><ul><li><a href=#911-unknown-vulnerability class="table-of-contents__link toc-highlight">9.1.1 Unknown Vulnerability</a><li><a href=#912-zero-day-attack-concept class="table-of-contents__link toc-highlight">9.1.2 Zero-Day Attack Concept</a></ul><li><a href=#92-risks class="table-of-contents__link toc-highlight">9.2 Risks</a><ul><li><a href=#921-exploitation-before-patch class="table-of-contents__link toc-highlight">9.2.1 Exploitation Before Patch</a><li><a href=#922-high-severity class="table-of-contents__link toc-highlight">9.2.2 High Severity</a></ul><li><a href=#-additional-points-full-coverage class="table-of-contents__link toc-highlight">🔐 Additional Points (Full Coverage)</a><li><a href=#-prevention--mitigation class="table-of-contents__link toc-highlight">🔐 Prevention / Mitigation</a><li><a href=#-key-points-exam-ready-8 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a></ul><li><a href=#10-network-diagram-in-penetration-testing class="table-of-contents__link toc-highlight">10. Network Diagram in Penetration Testing</a><ul><li><a href=#101-definition class="table-of-contents__link toc-highlight">10.1 Definition</a><ul><li><a href=#1011-visual-representation-of-network class="table-of-contents__link toc-highlight">10.1.1 Visual Representation of Network</a><li><a href=#1012-components-routers-servers-firewalls class="table-of-contents__link toc-highlight">10.1.2 Components (routers, servers, firewalls)</a></ul><li><a href=#102-importance class="table-of-contents__link toc-highlight">10.2 Importance</a><ul><li><a href=#1021-understanding-network-architecture class="table-of-contents__link toc-highlight">10.2.1 Understanding Network Architecture</a><li><a href=#1022-identifying-weak-points class="table-of-contents__link toc-highlight">10.2.2 Identifying Weak Points</a></ul><li><a href=#-role-in-penetration-testing-workflow class="table-of-contents__link toc-highlight">🔄 Role in Penetration Testing Workflow</a><li><a href=#-key-points-exam-ready-9 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a></ul><li><a href=#11-burp-suite-proxy class="table-of-contents__link toc-highlight">11. Burp Suite Proxy</a><ul><li><a href=#111-introduction class="table-of-contents__link toc-highlight">11.1 Introduction</a><ul><li><a href=#1111-definition class="table-of-contents__link toc-highlight">11.1.1 Definition</a><li><a href=#1112-role-in-web-security-testing class="table-of-contents__link toc-highlight">11.1.2 Role in Web Security Testing</a></ul><li><a href=#112-features class="table-of-contents__link toc-highlight">11.2 Features</a><ul><li><a href=#1121-interception-and-modification class="table-of-contents__link toc-highlight">11.2.1 Interception and Modification</a><li><a href=#1122-request-and-response-tampering class="table-of-contents__link toc-highlight">11.2.2 Request and Response Tampering</a><li><a href=#1123-decoder-tool class="table-of-contents__link toc-highlight">11.2.3 Decoder Tool</a><li><a href=#1124-extensions-tool class="table-of-contents__link toc-highlight">11.2.4 Extensions Tool</a><li><a href=#1125-repeater-tool class="table-of-contents__link toc-highlight">11.2.5 Repeater Tool</a><li><a href=#1126-intruder-tool class="table-of-contents__link toc-highlight">11.2.6 Intruder Tool</a></ul><li><a href=#-burp-suite-workflow class="table-of-contents__link toc-highlight">🔄 Burp Suite Workflow</a><li><a href=#-key-points-exam-ready-10 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a><li><a href=#-best-practices-1 class="table-of-contents__link toc-highlight">🔐 Best Practices</a></ul><li><a href=#12-owasp-zap-proxy class="table-of-contents__link toc-highlight">12. OWASP ZAP Proxy</a><ul><li><a href=#121-introduction class="table-of-contents__link toc-highlight">12.1 Introduction</a><ul><li><a href=#1211-definition class="table-of-contents__link toc-highlight">12.1.1 Definition</a><li><a href=#1212-owasp-organization class="table-of-contents__link toc-highlight">12.1.2 OWASP Organization</a></ul><li><a href=#122-features class="table-of-contents__link toc-highlight">12.2 Features</a><ul><li><a href=#1221-automated-scanning class="table-of-contents__link toc-highlight">12.2.1 Automated Scanning</a><li><a href=#1222-manual-testing class="table-of-contents__link toc-highlight">12.2.2 Manual Testing</a><li><a href=#1223-active-scanning class="table-of-contents__link toc-highlight">12.2.3 Active Scanning</a><li><a href=#1224-passive-scanning class="table-of-contents__link toc-highlight">12.2.4 Passive Scanning</a><li><a href=#1225-open-source-nature class="table-of-contents__link toc-highlight">12.2.5 Open Source Nature</a></ul><li><a href=#-owasp-zap-workflow class="table-of-contents__link toc-highlight">🔄 OWASP ZAP Workflow</a><li><a href=#-key-points-exam-ready-11 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a><li><a href=#-best-practices-2 class="table-of-contents__link toc-highlight">🔐 Best Practices</a></ul><li><a href=#13-post-exploitation class="table-of-contents__link toc-highlight">13. Post-Exploitation</a><ul><li><a href=#131-maintaining-access class="table-of-contents__link toc-highlight">13.1 Maintaining Access</a><ul><li><a href=#1311-persistence-techniques class="table-of-contents__link toc-highlight">13.1.1 Persistence Techniques</a></ul><li><a href=#132-pivoting class="table-of-contents__link toc-highlight">13.2 Pivoting</a><ul><li><a href=#1321-expanding-attack-scope class="table-of-contents__link toc-highlight">13.2.1 Expanding Attack Scope</a><li><a href=#1322-lateral-movement class="table-of-contents__link toc-highlight">13.2.2 Lateral Movement</a></ul><li><a href=#-key-points-exam-ready-12 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a><li><a href=#-prevention-measures-2 class="table-of-contents__link toc-highlight">🔐 Prevention Measures</a></ul><li><a href=#14-documentation-and-reporting-detailed class="table-of-contents__link toc-highlight">14. Documentation and Reporting (Detailed)</a><ul><li><a href=#141-vulnerability-details class="table-of-contents__link toc-highlight">14.1 Vulnerability Details</a><ul><li><a href=#1411-vulnerability-identifier class="table-of-contents__link toc-highlight">14.1.1 Vulnerability Identifier</a><li><a href=#1412-description class="table-of-contents__link toc-highlight">14.1.2 Description</a><li><a href=#1413-location--affected-component class="table-of-contents__link toc-highlight">14.1.3 Location / Affected Component</a><li><a href=#1414-risk-level class="table-of-contents__link toc-highlight">14.1.4 Risk Level</a></ul><li><a href=#142-technical-details class="table-of-contents__link toc-highlight">14.2 Technical Details</a><ul><li><a href=#1421-cve-id class="table-of-contents__link toc-highlight">14.2.1 CVE ID</a><li><a href=#1422-attack-vector class="table-of-contents__link toc-highlight">14.2.2 Attack Vector</a><li><a href=#1423-impact class="table-of-contents__link toc-highlight">14.2.3 Impact</a></ul><li><a href=#143-evidence-and-proof class="table-of-contents__link toc-highlight">14.3 Evidence and Proof</a><ul><li><a href=#1431-evidence-collection class="table-of-contents__link toc-highlight">14.3.1 Evidence Collection</a><li><a href=#1432-proof-of-concept class="table-of-contents__link toc-highlight">14.3.2 Proof-of-Concept</a></ul><li><a href=#144-remediation-details class="table-of-contents__link toc-highlight">14.4 Remediation Details</a><ul><li><a href=#1441-recommendations class="table-of-contents__link toc-highlight">14.4.1 Recommendations</a><li><a href=#1442-affected-versions class="table-of-contents__link toc-highlight">14.4.2 Affected Versions</a><li><a href=#1443-mitigation-techniques class="table-of-contents__link toc-highlight">14.4.3 Mitigation Techniques</a><li><a href=#1444-dependencies class="table-of-contents__link toc-highlight">14.4.4 Dependencies</a></ul><li><a href=#145-compliance-and-risk class="table-of-contents__link toc-highlight">14.5 Compliance and Risk</a><ul><li><a href=#1451-regulatory-compliance class="table-of-contents__link toc-highlight">14.5.1 Regulatory Compliance</a><li><a href=#1452-ease-of-exploitation class="table-of-contents__link toc-highlight">14.5.2 Ease of Exploitation</a></ul><li><a href=#-reporting-workflow class="table-of-contents__link toc-highlight">🔄 Reporting Workflow</a><li><a href=#-key-points-exam-ready-13 class="table-of-contents__link toc-highlight">🔐 Key Points (Exam Ready)</a></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro>Notes</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog>Blog</a><li class=footer__item><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Ankur</div></div></div></footer></div></body>

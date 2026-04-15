@@ -1,0 +1,2103 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-OS/u4" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Unit - 4 | Ankur's Page</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://ankur3-101106.github.io/docs/OS/u4 /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Unit - 4 | Ankur's Page"/><meta data-rh=true name=description content=Deadlocks /><meta data-rh=true property=og:description content=Deadlocks /><link data-rh=true rel=icon href=/img/favicon.jpg /><link data-rh=true rel=canonical href=https://ankur3-101106.github.io/docs/OS/u4 /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/OS/u4 hreflang=en /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/OS/u4 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/os---apr-23","name":"OS - APR 23","position":1},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/OS/u4","name":"Unit - 4","position":2}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Ankur's Page RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Ankur's Page Atom Feed"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/assets/css/styles.51fb367b.css /><script src=/assets/js/runtime~main.e1c50756.js defer></script><script src=/assets/js/main.a8d17c9e.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-142")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon.jpg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Ankur's Page</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/intro>Notes</a><a class="navbar__item navbar__link" href=/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/intro><span title=Introduction class=linkLabel_WmDU>Introduction</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ncs---apr-16><span title="NCS - APR 16" class=categoryLinkLabel_W154>NCS - APR 16</span></a><button aria-label="Expand sidebar category 'NCS - APR 16'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/se---apr-21><span title="SE - APR 21" class=categoryLinkLabel_W154>SE - APR 21</span></a><button aria-label="Expand sidebar category 'SE - APR 21'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/docs/category/os---apr-23><span title="OS - APR 23" class=categoryLinkLabel_W154>OS - APR 23</span></a><button aria-label="Collapse sidebar category 'OS - APR 23'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/OS/u1><span title="Unit - 1" class=linkLabel_WmDU>Unit - 1</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/OS/u2><span title="Unit - 2" class=linkLabel_WmDU>Unit - 2</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/OS/u3><span title="Unit - 3" class=linkLabel_WmDU>Unit - 3</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/OS/u4><span title="Unit - 4" class=linkLabel_WmDU>Unit - 4</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/OS/u5><span title="Unit - 5" class=linkLabel_WmDU>Unit - 5</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/OS/u6><span title="Unit - 6" class=linkLabel_WmDU>Unit - 6</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/cry---apr-25><span title="CRY - APR 25" class=categoryLinkLabel_W154>CRY - APR 25</span></a><button aria-label="Expand sidebar category 'CRY - APR 25'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ppfd---apr-30><span title="PPFD - APR 30" class=categoryLinkLabel_W154>PPFD - APR 30</span></a><button aria-label="Expand sidebar category 'PPFD - APR 30'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/category/os---apr-23><span>OS - APR 23</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Unit - 4</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Unit - 4</h1></header>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></span>TITLE</div><div class=admonitionContent_BuS1><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=deadlocks>Deadlocks<a href=#deadlocks class=hash-link aria-label="Direct link to Deadlocks" title="Direct link to Deadlocks" translate=no>​</a></h2></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-deadlocks>1. Deadlocks<a href=#1-deadlocks class=hash-link aria-label="Direct link to 1. Deadlocks" title="Direct link to 1. Deadlocks" translate=no>​</a></h2>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-introduction-to-deadlocks>1.1 Introduction to Deadlocks<a href=#11-introduction-to-deadlocks class=hash-link aria-label="Direct link to 1.1 Introduction to Deadlocks" title="Direct link to 1.1 Introduction to Deadlocks" translate=no>​</a></h3>
+<p>Deadlock is one of the most critical problems in Operating Systems, especially in <strong>multiprogramming and concurrent environments</strong> where multiple processes compete for limited resources.</p>
+<p>When processes are not properly synchronized, they may end up waiting indefinitely, causing the system to halt progress.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=111-definition-of-deadlock>1.1.1 Definition of Deadlock<a href=#111-definition-of-deadlock class=hash-link aria-label="Direct link to 1.1.1 Definition of Deadlock" title="Direct link to 1.1.1 Definition of Deadlock" translate=no>​</a></h4>
+<p>A <strong>Deadlock</strong> is a condition in which:</p>
+<blockquote>
+<p>A set of processes are blocked because each process is holding at least one resource and waiting for another resource that is held by another process in the set.</p>
+</blockquote>
+<p>From your PPT and PDF:</p>
+<ul>
+<li class="">A process enters a <strong>waiting state</strong> if a requested resource is unavailable</li>
+<li class="">If this waiting continues <strong>indefinitely</strong>, the system is in <strong>deadlock</strong></li>
+</ul>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li class="">No process can proceed</li>
+<li class="">Resources are locked</li>
+<li class="">System performance degrades or halts</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=112-multiprogramming-environment>1.1.2 Multiprogramming Environment<a href=#112-multiprogramming-environment class=hash-link aria-label="Direct link to 1.1.2 Multiprogramming Environment" title="Direct link to 1.1.2 Multiprogramming Environment" translate=no>​</a></h4>
+<p>In a <strong>multiprogramming system</strong>:</p>
+<ul>
+<li class="">Multiple processes execute concurrently</li>
+<li class="">Processes compete for:<!-- -->
+<ul>
+<li class="">CPU</li>
+<li class="">Memory</li>
+<li class="">I/O devices</li>
+<li class="">Files</li>
+</ul>
+</li>
+</ul>
+<p><strong>Why Deadlocks Occur Here:</strong></p>
+<ul>
+<li class="">Resources are <strong>limited</strong></li>
+<li class="">Processes execute <strong>independently</strong></li>
+<li class="">No guaranteed order of execution</li>
+<li class="">OS allocates resources dynamically</li>
+</ul>
+<p><strong>Execution Flow:</strong></p>
+<!-- -->
+<p>👉 This circular dependency leads to <strong>deadlock</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=113-waiting-state-and-resource-contention>1.1.3 Waiting State and Resource Contention<a href=#113-waiting-state-and-resource-contention class=hash-link aria-label="Direct link to 1.1.3 Waiting State and Resource Contention" title="Direct link to 1.1.3 Waiting State and Resource Contention" translate=no>​</a></h4>
+<p><strong>Waiting State</strong></p>
+<p>A process enters a <strong>waiting (blocked) state</strong> when:</p>
+<ul>
+<li class="">It requests a resource</li>
+<li class="">The resource is currently unavailable</li>
+</ul>
+<p><strong>Resource Contention</strong></p>
+<p>Occurs when:</p>
+<ul>
+<li class="">Multiple processes request the <strong>same resource simultaneously</strong></li>
+</ul>
+<p><strong>Problem:</strong></p>
+<ul>
+<li class="">If processes keep waiting for each other → <strong>deadlock</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Process P1 holds Resource R1, waiting for R2</li>
+<li class="">Process P2 holds Resource R2, waiting for R1</li>
+</ul>
+<p>👉 Neither can proceed</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-example-of-deadlock>1.2 Example of Deadlock<a href=#12-example-of-deadlock class=hash-link aria-label="Direct link to 1.2 Example of Deadlock" title="Direct link to 1.2 Example of Deadlock" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=121-bridge-crossing-problem>1.2.1 Bridge Crossing Problem<a href=#121-bridge-crossing-problem class=hash-link aria-label="Direct link to 1.2.1 Bridge Crossing Problem" title="Direct link to 1.2.1 Bridge Crossing Problem" translate=no>​</a></h4>
+<p>This is a <strong>classic example</strong> from your PPT.</p>
+<p><strong>Scenario:</strong></p>
+<ul>
+<li class="">A narrow bridge allows traffic from <strong>all four directions</strong></li>
+<li class="">Each section of the bridge is treated as a <strong>resource</strong></li>
+</ul>
+<p><strong>Situation:</strong></p>
+<ul>
+<li class="">Cars enter the bridge from all directions</li>
+<li class="">Each car occupies a section</li>
+<li class="">No car can move forward because another car blocks the path</li>
+</ul>
+<p><strong>Visualization:</strong></p>
+<!-- -->
+<p>👉 All cars are stuck → <strong>Deadlock</strong></p>
+<p><strong>Resolution:</strong></p>
+<ul>
+<li class="">One or more cars must <strong>back up (pre-emption)</strong></li>
+<li class="">Otherwise, system remains stuck forever</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=122-real-life-analogy>1.2.2 Real-life Analogy<a href=#122-real-life-analogy class=hash-link aria-label="Direct link to 1.2.2 Real-life Analogy" title="Direct link to 1.2.2 Real-life Analogy" translate=no>​</a></h4>
+<p>Deadlock situations occur in real life too:</p>
+<p><strong>Examples:</strong></p>
+<ol>
+<li class=""><strong>Traffic Jam</strong>
+<ul>
+<li class="">Vehicles block each other in a circular path</li>
+</ul>
+</li>
+<li class=""><strong>Dining Table Problem</strong>
+<ul>
+<li class="">People holding forks and waiting for others</li>
+</ul>
+</li>
+<li class=""><strong>File Locking in Systems</strong>
+<ul>
+<li class="">Two programs locking files and waiting for each other</li>
+</ul>
+</li>
+</ol>
+<p><strong>Simplified Example:</strong></p>
+<ul>
+<li class="">Person A has Book 1, needs Book 2</li>
+<li class="">Person B has Book 2, needs Book 1</li>
+</ul>
+<p>👉 Both wait forever → Deadlock</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=123-starvation-possibility>1.2.3 Starvation Possibility<a href=#123-starvation-possibility class=hash-link aria-label="Direct link to 1.2.3 Starvation Possibility" title="Direct link to 1.2.3 Starvation Possibility" translate=no>​</a></h4>
+<p>Deadlock can also lead to <strong>starvation</strong> (important exam point).</p>
+<p><strong>Starvation:</strong></p>
+<blockquote>
+<p>A condition where a process waits indefinitely because resources are continuously allocated to other processes.</p>
+</blockquote>
+<p><strong>In Bridge Example:</strong></p>
+<ul>
+<li class="">Some cars may <strong>never get a chance to move</strong></li>
+<li class="">Even if deadlock is resolved, some processes may still <strong>never execute</strong></li>
+</ul>
+<p><strong>Key Difference:</strong></p>
+<table><thead><tr><th>Concept<th>Meaning<tbody><tr><td>Deadlock<td>All processes stuck<tr><td>Starvation<td>Some processes never get resources</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-important-exam-insights>🔥 Important Exam Insights<a href=#-important-exam-insights class=hash-link aria-label="Direct link to 🔥 Important Exam Insights" title="Direct link to 🔥 Important Exam Insights" translate=no>​</a></h3>
+<ul>
+<li class="">Deadlock = <strong>circular waiting + no progress</strong></li>
+<li class="">Happens mainly in <strong>resource sharing systems</strong></li>
+<li class="">Requires:<!-- -->
+<ul>
+<li class="">Multiple processes</li>
+<li class="">Limited resources</li>
+<li class="">Improper allocation</li>
+</ul>
+</li>
+<li class="">Real-world examples are often asked (bridge, traffic, etc.)</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-system-model>2. System Model<a href=#2-system-model class=hash-link aria-label="Direct link to 2. System Model" title="Direct link to 2. System Model" translate=no>​</a></h2>
+<p>The <strong>System Model</strong> describes how processes interact with resources in an operating system. It explains the <strong>lifecycle of resource usage</strong>, which is crucial to understanding how deadlocks occur.</p>
+<p>In a multiprogramming system:</p>
+<ul>
+<li class="">Processes need resources to execute</li>
+<li class="">Resources are limited</li>
+<li class="">Improper handling of resources can lead to <strong>deadlock</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-resource-usage-model>2.1 Resource Usage Model<a href=#21-resource-usage-model class=hash-link aria-label="Direct link to 2.1 Resource Usage Model" title="Direct link to 2.1 Resource Usage Model" translate=no>​</a></h3>
+<p>Every process follows a <strong>three-step cycle</strong> while using resources:</p>
+<ol>
+<li class="">Request → 2. Use → 3. Release</li>
+</ol>
+<p>This is the <strong>core model</strong> from your PPT and PDF.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-overall-flow>🔁 Overall Flow<a href=#-overall-flow class=hash-link aria-label="Direct link to 🔁 Overall Flow" title="Direct link to 🔁 Overall Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=211-resource-request>2.1.1 Resource Request<a href=#211-resource-request class=hash-link aria-label="Direct link to 2.1.1 Resource Request" title="Direct link to 2.1.1 Resource Request" translate=no>​</a></h4>
+<p>A process must <strong>request a resource</strong> before using it.</p>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li class="">Request is made via:<!-- -->
+<ul>
+<li class="">System calls</li>
+<li class="">OS resource manager</li>
+</ul>
+</li>
+<li class="">If resource is:<!-- -->
+<ul>
+<li class="">✅ Available → granted immediately</li>
+<li class="">❌ Not available → process enters <strong>waiting state</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-c codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>// Requesting a resource (pseudo)</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token function" style=color:#d73a49>request</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">R1</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><br/></div></code></pre></div></div>
+<p><strong>Important Concept:</strong></p>
+<ul>
+<li class="">If multiple processes request the same resource → <strong>contention occurs</strong></li>
+</ul>
+<p><strong>Problem Case:</strong></p>
+<ul>
+<li class="">If processes keep requesting resources held by others → can lead to <strong>deadlock</strong></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=212-resource-allocation>2.1.2 Resource Allocation<a href=#212-resource-allocation class=hash-link aria-label="Direct link to 2.1.2 Resource Allocation" title="Direct link to 2.1.2 Resource Allocation" translate=no>​</a></h4>
+<p>Once the resource is available, the OS <strong>allocates it to the process</strong>.</p>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li class="">Resource is assigned <strong>exclusively or shared</strong></li>
+<li class="">Process enters <strong>execution state</strong></li>
+<li class="">OS updates internal tables:<!-- -->
+<ul>
+<li class="">Allocation table</li>
+<li class="">Resource availability</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-c codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>// Resource allocated</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token function" style=color:#d73a49>use</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">R1</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><br/></div></code></pre></div></div>
+<p><strong>Types of Allocation:</strong></p>
+<ul>
+<li class=""><strong>Exclusive Allocation</strong> → only one process can use (e.g., printer)</li>
+<li class=""><strong>Shared Allocation</strong> → multiple processes can use (e.g., read-only file)</li>
+</ul>
+<p><strong>Critical Issue:</strong></p>
+<ul>
+<li class="">If a process holds a resource and requests another → <strong>hold & wait condition begins</strong></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=213-resource-release>2.1.3 Resource Release<a href=#213-resource-release class=hash-link aria-label="Direct link to 2.1.3 Resource Release" title="Direct link to 2.1.3 Resource Release" translate=no>​</a></h4>
+<p>After completing its task, a process must <strong>release the resource</strong>.</p>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li class="">Resource is returned to the system</li>
+<li class="">Becomes available for other processes</li>
+<li class="">OS updates resource status</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-c codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>// Releasing resource</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token function" style=color:#d73a49>release</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">R1</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><br/></div></code></pre></div></div>
+<p><strong>Important Rule:</strong></p>
+<blockquote>
+<p>A process must release resources <strong>after use</strong>, otherwise system efficiency decreases</p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=️-problem-if-not-released>⚠️ Problem if Not Released:<a href=#️-problem-if-not-released class=hash-link aria-label="Direct link to ⚠️ Problem if Not Released:" title="Direct link to ⚠️ Problem if Not Released:" translate=no>​</a></h4>
+<ul>
+<li class="">Resource remains occupied</li>
+<li class="">Other processes wait</li>
+<li class="">Can lead to:<!-- -->
+<ul>
+<li class=""><strong>Deadlock</strong></li>
+<li class=""><strong>Starvation</strong></li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-combined-example-full-cycle>🧠 Combined Example (Full Cycle)<a href=#-combined-example-full-cycle class=hash-link aria-label="Direct link to 🧠 Combined Example (Full Cycle)" title="Direct link to 🧠 Combined Example (Full Cycle)" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-important-exam-insights-1>🔥 Important Exam Insights<a href=#-important-exam-insights-1 class=hash-link aria-label="Direct link to 🔥 Important Exam Insights" title="Direct link to 🔥 Important Exam Insights" translate=no>​</a></h3>
+<ul>
+<li class="">Every process follows:<br/>
+<!-- -->👉 <strong>Request → Allocate → Release</strong></li>
+<li class="">Deadlock occurs when:<!-- -->
+<ul>
+<li class="">Request is granted partially</li>
+<li class="">Resources are not released</li>
+</ul>
+</li>
+<li class="">This model is the <strong>foundation</strong> for:<!-- -->
+<ul>
+<li class="">Deadlock conditions</li>
+<li class="">Banker’s Algorithm</li>
+<li class="">Resource Allocation Graph</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-observations>⚡ Key Observations<a href=#-key-observations class=hash-link aria-label="Direct link to ⚡ Key Observations" title="Direct link to ⚡ Key Observations" translate=no>​</a></h3>
+<ul>
+<li class="">Processes <strong>must not hold resources indefinitely</strong></li>
+<li class="">OS must ensure:<!-- -->
+<ul>
+<li class="">Proper allocation</li>
+<li class="">Fair scheduling</li>
+</ul>
+</li>
+<li class="">Improper handling → <strong>deadlock is inevitable</strong></li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-necessary-conditions-for-deadlock>3. Necessary Conditions for Deadlock<a href=#3-necessary-conditions-for-deadlock class=hash-link aria-label="Direct link to 3. Necessary Conditions for Deadlock" title="Direct link to 3. Necessary Conditions for Deadlock" translate=no>​</a></h2>
+<p>Deadlock occurs <strong>only if all four conditions are true simultaneously</strong>.<br/>
+<!-- -->These are called <strong>necessary and sufficient conditions</strong> (from your PPT + PDF).</p>
+<blockquote>
+<p>❗ If <strong>any one condition is removed → deadlock cannot occur</strong></p>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-overview-of-all-conditions>🧠 Overview of All Conditions<a href=#-overview-of-all-conditions class=hash-link aria-label="Direct link to 🧠 Overview of All Conditions" title="Direct link to 🧠 Overview of All Conditions" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=31-mutual-exclusion>3.1 Mutual Exclusion<a href=#31-mutual-exclusion class=hash-link aria-label="Direct link to 3.1 Mutual Exclusion" title="Direct link to 3.1 Mutual Exclusion" translate=no>​</a></h3>
+<blockquote>
+<p>At least one resource must be <strong>non-shareable</strong>, i.e., only one process can use it at a time.</p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=311-non-shareable-resources>3.1.1 Non-shareable Resources<a href=#311-non-shareable-resources class=hash-link aria-label="Direct link to 3.1.1 Non-shareable Resources" title="Direct link to 3.1.1 Non-shareable Resources" translate=no>​</a></h4>
+<p>A resource is <strong>non-shareable</strong> if:</p>
+<ul>
+<li class="">Only one process can access it at a time</li>
+<li class="">Other processes must wait</li>
+</ul>
+<p><strong>Why this causes deadlock:</strong></p>
+<ul>
+<li class="">If a process holds a resource exclusively</li>
+<li class="">Other processes cannot proceed → waiting begins</li>
+</ul>
+<p><strong>Examples of non-shareable resources:</strong></p>
+<ul>
+<li class="">Printer</li>
+<li class="">CPU (in some cases)</li>
+<li class="">File locks</li>
+<li class="">I/O devices</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=312-examples-printer-devices>3.1.2 Examples (Printer, Devices)<a href=#312-examples-printer-devices class=hash-link aria-label="Direct link to 3.1.2 Examples (Printer, Devices)" title="Direct link to 3.1.2 Examples (Printer, Devices)" translate=no>​</a></h4>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Process P1 is printing → holds printer</li>
+<li class="">Process P2 wants to print → must wait</li>
+</ul>
+<!-- -->
+<p>👉 This exclusive access creates the <strong>first condition for deadlock</strong></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=32-hold-and-wait>3.2 Hold and Wait<a href=#32-hold-and-wait class=hash-link aria-label="Direct link to 3.2 Hold and Wait" title="Direct link to 3.2 Hold and Wait" translate=no>​</a></h3>
+<blockquote>
+<p>A process is holding at least one resource and waiting for additional resources held by other processes.</p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=321-holding-resources-while-waiting>3.2.1 Holding Resources While Waiting<a href=#321-holding-resources-while-waiting class=hash-link aria-label="Direct link to 3.2.1 Holding Resources While Waiting" title="Direct link to 3.2.1 Holding Resources While Waiting" translate=no>​</a></h4>
+<p><strong>Situation:</strong></p>
+<ul>
+<li class="">Process P1 holds Resource R1</li>
+<li class="">P1 requests Resource R2 (held by P2)</li>
+</ul>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">Process does NOT release its current resource while waiting</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=322-resource-dependency>3.2.2 Resource Dependency<a href=#322-resource-dependency class=hash-link aria-label="Direct link to 3.2.2 Resource Dependency" title="Direct link to 3.2.2 Resource Dependency" translate=no>​</a></h4>
+<p>This creates <strong>dependency between processes</strong></p>
+<!-- -->
+<p>👉 P1 depends on P2 → dependency chain begins</p>
+<p><strong>Why dangerous:</strong></p>
+<ul>
+<li class="">If all processes follow this → system gets stuck</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=33-no-pre-emption>3.3 No Pre-emption<a href=#33-no-pre-emption class=hash-link aria-label="Direct link to 3.3 No Pre-emption" title="Direct link to 3.3 No Pre-emption" translate=no>​</a></h3>
+<blockquote>
+<p>Resources cannot be forcibly taken away; they must be released voluntarily by the process.</p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=331-voluntary-resource-release>3.3.1 Voluntary Resource Release<a href=#331-voluntary-resource-release class=hash-link aria-label="Direct link to 3.3.1 Voluntary Resource Release" title="Direct link to 3.3.1 Voluntary Resource Release" translate=no>​</a></h4>
+<ul>
+<li class="">A process releases a resource <strong>only after completing its task</strong></li>
+<li class="">OS cannot forcefully take it</li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-c codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token comment" style=color:#999988;font-style:italic>// Process holds resource until completion</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token function" style=color:#d73a49>use</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">resource</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token function" style=color:#d73a49>release</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">resource</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"> </span><span class="token comment" style=color:#999988;font-style:italic>// voluntary</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=332-lack-of-forceful-allocation>3.3.2 Lack of Forceful Allocation<a href=#332-lack-of-forceful-allocation class=hash-link aria-label="Direct link to 3.3.2 Lack of Forceful Allocation" title="Direct link to 3.3.2 Lack of Forceful Allocation" translate=no>​</a></h4>
+<p><strong>Problem:</strong></p>
+<ul>
+<li class="">If a process is stuck, OS cannot:<!-- -->
+<ul>
+<li class="">Take its resource</li>
+<li class="">Give it to another process</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p>👉 This restriction allows deadlock to persist</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=34-circular-wait>3.4 Circular Wait<a href=#34-circular-wait class=hash-link aria-label="Direct link to 3.4 Circular Wait" title="Direct link to 3.4 Circular Wait" translate=no>​</a></h3>
+<blockquote>
+<p>A set of processes exist such that each process is waiting for a resource held by the next process in a circular chain.</p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=341-circular-dependency-chain>3.4.1 Circular Dependency Chain<a href=#341-circular-dependency-chain class=hash-link aria-label="Direct link to 3.4.1 Circular Dependency Chain" title="Direct link to 3.4.1 Circular Dependency Chain" translate=no>​</a></h4>
+<p><strong>Structure:</strong></p>
+<!-- -->
+<p>👉 Forms a <strong>cycle</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=342-process-waiting-cycle>3.4.2 Process Waiting Cycle<a href=#342-process-waiting-cycle class=hash-link aria-label="Direct link to 3.4.2 Process Waiting Cycle" title="Direct link to 3.4.2 Process Waiting Cycle" translate=no>​</a></h4>
+<p><strong>Real Example:</strong></p>
+<ul>
+<li class="">P1 holds R1 → needs R2</li>
+<li class="">P2 holds R2 → needs R3</li>
+<li class="">P3 holds R3 → needs R1</li>
+</ul>
+<!-- -->
+<p>👉 This is a <strong>deadlock cycle</strong></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-final-summary-very-important>🔥 Final Summary (Very Important)<a href=#-final-summary-very-important class=hash-link aria-label="Direct link to 🔥 Final Summary (Very Important)" title="Direct link to 🔥 Final Summary (Very Important)" translate=no>​</a></h3>
+<table><thead><tr><th>Condition<th>Meaning<th>Why It Causes Deadlock<tbody><tr><td>Mutual Exclusion<td>Resource not shareable<td>Blocks other processes<tr><td>Hold & Wait<td>Holding + waiting<td>Creates dependency<tr><td>No Pre-emption<td>Cannot take resources<td>No recovery possible<tr><td>Circular Wait<td>Cycle of processes<td>System stuck permanently</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-exam-points>🎯 Key Exam Points<a href=#-key-exam-points class=hash-link aria-label="Direct link to 🎯 Key Exam Points" title="Direct link to 🎯 Key Exam Points" translate=no>​</a></h3>
+<ul>
+<li class="">All 4 conditions must exist <strong>together</strong></li>
+<li class="">Removing ANY one condition prevents deadlock</li>
+<li class="">Most questions ask:<!-- -->
+<ul>
+<li class="">Define each condition</li>
+<li class="">Give examples</li>
+<li class="">Explain with diagram</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-memory-trick>💡 Memory Trick<a href=#-memory-trick class=hash-link aria-label="Direct link to 💡 Memory Trick" title="Direct link to 💡 Memory Trick" translate=no>​</a></h3>
+<p>👉 <strong>M-H-N-C</strong></p>
+<ul>
+<li class="">M → Mutual Exclusion</li>
+<li class="">H → Hold & Wait</li>
+<li class="">N → No Pre-emption</li>
+<li class="">C → Circular Wait</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-resource-allocation-graph-rag>4. Resource Allocation Graph (RAG)<a href=#4-resource-allocation-graph-rag class=hash-link aria-label="Direct link to 4. Resource Allocation Graph (RAG)" title="Direct link to 4. Resource Allocation Graph (RAG)" translate=no>​</a></h2>
+<p>A <strong>Resource Allocation Graph (RAG)</strong> is a graphical tool used to represent:</p>
+<ul>
+<li class="">Processes</li>
+<li class="">Resources</li>
+<li class="">Allocation and request relationships</li>
+</ul>
+<p>It is widely used to <strong>analyze and detect deadlocks</strong> in a system.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-basic-idea>🧠 Basic Idea<a href=#-basic-idea class=hash-link aria-label="Direct link to 🧠 Basic Idea" title="Direct link to 🧠 Basic Idea" translate=no>​</a></h3>
+<ul>
+<li class="">Nodes represent <strong>processes and resources</strong></li>
+<li class="">Edges represent <strong>requests and allocations</strong></li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=41-components-of-rag>4.1 Components of RAG<a href=#41-components-of-rag class=hash-link aria-label="Direct link to 4.1 Components of RAG" title="Direct link to 4.1 Components of RAG" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=411-processes-pi>4.1.1 Processes (Pi)<a href=#411-processes-pi class=hash-link aria-label="Direct link to 4.1.1 Processes (Pi)" title="Direct link to 4.1.1 Processes (Pi)" translate=no>​</a></h4>
+<ul>
+<li class="">Represented as <strong>circles</strong></li>
+<li class="">Denoted as:<!-- -->
+<ul>
+<li class="">P1, P2, P3, ..., Pn</li>
+</ul>
+</li>
+</ul>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">Each circle represents a <strong>process in the system</strong></li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=412-resources-rj>4.1.2 Resources (Rj)<a href=#412-resources-rj class=hash-link aria-label="Direct link to 4.1.2 Resources (Rj)" title="Direct link to 4.1.2 Resources (Rj)" translate=no>​</a></h4>
+<ul>
+<li class="">Represented as <strong>rectangles (boxes)</strong></li>
+<li class="">Denoted as:<!-- -->
+<ul>
+<li class="">R1, R2, R3, ..., Rn</li>
+</ul>
+</li>
+</ul>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">Each rectangle represents a <strong>resource type</strong></li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=413-resource-instances>4.1.3 Resource Instances<a href=#413-resource-instances class=hash-link aria-label="Direct link to 4.1.3 Resource Instances" title="Direct link to 4.1.3 Resource Instances" translate=no>​</a></h4>
+<ul>
+<li class="">A resource may have <strong>multiple instances</strong></li>
+<li class="">Represented as <strong>dots inside the resource box</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">R1 has 2 instances → shown as 2 dots</li>
+</ul>
+<!-- -->
+<p><strong>Key Insight:</strong></p>
+<ul>
+<li class="">Important for determining:<!-- -->
+<ul>
+<li class=""><strong>Guaranteed deadlock</strong></li>
+<li class=""><strong>Possible deadlock</strong></li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=42-edges-in-graph>4.2 Edges in Graph<a href=#42-edges-in-graph class=hash-link aria-label="Direct link to 4.2 Edges in Graph" title="Direct link to 4.2 Edges in Graph" translate=no>​</a></h3>
+<p>Edges define the <strong>relationship between processes and resources</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=421-request-edge-process--resource>4.2.1 Request Edge (Process → Resource)<a href=#421-request-edge-process--resource class=hash-link aria-label="Direct link to 4.2.1 Request Edge (Process → Resource)" title="Direct link to 4.2.1 Request Edge (Process → Resource)" translate=no>​</a></h4>
+<blockquote>
+<p>A directed edge from process to resource</p>
+</blockquote>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">Process is <strong>requesting</strong> a resource</li>
+<li class="">Process is in <strong>waiting state</strong></li>
+</ul>
+<!-- -->
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li class="">P1 wants R1 but does not have it yet</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=422-assignment-edge-resource--process>4.2.2 Assignment Edge (Resource → Process)<a href=#422-assignment-edge-resource--process class=hash-link aria-label="Direct link to 4.2.2 Assignment Edge (Resource → Process)" title="Direct link to 4.2.2 Assignment Edge (Resource → Process)" translate=no>​</a></h4>
+<blockquote>
+<p>A directed edge from resource to process</p>
+</blockquote>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">Resource is <strong>allocated</strong> to process</li>
+<li class="">Process is currently <strong>holding the resource</strong></li>
+</ul>
+<!-- -->
+<p><strong>Interpretation:</strong></p>
+<ul>
+<li class="">P1 is using R1</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=43-graph-behavior>4.3 Graph Behavior<a href=#43-graph-behavior class=hash-link aria-label="Direct link to 4.3 Graph Behavior" title="Direct link to 4.3 Graph Behavior" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=431-conversion-of-request-to-assignment-edge>4.3.1 Conversion of Request to Assignment Edge<a href=#431-conversion-of-request-to-assignment-edge class=hash-link aria-label="Direct link to 4.3.1 Conversion of Request to Assignment Edge" title="Direct link to 4.3.1 Conversion of Request to Assignment Edge" translate=no>​</a></h4>
+<p><strong>Process:</strong></p>
+<ol>
+<li class="">Process requests resource → request edge</li>
+<li class="">Resource becomes available</li>
+<li class="">OS allocates resource → edge direction reverses</li>
+</ol>
+<!-- -->
+<p><strong>Explanation:</strong></p>
+<ul>
+<li class="">Initially: P1 → R1 (request)</li>
+<li class="">After allocation: R1 → P1 (assignment)</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=432-directed-graph-nature>4.3.2 Directed Graph Nature<a href=#432-directed-graph-nature class=hash-link aria-label="Direct link to 4.3.2 Directed Graph Nature" title="Direct link to 4.3.2 Directed Graph Nature" translate=no>​</a></h4>
+<ul>
+<li class="">RAG is a <strong>directed graph</strong></li>
+<li class="">Direction of edges is <strong>very important</strong></li>
+</ul>
+<p><strong>Why?</strong></p>
+<ul>
+<li class="">Direction tells:<!-- -->
+<ul>
+<li class="">Who is waiting</li>
+<li class="">Who is holding</li>
+</ul>
+</li>
+</ul>
+<p><strong>Important Rule:</strong></p>
+<ul>
+<li class="">Incorrect direction = wrong interpretation</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=44-deadlock-detection-using-rag>4.4 Deadlock Detection using RAG<a href=#44-deadlock-detection-using-rag class=hash-link aria-label="Direct link to 4.4 Deadlock Detection using RAG" title="Direct link to 4.4 Deadlock Detection using RAG" translate=no>​</a></h3>
+<p>RAG is used to determine whether a system is in a <strong>deadlock state</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=441-no-cycle--no-deadlock>4.4.1 No Cycle → No Deadlock<a href=#441-no-cycle--no-deadlock class=hash-link aria-label="Direct link to 4.4.1 No Cycle → No Deadlock" title="Direct link to 4.4.1 No Cycle → No Deadlock" translate=no>​</a></h4>
+<blockquote>
+<p>If there is <strong>no cycle</strong>, the system is <strong>safe</strong></p>
+</blockquote>
+<!-- -->
+<p><strong>Explanation:</strong></p>
+<ul>
+<li class="">No circular dependency</li>
+<li class="">Processes can complete</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=442-cycle-with-single-instance--deadlock>4.4.2 Cycle with Single Instance → Deadlock<a href=#442-cycle-with-single-instance--deadlock class=hash-link aria-label="Direct link to 4.4.2 Cycle with Single Instance → Deadlock" title="Direct link to 4.4.2 Cycle with Single Instance → Deadlock" translate=no>​</a></h4>
+<blockquote>
+<p>If a cycle exists AND each resource has <strong>only one instance</strong> → <strong>deadlock exists</strong></p>
+</blockquote>
+<p><strong>Example:</strong></p>
+<!-- -->
+<p><strong>Explanation:</strong></p>
+<ul>
+<li class="">P1 waiting for R2 (held by P2)</li>
+<li class="">P2 waiting for R1 (held by P1)</li>
+</ul>
+<p>👉 Circular wait → <strong>deadlock</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=443-cycle-with-multiple-instances--possibility-of-deadlock>4.4.3 Cycle with Multiple Instances → Possibility of Deadlock<a href=#443-cycle-with-multiple-instances--possibility-of-deadlock class=hash-link aria-label="Direct link to 4.4.3 Cycle with Multiple Instances → Possibility of Deadlock" title="Direct link to 4.4.3 Cycle with Multiple Instances → Possibility of Deadlock" translate=no>​</a></h4>
+<blockquote>
+<p>If a cycle exists AND resources have <strong>multiple instances</strong> → <strong>deadlock may or may not occur</strong></p>
+</blockquote>
+<p><strong>Example:</strong></p>
+<!-- -->
+<p><strong>Explanation:</strong></p>
+<ul>
+<li class="">Even though cycle exists:<!-- -->
+<ul>
+<li class="">Another instance may be available</li>
+<li class="">Process may proceed</li>
+</ul>
+</li>
+</ul>
+<p>👉 So:</p>
+<ul>
+<li class="">Cycle ≠ guaranteed deadlock</li>
+<li class="">Only indicates <strong>possibility</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-final-summary>🔥 Final Summary<a href=#-final-summary class=hash-link aria-label="Direct link to 🔥 Final Summary" title="Direct link to 🔥 Final Summary" translate=no>​</a></h3>
+<table><thead><tr><th>Case<th>Result<tbody><tr><td>No cycle<td>No deadlock<tr><td>Cycle + single instance<td>Deadlock<tr><td>Cycle + multiple instances<td>Possible deadlock</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-important-exam-points>🎯 Important Exam Points<a href=#-important-exam-points class=hash-link aria-label="Direct link to 🎯 Important Exam Points" title="Direct link to 🎯 Important Exam Points" translate=no>​</a></h3>
+<ul>
+<li class="">RAG is a <strong>graphical representation</strong></li>
+<li class="">Two types of edges:<!-- -->
+<ul>
+<li class="">Request</li>
+<li class="">Assignment</li>
+</ul>
+</li>
+<li class="">Cycle detection is <strong>key concept</strong></li>
+<li class="">Most common questions:<!-- -->
+<ul>
+<li class="">Draw RAG</li>
+<li class="">Identify deadlock</li>
+<li class="">Explain cycle condition</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-quick-memory-trick>💡 Quick Memory Trick<a href=#-quick-memory-trick class=hash-link aria-label="Direct link to 💡 Quick Memory Trick" title="Direct link to 💡 Quick Memory Trick" translate=no>​</a></h3>
+<p>👉 <strong>RAG = Nodes + Edges + Cycle Check</strong></p>
+<ul>
+<li class="">Nodes → Process + Resource</li>
+<li class="">Edges → Request + Allocation</li>
+<li class="">Cycle → Deadlock indicator</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-deadlock-handling-methods>5. Deadlock Handling Methods<a href=#5-deadlock-handling-methods class=hash-link aria-label="Direct link to 5. Deadlock Handling Methods" title="Direct link to 5. Deadlock Handling Methods" translate=no>​</a></h2>
+<p>Deadlocks are unavoidable in many systems, so operating systems use <strong>different strategies to handle them</strong>.</p>
+<p>From your PPT + PDF, there are <strong>four main approaches</strong>:</p>
+<ol>
+<li class="">Prevention</li>
+<li class="">Avoidance</li>
+<li class="">Detection & Recovery</li>
+<li class="">Ignorance</li>
+</ol>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-overview>🧠 Overview<a href=#-overview class=hash-link aria-label="Direct link to 🧠 Overview" title="Direct link to 🧠 Overview" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=51-prevention>5.1 Prevention<a href=#51-prevention class=hash-link aria-label="Direct link to 5.1 Prevention" title="Direct link to 5.1 Prevention" translate=no>​</a></h3>
+<p>Deadlock <strong>prevention</strong> ensures that deadlock <strong>never occurs</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=511-concept-of-prevention>5.1.1 Concept of Prevention<a href=#511-concept-of-prevention class=hash-link aria-label="Direct link to 5.1.1 Concept of Prevention" title="Direct link to 5.1.1 Concept of Prevention" translate=no>​</a></h4>
+<blockquote>
+<p>Design the system such that <strong>at least one of the four necessary conditions is violated</strong></p>
+</blockquote>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">Deadlock requires all 4 conditions</li>
+<li class="">If we break even ONE → deadlock impossible</li>
+</ul>
+<p><strong>Approach:</strong></p>
+<ul>
+<li class="">Restrict how processes request resources</li>
+<li class="">Control resource allocation strictly</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=512-violating-necessary-conditions>5.1.2 Violating Necessary Conditions<a href=#512-violating-necessary-conditions class=hash-link aria-label="Direct link to 5.1.2 Violating Necessary Conditions" title="Direct link to 5.1.2 Violating Necessary Conditions" translate=no>​</a></h4>
+<p>To prevent deadlock, we break these conditions:</p>
+<table><thead><tr><th>Condition<th>Prevention Method<tbody><tr><td>Mutual Exclusion<td>Make resources shareable<tr><td>Hold & Wait<td>Request all resources at once<tr><td>No Pre-emption<td>Forcefully take resources<tr><td>Circular Wait<td>Impose resource ordering</table>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Force process to:<!-- -->
+<ul>
+<li class="">Request all resources at once</li>
+<li class="">OR release resources before requesting new ones</li>
+</ul>
+</li>
+</ul>
+<p>👉 Prevents <strong>Hold & Wait</strong></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=️-limitations-of-prevention>⚠️ Limitations of Prevention<a href=#️-limitations-of-prevention class=hash-link aria-label="Direct link to ⚠️ Limitations of Prevention" title="Direct link to ⚠️ Limitations of Prevention" translate=no>​</a></h3>
+<ul>
+<li class="">Reduces system efficiency</li>
+<li class="">Resources may remain unused</li>
+<li class="">Not practical in real systems</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=52-avoidance>5.2 Avoidance<a href=#52-avoidance class=hash-link aria-label="Direct link to 5.2 Avoidance" title="Direct link to 5.2 Avoidance" translate=no>​</a></h3>
+<p>Deadlock <strong>avoidance</strong> allows deadlock possibility but <strong>avoids unsafe situations</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=521-safe-state-concept>5.2.1 Safe State Concept<a href=#521-safe-state-concept class=hash-link aria-label="Direct link to 5.2.1 Safe State Concept" title="Direct link to 5.2.1 Safe State Concept" translate=no>​</a></h4>
+<blockquote>
+<p>A system is in a <strong>safe state</strong> if it can allocate resources to all processes without causing deadlock</p>
+</blockquote>
+<p><strong>Safe State:</strong></p>
+<ul>
+<li class="">There exists a <strong>safe sequence</strong> of execution</li>
+</ul>
+<!-- -->
+<p><strong>Unsafe State:</strong></p>
+<ul>
+<li class="">No safe sequence exists</li>
+<li class="">May lead to deadlock</li>
+</ul>
+<p>👉 Important:</p>
+<ul>
+<li class="">Safe state → no deadlock</li>
+<li class="">Unsafe state → may lead to deadlock</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=522-decision-based-resource-allocation>5.2.2 Decision-based Resource Allocation<a href=#522-decision-based-resource-allocation class=hash-link aria-label="Direct link to 5.2.2 Decision-based Resource Allocation" title="Direct link to 5.2.2 Decision-based Resource Allocation" translate=no>​</a></h4>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">OS decides <strong>whether to grant a request or not</strong></li>
+</ul>
+<p><strong>How?</strong></p>
+<ul>
+<li class="">Before allocation:<!-- -->
+<ul>
+<li class="">Check if system remains <strong>safe</strong></li>
+</ul>
+</li>
+<li class="">If safe → allocate</li>
+<li class="">If unsafe → deny request</li>
+</ul>
+<!-- -->
+<p><strong>Requirements:</strong></p>
+<ul>
+<li class="">Must know:<!-- -->
+<ul>
+<li class="">Maximum resource needs of processes</li>
+</ul>
+</li>
+<li class="">Used in:<!-- -->
+<ul>
+<li class=""><strong>Banker’s Algorithm</strong></li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=️-limitations-of-avoidance>⚠️ Limitations of Avoidance<a href=#️-limitations-of-avoidance class=hash-link aria-label="Direct link to ⚠️ Limitations of Avoidance" title="Direct link to ⚠️ Limitations of Avoidance" translate=no>​</a></h3>
+<ul>
+<li class="">Requires prior knowledge of resource needs</li>
+<li class="">Complex to implement</li>
+<li class="">May delay processes unnecessarily</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=53-detection-and-recovery>5.3 Detection and Recovery<a href=#53-detection-and-recovery class=hash-link aria-label="Direct link to 5.3 Detection and Recovery" title="Direct link to 5.3 Detection and Recovery" translate=no>​</a></h3>
+<p>Deadlock is <strong>allowed to occur</strong>, then detected and resolved.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=531-detecting-deadlock-after-occurrence>5.3.1 Detecting Deadlock After Occurrence<a href=#531-detecting-deadlock-after-occurrence class=hash-link aria-label="Direct link to 5.3.1 Detecting Deadlock After Occurrence" title="Direct link to 5.3.1 Detecting Deadlock After Occurrence" translate=no>​</a></h4>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">System does not prevent or avoid deadlock</li>
+<li class="">Instead:<!-- -->
+<ul>
+<li class="">Periodically checks for deadlock</li>
+</ul>
+</li>
+</ul>
+<p><strong>Methods:</strong></p>
+<ul>
+<li class="">Resource Allocation Graph (cycle detection)</li>
+<li class="">Banker-like detection algorithm</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=532-recovery-mechanisms>5.3.2 Recovery Mechanisms<a href=#532-recovery-mechanisms class=hash-link aria-label="Direct link to 5.3.2 Recovery Mechanisms" title="Direct link to 5.3.2 Recovery Mechanisms" translate=no>​</a></h4>
+<p>Once deadlock is detected, system must <strong>recover</strong></p>
+<p><strong>Two main methods:</strong></p>
+<hr/>
+<p><strong>1. Process Termination</strong></p>
+<ul>
+<li class="">Kill one or more processes</li>
+</ul>
+<p><strong>Types:</strong></p>
+<ul>
+<li class="">Abort all processes → fast but costly</li>
+<li class="">Abort one-by-one → less costly but slower</li>
+</ul>
+<hr/>
+<p><strong>2. Resource Pre-emption</strong></p>
+<ul>
+<li class="">Take resource from one process and give to another</li>
+</ul>
+<p><strong>Issues:</strong></p>
+<ul>
+<li class=""><strong>Victim selection</strong>
+<ul>
+<li class="">Which process to choose?</li>
+</ul>
+</li>
+<li class=""><strong>Rollback</strong>
+<ul>
+<li class="">Restart process from safe state</li>
+</ul>
+</li>
+<li class=""><strong>Starvation</strong>
+<ul>
+<li class="">Same process repeatedly chosen as victim</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=️-limitations>⚠️ Limitations<a href=#️-limitations class=hash-link aria-label="Direct link to ⚠️ Limitations" title="Direct link to ⚠️ Limitations" translate=no>​</a></h3>
+<ul>
+<li class="">Loss of work</li>
+<li class="">High overhead</li>
+<li class="">Complex recovery</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=54-ignorance>5.4 Ignorance<a href=#54-ignorance class=hash-link aria-label="Direct link to 5.4 Ignorance" title="Direct link to 5.4 Ignorance" translate=no>​</a></h3>
+<p>Also called the <strong>Ostrich Algorithm</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=541-ostrich-algorithm-concept>5.4.1 Ostrich Algorithm Concept<a href=#541-ostrich-algorithm-concept class=hash-link aria-label="Direct link to 5.4.1 Ostrich Algorithm Concept" title="Direct link to 5.4.1 Ostrich Algorithm Concept" translate=no>​</a></h4>
+<blockquote>
+<p>Ignore deadlocks as if they do not exist</p>
+</blockquote>
+<p><strong>Idea:</strong></p>
+<ul>
+<li class="">Assume deadlocks are <strong>rare</strong></li>
+<li class="">Do nothing</li>
+</ul>
+<p><strong>Why "Ostrich"?</strong></p>
+<ul>
+<li class="">Like an ostrich hides its head → ignores danger</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=542-practical-use-cases>5.4.2 Practical Use Cases<a href=#542-practical-use-cases class=hash-link aria-label="Direct link to 5.4.2 Practical Use Cases" title="Direct link to 5.4.2 Practical Use Cases" translate=no>​</a></h4>
+<p>Used in:</p>
+<ul>
+<li class="">General-purpose OS:<!-- -->
+<ul>
+<li class="">Linux</li>
+<li class="">Windows</li>
+</ul>
+</li>
+</ul>
+<p><strong>Why?</strong></p>
+<ul>
+<li class="">Deadlocks are:<!-- -->
+<ul>
+<li class="">Rare</li>
+<li class="">Not worth heavy overhead</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">If deadlock occurs:<!-- -->
+<ul>
+<li class="">Restart system</li>
+<li class="">Kill process manually</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-final-comparison>🔥 Final Comparison<a href=#-final-comparison class=hash-link aria-label="Direct link to 🔥 Final Comparison" title="Direct link to 🔥 Final Comparison" translate=no>​</a></h3>
+<table><thead><tr><th>Method<th>Approach<th>Advantage<th>Disadvantage<tbody><tr><td>Prevention<td>Avoid conditions<td>No deadlock<td>Low efficiency<tr><td>Avoidance<td>Safe state check<td>Better utilization<td>Complex<tr><td>Detection & Recovery<td>Fix after occurrence<td>Flexible<td>Overhead, data loss<tr><td>Ignorance<td>Do nothing<td>Simple<td>Risky</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-important-exam-points-1>🎯 Important Exam Points<a href=#-important-exam-points-1 class=hash-link aria-label="Direct link to 🎯 Important Exam Points" title="Direct link to 🎯 Important Exam Points" translate=no>​</a></h3>
+<ul>
+<li class="">4 methods MUST be remembered</li>
+<li class="">Difference between:<!-- -->
+<ul>
+<li class="">Prevention vs Avoidance</li>
+</ul>
+</li>
+<li class="">Safe state concept is very important</li>
+<li class="">Recovery methods (termination & pre-emption) often asked</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-memory-trick-1>💡 Memory Trick<a href=#-memory-trick-1 class=hash-link aria-label="Direct link to 💡 Memory Trick" title="Direct link to 💡 Memory Trick" translate=no>​</a></h3>
+<p>👉 <strong>P-A-D-I</strong></p>
+<ul>
+<li class="">P → Prevention</li>
+<li class="">A → Avoidance</li>
+<li class="">D → Detection & Recovery</li>
+<li class="">I → Ignorance</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-deadlock-prevention-techniques>6. Deadlock Prevention Techniques<a href=#6-deadlock-prevention-techniques class=hash-link aria-label="Direct link to 6. Deadlock Prevention Techniques" title="Direct link to 6. Deadlock Prevention Techniques" translate=no>​</a></h2>
+<p>Deadlock prevention works by <strong>eliminating at least one of the four necessary conditions</strong>.<br/>
+<!-- -->In this section, we study <strong>how each condition is broken in practice</strong> (as covered in PPT + PDF).</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-strategy-overview>🧠 Strategy Overview<a href=#-strategy-overview class=hash-link aria-label="Direct link to 🧠 Strategy Overview" title="Direct link to 🧠 Strategy Overview" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=61-mutual-exclusion-prevention>6.1 Mutual Exclusion Prevention<a href=#61-mutual-exclusion-prevention class=hash-link aria-label="Direct link to 6.1 Mutual Exclusion Prevention" title="Direct link to 6.1 Mutual Exclusion Prevention" translate=no>​</a></h3>
+<blockquote>
+<p>Prevent deadlock by making resources <strong>shareable</strong> wherever possible</p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=611-making-resources-shareable>6.1.1 Making Resources Shareable<a href=#611-making-resources-shareable class=hash-link aria-label="Direct link to 6.1.1 Making Resources Shareable" title="Direct link to 6.1.1 Making Resources Shareable" translate=no>​</a></h4>
+<p><strong>Idea:</strong></p>
+<ul>
+<li class="">Convert <strong>non-shareable resources → shareable resources</strong></li>
+</ul>
+<p><strong>How?</strong></p>
+<ul>
+<li class="">Use techniques like:<!-- -->
+<ul>
+<li class="">Spooling (for printers)</li>
+<li class="">Read-only sharing</li>
+<li class="">Virtual resources</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Instead of direct printer access:<!-- -->
+<ul>
+<li class="">Store print jobs in queue (spooling)</li>
+<li class="">Printer processes jobs sequentially</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p><strong>Benefit:</strong></p>
+<ul>
+<li class="">Multiple processes can <strong>logically share</strong> the resource</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=612-limitations-of-hardware-constraints>6.1.2 Limitations of Hardware Constraints<a href=#612-limitations-of-hardware-constraints class=hash-link aria-label="Direct link to 6.1.2 Limitations of Hardware Constraints" title="Direct link to 6.1.2 Limitations of Hardware Constraints" translate=no>​</a></h4>
+<p><strong>Problem:</strong></p>
+<p>Some resources <strong>cannot be shared</strong>, such as:</p>
+<ul>
+<li class="">Printer (physical device)</li>
+<li class="">CD/DVD writer</li>
+<li class="">CPU registers</li>
+<li class="">I/O devices</li>
+</ul>
+<p><strong>Conclusion:</strong></p>
+<blockquote>
+<p>Mutual exclusion cannot be completely eliminated</p>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=️-key-insight>⚠️ Key Insight<a href=#️-key-insight class=hash-link aria-label="Direct link to ⚠️ Key Insight" title="Direct link to ⚠️ Key Insight" translate=no>​</a></h3>
+<ul>
+<li class="">This technique is <strong>limited in real systems</strong></li>
+<li class="">Only applicable to <strong>some resources</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=62-hold-and-wait-prevention>6.2 Hold and Wait Prevention<a href=#62-hold-and-wait-prevention class=hash-link aria-label="Direct link to 6.2 Hold and Wait Prevention" title="Direct link to 6.2 Hold and Wait Prevention" translate=no>​</a></h3>
+<blockquote>
+<p>Ensure that a process <strong>does not hold resources while waiting for others</strong></p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=621-conservative-approach-all-resources-at-start>6.2.1 Conservative Approach (All Resources at Start)<a href=#621-conservative-approach-all-resources-at-start class=hash-link aria-label="Direct link to 6.2.1 Conservative Approach (All Resources at Start)" title="Direct link to 6.2.1 Conservative Approach (All Resources at Start)" translate=no>​</a></h4>
+<p><strong>Idea:</strong></p>
+<ul>
+<li class="">Process must request <strong>all required resources at once</strong></li>
+</ul>
+<p><strong>Rule:</strong></p>
+<blockquote>
+<p>Process starts execution <strong>only if all resources are available</strong></p>
+</blockquote>
+<!-- -->
+<p><strong>Advantages:</strong></p>
+<ul>
+<li class="">No partial allocation → no hold & wait</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li class="">Poor resource utilization</li>
+<li class="">Hard to predict all resource needs</li>
+<li class="">May cause long waiting times</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=622-resource-release-before-request>6.2.2 Resource Release Before Request<a href=#622-resource-release-before-request class=hash-link aria-label="Direct link to 6.2.2 Resource Release Before Request" title="Direct link to 6.2.2 Resource Release Before Request" translate=no>​</a></h4>
+<p><strong>Idea:</strong></p>
+<ul>
+<li class="">Before requesting new resources:<!-- -->
+<ul>
+<li class="">Process must <strong>release all currently held resources</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Flow:</strong></p>
+<!-- -->
+<p><strong>Advantages:</strong></p>
+<ul>
+<li class="">Eliminates hold & wait</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li class="">Inefficient (frequent release & request)</li>
+<li class="">Performance overhead</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=623-timeout-mechanism>6.2.3 Timeout Mechanism<a href=#623-timeout-mechanism class=hash-link aria-label="Direct link to 6.2.3 Timeout Mechanism" title="Direct link to 6.2.3 Timeout Mechanism" translate=no>​</a></h4>
+<p><strong>Idea:</strong></p>
+<ul>
+<li class="">Limit how long a process can wait</li>
+</ul>
+<p><strong>Rule:</strong></p>
+<blockquote>
+<p>If waiting exceeds a time limit → release all resources</p>
+</blockquote>
+<p><strong>Example:</strong></p>
+<div class="language-c codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-c codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token keyword" style=color:#00009f>if</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">wait_time </span><span class="token operator" style=color:#393A34>></span><span class="token plain"> MAX_TIME</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    </span><span class="token function" style=color:#d73a49>release_all_resources</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span><br/></div></code></pre></div></div>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li class="">Prevents indefinite waiting</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li class="">May lead to:<!-- -->
+<ul>
+<li class="">Unnecessary rollbacks</li>
+<li class="">Starvation</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=63-no-pre-emption-prevention>6.3 No Pre-emption Prevention<a href=#63-no-pre-emption-prevention class=hash-link aria-label="Direct link to 6.3 No Pre-emption Prevention" title="Direct link to 6.3 No Pre-emption Prevention" translate=no>​</a></h3>
+<blockquote>
+<p>Allow the system to <strong>forcefully take resources</strong> from processes</p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=631-forceful-resource-pre-emption>6.3.1 Forceful Resource Pre-emption<a href=#631-forceful-resource-pre-emption class=hash-link aria-label="Direct link to 6.3.1 Forceful Resource Pre-emption" title="Direct link to 6.3.1 Forceful Resource Pre-emption" translate=no>​</a></h4>
+<p><strong>Idea:</strong></p>
+<ul>
+<li class="">If a process is waiting for a resource:<!-- -->
+<ul>
+<li class="">OS can <strong>take away resources</strong> from other processes</li>
+</ul>
+</li>
+</ul>
+<p><strong>Flow:</strong></p>
+<!-- -->
+<p><strong>Use Case:</strong></p>
+<ul>
+<li class="">High-priority or system processes</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=632-victim-selection-strategy>6.3.2 Victim Selection Strategy<a href=#632-victim-selection-strategy class=hash-link aria-label="Direct link to 6.3.2 Victim Selection Strategy" title="Direct link to 6.3.2 Victim Selection Strategy" translate=no>​</a></h4>
+<p><strong>Problem:</strong></p>
+<ul>
+<li class="">Which process should lose its resource?</li>
+</ul>
+<p><strong>Criteria:</strong></p>
+<ul>
+<li class="">Priority of process</li>
+<li class="">Amount of work done</li>
+<li class="">Number of resources held</li>
+<li class="">Cost of rollback</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Select process with:<!-- -->
+<ul>
+<li class="">Lowest priority</li>
+<li class="">Least progress</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=️-issues-with-pre-emption>⚠️ Issues with Pre-emption<a href=#️-issues-with-pre-emption class=hash-link aria-label="Direct link to ⚠️ Issues with Pre-emption" title="Direct link to ⚠️ Issues with Pre-emption" translate=no>​</a></h3>
+<ul>
+<li class="">Data inconsistency</li>
+<li class="">Rollback required</li>
+<li class="">Performance overhead</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=64-circular-wait-prevention>6.4 Circular Wait Prevention<a href=#64-circular-wait-prevention class=hash-link aria-label="Direct link to 6.4 Circular Wait Prevention" title="Direct link to 6.4 Circular Wait Prevention" translate=no>​</a></h3>
+<blockquote>
+<p>Prevent formation of <strong>circular chain of processes</strong></p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=641-resource-ordering-technique>6.4.1 Resource Ordering Technique<a href=#641-resource-ordering-technique class=hash-link aria-label="Direct link to 6.4.1 Resource Ordering Technique" title="Direct link to 6.4.1 Resource Ordering Technique" translate=no>​</a></h4>
+<p><strong>Idea:</strong></p>
+<ul>
+<li class="">Assign a <strong>unique number to each resource</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<table><thead><tr><th>Resource<th>Number<tbody><tr><td>R1<td>1<tr><td>R2<td>2<tr><td>R3<td>3</table>
+<p><strong>Rule:</strong></p>
+<blockquote>
+<p>Processes must request resources in <strong>increasing or decreasing order</strong></p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=642-increasingdecreasing-resource-request-order>6.4.2 Increasing/Decreasing Resource Request Order<a href=#642-increasingdecreasing-resource-request-order class=hash-link aria-label="Direct link to 6.4.2 Increasing/Decreasing Resource Request Order" title="Direct link to 6.4.2 Increasing/Decreasing Resource Request Order" translate=no>​</a></h4>
+<p><strong>Increasing Order Example:</strong></p>
+<!-- -->
+<p><strong>Rule:</strong></p>
+<ul>
+<li class="">If process needs lower-numbered resource:<!-- -->
+<ul>
+<li class="">Must release higher-numbered ones first</li>
+</ul>
+</li>
+</ul>
+<p><strong>Why it works:</strong></p>
+<ul>
+<li class="">Prevents circular dependency</li>
+<li class="">Breaks <strong>cycle formation</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-final-summary-1>🔥 Final Summary<a href=#-final-summary-1 class=hash-link aria-label="Direct link to 🔥 Final Summary" title="Direct link to 🔥 Final Summary" translate=no>​</a></h3>
+<table><thead><tr><th>Condition Broken<th>Technique<th>Key Idea<tbody><tr><td>Mutual Exclusion<td>Make shareable<td>Limited use<tr><td>Hold & Wait<td>Request all / release before request<td>Inefficient<tr><td>No Pre-emption<td>Force resource removal<td>Complex<tr><td>Circular Wait<td>Resource ordering<td>Most practical</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-important-exam-points-2>🎯 Important Exam Points<a href=#-important-exam-points-2 class=hash-link aria-label="Direct link to 🎯 Important Exam Points" title="Direct link to 🎯 Important Exam Points" translate=no>​</a></h3>
+<ul>
+<li class="">Prevention = <strong>break conditions</strong></li>
+<li class="">Most practical method:<br/>
+<!-- -->👉 <strong>Circular Wait Prevention (resource ordering)</strong></li>
+<li class="">Hold & Wait prevention often asked in detail</li>
+<li class="">Victim selection is important in pre-emption</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-memory-trick-2>💡 Memory Trick<a href=#-memory-trick-2 class=hash-link aria-label="Direct link to 💡 Memory Trick" title="Direct link to 💡 Memory Trick" translate=no>​</a></h3>
+<p>👉 <strong>M-H-N-C → Break any one</strong></p>
+<ul>
+<li class="">M → Make shareable</li>
+<li class="">H → Hold all / release all</li>
+<li class="">N → No pre-emption → allow pre-emption</li>
+<li class="">C → Circular → ordering</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-deadlock-avoidance>7. Deadlock Avoidance<a href=#7-deadlock-avoidance class=hash-link aria-label="Direct link to 7. Deadlock Avoidance" title="Direct link to 7. Deadlock Avoidance" translate=no>​</a></h2>
+<p>Deadlock <strong>avoidance</strong> is a dynamic approach where the system <strong>decides at runtime</strong> whether to grant a resource request based on the <strong>current state</strong> of the system.</p>
+<blockquote>
+<p>Instead of preventing conditions, it <strong>avoids entering unsafe states</strong></p>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-core-idea>🧠 Core Idea<a href=#-core-idea class=hash-link aria-label="Direct link to 🧠 Core Idea" title="Direct link to 🧠 Core Idea" translate=no>​</a></h3>
+<ul>
+<li class="">Not all states lead to deadlock</li>
+<li class="">Only <strong>unsafe states</strong> are dangerous</li>
+<li class="">OS allows execution <strong>only if the system remains safe</strong></li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=71-concept-of-avoidance>7.1 Concept of Avoidance<a href=#71-concept-of-avoidance class=hash-link aria-label="Direct link to 7.1 Concept of Avoidance" title="Direct link to 7.1 Concept of Avoidance" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=711-preventing-unsafe-states>7.1.1 Preventing Unsafe States<a href=#711-preventing-unsafe-states class=hash-link aria-label="Direct link to 7.1.1 Preventing Unsafe States" title="Direct link to 7.1.1 Preventing Unsafe States" translate=no>​</a></h4>
+<blockquote>
+<p>A system avoids deadlock by <strong>never entering an unsafe state</strong></p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-safe-vs-unsafe-state>🔹 Safe vs Unsafe State<a href=#-safe-vs-unsafe-state class=hash-link aria-label="Direct link to 🔹 Safe vs Unsafe State" title="Direct link to 🔹 Safe vs Unsafe State" translate=no>​</a></h4>
+<p><strong>✅ Safe State:</strong></p>
+<ul>
+<li class="">There exists a <strong>safe sequence</strong></li>
+<li class="">All processes can complete execution</li>
+</ul>
+<p><strong>❌ Unsafe State:</strong></p>
+<ul>
+<li class="">No guaranteed safe sequence</li>
+<li class="">May lead to deadlock (not always immediately)</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-visualization>🔁 Visualization<a href=#-visualization class=hash-link aria-label="Direct link to 🔁 Visualization" title="Direct link to 🔁 Visualization" translate=no>​</a></h4>
+<!-- -->
+<p>👉 Important:</p>
+<ul>
+<li class="">All deadlocks occur in <strong>unsafe states</strong></li>
+<li class="">But not all unsafe states are deadlocks</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-safe-sequence>🔹 Safe Sequence<a href=#-safe-sequence class=hash-link aria-label="Direct link to 🔹 Safe Sequence" title="Direct link to 🔹 Safe Sequence" translate=no>​</a></h4>
+<blockquote>
+<p>A sequence of processes such that each process can complete using available + released resources</p>
+</blockquote>
+<p><strong>Example:</strong></p>
+<p>P1 → P2 → P3 → P4</p>
+<ul>
+<li class="">P1 completes → releases resources</li>
+<li class="">P2 uses released resources → completes</li>
+<li class="">And so on</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-why-avoid-unsafe-states>🔹 Why Avoid Unsafe States?<a href=#-why-avoid-unsafe-states class=hash-link aria-label="Direct link to 🔹 Why Avoid Unsafe States?" title="Direct link to 🔹 Why Avoid Unsafe States?" translate=no>​</a></h4>
+<ul>
+<li class="">Once system enters unsafe state:<!-- -->
+<ul>
+<li class="">OS loses control</li>
+<li class="">Deadlock may occur anytime</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=712-resource-allocation-decision-making>7.1.2 Resource Allocation Decision Making<a href=#712-resource-allocation-decision-making class=hash-link aria-label="Direct link to 7.1.2 Resource Allocation Decision Making" title="Direct link to 7.1.2 Resource Allocation Decision Making" translate=no>​</a></h3>
+<blockquote>
+<p>OS checks every request <strong>before granting it</strong></p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=decision-steps>Decision Steps:<a href=#decision-steps class=hash-link aria-label="Direct link to Decision Steps:" title="Direct link to Decision Steps:" translate=no>​</a></h4>
+<ol>
+<li class="">Process requests resource</li>
+<li class="">OS simulates allocation</li>
+<li class="">Check if system remains <strong>safe</strong></li>
+<li class="">If safe → allocate</li>
+<li class="">If unsafe → deny request</li>
+</ol>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-flow-diagram>🔁 Flow Diagram<a href=#-flow-diagram class=hash-link aria-label="Direct link to 🔁 Flow Diagram" title="Direct link to 🔁 Flow Diagram" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-requirement>🔹 Key Requirement<a href=#-key-requirement class=hash-link aria-label="Direct link to 🔹 Key Requirement" title="Direct link to 🔹 Key Requirement" translate=no>​</a></h4>
+<ul>
+<li class="">System must know:<!-- -->
+<ul>
+<li class=""><strong>Maximum resource needs</strong> of each process in advance</li>
+</ul>
+</li>
+</ul>
+<p>👉 This is why:</p>
+<ul>
+<li class="">Avoidance is used with <strong>Banker’s Algorithm</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=️-limitations-1>⚠️ Limitations<a href=#️-limitations-1 class=hash-link aria-label="Direct link to ⚠️ Limitations" title="Direct link to ⚠️ Limitations" translate=no>​</a></h3>
+<ul>
+<li class="">Requires prior knowledge of resource usage</li>
+<li class="">Complex calculations</li>
+<li class="">Not suitable for all systems</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=72-resource-allocation-state>7.2 Resource Allocation State<a href=#72-resource-allocation-state class=hash-link aria-label="Direct link to 7.2 Resource Allocation State" title="Direct link to 7.2 Resource Allocation State" translate=no>​</a></h3>
+<p>To decide safely, OS maintains <strong>complete information about resources</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=721-available-resources>7.2.1 Available Resources<a href=#721-available-resources class=hash-link aria-label="Direct link to 7.2.1 Available Resources" title="Direct link to 7.2.1 Available Resources" translate=no>​</a></h4>
+<blockquote>
+<p>Number of resources currently <strong>free and available</strong></p>
+</blockquote>
+<p><strong>Representation:</strong></p>
+<ul>
+<li class="">Vector: <code>Available[m]</code></li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Available = [3, 2, 1]</span><br/></div></code></pre></div></div>
+<p>Means:</p>
+<ul>
+<li class="">3 instances of Resource A</li>
+<li class="">2 of B</li>
+<li class="">1 of C</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=722-allocated-resources>7.2.2 Allocated Resources<a href=#722-allocated-resources class=hash-link aria-label="Direct link to 7.2.2 Allocated Resources" title="Direct link to 7.2.2 Allocated Resources" translate=no>​</a></h4>
+<blockquote>
+<p>Resources currently <strong>assigned to each process</strong></p>
+</blockquote>
+<p><strong>Representation:</strong></p>
+<ul>
+<li class="">Matrix: <code>Allocation[n][m]</code></li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">P1: [1, 0, 2]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">P2: [0, 1, 1]</span><br/></div></code></pre></div></div>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">P1 holds resources</li>
+<li class="">P2 holds different resources</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=723-maximum-requirements>7.2.3 Maximum Requirements<a href=#723-maximum-requirements class=hash-link aria-label="Direct link to 7.2.3 Maximum Requirements" title="Direct link to 7.2.3 Maximum Requirements" translate=no>​</a></h4>
+<blockquote>
+<p>Maximum resources a process may need during execution</p>
+</blockquote>
+<p><strong>Representation:</strong></p>
+<ul>
+<li class="">Matrix: <code>Max[n][m]</code></li>
+</ul>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">P1: [3, 2, 2]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">P2: [1, 2, 2]</span><br/></div></code></pre></div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-derived-concept-need-matrix>🔁 Derived Concept: Need Matrix<a href=#-derived-concept-need-matrix class=hash-link aria-label="Direct link to 🔁 Derived Concept: Need Matrix" title="Direct link to 🔁 Derived Concept: Need Matrix" translate=no>​</a></h3>
+<blockquote>
+<p>Remaining resources required by each process</p>
+</blockquote>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=formula>Formula:<a href=#formula class=hash-link aria-label="Direct link to Formula:" title="Direct link to Formula:" translate=no>​</a></h4>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Need[i][j] = Max[i][j] - Allocation[i][j]</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=example>Example:<a href=#example class=hash-link aria-label="Direct link to Example:" title="Direct link to Example:" translate=no>​</a></h4>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Max = [3,2,2]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Allocation = [1,0,2]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Need = [2,2,0]</span><br/></div></code></pre></div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-combined-view>🧠 Combined View<a href=#-combined-view class=hash-link aria-label="Direct link to 🧠 Combined View" title="Direct link to 🧠 Combined View" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-final-summary-2>🔥 Final Summary<a href=#-final-summary-2 class=hash-link aria-label="Direct link to 🔥 Final Summary" title="Direct link to 🔥 Final Summary" translate=no>​</a></h3>
+<table><thead><tr><th>Concept<th>Meaning<tbody><tr><td>Safe State<td>No deadlock possible<tr><td>Unsafe State<td>May lead to deadlock<tr><td>Available<td>Free resources<tr><td>Allocation<td>Resources in use<tr><td>Max<td>Maximum demand<tr><td>Need<td>Remaining requirement</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-important-exam-points-3>🎯 Important Exam Points<a href=#-important-exam-points-3 class=hash-link aria-label="Direct link to 🎯 Important Exam Points" title="Direct link to 🎯 Important Exam Points" translate=no>​</a></h3>
+<ul>
+<li class="">Avoidance = <strong>safe state checking</strong></li>
+<li class="">Safe sequence is <strong>very important</strong></li>
+<li class="">Must know:<!-- -->
+<ul>
+<li class="">Available</li>
+<li class="">Allocation</li>
+<li class="">Max</li>
+<li class="">Need</li>
+</ul>
+</li>
+<li class="">Strong link to:<br/>
+<!-- -->👉 <strong>Banker’s Algorithm</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-memory-trick-3>💡 Memory Trick<a href=#-memory-trick-3 class=hash-link aria-label="Direct link to 💡 Memory Trick" title="Direct link to 💡 Memory Trick" translate=no>​</a></h3>
+<p>👉 <strong>A-A-M-N</strong></p>
+<ul>
+<li class="">A → Available</li>
+<li class="">A → Allocation</li>
+<li class="">M → Max</li>
+<li class="">N → Need</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=8-safe-state>8. Safe State<a href=#8-safe-state class=hash-link aria-label="Direct link to 8. Safe State" title="Direct link to 8. Safe State" translate=no>​</a></h2>
+<p>The concept of <strong>Safe State</strong> is central to <strong>Deadlock Avoidance</strong>.<br/>
+<!-- -->It helps the operating system decide whether granting a resource request will keep the system <strong>deadlock-free</strong>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-core-idea-1>🧠 Core Idea<a href=#-core-idea-1 class=hash-link aria-label="Direct link to 🧠 Core Idea" title="Direct link to 🧠 Core Idea" translate=no>​</a></h3>
+<blockquote>
+<p>A system is safe if it can allocate resources to all processes in some order <strong>without causing deadlock</strong></p>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-state-classification>🔁 State Classification<a href=#-state-classification class=hash-link aria-label="Direct link to 🔁 State Classification" title="Direct link to 🔁 State Classification" translate=no>​</a></h3>
+<!-- -->
+<p>👉 Important:</p>
+<ul>
+<li class="">All <strong>deadlocks occur in unsafe states</strong></li>
+<li class="">But <strong>not all unsafe states are deadlocks</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=81-definition-of-safe-state>8.1 Definition of Safe State<a href=#81-definition-of-safe-state class=hash-link aria-label="Direct link to 8.1 Definition of Safe State" title="Direct link to 8.1 Definition of Safe State" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=811-safe-resource-allocation>8.1.1 Safe Resource Allocation<a href=#811-safe-resource-allocation class=hash-link aria-label="Direct link to 8.1.1 Safe Resource Allocation" title="Direct link to 8.1.1 Safe Resource Allocation" translate=no>​</a></h4>
+<blockquote>
+<p>A resource allocation is safe if the system can satisfy all processes <strong>in some sequence</strong></p>
+</blockquote>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">Even if all processes request their <strong>maximum resources</strong></li>
+<li class="">The system can still complete execution</li>
+</ul>
+<p><strong>Condition:</strong></p>
+<p>There exists a sequence:</p>
+<p>P₁ → P₂ → P₃ → ... → Pₙ</p>
+<p>Such that each process can:</p>
+<ul>
+<li class="">Get required resources</li>
+<li class="">Execute</li>
+<li class="">Release resources</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-formal-definition-from-pdf>🔹 Formal Definition (from PDF)<a href=#-formal-definition-from-pdf class=hash-link aria-label="Direct link to 🔹 Formal Definition (from PDF)" title="Direct link to 🔹 Formal Definition (from PDF)" translate=no>​</a></h4>
+<p>A state is safe if:</p>
+<blockquote>
+<p>There exists a sequence of processes such that each process can be allocated its remaining resources using currently available resources + resources released by previous processes</p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=812-deadlock-free-guarantee>8.1.2 Deadlock-Free Guarantee<a href=#812-deadlock-free-guarantee class=hash-link aria-label="Direct link to 8.1.2 Deadlock-Free Guarantee" title="Direct link to 8.1.2 Deadlock-Free Guarantee" translate=no>​</a></h4>
+<p><strong>Key Insight:</strong></p>
+<ul>
+<li class="">If system is in <strong>safe state</strong>:<!-- -->
+<ul>
+<li class="">Deadlock will <strong>never occur</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Why?</strong></p>
+<ul>
+<li class="">There is always at least <strong>one valid execution order</strong></li>
+</ul>
+<!-- -->
+<p>👉 Each process completes successfully</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=82-safe-sequence>8.2 Safe Sequence<a href=#82-safe-sequence class=hash-link aria-label="Direct link to 8.2 Safe Sequence" title="Direct link to 8.2 Safe Sequence" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=821-process-execution-order>8.2.1 Process Execution Order<a href=#821-process-execution-order class=hash-link aria-label="Direct link to 8.2.1 Process Execution Order" title="Direct link to 8.2.1 Process Execution Order" translate=no>​</a></h4>
+<blockquote>
+<p>A <strong>safe sequence</strong> is an order in which processes can complete without deadlock</p>
+</blockquote>
+<p><strong>Example:</strong></p>
+<p>Processes: P1, P2, P3</p>
+<p>Safe Sequence:</p>
+<p>P1 → P2 → P3</p>
+<p><strong>Explanation:</strong></p>
+<ul>
+<li class="">P1 gets resources → completes → releases</li>
+<li class="">P2 uses released resources → completes</li>
+<li class="">P3 completes</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=822-resource-release-and-reallocation>8.2.2 Resource Release and Reallocation<a href=#822-resource-release-and-reallocation class=hash-link aria-label="Direct link to 8.2.2 Resource Release and Reallocation" title="Direct link to 8.2.2 Resource Release and Reallocation" translate=no>​</a></h4>
+<p><strong>Step-by-step flow:</strong></p>
+<!-- -->
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">Resources are <strong>reused dynamically</strong></li>
+<li class="">Each process depends on:<!-- -->
+<ul>
+<li class="">Available + previously released resources</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-example-conceptual>🔹 Example (Conceptual)<a href=#-example-conceptual class=hash-link aria-label="Direct link to 🔹 Example (Conceptual)" title="Direct link to 🔹 Example (Conceptual)" translate=no>​</a></h4>
+<p>Initial Available = 3</p>
+<table><thead><tr><th>Process<th>Need<tbody><tr><td>P1<td>2<tr><td>P2<td>1<tr><td>P3<td>2</table>
+<p><strong>Safe Sequence:</strong></p>
+<ol>
+<li class="">P2 executes → releases 1</li>
+<li class="">Available = 4</li>
+<li class="">P1 executes → releases 2</li>
+<li class="">Available = 6</li>
+<li class="">P3 executes</li>
+</ol>
+<p>👉 System completes → <strong>safe</strong></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=83-unsafe-state>8.3 Unsafe State<a href=#83-unsafe-state class=hash-link aria-label="Direct link to 8.3 Unsafe State" title="Direct link to 8.3 Unsafe State" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=831-lack-of-safe-sequence>8.3.1 Lack of Safe Sequence<a href=#831-lack-of-safe-sequence class=hash-link aria-label="Direct link to 8.3.1 Lack of Safe Sequence" title="Direct link to 8.3.1 Lack of Safe Sequence" translate=no>​</a></h4>
+<blockquote>
+<p>A state is unsafe if <strong>no safe sequence exists</strong></p>
+</blockquote>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">System cannot guarantee completion of all processes</li>
+<li class="">OS cannot find a valid execution order</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=832-possibility-of-deadlock>8.3.2 Possibility of Deadlock<a href=#832-possibility-of-deadlock class=hash-link aria-label="Direct link to 8.3.2 Possibility of Deadlock" title="Direct link to 8.3.2 Possibility of Deadlock" translate=no>​</a></h4>
+<p><strong>Important:</strong></p>
+<ul>
+<li class="">Unsafe state ≠ deadlock</li>
+<li class="">But unsafe state → <strong>risk of deadlock</strong></li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-example>🔹 Example:<a href=#-example class=hash-link aria-label="Direct link to 🔹 Example:" title="Direct link to 🔹 Example:" translate=no>​</a></h4>
+<p>Available = 1</p>
+<table><thead><tr><th>Process<th>Need<tbody><tr><td>P1<td>2<tr><td>P2<td>2</table>
+<p><strong>Problem:</strong></p>
+<ul>
+<li class="">Neither process can proceed</li>
+<li class="">No safe sequence exists</li>
+</ul>
+<p>👉 System is <strong>unsafe</strong></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-final-summary-3>🔥 Final Summary<a href=#-final-summary-3 class=hash-link aria-label="Direct link to 🔥 Final Summary" title="Direct link to 🔥 Final Summary" translate=no>​</a></h3>
+<table><thead><tr><th>State<th>Meaning<th>Result<tbody><tr><td>Safe<td>Safe sequence exists<td>No deadlock<tr><td>Unsafe<td>No safe sequence<td>Deadlock possible<tr><td>Deadlock<td>Circular waiting<td>System stuck</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-important-exam-points-4>🎯 Important Exam Points<a href=#-important-exam-points-4 class=hash-link aria-label="Direct link to 🎯 Important Exam Points" title="Direct link to 🎯 Important Exam Points" translate=no>​</a></h3>
+<ul>
+<li class="">Safe state is <strong>core concept in avoidance</strong></li>
+<li class="">Safe sequence must be clearly explained</li>
+<li class="">Unsafe ≠ deadlock (very important)</li>
+<li class="">Questions often ask:<!-- -->
+<ul>
+<li class="">Identify safe/unsafe state</li>
+<li class="">Find safe sequence</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-memory-trick-4>💡 Memory Trick<a href=#-memory-trick-4 class=hash-link aria-label="Direct link to 💡 Memory Trick" title="Direct link to 💡 Memory Trick" translate=no>​</a></h3>
+<p>👉 <strong>Safe = Sequence Exists</strong></p>
+<ul>
+<li class="">If sequence exists → safe</li>
+<li class="">If not → unsafe</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=9-bankers-algorithm>9. Banker’s Algorithm<a href=#9-bankers-algorithm class=hash-link aria-label="Direct link to 9. Banker’s Algorithm" title="Direct link to 9. Banker’s Algorithm" translate=no>​</a></h2>
+<p>The <strong>Banker’s Algorithm</strong> is a <strong>deadlock avoidance algorithm</strong> that ensures the system <strong>never enters an unsafe state</strong>.</p>
+<p>It is one of the most important algorithms in Operating Systems and is heavily asked in exams.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=91-introduction>9.1 Introduction<a href=#91-introduction class=hash-link aria-label="Direct link to 9.1 Introduction" title="Direct link to 9.1 Introduction" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=911-concept-and-purpose>9.1.1 Concept and Purpose<a href=#911-concept-and-purpose class=hash-link aria-label="Direct link to 9.1.1 Concept and Purpose" title="Direct link to 9.1.1 Concept and Purpose" translate=no>​</a></h4>
+<blockquote>
+<p>Banker’s Algorithm checks whether a resource request can be granted <strong>without causing deadlock</strong></p>
+</blockquote>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">Before allocating resources:<!-- -->
+<ul>
+<li class="">Simulate allocation</li>
+<li class="">Check if system remains <strong>safe</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Avoid deadlock dynamically</li>
+<li class="">Maintain system in <strong>safe state</strong></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=912-real-life-banking-analogy>9.1.2 Real-life Banking Analogy<a href=#912-real-life-banking-analogy class=hash-link aria-label="Direct link to 9.1.2 Real-life Banking Analogy" title="Direct link to 9.1.2 Real-life Banking Analogy" translate=no>​</a></h4>
+<p><strong>Analogy:</strong></p>
+<ul>
+<li class="">Bank has limited money (resources)</li>
+<li class="">Customers (processes) request loans</li>
+<li class="">Bank ensures:<!-- -->
+<ul>
+<li class="">It can satisfy all customers eventually</li>
+</ul>
+</li>
+</ul>
+<p><strong>Rule:</strong></p>
+<blockquote>
+<p>Bank gives loan only if it can guarantee all customers will be served</p>
+</blockquote>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-visualization-1>🔁 Visualization<a href=#-visualization-1 class=hash-link aria-label="Direct link to 🔁 Visualization" title="Direct link to 🔁 Visualization" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=92-data-structures>9.2 Data Structures<a href=#92-data-structures class=hash-link aria-label="Direct link to 9.2 Data Structures" title="Direct link to 9.2 Data Structures" translate=no>​</a></h3>
+<p>The algorithm uses <strong>four key data structures</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=921-available-vector>9.2.1 Available Vector<a href=#921-available-vector class=hash-link aria-label="Direct link to 9.2.1 Available Vector" title="Direct link to 9.2.1 Available Vector" translate=no>​</a></h4>
+<blockquote>
+<p>Number of available instances of each resource</p>
+</blockquote>
+<p><strong>Representation:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Available[m]</span><br/></div></code></pre></div></div>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Available = [3, 2, 1]</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=922-max-matrix>9.2.2 Max Matrix<a href=#922-max-matrix class=hash-link aria-label="Direct link to 9.2.2 Max Matrix" title="Direct link to 9.2.2 Max Matrix" translate=no>​</a></h4>
+<blockquote>
+<p>Maximum demand of each process</p>
+</blockquote>
+<p><strong>Representation:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Max[n][m]</span><br/></div></code></pre></div></div>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">P1: [3, 2, 2]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">P2: [1, 2, 2]</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=923-allocation-matrix>9.2.3 Allocation Matrix<a href=#923-allocation-matrix class=hash-link aria-label="Direct link to 9.2.3 Allocation Matrix" title="Direct link to 9.2.3 Allocation Matrix" translate=no>​</a></h4>
+<blockquote>
+<p>Resources currently allocated to processes</p>
+</blockquote>
+<p><strong>Representation:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Allocation[n][m]</span><br/></div></code></pre></div></div>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">P1: [1, 0, 2]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">P2: [0, 1, 1]</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=924-need-matrix>9.2.4 Need Matrix<a href=#924-need-matrix class=hash-link aria-label="Direct link to 9.2.4 Need Matrix" title="Direct link to 9.2.4 Need Matrix" translate=no>​</a></h4>
+<blockquote>
+<p>Remaining resources required by each process</p>
+</blockquote>
+<p><strong>Formula:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Need[i][j] = Max[i][j] - Allocation[i][j]</span><br/></div></code></pre></div></div>
+<p><strong>Example:</strong></p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Max = [3,2,2]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Allocation = [1,0,2]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Need = [2,2,0]</span><br/></div></code></pre></div></div>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-combined-view-1>🧠 Combined View<a href=#-combined-view-1 class=hash-link aria-label="Direct link to 🧠 Combined View" title="Direct link to 🧠 Combined View" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=93-safety-algorithm>9.3 Safety Algorithm<a href=#93-safety-algorithm class=hash-link aria-label="Direct link to 9.3 Safety Algorithm" title="Direct link to 9.3 Safety Algorithm" translate=no>​</a></h3>
+<p>Used to check if system is in <strong>safe state</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=931-work-and-finish-vectors-initialization>9.3.1 Work and Finish Vectors Initialization<a href=#931-work-and-finish-vectors-initialization class=hash-link aria-label="Direct link to 9.3.1 Work and Finish Vectors Initialization" title="Direct link to 9.3.1 Work and Finish Vectors Initialization" translate=no>​</a></h4>
+<ul>
+<li class="">Work = Available</li>
+<li class="">Finish[i] = false for all processes</li>
+</ul>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Work = Available</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Finish[i] = false</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=932-process-selection-condition>9.3.2 Process Selection Condition<a href=#932-process-selection-condition class=hash-link aria-label="Direct link to 9.3.2 Process Selection Condition" title="Direct link to 9.3.2 Process Selection Condition" translate=no>​</a></h4>
+<p>Find a process <code>i</code> such that:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Finish[i] == false AND Need[i] ≤ Work</span><br/></div></code></pre></div></div>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">Process can complete with available resources</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=933-resource-release-simulation>9.3.3 Resource Release Simulation<a href=#933-resource-release-simulation class=hash-link aria-label="Direct link to 9.3.3 Resource Release Simulation" title="Direct link to 9.3.3 Resource Release Simulation" translate=no>​</a></h4>
+<p>If process <code>i</code> is selected:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Work = Work + Allocation[i]</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Finish[i] = true</span><br/></div></code></pre></div></div>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">Process completes</li>
+<li class="">Releases resources</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=934-safe-state-verification>9.3.4 Safe State Verification<a href=#934-safe-state-verification class=hash-link aria-label="Direct link to 9.3.4 Safe State Verification" title="Direct link to 9.3.4 Safe State Verification" translate=no>​</a></h4>
+<p><strong>Condition:</strong></p>
+<ul>
+<li class="">If all <code>Finish[i] == true</code> → <strong>SAFE</strong></li>
+<li class="">Else → <strong>UNSAFE</strong></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-flow>🔁 Flow<a href=#-flow class=hash-link aria-label="Direct link to 🔁 Flow" title="Direct link to 🔁 Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=94-resource-request-algorithm>9.4 Resource Request Algorithm<a href=#94-resource-request-algorithm class=hash-link aria-label="Direct link to 9.4 Resource Request Algorithm" title="Direct link to 9.4 Resource Request Algorithm" translate=no>​</a></h3>
+<p>Used when a process <strong>requests resources</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=941-request-validation-request--need>9.4.1 Request Validation (Request ≤ Need)<a href=#941-request-validation-request--need class=hash-link aria-label="Direct link to 9.4.1 Request Validation (Request ≤ Need)" title="Direct link to 9.4.1 Request Validation (Request ≤ Need)" translate=no>​</a></h4>
+<p>Check:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Request[i] ≤ Need[i]</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">If not → error (process exceeded max claim)</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=942-availability-check-request--available>9.4.2 Availability Check (Request ≤ Available)<a href=#942-availability-check-request--available class=hash-link aria-label="Direct link to 9.4.2 Availability Check (Request ≤ Available)" title="Direct link to 9.4.2 Availability Check (Request ≤ Available)" translate=no>​</a></h4>
+<p>Check:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Request[i] ≤ Available</span><br/></div></code></pre></div></div>
+<ul>
+<li class="">If not → process must wait</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=943-temporary-allocation>9.4.3 Temporary Allocation<a href=#943-temporary-allocation class=hash-link aria-label="Direct link to 9.4.3 Temporary Allocation" title="Direct link to 9.4.3 Temporary Allocation" translate=no>​</a></h4>
+<p>Pretend allocation is done:</p>
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Available = Available - Request</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Allocation[i] = Allocation[i] + Request</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Need[i] = Need[i] - Request</span><br/></div></code></pre></div></div>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=944-safety-check-after-allocation>9.4.4 Safety Check After Allocation<a href=#944-safety-check-after-allocation class=hash-link aria-label="Direct link to 9.4.4 Safety Check After Allocation" title="Direct link to 9.4.4 Safety Check After Allocation" translate=no>​</a></h4>
+<ul>
+<li class="">Run <strong>Safety Algorithm</strong></li>
+<li class="">If safe → grant request</li>
+<li class="">If unsafe → rollback</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-flow-1>🔁 Flow<a href=#-flow-1 class=hash-link aria-label="Direct link to 🔁 Flow" title="Direct link to 🔁 Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=95-examples-of-bankers-algorithm>9.5 Examples of Banker’s Algorithm<a href=#95-examples-of-bankers-algorithm class=hash-link aria-label="Direct link to 9.5 Examples of Banker’s Algorithm" title="Direct link to 9.5 Examples of Banker’s Algorithm" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=951-allocation-table-analysis>9.5.1 Allocation Table Analysis<a href=#951-allocation-table-analysis class=hash-link aria-label="Direct link to 9.5.1 Allocation Table Analysis" title="Direct link to 9.5.1 Allocation Table Analysis" translate=no>​</a></h4>
+<p><strong>Given:</strong></p>
+<table><thead><tr><th>Process<th>Allocation<th>Max<th>Need<tbody><tr><td>P1<td>[1,0,2]<td>[3,2,2]<td>[2,2,0]<tr><td>P2<td>[0,1,1]<td>[1,2,2]<td>[1,1,1]</table>
+<p>Available = [3,2,1]</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=952-safeunsafe-decision-making>9.5.2 Safe/Unsafe Decision Making<a href=#952-safeunsafe-decision-making class=hash-link aria-label="Direct link to 9.5.2 Safe/Unsafe Decision Making" title="Direct link to 9.5.2 Safe/Unsafe Decision Making" translate=no>​</a></h4>
+<p><strong>Step-by-step:</strong></p>
+<ol>
+<li class="">Check P2:<!-- -->
+<ul>
+<li class="">Need ≤ Available → YES</li>
+<li class="">Execute P2 → release resources</li>
+</ul>
+</li>
+<li class="">Update Available</li>
+<li class="">Check P1:<!-- -->
+<ul>
+<li class="">Now possible → execute</li>
+</ul>
+</li>
+</ol>
+<p>👉 Safe sequence exists → system is <strong>safe</strong></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-final-summary-4>🔥 Final Summary<a href=#-final-summary-4 class=hash-link aria-label="Direct link to 🔥 Final Summary" title="Direct link to 🔥 Final Summary" translate=no>​</a></h3>
+<table><thead><tr><th>Component<th>Meaning<tbody><tr><td>Available<td>Free resources<tr><td>Max<td>Maximum demand<tr><td>Allocation<td>Resources held<tr><td>Need<td>Remaining demand</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-important-exam-points-5>🎯 Important Exam Points<a href=#-important-exam-points-5 class=hash-link aria-label="Direct link to 🎯 Important Exam Points" title="Direct link to 🎯 Important Exam Points" translate=no>​</a></h3>
+<ul>
+<li class="">Banker’s Algorithm = <strong>Deadlock Avoidance</strong></li>
+<li class="">Must know:<!-- -->
+<ul>
+<li class="">Data structures</li>
+<li class="">Safety Algorithm</li>
+<li class="">Request Algorithm</li>
+</ul>
+</li>
+<li class="">Very common:<!-- -->
+<ul>
+<li class="">Solve numericals</li>
+<li class="">Find safe sequence</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-memory-trick-5>💡 Memory Trick<a href=#-memory-trick-5 class=hash-link aria-label="Direct link to 💡 Memory Trick" title="Direct link to 💡 Memory Trick" translate=no>​</a></h3>
+<p>👉 <strong>A-M-A-N</strong></p>
+<ul>
+<li class="">A → Available</li>
+<li class="">M → Max</li>
+<li class="">A → Allocation</li>
+<li class="">N → Need</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=10-deadlock-detection>10. Deadlock Detection<a href=#10-deadlock-detection class=hash-link aria-label="Direct link to 10. Deadlock Detection" title="Direct link to 10. Deadlock Detection" translate=no>​</a></h2>
+<p>Deadlock <strong>detection</strong> is an approach where the system:</p>
+<blockquote>
+<p><strong>Allows deadlock to occur</strong>, then detects it and takes corrective action.</p>
+</blockquote>
+<p>Unlike prevention or avoidance:</p>
+<ul>
+<li class="">No restrictions are imposed beforehand</li>
+<li class="">System runs freely</li>
+<li class="">Deadlock is handled <strong>after it happens</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-core-idea-2>🧠 Core Idea<a href=#-core-idea-2 class=hash-link aria-label="Direct link to 🧠 Core Idea" title="Direct link to 🧠 Core Idea" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=101-detection-concept>10.1 Detection Concept<a href=#101-detection-concept class=hash-link aria-label="Direct link to 10.1 Detection Concept" title="Direct link to 10.1 Detection Concept" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1011-identifying-deadlocks-after-occurrence>10.1.1 Identifying Deadlocks After Occurrence<a href=#1011-identifying-deadlocks-after-occurrence class=hash-link aria-label="Direct link to 10.1.1 Identifying Deadlocks After Occurrence" title="Direct link to 10.1.1 Identifying Deadlocks After Occurrence" translate=no>​</a></h4>
+<blockquote>
+<p>System periodically checks whether a deadlock exists</p>
+</blockquote>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">Deadlock is not prevented</li>
+<li class="">System detects:<!-- -->
+<ul>
+<li class="">Circular waiting</li>
+<li class="">Resource blocking</li>
+</ul>
+</li>
+</ul>
+<p><strong>Methods used:</strong></p>
+<ul>
+<li class="">Resource Allocation Graph (RAG)</li>
+<li class="">Wait-for Graph</li>
+<li class="">Banker-like detection algorithm</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-when-detection-happens>🔹 When Detection Happens<a href=#-when-detection-happens class=hash-link aria-label="Direct link to 🔹 When Detection Happens" title="Direct link to 🔹 When Detection Happens" translate=no>​</a></h4>
+<ul>
+<li class="">Periodically (every few seconds)</li>
+<li class="">Or when:<!-- -->
+<ul>
+<li class="">CPU usage drops</li>
+<li class="">Processes are stuck</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1012-performance-overhead-consideration>10.1.2 Performance Overhead Consideration<a href=#1012-performance-overhead-consideration class=hash-link aria-label="Direct link to 10.1.2 Performance Overhead Consideration" title="Direct link to 10.1.2 Performance Overhead Consideration" translate=no>​</a></h4>
+<p><strong>Problem:</strong></p>
+<ul>
+<li class="">Detection requires:<!-- -->
+<ul>
+<li class="">Scanning system state</li>
+<li class="">Running algorithms</li>
+</ul>
+</li>
+</ul>
+<p><strong>Overhead includes:</strong></p>
+<ul>
+<li class="">CPU time</li>
+<li class="">Memory usage</li>
+<li class="">System slowdown</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=️-trade-off>⚖️ Trade-off<a href=#️-trade-off class=hash-link aria-label="Direct link to ⚖️ Trade-off" title="Direct link to ⚖️ Trade-off" translate=no>​</a></h4>
+<table><thead><tr><th>Advantage<th>Disadvantage<tbody><tr><td>Flexible<td>High overhead<tr><td>No restrictions<td>Detection cost</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=102-single-instance-resource-detection>10.2 Single Instance Resource Detection<a href=#102-single-instance-resource-detection class=hash-link aria-label="Direct link to 10.2 Single Instance Resource Detection" title="Direct link to 10.2 Single Instance Resource Detection" translate=no>​</a></h3>
+<p>Used when <strong>each resource has only one instance</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1021-wait-for-graph-concept>10.2.1 Wait-for Graph Concept<a href=#1021-wait-for-graph-concept class=hash-link aria-label="Direct link to 10.2.1 Wait-for Graph Concept" title="Direct link to 10.2.1 Wait-for Graph Concept" translate=no>​</a></h4>
+<blockquote>
+<p>A simplified version of Resource Allocation Graph</p>
+</blockquote>
+<p><strong>Idea:</strong></p>
+<ul>
+<li class="">Remove resource nodes</li>
+<li class="">Only keep process nodes</li>
+<li class="">Show <strong>which process is waiting for which</strong></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-example-1>🔁 Example<a href=#-example-1 class=hash-link aria-label="Direct link to 🔁 Example" title="Direct link to 🔁 Example" translate=no>​</a></h4>
+<!-- -->
+<p>👉 P1 waits for P2<br/>
+<!-- -->👉 P2 waits for P3<br/>
+<!-- -->👉 P3 waits for P1</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1022-graph-construction>10.2.2 Graph Construction<a href=#1022-graph-construction class=hash-link aria-label="Direct link to 10.2.2 Graph Construction" title="Direct link to 10.2.2 Graph Construction" translate=no>​</a></h4>
+<p><strong>Steps:</strong></p>
+<ol>
+<li class="">Start from Resource Allocation Graph</li>
+<li class="">Remove resource nodes</li>
+<li class="">Replace edges:</li>
+</ol>
+<ul>
+<li class="">If P1 waits for resource held by P2<br/>
+<!-- -->→ Create edge: P1 → P2</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-conversion>🔁 Conversion<a href=#-conversion class=hash-link aria-label="Direct link to 🔁 Conversion" title="Direct link to 🔁 Conversion" translate=no>​</a></h4>
+<!-- -->
+<p>Becomes:</p>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1023-cycle-detection>10.2.3 Cycle Detection<a href=#1023-cycle-detection class=hash-link aria-label="Direct link to 10.2.3 Cycle Detection" title="Direct link to 10.2.3 Cycle Detection" translate=no>​</a></h4>
+<blockquote>
+<p>Deadlock exists if there is a <strong>cycle in the wait-for graph</strong></p>
+</blockquote>
+<p><strong>Rule:</strong></p>
+<ul>
+<li class="">Cycle present → <strong>Deadlock</strong></li>
+<li class="">No cycle → <strong>No Deadlock</strong></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-example-2>🔁 Example<a href=#-example-2 class=hash-link aria-label="Direct link to 🔁 Example" title="Direct link to 🔁 Example" translate=no>​</a></h4>
+<!-- -->
+<p>👉 Cycle → Deadlock confirmed</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=103-multiple-instance-resource-detection>10.3 Multiple Instance Resource Detection<a href=#103-multiple-instance-resource-detection class=hash-link aria-label="Direct link to 10.3 Multiple Instance Resource Detection" title="Direct link to 10.3 Multiple Instance Resource Detection" translate=no>​</a></h3>
+<p>Used when resources have <strong>multiple instances</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1031-modified-bankers-algorithm>10.3.1 Modified Banker’s Algorithm<a href=#1031-modified-bankers-algorithm class=hash-link aria-label="Direct link to 10.3.1 Modified Banker’s Algorithm" title="Direct link to 10.3.1 Modified Banker’s Algorithm" translate=no>​</a></h4>
+<blockquote>
+<p>Similar to Banker’s Safety Algorithm, but used for detection</p>
+</blockquote>
+<p><strong>Difference:</strong></p>
+<ul>
+<li class="">Banker’s → Avoidance</li>
+<li class="">Detection Algorithm → Identify deadlock</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1032-finish-vector-logic>10.3.2 Finish Vector Logic<a href=#1032-finish-vector-logic class=hash-link aria-label="Direct link to 10.3.2 Finish Vector Logic" title="Direct link to 10.3.2 Finish Vector Logic" translate=no>​</a></h4>
+<p><strong>Initialization:</strong></p>
+<ul>
+<li class="">If Allocation[i] ≠ 0 → Finish[i] = false</li>
+<li class="">If Allocation[i] = 0 → Finish[i] = true</li>
+</ul>
+<p><strong>Why?</strong></p>
+<ul>
+<li class="">Processes with no resources:<!-- -->
+<ul>
+<li class="">Cannot be part of deadlock</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-algorithm-steps>🔁 Algorithm Steps<a href=#-algorithm-steps class=hash-link aria-label="Direct link to 🔁 Algorithm Steps" title="Direct link to 🔁 Algorithm Steps" translate=no>​</a></h4>
+<ol>
+<li class="">Set:<!-- -->
+<ul>
+<li class="">Work = Available</li>
+</ul>
+</li>
+<li class="">Find process <code>i</code> such that:<!-- -->
+<ul>
+<li class="">Finish[i] = false</li>
+<li class="">Need[i] ≤ Work</li>
+</ul>
+</li>
+<li class="">If found:<!-- -->
+<ul>
+<li class="">Work = Work + Allocation[i]</li>
+<li class="">Finish[i] = true</li>
+</ul>
+</li>
+<li class="">Repeat</li>
+</ol>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1033-identification-of-deadlocked-processes>10.3.3 Identification of Deadlocked Processes<a href=#1033-identification-of-deadlocked-processes class=hash-link aria-label="Direct link to 10.3.3 Identification of Deadlocked Processes" title="Direct link to 10.3.3 Identification of Deadlocked Processes" translate=no>​</a></h4>
+<p><strong>Final Condition:</strong></p>
+<ul>
+<li class="">If any process has:<!-- -->
+<ul>
+<li class="">Finish[i] = false</li>
+</ul>
+</li>
+</ul>
+<p>👉 That process is <strong>deadlocked</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-flow-2>🔁 Flow<a href=#-flow-2 class=hash-link aria-label="Direct link to 🔁 Flow" title="Direct link to 🔁 Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=104-detection-frequency>10.4 Detection Frequency<a href=#104-detection-frequency class=hash-link aria-label="Direct link to 10.4 Detection Frequency" title="Direct link to 10.4 Detection Frequency" translate=no>​</a></h3>
+<p>How often should the system check for deadlocks?</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1041-frequent-detection-approach>10.4.1 Frequent Detection Approach<a href=#1041-frequent-detection-approach class=hash-link aria-label="Direct link to 10.4.1 Frequent Detection Approach" title="Direct link to 10.4.1 Frequent Detection Approach" translate=no>​</a></h4>
+<blockquote>
+<p>Run detection algorithm frequently</p>
+</blockquote>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li class="">Detect deadlock early</li>
+<li class="">Fewer processes involved</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li class="">High overhead</li>
+<li class="">Performance degradation</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1042-on-demand-detection-approach>10.4.2 On-demand Detection Approach<a href=#1042-on-demand-detection-approach class=hash-link aria-label="Direct link to 10.4.2 On-demand Detection Approach" title="Direct link to 10.4.2 On-demand Detection Approach" translate=no>​</a></h4>
+<blockquote>
+<p>Run detection only when needed</p>
+</blockquote>
+<p><strong>Trigger Conditions:</strong></p>
+<ul>
+<li class="">CPU utilization drops</li>
+<li class="">Processes blocked for long time</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li class="">Low overhead</li>
+<li class="">Efficient</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li class="">Deadlock may involve many processes</li>
+<li class="">Harder recovery</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1043-trade-offs>10.4.3 Trade-offs<a href=#1043-trade-offs class=hash-link aria-label="Direct link to 10.4.3 Trade-offs" title="Direct link to 10.4.3 Trade-offs" translate=no>​</a></h4>
+<table><thead><tr><th>Approach<th>Advantage<th>Disadvantage<tbody><tr><td>Frequent<td>Early detection<td>High overhead<tr><td>On-demand<td>Efficient<td>Late detection</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-final-summary-5>🔥 Final Summary<a href=#-final-summary-5 class=hash-link aria-label="Direct link to 🔥 Final Summary" title="Direct link to 🔥 Final Summary" translate=no>​</a></h3>
+<table><thead><tr><th>Method<th>Used For<th>Key Idea<tbody><tr><td>Wait-for Graph<td>Single instance<td>Cycle detection<tr><td>Detection Algorithm<td>Multiple instance<td>Finish vector<tr><td>Frequency Control<td>Performance tuning<td>Trade-off</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-important-exam-points-6>🎯 Important Exam Points<a href=#-important-exam-points-6 class=hash-link aria-label="Direct link to 🎯 Important Exam Points" title="Direct link to 🎯 Important Exam Points" translate=no>​</a></h3>
+<ul>
+<li class="">Detection = <strong>after deadlock occurs</strong></li>
+<li class="">Wait-for graph → single instance</li>
+<li class="">Modified Banker’s → multiple instance</li>
+<li class="">Finish[i] = false → deadlocked process</li>
+<li class="">Frequency question is very common</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-memory-trick-6>💡 Memory Trick<a href=#-memory-trick-6 class=hash-link aria-label="Direct link to 💡 Memory Trick" title="Direct link to 💡 Memory Trick" translate=no>​</a></h3>
+<p>👉 <strong>Detect → Find Cycle / Find Finish = False</strong></p>
+<ul>
+<li class="">Cycle → Deadlock</li>
+<li class="">Finish false → Deadlocked process</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-deadlock-recovery>11. Deadlock Recovery<a href=#11-deadlock-recovery class=hash-link aria-label="Direct link to 11. Deadlock Recovery" title="Direct link to 11. Deadlock Recovery" translate=no>​</a></h2>
+<p>Once a deadlock is <strong>detected</strong>, the system must take action to <strong>break the deadlock and restore normal execution</strong>.</p>
+<blockquote>
+<p>Recovery is the process of <strong>freeing resources and allowing processes to proceed</strong></p>
+</blockquote>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-core-idea-3>🧠 Core Idea<a href=#-core-idea-3 class=hash-link aria-label="Direct link to 🧠 Core Idea" title="Direct link to 🧠 Core Idea" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=111-recovery-techniques>11.1 Recovery Techniques<a href=#111-recovery-techniques class=hash-link aria-label="Direct link to 11.1 Recovery Techniques" title="Direct link to 11.1 Recovery Techniques" translate=no>​</a></h3>
+<p>There are <strong>two main techniques</strong> (from PPT + PDF):</p>
+<ol>
+<li class="">Process Termination</li>
+<li class="">Resource Pre-emption</li>
+</ol>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1111-process-termination>11.1.1 Process Termination<a href=#1111-process-termination class=hash-link aria-label="Direct link to 11.1.1 Process Termination" title="Direct link to 11.1.1 Process Termination" translate=no>​</a></h4>
+<blockquote>
+<p>Eliminate deadlock by <strong>killing processes</strong></p>
+</blockquote>
+<p><strong>Idea:</strong></p>
+<ul>
+<li class="">Remove one or more processes from the system</li>
+<li class="">This releases their resources</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1112-resource-pre-emption>11.1.2 Resource Pre-emption<a href=#1112-resource-pre-emption class=hash-link aria-label="Direct link to 11.1.2 Resource Pre-emption" title="Direct link to 11.1.2 Resource Pre-emption" translate=no>​</a></h4>
+<blockquote>
+<p>Take resources from processes and give them to others</p>
+</blockquote>
+<p><strong>Idea:</strong></p>
+<ul>
+<li class="">Temporarily interrupt processes</li>
+<li class="">Reassign resources to break the cycle</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=112-process-termination>11.2 Process Termination<a href=#112-process-termination class=hash-link aria-label="Direct link to 11.2 Process Termination" title="Direct link to 11.2 Process Termination" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1121-abort-all-processes>11.2.1 Abort All Processes<a href=#1121-abort-all-processes class=hash-link aria-label="Direct link to 11.2.1 Abort All Processes" title="Direct link to 11.2.1 Abort All Processes" translate=no>​</a></h4>
+<blockquote>
+<p>Terminate all processes involved in deadlock</p>
+</blockquote>
+<hr/>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li class="">Simple</li>
+<li class="">Immediate resolution</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li class="">Loss of all work done</li>
+<li class="">High cost (recomputation required)</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-flow-3>🔁 Flow<a href=#-flow-3 class=hash-link aria-label="Direct link to 🔁 Flow" title="Direct link to 🔁 Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1122-abort-one-process-at-a-time>11.2.2 Abort One Process at a Time<a href=#1122-abort-one-process-at-a-time class=hash-link aria-label="Direct link to 11.2.2 Abort One Process at a Time" title="Direct link to 11.2.2 Abort One Process at a Time" translate=no>​</a></h4>
+<blockquote>
+<p>Terminate processes <strong>one by one</strong> until deadlock is resolved</p>
+</blockquote>
+<hr/>
+<p><strong>Steps:</strong></p>
+<ol>
+<li class="">Select one process</li>
+<li class="">Terminate it</li>
+<li class="">Check if deadlock is resolved</li>
+<li class="">Repeat if necessary</li>
+</ol>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-flow-4>🔁 Flow<a href=#-flow-4 class=hash-link aria-label="Direct link to 🔁 Flow" title="Direct link to 🔁 Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li class="">Less work lost</li>
+<li class="">More controlled</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li class="">Time-consuming</li>
+<li class="">Requires repeated detection checks</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-process-selection-criteria>🔍 Process Selection Criteria<a href=#-process-selection-criteria class=hash-link aria-label="Direct link to 🔍 Process Selection Criteria" title="Direct link to 🔍 Process Selection Criteria" translate=no>​</a></h3>
+<p>When choosing which process to terminate:</p>
+<ul>
+<li class="">Priority of process</li>
+<li class="">Amount of computation completed</li>
+<li class="">Resources held</li>
+<li class="">Number of resources needed to complete</li>
+<li class="">Process importance</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=113-resource-pre-emption>11.3 Resource Pre-emption<a href=#113-resource-pre-emption class=hash-link aria-label="Direct link to 11.3 Resource Pre-emption" title="Direct link to 11.3 Resource Pre-emption" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1131-victim-selection>11.3.1 Victim Selection<a href=#1131-victim-selection class=hash-link aria-label="Direct link to 11.3.1 Victim Selection" title="Direct link to 11.3.1 Victim Selection" translate=no>​</a></h4>
+<blockquote>
+<p>Choose a process whose resources will be taken away</p>
+</blockquote>
+<hr/>
+<p><strong>Criteria:</strong></p>
+<ul>
+<li class="">Lowest priority</li>
+<li class="">Least progress made</li>
+<li class="">Minimum cost to restart</li>
+<li class="">Fewer resources held</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-example-3>🔁 Example<a href=#-example-3 class=hash-link aria-label="Direct link to 🔁 Example" title="Direct link to 🔁 Example" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1132-rollback-mechanism>11.3.2 Rollback Mechanism<a href=#1132-rollback-mechanism class=hash-link aria-label="Direct link to 11.3.2 Rollback Mechanism" title="Direct link to 11.3.2 Rollback Mechanism" translate=no>​</a></h4>
+<blockquote>
+<p>After pre-emption, process must be <strong>rolled back to a safe state</strong></p>
+</blockquote>
+<hr/>
+<p><strong>Idea:</strong></p>
+<ul>
+<li class="">Process state is restored to a previous checkpoint</li>
+<li class="">Execution restarts from that point</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=-flow-5>🔁 Flow<a href=#-flow-5 class=hash-link aria-label="Direct link to 🔁 Flow" title="Direct link to 🔁 Flow" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<p><strong>Important:</strong></p>
+<ul>
+<li class="">Requires:<!-- -->
+<ul>
+<li class="">Checkpointing mechanism</li>
+<li class="">State saving</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1133-starvation-issue>11.3.3 Starvation Issue<a href=#1133-starvation-issue class=hash-link aria-label="Direct link to 11.3.3 Starvation Issue" title="Direct link to 11.3.3 Starvation Issue" translate=no>​</a></h4>
+<blockquote>
+<p>A process may repeatedly lose resources and <strong>never complete</strong></p>
+</blockquote>
+<hr/>
+<p><strong>Problem:</strong></p>
+<ul>
+<li class="">Same process is chosen as victim again and again</li>
+</ul>
+<!-- -->
+<p>👉 Infinite loop → starvation</p>
+<hr/>
+<p><strong>Solution:</strong></p>
+<ul>
+<li class="">Limit number of times a process can be pre-empted</li>
+<li class="">Use fair selection policies</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-final-summary-6>🔥 Final Summary<a href=#-final-summary-6 class=hash-link aria-label="Direct link to 🔥 Final Summary" title="Direct link to 🔥 Final Summary" translate=no>​</a></h3>
+<table><thead><tr><th>Technique<th>Method<th>Advantage<th>Disadvantage<tbody><tr><td>Abort All<td>Kill all processes<td>Fast<td>High loss<tr><td>Abort One<td>Kill one-by-one<td>Controlled<td>Slow<tr><td>Pre-emption<td>Take resources<td>Flexible<td>Complex</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-important-exam-points-7>🎯 Important Exam Points<a href=#-important-exam-points-7 class=hash-link aria-label="Direct link to 🎯 Important Exam Points" title="Direct link to 🎯 Important Exam Points" translate=no>​</a></h3>
+<ul>
+<li class="">Recovery = <strong>after detection</strong></li>
+<li class="">Two main methods:<!-- -->
+<ul>
+<li class="">Termination</li>
+<li class="">Pre-emption</li>
+</ul>
+</li>
+<li class="">Victim selection is very important</li>
+<li class="">Starvation is a key issue in pre-emption</li>
+<li class="">Rollback concept often asked</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-memory-trick-7>💡 Memory Trick<a href=#-memory-trick-7 class=hash-link aria-label="Direct link to 💡 Memory Trick" title="Direct link to 💡 Memory Trick" translate=no>​</a></h3>
+<p>👉 <strong>T-P-R-S</strong></p>
+<ul>
+<li class="">T → Termination</li>
+<li class="">P → Pre-emption</li>
+<li class="">R → Rollback</li>
+<li class="">S → Starvation</li>
+</ul>
+<hr/>
+<h2 align=center><a data-footnote-ref=true href=#user-content-fn-1>END</a></h2></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/ankur3-101106/docs/OS/u4.mdx target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/OS/u3><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Unit - 3</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/OS/u5><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Unit - 5</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#deadlocks class="table-of-contents__link toc-highlight">Deadlocks</a><li><a href=#1-deadlocks class="table-of-contents__link toc-highlight">1. Deadlocks</a><ul><li><a href=#11-introduction-to-deadlocks class="table-of-contents__link toc-highlight">1.1 Introduction to Deadlocks</a><ul><li><a href=#111-definition-of-deadlock class="table-of-contents__link toc-highlight">1.1.1 Definition of Deadlock</a><li><a href=#112-multiprogramming-environment class="table-of-contents__link toc-highlight">1.1.2 Multiprogramming Environment</a><li><a href=#113-waiting-state-and-resource-contention class="table-of-contents__link toc-highlight">1.1.3 Waiting State and Resource Contention</a></ul><li><a href=#12-example-of-deadlock class="table-of-contents__link toc-highlight">1.2 Example of Deadlock</a><ul><li><a href=#121-bridge-crossing-problem class="table-of-contents__link toc-highlight">1.2.1 Bridge Crossing Problem</a><li><a href=#122-real-life-analogy class="table-of-contents__link toc-highlight">1.2.2 Real-life Analogy</a><li><a href=#123-starvation-possibility class="table-of-contents__link toc-highlight">1.2.3 Starvation Possibility</a></ul><li><a href=#-important-exam-insights class="table-of-contents__link toc-highlight">🔥 Important Exam Insights</a></ul><li><a href=#2-system-model class="table-of-contents__link toc-highlight">2. System Model</a><ul><li><a href=#21-resource-usage-model class="table-of-contents__link toc-highlight">2.1 Resource Usage Model</a><ul><li><a href=#-overall-flow class="table-of-contents__link toc-highlight">🔁 Overall Flow</a><li><a href=#211-resource-request class="table-of-contents__link toc-highlight">2.1.1 Resource Request</a><li><a href=#212-resource-allocation class="table-of-contents__link toc-highlight">2.1.2 Resource Allocation</a><li><a href=#213-resource-release class="table-of-contents__link toc-highlight">2.1.3 Resource Release</a><li><a href=#️-problem-if-not-released class="table-of-contents__link toc-highlight">⚠️ Problem if Not Released:</a></ul><li><a href=#-combined-example-full-cycle class="table-of-contents__link toc-highlight">🧠 Combined Example (Full Cycle)</a><li><a href=#-important-exam-insights-1 class="table-of-contents__link toc-highlight">🔥 Important Exam Insights</a><li><a href=#-key-observations class="table-of-contents__link toc-highlight">⚡ Key Observations</a></ul><li><a href=#3-necessary-conditions-for-deadlock class="table-of-contents__link toc-highlight">3. Necessary Conditions for Deadlock</a><ul><li><a href=#-overview-of-all-conditions class="table-of-contents__link toc-highlight">🧠 Overview of All Conditions</a><li><a href=#31-mutual-exclusion class="table-of-contents__link toc-highlight">3.1 Mutual Exclusion</a><ul><li><a href=#311-non-shareable-resources class="table-of-contents__link toc-highlight">3.1.1 Non-shareable Resources</a><li><a href=#312-examples-printer-devices class="table-of-contents__link toc-highlight">3.1.2 Examples (Printer, Devices)</a></ul><li><a href=#32-hold-and-wait class="table-of-contents__link toc-highlight">3.2 Hold and Wait</a><ul><li><a href=#321-holding-resources-while-waiting class="table-of-contents__link toc-highlight">3.2.1 Holding Resources While Waiting</a><li><a href=#322-resource-dependency class="table-of-contents__link toc-highlight">3.2.2 Resource Dependency</a></ul><li><a href=#33-no-pre-emption class="table-of-contents__link toc-highlight">3.3 No Pre-emption</a><ul><li><a href=#331-voluntary-resource-release class="table-of-contents__link toc-highlight">3.3.1 Voluntary Resource Release</a><li><a href=#332-lack-of-forceful-allocation class="table-of-contents__link toc-highlight">3.3.2 Lack of Forceful Allocation</a></ul><li><a href=#34-circular-wait class="table-of-contents__link toc-highlight">3.4 Circular Wait</a><ul><li><a href=#341-circular-dependency-chain class="table-of-contents__link toc-highlight">3.4.1 Circular Dependency Chain</a><li><a href=#342-process-waiting-cycle class="table-of-contents__link toc-highlight">3.4.2 Process Waiting Cycle</a></ul><li><a href=#-final-summary-very-important class="table-of-contents__link toc-highlight">🔥 Final Summary (Very Important)</a><li><a href=#-key-exam-points class="table-of-contents__link toc-highlight">🎯 Key Exam Points</a><li><a href=#-memory-trick class="table-of-contents__link toc-highlight">💡 Memory Trick</a></ul><li><a href=#4-resource-allocation-graph-rag class="table-of-contents__link toc-highlight">4. Resource Allocation Graph (RAG)</a><ul><li><a href=#-basic-idea class="table-of-contents__link toc-highlight">🧠 Basic Idea</a><li><a href=#41-components-of-rag class="table-of-contents__link toc-highlight">4.1 Components of RAG</a><ul><li><a href=#411-processes-pi class="table-of-contents__link toc-highlight">4.1.1 Processes (Pi)</a><li><a href=#412-resources-rj class="table-of-contents__link toc-highlight">4.1.2 Resources (Rj)</a><li><a href=#413-resource-instances class="table-of-contents__link toc-highlight">4.1.3 Resource Instances</a></ul><li><a href=#42-edges-in-graph class="table-of-contents__link toc-highlight">4.2 Edges in Graph</a><ul><li><a href=#421-request-edge-process--resource class="table-of-contents__link toc-highlight">4.2.1 Request Edge (Process → Resource)</a><li><a href=#422-assignment-edge-resource--process class="table-of-contents__link toc-highlight">4.2.2 Assignment Edge (Resource → Process)</a></ul><li><a href=#43-graph-behavior class="table-of-contents__link toc-highlight">4.3 Graph Behavior</a><ul><li><a href=#431-conversion-of-request-to-assignment-edge class="table-of-contents__link toc-highlight">4.3.1 Conversion of Request to Assignment Edge</a><li><a href=#432-directed-graph-nature class="table-of-contents__link toc-highlight">4.3.2 Directed Graph Nature</a></ul><li><a href=#44-deadlock-detection-using-rag class="table-of-contents__link toc-highlight">4.4 Deadlock Detection using RAG</a><ul><li><a href=#441-no-cycle--no-deadlock class="table-of-contents__link toc-highlight">4.4.1 No Cycle → No Deadlock</a><li><a href=#442-cycle-with-single-instance--deadlock class="table-of-contents__link toc-highlight">4.4.2 Cycle with Single Instance → Deadlock</a><li><a href=#443-cycle-with-multiple-instances--possibility-of-deadlock class="table-of-contents__link toc-highlight">4.4.3 Cycle with Multiple Instances → Possibility of Deadlock</a></ul><li><a href=#-final-summary class="table-of-contents__link toc-highlight">🔥 Final Summary</a><li><a href=#-important-exam-points class="table-of-contents__link toc-highlight">🎯 Important Exam Points</a><li><a href=#-quick-memory-trick class="table-of-contents__link toc-highlight">💡 Quick Memory Trick</a></ul><li><a href=#5-deadlock-handling-methods class="table-of-contents__link toc-highlight">5. Deadlock Handling Methods</a><ul><li><a href=#-overview class="table-of-contents__link toc-highlight">🧠 Overview</a><li><a href=#51-prevention class="table-of-contents__link toc-highlight">5.1 Prevention</a><ul><li><a href=#511-concept-of-prevention class="table-of-contents__link toc-highlight">5.1.1 Concept of Prevention</a><li><a href=#512-violating-necessary-conditions class="table-of-contents__link toc-highlight">5.1.2 Violating Necessary Conditions</a></ul><li><a href=#️-limitations-of-prevention class="table-of-contents__link toc-highlight">⚠️ Limitations of Prevention</a><li><a href=#52-avoidance class="table-of-contents__link toc-highlight">5.2 Avoidance</a><ul><li><a href=#521-safe-state-concept class="table-of-contents__link toc-highlight">5.2.1 Safe State Concept</a><li><a href=#522-decision-based-resource-allocation class="table-of-contents__link toc-highlight">5.2.2 Decision-based Resource Allocation</a></ul><li><a href=#️-limitations-of-avoidance class="table-of-contents__link toc-highlight">⚠️ Limitations of Avoidance</a><li><a href=#53-detection-and-recovery class="table-of-contents__link toc-highlight">5.3 Detection and Recovery</a><ul><li><a href=#531-detecting-deadlock-after-occurrence class="table-of-contents__link toc-highlight">5.3.1 Detecting Deadlock After Occurrence</a><li><a href=#532-recovery-mechanisms class="table-of-contents__link toc-highlight">5.3.2 Recovery Mechanisms</a></ul><li><a href=#️-limitations class="table-of-contents__link toc-highlight">⚠️ Limitations</a><li><a href=#54-ignorance class="table-of-contents__link toc-highlight">5.4 Ignorance</a><ul><li><a href=#541-ostrich-algorithm-concept class="table-of-contents__link toc-highlight">5.4.1 Ostrich Algorithm Concept</a><li><a href=#542-practical-use-cases class="table-of-contents__link toc-highlight">5.4.2 Practical Use Cases</a></ul><li><a href=#-final-comparison class="table-of-contents__link toc-highlight">🔥 Final Comparison</a><li><a href=#-important-exam-points-1 class="table-of-contents__link toc-highlight">🎯 Important Exam Points</a><li><a href=#-memory-trick-1 class="table-of-contents__link toc-highlight">💡 Memory Trick</a></ul><li><a href=#6-deadlock-prevention-techniques class="table-of-contents__link toc-highlight">6. Deadlock Prevention Techniques</a><ul><li><a href=#-strategy-overview class="table-of-contents__link toc-highlight">🧠 Strategy Overview</a><li><a href=#61-mutual-exclusion-prevention class="table-of-contents__link toc-highlight">6.1 Mutual Exclusion Prevention</a><ul><li><a href=#611-making-resources-shareable class="table-of-contents__link toc-highlight">6.1.1 Making Resources Shareable</a><li><a href=#612-limitations-of-hardware-constraints class="table-of-contents__link toc-highlight">6.1.2 Limitations of Hardware Constraints</a></ul><li><a href=#️-key-insight class="table-of-contents__link toc-highlight">⚠️ Key Insight</a><li><a href=#62-hold-and-wait-prevention class="table-of-contents__link toc-highlight">6.2 Hold and Wait Prevention</a><ul><li><a href=#621-conservative-approach-all-resources-at-start class="table-of-contents__link toc-highlight">6.2.1 Conservative Approach (All Resources at Start)</a><li><a href=#622-resource-release-before-request class="table-of-contents__link toc-highlight">6.2.2 Resource Release Before Request</a><li><a href=#623-timeout-mechanism class="table-of-contents__link toc-highlight">6.2.3 Timeout Mechanism</a></ul><li><a href=#63-no-pre-emption-prevention class="table-of-contents__link toc-highlight">6.3 No Pre-emption Prevention</a><ul><li><a href=#631-forceful-resource-pre-emption class="table-of-contents__link toc-highlight">6.3.1 Forceful Resource Pre-emption</a><li><a href=#632-victim-selection-strategy class="table-of-contents__link toc-highlight">6.3.2 Victim Selection Strategy</a></ul><li><a href=#️-issues-with-pre-emption class="table-of-contents__link toc-highlight">⚠️ Issues with Pre-emption</a><li><a href=#64-circular-wait-prevention class="table-of-contents__link toc-highlight">6.4 Circular Wait Prevention</a><ul><li><a href=#641-resource-ordering-technique class="table-of-contents__link toc-highlight">6.4.1 Resource Ordering Technique</a><li><a href=#642-increasingdecreasing-resource-request-order class="table-of-contents__link toc-highlight">6.4.2 Increasing/Decreasing Resource Request Order</a></ul><li><a href=#-final-summary-1 class="table-of-contents__link toc-highlight">🔥 Final Summary</a><li><a href=#-important-exam-points-2 class="table-of-contents__link toc-highlight">🎯 Important Exam Points</a><li><a href=#-memory-trick-2 class="table-of-contents__link toc-highlight">💡 Memory Trick</a></ul><li><a href=#7-deadlock-avoidance class="table-of-contents__link toc-highlight">7. Deadlock Avoidance</a><ul><li><a href=#-core-idea class="table-of-contents__link toc-highlight">🧠 Core Idea</a><li><a href=#71-concept-of-avoidance class="table-of-contents__link toc-highlight">7.1 Concept of Avoidance</a><ul><li><a href=#711-preventing-unsafe-states class="table-of-contents__link toc-highlight">7.1.1 Preventing Unsafe States</a><li><a href=#-safe-vs-unsafe-state class="table-of-contents__link toc-highlight">🔹 Safe vs Unsafe State</a><li><a href=#-visualization class="table-of-contents__link toc-highlight">🔁 Visualization</a><li><a href=#-safe-sequence class="table-of-contents__link toc-highlight">🔹 Safe Sequence</a><li><a href=#-why-avoid-unsafe-states class="table-of-contents__link toc-highlight">🔹 Why Avoid Unsafe States?</a></ul><li><a href=#712-resource-allocation-decision-making class="table-of-contents__link toc-highlight">7.1.2 Resource Allocation Decision Making</a><ul><li><a href=#decision-steps class="table-of-contents__link toc-highlight">Decision Steps:</a><li><a href=#-flow-diagram class="table-of-contents__link toc-highlight">🔁 Flow Diagram</a><li><a href=#-key-requirement class="table-of-contents__link toc-highlight">🔹 Key Requirement</a></ul><li><a href=#️-limitations-1 class="table-of-contents__link toc-highlight">⚠️ Limitations</a><li><a href=#72-resource-allocation-state class="table-of-contents__link toc-highlight">7.2 Resource Allocation State</a><ul><li><a href=#721-available-resources class="table-of-contents__link toc-highlight">7.2.1 Available Resources</a><li><a href=#722-allocated-resources class="table-of-contents__link toc-highlight">7.2.2 Allocated Resources</a><li><a href=#723-maximum-requirements class="table-of-contents__link toc-highlight">7.2.3 Maximum Requirements</a></ul><li><a href=#-derived-concept-need-matrix class="table-of-contents__link toc-highlight">🔁 Derived Concept: Need Matrix</a><ul><li><a href=#formula class="table-of-contents__link toc-highlight">Formula:</a><li><a href=#example class="table-of-contents__link toc-highlight">Example:</a></ul><li><a href=#-combined-view class="table-of-contents__link toc-highlight">🧠 Combined View</a><li><a href=#-final-summary-2 class="table-of-contents__link toc-highlight">🔥 Final Summary</a><li><a href=#-important-exam-points-3 class="table-of-contents__link toc-highlight">🎯 Important Exam Points</a><li><a href=#-memory-trick-3 class="table-of-contents__link toc-highlight">💡 Memory Trick</a></ul><li><a href=#8-safe-state class="table-of-contents__link toc-highlight">8. Safe State</a><ul><li><a href=#-core-idea-1 class="table-of-contents__link toc-highlight">🧠 Core Idea</a><li><a href=#-state-classification class="table-of-contents__link toc-highlight">🔁 State Classification</a><li><a href=#81-definition-of-safe-state class="table-of-contents__link toc-highlight">8.1 Definition of Safe State</a><ul><li><a href=#811-safe-resource-allocation class="table-of-contents__link toc-highlight">8.1.1 Safe Resource Allocation</a><li><a href=#-formal-definition-from-pdf class="table-of-contents__link toc-highlight">🔹 Formal Definition (from PDF)</a><li><a href=#812-deadlock-free-guarantee class="table-of-contents__link toc-highlight">8.1.2 Deadlock-Free Guarantee</a></ul><li><a href=#82-safe-sequence class="table-of-contents__link toc-highlight">8.2 Safe Sequence</a><ul><li><a href=#821-process-execution-order class="table-of-contents__link toc-highlight">8.2.1 Process Execution Order</a><li><a href=#822-resource-release-and-reallocation class="table-of-contents__link toc-highlight">8.2.2 Resource Release and Reallocation</a><li><a href=#-example-conceptual class="table-of-contents__link toc-highlight">🔹 Example (Conceptual)</a></ul><li><a href=#83-unsafe-state class="table-of-contents__link toc-highlight">8.3 Unsafe State</a><ul><li><a href=#831-lack-of-safe-sequence class="table-of-contents__link toc-highlight">8.3.1 Lack of Safe Sequence</a><li><a href=#832-possibility-of-deadlock class="table-of-contents__link toc-highlight">8.3.2 Possibility of Deadlock</a><li><a href=#-example class="table-of-contents__link toc-highlight">🔹 Example:</a></ul><li><a href=#-final-summary-3 class="table-of-contents__link toc-highlight">🔥 Final Summary</a><li><a href=#-important-exam-points-4 class="table-of-contents__link toc-highlight">🎯 Important Exam Points</a><li><a href=#-memory-trick-4 class="table-of-contents__link toc-highlight">💡 Memory Trick</a></ul><li><a href=#9-bankers-algorithm class="table-of-contents__link toc-highlight">9. Banker’s Algorithm</a><ul><li><a href=#91-introduction class="table-of-contents__link toc-highlight">9.1 Introduction</a><ul><li><a href=#911-concept-and-purpose class="table-of-contents__link toc-highlight">9.1.1 Concept and Purpose</a><li><a href=#912-real-life-banking-analogy class="table-of-contents__link toc-highlight">9.1.2 Real-life Banking Analogy</a><li><a href=#-visualization-1 class="table-of-contents__link toc-highlight">🔁 Visualization</a></ul><li><a href=#92-data-structures class="table-of-contents__link toc-highlight">9.2 Data Structures</a><ul><li><a href=#921-available-vector class="table-of-contents__link toc-highlight">9.2.1 Available Vector</a><li><a href=#922-max-matrix class="table-of-contents__link toc-highlight">9.2.2 Max Matrix</a><li><a href=#923-allocation-matrix class="table-of-contents__link toc-highlight">9.2.3 Allocation Matrix</a><li><a href=#924-need-matrix class="table-of-contents__link toc-highlight">9.2.4 Need Matrix</a></ul><li><a href=#-combined-view-1 class="table-of-contents__link toc-highlight">🧠 Combined View</a><li><a href=#93-safety-algorithm class="table-of-contents__link toc-highlight">9.3 Safety Algorithm</a><ul><li><a href=#931-work-and-finish-vectors-initialization class="table-of-contents__link toc-highlight">9.3.1 Work and Finish Vectors Initialization</a><li><a href=#932-process-selection-condition class="table-of-contents__link toc-highlight">9.3.2 Process Selection Condition</a><li><a href=#933-resource-release-simulation class="table-of-contents__link toc-highlight">9.3.3 Resource Release Simulation</a><li><a href=#934-safe-state-verification class="table-of-contents__link toc-highlight">9.3.4 Safe State Verification</a><li><a href=#-flow class="table-of-contents__link toc-highlight">🔁 Flow</a></ul><li><a href=#94-resource-request-algorithm class="table-of-contents__link toc-highlight">9.4 Resource Request Algorithm</a><ul><li><a href=#941-request-validation-request--need class="table-of-contents__link toc-highlight">9.4.1 Request Validation (Request ≤ Need)</a><li><a href=#942-availability-check-request--available class="table-of-contents__link toc-highlight">9.4.2 Availability Check (Request ≤ Available)</a><li><a href=#943-temporary-allocation class="table-of-contents__link toc-highlight">9.4.3 Temporary Allocation</a><li><a href=#944-safety-check-after-allocation class="table-of-contents__link toc-highlight">9.4.4 Safety Check After Allocation</a><li><a href=#-flow-1 class="table-of-contents__link toc-highlight">🔁 Flow</a></ul><li><a href=#95-examples-of-bankers-algorithm class="table-of-contents__link toc-highlight">9.5 Examples of Banker’s Algorithm</a><ul><li><a href=#951-allocation-table-analysis class="table-of-contents__link toc-highlight">9.5.1 Allocation Table Analysis</a><li><a href=#952-safeunsafe-decision-making class="table-of-contents__link toc-highlight">9.5.2 Safe/Unsafe Decision Making</a></ul><li><a href=#-final-summary-4 class="table-of-contents__link toc-highlight">🔥 Final Summary</a><li><a href=#-important-exam-points-5 class="table-of-contents__link toc-highlight">🎯 Important Exam Points</a><li><a href=#-memory-trick-5 class="table-of-contents__link toc-highlight">💡 Memory Trick</a></ul><li><a href=#10-deadlock-detection class="table-of-contents__link toc-highlight">10. Deadlock Detection</a><ul><li><a href=#-core-idea-2 class="table-of-contents__link toc-highlight">🧠 Core Idea</a><li><a href=#101-detection-concept class="table-of-contents__link toc-highlight">10.1 Detection Concept</a><ul><li><a href=#1011-identifying-deadlocks-after-occurrence class="table-of-contents__link toc-highlight">10.1.1 Identifying Deadlocks After Occurrence</a><li><a href=#-when-detection-happens class="table-of-contents__link toc-highlight">🔹 When Detection Happens</a><li><a href=#1012-performance-overhead-consideration class="table-of-contents__link toc-highlight">10.1.2 Performance Overhead Consideration</a><li><a href=#️-trade-off class="table-of-contents__link toc-highlight">⚖️ Trade-off</a></ul><li><a href=#102-single-instance-resource-detection class="table-of-contents__link toc-highlight">10.2 Single Instance Resource Detection</a><ul><li><a href=#1021-wait-for-graph-concept class="table-of-contents__link toc-highlight">10.2.1 Wait-for Graph Concept</a><li><a href=#-example-1 class="table-of-contents__link toc-highlight">🔁 Example</a><li><a href=#1022-graph-construction class="table-of-contents__link toc-highlight">10.2.2 Graph Construction</a><li><a href=#-conversion class="table-of-contents__link toc-highlight">🔁 Conversion</a><li><a href=#1023-cycle-detection class="table-of-contents__link toc-highlight">10.2.3 Cycle Detection</a><li><a href=#-example-2 class="table-of-contents__link toc-highlight">🔁 Example</a></ul><li><a href=#103-multiple-instance-resource-detection class="table-of-contents__link toc-highlight">10.3 Multiple Instance Resource Detection</a><ul><li><a href=#1031-modified-bankers-algorithm class="table-of-contents__link toc-highlight">10.3.1 Modified Banker’s Algorithm</a><li><a href=#1032-finish-vector-logic class="table-of-contents__link toc-highlight">10.3.2 Finish Vector Logic</a><li><a href=#-algorithm-steps class="table-of-contents__link toc-highlight">🔁 Algorithm Steps</a><li><a href=#1033-identification-of-deadlocked-processes class="table-of-contents__link toc-highlight">10.3.3 Identification of Deadlocked Processes</a><li><a href=#-flow-2 class="table-of-contents__link toc-highlight">🔁 Flow</a></ul><li><a href=#104-detection-frequency class="table-of-contents__link toc-highlight">10.4 Detection Frequency</a><ul><li><a href=#1041-frequent-detection-approach class="table-of-contents__link toc-highlight">10.4.1 Frequent Detection Approach</a><li><a href=#1042-on-demand-detection-approach class="table-of-contents__link toc-highlight">10.4.2 On-demand Detection Approach</a><li><a href=#1043-trade-offs class="table-of-contents__link toc-highlight">10.4.3 Trade-offs</a></ul><li><a href=#-final-summary-5 class="table-of-contents__link toc-highlight">🔥 Final Summary</a><li><a href=#-important-exam-points-6 class="table-of-contents__link toc-highlight">🎯 Important Exam Points</a><li><a href=#-memory-trick-6 class="table-of-contents__link toc-highlight">💡 Memory Trick</a></ul><li><a href=#11-deadlock-recovery class="table-of-contents__link toc-highlight">11. Deadlock Recovery</a><ul><li><a href=#-core-idea-3 class="table-of-contents__link toc-highlight">🧠 Core Idea</a><li><a href=#111-recovery-techniques class="table-of-contents__link toc-highlight">11.1 Recovery Techniques</a><ul><li><a href=#1111-process-termination class="table-of-contents__link toc-highlight">11.1.1 Process Termination</a><li><a href=#1112-resource-pre-emption class="table-of-contents__link toc-highlight">11.1.2 Resource Pre-emption</a></ul><li><a href=#112-process-termination class="table-of-contents__link toc-highlight">11.2 Process Termination</a><ul><li><a href=#1121-abort-all-processes class="table-of-contents__link toc-highlight">11.2.1 Abort All Processes</a><li><a href=#-flow-3 class="table-of-contents__link toc-highlight">🔁 Flow</a><li><a href=#1122-abort-one-process-at-a-time class="table-of-contents__link toc-highlight">11.2.2 Abort One Process at a Time</a><li><a href=#-flow-4 class="table-of-contents__link toc-highlight">🔁 Flow</a></ul><li><a href=#-process-selection-criteria class="table-of-contents__link toc-highlight">🔍 Process Selection Criteria</a><li><a href=#113-resource-pre-emption class="table-of-contents__link toc-highlight">11.3 Resource Pre-emption</a><ul><li><a href=#1131-victim-selection class="table-of-contents__link toc-highlight">11.3.1 Victim Selection</a><li><a href=#-example-3 class="table-of-contents__link toc-highlight">🔁 Example</a><li><a href=#1132-rollback-mechanism class="table-of-contents__link toc-highlight">11.3.2 Rollback Mechanism</a><li><a href=#-flow-5 class="table-of-contents__link toc-highlight">🔁 Flow</a><li><a href=#1133-starvation-issue class="table-of-contents__link toc-highlight">11.3.3 Starvation Issue</a></ul><li><a href=#-final-summary-6 class="table-of-contents__link toc-highlight">🔥 Final Summary</a><li><a href=#-important-exam-points-7 class="table-of-contents__link toc-highlight">🎯 Important Exam Points</a><li><a href=#-memory-trick-7 class="table-of-contents__link toc-highlight">💡 Memory Trick</a></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro>Notes</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog>Blog</a><li class=footer__item><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Ankur</div></div></div></footer></div></body>
