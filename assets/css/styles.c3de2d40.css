@@ -2044,22 +2044,22 @@
         box-shadow: var(--ifm-navbar-shadow);
         height: var(--ifm-navbar-height);
         /* padding: var(--ifm-navbar-padding-vertical)var(--ifm-navbar-padding-horizontal); */
-        display: flex
-    }
-
-    /* 🚫 REMOVE blur from navbar */
-    .navbar {
-        background: transparent;
-    }
-
-    /* ✅ APPLY blur safely inside */
-    .navbar__inner {
-        background: rgba(13, 17, 23, 0.45);
-
-        backdrop-filter: blur(6px);
-        -webkit-backdrop-filter: blur(6px);
-        padding: var(--ifm-navbar-padding-vertical)var(--ifm-navbar-padding-horizontal);
         display: flex;
+        background: transparent;
+        z-index: 1000;
+        -webkit-backdrop-filter: blur(var(--blur-amount, 8px))saturate(180%);
+        background: rgba(255, 255, 255, .05);
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+        transition: -webkit-backdrop-filter .2s, backdrop-filter .2s, background .2s;
+        position: sticky;
+        top: 0
+    }
+
+    .navbar__inner {
+        background: rgba(13, 17, 23, 0.05);
+
+        backdrop-filter:  blur(var(--blur-amount, 8px)) saturate(180%);
+        -webkit-backdrop-filter:  blur(var(--blur-amount, 8px)) saturate(180%);
     }
 
     .navbar>.container,
@@ -4022,6 +4022,102 @@ html[data-theme=dark] .navbar-sidebar {
     -webkit-backdrop-filter: blur(var(--blur-amount, 8px))saturate(180%);
     backdrop-filter: blur(var(--blur-amount, 8px))saturate(180%);
     background: rgba(255, 255, 255, .05)
+}
+
+code,
+pre,
+pre code,
+.theme-code-block,
+.theme-code-block code {
+    font-family: JetBrains Mono, monospace
+}
+
+.theme-code-block {
+    position: relative
+}
+
+pre[class*=language-] {
+    counter-reset: line
+}
+
+h3,
+h2 {
+    font-family: CabbagetownBookStd;
+    font-weight: 100
+}
+
+h2 {
+    color: #c2410c
+}
+
+h3 {
+    color: #d65a1f
+}
+
+h4 {
+    color: #ff9a64;
+    font-family: Garamond;
+    font-size: 1.4em
+}
+
+html[data-theme=light] h4 {
+    color: #a75021
+}
+
+.alert--info {
+    --ifm-alert-border-color: #0bf;
+    color: #00acef;
+    z-index: 1;
+    border-radius: 0 18px 18px 0;
+    position: relative;
+    overflow: hidden
+}
+
+.alert--info:before {
+    content: "";
+    filter: blur(7px);
+    z-index: 0;
+    background-image: url(/assets/images/colors-7e6c3a725cc868e20a00064fed1d85b6.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 18px 18px 0;
+    position: absolute;
+    inset: 0
+}
+
+.alert--info>* {
+    z-index: 1;
+    position: relative
+}
+
+[class*=admonition] h2 {
+    color: #cf8cff
+}
+
+[class*=cardContainer] h2 {
+    color: #ffce97
+}
+
+[class*=cardContainer]:hover {
+    border-color: rgba(77, 255, 0, .416);
+    transition: transform .6s;
+    transform: scale(1.02)
+}
+
+h1 {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, #6a00ff, #0af);
+    -webkit-background-clip: text;
+    background-clip: text
+}
+
+html[data-theme=dark] h1 {
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 77, 255, .4);
+    background: linear-gradient(90deg, #ff4dff, #0ff);
+    -webkit-background-clip: text;
+    background-clip: text
 }
 
 .searchBar_RVTs .dropdownMenu_qbY6 {

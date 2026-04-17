@@ -1,5 +1,2622 @@
-<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-SE/u4" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Unit - 4 | Ankur's Page</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://ankur3-101106.github.io/docs/SE/u4 /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Unit - 4 | Ankur's Page"/><meta data-rh=true name=description content="Structured System Design"/><meta data-rh=true property=og:description content="Structured System Design"/><link data-rh=true rel=icon href=/img/favicon.jpg /><link data-rh=true rel=canonical href=https://ankur3-101106.github.io/docs/SE/u4 /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/SE/u4 hreflang=en /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/SE/u4 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/se---apr-21","name":"SE - APR 21","position":1},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/SE/u4","name":"Unit - 4","position":2}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Ankur's Page RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Ankur's Page Atom Feed"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/assets/css/styles.51fb367b.css /><script src=/assets/js/runtime~main.e1c50756.js defer></script><script src=/assets/js/main.a8d17c9e.js defer></script></head><body><svg style="display: none;"><defs>
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-SE/u4" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Unit - 4 | Ankur's Page</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://ankur3-101106.github.io/docs/SE/u4 /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Unit - 4 | Ankur's Page"/><meta data-rh=true name=description content="Architectural Design"/><meta data-rh=true property=og:description content="Architectural Design"/><link data-rh=true rel=icon href=/img/favicon.jpg /><link data-rh=true rel=canonical href=https://ankur3-101106.github.io/docs/SE/u4 /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/SE/u4 hreflang=en /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/SE/u4 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/se---apr-21","name":"SE - APR 21","position":1},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/SE/u4","name":"Unit - 4","position":2}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Ankur's Page RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Ankur's Page Atom Feed"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/assets/css/styles.c3de2d40.css /><script src=/assets/js/runtime~main.a7d23bb3.js defer></script><script src=/assets/js/main.8977da3c.js defer></script></head><body><svg style="display: none;"><defs>
 <symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
 </defs></svg>
-<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-142")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon.jpg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Ankur's Page</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/intro>Notes</a><a class="navbar__item navbar__link" href=/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/intro><span title=Introduction class=linkLabel_WmDU>Introduction</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ncs---apr-16><span title="NCS - APR 16" class=categoryLinkLabel_W154>NCS - APR 16</span></a><button aria-label="Expand sidebar category 'NCS - APR 16'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/docs/category/se---apr-21><span title="SE - APR 21" class=categoryLinkLabel_W154>SE - APR 21</span></a><button aria-label="Collapse sidebar category 'SE - APR 21'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u1><span title="Unit - 1" class=linkLabel_WmDU>Unit - 1</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u2><span title="Unit - 2" class=linkLabel_WmDU>Unit - 2</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u3><span title="Unit - 3" class=linkLabel_WmDU>Unit - 3</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/SE/u4><span title="Unit - 4" class=linkLabel_WmDU>Unit - 4</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u5><span title="Unit - 5" class=linkLabel_WmDU>Unit - 5</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u6><span title="Unit - 6" class=linkLabel_WmDU>Unit - 6</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u7><span title="Unit - 7" class=linkLabel_WmDU>Unit - 7</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u8><span title="Unit - 8" class=linkLabel_WmDU>Unit - 8</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/os---apr-23><span title="OS - APR 23" class=categoryLinkLabel_W154>OS - APR 23</span></a><button aria-label="Expand sidebar category 'OS - APR 23'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/cry---apr-25><span title="CRY - APR 25" class=categoryLinkLabel_W154>CRY - APR 25</span></a><button aria-label="Expand sidebar category 'CRY - APR 25'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ppfd---apr-30><span title="PPFD - APR 30" class=categoryLinkLabel_W154>PPFD - APR 30</span></a><button aria-label="Expand sidebar category 'PPFD - APR 30'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/category/se---apr-21><span>SE - APR 21</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Unit - 4</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Unit - 4</h1></header>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></span>TITLE</div><div class=admonitionContent_BuS1><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=structured-system-design>Structured System Design<a href=#structured-system-design class=hash-link aria-label="Direct link to Structured System Design" title="Direct link to Structured System Design" translate=no>​</a></h2></div></div></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/ankur3-101106/docs/SE/u4.mdx target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/SE/u3><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Unit - 3</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/SE/u5><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Unit - 5</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#structured-system-design class="table-of-contents__link toc-highlight">Structured System Design</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro>Notes</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog>Blog</a><li class=footer__item><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Ankur</div></div></div></footer></div></body>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-142")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon.jpg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Ankur's Page</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/intro>Notes</a><a class="navbar__item navbar__link" href=/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/intro><span title=Introduction class=linkLabel_WmDU>Introduction</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ncs---apr-16><span title="NCS - APR 16" class=categoryLinkLabel_W154>NCS - APR 16</span></a><button aria-label="Expand sidebar category 'NCS - APR 16'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/docs/category/se---apr-21><span title="SE - APR 21" class=categoryLinkLabel_W154>SE - APR 21</span></a><button aria-label="Collapse sidebar category 'SE - APR 21'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u1><span title="Unit - 1" class=linkLabel_WmDU>Unit - 1</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u2><span title="Unit - 2" class=linkLabel_WmDU>Unit - 2</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u3><span title="Unit - 3" class=linkLabel_WmDU>Unit - 3</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/SE/u4><span title="Unit - 4" class=linkLabel_WmDU>Unit - 4</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u5><span title="Unit - 5" class=linkLabel_WmDU>Unit - 5</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u6><span title="Unit - 6" class=linkLabel_WmDU>Unit - 6</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u7><span title="Unit - 7" class=linkLabel_WmDU>Unit - 7</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u8><span title="Unit - 8" class=linkLabel_WmDU>Unit - 8</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/os---apr-23><span title="OS - APR 23" class=categoryLinkLabel_W154>OS - APR 23</span></a><button aria-label="Expand sidebar category 'OS - APR 23'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/cry---apr-25><span title="CRY - APR 25" class=categoryLinkLabel_W154>CRY - APR 25</span></a><button aria-label="Expand sidebar category 'CRY - APR 25'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ppfd---apr-30><span title="PPFD - APR 30" class=categoryLinkLabel_W154>PPFD - APR 30</span></a><button aria-label="Expand sidebar category 'PPFD - APR 30'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/hacks><span title=Hacks class=linkLabel_WmDU>Hacks</span></a></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/category/se---apr-21><span>SE - APR 21</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Unit - 4</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Unit - 4</h1></header>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></span>TITLE</div><div class=admonitionContent_BuS1><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=architectural-design>Architectural Design<a href=#architectural-design class=hash-link aria-label="Direct link to Architectural Design" title="Direct link to Architectural Design" translate=no>​</a></h2></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-software-design-basics>1. Software Design Basics<a href=#1-software-design-basics class=hash-link aria-label="Direct link to 1. Software Design Basics" title="Direct link to 1. Software Design Basics" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-definition-of-software-design>1.1 Definition of Software Design<a href=#11-definition-of-software-design class=hash-link aria-label="Direct link to 1.1 Definition of Software Design" title="Direct link to 1.1 Definition of Software Design" translate=no>​</a></h3>
+<p>Software Design is the <strong>process of planning and creating a structured solution</strong> for a software system based on given requirements.</p>
+<ul>
+<li class="">
+<p>It converts <strong>requirements → technical solution</strong></p>
+</li>
+<li class="">
+<p>It defines:</p>
+<ul>
+<li class="">Architecture</li>
+<li class="">Components</li>
+<li class="">Interfaces</li>
+<li class="">Data structures</li>
+</ul>
+</li>
+<li class="">
+<p>It acts as a <strong>blueprint for implementation</strong></p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=111-purpose-of-software-design>1.1.1 Purpose of Software Design<a href=#111-purpose-of-software-design class=hash-link aria-label="Direct link to 1.1.1 Purpose of Software Design" title="Direct link to 1.1.1 Purpose of Software Design" translate=no>​</a></h4>
+<p>The main purpose of software design is to <strong>prepare a clear and efficient solution before coding begins</strong>.</p>
+<p><strong>Key purposes:</strong></p>
+<ol>
+<li class="">
+<p><strong>Transformation of Requirements</strong></p>
+<ul>
+<li class="">Converts user requirements into a <strong>design model</strong></li>
+<li class="">Makes system development possible</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Blueprint for Development</strong></p>
+<ul>
+<li class="">Provides a <strong>step-by-step structure</strong> for coding</li>
+<li class="">Developers follow design instead of guessing logic</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Improves Software Quality</strong></p>
+<ul>
+<li class="">
+<p>Ensures:</p>
+<ul>
+<li class="">Maintainability</li>
+<li class="">Scalability</li>
+<li class="">Reliability</li>
+<li class="">Performance</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Reduces Complexity</strong></p>
+<ul>
+<li class="">Breaks system into <strong>modules/components</strong></li>
+<li class="">Makes large systems manageable</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Facilitates Communication</strong></p>
+<ul>
+<li class="">Helps developers, testers, and stakeholders understand system design</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=112-design-as-a-bridge-analysis--coding>1.1.2 Design as a Bridge (Analysis → Coding)<a href=#112-design-as-a-bridge-analysis--coding class=hash-link aria-label="Direct link to 1.1.2 Design as a Bridge (Analysis → Coding)" title="Direct link to 1.1.2 Design as a Bridge (Analysis → Coding)" translate=no>​</a></h4>
+<p>Software Design serves as a <strong>link between problem understanding and implementation</strong>.</p>
+<ul>
+<li class="">
+<p><strong>Analysis Phase</strong></p>
+<ul>
+<li class="">Focus: <em>What is the problem?</em></li>
+<li class="">Output: Requirements, DFDs, Use Cases</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Design Phase</strong></p>
+<ul>
+<li class="">Focus: <em>How will the system work?</em></li>
+<li class="">Output: Design Model (architecture, diagrams)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Coding Phase</strong></p>
+<ul>
+<li class="">Focus: <em>Implement the design</em></li>
+<li class="">Output: Source Code</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<p><strong>Importance:</strong></p>
+<ul>
+<li class="">Without design → unstructured, error-prone system</li>
+<li class="">With design → organized, efficient, maintainable system</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-software-design-manifesto>1.2 Software Design Manifesto<a href=#12-software-design-manifesto class=hash-link aria-label="Direct link to 1.2 Software Design Manifesto" title="Direct link to 1.2 Software Design Manifesto" translate=no>​</a></h3>
+<p>The <strong>Software Design Manifesto</strong> was proposed by <strong>Mitch Kapor</strong> .</p>
+<p>It states that <strong>good software design must satisfy three qualities</strong>:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=121-firmness>1.2.1 Firmness<a href=#121-firmness class=hash-link aria-label="Direct link to 1.2.1 Firmness" title="Direct link to 1.2.1 Firmness" translate=no>​</a></h4>
+<p>Software should be <strong>correct and reliable</strong>.</p>
+<ul>
+<li class="">Free from critical errors</li>
+<li class="">Performs intended functions correctly</li>
+<li class="">Stable during execution</li>
+</ul>
+<p><strong>If missing:</strong></p>
+<ul>
+<li class="">System crashes</li>
+<li class="">Incorrect results</li>
+<li class="">Unreliable behavior</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=122-commodity>1.2.2 Commodity<a href=#122-commodity class=hash-link aria-label="Direct link to 1.2.2 Commodity" title="Direct link to 1.2.2 Commodity" translate=no>​</a></h4>
+<p>Software should be <strong>useful and fulfill its purpose</strong>.</p>
+<ul>
+<li class="">Meets user requirements</li>
+<li class="">Provides necessary functionality</li>
+<li class="">Efficient and practical</li>
+</ul>
+<p><strong>If missing:</strong></p>
+<ul>
+<li class="">Software becomes useless</li>
+<li class="">Does not solve user problems</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=123-delight>1.2.3 Delight<a href=#123-delight class=hash-link aria-label="Direct link to 1.2.3 Delight" title="Direct link to 1.2.3 Delight" translate=no>​</a></h4>
+<p>Software should provide a <strong>pleasant and satisfying experience</strong>.</p>
+<ul>
+<li class="">Easy to use</li>
+<li class="">Good interface (UI/UX)</li>
+<li class="">Comfortable interaction</li>
+</ul>
+<p><strong>If missing:</strong></p>
+<ul>
+<li class="">Difficult to use</li>
+<li class="">Poor user experience</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-combined-understanding>🔁 Combined Understanding<a href=#-combined-understanding class=hash-link aria-label="Direct link to 🔁 Combined Understanding" title="Direct link to 🔁 Combined Understanding" translate=no>​</a></h3>
+<p>For a software to be successful, it must satisfy:</p>
+<ul>
+<li class=""><strong>Firmness → Works correctly</strong></li>
+<li class=""><strong>Commodity → Solves the problem</strong></li>
+<li class=""><strong>Delight → Feels good to use</strong></li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-design-model>2. Design Model<a href=#2-design-model class=hash-link aria-label="Direct link to 2. Design Model" title="Direct link to 2. Design Model" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-definition-of-design-model>2.1 Definition of Design Model<a href=#21-definition-of-design-model class=hash-link aria-label="Direct link to 2.1 Definition of Design Model" title="Direct link to 2.1 Definition of Design Model" translate=no>​</a></h3>
+<p>A <strong>Design Model</strong> is a <strong>blueprint of the software system</strong> that represents how the system will be constructed.</p>
+<ul>
+<li class="">
+<p>It defines:</p>
+<ul>
+<li class="">System architecture</li>
+<li class="">Components</li>
+<li class="">Interfaces</li>
+<li class="">Data structures</li>
+</ul>
+</li>
+<li class="">
+<p>It transforms <strong>analysis model → implementation-ready structure</strong></p>
+</li>
+<li class="">
+<p>Acts as a <strong>guide for developers during coding</strong></p>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=22-elements-of-design-model>2.2 Elements of Design Model<a href=#22-elements-of-design-model class=hash-link aria-label="Direct link to 2.2 Elements of Design Model" title="Direct link to 2.2 Elements of Design Model" translate=no>​</a></h3>
+<p>The design model is composed of four major elements:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=221-architectural-design>2.2.1 Architectural Design<a href=#221-architectural-design class=hash-link aria-label="Direct link to 2.2.1 Architectural Design" title="Direct link to 2.2.1 Architectural Design" translate=no>​</a></h4>
+<p>Architectural Design defines the <strong>overall structure of the system</strong>.</p>
+<ul>
+<li class="">Identifies major components/modules</li>
+<li class="">Defines how components interact</li>
+<li class="">Describes system organization</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Layered Architecture</li>
+<li class="">Client-Server</li>
+<li class="">MVC</li>
+</ul>
+<p><strong>Focus:</strong></p>
+<ul>
+<li class="">High-level system structure</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=222-data-design>2.2.2 Data Design<a href=#222-data-design class=hash-link aria-label="Direct link to 2.2.2 Data Design" title="Direct link to 2.2.2 Data Design" translate=no>​</a></h4>
+<p>Data Design defines how <strong>data is stored, organized, and managed</strong>.</p>
+<ul>
+<li class="">Identifies data structures</li>
+<li class="">Defines database schema</li>
+<li class="">Establishes relationships between data</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Tables</li>
+<li class="">Attributes</li>
+<li class="">Relationships</li>
+</ul>
+<p><strong>Focus:</strong></p>
+<ul>
+<li class="">Data organization and storage</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=223-interface-design>2.2.3 Interface Design<a href=#223-interface-design class=hash-link aria-label="Direct link to 2.2.3 Interface Design" title="Direct link to 2.2.3 Interface Design" translate=no>​</a></h4>
+<p>Interface Design defines how <strong>users and system components interact</strong>.</p>
+<ul>
+<li class="">User Interface (UI)</li>
+<li class="">System Interfaces (APIs)</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Screens</li>
+<li class="">Input/output formats</li>
+<li class="">Navigation</li>
+</ul>
+<p><strong>Focus:</strong></p>
+<ul>
+<li class="">
+<p>Interaction between:</p>
+<ul>
+<li class="">User ↔ System</li>
+<li class="">System ↔ System</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=224-component-level-design>2.2.4 Component-Level Design<a href=#224-component-level-design class=hash-link aria-label="Direct link to 2.2.4 Component-Level Design" title="Direct link to 2.2.4 Component-Level Design" translate=no>​</a></h4>
+<p>Component-Level Design defines the <strong>internal structure of each module</strong>.</p>
+<ul>
+<li class="">
+<p>Describes:</p>
+<ul>
+<li class="">Classes</li>
+<li class="">Methods</li>
+<li class="">Logic</li>
+</ul>
+</li>
+<li class="">
+<p>Provides detailed design for implementation</p>
+</li>
+</ul>
+<p><strong>Focus:</strong></p>
+<ul>
+<li class="">Low-level design (inside components)</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=relationship-between-elements>Relationship Between Elements<a href=#relationship-between-elements class=hash-link aria-label="Direct link to Relationship Between Elements" title="Direct link to Relationship Between Elements" translate=no>​</a></h4>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=23-outputs-of-design-model>2.3 Outputs of Design Model<a href=#23-outputs-of-design-model class=hash-link aria-label="Direct link to 2.3 Outputs of Design Model" title="Direct link to 2.3 Outputs of Design Model" translate=no>​</a></h3>
+<p>Each design element produces specific outputs used in development:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=231-architecture-diagram>2.3.1 Architecture Diagram<a href=#231-architecture-diagram class=hash-link aria-label="Direct link to 2.3.1 Architecture Diagram" title="Direct link to 2.3.1 Architecture Diagram" translate=no>​</a></h4>
+<ul>
+<li class="">Represents <strong>overall system structure</strong></li>
+<li class="">Shows components and their connections</li>
+<li class="">Used for high-level understanding</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=232-er-diagram>2.3.2 ER Diagram<a href=#232-er-diagram class=hash-link aria-label="Direct link to 2.3.2 ER Diagram" title="Direct link to 2.3.2 ER Diagram" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Represents <strong>data model</strong></p>
+</li>
+<li class="">
+<p>Shows:</p>
+<ul>
+<li class="">Entities</li>
+<li class="">Attributes</li>
+<li class="">Relationships</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=233-ui--interface-specification>2.3.3 UI / Interface Specification<a href=#233-ui--interface-specification class=hash-link aria-label="Direct link to 2.3.3 UI / Interface Specification" title="Direct link to 2.3.3 UI / Interface Specification" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Defines <strong>user interface design</strong></p>
+</li>
+<li class="">
+<p>Includes:</p>
+<ul>
+<li class="">Screens</li>
+<li class="">Layout</li>
+<li class="">User interactions</li>
+</ul>
+</li>
+<li class="">
+<p>May include API/interface details</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=234-class-diagram>2.3.4 Class Diagram<a href=#234-class-diagram class=hash-link aria-label="Direct link to 2.3.4 Class Diagram" title="Direct link to 2.3.4 Class Diagram" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Represents <strong>component-level structure</strong></p>
+</li>
+<li class="">
+<p>Shows:</p>
+<ul>
+<li class="">Classes</li>
+<li class="">Attributes</li>
+<li class="">Methods</li>
+<li class="">Relationships</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=overall-flow-of-design-model>Overall Flow of Design Model<a href=#overall-flow-of-design-model class=hash-link aria-label="Direct link to Overall Flow of Design Model" title="Direct link to Overall Flow of Design Model" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-analysis-model--design-model-mapping>3. Analysis Model <code>=></code> Design Model Mapping<a href=#3-analysis-model--design-model-mapping class=hash-link aria-label="Direct link to 3-analysis-model--design-model-mapping" title="Direct link to 3-analysis-model--design-model-mapping" translate=no>​</a></h2>
+<p>The <strong>Analysis Model → Design Model Mapping</strong> shows how elements identified during analysis are <strong>converted into design elements</strong>.</p>
+<ul>
+<li class="">Analysis Model → focuses on <strong>understanding the problem (what)</strong></li>
+<li class="">Design Model → focuses on <strong>solution structure (how)</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-overall-mapping>🔁 Overall Mapping<a href=#-overall-mapping class=hash-link aria-label="Direct link to 🔁 Overall Mapping" title="Direct link to 🔁 Overall Mapping" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=31-flow-oriented-elements>3.1 Flow-Oriented Elements<a href=#31-flow-oriented-elements class=hash-link aria-label="Direct link to 3.1 Flow-Oriented Elements" title="Direct link to 3.1 Flow-Oriented Elements" translate=no>​</a></h3>
+<p>Flow-oriented elements describe <strong>how data moves and is processed</strong> in the system.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=311-data-flow-diagrams-dfd>3.1.1 Data Flow Diagrams (DFD)<a href=#311-data-flow-diagrams-dfd class=hash-link aria-label="Direct link to 3.1.1 Data Flow Diagrams (DFD)" title="Direct link to 3.1.1 Data Flow Diagrams (DFD)" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Represents <strong>flow of data through the system</strong></p>
+</li>
+<li class="">
+<p>Shows:</p>
+<ul>
+<li class="">Processes</li>
+<li class="">Data stores</li>
+<li class="">External entities</li>
+<li class="">Data flow</li>
+</ul>
+</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Understand input → processing → output</li>
+</ul>
+<p><strong>Used in design for:</strong></p>
+<ul>
+<li class="">Identifying modules</li>
+<li class="">Defining system structure</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=312-control-flow-diagrams>3.1.2 Control Flow Diagrams<a href=#312-control-flow-diagrams class=hash-link aria-label="Direct link to 3.1.2 Control Flow Diagrams" title="Direct link to 3.1.2 Control Flow Diagrams" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Shows <strong>flow of control (execution order)</strong></p>
+</li>
+<li class="">
+<p>Focuses on:</p>
+<ul>
+<li class="">Conditions</li>
+<li class="">Decision points</li>
+<li class="">Control logic</li>
+</ul>
+</li>
+</ul>
+<p><strong>Used in design for:</strong></p>
+<ul>
+<li class="">Defining program logic</li>
+<li class="">Structuring control mechanisms</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=313-processing-narratives>3.1.3 Processing Narratives<a href=#313-processing-narratives class=hash-link aria-label="Direct link to 3.1.3 Processing Narratives" title="Direct link to 3.1.3 Processing Narratives" translate=no>​</a></h4>
+<ul>
+<li class="">Describes <strong>step-by-step processing logic in text form</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Input processing</li>
+<li class="">Output generation</li>
+<li class="">Internal operations</li>
+</ul>
+<p><strong>Used in design for:</strong></p>
+<ul>
+<li class="">Converting logic into algorithms</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=32-scenario-based-elements>3.2 Scenario-Based Elements<a href=#32-scenario-based-elements class=hash-link aria-label="Direct link to 3.2 Scenario-Based Elements" title="Direct link to 3.2 Scenario-Based Elements" translate=no>​</a></h3>
+<p>Scenario-based elements describe <strong>user interaction with the system</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=321-use-case-descriptions>3.2.1 Use Case Descriptions<a href=#321-use-case-descriptions class=hash-link aria-label="Direct link to 3.2.1 Use Case Descriptions" title="Direct link to 3.2.1 Use Case Descriptions" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Textual description of:</p>
+<ul>
+<li class="">User actions</li>
+<li class="">System responses</li>
+</ul>
+</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Define system functionality from user perspective</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=322-use-case-diagrams>3.2.2 Use Case Diagrams<a href=#322-use-case-diagrams class=hash-link aria-label="Direct link to 3.2.2 Use Case Diagrams" title="Direct link to 3.2.2 Use Case Diagrams" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Visual representation of:</p>
+<ul>
+<li class="">Actors (users)</li>
+<li class="">Use cases (functions)</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=323-activity-diagrams>3.2.3 Activity Diagrams<a href=#323-activity-diagrams class=hash-link aria-label="Direct link to 3.2.3 Activity Diagrams" title="Direct link to 3.2.3 Activity Diagrams" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Shows <strong>workflow of activities</strong></p>
+</li>
+<li class="">
+<p>Includes:</p>
+<ul>
+<li class="">Actions</li>
+<li class="">Decisions</li>
+<li class="">Parallel flows</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=324-swimlane-diagrams>3.2.4 Swimlane Diagrams<a href=#324-swimlane-diagrams class=hash-link aria-label="Direct link to 3.2.4 Swimlane Diagrams" title="Direct link to 3.2.4 Swimlane Diagrams" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Activity diagram with <strong>role separation</strong></p>
+</li>
+<li class="">
+<p>Divides system into <strong>lanes (actors/components)</strong></p>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=33-class-based-elements>3.3 Class-Based Elements<a href=#33-class-based-elements class=hash-link aria-label="Direct link to 3.3 Class-Based Elements" title="Direct link to 3.3 Class-Based Elements" translate=no>​</a></h3>
+<p>Class-based elements define <strong>system structure using objects and classes</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=331-class-diagrams>3.3.1 Class Diagrams<a href=#331-class-diagrams class=hash-link aria-label="Direct link to 3.3.1 Class Diagrams" title="Direct link to 3.3.1 Class Diagrams" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Shows:</p>
+<ul>
+<li class="">Classes</li>
+<li class="">Attributes</li>
+<li class="">Methods</li>
+<li class="">Relationships</li>
+</ul>
+</li>
+</ul>
+<p><strong>Used in design for:</strong></p>
+<ul>
+<li class="">Creating object-oriented structure</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=332-analysis-packages>3.3.2 Analysis Packages<a href=#332-analysis-packages class=hash-link aria-label="Direct link to 3.3.2 Analysis Packages" title="Direct link to 3.3.2 Analysis Packages" translate=no>​</a></h4>
+<ul>
+<li class="">Groups related classes into <strong>packages</strong></li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Organize system into logical units</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=333-crc-models-class-responsibility-collaboration>3.3.3 CRC Models (Class-Responsibility-Collaboration)<a href=#333-crc-models-class-responsibility-collaboration class=hash-link aria-label="Direct link to 3.3.3 CRC Models (Class-Responsibility-Collaboration)" title="Direct link to 3.3.3 CRC Models (Class-Responsibility-Collaboration)" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Defines:</p>
+<ul>
+<li class="">Class responsibilities</li>
+<li class="">Collaborations with other classes</li>
+</ul>
+</li>
+</ul>
+<p><strong>Used for:</strong></p>
+<ul>
+<li class="">Understanding class behavior</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=334-collaboration-diagrams>3.3.4 Collaboration Diagrams<a href=#334-collaboration-diagrams class=hash-link aria-label="Direct link to 3.3.4 Collaboration Diagrams" title="Direct link to 3.3.4 Collaboration Diagrams" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Shows <strong>interaction between objects</strong></p>
+</li>
+<li class="">
+<p>Focus:</p>
+<ul>
+<li class="">Message passing</li>
+<li class="">Object relationships</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=34-behavioral-elements>3.4 Behavioral Elements<a href=#34-behavioral-elements class=hash-link aria-label="Direct link to 3.4 Behavioral Elements" title="Direct link to 3.4 Behavioral Elements" translate=no>​</a></h3>
+<p>Behavioral elements describe <strong>dynamic behavior of the system over time</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=341-state-diagrams>3.4.1 State Diagrams<a href=#341-state-diagrams class=hash-link aria-label="Direct link to 3.4.1 State Diagrams" title="Direct link to 3.4.1 State Diagrams" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Represents <strong>states of an object/system</strong></p>
+</li>
+<li class="">
+<p>Shows:</p>
+<ul>
+<li class="">State transitions</li>
+<li class="">Events</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=342-sequence-diagrams>3.4.2 Sequence Diagrams<a href=#342-sequence-diagrams class=hash-link aria-label="Direct link to 3.4.2 Sequence Diagrams" title="Direct link to 3.4.2 Sequence Diagrams" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Shows <strong>interaction between objects over time</strong></p>
+</li>
+<li class="">
+<p>Focus:</p>
+<ul>
+<li class="">Message sequence</li>
+<li class="">Time order</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-architectural-design>4. Architectural Design<a href=#4-architectural-design class=hash-link aria-label="Direct link to 4. Architectural Design" title="Direct link to 4. Architectural Design" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=41-definition-of-architecture>4.1 Definition of Architecture<a href=#41-definition-of-architecture class=hash-link aria-label="Direct link to 4.1 Definition of Architecture" title="Direct link to 4.1 Definition of Architecture" translate=no>​</a></h3>
+<p>Software Architecture is the <strong>overall structure of a software system</strong> and the way its components interact with each other.</p>
+<ul>
+<li class="">It is <strong>not the actual software</strong>, but a <strong>representation of the system</strong></li>
+<li class="">Helps in understanding and evaluating system design</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=411-architecture-as-representation>4.1.1 Architecture as Representation<a href=#411-architecture-as-representation class=hash-link aria-label="Direct link to 4.1.1 Architecture as Representation" title="Direct link to 4.1.1 Architecture as Representation" translate=no>​</a></h4>
+<p>Architecture is a <strong>model or blueprint</strong> that enables a software engineer to:</p>
+<ul>
+<li class="">Analyze whether design meets requirements</li>
+<li class="">Explore different design alternatives</li>
+<li class="">Identify and reduce risks early</li>
+</ul>
+<p>👉 It provides a <strong>high-level view of the system</strong> before implementation</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=412-goals-of-architecture>4.1.2 Goals of Architecture<a href=#412-goals-of-architecture class=hash-link aria-label="Direct link to 4.1.2 Goals of Architecture" title="Direct link to 4.1.2 Goals of Architecture" translate=no>​</a></h4>
+<p>The main goals of software architecture are:</p>
+<ul>
+<li class="">
+<p><strong>Analyze design effectiveness</strong></p>
+<ul>
+<li class="">Check if system satisfies requirements</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Evaluate alternatives</strong></p>
+<ul>
+<li class="">Compare different architectural approaches</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Reduce risks</strong></p>
+<ul>
+<li class="">Identify issues early before coding begins</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=42-importance-of-architecture>4.2 Importance of Architecture<a href=#42-importance-of-architecture class=hash-link aria-label="Direct link to 4.2 Importance of Architecture" title="Direct link to 4.2 Importance of Architecture" translate=no>​</a></h3>
+<p>Architecture plays a <strong>critical role in software development</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=421-stakeholder-communication>4.2.1 Stakeholder Communication<a href=#421-stakeholder-communication class=hash-link aria-label="Direct link to 4.2.1 Stakeholder Communication" title="Direct link to 4.2.1 Stakeholder Communication" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Acts as a <strong>common language</strong> between:</p>
+<ul>
+<li class="">Developers</li>
+<li class="">Designers</li>
+<li class="">Clients</li>
+<li class="">Testers</li>
+</ul>
+</li>
+<li class="">
+<p>Helps everyone understand system structure</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=422-early-design-decisions>4.2.2 Early Design Decisions<a href=#422-early-design-decisions class=hash-link aria-label="Direct link to 4.2.2 Early Design Decisions" title="Direct link to 4.2.2 Early Design Decisions" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Captures <strong>key decisions at early stages</strong></p>
+</li>
+<li class="">
+<p>These decisions:</p>
+<ul>
+<li class="">Influence future development</li>
+<li class="">Are difficult to change later</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=423-system-success-impact>4.2.3 System Success Impact<a href=#423-system-success-impact class=hash-link aria-label="Direct link to 4.2.3 System Success Impact" title="Direct link to 4.2.3 System Success Impact" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Strong architecture leads to:</p>
+<ul>
+<li class="">Better performance</li>
+<li class="">Higher reliability</li>
+<li class="">Easier maintenance</li>
+</ul>
+</li>
+<li class="">
+<p>Poor architecture leads to:</p>
+<ul>
+<li class="">System failure</li>
+<li class="">High cost of changes</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=43-architectural-context>4.3 Architectural Context<a href=#43-architectural-context class=hash-link aria-label="Direct link to 4.3 Architectural Context" title="Direct link to 4.3 Architectural Context" translate=no>​</a></h3>
+<p>Architectural context defines the <strong>environment in which the system operates</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=431-external-entities>4.3.1 External Entities<a href=#431-external-entities class=hash-link aria-label="Direct link to 4.3.1 External Entities" title="Direct link to 4.3.1 External Entities" translate=no>​</a></h4>
+<p>External entities are <strong>outside the system but interact with it</strong>.</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Users</li>
+<li class="">Devices (sensors, control panels)</li>
+<li class="">Other systems (internet services)</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=432-system-interaction>4.3.2 System Interaction<a href=#432-system-interaction class=hash-link aria-label="Direct link to 4.3.2 System Interaction" title="Direct link to 4.3.2 System Interaction" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Describes how system communicates with external entities</p>
+</li>
+<li class="">
+<p>Defines:</p>
+<ul>
+<li class="">Input/output flow</li>
+<li class="">Communication channels</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=44-architectural-properties>4.4 Architectural Properties<a href=#44-architectural-properties class=hash-link aria-label="Direct link to 4.4 Architectural Properties" title="Direct link to 4.4 Architectural Properties" translate=no>​</a></h3>
+<p>Architectural properties define the <strong>characteristics of the system structure</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=441-structural-properties>4.4.1 Structural Properties<a href=#441-structural-properties class=hash-link aria-label="Direct link to 4.4.1 Structural Properties" title="Direct link to 4.4.1 Structural Properties" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Define:</p>
+<ul>
+<li class="">System components (modules, objects)</li>
+<li class="">Relationships between components</li>
+</ul>
+</li>
+<li class="">
+<p>Focus on:</p>
+<ul>
+<li class="">Organization</li>
+<li class="">Interaction</li>
+<li class="">Structure of system</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=442-extra-functional-properties>4.4.2 Extra-Functional Properties<a href=#442-extra-functional-properties class=hash-link aria-label="Direct link to 4.4.2 Extra-Functional Properties" title="Direct link to 4.4.2 Extra-Functional Properties" translate=no>​</a></h4>
+<p>These define <strong>quality attributes</strong> of the system:</p>
+<ul>
+<li class="">
+<p><strong>Performance</strong></p>
+<ul>
+<li class="">Speed and responsiveness</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Capacity</strong></p>
+<ul>
+<li class="">Ability to handle load</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Reliability</strong></p>
+<ul>
+<li class="">Consistent and correct functioning</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Security</strong></p>
+<ul>
+<li class="">Protection from threats</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Adaptability</strong></p>
+<ul>
+<li class="">Ability to evolve and change</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=45-families-of-related-systems>4.5 Families of Related Systems<a href=#45-families-of-related-systems class=hash-link aria-label="Direct link to 4.5 Families of Related Systems" title="Direct link to 4.5 Families of Related Systems" translate=no>​</a></h3>
+<p>Architecture supports <strong>reuse across similar systems</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=451-reusable-architectural-patterns>4.5.1 Reusable Architectural Patterns<a href=#451-reusable-architectural-patterns class=hash-link aria-label="Direct link to 4.5.1 Reusable Architectural Patterns" title="Direct link to 4.5.1 Reusable Architectural Patterns" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Common solutions reused in multiple systems</p>
+</li>
+<li class="">
+<p>Examples:</p>
+<ul>
+<li class="">Layered Architecture</li>
+<li class="">Client-Server</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=452-architectural-building-blocks>4.5.2 Architectural Building Blocks<a href=#452-architectural-building-blocks class=hash-link aria-label="Direct link to 4.5.2 Architectural Building Blocks" title="Direct link to 4.5.2 Architectural Building Blocks" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Systems are built using <strong>standard components and patterns</strong></p>
+</li>
+<li class="">
+<p>Enables:</p>
+<ul>
+<li class="">Faster development</li>
+<li class="">Consistency</li>
+<li class="">Reusability</li>
+</ul>
+</li>
+</ul>
+<p>👉 Architecture promotes <strong>reuse instead of redesigning from scratch</strong></p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-architectural-genres-and-styles>5. Architectural Genres and Styles<a href=#5-architectural-genres-and-styles class=hash-link aria-label="Direct link to 5. Architectural Genres and Styles" title="Direct link to 5. Architectural Genres and Styles" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=51-architectural-genres>5.1 Architectural Genres<a href=#51-architectural-genres class=hash-link aria-label="Direct link to 5.1 Architectural Genres" title="Direct link to 5.1 Architectural Genres" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=511-definition>5.1.1 Definition<a href=#511-definition class=hash-link aria-label="Direct link to 5.1.1 Definition" title="Direct link to 5.1.1 Definition" translate=no>​</a></h4>
+<p>An <strong>Architectural Genre</strong> refers to a <strong>broad category of software systems</strong> within a particular domain.</p>
+<ul>
+<li class="">It groups systems based on <strong>similar characteristics or purposes</strong></li>
+<li class="">Each genre contains multiple <strong>styles and patterns</strong></li>
+<li class="">Concept is similar to categories in real-world structures (e.g., buildings)</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=512-categories-and-subcategories>5.1.2 Categories and Subcategories<a href=#512-categories-and-subcategories class=hash-link aria-label="Direct link to 5.1.2 Categories and Subcategories" title="Direct link to 5.1.2 Categories and Subcategories" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>A genre is divided into:</p>
+<ul>
+<li class=""><strong>Categories</strong> (general types of systems)</li>
+<li class=""><strong>Subcategories</strong> (specific variations within a category)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">
+<p>Genre: Software Systems</p>
+<ul>
+<li class="">
+<p>Category: Web Applications</p>
+<ul>
+<li class="">Subcategory: E-commerce, Social Media</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>👉 Each level becomes more <strong>specific and structured</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=513-pattern-based-structures>5.1.3 Pattern-Based Structures<a href=#513-pattern-based-structures class=hash-link aria-label="Direct link to 5.1.3 Pattern-Based Structures" title="Direct link to 5.1.3 Pattern-Based Structures" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Each genre follows <strong>predictable patterns</strong></p>
+</li>
+<li class="">
+<p>These patterns define:</p>
+<ul>
+<li class="">Structure</li>
+<li class="">Behavior</li>
+<li class="">Interaction</li>
+</ul>
+</li>
+</ul>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">Systems in the same genre often use <strong>similar architectural patterns</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=52-architectural-styles>5.2 Architectural Styles<a href=#52-architectural-styles class=hash-link aria-label="Direct link to 5.2 Architectural Styles" title="Direct link to 5.2 Architectural Styles" translate=no>​</a></h3>
+<p>An <strong>Architectural Style</strong> defines a <strong>specific way of organizing a system</strong>.</p>
+<ul>
+<li class="">
+<p>It describes:</p>
+<ul>
+<li class="">Components</li>
+<li class="">Connections</li>
+<li class="">Rules of interaction</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=521-components>5.2.1 Components<a href=#521-components class=hash-link aria-label="Direct link to 5.2.1 Components" title="Direct link to 5.2.1 Components" translate=no>​</a></h4>
+<ul>
+<li class="">Fundamental building blocks of the system</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Modules</li>
+<li class="">Objects</li>
+<li class="">Databases</li>
+<li class="">Services</li>
+</ul>
+<p><strong>Role:</strong></p>
+<ul>
+<li class="">Perform specific functions within the system</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=522-connectors>5.2.2 Connectors<a href=#522-connectors class=hash-link aria-label="Direct link to 5.2.2 Connectors" title="Direct link to 5.2.2 Connectors" translate=no>​</a></h4>
+<ul>
+<li class="">Define <strong>how components communicate and interact</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Function calls</li>
+<li class="">APIs</li>
+<li class="">Message passing</li>
+<li class="">Data streams</li>
+</ul>
+<p><strong>Role:</strong></p>
+<ul>
+<li class="">
+<p>Enable:</p>
+<ul>
+<li class="">Communication</li>
+<li class="">Coordination</li>
+<li class="">Cooperation</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=523-constraints>5.2.3 Constraints<a href=#523-constraints class=hash-link aria-label="Direct link to 5.2.3 Constraints" title="Direct link to 5.2.3 Constraints" translate=no>​</a></h4>
+<ul>
+<li class="">Rules that define <strong>how components can be combined</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Layered systems: upper layer depends on lower layer</li>
+<li class="">Client-server: client cannot directly access database</li>
+</ul>
+<p><strong>Role:</strong></p>
+<ul>
+<li class="">Maintain structure and discipline in design</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=524-semantic-models>5.2.4 Semantic Models<a href=#524-semantic-models class=hash-link aria-label="Direct link to 5.2.4 Semantic Models" title="Direct link to 5.2.4 Semantic Models" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Provide <strong>meaning and understanding of the system behavior</strong></p>
+</li>
+<li class="">
+<p>Help designers:</p>
+<ul>
+<li class="">Analyze system properties</li>
+<li class="">Predict system behavior</li>
+<li class="">Understand interactions</li>
+</ul>
+</li>
+</ul>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">System behavior can be understood by studying its components and relationships</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-structure-of-architectural-style>🔁 Structure of Architectural Style<a href=#-structure-of-architectural-style class=hash-link aria-label="Direct link to 🔁 Structure of Architectural Style" title="Direct link to 🔁 Structure of Architectural Style" translate=no>​</a></h3>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-types-of-software-architectures>6. Types of Software Architectures<a href=#6-types-of-software-architectures class=hash-link aria-label="Direct link to 6. Types of Software Architectures" title="Direct link to 6. Types of Software Architectures" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=61-data-centered-architecture>6.1 Data-Centered Architecture<a href=#61-data-centered-architecture class=hash-link aria-label="Direct link to 6.1 Data-Centered Architecture" title="Direct link to 6.1 Data-Centered Architecture" translate=no>​</a></h3>
+<p>A <strong>Data-Centered Architecture</strong> focuses on a <strong>central data repository</strong> accessed by multiple components.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=611-central-repository>6.1.1 Central Repository<a href=#611-central-repository class=hash-link aria-label="Direct link to 6.1.1 Central Repository" title="Direct link to 6.1.1 Central Repository" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>A <strong>central data store</strong> (database) is maintained</p>
+</li>
+<li class="">
+<p>All components:</p>
+<ul>
+<li class="">Read data</li>
+<li class="">Write data</li>
+<li class="">Modify data</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=612-blackboard-model>6.1.2 Blackboard Model<a href=#612-blackboard-model class=hash-link aria-label="Direct link to 6.1.2 Blackboard Model" title="Direct link to 6.1.2 Blackboard Model" translate=no>​</a></h4>
+<ul>
+<li class="">A type of data-centered architecture</li>
+<li class="">Data is shared through a <strong>common “blackboard”</strong></li>
+<li class="">Independent components contribute and read data</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=613-advantages>6.1.3 Advantages<a href=#613-advantages class=hash-link aria-label="Direct link to 6.1.3 Advantages" title="Direct link to 6.1.3 Advantages" translate=no>​</a></h4>
+<ul>
+<li class="">Easy to add new components</li>
+<li class="">Components are independent</li>
+<li class="">Centralized data management</li>
+<li class="">Easy data sharing</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=614-disadvantages>6.1.4 Disadvantages<a href=#614-disadvantages class=hash-link aria-label="Direct link to 6.1.4 Disadvantages" title="Direct link to 6.1.4 Disadvantages" translate=no>​</a></h4>
+<ul>
+<li class="">Single point of failure</li>
+<li class="">Performance bottleneck</li>
+<li class="">Security risks (central access)</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=62-data-flow-architecture>6.2 Data Flow Architecture<a href=#62-data-flow-architecture class=hash-link aria-label="Direct link to 6.2 Data Flow Architecture" title="Direct link to 6.2 Data Flow Architecture" translate=no>​</a></h3>
+<p>Data Flow Architecture focuses on <strong>transforming input data into output through a series of processing steps</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=621-pipe-and-filter-model>6.2.1 Pipe-and-Filter Model<a href=#621-pipe-and-filter-model class=hash-link aria-label="Direct link to 6.2.1 Pipe-and-Filter Model" title="Direct link to 6.2.1 Pipe-and-Filter Model" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>System is divided into:</p>
+<ul>
+<li class=""><strong>Filters</strong> → process data</li>
+<li class=""><strong>Pipes</strong> → transfer data</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=622-batch-sequential-model>6.2.2 Batch Sequential Model<a href=#622-batch-sequential-model class=hash-link aria-label="Direct link to 6.2.2 Batch Sequential Model" title="Direct link to 6.2.2 Batch Sequential Model" translate=no>​</a></h4>
+<ul>
+<li class="">Data is processed in <strong>sequence of steps</strong></li>
+<li class="">Output of one step becomes input to next</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=623-advantages>6.2.3 Advantages<a href=#623-advantages class=hash-link aria-label="Direct link to 6.2.3 Advantages" title="Direct link to 6.2.3 Advantages" translate=no>​</a></h4>
+<ul>
+<li class="">Simple and easy to understand</li>
+<li class="">High reusability of components</li>
+<li class="">Easy testing and maintenance</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=624-disadvantages>6.2.4 Disadvantages<a href=#624-disadvantages class=hash-link aria-label="Direct link to 6.2.4 Disadvantages" title="Direct link to 6.2.4 Disadvantages" translate=no>​</a></h4>
+<ul>
+<li class="">Not suitable for interactive systems</li>
+<li class="">Data format changes affect entire system</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=63-call-and-return-architecture>6.3 Call and Return Architecture<a href=#63-call-and-return-architecture class=hash-link aria-label="Direct link to 6.3 Call and Return Architecture" title="Direct link to 6.3 Call and Return Architecture" translate=no>​</a></h3>
+<p>This architecture organizes system into <strong>hierarchical modules</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=631-main-programsubprogram>6.3.1 Main Program/Subprogram<a href=#631-main-programsubprogram class=hash-link aria-label="Direct link to 6.3.1 Main Program/Subprogram" title="Direct link to 6.3.1 Main Program/Subprogram" translate=no>​</a></h4>
+<ul>
+<li class="">A <strong>main program</strong> controls execution</li>
+<li class="">Calls multiple <strong>subprograms/functions</strong></li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=632-rpc-remote-procedure-call>6.3.2 RPC (Remote Procedure Call)<a href=#632-rpc-remote-procedure-call class=hash-link aria-label="Direct link to 6.3.2 RPC (Remote Procedure Call)" title="Direct link to 6.3.2 RPC (Remote Procedure Call)" translate=no>​</a></h4>
+<ul>
+<li class="">Allows calling a <strong>procedure on another system over a network</strong></li>
+<li class="">Appears like a local function call</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=633-hierarchical-control-structure>6.3.3 Hierarchical Control Structure<a href=#633-hierarchical-control-structure class=hash-link aria-label="Direct link to 6.3.3 Hierarchical Control Structure" title="Direct link to 6.3.3 Hierarchical Control Structure" translate=no>​</a></h4>
+<ul>
+<li class="">System is arranged in <strong>levels</strong></li>
+<li class="">Top-level modules control lower-level modules</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=64-object-oriented-architecture>6.4 Object-Oriented Architecture<a href=#64-object-oriented-architecture class=hash-link aria-label="Direct link to 6.4 Object-Oriented Architecture" title="Direct link to 6.4 Object-Oriented Architecture" translate=no>​</a></h3>
+<p>Architecture based on <strong>objects and classes</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=641-objects-and-classes>6.4.1 Objects and Classes<a href=#641-objects-and-classes class=hash-link aria-label="Direct link to 6.4.1 Objects and Classes" title="Direct link to 6.4.1 Objects and Classes" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>Object</strong> → instance of a class</p>
+</li>
+<li class="">
+<p><strong>Class</strong> → blueprint defining:</p>
+<ul>
+<li class="">Attributes</li>
+<li class="">Methods</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=642-encapsulation>6.4.2 Encapsulation<a href=#642-encapsulation class=hash-link aria-label="Direct link to 6.4.2 Encapsulation" title="Direct link to 6.4.2 Encapsulation" translate=no>​</a></h4>
+<ul>
+<li class="">Data and methods are <strong>bundled together</strong></li>
+<li class="">Internal details are hidden from outside</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Security</li>
+<li class="">Modularity</li>
+<li class="">Reusability</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=65-layered-architecture>6.5 Layered Architecture<a href=#65-layered-architecture class=hash-link aria-label="Direct link to 6.5 Layered Architecture" title="Direct link to 6.5 Layered Architecture" translate=no>​</a></h3>
+<p>System is divided into <strong>layers</strong>, each with specific responsibilities.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=651-layer-types>6.5.1 Layer Types<a href=#651-layer-types class=hash-link aria-label="Direct link to 6.5.1 Layer Types" title="Direct link to 6.5.1 Layer Types" translate=no>​</a></h4>
+<ol>
+<li class="">
+<p><strong>User Interface Layer</strong></p>
+<ul>
+<li class="">Handles user interaction</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Application Layer</strong></p>
+<ul>
+<li class="">Controls application flow</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Utility Layer</strong></p>
+<ul>
+<li class="">Provides common services</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Core Layer</strong></p>
+<ul>
+<li class="">Contains business logic</li>
+</ul>
+</li>
+</ol>
+<hr/>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=652-responsibilities-of-layers>6.5.2 Responsibilities of Layers<a href=#652-responsibilities-of-layers class=hash-link aria-label="Direct link to 6.5.2 Responsibilities of Layers" title="Direct link to 6.5.2 Responsibilities of Layers" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Each layer:</p>
+<ul>
+<li class="">Performs a specific function</li>
+<li class="">Interacts only with adjacent layers</li>
+</ul>
+</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li class="">Easy maintenance</li>
+<li class="">Clear separation of concerns</li>
+<li class="">Scalability</li>
+</ul>
+<p><strong>Disadvantages:</strong></p>
+<ul>
+<li class="">Performance overhead</li>
+<li class="">Strict dependency between layers</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-architectural-patterns>7. Architectural Patterns<a href=#7-architectural-patterns class=hash-link aria-label="Direct link to 7. Architectural Patterns" title="Direct link to 7. Architectural Patterns" translate=no>​</a></h2>
+<p>Architectural Patterns are <strong>proven solutions to common architectural problems</strong> in software design.</p>
+<ul>
+<li class="">
+<p>They define:</p>
+<ul>
+<li class="">Structure of system</li>
+<li class="">Interaction between components</li>
+<li class="">Behavior under specific conditions</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=71-concurrency-patterns>7.1 Concurrency Patterns<a href=#71-concurrency-patterns class=hash-link aria-label="Direct link to 7.1 Concurrency Patterns" title="Direct link to 7.1 Concurrency Patterns" translate=no>​</a></h3>
+<p>Concurrency patterns are used when a system must <strong>handle multiple tasks simultaneously</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=711-process-management>7.1.1 Process Management<a href=#711-process-management class=hash-link aria-label="Direct link to 7.1.1 Process Management" title="Direct link to 7.1.1 Process Management" translate=no>​</a></h4>
+<ul>
+<li class="">Manages multiple <strong>processes or threads</strong> running in parallel</li>
+</ul>
+<p><strong>Functions:</strong></p>
+<ul>
+<li class="">Process creation</li>
+<li class="">Process termination</li>
+<li class="">Resource allocation</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Operating system managing multiple applications</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=712-task-scheduling>7.1.2 Task Scheduling<a href=#712-task-scheduling class=hash-link aria-label="Direct link to 7.1.2 Task Scheduling" title="Direct link to 7.1.2 Task Scheduling" translate=no>​</a></h4>
+<ul>
+<li class="">Determines <strong>order and timing of task execution</strong></li>
+</ul>
+<p><strong>Types:</strong></p>
+<ul>
+<li class="">Sequential scheduling</li>
+<li class="">Priority-based scheduling</li>
+<li class="">Round-robin scheduling</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Efficient CPU utilization</li>
+<li class="">Fair resource sharing</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=72-persistence-patterns>7.2 Persistence Patterns<a href=#72-persistence-patterns class=hash-link aria-label="Direct link to 7.2 Persistence Patterns" title="Direct link to 7.2 Persistence Patterns" translate=no>​</a></h3>
+<p>Persistence patterns ensure that <strong>data survives beyond program execution</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=721-dbms-pattern>7.2.1 DBMS Pattern<a href=#721-dbms-pattern class=hash-link aria-label="Direct link to 7.2.1 DBMS Pattern" title="Direct link to 7.2.1 DBMS Pattern" translate=no>​</a></h4>
+<ul>
+<li class="">Uses a <strong>Database Management System</strong> for storage</li>
+</ul>
+<p><strong>Features:</strong></p>
+<ul>
+<li class="">
+<p>Data stored in database</p>
+</li>
+<li class="">
+<p>Supports:</p>
+<ul>
+<li class="">Insert</li>
+<li class="">Update</li>
+<li class="">Delete</li>
+<li class="">Retrieve</li>
+</ul>
+</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li class="">Data consistency</li>
+<li class="">Reliability</li>
+<li class="">Centralized storage</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=722-application-level-persistence>7.2.2 Application-Level Persistence<a href=#722-application-level-persistence class=hash-link aria-label="Direct link to 7.2.2 Application-Level Persistence" title="Direct link to 7.2.2 Application-Level Persistence" translate=no>​</a></h4>
+<ul>
+<li class="">Persistence is handled <strong>within the application itself</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">File storage</li>
+<li class="">Object serialization</li>
+</ul>
+<p><strong>Features:</strong></p>
+<ul>
+<li class="">Custom storage logic</li>
+<li class="">More control over data</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=73-distribution-patterns>7.3 Distribution Patterns<a href=#73-distribution-patterns class=hash-link aria-label="Direct link to 7.3 Distribution Patterns" title="Direct link to 7.3 Distribution Patterns" translate=no>​</a></h3>
+<p>Distribution patterns define how <strong>components interact across different systems or locations</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=731-distributed-systems>7.3.1 Distributed Systems<a href=#731-distributed-systems class=hash-link aria-label="Direct link to 7.3.1 Distributed Systems" title="Direct link to 7.3.1 Distributed Systems" translate=no>​</a></h4>
+<ul>
+<li class="">System is divided across <strong>multiple machines or nodes</strong></li>
+</ul>
+<p><strong>Features:</strong></p>
+<ul>
+<li class="">Communication over network</li>
+<li class="">Resource sharing</li>
+<li class="">Scalability</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=732-broker-pattern>7.3.2 Broker Pattern<a href=#732-broker-pattern class=hash-link aria-label="Direct link to 7.3.2 Broker Pattern" title="Direct link to 7.3.2 Broker Pattern" translate=no>​</a></h4>
+<ul>
+<li class="">A <strong>broker acts as an intermediary</strong> between client and server</li>
+</ul>
+<!-- -->
+<p><strong>Functions of Broker:</strong></p>
+<ul>
+<li class="">Message routing</li>
+<li class="">Service discovery</li>
+<li class="">Communication management</li>
+</ul>
+<p><strong>Advantages:</strong></p>
+<ul>
+<li class="">Decouples client and server</li>
+<li class="">Improves flexibility</li>
+<li class="">Supports distributed systems</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=8-architectural-design-process>8. Architectural Design Process<a href=#8-architectural-design-process class=hash-link aria-label="Direct link to 8. Architectural Design Process" title="Direct link to 8. Architectural Design Process" translate=no>​</a></h2>
+<p>The Architectural Design Process defines how a system’s <strong>structure, components, and interactions</strong> are developed from requirements.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=81-context-modeling>8.1 Context Modeling<a href=#81-context-modeling class=hash-link aria-label="Direct link to 8.1 Context Modeling" title="Direct link to 8.1 Context Modeling" translate=no>​</a></h3>
+<p>Context modeling identifies the <strong>environment in which the system operates</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=811-system-placement>8.1.1 System Placement<a href=#811-system-placement class=hash-link aria-label="Direct link to 8.1.1 System Placement" title="Direct link to 8.1.1 System Placement" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Defines where the system exists in relation to:</p>
+<ul>
+<li class="">External systems</li>
+<li class="">Devices</li>
+<li class="">Users</li>
+</ul>
+</li>
+<li class="">
+<p>Shows system boundary</p>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=812-external-interaction>8.1.2 External Interaction<a href=#812-external-interaction class=hash-link aria-label="Direct link to 8.1.2 External Interaction" title="Direct link to 8.1.2 External Interaction" translate=no>​</a></h4>
+<ul>
+<li class="">Defines how the system <strong>communicates with external entities</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Input from users/devices</li>
+<li class="">Output to systems</li>
+<li class="">Data exchange mechanisms</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=82-architectural-archetypes>8.2 Architectural Archetypes<a href=#82-architectural-archetypes class=hash-link aria-label="Direct link to 8.2 Architectural Archetypes" title="Direct link to 8.2 Architectural Archetypes" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=821-definition>8.2.1 Definition<a href=#821-definition class=hash-link aria-label="Direct link to 8.2.1 Definition" title="Direct link to 8.2.1 Definition" translate=no>​</a></h4>
+<p>An <strong>Archetype</strong> is an <strong>abstract representation of a system component</strong> that captures a specific responsibility or behavior.</p>
+<ul>
+<li class="">Similar to a <strong>class template</strong></li>
+<li class="">Used to model system structure at a high level</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=822-types-controller-node-detector-indicator>8.2.2 Types (Controller, Node, Detector, Indicator)<a href=#822-types-controller-node-detector-indicator class=hash-link aria-label="Direct link to 8.2.2 Types (Controller, Node, Detector, Indicator)" title="Direct link to 8.2.2 Types (Controller, Node, Detector, Indicator)" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>Controller</strong></p>
+<ul>
+<li class="">Manages system operations</li>
+<li class="">Controls flow of execution</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Node</strong></p>
+<ul>
+<li class="">Represents a processing unit or subsystem</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Detector</strong></p>
+<ul>
+<li class="">Detects events or changes (e.g., sensors)</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Indicator</strong></p>
+<ul>
+<li class="">Provides output or signals (e.g., alarms, display)</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=83-component-structure>8.3 Component Structure<a href=#83-component-structure class=hash-link aria-label="Direct link to 8.3 Component Structure" title="Direct link to 8.3 Component Structure" translate=no>​</a></h3>
+<p>Defines how the system is divided into <strong>components/modules</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=831-initial-structure>8.3.1 Initial Structure<a href=#831-initial-structure class=hash-link aria-label="Direct link to 8.3.1 Initial Structure" title="Direct link to 8.3.1 Initial Structure" translate=no>​</a></h4>
+<ul>
+<li class="">High-level identification of components</li>
+<li class="">Basic interaction between components</li>
+</ul>
+<p><strong>Example Components:</strong></p>
+<ul>
+<li class="">User Interface</li>
+<li class="">Processing Unit</li>
+<li class="">Communication Module</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=832-refined-structure>8.3.2 Refined Structure<a href=#832-refined-structure class=hash-link aria-label="Direct link to 8.3.2 Refined Structure" title="Direct link to 8.3.2 Refined Structure" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Detailed breakdown of components into sub-components</p>
+</li>
+<li class="">
+<p>Specifies:</p>
+<ul>
+<li class="">Internal logic</li>
+<li class="">Interactions</li>
+<li class="">Responsibilities</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=84-architectural-complexity>8.4 Architectural Complexity<a href=#84-architectural-complexity class=hash-link aria-label="Direct link to 8.4 Architectural Complexity" title="Direct link to 8.4 Architectural Complexity" translate=no>​</a></h3>
+<p>Architectural complexity is determined by <strong>dependencies between components</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=841-sharing-dependencies>8.4.1 Sharing Dependencies<a href=#841-sharing-dependencies class=hash-link aria-label="Direct link to 8.4.1 Sharing Dependencies" title="Direct link to 8.4.1 Sharing Dependencies" translate=no>​</a></h4>
+<ul>
+<li class="">Occurs when multiple components <strong>share the same resource</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Multiple modules accessing same database</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=842-flow-dependencies>8.4.2 Flow Dependencies<a href=#842-flow-dependencies class=hash-link aria-label="Direct link to 8.4.2 Flow Dependencies" title="Direct link to 8.4.2 Flow Dependencies" translate=no>​</a></h4>
+<ul>
+<li class="">Occurs when one component <strong>depends on output of another</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Input → Processing → Output chain</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=843-constrained-dependencies>8.4.3 Constrained Dependencies<a href=#843-constrained-dependencies class=hash-link aria-label="Direct link to 8.4.3 Constrained Dependencies" title="Direct link to 8.4.3 Constrained Dependencies" translate=no>​</a></h4>
+<ul>
+<li class="">Occurs when there are <strong>rules restricting execution order</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Task A must complete before Task B starts</li>
+</ul>
+<hr/>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=9-architectural-description-language-adl>9. Architectural Description Language (ADL)<a href=#9-architectural-description-language-adl class=hash-link aria-label="Direct link to 9. Architectural Description Language (ADL)" title="Direct link to 9. Architectural Description Language (ADL)" translate=no>​</a></h2>
+<p>ADL is used to <strong>formally describe the architecture of a software system</strong>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=91-definition-of-adl>9.1 Definition of ADL<a href=#91-definition-of-adl class=hash-link aria-label="Direct link to 9.1 Definition of ADL" title="Direct link to 9.1 Definition of ADL" translate=no>​</a></h3>
+<p>An <strong>Architectural Description Language (ADL)</strong> is a language that provides <strong>syntax and semantics</strong> to represent software architecture.</p>
+<ul>
+<li class="">
+<p>It helps in:</p>
+<ul>
+<li class="">Describing components</li>
+<li class="">Defining relationships</li>
+<li class="">Representing system structure</li>
+</ul>
+</li>
+<li class="">
+<p>Enables clear and precise architectural documentation</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=911-syntax-and-semantics>9.1.1 Syntax and Semantics<a href=#911-syntax-and-semantics class=hash-link aria-label="Direct link to 9.1.1 Syntax and Semantics" title="Direct link to 9.1.1 Syntax and Semantics" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>Syntax</strong></p>
+<ul>
+<li class="">Defines the <strong>structure and rules</strong> for writing architectural descriptions</li>
+<li class="">Specifies how components and connections are expressed</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Semantics</strong></p>
+<ul>
+<li class="">Defines the <strong>meaning of the elements</strong> in the architecture</li>
+<li class="">Helps in understanding system behavior</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=92-capabilities-of-adl>9.2 Capabilities of ADL<a href=#92-capabilities-of-adl class=hash-link aria-label="Direct link to 9.2 Capabilities of ADL" title="Direct link to 9.2 Capabilities of ADL" translate=no>​</a></h3>
+<p>ADL provides powerful capabilities to model and manage architecture.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=921-decomposition-of-components>9.2.1 Decomposition of Components<a href=#921-decomposition-of-components class=hash-link aria-label="Direct link to 9.2.1 Decomposition of Components" title="Direct link to 9.2.1 Decomposition of Components" translate=no>​</a></h4>
+<ul>
+<li class="">Breaks system into <strong>smaller components/modules</strong></li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Simplifies complex systems</li>
+<li class="">Improves understanding</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=922-composition-into-systems>9.2.2 Composition into Systems<a href=#922-composition-into-systems class=hash-link aria-label="Direct link to 9.2.2 Composition into Systems" title="Direct link to 9.2.2 Composition into Systems" translate=no>​</a></h4>
+<ul>
+<li class="">Combines smaller components to form a <strong>complete system</strong></li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Build system structure</li>
+<li class="">Define relationships between components</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=923-interface-representation>9.2.3 Interface Representation<a href=#923-interface-representation class=hash-link aria-label="Direct link to 9.2.3 Interface Representation" title="Direct link to 9.2.3 Interface Representation" translate=no>​</a></h4>
+<ul>
+<li class="">Defines how components <strong>interact with each other</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Inputs and outputs</li>
+<li class="">Communication mechanisms</li>
+<li class="">Connection rules</li>
+</ul>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=10-architectural-design-method>10. Architectural Design Method<a href=#10-architectural-design-method class=hash-link aria-label="Direct link to 10. Architectural Design Method" title="Direct link to 10. Architectural Design Method" translate=no>​</a></h2>
+<p>Architectural Design Method defines <strong>how requirements are converted into system architecture</strong>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=101-requirement-mapping>10.1 Requirement Mapping<a href=#101-requirement-mapping class=hash-link aria-label="Direct link to 10.1 Requirement Mapping" title="Direct link to 10.1 Requirement Mapping" translate=no>​</a></h3>
+<p>Requirement Mapping is the process of <strong>translating user needs into architectural structure</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1011-customer-requirements>10.1.1 Customer Requirements<a href=#1011-customer-requirements class=hash-link aria-label="Direct link to 10.1.1 Customer Requirements" title="Direct link to 10.1.1 Customer Requirements" translate=no>​</a></h4>
+<ul>
+<li class="">These are <strong>user-defined needs and expectations</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">
+<p>Functional requirements (features)</p>
+</li>
+<li class="">
+<p>Non-functional requirements:</p>
+<ul>
+<li class="">Performance</li>
+<li class="">Security</li>
+<li class="">Reliability</li>
+</ul>
+</li>
+</ul>
+<p>👉 Example:</p>
+<ul>
+<li class="">“System should support multiple users”</li>
+<li class="">“System should respond within 2 seconds”</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1012-translation-to-architecture>10.1.2 Translation to Architecture<a href=#1012-translation-to-architecture class=hash-link aria-label="Direct link to 10.1.2 Translation to Architecture" title="Direct link to 10.1.2 Translation to Architecture" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Requirements are converted into:</p>
+<ul>
+<li class="">Components</li>
+<li class="">Modules</li>
+<li class="">Interactions</li>
+</ul>
+</li>
+</ul>
+<p><strong>Process:</strong></p>
+<ol>
+<li class="">Identify major system functions</li>
+<li class="">Define system components</li>
+<li class="">Establish relationships between components</li>
+<li class="">Select appropriate architectural style</li>
+</ol>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=102-deriving-program-architecture>10.2 Deriving Program Architecture<a href=#102-deriving-program-architecture class=hash-link aria-label="Direct link to 10.2 Deriving Program Architecture" title="Direct link to 10.2 Deriving Program Architecture" translate=no>​</a></h3>
+<p>Program architecture is derived from <strong>analysis models and data flow</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1021-transform-mapping>10.2.1 Transform Mapping<a href=#1021-transform-mapping class=hash-link aria-label="Direct link to 10.2.1 Transform Mapping" title="Direct link to 10.2.1 Transform Mapping" translate=no>​</a></h4>
+<p>Transform Mapping is a method used to <strong>convert data flow diagrams (DFD) into program structure</strong>.</p>
+<p><strong>Steps:</strong></p>
+<ol>
+<li class="">Identify input flow (data entering system)</li>
+<li class="">Identify transformation center (processing logic)</li>
+<li class="">Identify output flow (results produced)</li>
+<li class="">Map these into program modules</li>
+</ol>
+<!-- -->
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Convert analysis (DFD) into structured program design</li>
+<li class="">Helps define module hierarchy</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-partitioning-in-architecture>11. Partitioning in Architecture<a href=#11-partitioning-in-architecture class=hash-link aria-label="Direct link to 11. Partitioning in Architecture" title="Direct link to 11. Partitioning in Architecture" translate=no>​</a></h2>
+<p>Partitioning is the process of <strong>dividing a system into smaller, manageable parts (modules)</strong> to improve design quality.</p>
+<ul>
+<li class="">
+<p>Helps in:</p>
+<ul>
+<li class="">Reducing complexity</li>
+<li class="">Improving maintainability</li>
+<li class="">Enhancing clarity of system structure</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=111-horizontal-partitioning>11.1 Horizontal Partitioning<a href=#111-horizontal-partitioning class=hash-link aria-label="Direct link to 11.1 Horizontal Partitioning" title="Direct link to 11.1 Horizontal Partitioning" translate=no>​</a></h3>
+<p>Horizontal Partitioning divides the system into <strong>separate functional branches</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1111-functional-decomposition>11.1.1 Functional Decomposition<a href=#1111-functional-decomposition class=hash-link aria-label="Direct link to 11.1.1 Functional Decomposition" title="Direct link to 11.1.1 Functional Decomposition" translate=no>​</a></h4>
+<ul>
+<li class="">System is divided based on <strong>major functions</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Login Module</li>
+<li class="">Payment Module</li>
+<li class="">Report Module</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1112-control-modules>11.1.2 Control Modules<a href=#1112-control-modules class=hash-link aria-label="Direct link to 11.1.2 Control Modules" title="Direct link to 11.1.2 Control Modules" translate=no>​</a></h4>
+<ul>
+<li class="">Special modules that <strong>coordinate communication between functions</strong></li>
+</ul>
+<p><strong>Functions:</strong></p>
+<ul>
+<li class="">Manage data flow</li>
+<li class="">Control execution order</li>
+<li class="">Integrate different modules</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=112-vertical-partitioning-factoring>11.2 Vertical Partitioning (Factoring)<a href=#112-vertical-partitioning-factoring class=hash-link aria-label="Direct link to 11.2 Vertical Partitioning (Factoring)" title="Direct link to 11.2 Vertical Partitioning (Factoring)" translate=no>​</a></h3>
+<p>Vertical Partitioning organizes system into <strong>hierarchical levels</strong> based on control and responsibility.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1121-decision-modules>11.2.1 Decision Modules<a href=#1121-decision-modules class=hash-link aria-label="Direct link to 11.2.1 Decision Modules" title="Direct link to 11.2.1 Decision Modules" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Located at <strong>top level</strong></p>
+</li>
+<li class="">
+<p>Responsible for:</p>
+<ul>
+<li class="">Decision making</li>
+<li class="">Control flow</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Main controller</li>
+<li class="">Manager modules</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1122-worker-modules>11.2.2 Worker Modules<a href=#1122-worker-modules class=hash-link aria-label="Direct link to 11.2.2 Worker Modules" title="Direct link to 11.2.2 Worker Modules" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Located at <strong>lower levels</strong></p>
+</li>
+<li class="">
+<p>Responsible for:</p>
+<ul>
+<li class="">Performing actual tasks</li>
+<li class="">Processing data</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=113-advantages-of-partitioning>11.3 Advantages of Partitioning<a href=#113-advantages-of-partitioning class=hash-link aria-label="Direct link to 11.3 Advantages of Partitioning" title="Direct link to 11.3 Advantages of Partitioning" translate=no>​</a></h3>
+<p>Partitioning improves overall software design.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1131-easier-testing>11.3.1 Easier Testing<a href=#1131-easier-testing class=hash-link aria-label="Direct link to 11.3.1 Easier Testing" title="Direct link to 11.3.1 Easier Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Modules can be <strong>tested independently</strong></li>
+<li class="">Simplifies debugging</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1132-maintainability>11.3.2 Maintainability<a href=#1132-maintainability class=hash-link aria-label="Direct link to 11.3.2 Maintainability" title="Direct link to 11.3.2 Maintainability" translate=no>​</a></h4>
+<ul>
+<li class="">Changes in one module <strong>do not affect entire system</strong></li>
+<li class="">Easy to update</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1133-reduced-side-effects>11.3.3 Reduced Side Effects<a href=#1133-reduced-side-effects class=hash-link aria-label="Direct link to 11.3.3 Reduced Side Effects" title="Direct link to 11.3.3 Reduced Side Effects" translate=no>​</a></h4>
+<ul>
+<li class="">Errors are <strong>localized within modules</strong></li>
+<li class="">Minimizes impact on other parts</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1134-extensibility>11.3.4 Extensibility<a href=#1134-extensibility class=hash-link aria-label="Direct link to 11.3.4 Extensibility" title="Direct link to 11.3.4 Extensibility" translate=no>​</a></h4>
+<ul>
+<li class="">New features can be <strong>added easily</strong></li>
+<li class="">Supports system growth</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-fundamental-design-concepts>12. Fundamental Design Concepts<a href=#12-fundamental-design-concepts class=hash-link aria-label="Direct link to 12. Fundamental Design Concepts" title="Direct link to 12. Fundamental Design Concepts" translate=no>​</a></h2>
+<p>Fundamental design concepts are <strong>basic principles that guide software design</strong> and help create systems that are <strong>efficient, maintainable, and scalable</strong></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=121-abstraction>12.1 Abstraction<a href=#121-abstraction class=hash-link aria-label="Direct link to 12.1 Abstraction" title="Direct link to 12.1 Abstraction" translate=no>​</a></h3>
+<p>Abstraction is the process of <strong>focusing on essential features while hiding unnecessary details</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1211-data-abstraction>12.1.1 Data Abstraction<a href=#1211-data-abstraction class=hash-link aria-label="Direct link to 12.1.1 Data Abstraction" title="Direct link to 12.1.1 Data Abstraction" translate=no>​</a></h4>
+<ul>
+<li class="">Represents data in a simplified form</li>
+<li class="">Hides internal data representation</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">A “Bank Account” shows balance, not internal storage</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1212-procedural-abstraction>12.1.2 Procedural Abstraction<a href=#1212-procedural-abstraction class=hash-link aria-label="Direct link to 12.1.2 Procedural Abstraction" title="Direct link to 12.1.2 Procedural Abstraction" translate=no>​</a></h4>
+<ul>
+<li class="">Represents operations without showing implementation</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class=""><code>withdraw()</code> function hides internal logic</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=122-architecture>12.2 Architecture<a href=#122-architecture class=hash-link aria-label="Direct link to 12.2 Architecture" title="Direct link to 12.2 Architecture" translate=no>​</a></h3>
+<p>Architecture refers to the <strong>overall structure of the software system</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1221-structural-view>12.2.1 Structural View<a href=#1221-structural-view class=hash-link aria-label="Direct link to 12.2.1 Structural View" title="Direct link to 12.2.1 Structural View" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Defines:</p>
+<ul>
+<li class="">Components</li>
+<li class="">Relationships</li>
+<li class="">Organization</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1222-conceptual-integrity>12.2.2 Conceptual Integrity<a href=#1222-conceptual-integrity class=hash-link aria-label="Direct link to 12.2.2 Conceptual Integrity" title="Direct link to 12.2.2 Conceptual Integrity" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Ensures system design is:</p>
+<ul>
+<li class="">Consistent</li>
+<li class="">Unified</li>
+<li class="">Well-organized</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=123-patterns>12.3 Patterns<a href=#123-patterns class=hash-link aria-label="Direct link to 12.3 Patterns" title="Direct link to 12.3 Patterns" translate=no>​</a></h3>
+<p>Patterns are <strong>reusable solutions to common design problems</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1231-reusable-design-solutions>12.3.1 Reusable Design Solutions<a href=#1231-reusable-design-solutions class=hash-link aria-label="Direct link to 12.3.1 Reusable Design Solutions" title="Direct link to 12.3.1 Reusable Design Solutions" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Provide:</p>
+<ul>
+<li class="">Proven approaches</li>
+<li class="">Standard structures</li>
+</ul>
+</li>
+<li class="">
+<p>Improve design efficiency</p>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=124-separation-of-concerns>12.4 Separation of Concerns<a href=#124-separation-of-concerns class=hash-link aria-label="Direct link to 12.4 Separation of Concerns" title="Direct link to 12.4 Separation of Concerns" translate=no>​</a></h3>
+<p>Separation of concerns divides a system into <strong>distinct sections</strong>, each handling a specific responsibility.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1241-problem-decomposition>12.4.1 Problem Decomposition<a href=#1241-problem-decomposition class=hash-link aria-label="Direct link to 12.4.1 Problem Decomposition" title="Direct link to 12.4.1 Problem Decomposition" translate=no>​</a></h4>
+<ul>
+<li class="">Breaks complex problems into <strong>smaller parts</strong></li>
+<li class="">Each part focuses on one concern</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=125-modularity>12.5 Modularity<a href=#125-modularity class=hash-link aria-label="Direct link to 12.5 Modularity" title="Direct link to 12.5 Modularity" translate=no>​</a></h3>
+<p>Modularity is the process of dividing a system into <strong>independent modules</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1251-definition>12.5.1 Definition<a href=#1251-definition class=hash-link aria-label="Direct link to 12.5.1 Definition" title="Direct link to 12.5.1 Definition" translate=no>​</a></h4>
+<ul>
+<li class="">Each module performs a <strong>specific function</strong></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1252-benefits>12.5.2 Benefits<a href=#1252-benefits class=hash-link aria-label="Direct link to 12.5.2 Benefits" title="Direct link to 12.5.2 Benefits" translate=no>​</a></h4>
+<ul>
+<li class="">Easier understanding</li>
+<li class="">Easier testing</li>
+<li class="">Easier maintenance</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1253-trade-offs>12.5.3 Trade-offs<a href=#1253-trade-offs class=hash-link aria-label="Direct link to 12.5.3 Trade-offs" title="Direct link to 12.5.3 Trade-offs" translate=no>​</a></h4>
+<ul>
+<li class="">Too many modules → complex integration</li>
+<li class="">Too few modules → high complexity</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=126-information-hiding>12.6 Information Hiding<a href=#126-information-hiding class=hash-link aria-label="Direct link to 12.6 Information Hiding" title="Direct link to 12.6 Information Hiding" translate=no>​</a></h3>
+<p>Information hiding means <strong>restricting access to internal details</strong> of a module.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1261-controlled-interfaces>12.6.1 Controlled Interfaces<a href=#1261-controlled-interfaces class=hash-link aria-label="Direct link to 12.6.1 Controlled Interfaces" title="Direct link to 12.6.1 Controlled Interfaces" translate=no>​</a></h4>
+<ul>
+<li class="">Access to module is only through <strong>defined interfaces</strong></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1262-encapsulation>12.6.2 Encapsulation<a href=#1262-encapsulation class=hash-link aria-label="Direct link to 12.6.2 Encapsulation" title="Direct link to 12.6.2 Encapsulation" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Combines:</p>
+<ul>
+<li class="">Data</li>
+<li class="">Methods</li>
+</ul>
+</li>
+<li class="">
+<p>Hides internal implementation</p>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=127-functional-independence>12.7 Functional Independence<a href=#127-functional-independence class=hash-link aria-label="Direct link to 12.7 Functional Independence" title="Direct link to 12.7 Functional Independence" translate=no>​</a></h3>
+<p>Functional independence ensures each module works <strong>independently with minimal interaction</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1271-high-cohesion>12.7.1 High Cohesion<a href=#1271-high-cohesion class=hash-link aria-label="Direct link to 12.7.1 High Cohesion" title="Direct link to 12.7.1 High Cohesion" translate=no>​</a></h4>
+<ul>
+<li class="">A module performs <strong>one specific task</strong></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1272-low-coupling>12.7.2 Low Coupling<a href=#1272-low-coupling class=hash-link aria-label="Direct link to 12.7.2 Low Coupling" title="Direct link to 12.7.2 Low Coupling" translate=no>​</a></h4>
+<ul>
+<li class="">Minimal dependency between modules</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=128-refinement>12.8 Refinement<a href=#128-refinement class=hash-link aria-label="Direct link to 12.8 Refinement" title="Direct link to 12.8 Refinement" translate=no>​</a></h3>
+<p>Refinement is the process of <strong>gradually adding detail to a design</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1281-stepwise-elaboration>12.8.1 Stepwise Elaboration<a href=#1281-stepwise-elaboration class=hash-link aria-label="Direct link to 12.8.1 Stepwise Elaboration" title="Direct link to 12.8.1 Stepwise Elaboration" translate=no>​</a></h4>
+<ul>
+<li class="">Start with high-level design</li>
+<li class="">Break into detailed steps progressively</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=129-aspects>12.9 Aspects<a href=#129-aspects class=hash-link aria-label="Direct link to 12.9 Aspects" title="Direct link to 12.9 Aspects" translate=no>​</a></h3>
+<p>Aspects deal with <strong>cross-cutting concerns</strong> affecting multiple parts of the system.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1291-cross-cutting-concerns>12.9.1 Cross-Cutting Concerns<a href=#1291-cross-cutting-concerns class=hash-link aria-label="Direct link to 12.9.1 Cross-Cutting Concerns" title="Direct link to 12.9.1 Cross-Cutting Concerns" translate=no>​</a></h4>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Logging</li>
+<li class="">Security</li>
+<li class="">Error handling</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1210-refactoring>12.10 Refactoring<a href=#1210-refactoring class=hash-link aria-label="Direct link to 12.10 Refactoring" title="Direct link to 12.10 Refactoring" translate=no>​</a></h3>
+<p>Refactoring is the process of <strong>improving code structure without changing functionality</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=12101-code-improvement>12.10.1 Code Improvement<a href=#12101-code-improvement class=hash-link aria-label="Direct link to 12.10.1 Code Improvement" title="Direct link to 12.10.1 Code Improvement" translate=no>​</a></h4>
+<ul>
+<li class="">Simplifies code</li>
+<li class="">Removes redundancy</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=12102-maintainability>12.10.2 Maintainability<a href=#12102-maintainability class=hash-link aria-label="Direct link to 12.10.2 Maintainability" title="Direct link to 12.10.2 Maintainability" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Makes code:</p>
+<ul>
+<li class="">Easier to understand</li>
+<li class="">Easier to modify</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=1211-design-classes-oo-design>12.11 Design Classes (OO Design)<a href=#1211-design-classes-oo-design class=hash-link aria-label="Direct link to 12.11 Design Classes (OO Design)" title="Direct link to 12.11 Design Classes (OO Design)" translate=no>​</a></h3>
+<p>Design classes provide <strong>detailed structure for implementing analysis classes</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=12111-analysis-to-design-mapping>12.11.1 Analysis to Design Mapping<a href=#12111-analysis-to-design-mapping class=hash-link aria-label="Direct link to 12.11.1 Analysis to Design Mapping" title="Direct link to 12.11.1 Analysis to Design Mapping" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Converts:</p>
+<ul>
+<li class="">Analysis classes → Design classes</li>
+</ul>
+</li>
+<li class="">
+<p>Adds:</p>
+<ul>
+<li class="">Attributes</li>
+<li class="">Methods</li>
+<li class="">Implementation details</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=13-design-quality>13. Design Quality<a href=#13-design-quality class=hash-link aria-label="Direct link to 13. Design Quality" title="Direct link to 13. Design Quality" translate=no>​</a></h2>
+<p>Design Quality ensures that the software design is <strong>correct, complete, and suitable for implementation</strong>.</p>
+<ul>
+<li class="">
+<p>A good design should:</p>
+<ul>
+<li class="">Meet requirements</li>
+<li class="">Be easy to understand</li>
+<li class="">Guide coding and testing effectively</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=131-design-requirements>13.1 Design Requirements<a href=#131-design-requirements class=hash-link aria-label="Direct link to 13.1 Design Requirements" title="Direct link to 13.1 Design Requirements" translate=no>​</a></h3>
+<p>Design must satisfy both <strong>explicit and implicit requirements</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1311-explicit-requirements>13.1.1 Explicit Requirements<a href=#1311-explicit-requirements class=hash-link aria-label="Direct link to 13.1.1 Explicit Requirements" title="Direct link to 13.1.1 Explicit Requirements" translate=no>​</a></h4>
+<ul>
+<li class="">Requirements that are <strong>clearly stated by the user or in documentation</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Functional features</li>
+<li class="">System constraints</li>
+<li class="">Input/output specifications</li>
+</ul>
+<p>👉 These must be <strong>fully implemented in design</strong></p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1312-implicit-requirements>13.1.2 Implicit Requirements<a href=#1312-implicit-requirements class=hash-link aria-label="Direct link to 13.1.2 Implicit Requirements" title="Direct link to 13.1.2 Implicit Requirements" translate=no>​</a></h4>
+<ul>
+<li class="">Requirements that are <strong>not directly stated but expected</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Performance</li>
+<li class="">Security</li>
+<li class="">Usability</li>
+<li class="">Reliability</li>
+</ul>
+<p>👉 These are <strong>assumed expectations</strong> and must also be considered</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=132-design-characteristics>13.2 Design Characteristics<a href=#132-design-characteristics class=hash-link aria-label="Direct link to 13.2 Design Characteristics" title="Direct link to 13.2 Design Characteristics" translate=no>​</a></h3>
+<p>A high-quality design should have the following characteristics:</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1321-readability>13.2.1 Readability<a href=#1321-readability class=hash-link aria-label="Direct link to 13.2.1 Readability" title="Direct link to 13.2.1 Readability" translate=no>​</a></h4>
+<ul>
+<li class="">Design should be <strong>easy to read and interpret</strong></li>
+</ul>
+<p><strong>Features:</strong></p>
+<ul>
+<li class="">Clear structure</li>
+<li class="">Proper naming</li>
+<li class="">Simple representation</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1322-understandability>13.2.2 Understandability<a href=#1322-understandability class=hash-link aria-label="Direct link to 13.2.2 Understandability" title="Direct link to 13.2.2 Understandability" translate=no>​</a></h4>
+<ul>
+<li class="">Design should be <strong>easy to understand by developers and stakeholders</strong></li>
+</ul>
+<p><strong>Features:</strong></p>
+<ul>
+<li class="">Logical organization</li>
+<li class="">Clear relationships between components</li>
+<li class="">Well-defined modules</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1323-completeness>13.2.3 Completeness<a href=#1323-completeness class=hash-link aria-label="Direct link to 13.2.3 Completeness" title="Direct link to 13.2.3 Completeness" translate=no>​</a></h4>
+<ul>
+<li class="">Design should provide a <strong>complete view of the system</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Data aspects</li>
+<li class="">Functional behavior</li>
+<li class="">System interactions</li>
+</ul>
+<p>👉 No important detail should be missing for implementation</p>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=14-interface-design-and-ui-design>14. Interface Design and UI Design<a href=#14-interface-design-and-ui-design class=hash-link aria-label="Direct link to 14. Interface Design and UI Design" title="Direct link to 14. Interface Design and UI Design" translate=no>​</a></h2>
+<p>Interface and UI Design focus on <strong>how users and system components interact</strong> and how the system is presented to users.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=141-interface-design>14.1 Interface Design<a href=#141-interface-design class=hash-link aria-label="Direct link to 14.1 Interface Design" title="Direct link to 14.1 Interface Design" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1411-definition>14.1.1 Definition<a href=#1411-definition class=hash-link aria-label="Direct link to 14.1.1 Definition" title="Direct link to 14.1.1 Definition" translate=no>​</a></h4>
+<p>Interface Design defines <strong>how different parts of the system communicate</strong>.</p>
+<ul>
+<li class="">
+<p>Includes:</p>
+<ul>
+<li class="">User Interface (UI)</li>
+<li class="">System Interfaces (APIs)</li>
+</ul>
+</li>
+<li class="">
+<p>Specifies:</p>
+<ul>
+<li class="">Inputs</li>
+<li class="">Outputs</li>
+<li class="">Interaction methods</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1412-user-system-interaction>14.1.2 User-System Interaction<a href=#1412-user-system-interaction class=hash-link aria-label="Direct link to 14.1.2 User-System Interaction" title="Direct link to 14.1.2 User-System Interaction" translate=no>​</a></h4>
+<ul>
+<li class="">Defines how users interact with the system</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Input methods (keyboard, mouse, touch)</li>
+<li class="">Output formats (screens, reports)</li>
+<li class="">Navigation between screens</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=142-interface-analysis>14.2 Interface Analysis<a href=#142-interface-analysis class=hash-link aria-label="Direct link to 14.2 Interface Analysis" title="Direct link to 14.2 Interface Analysis" translate=no>​</a></h3>
+<p>Interface Analysis focuses on understanding <strong>who will use the system and how</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1421-users-end-users>14.2.1 Users (End Users)<a href=#1421-users-end-users class=hash-link aria-label="Direct link to 14.2.1 Users (End Users)" title="Direct link to 14.2.1 Users (End Users)" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Identify different types of users:</p>
+<ul>
+<li class="">Beginners</li>
+<li class="">Experienced users</li>
+</ul>
+</li>
+<li class="">
+<p>Consider:</p>
+<ul>
+<li class="">Skills</li>
+<li class="">Needs</li>
+<li class="">Preferences</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1422-tasks>14.2.2 Tasks<a href=#1422-tasks class=hash-link aria-label="Direct link to 14.2.2 Tasks" title="Direct link to 14.2.2 Tasks" translate=no>​</a></h4>
+<ul>
+<li class="">Identify tasks users need to perform</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Login</li>
+<li class="">Data entry</li>
+<li class="">Report generation</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1423-content>14.2.3 Content<a href=#1423-content class=hash-link aria-label="Direct link to 14.2.3 Content" title="Direct link to 14.2.3 Content" translate=no>​</a></h4>
+<ul>
+<li class="">Identify information displayed to users</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Text</li>
+<li class="">Images</li>
+<li class="">Data</li>
+<li class="">Messages</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=143-ui-design>14.3 UI Design<a href=#143-ui-design class=hash-link aria-label="Direct link to 14.3 UI Design" title="Direct link to 14.3 UI Design" translate=no>​</a></h3>
+<p>UI Design focuses on the <strong>visual and interactive aspects of the system</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1431-ui-elements>14.3.1 UI Elements<a href=#1431-ui-elements class=hash-link aria-label="Direct link to 14.3.1 UI Elements" title="Direct link to 14.3.1 UI Elements" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Components used in interface:</p>
+<ul>
+<li class="">Buttons</li>
+<li class="">Forms</li>
+<li class="">Menus</li>
+<li class="">Icons</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1432-user-experience>14.3.2 User Experience<a href=#1432-user-experience class=hash-link aria-label="Direct link to 14.3.2 User Experience" title="Direct link to 14.3.2 User Experience" translate=no>​</a></h4>
+<ul>
+<li class="">Focus on how users <strong>feel while using the system</strong></li>
+</ul>
+<p><strong>Goals:</strong></p>
+<ul>
+<li class="">Ease of use</li>
+<li class="">Efficiency</li>
+<li class="">Satisfaction</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=144-ui-design-process>14.4 UI Design Process<a href=#144-ui-design-process class=hash-link aria-label="Direct link to 14.4 UI Design Process" title="Direct link to 14.4 UI Design Process" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1441-design-steps>14.4.1 Design Steps<a href=#1441-design-steps class=hash-link aria-label="Direct link to 14.4.1 Design Steps" title="Direct link to 14.4.1 Design Steps" translate=no>​</a></h4>
+<ol>
+<li class="">
+<p><strong>Interface Analysis</strong></p>
+<ul>
+<li class="">Understand users, tasks, and content</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Design</strong></p>
+<ul>
+<li class="">Create layout and structure</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Implementation</strong></p>
+<ul>
+<li class="">Develop UI components</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Evaluation</strong></p>
+<ul>
+<li class="">Test usability and improve</li>
+</ul>
+</li>
+</ol>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=145-golden-rules-of-ui-design>14.5 Golden Rules of UI Design<a href=#145-golden-rules-of-ui-design class=hash-link aria-label="Direct link to 14.5 Golden Rules of UI Design" title="Direct link to 14.5 Golden Rules of UI Design" translate=no>​</a></h3>
+<p>These rules ensure <strong>effective and user-friendly interfaces</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1451-user-control>14.5.1 User Control<a href=#1451-user-control class=hash-link aria-label="Direct link to 14.5.1 User Control" title="Direct link to 14.5.1 User Control" translate=no>​</a></h4>
+<ul>
+<li class="">Users should feel <strong>in control of the system</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Undo/Redo options</li>
+<li class="">Cancel operations</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1452-reduce-memory-load>14.5.2 Reduce Memory Load<a href=#1452-reduce-memory-load class=hash-link aria-label="Direct link to 14.5.2 Reduce Memory Load" title="Direct link to 14.5.2 Reduce Memory Load" translate=no>​</a></h4>
+<ul>
+<li class="">System should minimize what users need to remember</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Provide menus</li>
+<li class="">Use icons</li>
+<li class="">Autofill data</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1453-consistency>14.5.3 Consistency<a href=#1453-consistency class=hash-link aria-label="Direct link to 14.5.3 Consistency" title="Direct link to 14.5.3 Consistency" translate=no>​</a></h4>
+<ul>
+<li class="">Interface should follow <strong>uniform design patterns</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Same layout across screens</li>
+<li class="">Consistent colors and buttons</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=15-data-oriented-analysis-and-design>15. Data-Oriented Analysis and Design<a href=#15-data-oriented-analysis-and-design class=hash-link aria-label="Direct link to 15. Data-Oriented Analysis and Design" title="Direct link to 15. Data-Oriented Analysis and Design" translate=no>​</a></h2>
+<p>Data-Oriented Analysis and Design focuses on <strong>how data is represented, structured, and managed</strong> in a system.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=151-data-vs-information>15.1 Data vs Information<a href=#151-data-vs-information class=hash-link aria-label="Direct link to 15.1 Data vs Information" title="Direct link to 15.1 Data vs Information" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1511-definitions>15.1.1 Definitions<a href=#1511-definitions class=hash-link aria-label="Direct link to 15.1.1 Definitions" title="Direct link to 15.1.1 Definitions" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>Data</strong></p>
+<ul>
+<li class="">Raw facts or figures without context</li>
+<li class="">Example: <code>100</code>, <code>John</code>, <code>2026</code></li>
+</ul>
+</li>
+<li class="">
+<p><strong>Information</strong></p>
+<ul>
+<li class="">Processed data that has meaning</li>
+<li class="">Example: “John scored 100 marks in 2026”</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1512-differences>15.1.2 Differences<a href=#1512-differences class=hash-link aria-label="Direct link to 15.1.2 Differences" title="Direct link to 15.1.2 Differences" translate=no>​</a></h4>
+<table><thead><tr><th>Aspect<th>Data<th>Information<tbody><tr><td>Nature<td>Raw facts<td>Processed data<tr><td>Meaning<td>No meaning alone<td>Meaningful<tr><td>Use<td>Input<td>Output<tr><td>Example<td>50, A, 10/04<td>“Score is 50”</table>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=152-entity-relationship-er-model>15.2 Entity-Relationship (ER) Model<a href=#152-entity-relationship-er-model class=hash-link aria-label="Direct link to 15.2 Entity-Relationship (ER) Model" title="Direct link to 15.2 Entity-Relationship (ER) Model" translate=no>​</a></h3>
+<p>The ER Model is a <strong>conceptual model used for database design</strong>.</p>
+<ul>
+<li class="">Represents real-world objects and their relationships</li>
+<li class="">Introduced by <strong>Peter Chen</strong></li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1521-entities>15.2.1 Entities<a href=#1521-entities class=hash-link aria-label="Direct link to 15.2.1 Entities" title="Direct link to 15.2.1 Entities" translate=no>​</a></h4>
+<ul>
+<li class="">An <strong>entity</strong> is an object that exists and can be identified</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">
+<p>Student</p>
+</li>
+<li class="">
+<p>Employee</p>
+</li>
+<li class="">
+<p>Product</p>
+</li>
+<li class="">
+<p><strong>Entity Set</strong>: Collection of similar entities</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1522-attributes>15.2.2 Attributes<a href=#1522-attributes class=hash-link aria-label="Direct link to 15.2.2 Attributes" title="Direct link to 15.2.2 Attributes" translate=no>​</a></h4>
+<ul>
+<li class="">Properties that describe an entity</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Student → Name, Roll No, Age</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1523-relationships>15.2.3 Relationships<a href=#1523-relationships class=hash-link aria-label="Direct link to 15.2.3 Relationships" title="Direct link to 15.2.3 Relationships" translate=no>​</a></h4>
+<ul>
+<li class="">Defines association between entities</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Student <strong>enrolls in</strong> Course</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=153-er-diagrams>15.3 ER Diagrams<a href=#153-er-diagrams class=hash-link aria-label="Direct link to 15.3 ER Diagrams" title="Direct link to 15.3 ER Diagrams" translate=no>​</a></h3>
+<p>ER Diagrams visually represent the <strong>ER model</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1531-notations>15.3.1 Notations<a href=#1531-notations class=hash-link aria-label="Direct link to 15.3.1 Notations" title="Direct link to 15.3.1 Notations" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Rectangle</strong> → Entity</li>
+<li class=""><strong>Diamond</strong> → Relationship</li>
+<li class=""><strong>Ellipse</strong> → Attribute</li>
+<li class=""><strong>Line</strong> → Connection</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1532-attribute-types>15.3.2 Attribute Types<a href=#1532-attribute-types class=hash-link aria-label="Direct link to 15.3.2 Attribute Types" title="Direct link to 15.3.2 Attribute Types" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>Composite Attribute</strong></p>
+<ul>
+<li class="">Can be divided into sub-parts</li>
+<li class="">Example: Name → First, Last</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Multivalued Attribute</strong></p>
+<ul>
+<li class="">Can have multiple values</li>
+<li class="">Example: Phone Numbers</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Derived Attribute</strong></p>
+<ul>
+<li class="">Calculated from other attributes</li>
+<li class="">Example: Age from Date of Birth</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=154-cardinality-constraints>15.4 Cardinality Constraints<a href=#154-cardinality-constraints class=hash-link aria-label="Direct link to 15.4 Cardinality Constraints" title="Direct link to 15.4 Cardinality Constraints" translate=no>​</a></h3>
+<p>Cardinality defines <strong>number of relationships between entities</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1541-one-to-one-11>15.4.1 One-to-One (1:1)<a href=#1541-one-to-one-11 class=hash-link aria-label="Direct link to 15.4.1 One-to-One (1:1)" title="Direct link to 15.4.1 One-to-One (1:1)" translate=no>​</a></h4>
+<ul>
+<li class="">One entity is related to <strong>only one</strong> entity</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Person ↔ Passport</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1542-one-to-many-1>15.4.2 One-to-Many (1<!-- -->:N<!-- -->)<a href=#1542-one-to-many-1 class=hash-link aria-label="Direct link to 1542-one-to-many-1" title="Direct link to 1542-one-to-many-1" translate=no>​</a></h4>
+<ul>
+<li class="">One entity is related to <strong>many entities</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Teacher → Students</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1543-many-to-one-n1>15.4.3 Many-to-One (N:1)<a href=#1543-many-to-one-n1 class=hash-link aria-label="Direct link to 15.4.3 Many-to-One (N:1)" title="Direct link to 15.4.3 Many-to-One (N:1)" translate=no>​</a></h4>
+<ul>
+<li class="">Many entities relate to <strong>one entity</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Many Students → One Course</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1544-many-to-many-m>15.4.4 Many-to-Many (M<!-- -->:N<!-- -->)<a href=#1544-many-to-many-m class=hash-link aria-label="Direct link to 1544-many-to-many-m" title="Direct link to 1544-many-to-many-m" translate=no>​</a></h4>
+<ul>
+<li class="">Many entities relate to <strong>many entities</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Students ↔ Courses</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=155-extended-er-features>15.5 Extended ER Features<a href=#155-extended-er-features class=hash-link aria-label="Direct link to 15.5 Extended ER Features" title="Direct link to 15.5 Extended ER Features" translate=no>​</a></h3>
+<p>Extended ER (EER) adds <strong>advanced modeling concepts</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1551-specialization>15.5.1 Specialization<a href=#1551-specialization class=hash-link aria-label="Direct link to 15.5.1 Specialization" title="Direct link to 15.5.1 Specialization" translate=no>​</a></h4>
+<ul>
+<li class="">Top-down approach</li>
+<li class="">Divides an entity into <strong>sub-entities</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Vehicle → Car, Bike</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1552-generalization>15.5.2 Generalization<a href=#1552-generalization class=hash-link aria-label="Direct link to 15.5.2 Generalization" title="Direct link to 15.5.2 Generalization" translate=no>​</a></h4>
+<ul>
+<li class="">Bottom-up approach</li>
+<li class="">Combines entities into a <strong>general entity</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Car + Bike → Vehicle</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1553-aggregation>15.5.3 Aggregation<a href=#1553-aggregation class=hash-link aria-label="Direct link to 15.5.3 Aggregation" title="Direct link to 15.5.3 Aggregation" translate=no>​</a></h4>
+<ul>
+<li class="">Treats a relationship as a <strong>higher-level entity</strong></li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Represent complex relationships</li>
+</ul>
+<!-- -->
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=16-data-flow-modeling>16. Data Flow Modeling<a href=#16-data-flow-modeling class=hash-link aria-label="Direct link to 16. Data Flow Modeling" title="Direct link to 16. Data Flow Modeling" translate=no>​</a></h2>
+<p>Data Flow Modeling represents <strong>how data moves through a system and how it is processed</strong>.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=161-flow-modeling-notation>16.1 Flow Modeling Notation<a href=#161-flow-modeling-notation class=hash-link aria-label="Direct link to 16.1 Flow Modeling Notation" title="Direct link to 16.1 Flow Modeling Notation" translate=no>​</a></h3>
+<p>Flow modeling uses standard symbols to represent system elements.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1611-external-entity>16.1.1 External Entity<a href=#1611-external-entity class=hash-link aria-label="Direct link to 16.1.1 External Entity" title="Direct link to 16.1.1 External Entity" translate=no>​</a></h4>
+<ul>
+<li class="">A <strong>source or destination of data</strong> outside the system</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">User</li>
+<li class="">Device</li>
+<li class="">External system</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1612-process>16.1.2 Process<a href=#1612-process class=hash-link aria-label="Direct link to 16.1.2 Process" title="Direct link to 16.1.2 Process" translate=no>​</a></h4>
+<ul>
+<li class="">A <strong>data transformation unit</strong></li>
+<li class="">Converts input data into output</li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Calculate result</li>
+<li class="">Generate report</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1613-data-flow>16.1.3 Data Flow<a href=#1613-data-flow class=hash-link aria-label="Direct link to 16.1.3 Data Flow" title="Direct link to 16.1.3 Data Flow" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Represents <strong>movement of data</strong> between components</p>
+</li>
+<li class="">
+<p>Shown as <strong>arrows</strong></p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1614-data-store>16.1.4 Data Store<a href=#1614-data-store class=hash-link aria-label="Direct link to 16.1.4 Data Store" title="Direct link to 16.1.4 Data Store" translate=no>​</a></h4>
+<ul>
+<li class="">A place where <strong>data is stored for later use</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Database</li>
+<li class="">File system</li>
+</ul>
+<hr/>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=162-data-flow-diagrams-dfd>16.2 Data Flow Diagrams (DFD)<a href=#162-data-flow-diagrams-dfd class=hash-link aria-label="Direct link to 16.2 Data Flow Diagrams (DFD)" title="Direct link to 16.2 Data Flow Diagrams (DFD)" translate=no>​</a></h3>
+<p>DFD is a graphical representation of <strong>data flow in a system</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1621-level-0-context-diagram>16.2.1 Level 0 (Context Diagram)<a href=#1621-level-0-context-diagram class=hash-link aria-label="Direct link to 16.2.1 Level 0 (Context Diagram)" title="Direct link to 16.2.1 Level 0 (Context Diagram)" translate=no>​</a></h4>
+<ul>
+<li class="">Represents the <strong>entire system as a single process</strong></li>
+<li class="">Shows interaction with external entities</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1622-level-1>16.2.2 Level 1<a href=#1622-level-1 class=hash-link aria-label="Direct link to 16.2.2 Level 1" title="Direct link to 16.2.2 Level 1" translate=no>​</a></h4>
+<ul>
+<li class="">Breaks the system into <strong>multiple processes</strong></li>
+<li class="">Shows internal data flow</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1623-data-flow-hierarchy>16.2.3 Data Flow Hierarchy<a href=#1623-data-flow-hierarchy class=hash-link aria-label="Direct link to 16.2.3 Data Flow Hierarchy" title="Direct link to 16.2.3 Data Flow Hierarchy" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>DFD is developed in <strong>levels</strong>:</p>
+<ul>
+<li class="">Level 0 → Overview</li>
+<li class="">Level 1 → Detailed</li>
+<li class="">Level 2 → More detailed</li>
+</ul>
+</li>
+</ul>
+<p>👉 Each level provides <strong>more detail than the previous</strong></p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=163-dfd-construction>16.3 DFD Construction<a href=#163-dfd-construction class=hash-link aria-label="Direct link to 16.3 DFD Construction" title="Direct link to 16.3 DFD Construction" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1631-constructing-dfd--i>16.3.1 Constructing DFD – I<a href=#1631-constructing-dfd--i class=hash-link aria-label="Direct link to 16.3.1 Constructing DFD – I" title="Direct link to 16.3.1 Constructing DFD – I" translate=no>​</a></h4>
+<p>Steps:</p>
+<ol>
+<li class="">Review user requirements</li>
+<li class="">Identify data objects</li>
+<li class="">Identify external entities</li>
+<li class="">Create Level 0 DFD</li>
+</ol>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1632-constructing-dfd--ii>16.3.2 Constructing DFD – II<a href=#1632-constructing-dfd--ii class=hash-link aria-label="Direct link to 16.3.2 Constructing DFD – II" title="Direct link to 16.3.2 Constructing DFD – II" translate=no>​</a></h4>
+<p>Steps:</p>
+<ol>
+<li class="">Describe processing logic</li>
+<li class="">Break processes into sub-processes</li>
+<li class="">Maintain data flow consistency</li>
+<li class="">Create Level 1 DFD</li>
+</ol>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1633-expansion-rules>16.3.3 Expansion Rules<a href=#1633-expansion-rules class=hash-link aria-label="Direct link to 16.3.3 Expansion Rules" title="Direct link to 16.3.3 Expansion Rules" translate=no>​</a></h4>
+<ul>
+<li class="">Expand one process into <strong>multiple sub-processes</strong></li>
+<li class="">Maintain <strong>input-output consistency</strong></li>
+<li class="">Use approximate <strong>1:5 expansion ratio</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=164-dfd-guidelines>16.4 DFD Guidelines<a href=#164-dfd-guidelines class=hash-link aria-label="Direct link to 16.4 DFD Guidelines" title="Direct link to 16.4 DFD Guidelines" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1641-naming-conventions>16.4.1 Naming Conventions<a href=#1641-naming-conventions class=hash-link aria-label="Direct link to 16.4.1 Naming Conventions" title="Direct link to 16.4.1 Naming Conventions" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Use <strong>meaningful names</strong></p>
+</li>
+<li class="">
+<p>Label all:</p>
+<ul>
+<li class="">Processes</li>
+<li class="">Data flows</li>
+<li class="">Data stores</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1642-flow-continuity>16.4.2 Flow Continuity<a href=#1642-flow-continuity class=hash-link aria-label="Direct link to 16.4.2 Flow Continuity" title="Direct link to 16.4.2 Flow Continuity" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Data must:</p>
+<ul>
+<li class="">Originate from a source</li>
+<li class="">End at a destination</li>
+</ul>
+</li>
+<li class="">
+<p>No broken or incomplete flows</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1643-balancing>16.4.3 Balancing<a href=#1643-balancing class=hash-link aria-label="Direct link to 16.4.3 Balancing" title="Direct link to 16.4.3 Balancing" translate=no>​</a></h4>
+<ul>
+<li class="">Input/output of parent process must match <strong>child processes</strong></li>
+</ul>
+<p>👉 Ensures consistency across levels</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=165-data-dictionary>16.5 Data Dictionary<a href=#165-data-dictionary class=hash-link aria-label="Direct link to 16.5 Data Dictionary" title="Direct link to 16.5 Data Dictionary" translate=no>​</a></h3>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1651-definition>16.5.1 Definition<a href=#1651-definition class=hash-link aria-label="Direct link to 16.5.1 Definition" title="Direct link to 16.5.1 Definition" translate=no>​</a></h4>
+<p>A <strong>Data Dictionary</strong> is a <strong>repository of information about data (metadata)</strong>.</p>
+<ul>
+<li class="">
+<p>Contains:</p>
+<ul>
+<li class="">Data definitions</li>
+<li class="">Data types</li>
+<li class="">Structures</li>
+</ul>
+</li>
+<li class="">
+<p>Supports DFD development</p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1652-uses>16.5.2 Uses<a href=#1652-uses class=hash-link aria-label="Direct link to 16.5.2 Uses" title="Direct link to 16.5.2 Uses" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p><strong>Validation</strong></p>
+<ul>
+<li class="">Ensures DFD correctness</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Screen/Report Design</strong></p>
+<ul>
+<li class="">Helps design UI and reports</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Data Storage</strong></p>
+<ul>
+<li class="">Defines database structure</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Logic Development</strong></p>
+<ul>
+<li class="">Helps in defining process logic</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=17-component-level-design>17. Component-Level Design<a href=#17-component-level-design class=hash-link aria-label="Direct link to 17. Component-Level Design" title="Direct link to 17. Component-Level Design" translate=no>​</a></h2>
+<p>Component-Level Design focuses on the <strong>internal working of individual modules/components</strong> in a software system.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=171-definition>17.1 Definition<a href=#171-definition class=hash-link aria-label="Direct link to 17.1 Definition" title="Direct link to 17.1 Definition" translate=no>​</a></h3>
+<p>Component-Level Design is the process of defining the <strong>detailed structure and logic of each component</strong>.</p>
+<ul>
+<li class="">
+<p>It provides:</p>
+<ul>
+<li class="">Class definitions</li>
+<li class="">Methods/functions</li>
+<li class="">Algorithms</li>
+</ul>
+</li>
+<li class="">
+<p>Acts like <strong>detailed design for implementation</strong></p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1711-internal-component-details>17.1.1 Internal Component Details<a href=#1711-internal-component-details class=hash-link aria-label="Direct link to 17.1.1 Internal Component Details" title="Direct link to 17.1.1 Internal Component Details" translate=no>​</a></h4>
+<p>Each component includes:</p>
+<ul>
+<li class="">
+<p><strong>Data Structures</strong></p>
+<ul>
+<li class="">Variables, data types</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Processing Logic</strong></p>
+<ul>
+<li class="">Algorithms</li>
+<li class="">Control flow</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Interfaces</strong></p>
+<ul>
+<li class="">Input/output behavior</li>
+</ul>
+</li>
+</ul>
+<p>👉 Fully describes how a component works internally</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=172-component-structure>17.2 Component Structure<a href=#172-component-structure class=hash-link aria-label="Direct link to 17.2 Component Structure" title="Direct link to 17.2 Component Structure" translate=no>​</a></h3>
+<p>Defines how components are <strong>organized and interact internally</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1721-basic-structure>17.2.1 Basic Structure<a href=#1721-basic-structure class=hash-link aria-label="Direct link to 17.2.1 Basic Structure" title="Direct link to 17.2.1 Basic Structure" translate=no>​</a></h4>
+<ul>
+<li class="">High-level representation of components</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Major modules</li>
+<li class="">Basic relationships</li>
+</ul>
+<!-- -->
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1722-refined-structure>17.2.2 Refined Structure<a href=#1722-refined-structure class=hash-link aria-label="Direct link to 17.2.2 Refined Structure" title="Direct link to 17.2.2 Refined Structure" translate=no>​</a></h4>
+<ul>
+<li class="">Detailed breakdown of components into <strong>sub-components</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Internal modules</li>
+<li class="">Specific functions</li>
+<li class="">Interactions</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=173-cohesion-and-coupling>17.3 Cohesion and Coupling<a href=#173-cohesion-and-coupling class=hash-link aria-label="Direct link to 17.3 Cohesion and Coupling" title="Direct link to 17.3 Cohesion and Coupling" translate=no>​</a></h3>
+<p>Cohesion and Coupling are key concepts used to measure <strong>quality of module design</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1731-types-of-cohesion>17.3.1 Types of Cohesion<a href=#1731-types-of-cohesion class=hash-link aria-label="Direct link to 17.3.1 Types of Cohesion" title="Direct link to 17.3.1 Types of Cohesion" translate=no>​</a></h4>
+<p>Cohesion refers to how <strong>closely related functions within a module are</strong>.</p>
+<p><strong>Types (low → high quality):</strong></p>
+<ul>
+<li class="">
+<p><strong>Coincidental Cohesion</strong></p>
+<ul>
+<li class="">Unrelated functions grouped together</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Logical Cohesion</strong></p>
+<ul>
+<li class="">Related by category</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Temporal Cohesion</strong></p>
+<ul>
+<li class="">Executed at same time</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Procedural Cohesion</strong></p>
+<ul>
+<li class="">Follow a sequence</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Communicational Cohesion</strong></p>
+<ul>
+<li class="">Use same data</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Sequential Cohesion</strong></p>
+<ul>
+<li class="">Output of one part is input to another</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Functional Cohesion (Best)</strong></p>
+<ul>
+<li class="">Performs one specific task</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1732-types-of-coupling>17.3.2 Types of Coupling<a href=#1732-types-of-coupling class=hash-link aria-label="Direct link to 17.3.2 Types of Coupling" title="Direct link to 17.3.2 Types of Coupling" translate=no>​</a></h4>
+<p>Coupling refers to <strong>dependency between modules</strong>.</p>
+<p><strong>Types (high → low quality):</strong></p>
+<ul>
+<li class="">
+<p><strong>Content Coupling</strong></p>
+<ul>
+<li class="">One module depends on internal details of another</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Common Coupling</strong></p>
+<ul>
+<li class="">Shared global data</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Control Coupling</strong></p>
+<ul>
+<li class="">One module controls another</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Stamp Coupling</strong></p>
+<ul>
+<li class="">Passing data structures</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Data Coupling (Best)</strong></p>
+<ul>
+<li class="">Modules communicate through simple data</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-goal>🔁 Goal<a href=#-goal class=hash-link aria-label="Direct link to 🔁 Goal" title="Direct link to 🔁 Goal" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>High Cohesion + Low Coupling = Good Design</strong></li>
+</ul>
+<hr/>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=18-procedural-design>18. Procedural Design<a href=#18-procedural-design class=hash-link aria-label="Direct link to 18. Procedural Design" title="Direct link to 18. Procedural Design" translate=no>​</a></h2>
+<p>Procedural Design focuses on <strong>designing the step-by-step logic (procedures/algorithms)</strong> used to implement system functionality.</p>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=181-definition>18.1 Definition<a href=#181-definition class=hash-link aria-label="Direct link to 18.1 Definition" title="Direct link to 18.1 Definition" translate=no>​</a></h3>
+<p>Procedural Design is the process of defining <strong>algorithms and control structures</strong> that specify how tasks are performed.</p>
+<ul>
+<li class="">
+<p>Emphasizes:</p>
+<ul>
+<li class="">Sequence of operations</li>
+<li class="">Logic flow</li>
+<li class="">Step-by-step execution</li>
+</ul>
+</li>
+<li class="">
+<p>Closely related to <strong>component-level design</strong></p>
+</li>
+</ul>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1811-algorithmic-design>18.1.1 Algorithmic Design<a href=#1811-algorithmic-design class=hash-link aria-label="Direct link to 18.1.1 Algorithmic Design" title="Direct link to 18.1.1 Algorithmic Design" translate=no>​</a></h4>
+<p>Algorithmic Design involves creating <strong>clear and efficient algorithms</strong> for solving problems.</p>
+<p><strong>Characteristics of a good algorithm:</strong></p>
+<ul>
+<li class="">Correct</li>
+<li class="">Efficient</li>
+<li class="">Finite (must terminate)</li>
+<li class="">Unambiguous</li>
+</ul>
+<p><strong>Basic control structures:</strong></p>
+<ul>
+<li class="">Sequence</li>
+<li class="">Selection (if-else)</li>
+<li class="">Iteration (loops)</li>
+</ul>
+<!-- -->
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=182-procedural-abstraction>18.2 Procedural Abstraction<a href=#182-procedural-abstraction class=hash-link aria-label="Direct link to 18.2 Procedural Abstraction" title="Direct link to 18.2 Procedural Abstraction" translate=no>​</a></h3>
+<p>Procedural Abstraction means representing a procedure by <strong>what it does, not how it does it</strong>.</p>
+<hr/>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1821-implementation-details>18.2.1 Implementation Details<a href=#1821-implementation-details class=hash-link aria-label="Direct link to 18.2.1 Implementation Details" title="Direct link to 18.2.1 Implementation Details" translate=no>​</a></h4>
+<ul>
+<li class="">Internal working of a procedure is <strong>hidden from the user</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">
+<p>Function: <code>calculateSalary()</code></p>
+<ul>
+<li class="">User knows its purpose</li>
+<li class="">Internal calculations are hidden</li>
+</ul>
+</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Reduces complexity</li>
+<li class="">Improves readability</li>
+<li class="">Enhances modularity</li>
+</ul>
+<hr/></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/ankur3-101106/docs/SE/u4.mdx target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/SE/u3><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Unit - 3</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/SE/u5><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Unit - 5</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#architectural-design class="table-of-contents__link toc-highlight">Architectural Design</a><li><a href=#1-software-design-basics class="table-of-contents__link toc-highlight">1. Software Design Basics</a><ul><li><a href=#11-definition-of-software-design class="table-of-contents__link toc-highlight">1.1 Definition of Software Design</a><ul><li><a href=#111-purpose-of-software-design class="table-of-contents__link toc-highlight">1.1.1 Purpose of Software Design</a><li><a href=#112-design-as-a-bridge-analysis--coding class="table-of-contents__link toc-highlight">1.1.2 Design as a Bridge (Analysis → Coding)</a></ul><li><a href=#12-software-design-manifesto class="table-of-contents__link toc-highlight">1.2 Software Design Manifesto</a><ul><li><a href=#121-firmness class="table-of-contents__link toc-highlight">1.2.1 Firmness</a><li><a href=#122-commodity class="table-of-contents__link toc-highlight">1.2.2 Commodity</a><li><a href=#123-delight class="table-of-contents__link toc-highlight">1.2.3 Delight</a></ul><li><a href=#-combined-understanding class="table-of-contents__link toc-highlight">🔁 Combined Understanding</a></ul><li><a href=#2-design-model class="table-of-contents__link toc-highlight">2. Design Model</a><ul><li><a href=#21-definition-of-design-model class="table-of-contents__link toc-highlight">2.1 Definition of Design Model</a><li><a href=#22-elements-of-design-model class="table-of-contents__link toc-highlight">2.2 Elements of Design Model</a><ul><li><a href=#221-architectural-design class="table-of-contents__link toc-highlight">2.2.1 Architectural Design</a><li><a href=#222-data-design class="table-of-contents__link toc-highlight">2.2.2 Data Design</a><li><a href=#223-interface-design class="table-of-contents__link toc-highlight">2.2.3 Interface Design</a><li><a href=#224-component-level-design class="table-of-contents__link toc-highlight">2.2.4 Component-Level Design</a><li><a href=#relationship-between-elements class="table-of-contents__link toc-highlight">Relationship Between Elements</a></ul><li><a href=#23-outputs-of-design-model class="table-of-contents__link toc-highlight">2.3 Outputs of Design Model</a><ul><li><a href=#231-architecture-diagram class="table-of-contents__link toc-highlight">2.3.1 Architecture Diagram</a><li><a href=#232-er-diagram class="table-of-contents__link toc-highlight">2.3.2 ER Diagram</a><li><a href=#233-ui--interface-specification class="table-of-contents__link toc-highlight">2.3.3 UI / Interface Specification</a><li><a href=#234-class-diagram class="table-of-contents__link toc-highlight">2.3.4 Class Diagram</a></ul><li><a href=#overall-flow-of-design-model class="table-of-contents__link toc-highlight">Overall Flow of Design Model</a></ul><li><a href=#3-analysis-model--design-model-mapping class="table-of-contents__link toc-highlight">3. Analysis Model <code>=></code> Design Model Mapping</a><ul><li><a href=#-overall-mapping class="table-of-contents__link toc-highlight">🔁 Overall Mapping</a><li><a href=#31-flow-oriented-elements class="table-of-contents__link toc-highlight">3.1 Flow-Oriented Elements</a><ul><li><a href=#311-data-flow-diagrams-dfd class="table-of-contents__link toc-highlight">3.1.1 Data Flow Diagrams (DFD)</a><li><a href=#312-control-flow-diagrams class="table-of-contents__link toc-highlight">3.1.2 Control Flow Diagrams</a><li><a href=#313-processing-narratives class="table-of-contents__link toc-highlight">3.1.3 Processing Narratives</a></ul><li><a href=#32-scenario-based-elements class="table-of-contents__link toc-highlight">3.2 Scenario-Based Elements</a><ul><li><a href=#321-use-case-descriptions class="table-of-contents__link toc-highlight">3.2.1 Use Case Descriptions</a><li><a href=#322-use-case-diagrams class="table-of-contents__link toc-highlight">3.2.2 Use Case Diagrams</a><li><a href=#323-activity-diagrams class="table-of-contents__link toc-highlight">3.2.3 Activity Diagrams</a><li><a href=#324-swimlane-diagrams class="table-of-contents__link toc-highlight">3.2.4 Swimlane Diagrams</a></ul><li><a href=#33-class-based-elements class="table-of-contents__link toc-highlight">3.3 Class-Based Elements</a><ul><li><a href=#331-class-diagrams class="table-of-contents__link toc-highlight">3.3.1 Class Diagrams</a><li><a href=#332-analysis-packages class="table-of-contents__link toc-highlight">3.3.2 Analysis Packages</a><li><a href=#333-crc-models-class-responsibility-collaboration class="table-of-contents__link toc-highlight">3.3.3 CRC Models (Class-Responsibility-Collaboration)</a><li><a href=#334-collaboration-diagrams class="table-of-contents__link toc-highlight">3.3.4 Collaboration Diagrams</a></ul><li><a href=#34-behavioral-elements class="table-of-contents__link toc-highlight">3.4 Behavioral Elements</a><ul><li><a href=#341-state-diagrams class="table-of-contents__link toc-highlight">3.4.1 State Diagrams</a><li><a href=#342-sequence-diagrams class="table-of-contents__link toc-highlight">3.4.2 Sequence Diagrams</a></ul></ul><li><a href=#4-architectural-design class="table-of-contents__link toc-highlight">4. Architectural Design</a><ul><li><a href=#41-definition-of-architecture class="table-of-contents__link toc-highlight">4.1 Definition of Architecture</a><ul><li><a href=#411-architecture-as-representation class="table-of-contents__link toc-highlight">4.1.1 Architecture as Representation</a><li><a href=#412-goals-of-architecture class="table-of-contents__link toc-highlight">4.1.2 Goals of Architecture</a></ul><li><a href=#42-importance-of-architecture class="table-of-contents__link toc-highlight">4.2 Importance of Architecture</a><ul><li><a href=#421-stakeholder-communication class="table-of-contents__link toc-highlight">4.2.1 Stakeholder Communication</a><li><a href=#422-early-design-decisions class="table-of-contents__link toc-highlight">4.2.2 Early Design Decisions</a><li><a href=#423-system-success-impact class="table-of-contents__link toc-highlight">4.2.3 System Success Impact</a></ul><li><a href=#43-architectural-context class="table-of-contents__link toc-highlight">4.3 Architectural Context</a><ul><li><a href=#431-external-entities class="table-of-contents__link toc-highlight">4.3.1 External Entities</a><li><a href=#432-system-interaction class="table-of-contents__link toc-highlight">4.3.2 System Interaction</a></ul><li><a href=#44-architectural-properties class="table-of-contents__link toc-highlight">4.4 Architectural Properties</a><ul><li><a href=#441-structural-properties class="table-of-contents__link toc-highlight">4.4.1 Structural Properties</a><li><a href=#442-extra-functional-properties class="table-of-contents__link toc-highlight">4.4.2 Extra-Functional Properties</a></ul><li><a href=#45-families-of-related-systems class="table-of-contents__link toc-highlight">4.5 Families of Related Systems</a><ul><li><a href=#451-reusable-architectural-patterns class="table-of-contents__link toc-highlight">4.5.1 Reusable Architectural Patterns</a><li><a href=#452-architectural-building-blocks class="table-of-contents__link toc-highlight">4.5.2 Architectural Building Blocks</a></ul></ul><li><a href=#5-architectural-genres-and-styles class="table-of-contents__link toc-highlight">5. Architectural Genres and Styles</a><ul><li><a href=#51-architectural-genres class="table-of-contents__link toc-highlight">5.1 Architectural Genres</a><ul><li><a href=#511-definition class="table-of-contents__link toc-highlight">5.1.1 Definition</a><li><a href=#512-categories-and-subcategories class="table-of-contents__link toc-highlight">5.1.2 Categories and Subcategories</a><li><a href=#513-pattern-based-structures class="table-of-contents__link toc-highlight">5.1.3 Pattern-Based Structures</a></ul><li><a href=#52-architectural-styles class="table-of-contents__link toc-highlight">5.2 Architectural Styles</a><ul><li><a href=#521-components class="table-of-contents__link toc-highlight">5.2.1 Components</a><li><a href=#522-connectors class="table-of-contents__link toc-highlight">5.2.2 Connectors</a><li><a href=#523-constraints class="table-of-contents__link toc-highlight">5.2.3 Constraints</a><li><a href=#524-semantic-models class="table-of-contents__link toc-highlight">5.2.4 Semantic Models</a></ul><li><a href=#-structure-of-architectural-style class="table-of-contents__link toc-highlight">🔁 Structure of Architectural Style</a></ul><li><a href=#6-types-of-software-architectures class="table-of-contents__link toc-highlight">6. Types of Software Architectures</a><ul><li><a href=#61-data-centered-architecture class="table-of-contents__link toc-highlight">6.1 Data-Centered Architecture</a><ul><li><a href=#611-central-repository class="table-of-contents__link toc-highlight">6.1.1 Central Repository</a><li><a href=#612-blackboard-model class="table-of-contents__link toc-highlight">6.1.2 Blackboard Model</a><li><a href=#613-advantages class="table-of-contents__link toc-highlight">6.1.3 Advantages</a><li><a href=#614-disadvantages class="table-of-contents__link toc-highlight">6.1.4 Disadvantages</a></ul><li><a href=#62-data-flow-architecture class="table-of-contents__link toc-highlight">6.2 Data Flow Architecture</a><ul><li><a href=#621-pipe-and-filter-model class="table-of-contents__link toc-highlight">6.2.1 Pipe-and-Filter Model</a><li><a href=#622-batch-sequential-model class="table-of-contents__link toc-highlight">6.2.2 Batch Sequential Model</a><li><a href=#623-advantages class="table-of-contents__link toc-highlight">6.2.3 Advantages</a><li><a href=#624-disadvantages class="table-of-contents__link toc-highlight">6.2.4 Disadvantages</a></ul><li><a href=#63-call-and-return-architecture class="table-of-contents__link toc-highlight">6.3 Call and Return Architecture</a><ul><li><a href=#631-main-programsubprogram class="table-of-contents__link toc-highlight">6.3.1 Main Program/Subprogram</a><li><a href=#632-rpc-remote-procedure-call class="table-of-contents__link toc-highlight">6.3.2 RPC (Remote Procedure Call)</a><li><a href=#633-hierarchical-control-structure class="table-of-contents__link toc-highlight">6.3.3 Hierarchical Control Structure</a></ul><li><a href=#64-object-oriented-architecture class="table-of-contents__link toc-highlight">6.4 Object-Oriented Architecture</a><ul><li><a href=#641-objects-and-classes class="table-of-contents__link toc-highlight">6.4.1 Objects and Classes</a><li><a href=#642-encapsulation class="table-of-contents__link toc-highlight">6.4.2 Encapsulation</a></ul><li><a href=#65-layered-architecture class="table-of-contents__link toc-highlight">6.5 Layered Architecture</a><ul><li><a href=#651-layer-types class="table-of-contents__link toc-highlight">6.5.1 Layer Types</a><li><a href=#652-responsibilities-of-layers class="table-of-contents__link toc-highlight">6.5.2 Responsibilities of Layers</a></ul></ul><li><a href=#7-architectural-patterns class="table-of-contents__link toc-highlight">7. Architectural Patterns</a><ul><li><a href=#71-concurrency-patterns class="table-of-contents__link toc-highlight">7.1 Concurrency Patterns</a><ul><li><a href=#711-process-management class="table-of-contents__link toc-highlight">7.1.1 Process Management</a><li><a href=#712-task-scheduling class="table-of-contents__link toc-highlight">7.1.2 Task Scheduling</a></ul><li><a href=#72-persistence-patterns class="table-of-contents__link toc-highlight">7.2 Persistence Patterns</a><ul><li><a href=#721-dbms-pattern class="table-of-contents__link toc-highlight">7.2.1 DBMS Pattern</a><li><a href=#722-application-level-persistence class="table-of-contents__link toc-highlight">7.2.2 Application-Level Persistence</a></ul><li><a href=#73-distribution-patterns class="table-of-contents__link toc-highlight">7.3 Distribution Patterns</a><ul><li><a href=#731-distributed-systems class="table-of-contents__link toc-highlight">7.3.1 Distributed Systems</a><li><a href=#732-broker-pattern class="table-of-contents__link toc-highlight">7.3.2 Broker Pattern</a></ul></ul><li><a href=#8-architectural-design-process class="table-of-contents__link toc-highlight">8. Architectural Design Process</a><ul><li><a href=#81-context-modeling class="table-of-contents__link toc-highlight">8.1 Context Modeling</a><ul><li><a href=#811-system-placement class="table-of-contents__link toc-highlight">8.1.1 System Placement</a><li><a href=#812-external-interaction class="table-of-contents__link toc-highlight">8.1.2 External Interaction</a></ul><li><a href=#82-architectural-archetypes class="table-of-contents__link toc-highlight">8.2 Architectural Archetypes</a><ul><li><a href=#821-definition class="table-of-contents__link toc-highlight">8.2.1 Definition</a><li><a href=#822-types-controller-node-detector-indicator class="table-of-contents__link toc-highlight">8.2.2 Types (Controller, Node, Detector, Indicator)</a></ul><li><a href=#83-component-structure class="table-of-contents__link toc-highlight">8.3 Component Structure</a><ul><li><a href=#831-initial-structure class="table-of-contents__link toc-highlight">8.3.1 Initial Structure</a><li><a href=#832-refined-structure class="table-of-contents__link toc-highlight">8.3.2 Refined Structure</a></ul><li><a href=#84-architectural-complexity class="table-of-contents__link toc-highlight">8.4 Architectural Complexity</a><ul><li><a href=#841-sharing-dependencies class="table-of-contents__link toc-highlight">8.4.1 Sharing Dependencies</a><li><a href=#842-flow-dependencies class="table-of-contents__link toc-highlight">8.4.2 Flow Dependencies</a><li><a href=#843-constrained-dependencies class="table-of-contents__link toc-highlight">8.4.3 Constrained Dependencies</a></ul></ul><li><a href=#9-architectural-description-language-adl class="table-of-contents__link toc-highlight">9. Architectural Description Language (ADL)</a><ul><li><a href=#91-definition-of-adl class="table-of-contents__link toc-highlight">9.1 Definition of ADL</a><ul><li><a href=#911-syntax-and-semantics class="table-of-contents__link toc-highlight">9.1.1 Syntax and Semantics</a></ul><li><a href=#92-capabilities-of-adl class="table-of-contents__link toc-highlight">9.2 Capabilities of ADL</a><ul><li><a href=#921-decomposition-of-components class="table-of-contents__link toc-highlight">9.2.1 Decomposition of Components</a><li><a href=#922-composition-into-systems class="table-of-contents__link toc-highlight">9.2.2 Composition into Systems</a><li><a href=#923-interface-representation class="table-of-contents__link toc-highlight">9.2.3 Interface Representation</a></ul></ul><li><a href=#10-architectural-design-method class="table-of-contents__link toc-highlight">10. Architectural Design Method</a><ul><li><a href=#101-requirement-mapping class="table-of-contents__link toc-highlight">10.1 Requirement Mapping</a><ul><li><a href=#1011-customer-requirements class="table-of-contents__link toc-highlight">10.1.1 Customer Requirements</a><li><a href=#1012-translation-to-architecture class="table-of-contents__link toc-highlight">10.1.2 Translation to Architecture</a></ul><li><a href=#102-deriving-program-architecture class="table-of-contents__link toc-highlight">10.2 Deriving Program Architecture</a><ul><li><a href=#1021-transform-mapping class="table-of-contents__link toc-highlight">10.2.1 Transform Mapping</a></ul></ul><li><a href=#11-partitioning-in-architecture class="table-of-contents__link toc-highlight">11. Partitioning in Architecture</a><ul><li><a href=#111-horizontal-partitioning class="table-of-contents__link toc-highlight">11.1 Horizontal Partitioning</a><ul><li><a href=#1111-functional-decomposition class="table-of-contents__link toc-highlight">11.1.1 Functional Decomposition</a><li><a href=#1112-control-modules class="table-of-contents__link toc-highlight">11.1.2 Control Modules</a></ul><li><a href=#112-vertical-partitioning-factoring class="table-of-contents__link toc-highlight">11.2 Vertical Partitioning (Factoring)</a><ul><li><a href=#1121-decision-modules class="table-of-contents__link toc-highlight">11.2.1 Decision Modules</a><li><a href=#1122-worker-modules class="table-of-contents__link toc-highlight">11.2.2 Worker Modules</a></ul><li><a href=#113-advantages-of-partitioning class="table-of-contents__link toc-highlight">11.3 Advantages of Partitioning</a><ul><li><a href=#1131-easier-testing class="table-of-contents__link toc-highlight">11.3.1 Easier Testing</a><li><a href=#1132-maintainability class="table-of-contents__link toc-highlight">11.3.2 Maintainability</a><li><a href=#1133-reduced-side-effects class="table-of-contents__link toc-highlight">11.3.3 Reduced Side Effects</a><li><a href=#1134-extensibility class="table-of-contents__link toc-highlight">11.3.4 Extensibility</a></ul></ul><li><a href=#12-fundamental-design-concepts class="table-of-contents__link toc-highlight">12. Fundamental Design Concepts</a><ul><li><a href=#121-abstraction class="table-of-contents__link toc-highlight">12.1 Abstraction</a><ul><li><a href=#1211-data-abstraction class="table-of-contents__link toc-highlight">12.1.1 Data Abstraction</a><li><a href=#1212-procedural-abstraction class="table-of-contents__link toc-highlight">12.1.2 Procedural Abstraction</a></ul><li><a href=#122-architecture class="table-of-contents__link toc-highlight">12.2 Architecture</a><ul><li><a href=#1221-structural-view class="table-of-contents__link toc-highlight">12.2.1 Structural View</a><li><a href=#1222-conceptual-integrity class="table-of-contents__link toc-highlight">12.2.2 Conceptual Integrity</a></ul><li><a href=#123-patterns class="table-of-contents__link toc-highlight">12.3 Patterns</a><ul><li><a href=#1231-reusable-design-solutions class="table-of-contents__link toc-highlight">12.3.1 Reusable Design Solutions</a></ul><li><a href=#124-separation-of-concerns class="table-of-contents__link toc-highlight">12.4 Separation of Concerns</a><ul><li><a href=#1241-problem-decomposition class="table-of-contents__link toc-highlight">12.4.1 Problem Decomposition</a></ul><li><a href=#125-modularity class="table-of-contents__link toc-highlight">12.5 Modularity</a><ul><li><a href=#1251-definition class="table-of-contents__link toc-highlight">12.5.1 Definition</a><li><a href=#1252-benefits class="table-of-contents__link toc-highlight">12.5.2 Benefits</a><li><a href=#1253-trade-offs class="table-of-contents__link toc-highlight">12.5.3 Trade-offs</a></ul><li><a href=#126-information-hiding class="table-of-contents__link toc-highlight">12.6 Information Hiding</a><ul><li><a href=#1261-controlled-interfaces class="table-of-contents__link toc-highlight">12.6.1 Controlled Interfaces</a><li><a href=#1262-encapsulation class="table-of-contents__link toc-highlight">12.6.2 Encapsulation</a></ul><li><a href=#127-functional-independence class="table-of-contents__link toc-highlight">12.7 Functional Independence</a><ul><li><a href=#1271-high-cohesion class="table-of-contents__link toc-highlight">12.7.1 High Cohesion</a><li><a href=#1272-low-coupling class="table-of-contents__link toc-highlight">12.7.2 Low Coupling</a></ul><li><a href=#128-refinement class="table-of-contents__link toc-highlight">12.8 Refinement</a><ul><li><a href=#1281-stepwise-elaboration class="table-of-contents__link toc-highlight">12.8.1 Stepwise Elaboration</a></ul><li><a href=#129-aspects class="table-of-contents__link toc-highlight">12.9 Aspects</a><ul><li><a href=#1291-cross-cutting-concerns class="table-of-contents__link toc-highlight">12.9.1 Cross-Cutting Concerns</a></ul><li><a href=#1210-refactoring class="table-of-contents__link toc-highlight">12.10 Refactoring</a><ul><li><a href=#12101-code-improvement class="table-of-contents__link toc-highlight">12.10.1 Code Improvement</a><li><a href=#12102-maintainability class="table-of-contents__link toc-highlight">12.10.2 Maintainability</a></ul><li><a href=#1211-design-classes-oo-design class="table-of-contents__link toc-highlight">12.11 Design Classes (OO Design)</a><ul><li><a href=#12111-analysis-to-design-mapping class="table-of-contents__link toc-highlight">12.11.1 Analysis to Design Mapping</a></ul></ul><li><a href=#13-design-quality class="table-of-contents__link toc-highlight">13. Design Quality</a><ul><li><a href=#131-design-requirements class="table-of-contents__link toc-highlight">13.1 Design Requirements</a><ul><li><a href=#1311-explicit-requirements class="table-of-contents__link toc-highlight">13.1.1 Explicit Requirements</a><li><a href=#1312-implicit-requirements class="table-of-contents__link toc-highlight">13.1.2 Implicit Requirements</a></ul><li><a href=#132-design-characteristics class="table-of-contents__link toc-highlight">13.2 Design Characteristics</a><ul><li><a href=#1321-readability class="table-of-contents__link toc-highlight">13.2.1 Readability</a><li><a href=#1322-understandability class="table-of-contents__link toc-highlight">13.2.2 Understandability</a><li><a href=#1323-completeness class="table-of-contents__link toc-highlight">13.2.3 Completeness</a></ul></ul><li><a href=#14-interface-design-and-ui-design class="table-of-contents__link toc-highlight">14. Interface Design and UI Design</a><ul><li><a href=#141-interface-design class="table-of-contents__link toc-highlight">14.1 Interface Design</a><ul><li><a href=#1411-definition class="table-of-contents__link toc-highlight">14.1.1 Definition</a><li><a href=#1412-user-system-interaction class="table-of-contents__link toc-highlight">14.1.2 User-System Interaction</a></ul><li><a href=#142-interface-analysis class="table-of-contents__link toc-highlight">14.2 Interface Analysis</a><ul><li><a href=#1421-users-end-users class="table-of-contents__link toc-highlight">14.2.1 Users (End Users)</a><li><a href=#1422-tasks class="table-of-contents__link toc-highlight">14.2.2 Tasks</a><li><a href=#1423-content class="table-of-contents__link toc-highlight">14.2.3 Content</a></ul><li><a href=#143-ui-design class="table-of-contents__link toc-highlight">14.3 UI Design</a><ul><li><a href=#1431-ui-elements class="table-of-contents__link toc-highlight">14.3.1 UI Elements</a><li><a href=#1432-user-experience class="table-of-contents__link toc-highlight">14.3.2 User Experience</a></ul><li><a href=#144-ui-design-process class="table-of-contents__link toc-highlight">14.4 UI Design Process</a><ul><li><a href=#1441-design-steps class="table-of-contents__link toc-highlight">14.4.1 Design Steps</a></ul><li><a href=#145-golden-rules-of-ui-design class="table-of-contents__link toc-highlight">14.5 Golden Rules of UI Design</a><ul><li><a href=#1451-user-control class="table-of-contents__link toc-highlight">14.5.1 User Control</a><li><a href=#1452-reduce-memory-load class="table-of-contents__link toc-highlight">14.5.2 Reduce Memory Load</a><li><a href=#1453-consistency class="table-of-contents__link toc-highlight">14.5.3 Consistency</a></ul></ul><li><a href=#15-data-oriented-analysis-and-design class="table-of-contents__link toc-highlight">15. Data-Oriented Analysis and Design</a><ul><li><a href=#151-data-vs-information class="table-of-contents__link toc-highlight">15.1 Data vs Information</a><ul><li><a href=#1511-definitions class="table-of-contents__link toc-highlight">15.1.1 Definitions</a><li><a href=#1512-differences class="table-of-contents__link toc-highlight">15.1.2 Differences</a></ul><li><a href=#152-entity-relationship-er-model class="table-of-contents__link toc-highlight">15.2 Entity-Relationship (ER) Model</a><ul><li><a href=#1521-entities class="table-of-contents__link toc-highlight">15.2.1 Entities</a><li><a href=#1522-attributes class="table-of-contents__link toc-highlight">15.2.2 Attributes</a><li><a href=#1523-relationships class="table-of-contents__link toc-highlight">15.2.3 Relationships</a></ul><li><a href=#153-er-diagrams class="table-of-contents__link toc-highlight">15.3 ER Diagrams</a><ul><li><a href=#1531-notations class="table-of-contents__link toc-highlight">15.3.1 Notations</a><li><a href=#1532-attribute-types class="table-of-contents__link toc-highlight">15.3.2 Attribute Types</a></ul><li><a href=#154-cardinality-constraints class="table-of-contents__link toc-highlight">15.4 Cardinality Constraints</a><ul><li><a href=#1541-one-to-one-11 class="table-of-contents__link toc-highlight">15.4.1 One-to-One (1:1)</a><li><a href=#1542-one-to-many-1 class="table-of-contents__link toc-highlight">15.4.2 One-to-Many (1)</a><li><a href=#1543-many-to-one-n1 class="table-of-contents__link toc-highlight">15.4.3 Many-to-One (N:1)</a><li><a href=#1544-many-to-many-m class="table-of-contents__link toc-highlight">15.4.4 Many-to-Many (M)</a></ul><li><a href=#155-extended-er-features class="table-of-contents__link toc-highlight">15.5 Extended ER Features</a><ul><li><a href=#1551-specialization class="table-of-contents__link toc-highlight">15.5.1 Specialization</a><li><a href=#1552-generalization class="table-of-contents__link toc-highlight">15.5.2 Generalization</a><li><a href=#1553-aggregation class="table-of-contents__link toc-highlight">15.5.3 Aggregation</a></ul></ul><li><a href=#16-data-flow-modeling class="table-of-contents__link toc-highlight">16. Data Flow Modeling</a><ul><li><a href=#161-flow-modeling-notation class="table-of-contents__link toc-highlight">16.1 Flow Modeling Notation</a><ul><li><a href=#1611-external-entity class="table-of-contents__link toc-highlight">16.1.1 External Entity</a><li><a href=#1612-process class="table-of-contents__link toc-highlight">16.1.2 Process</a><li><a href=#1613-data-flow class="table-of-contents__link toc-highlight">16.1.3 Data Flow</a><li><a href=#1614-data-store class="table-of-contents__link toc-highlight">16.1.4 Data Store</a></ul><li><a href=#162-data-flow-diagrams-dfd class="table-of-contents__link toc-highlight">16.2 Data Flow Diagrams (DFD)</a><ul><li><a href=#1621-level-0-context-diagram class="table-of-contents__link toc-highlight">16.2.1 Level 0 (Context Diagram)</a><li><a href=#1622-level-1 class="table-of-contents__link toc-highlight">16.2.2 Level 1</a><li><a href=#1623-data-flow-hierarchy class="table-of-contents__link toc-highlight">16.2.3 Data Flow Hierarchy</a></ul><li><a href=#163-dfd-construction class="table-of-contents__link toc-highlight">16.3 DFD Construction</a><ul><li><a href=#1631-constructing-dfd--i class="table-of-contents__link toc-highlight">16.3.1 Constructing DFD – I</a><li><a href=#1632-constructing-dfd--ii class="table-of-contents__link toc-highlight">16.3.2 Constructing DFD – II</a><li><a href=#1633-expansion-rules class="table-of-contents__link toc-highlight">16.3.3 Expansion Rules</a></ul><li><a href=#164-dfd-guidelines class="table-of-contents__link toc-highlight">16.4 DFD Guidelines</a><ul><li><a href=#1641-naming-conventions class="table-of-contents__link toc-highlight">16.4.1 Naming Conventions</a><li><a href=#1642-flow-continuity class="table-of-contents__link toc-highlight">16.4.2 Flow Continuity</a><li><a href=#1643-balancing class="table-of-contents__link toc-highlight">16.4.3 Balancing</a></ul><li><a href=#165-data-dictionary class="table-of-contents__link toc-highlight">16.5 Data Dictionary</a><ul><li><a href=#1651-definition class="table-of-contents__link toc-highlight">16.5.1 Definition</a><li><a href=#1652-uses class="table-of-contents__link toc-highlight">16.5.2 Uses</a></ul></ul><li><a href=#17-component-level-design class="table-of-contents__link toc-highlight">17. Component-Level Design</a><ul><li><a href=#171-definition class="table-of-contents__link toc-highlight">17.1 Definition</a><ul><li><a href=#1711-internal-component-details class="table-of-contents__link toc-highlight">17.1.1 Internal Component Details</a></ul><li><a href=#172-component-structure class="table-of-contents__link toc-highlight">17.2 Component Structure</a><ul><li><a href=#1721-basic-structure class="table-of-contents__link toc-highlight">17.2.1 Basic Structure</a><li><a href=#1722-refined-structure class="table-of-contents__link toc-highlight">17.2.2 Refined Structure</a></ul><li><a href=#173-cohesion-and-coupling class="table-of-contents__link toc-highlight">17.3 Cohesion and Coupling</a><ul><li><a href=#1731-types-of-cohesion class="table-of-contents__link toc-highlight">17.3.1 Types of Cohesion</a><li><a href=#1732-types-of-coupling class="table-of-contents__link toc-highlight">17.3.2 Types of Coupling</a></ul><li><a href=#-goal class="table-of-contents__link toc-highlight">🔁 Goal</a></ul><li><a href=#18-procedural-design class="table-of-contents__link toc-highlight">18. Procedural Design</a><ul><li><a href=#181-definition class="table-of-contents__link toc-highlight">18.1 Definition</a><ul><li><a href=#1811-algorithmic-design class="table-of-contents__link toc-highlight">18.1.1 Algorithmic Design</a></ul><li><a href=#182-procedural-abstraction class="table-of-contents__link toc-highlight">18.2 Procedural Abstraction</a><ul><li><a href=#1821-implementation-details class="table-of-contents__link toc-highlight">18.2.1 Implementation Details</a></ul></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro>Notes</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog>Blog</a><li class=footer__item><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Ankur</div></div></div></footer></div></body>
