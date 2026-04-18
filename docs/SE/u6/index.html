@@ -1,227 +1,2065 @@
-<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-SE/u6" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Unit - 6 | Ankur's Page</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://ankur3-101106.github.io/docs/SE/u6 /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Unit - 6 | Ankur's Page"/><meta data-rh=true name=description content="Software Testing & Quality Assurance"/><meta data-rh=true property=og:description content="Software Testing & Quality Assurance"/><link data-rh=true rel=icon href=/img/favicon.jpg /><link data-rh=true rel=canonical href=https://ankur3-101106.github.io/docs/SE/u6 /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/SE/u6 hreflang=en /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/SE/u6 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/se---apr-21","name":"SE - APR 21","position":1},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/SE/u6","name":"Unit - 6","position":2}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Ankur's Page RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Ankur's Page Atom Feed"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/assets/css/styles.205c7f04.css /><script src=/assets/js/runtime~main.813dfed0.js defer></script><script src=/assets/js/main.8977da3c.js defer></script></head><body><svg style="display: none;"><defs>
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-SE/u6" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.0"><title data-rh=true>Unit - 6 | Ankur's Page</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://ankur3-101106.github.io/docs/SE/u6 /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Unit - 6 | Ankur's Page"/><meta data-rh=true name=description content="Software Testing & Quality Assurance"/><meta data-rh=true property=og:description content="Software Testing & Quality Assurance"/><link data-rh=true rel=icon href=/img/favicon.jpg /><link data-rh=true rel=canonical href=https://ankur3-101106.github.io/docs/SE/u6 /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/SE/u6 hreflang=en /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/SE/u6 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/se---apr-21","name":"SE - APR 21","position":1},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/SE/u6","name":"Unit - 6","position":2}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Ankur's Page RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Ankur's Page Atom Feed"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/assets/css/styles.c97868ce.css /><script src=/assets/js/runtime~main.c0d1696a.js defer></script><script src=/assets/js/main.8977da3c.js defer></script></head><body><svg style="display: none;"><defs>
 <symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
 </defs></svg>
 <script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-142")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon.jpg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Ankur's Page</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/intro>Notes</a><a class="navbar__item navbar__link" href=/blog>Blog</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/intro><span title=Introduction class=linkLabel_WmDU>Introduction</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ncs---apr-16><span title="NCS - APR 16" class=categoryLinkLabel_W154>NCS - APR 16</span></a><button aria-label="Expand sidebar category 'NCS - APR 16'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/docs/category/se---apr-21><span title="SE - APR 21" class=categoryLinkLabel_W154>SE - APR 21</span></a><button aria-label="Collapse sidebar category 'SE - APR 21'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u1><span title="Unit - 1" class=linkLabel_WmDU>Unit - 1</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u2><span title="Unit - 2" class=linkLabel_WmDU>Unit - 2</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u3><span title="Unit - 3" class=linkLabel_WmDU>Unit - 3</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u4><span title="Unit - 4" class=linkLabel_WmDU>Unit - 4</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u5><span title="Unit - 5" class=linkLabel_WmDU>Unit - 5</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/SE/u6><span title="Unit - 6" class=linkLabel_WmDU>Unit - 6</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u7><span title="Unit - 7" class=linkLabel_WmDU>Unit - 7</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class=menu__link tabindex=0 href=/docs/SE/u8><span title="Unit - 8" class=linkLabel_WmDU>Unit - 8</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/os---apr-23><span title="OS - APR 23" class=categoryLinkLabel_W154>OS - APR 23</span></a><button aria-label="Expand sidebar category 'OS - APR 23'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/cry---apr-25><span title="CRY - APR 25" class=categoryLinkLabel_W154>CRY - APR 25</span></a><button aria-label="Expand sidebar category 'CRY - APR 25'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/ppfd---apr-30><span title="PPFD - APR 30" class=categoryLinkLabel_W154>PPFD - APR 30</span></a><button aria-label="Expand sidebar category 'PPFD - APR 30'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/hacks><span title=Hacks class=linkLabel_WmDU>Hacks</span></a></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/category/se---apr-21><span>SE - APR 21</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Unit - 6</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Unit - 6</h1></header>
 <div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></span>TITLE</div><div class=admonitionContent_BuS1><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=software-testing--quality-assurance>Software Testing & Quality Assurance<a href=#software-testing--quality-assurance class=hash-link aria-label="Direct link to Software Testing & Quality Assurance" title="Direct link to Software Testing & Quality Assurance" translate=no>​</a></h2></div></div>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-software-testing-concepts>1. Software Testing Concepts<a href=#1-software-testing-concepts class=hash-link aria-label="Direct link to 1. Software Testing Concepts" title="Direct link to 1. Software Testing Concepts" translate=no>​</a></h2>
+<p>Software Testing is a <strong>systematic process used to identify defects and ensure software meets requirements before delivery</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-definition-of-testing>1.1 Definition of Testing<a href=#11-definition-of-testing class=hash-link aria-label="Direct link to 1.1 Definition of Testing" title="Direct link to 1.1 Definition of Testing" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Software Testing is the process of <strong>executing a program with the intent of finding errors</strong></p>
+</li>
+<li class="">
+<p>Ensures:</p>
+<ul>
+<li class="">Correct functionality</li>
+<li class="">Reliability</li>
+<li class="">Performance</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-objectives-of-testing>1.2 Objectives of Testing<a href=#12-objectives-of-testing class=hash-link aria-label="Direct link to 1.2 Objectives of Testing" title="Direct link to 1.2 Objectives of Testing" translate=no>​</a></h3>
+<ul>
+<li class="">Detect defects and errors</li>
+<li class="">Ensure software meets requirements</li>
+<li class="">Improve quality and reliability</li>
+<li class="">Validate system behavior</li>
+<li class="">Build confidence before deployment</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=13-testing-techniques-overview>1.3 Testing Techniques Overview<a href=#13-testing-techniques-overview class=hash-link aria-label="Direct link to 1.3 Testing Techniques Overview" title="Direct link to 1.3 Testing Techniques Overview" translate=no>​</a></h3>
+<p>Software can be tested using two main approaches:</p>
+<ul>
+<li class="">
+<p><strong>Black-Box Testing</strong></p>
+<ul>
+<li class="">Based on requirements</li>
+<li class="">Focus on inputs and outputs</li>
+</ul>
+</li>
+<li class="">
+<p><strong>White-Box Testing</strong></p>
+<ul>
+<li class="">Based on internal logic</li>
+<li class="">Focus on code structure</li>
+</ul>
+</li>
+</ul>
+<p>👉 Both techniques are <strong>complementary</strong></p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=14-interface-testing-guidelines>1.4 Interface Testing Guidelines<a href=#14-interface-testing-guidelines class=hash-link aria-label="Direct link to 1.4 Interface Testing Guidelines" title="Direct link to 1.4 Interface Testing Guidelines" translate=no>​</a></h3>
+<p>Interface Testing ensures correct interaction between system components.</p>
+<p><strong>Guidelines:</strong></p>
+<ul>
+<li class="">Check data passed between modules</li>
+<li class="">Validate input/output formats</li>
+<li class="">Handle invalid or unexpected data</li>
+<li class="">Test boundary conditions</li>
+<li class="">Ensure proper communication between interfaces</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=15-object-oriented-testing>1.5 Object-Oriented Testing<a href=#15-object-oriented-testing class=hash-link aria-label="Direct link to 1.5 Object-Oriented Testing" title="Direct link to 1.5 Object-Oriented Testing" translate=no>​</a></h3>
+<ul>
+<li class="">Testing focused on <strong>objects, classes, and interactions</strong></li>
+</ul>
+<p><strong>Focus Areas:</strong></p>
+<ul>
+<li class="">Methods and attributes</li>
+<li class="">Object states</li>
+<li class="">Interaction between objects</li>
+</ul>
+<p><strong>Levels:</strong></p>
+<ul>
+<li class="">Class testing</li>
+<li class="">Integration of objects</li>
+<li class="">System-level behavior</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=16-case-tool-support>1.6 CASE Tool Support<a href=#16-case-tool-support class=hash-link aria-label="Direct link to 1.6 CASE Tool Support" title="Direct link to 1.6 CASE Tool Support" translate=no>​</a></h3>
+<p>CASE (Computer-Aided Software Engineering) tools assist in testing.</p>
+<p><strong>Functions:</strong></p>
+<ul>
+<li class="">Test case generation</li>
+<li class="">Test execution automation</li>
+<li class="">Bug tracking</li>
+<li class="">Reporting and documentation</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Improves efficiency</li>
+<li class="">Reduces manual effort</li>
+<li class="">Enhances accuracy</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-psychology-of-testing>2. Psychology of Testing<a href=#2-psychology-of-testing class=hash-link aria-label="Direct link to 2. Psychology of Testing" title="Direct link to 2. Psychology of Testing" translate=no>​</a></h2>
+<p>Psychology of Testing focuses on the <strong>mindset and principles</strong> that make testing effective.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-traceability-to-requirements>2.1 Traceability to Requirements<a href=#21-traceability-to-requirements class=hash-link aria-label="Direct link to 2.1 Traceability to Requirements" title="Direct link to 2.1 Traceability to Requirements" translate=no>​</a></h3>
+<ul>
+<li class="">Every test should be <strong>linked to a requirement</strong></li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Ensures complete coverage</li>
+<li class="">Validates that all requirements are tested</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=22-early-test-planning>2.2 Early Test Planning<a href=#22-early-test-planning class=hash-link aria-label="Direct link to 2.2 Early Test Planning" title="Direct link to 2.2 Early Test Planning" translate=no>​</a></h3>
+<ul>
+<li class="">Testing should be planned <strong>before development begins</strong></li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Better test coverage</li>
+<li class="">Early defect detection</li>
+<li class="">Improved project control</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=23-pareto-principle>2.3 Pareto Principle<a href=#23-pareto-principle class=hash-link aria-label="Direct link to 2.3 Pareto Principle" title="Direct link to 2.3 Pareto Principle" translate=no>​</a></h3>
+<ul>
+<li class="">Also known as the <strong>80/20 rule</strong></li>
+</ul>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">80% of defects come from 20% of modules</li>
+</ul>
+<p><strong>Implication:</strong></p>
+<ul>
+<li class="">Focus testing on critical areas</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=24-testing-from-small-to-large>2.4 Testing from Small to Large<a href=#24-testing-from-small-to-large class=hash-link aria-label="Direct link to 2.4 Testing from Small to Large" title="Direct link to 2.4 Testing from Small to Large" translate=no>​</a></h3>
+<ul>
+<li class="">Begin testing at <strong>component level</strong> and move to full system</li>
+</ul>
+<p><strong>Flow:</strong></p>
+<ul>
+<li class="">Unit Testing → Integration Testing → System Testing</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=25-exhaustive-testing-limitation>2.5 Exhaustive Testing Limitation<a href=#25-exhaustive-testing-limitation class=hash-link aria-label="Direct link to 2.5 Exhaustive Testing Limitation" title="Direct link to 2.5 Exhaustive Testing Limitation" translate=no>​</a></h3>
+<ul>
+<li class="">Testing all possible inputs is <strong>not feasible</strong></li>
+</ul>
+<p><strong>Reason:</strong></p>
+<ul>
+<li class="">Too many combinations</li>
+<li class="">Time and cost constraints</li>
+</ul>
+<p>👉 Therefore, use <strong>selective and smart testing techniques</strong></p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=26-independent-testing>2.6 Independent Testing<a href=#26-independent-testing class=hash-link aria-label="Direct link to 2.6 Independent Testing" title="Direct link to 2.6 Independent Testing" translate=no>​</a></h3>
+<ul>
+<li class="">Testing should be done by an <strong>independent team</strong></li>
+</ul>
+<p><strong>Reason:</strong></p>
+<ul>
+<li class="">Developers may overlook their own errors</li>
+</ul>
+<p><strong>Benefit:</strong></p>
+<ul>
+<li class="">More objective and effective testing</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-software-testing-phases>3. Software Testing Phases<a href=#3-software-testing-phases class=hash-link aria-label="Direct link to 3. Software Testing Phases" title="Direct link to 3. Software Testing Phases" translate=no>​</a></h2>
+<p>Software testing is performed in <strong>stages</strong>, progressing from small components to the complete system.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=31-component-testing>3.1 Component Testing<a href=#31-component-testing class=hash-link aria-label="Direct link to 3.1 Component Testing" title="Direct link to 3.1 Component Testing" translate=no>​</a></h3>
+<ul>
+<li class="">Testing of <strong>individual components (units)</strong> of a program</li>
+<li class="">Done before integration</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=311-developer-based-testing>3.1.1 Developer-Based Testing<a href=#311-developer-based-testing class=hash-link aria-label="Direct link to 3.1.1 Developer-Based Testing" title="Direct link to 3.1.1 Developer-Based Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Performed by <strong>developers</strong></li>
+<li class="">Based on their understanding of the code</li>
+<li class="">Uses <strong>developer-created test cases</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=312-unit-level-focus>3.1.2 Unit-Level Focus<a href=#312-unit-level-focus class=hash-link aria-label="Direct link to 3.1.2 Unit-Level Focus" title="Direct link to 3.1.2 Unit-Level Focus" translate=no>​</a></h4>
+<ul>
+<li class="">Focuses on <strong>smallest testable units</strong></li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Verify each unit works correctly in isolation</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=32-integration-testing>3.2 Integration Testing<a href=#32-integration-testing class=hash-link aria-label="Direct link to 3.2 Integration Testing" title="Direct link to 3.2 Integration Testing" translate=no>​</a></h3>
+<ul>
+<li class="">Testing of <strong>combined components</strong> to form a system or subsystem</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=321-subsystem-testing>3.2.1 Subsystem Testing<a href=#321-subsystem-testing class=hash-link aria-label="Direct link to 3.2.1 Subsystem Testing" title="Direct link to 3.2.1 Subsystem Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Groups of components are tested together</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Ensure modules interact correctly</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=322-system-specification-based-testing>3.2.2 System Specification-Based Testing<a href=#322-system-specification-based-testing class=hash-link aria-label="Direct link to 3.2.2 System Specification-Based Testing" title="Direct link to 3.2.2 System Specification-Based Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Tests are based on <strong>system specifications</strong></li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Verify integrated system behaves as per requirements</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-testing-process>4. Testing Process<a href=#4-testing-process class=hash-link aria-label="Direct link to 4. Testing Process" title="Direct link to 4. Testing Process" translate=no>​</a></h2>
+<p>Testing Process defines the <strong>steps followed to test software systematically</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=41-test-case-design>4.1 Test Case Design<a href=#41-test-case-design class=hash-link aria-label="Direct link to 4.1 Test Case Design" title="Direct link to 4.1 Test Case Design" translate=no>​</a></h3>
+<ul>
+<li class="">Creation of <strong>test cases</strong> to verify system behavior</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Input conditions</li>
+<li class="">Expected output</li>
+<li class="">Test scenarios</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Ensure maximum error detection</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=42-test-data-preparation>4.2 Test Data Preparation<a href=#42-test-data-preparation class=hash-link aria-label="Direct link to 4.2 Test Data Preparation" title="Direct link to 4.2 Test Data Preparation" translate=no>​</a></h3>
+<ul>
+<li class="">Preparing <strong>input data</strong> required for testing</li>
+</ul>
+<p><strong>Guidelines:</strong></p>
+<ul>
+<li class="">Use valid and invalid data</li>
+<li class="">Include boundary values</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=43-test-execution>4.3 Test Execution<a href=#43-test-execution class=hash-link aria-label="Direct link to 4.3 Test Execution" title="Direct link to 4.3 Test Execution" translate=no>​</a></h3>
+<ul>
+<li class="">Running the program using <strong>test cases and test data</strong></li>
+</ul>
+<p><strong>Activities:</strong></p>
+<ul>
+<li class="">Execute test cases</li>
+<li class="">Observe outputs</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=44-result-comparison>4.4 Result Comparison<a href=#44-result-comparison class=hash-link aria-label="Direct link to 4.4 Result Comparison" title="Direct link to 4.4 Result Comparison" translate=no>​</a></h3>
+<ul>
+<li class="">Compare <strong>actual results with expected results</strong></li>
+</ul>
+<p><strong>Outcome:</strong></p>
+<ul>
+<li class="">Match → Test Passed</li>
+<li class="">Mismatch → Defect found</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=45-test-reporting>4.5 Test Reporting<a href=#45-test-reporting class=hash-link aria-label="Direct link to 4.5 Test Reporting" title="Direct link to 4.5 Test Reporting" translate=no>​</a></h3>
+<ul>
+<li class="">Documenting results of testing</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Test results</li>
+<li class="">Defects found</li>
+<li class="">Status reports</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Track progress and quality of software</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-test-planning>5. Test Planning<a href=#5-test-planning class=hash-link aria-label="Direct link to 5. Test Planning" title="Direct link to 5. Test Planning" translate=no>​</a></h2>
+<p>Test Planning is the <strong>most important activity in testing</strong> that defines how testing will be performed.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=51-definition-of-test-plan>5.1 Definition of Test Plan<a href=#51-definition-of-test-plan class=hash-link aria-label="Direct link to 5.1 Definition of Test Plan" title="Direct link to 5.1 Definition of Test Plan" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>A <strong>test plan</strong> is a document that:</p>
+<ul>
+<li class="">Defines testing scope</li>
+<li class="">Lists tasks and milestones</li>
+<li class="">Estimates testing effort</li>
+</ul>
+</li>
+<li class="">
+<p>Also called:</p>
+<ul>
+<li class=""><strong>Master Test Plan / Project Test Plan</strong></li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=52-importance-of-test-planning>5.2 Importance of Test Planning<a href=#52-importance-of-test-planning class=hash-link aria-label="Direct link to 5.2 Importance of Test Planning" title="Direct link to 5.2 Importance of Test Planning" translate=no>​</a></h3>
+<ul>
+<li class="">Provides clear testing direction</li>
+<li class="">Helps track project progress</li>
+<li class="">Ensures proper resource allocation</li>
+<li class="">Improves test effectiveness</li>
+<li class="">Reduces risks</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=53-test-planning-activities>5.3 Test Planning Activities<a href=#53-test-planning-activities class=hash-link aria-label="Direct link to 5.3 Test Planning Activities" title="Direct link to 5.3 Test Planning Activities" translate=no>​</a></h3>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=531-scope-and-risk-identification>5.3.1 Scope and Risk Identification<a href=#531-scope-and-risk-identification class=hash-link aria-label="Direct link to 5.3.1 Scope and Risk Identification" title="Direct link to 5.3.1 Scope and Risk Identification" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Identify:</p>
+<ul>
+<li class="">What will be tested</li>
+<li class="">What will NOT be tested</li>
+<li class="">Risks involved</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=532-test-strategy-documentation>5.3.2 Test Strategy Documentation<a href=#532-test-strategy-documentation class=hash-link aria-label="Direct link to 5.3.2 Test Strategy Documentation" title="Direct link to 5.3.2 Test Strategy Documentation" translate=no>​</a></h4>
+<ul>
+<li class="">Define overall <strong>testing approach</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Types of testing</li>
+<li class="">Tools and techniques</li>
+<li class="">Testing methods</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=533-entry-and-exit-criteria>5.3.3 Entry and Exit Criteria<a href=#533-entry-and-exit-criteria class=hash-link aria-label="Direct link to 5.3.3 Entry and Exit Criteria" title="Direct link to 5.3.3 Entry and Exit Criteria" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Entry Criteria:</strong> Conditions to start testing</li>
+<li class=""><strong>Exit Criteria:</strong> Conditions to stop testing</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=534-test-estimation>5.3.4 Test Estimation<a href=#534-test-estimation class=hash-link aria-label="Direct link to 5.3.4 Test Estimation" title="Direct link to 5.3.4 Test Estimation" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Estimate:</p>
+<ul>
+<li class="">Time required</li>
+<li class="">Resources needed</li>
+<li class="">Effort involved</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=535-scheduling-and-evaluation>5.3.5 Scheduling and Evaluation<a href=#535-scheduling-and-evaluation class=hash-link aria-label="Direct link to 5.3.5 Scheduling and Evaluation" title="Direct link to 5.3.5 Scheduling and Evaluation" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Plan:</p>
+<ul>
+<li class="">When testing will occur</li>
+<li class="">How results will be evaluated</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=536-test-documentation>5.3.6 Test Documentation<a href=#536-test-documentation class=hash-link aria-label="Direct link to 5.3.6 Test Documentation" title="Direct link to 5.3.6 Test Documentation" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Prepare:</p>
+<ul>
+<li class="">Test cases</li>
+<li class="">Test reports</li>
+<li class="">Test logs</li>
+</ul>
+</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Ensure repeatability and proper tracking</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-test-case-design>6. Test Case Design<a href=#6-test-case-design class=hash-link aria-label="Direct link to 6. Test Case Design" title="Direct link to 6. Test Case Design" translate=no>​</a></h2>
+<p>Test Case Design defines <strong>how test cases are created</strong> to effectively detect errors in software.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=61-purpose-of-test-case-design>6.1 Purpose of Test Case Design<a href=#61-purpose-of-test-case-design class=hash-link aria-label="Direct link to 6.1 Purpose of Test Case Design" title="Direct link to 6.1 Purpose of Test Case Design" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>To create test cases that:</p>
+<ul>
+<li class="">Detect maximum defects</li>
+<li class="">Cover all functionalities</li>
+<li class="">Ensure correctness of software</li>
+</ul>
+</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Increase probability of finding errors</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=62-completeness-of-testing>6.2 Completeness of Testing<a href=#62-completeness-of-testing class=hash-link aria-label="Direct link to 6.2 Completeness of Testing" title="Direct link to 6.2 Completeness of Testing" translate=no>​</a></h3>
+<ul>
+<li class="">Test cases should ensure <strong>complete coverage</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">All functional requirements</li>
+<li class="">All possible input conditions</li>
+<li class="">Critical paths of execution</li>
+</ul>
+<p><strong>Note:</strong></p>
+<ul>
+<li class="">Complete (exhaustive) testing is not possible, so <strong>effective selection</strong> is required</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=63-black-box-testing-approach>6.3 Black-Box Testing Approach<a href=#63-black-box-testing-approach class=hash-link aria-label="Direct link to 6.3 Black-Box Testing Approach" title="Direct link to 6.3 Black-Box Testing Approach" translate=no>​</a></h3>
+<ul>
+<li class="">Testing based on <strong>external behavior of the system</strong></li>
+</ul>
+<p><strong>Focus:</strong></p>
+<ul>
+<li class="">Inputs and outputs</li>
+<li class="">Functional requirements</li>
+</ul>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li class="">No knowledge of internal code</li>
+<li class="">Derived from specifications</li>
+</ul>
+<p><strong>Finds errors in:</strong></p>
+<ul>
+<li class="">Missing or incorrect functions</li>
+<li class="">Interface issues</li>
+<li class="">Data handling errors</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=64-white-box-testing-approach>6.4 White-Box Testing Approach<a href=#64-white-box-testing-approach class=hash-link aria-label="Direct link to 6.4 White-Box Testing Approach" title="Direct link to 6.4 White-Box Testing Approach" translate=no>​</a></h3>
+<ul>
+<li class="">Testing based on <strong>internal structure of code</strong></li>
+</ul>
+<p><strong>Focus:</strong></p>
+<ul>
+<li class="">Control flow</li>
+<li class="">Logic paths</li>
+<li class="">Data structures</li>
+</ul>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li class="">Requires knowledge of code</li>
+<li class="">Tests internal operations</li>
+</ul>
+<p><strong>Ensures:</strong></p>
+<ul>
+<li class="">All paths are executed</li>
+<li class="">All conditions are tested</li>
+<li class="">Loops are properly handled</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-test-execution>7. Test Execution<a href=#7-test-execution class=hash-link aria-label="Direct link to 7. Test Execution" title="Direct link to 7. Test Execution" translate=no>​</a></h2>
+<p>Test Execution is the process of <strong>running test cases and comparing actual results with expected results</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=71-execution-process>7.1 Execution Process<a href=#71-execution-process class=hash-link aria-label="Direct link to 7.1 Execution Process" title="Direct link to 7.1 Execution Process" translate=no>​</a></h3>
+<ul>
+<li class="">Execute the program using <strong>prepared test cases and test data</strong></li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ul>
+<li class="">Run test cases</li>
+<li class="">Capture outputs</li>
+<li class="">Compare with expected results</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=72-test-selection-based-on-risk>7.2 Test Selection Based on Risk<a href=#72-test-selection-based-on-risk class=hash-link aria-label="Direct link to 7.2 Test Selection Based on Risk" title="Direct link to 7.2 Test Selection Based on Risk" translate=no>​</a></h3>
+<ul>
+<li class="">Select test cases based on <strong>risk and priority</strong></li>
+</ul>
+<p><strong>Focus:</strong></p>
+<ul>
+<li class="">Critical functionalities</li>
+<li class="">High-risk areas</li>
+<li class="">Frequently used features</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=73-test-assignment>7.3 Test Assignment<a href=#73-test-assignment class=hash-link aria-label="Direct link to 7.3 Test Assignment" title="Direct link to 7.3 Test Assignment" translate=no>​</a></h3>
+<ul>
+<li class="">Assign test cases to <strong>testers</strong></li>
+</ul>
+<p><strong>Guidelines:</strong></p>
+<ul>
+<li class="">Distribute workload properly</li>
+<li class="">Match tasks with skill levels</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=74-bug-reporting>7.4 Bug Reporting<a href=#74-bug-reporting class=hash-link aria-label="Direct link to 7.4 Bug Reporting" title="Direct link to 7.4 Bug Reporting" translate=no>​</a></h3>
+<ul>
+<li class="">Report defects found during testing</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Bug description</li>
+<li class="">Steps to reproduce</li>
+<li class="">Severity and priority</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=75-issue-resolution>7.5 Issue Resolution<a href=#75-issue-resolution class=hash-link aria-label="Direct link to 7.5 Issue Resolution" title="Direct link to 7.5 Issue Resolution" translate=no>​</a></h3>
+<ul>
+<li class="">Fix reported defects</li>
+</ul>
+<p><strong>Process:</strong></p>
+<ul>
+<li class="">Developers analyze bugs</li>
+<li class="">Apply fixes</li>
+<li class="">Retest to confirm resolution</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=76-status-reporting>7.6 Status Reporting<a href=#76-status-reporting class=hash-link aria-label="Direct link to 7.6 Status Reporting" title="Direct link to 7.6 Status Reporting" translate=no>​</a></h3>
+<ul>
+<li class="">Track and report testing progress</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Test execution status</li>
+<li class="">Number of passed/failed cases</li>
+<li class="">Defect status</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=8-levels-of-testing>8. Levels of Testing<a href=#8-levels-of-testing class=hash-link aria-label="Direct link to 8. Levels of Testing" title="Direct link to 8. Levels of Testing" translate=no>​</a></h2>
+<p>Levels of Testing define <strong>different stages and types of testing</strong> used to evaluate software.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=81-functional-testing>8.1 Functional Testing<a href=#81-functional-testing class=hash-link aria-label="Direct link to 8.1 Functional Testing" title="Direct link to 8.1 Functional Testing" translate=no>​</a></h3>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=811-definition>8.1.1 Definition<a href=#811-definition class=hash-link aria-label="Direct link to 8.1.1 Definition" title="Direct link to 8.1.1 Definition" translate=no>​</a></h4>
+<ul>
+<li class="">Functional Testing is a type of <strong>black-box testing</strong></li>
+<li class="">It verifies that software functions according to <strong>specified requirements</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=812-steps-in-functional-testing>8.1.2 Steps in Functional Testing<a href=#812-steps-in-functional-testing class=hash-link aria-label="Direct link to 8.1.2 Steps in Functional Testing" title="Direct link to 8.1.2 Steps in Functional Testing" translate=no>​</a></h4>
+<ol>
+<li class="">Identify required functionalities</li>
+<li class="">Create test data based on specifications</li>
+<li class="">Define expected outputs</li>
+<li class="">Execute test cases</li>
+<li class="">Compare actual results with expected results</li>
+</ol>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=82-non-functional-testing>8.2 Non-Functional Testing<a href=#82-non-functional-testing class=hash-link aria-label="Direct link to 8.2 Non-Functional Testing" title="Direct link to 8.2 Non-Functional Testing" translate=no>​</a></h3>
+<ul>
+<li class="">Tests <strong>non-functional aspects</strong> of software like performance, usability, and security</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=821-performance-testing>8.2.1 Performance Testing<a href=#821-performance-testing class=hash-link aria-label="Direct link to 8.2.1 Performance Testing" title="Direct link to 8.2.1 Performance Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Measures <strong>speed, response time, and efficiency</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=822-load-testing>8.2.2 Load Testing<a href=#822-load-testing class=hash-link aria-label="Direct link to 8.2.2 Load Testing" title="Direct link to 8.2.2 Load Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Tests system behavior under <strong>expected user load</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=823-stress-testing>8.2.3 Stress Testing<a href=#823-stress-testing class=hash-link aria-label="Direct link to 8.2.3 Stress Testing" title="Direct link to 8.2.3 Stress Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Tests system under <strong>extreme conditions</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=824-usability-testing>8.2.4 Usability Testing<a href=#824-usability-testing class=hash-link aria-label="Direct link to 8.2.4 Usability Testing" title="Direct link to 8.2.4 Usability Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Evaluates <strong>user-friendliness and ease of use</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=825-security-testing>8.2.5 Security Testing<a href=#825-security-testing class=hash-link aria-label="Direct link to 8.2.5 Security Testing" title="Direct link to 8.2.5 Security Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Checks for <strong>vulnerabilities and data protection</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=826-portability-testing>8.2.6 Portability Testing<a href=#826-portability-testing class=hash-link aria-label="Direct link to 8.2.6 Portability Testing" title="Direct link to 8.2.6 Portability Testing" translate=no>​</a></h4>
+<ul>
+<li class="">Verifies software works across <strong>different platforms and environments</strong></li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=9-unit-testing>9. Unit Testing<a href=#9-unit-testing class=hash-link aria-label="Direct link to 9. Unit Testing" title="Direct link to 9. Unit Testing" translate=no>​</a></h2>
+<p>Unit Testing focuses on testing <strong>individual units/components</strong> of software in isolation.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=91-definition>9.1 Definition<a href=#91-definition class=hash-link aria-label="Direct link to 9.1 Definition" title="Direct link to 9.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Unit Testing is the process of testing <strong>smallest parts of source code</strong></p>
+</li>
+<li class="">
+<p>Goal:</p>
+<ul>
+<li class="">Ensure each unit works correctly</li>
+<li class="">Validate functionality as per requirements</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=92-developer-responsibility>9.2 Developer Responsibility<a href=#92-developer-responsibility class=hash-link aria-label="Direct link to 9.2 Developer Responsibility" title="Direct link to 9.2 Developer Responsibility" translate=no>​</a></h3>
+<ul>
+<li class="">Performed by <strong>developers before handing over to testers</strong></li>
+</ul>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li class="">Developers write and execute test cases</li>
+<li class="">Based on internal knowledge of code</li>
+<li class="">Helps detect errors early</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=93-test-data-usage>9.3 Test Data Usage<a href=#93-test-data-usage class=hash-link aria-label="Direct link to 9.3 Test Data Usage" title="Direct link to 9.3 Test Data Usage" translate=no>​</a></h3>
+<ul>
+<li class="">Developers use <strong>their own test data</strong></li>
+</ul>
+<p><strong>Note:</strong></p>
+<ul>
+<li class="">Test data is usually different from QA/testing team data</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Verify logic under different conditions</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=94-isolation-of-units>9.4 Isolation of Units<a href=#94-isolation-of-units class=hash-link aria-label="Direct link to 9.4 Isolation of Units" title="Direct link to 9.4 Isolation of Units" translate=no>​</a></h3>
+<ul>
+<li class="">Each unit is tested <strong>independently</strong></li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Isolate and identify defects easily</li>
+</ul>
+<p><strong>Challenge:</strong></p>
+<ul>
+<li class="">Dependent modules may not be available</li>
+</ul>
+<p><strong>Solution:</strong></p>
+<ul>
+<li class="">
+<p>Use:</p>
+<ul>
+<li class=""><strong>Drivers</strong> (simulate calling modules)</li>
+<li class=""><strong>Stubs</strong> (simulate called modules)</li>
+</ul>
+</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=10-integration-testing>10. Integration Testing<a href=#10-integration-testing class=hash-link aria-label="Direct link to 10. Integration Testing" title="Direct link to 10. Integration Testing" translate=no>​</a></h2>
+<p>Integration Testing verifies that <strong>combined modules work together correctly</strong> and that their interfaces behave as expected.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=101-definition>10.1 Definition<a href=#101-definition class=hash-link aria-label="Direct link to 10.1 Definition" title="Direct link to 10.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">Integration Testing is the process of <strong>testing interactions between integrated components/modules</strong></li>
+</ul>
+<p><strong>Focus:</strong></p>
+<ul>
+<li class="">Data flow between modules</li>
+<li class="">Interface correctness</li>
+<li class="">Communication between components</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=102-bottom-up-integration>10.2 Bottom-Up Integration<a href=#102-bottom-up-integration class=hash-link aria-label="Direct link to 10.2 Bottom-Up Integration" title="Direct link to 10.2 Bottom-Up Integration" translate=no>​</a></h3>
+<ul>
+<li class="">Testing starts from <strong>lower-level modules</strong> and moves upward</li>
+</ul>
+<p><strong>Process:</strong></p>
+<ul>
+<li class="">Test individual units</li>
+<li class="">Combine them into higher-level modules</li>
+<li class="">Continue integration step-by-step</li>
+</ul>
+<p><strong>Support:</strong></p>
+<ul>
+<li class="">Uses <strong>drivers</strong> to simulate higher-level modules</li>
+</ul>
+<p><strong>Advantage:</strong></p>
+<ul>
+<li class="">Easier debugging (low-level errors found early)</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=103-top-down-integration>10.3 Top-Down Integration<a href=#103-top-down-integration class=hash-link aria-label="Direct link to 10.3 Top-Down Integration" title="Direct link to 10.3 Top-Down Integration" translate=no>​</a></h3>
+<ul>
+<li class="">Testing starts from <strong>top-level modules</strong> and moves downward</li>
+</ul>
+<p><strong>Process:</strong></p>
+<ul>
+<li class="">Test main control module first</li>
+<li class="">Integrate lower-level modules gradually</li>
+</ul>
+<p><strong>Support:</strong></p>
+<ul>
+<li class="">Uses <strong>stubs</strong> to simulate lower-level modules</li>
+</ul>
+<p><strong>Advantage:</strong></p>
+<ul>
+<li class="">Early validation of system structure and logic</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-system-testing>11. System Testing<a href=#11-system-testing class=hash-link aria-label="Direct link to 11. System Testing" title="Direct link to 11. System Testing" translate=no>​</a></h2>
+<p>System Testing evaluates the <strong>complete, integrated system</strong> to ensure it meets all specified requirements.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=111-definition>11.1 Definition<a href=#111-definition class=hash-link aria-label="Direct link to 11.1 Definition" title="Direct link to 11.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>System Testing is the process of testing the <strong>entire system as a whole</strong></p>
+</li>
+<li class="">
+<p>Performed after:</p>
+<ul>
+<li class="">Unit Testing</li>
+<li class="">Integration Testing</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=112-importance>11.2 Importance<a href=#112-importance class=hash-link aria-label="Direct link to 11.2 Importance" title="Direct link to 11.2 Importance" translate=no>​</a></h3>
+<ul>
+<li class="">Verifies overall system functionality</li>
+<li class="">Ensures all components work together correctly</li>
+<li class="">Detects system-level defects</li>
+<li class="">Validates both functional and technical requirements</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=113-real-environment-testing>11.3 Real Environment Testing<a href=#113-real-environment-testing class=hash-link aria-label="Direct link to 11.3 Real Environment Testing" title="Direct link to 11.3 Real Environment Testing" translate=no>​</a></h3>
+<ul>
+<li class="">Testing is done in an environment <strong>similar to production</strong></li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Simulate real-world usage</li>
+<li class="">Identify environment-related issues</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=114-requirement-validation>11.4 Requirement Validation<a href=#114-requirement-validation class=hash-link aria-label="Direct link to 11.4 Requirement Validation" title="Direct link to 11.4 Requirement Validation" translate=no>​</a></h3>
+<ul>
+<li class="">Ensures system meets <strong>user and system requirements</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Functional requirements</li>
+<li class="">Performance requirements</li>
+<li class="">Business requirements</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-black-box-testing>12. Black-Box Testing<a href=#12-black-box-testing class=hash-link aria-label="Direct link to 12. Black-Box Testing" title="Direct link to 12. Black-Box Testing" translate=no>​</a></h2>
+<p>Black-Box Testing is a technique that tests software based on its <strong>external behavior without knowing internal code</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=121-definition>12.1 Definition<a href=#121-definition class=hash-link aria-label="Direct link to 12.1 Definition" title="Direct link to 12.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Black-Box Testing treats the program as a <strong>“black box”</strong></p>
+</li>
+<li class="">
+<p>Testing is based on:</p>
+<ul>
+<li class="">Input values</li>
+<li class="">Expected output</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=122-characteristics>12.2 Characteristics<a href=#122-characteristics class=hash-link aria-label="Direct link to 12.2 Characteristics" title="Direct link to 12.2 Characteristics" translate=no>​</a></h3>
+<ul>
+<li class="">No knowledge of internal logic</li>
+<li class="">Based on <strong>specifications and requirements</strong></li>
+<li class="">Focus on <strong>input-output behavior</strong></li>
+<li class="">Can be designed early in development</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=123-functional-testing-basis>12.3 Functional Testing Basis<a href=#123-functional-testing-basis class=hash-link aria-label="Direct link to 12.3 Functional Testing Basis" title="Direct link to 12.3 Functional Testing Basis" translate=no>​</a></h3>
+<ul>
+<li class="">Black-Box Testing is mainly used for <strong>functional testing</strong></li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Verify system performs required functions</li>
+<li class="">Validate outputs against given inputs</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=124-error-categories>12.4 Error Categories<a href=#124-error-categories class=hash-link aria-label="Direct link to 12.4 Error Categories" title="Direct link to 12.4 Error Categories" translate=no>​</a></h3>
+<p>Black-Box Testing helps detect the following errors:</p>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1241-missing-functions>12.4.1 Missing Functions<a href=#1241-missing-functions class=hash-link aria-label="Direct link to 12.4.1 Missing Functions" title="Direct link to 12.4.1 Missing Functions" translate=no>​</a></h4>
+<ul>
+<li class="">Required functionality is <strong>not implemented</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1242-interface-errors>12.4.2 Interface Errors<a href=#1242-interface-errors class=hash-link aria-label="Direct link to 12.4.2 Interface Errors" title="Direct link to 12.4.2 Interface Errors" translate=no>​</a></h4>
+<ul>
+<li class="">Errors in <strong>interaction between modules or systems</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1243-data-structure-errors>12.4.3 Data Structure Errors<a href=#1243-data-structure-errors class=hash-link aria-label="Direct link to 12.4.3 Data Structure Errors" title="Direct link to 12.4.3 Data Structure Errors" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Issues in:</p>
+<ul>
+<li class="">Data handling</li>
+<li class="">Database access</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1244-performance-errors>12.4.4 Performance Errors<a href=#1244-performance-errors class=hash-link aria-label="Direct link to 12.4.4 Performance Errors" title="Direct link to 12.4.4 Performance Errors" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>System behaves incorrectly under:</p>
+<ul>
+<li class="">Load</li>
+<li class="">Stress</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1245-initialization-errors>12.4.5 Initialization Errors<a href=#1245-initialization-errors class=hash-link aria-label="Direct link to 12.4.5 Initialization Errors" title="Direct link to 12.4.5 Initialization Errors" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Errors during:</p>
+<ul>
+<li class="">Startup</li>
+<li class="">Shutdown</li>
+</ul>
+</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=13-boundary-value-analysis-bva>13. Boundary Value Analysis (BVA)<a href=#13-boundary-value-analysis-bva class=hash-link aria-label="Direct link to 13. Boundary Value Analysis (BVA)" title="Direct link to 13. Boundary Value Analysis (BVA)" translate=no>​</a></h2>
+<p>Boundary Value Analysis is a <strong>black-box testing technique</strong> that focuses on testing values at the <strong>edges (boundaries)</strong> of input and output domains.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=131-definition>13.1 Definition<a href=#131-definition class=hash-link aria-label="Direct link to 13.1 Definition" title="Direct link to 13.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">BVA selects test cases at the <strong>boundary values</strong> rather than random values</li>
+</ul>
+<p><strong>Reason:</strong></p>
+<ul>
+<li class="">Errors are most likely to occur at boundaries</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=132-input-domain-testing>13.2 Input Domain Testing<a href=#132-input-domain-testing class=hash-link aria-label="Direct link to 13.2 Input Domain Testing" title="Direct link to 13.2 Input Domain Testing" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Test inputs at:</p>
+<ul>
+<li class="">Minimum value</li>
+<li class="">Maximum value</li>
+<li class="">Just below minimum</li>
+<li class="">Just above maximum</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">
+<p>If range = 1 to 100</p>
+<ul>
+<li class="">Test: 0, 1, 2, 99, 100, 101</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=133-output-domain-testing>13.3 Output Domain Testing<a href=#133-output-domain-testing class=hash-link aria-label="Direct link to 13.3 Output Domain Testing" title="Direct link to 13.3 Output Domain Testing" translate=no>​</a></h3>
+<ul>
+<li class="">Apply BVA to <strong>output conditions</strong> as well</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Ensure correct output at boundary limits</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=134-guidelines>13.4 Guidelines<a href=#134-guidelines class=hash-link aria-label="Direct link to 13.4 Guidelines" title="Direct link to 13.4 Guidelines" translate=no>​</a></h3>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1341-range-boundaries>13.4.1 Range Boundaries<a href=#1341-range-boundaries class=hash-link aria-label="Direct link to 13.4.1 Range Boundaries" title="Direct link to 13.4.1 Range Boundaries" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>For range <strong>[a, b]</strong>, test:</p>
+<ul>
+<li class="">a</li>
+<li class="">b</li>
+<li class="">just below a</li>
+<li class="">just above b</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1342-min-max-values>13.4.2 Min-Max Values<a href=#1342-min-max-values class=hash-link aria-label="Direct link to 13.4.2 Min-Max Values" title="Direct link to 13.4.2 Min-Max Values" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Test:</p>
+<ul>
+<li class="">Minimum values</li>
+<li class="">Maximum values</li>
+<li class="">Values just above and below them</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1343-internal-data-structures>13.4.3 Internal Data Structures<a href=#1343-internal-data-structures class=hash-link aria-label="Direct link to 13.4.3 Internal Data Structures" title="Direct link to 13.4.3 Internal Data Structures" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Test boundaries of:</p>
+<ul>
+<li class="">Arrays</li>
+<li class="">Buffers</li>
+<li class="">Data structures</li>
+</ul>
+</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Detect overflow, underflow, and limit-related errors</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=14-pairwise-testing>14. Pairwise Testing<a href=#14-pairwise-testing class=hash-link aria-label="Direct link to 14. Pairwise Testing" title="Direct link to 14. Pairwise Testing" translate=no>​</a></h2>
+<p>Pairwise Testing is a technique used to test software by checking <strong>all possible pairs of input parameters</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=141-definition>14.1 Definition<a href=#141-definition class=hash-link aria-label="Direct link to 14.1 Definition" title="Direct link to 14.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">Pairwise Testing is a method where <strong>every possible pair of input values is tested at least once</strong></li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Detect defects caused by interaction between parameters</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=142-permutation-and-combination-method>14.2 Permutation and Combination Method<a href=#142-permutation-and-combination-method class=hash-link aria-label="Direct link to 14.2 Permutation and Combination Method" title="Direct link to 14.2 Permutation and Combination Method" translate=no>​</a></h3>
+<ul>
+<li class="">Based on <strong>Permutation & Combination (P&C)</strong></li>
+</ul>
+<p><strong>Concept:</strong></p>
+<ul>
+<li class="">Instead of testing all combinations (which is huge),
+test <strong>pair combinations</strong> of inputs</li>
+</ul>
+<p><strong>Benefit:</strong></p>
+<ul>
+<li class="">Reduces number of test cases significantly</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=143-parameter-combinations>14.3 Parameter Combinations<a href=#143-parameter-combinations class=hash-link aria-label="Direct link to 14.3 Parameter Combinations" title="Direct link to 14.3 Parameter Combinations" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>For a system with multiple inputs:</p>
+<ul>
+<li class="">All <strong>possible pairs of parameters</strong> are tested</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">
+<p>Parameters: A, B, C</p>
+</li>
+<li class="">
+<p>Test combinations:</p>
+<ul>
+<li class="">(A,B), (A,C), (B,C)</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=144-advantages>14.4 Advantages<a href=#144-advantages class=hash-link aria-label="Direct link to 14.4 Advantages" title="Direct link to 14.4 Advantages" translate=no>​</a></h3>
+<ul>
+<li class="">Reduces number of test cases</li>
+<li class="">High test coverage (near complete for pairs)</li>
+<li class="">Detects interaction-based defects</li>
+<li class="">Saves time and cost</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=145-disadvantages>14.5 Disadvantages<a href=#145-disadvantages class=hash-link aria-label="Direct link to 14.5 Disadvantages" title="Direct link to 14.5 Disadvantages" translate=no>​</a></h3>
+<ul>
+<li class="">May miss defects involving <strong>more than two parameters</strong></li>
+<li class="">Requires understanding of parameter relationships</li>
+<li class="">Incorrect selection can reduce effectiveness</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=15-state-based-testing>15. State-Based Testing<a href=#15-state-based-testing class=hash-link aria-label="Direct link to 15. State-Based Testing" title="Direct link to 15. State-Based Testing" translate=no>​</a></h2>
+<p>State-Based Testing focuses on testing software by analyzing <strong>states of objects and transitions between them</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=151-object-modeling>15.1 Object Modeling<a href=#151-object-modeling class=hash-link aria-label="Direct link to 15.1 Object Modeling" title="Direct link to 15.1 Object Modeling" translate=no>​</a></h3>
+<ul>
+<li class="">Identify <strong>objects in the system</strong> and their behavior</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Object states</li>
+<li class="">Attributes</li>
+<li class="">Interactions</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Understand how objects behave under different conditions</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=152-relationship-graphs>15.2 Relationship Graphs<a href=#152-relationship-graphs class=hash-link aria-label="Direct link to 15.2 Relationship Graphs" title="Direct link to 15.2 Relationship Graphs" translate=no>​</a></h3>
+<ul>
+<li class="">Represent system using a <strong>graph structure</strong></li>
+</ul>
+<p><strong>Components:</strong></p>
+<ul>
+<li class="">Nodes → represent objects</li>
+<li class="">Links → represent relationships</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Visualize interactions</li>
+<li class="">Ensure all relationships are tested</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=153-node-and-link-representation>15.3 Node and Link Representation<a href=#153-node-and-link-representation class=hash-link aria-label="Direct link to 15.3 Node and Link Representation" title="Direct link to 15.3 Node and Link Representation" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Graph consists of:</p>
+<ul>
+<li class=""><strong>Nodes (objects)</strong></li>
+<li class=""><strong>Links (relationships)</strong></li>
+<li class="">Node weights (object properties)</li>
+<li class="">Link weights (relationship characteristics)</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1531-directed-links>15.3.1 Directed Links<a href=#1531-directed-links class=hash-link aria-label="Direct link to 15.3.1 Directed Links" title="Direct link to 15.3.1 Directed Links" translate=no>​</a></h4>
+<ul>
+<li class="">Relationship flows in <strong>one direction only</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">A → B</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1532-bidirectional-links>15.3.2 Bidirectional Links<a href=#1532-bidirectional-links class=hash-link aria-label="Direct link to 15.3.2 Bidirectional Links" title="Direct link to 15.3.2 Bidirectional Links" translate=no>​</a></h4>
+<ul>
+<li class="">Relationship exists in <strong>both directions</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">A ↔ B</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1533-parallel-links>15.3.3 Parallel Links<a href=#1533-parallel-links class=hash-link aria-label="Direct link to 15.3.3 Parallel Links" title="Direct link to 15.3.3 Parallel Links" translate=no>​</a></h4>
+<ul>
+<li class="">Multiple relationships between the <strong>same nodes</strong></li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Represent different types of interactions</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=154-graph-based-testing-methods>15.4 Graph-Based Testing Methods<a href=#154-graph-based-testing-methods class=hash-link aria-label="Direct link to 15.4 Graph-Based Testing Methods" title="Direct link to 15.4 Graph-Based Testing Methods" translate=no>​</a></h3>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1541-transaction-flow-modeling>15.4.1 Transaction Flow Modeling<a href=#1541-transaction-flow-modeling class=hash-link aria-label="Direct link to 15.4.1 Transaction Flow Modeling" title="Direct link to 15.4.1 Transaction Flow Modeling" translate=no>​</a></h4>
+<ul>
+<li class="">Nodes represent <strong>steps in a transaction</strong></li>
+<li class="">Links represent <strong>sequence of operations</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1542-finite-state-modeling>15.4.2 Finite State Modeling<a href=#1542-finite-state-modeling class=hash-link aria-label="Direct link to 15.4.2 Finite State Modeling" title="Direct link to 15.4.2 Finite State Modeling" translate=no>​</a></h4>
+<ul>
+<li class="">Nodes represent <strong>system states</strong></li>
+<li class="">Links represent <strong>state transitions</strong></li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Login → Dashboard → Logout</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1543-data-flow-modeling>15.4.3 Data Flow Modeling<a href=#1543-data-flow-modeling class=hash-link aria-label="Direct link to 15.4.3 Data Flow Modeling" title="Direct link to 15.4.3 Data Flow Modeling" translate=no>​</a></h4>
+<ul>
+<li class="">Nodes represent <strong>data objects</strong></li>
+<li class="">Links represent <strong>data transformations</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1544-timing-modeling>15.4.4 Timing Modeling<a href=#1544-timing-modeling class=hash-link aria-label="Direct link to 15.4.4 Timing Modeling" title="Direct link to 15.4.4 Timing Modeling" translate=no>​</a></h4>
+<ul>
+<li class="">Focus on <strong>execution timing between components</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Sequence of operations</li>
+<li class="">Time constraints</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=16-white-box-testing>16. White-Box Testing<a href=#16-white-box-testing class=hash-link aria-label="Direct link to 16. White-Box Testing" title="Direct link to 16. White-Box Testing" translate=no>​</a></h2>
+<p>White-Box Testing is a technique that tests software based on its <strong>internal structure and logic</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=161-definition>16.1 Definition<a href=#161-definition class=hash-link aria-label="Direct link to 16.1 Definition" title="Direct link to 16.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>White-Box Testing involves testing the <strong>internal working of the program</strong></p>
+</li>
+<li class="">
+<p>Requires knowledge of:</p>
+<ul>
+<li class="">Code</li>
+<li class="">Logic</li>
+<li class="">Control flow</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=162-control-structure-testing>16.2 Control Structure Testing<a href=#162-control-structure-testing class=hash-link aria-label="Direct link to 16.2 Control Structure Testing" title="Direct link to 16.2 Control Structure Testing" translate=no>​</a></h3>
+<ul>
+<li class="">Focuses on <strong>program control structures</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Conditions (if-else)</li>
+<li class="">Loops</li>
+<li class="">Branching</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Ensure all control paths are tested</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=163-path-coverage>16.3 Path Coverage<a href=#163-path-coverage class=hash-link aria-label="Direct link to 16.3 Path Coverage" title="Direct link to 16.3 Path Coverage" translate=no>​</a></h3>
+<ul>
+<li class="">Ensures all <strong>independent paths</strong> in the program are executed</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Detect logical errors</li>
+<li class="">Improve test coverage</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=164-loop-testing>16.4 Loop Testing<a href=#164-loop-testing class=hash-link aria-label="Direct link to 16.4 Loop Testing" title="Direct link to 16.4 Loop Testing" translate=no>​</a></h3>
+<ul>
+<li class="">Tests loops under different conditions</li>
+</ul>
+<p><strong>Cases:</strong></p>
+<ul>
+<li class="">Zero iterations</li>
+<li class="">One iteration</li>
+<li class="">Multiple iterations</li>
+<li class="">Boundary conditions</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=165-data-structure-validation>16.5 Data Structure Validation<a href=#165-data-structure-validation class=hash-link aria-label="Direct link to 16.5 Data Structure Validation" title="Direct link to 16.5 Data Structure Validation" translate=no>​</a></h3>
+<ul>
+<li class="">Verifies correctness of <strong>internal data structures</strong></li>
+</ul>
+<p><strong>Checks:</strong></p>
+<ul>
+<li class="">Data integrity</li>
+<li class="">Proper initialization</li>
+<li class="">Correct data manipulation</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=17-basis-path-testing>17. Basis Path Testing<a href=#17-basis-path-testing class=hash-link aria-label="Direct link to 17. Basis Path Testing" title="Direct link to 17. Basis Path Testing" translate=no>​</a></h2>
+<p>Basis Path Testing is a <strong>white-box testing technique</strong> that uses the program’s <strong>control flow</strong> to design a <strong>minimum set of test cases</strong> which guarantees execution of <strong>every independent path at least once</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=171-definition>17.1 Definition<a href=#171-definition class=hash-link aria-label="Direct link to 17.1 Definition" title="Direct link to 17.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">Introduced as part of <strong>structured testing techniques</strong></li>
+<li class="">Uses <strong>flow graphs + cyclomatic complexity</strong></li>
+</ul>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">Instead of testing all paths (impossible), test a <strong>basis set of paths</strong></li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=172-flow-graph-notation>17.2 Flow Graph Notation<a href=#172-flow-graph-notation class=hash-link aria-label="Direct link to 17.2 Flow Graph Notation" title="Direct link to 17.2 Flow Graph Notation" translate=no>​</a></h3>
+<p>A <strong>flow graph</strong> is a graphical representation of program logic.</p>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1721-nodes>17.2.1 Nodes<a href=#1721-nodes class=hash-link aria-label="Direct link to 17.2.1 Nodes" title="Direct link to 17.2.1 Nodes" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Represent:</p>
+<ul>
+<li class="">Single statement OR</li>
+<li class="">Sequence of statements</li>
+</ul>
+</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">Assignment statements grouped into one node</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1722-edges>17.2.2 Edges<a href=#1722-edges class=hash-link aria-label="Direct link to 17.2.2 Edges" title="Direct link to 17.2.2 Edges" translate=no>​</a></h4>
+<ul>
+<li class="">Represent <strong>flow of control</strong> (execution path)</li>
+</ul>
+<p><strong>Note:</strong></p>
+<ul>
+<li class="">Every edge must connect two nodes</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1723-regions>17.2.3 Regions<a href=#1723-regions class=hash-link aria-label="Direct link to 17.2.3 Regions" title="Direct link to 17.2.3 Regions" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Closed areas</strong> formed by nodes and edges</li>
+</ul>
+<p><strong>Important:</strong></p>
+<ul>
+<li class="">Number of regions = Cyclomatic Complexity</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1724-predicate-nodes>17.2.4 Predicate Nodes<a href=#1724-predicate-nodes class=hash-link aria-label="Direct link to 17.2.4 Predicate Nodes" title="Direct link to 17.2.4 Predicate Nodes" translate=no>​</a></h4>
+<ul>
+<li class="">Nodes containing <strong>decision conditions</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class=""><code>if</code>, <code>while</code>, <code>for</code></li>
+</ul>
+<p><strong>Property:</strong></p>
+<ul>
+<li class="">Have <strong>two or more outgoing edges</strong></li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=173-independent-paths>17.3 Independent Paths<a href=#173-independent-paths class=hash-link aria-label="Direct link to 17.3 Independent Paths" title="Direct link to 17.3 Independent Paths" translate=no>​</a></h3>
+<ul>
+<li class="">A path that introduces at least <strong>one new edge or condition</strong></li>
+</ul>
+<p><strong>Important Points:</strong></p>
+<ul>
+<li class="">Each new path must add <strong>new logic coverage</strong></li>
+<li class="">Combination of already covered paths is <strong>not independent</strong></li>
+</ul>
+<p><strong>Example Concept:</strong></p>
+<ul>
+<li class="">If a program has 4 independent paths → minimum 4 test cases needed</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=174-cyclomatic-complexity>17.4 Cyclomatic Complexity<a href=#174-cyclomatic-complexity class=hash-link aria-label="Direct link to 17.4 Cyclomatic Complexity" title="Direct link to 17.4 Cyclomatic Complexity" translate=no>​</a></h3>
+<ul>
+<li class="">A metric that measures <strong>logical complexity of program</strong></li>
+</ul>
+<p><strong>Uses:</strong></p>
+<ul>
+<li class="">Determines number of independent paths</li>
+<li class="">Defines minimum number of test cases</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1741-formula-e---n--2>17.4.1 Formula (E - N + 2)<a href=#1741-formula-e---n--2 class=hash-link aria-label="Direct link to 17.4.1 Formula (E - N + 2)" title="Direct link to 17.4.1 Formula (E - N + 2)" translate=no>​</a></h4>
+<p>V(G)=E-N+2</p>
+<ul>
+<li class="">E = Number of edges</li>
+<li class="">N = Number of nodes</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1742-formula-p--1>17.4.2 Formula (P + 1)<a href=#1742-formula-p--1 class=hash-link aria-label="Direct link to 17.4.2 Formula (P + 1)" title="Direct link to 17.4.2 Formula (P + 1)" translate=no>​</a></h4>
+<p>V(G)=P+1</p>
+<ul>
+<li class="">P = Number of predicate (decision) nodes</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1743-regions-method>17.4.3 Regions Method<a href=#1743-regions-method class=hash-link aria-label="Direct link to 17.4.3 Regions Method" title="Direct link to 17.4.3 Regions Method" translate=no>​</a></h4>
+<ul>
+<li class="">Cyclomatic Complexity = <strong>Number of regions in flow graph</strong></li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=175-deriving-test-cases>17.5 Deriving Test Cases<a href=#175-deriving-test-cases class=hash-link aria-label="Direct link to 17.5 Deriving Test Cases" title="Direct link to 17.5 Deriving Test Cases" translate=no>​</a></h3>
+<p>This is a <strong>step-by-step process</strong>:</p>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1751-flow-graph-creation>17.5.1 Flow Graph Creation<a href=#1751-flow-graph-creation class=hash-link aria-label="Direct link to 17.5.1 Flow Graph Creation" title="Direct link to 17.5.1 Flow Graph Creation" translate=no>​</a></h4>
+<ul>
+<li class="">Convert program or pseudo-code into a <strong>flow graph</strong></li>
+<li class="">Assign numbers to nodes</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1752-complexity-calculation>17.5.2 Complexity Calculation<a href=#1752-complexity-calculation class=hash-link aria-label="Direct link to 17.5.2 Complexity Calculation" title="Direct link to 17.5.2 Complexity Calculation" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Compute <strong>V(G)</strong> using:</p>
+<ul>
+<li class="">Edges & nodes</li>
+<li class="">Predicate nodes</li>
+<li class="">Regions</li>
+</ul>
+</li>
+</ul>
+<p>👉 This gives <strong>number of test cases required</strong></p>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1753-path-identification>17.5.3 Path Identification<a href=#1753-path-identification class=hash-link aria-label="Direct link to 17.5.3 Path Identification" title="Direct link to 17.5.3 Path Identification" translate=no>​</a></h4>
+<ul>
+<li class="">Identify all <strong>independent paths</strong></li>
+</ul>
+<p><strong>Example Idea:</strong></p>
+<ul>
+<li class="">Path 1 → Straight execution</li>
+<li class="">Path 2 → Condition true</li>
+<li class="">Path 3 → Condition false</li>
+<li class="">Path 4 → Loop path</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=1754-test-case-generation>17.5.4 Test Case Generation<a href=#1754-test-case-generation class=hash-link aria-label="Direct link to 17.5.4 Test Case Generation" title="Direct link to 17.5.4 Test Case Generation" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>Design test cases such that:</p>
+<ul>
+<li class="">Each path is executed at least once</li>
+<li class="">Conditions are tested (true & false)</li>
+</ul>
+</li>
+</ul>
+<p><strong>Result:</strong></p>
+<ul>
+<li class="">
+<p>Ensures:</p>
+<ul>
+<li class="">Complete statement coverage</li>
+<li class="">Logical correctness</li>
+<li class="">Reduced redundant testing</li>
+</ul>
+</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-summary-insight>🔁 Summary Insight<a href=#-summary-insight class=hash-link aria-label="Direct link to 🔁 Summary Insight" title="Direct link to 🔁 Summary Insight" translate=no>​</a></h3>
+<ul>
+<li class="">Cyclomatic Complexity = <strong>No. of independent paths = Minimum test cases</strong></li>
+<li class="">Basis Path Testing ensures <strong>maximum logic coverage with minimum effort</strong></li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=18-graph-matrices>18. Graph Matrices<a href=#18-graph-matrices class=hash-link aria-label="Direct link to 18. Graph Matrices" title="Direct link to 18. Graph Matrices" translate=no>​</a></h2>
+<p>Graph Matrices are a <strong>tabular representation of a flow graph</strong> used to analyze <strong>control flow and program complexity</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=181-definition>18.1 Definition<a href=#181-definition class=hash-link aria-label="Direct link to 18.1 Definition" title="Direct link to 18.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">A Graph Matrix is a <strong>square matrix</strong> used to represent relationships between nodes in a flow graph</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Simplify analysis of control structure</li>
+<li class="">Help in calculating complexity</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=182-matrix-representation>18.2 Matrix Representation<a href=#182-matrix-representation class=hash-link aria-label="Direct link to 18.2 Matrix Representation" title="Direct link to 18.2 Matrix Representation" translate=no>​</a></h3>
+<ul>
+<li class="">Matrix size = <strong>number of nodes × number of nodes</strong></li>
+</ul>
+<p><strong>Structure:</strong></p>
+<ul>
+<li class="">Rows → represent source nodes</li>
+<li class="">Columns → represent destination nodes</li>
+<li class="">Cell value → indicates connection (edge)</li>
+</ul>
+<p><strong>Example:</strong></p>
+<ul>
+<li class="">If node i connects to node j → entry (i, j) = 1</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=183-link-weights>18.3 Link Weights<a href=#183-link-weights class=hash-link aria-label="Direct link to 18.3 Link Weights" title="Direct link to 18.3 Link Weights" translate=no>​</a></h3>
+<ul>
+<li class="">Each connection (edge) can have a <strong>weight</strong></li>
+</ul>
+<p><strong>Types:</strong></p>
+<ul>
+<li class="">1 → connection exists</li>
+<li class="">0 → no connection</li>
+</ul>
+<p><strong>Advanced:</strong></p>
+<ul>
+<li class="">
+<p>Weights can represent:</p>
+<ul>
+<li class="">Execution time</li>
+<li class="">Probability</li>
+<li class="">Cost</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=184-connection-matrix>18.4 Connection Matrix<a href=#184-connection-matrix class=hash-link aria-label="Direct link to 18.4 Connection Matrix" title="Direct link to 18.4 Connection Matrix" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>A simplified graph matrix where:</p>
+<ul>
+<li class="">All edges are marked as <strong>1</strong></li>
+<li class="">No edge = <strong>0</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Property:</strong></p>
+<ul>
+<li class="">Each row with <strong>2 or more 1s</strong> represents a <strong>predicate node</strong></li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=185-complexity-calculation-using-matrix>18.5 Complexity Calculation Using Matrix<a href=#185-complexity-calculation-using-matrix class=hash-link aria-label="Direct link to 18.5 Complexity Calculation Using Matrix" title="Direct link to 18.5 Complexity Calculation Using Matrix" translate=no>​</a></h3>
+<ul>
+<li class="">Cyclomatic Complexity can be computed using matrix:</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li class="">Count connections in each row</li>
+<li class="">Subtract 1 from each row count</li>
+<li class="">Sum all values</li>
+<li class="">Add 1</li>
+</ol>
+<p><strong>Formula:</strong></p>
+<ul>
+<li class="">V(G) = (Total connections − number of nodes) + 1</li>
+</ul>
+<p><strong>Simplified:</strong></p>
+<ul>
+<li class="">V(G) = Sum of (connections per row − 1) + 1</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-insight>🔁 Key Insight<a href=#-key-insight class=hash-link aria-label="Direct link to 🔁 Key Insight" title="Direct link to 🔁 Key Insight" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Graph Matrix = <strong>alternative to flow graph</strong></p>
+</li>
+<li class="">
+<p>Makes:</p>
+<ul>
+<li class="">Complexity calculation easier</li>
+<li class="">Control flow analysis systematic</li>
+</ul>
+</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=19-quality-concepts>19. Quality Concepts<a href=#19-quality-concepts class=hash-link aria-label="Direct link to 19. Quality Concepts" title="Direct link to 19. Quality Concepts" translate=no>​</a></h2>
+<p>Quality Concepts define what makes software <strong>reliable, efficient, and acceptable to users</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=191-definition-of-quality>19.1 Definition of Quality<a href=#191-definition-of-quality class=hash-link aria-label="Direct link to 19.1 Definition of Quality" title="Direct link to 19.1 Definition of Quality" translate=no>​</a></h3>
+<ul>
+<li class="">Quality is a <strong>characteristic or attribute of a product</strong></li>
+</ul>
+<p>In software:</p>
+<ul>
+<li class="">
+<p>It means meeting:</p>
+<ul>
+<li class="">Requirements</li>
+<li class="">Standards</li>
+<li class="">User expectations</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=192-quality-of-design>19.2 Quality of Design<a href=#192-quality-of-design class=hash-link aria-label="Direct link to 19.2 Quality of Design" title="Direct link to 19.2 Quality of Design" translate=no>​</a></h3>
+<ul>
+<li class="">Refers to how well the software is <strong>designed according to requirements</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">System architecture</li>
+<li class="">Specifications</li>
+<li class="">Design decisions</li>
+</ul>
+<p><strong>Key Point:</strong></p>
+<ul>
+<li class="">Better design → higher potential quality</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=193-quality-of-conformance>19.3 Quality of Conformance<a href=#193-quality-of-conformance class=hash-link aria-label="Direct link to 19.3 Quality of Conformance" title="Direct link to 19.3 Quality of Conformance" translate=no>​</a></h3>
+<ul>
+<li class="">Refers to how well the software <strong>follows the design specifications during implementation</strong></li>
+</ul>
+<p><strong>Focus:</strong></p>
+<ul>
+<li class="">Coding standards</li>
+<li class="">Implementation accuracy</li>
+</ul>
+<p><strong>Key Point:</strong></p>
+<ul>
+<li class="">Even a good design fails if implementation is poor</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=194-user-satisfaction>19.4 User Satisfaction<a href=#194-user-satisfaction class=hash-link aria-label="Direct link to 19.4 User Satisfaction" title="Direct link to 19.4 User Satisfaction" translate=no>​</a></h3>
+<ul>
+<li class="">Final measure of quality</li>
+</ul>
+<p><strong>Formula (conceptual):</strong></p>
+<ul>
+<li class="">User Satisfaction =
+✔ Correct functionality
+✔ Good quality
+✔ Delivered on time and within budget</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Meet user expectations and provide reliable performance</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=20-quality-control>20. Quality Control<a href=#20-quality-control class=hash-link aria-label="Direct link to 20. Quality Control" title="Direct link to 20. Quality Control" translate=no>​</a></h2>
+<p>Quality Control (QC) focuses on <strong>detecting defects in software products</strong> through systematic activities.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=201-definition>20.1 Definition<a href=#201-definition class=hash-link aria-label="Direct link to 20.1 Definition" title="Direct link to 20.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Quality Control is the process of:</p>
+<ul>
+<li class=""><strong>Monitoring software products</strong></li>
+<li class="">Ensuring they meet <strong>defined specifications and standards</strong></li>
+</ul>
+</li>
+<li class="">
+<p>It involves:</p>
+<ul>
+<li class="">Testing</li>
+<li class="">Reviews</li>
+<li class="">Inspections</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=202-inspection-and-review>20.2 Inspection and Review<a href=#202-inspection-and-review class=hash-link aria-label="Direct link to 20.2 Inspection and Review" title="Direct link to 20.2 Inspection and Review" translate=no>​</a></h3>
+<ul>
+<li class="">QC uses <strong>formal and informal evaluation techniques</strong></li>
+</ul>
+<p><strong>Inspection:</strong></p>
+<ul>
+<li class="">
+<p>Structured process</p>
+</li>
+<li class="">
+<p>Detects defects in:</p>
+<ul>
+<li class="">Code</li>
+<li class="">Design</li>
+<li class="">Documents</li>
+</ul>
+</li>
+</ul>
+<p><strong>Review:</strong></p>
+<ul>
+<li class="">
+<p>Less formal</p>
+</li>
+<li class="">
+<p>Includes:</p>
+<ul>
+<li class="">Walkthroughs</li>
+<li class="">Peer reviews</li>
+</ul>
+</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Identify defects early</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=203-feedback-mechanism>20.3 Feedback Mechanism<a href=#203-feedback-mechanism class=hash-link aria-label="Direct link to 20.3 Feedback Mechanism" title="Direct link to 20.3 Feedback Mechanism" translate=no>​</a></h3>
+<ul>
+<li class="">QC includes a <strong>feedback loop</strong></li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Send defect information back to development</li>
+</ul>
+<p><strong>Benefits:</strong></p>
+<ul>
+<li class="">Improves process quality</li>
+<li class="">Reduces future errors</li>
+<li class="">Enables continuous improvement</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-quality-assurance-qa>21. Quality Assurance (QA)<a href=#21-quality-assurance-qa class=hash-link aria-label="Direct link to 21. Quality Assurance (QA)" title="Direct link to 21. Quality Assurance (QA)" translate=no>​</a></h2>
+<p>Quality Assurance focuses on <strong>preventing defects</strong> by ensuring proper <strong>processes, standards, and practices</strong> are followed.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=211-definition>21.1 Definition<a href=#211-definition class=hash-link aria-label="Direct link to 21.1 Definition" title="Direct link to 21.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Quality Assurance is the process of:</p>
+<ul>
+<li class=""><strong>Auditing and monitoring software processes</strong></li>
+<li class="">Ensuring compliance with standards</li>
+</ul>
+</li>
+</ul>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">QA is <strong>process-oriented</strong> (prevention, not just detection)</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=212-role-of-qa>21.2 Role of QA<a href=#212-role-of-qa class=hash-link aria-label="Direct link to 21.2 Role of QA" title="Direct link to 21.2 Role of QA" translate=no>​</a></h3>
+<ul>
+<li class="">Ensure development follows <strong>defined processes and standards</strong></li>
+</ul>
+<p><strong>Activities:</strong></p>
+<ul>
+<li class="">Process monitoring</li>
+<li class="">Audits and reviews</li>
+<li class="">Reporting quality issues</li>
+<li class="">Supporting improvement of development practices</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Achieve high-quality software</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=213-management-responsibilities>21.3 Management Responsibilities<a href=#213-management-responsibilities class=hash-link aria-label="Direct link to 21.3 Management Responsibilities" title="Direct link to 21.3 Management Responsibilities" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Management is responsible for:</p>
+<ul>
+<li class="">Addressing issues identified by QA</li>
+<li class="">Providing resources to fix problems</li>
+<li class="">Enforcing quality standards</li>
+</ul>
+</li>
+</ul>
+<p><strong>Importance:</strong></p>
+<ul>
+<li class="">QA is effective only if management takes <strong>corrective actions</strong></li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=22-cost-of-quality>22. Cost of Quality<a href=#22-cost-of-quality class=hash-link aria-label="Direct link to 22. Cost of Quality" title="Direct link to 22. Cost of Quality" translate=no>​</a></h2>
+<p>Cost of Quality refers to the <strong>total cost involved in ensuring software quality and the cost incurred due to poor quality</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=221-definition>22.1 Definition<a href=#221-definition class=hash-link aria-label="Direct link to 22.1 Definition" title="Direct link to 22.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Cost of Quality includes:</p>
+<ul>
+<li class="">Cost to <strong>prevent defects</strong></li>
+<li class="">Cost to <strong>detect defects</strong></li>
+<li class="">Cost due to <strong>failures</strong></li>
+</ul>
+</li>
+</ul>
+<p>👉 Goal: Minimize total cost while maintaining high quality</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=222-prevention-cost>22.2 Prevention Cost<a href=#222-prevention-cost class=hash-link aria-label="Direct link to 22.2 Prevention Cost" title="Direct link to 22.2 Prevention Cost" translate=no>​</a></h3>
+<ul>
+<li class="">Cost incurred to <strong>avoid defects before they occur</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Quality planning</li>
+<li class="">Training</li>
+<li class="">Formal technical reviews</li>
+<li class="">Test tools and equipment</li>
+</ul>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">Investing here reduces overall cost</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=223-appraisal-cost>22.3 Appraisal Cost<a href=#223-appraisal-cost class=hash-link aria-label="Direct link to 22.3 Appraisal Cost" title="Direct link to 22.3 Appraisal Cost" translate=no>​</a></h3>
+<ul>
+<li class="">Cost of <strong>evaluating and testing software</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Inspections</li>
+<li class="">Testing activities</li>
+<li class="">Quality audits</li>
+<li class="">Equipment calibration</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Detect defects before delivery</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=224-failure-cost>22.4 Failure Cost<a href=#224-failure-cost class=hash-link aria-label="Direct link to 22.4 Failure Cost" title="Direct link to 22.4 Failure Cost" translate=no>​</a></h3>
+<ul>
+<li class="">Cost due to <strong>defects in software</strong></li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=2241-internal-failure>22.4.1 Internal Failure<a href=#2241-internal-failure class=hash-link aria-label="Direct link to 22.4.1 Internal Failure" title="Direct link to 22.4.1 Internal Failure" translate=no>​</a></h4>
+<ul>
+<li class="">Defects found <strong>before delivery</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Rework</li>
+<li class="">Debugging</li>
+<li class="">Retesting</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=2242-external-failure>22.4.2 External Failure<a href=#2242-external-failure class=hash-link aria-label="Direct link to 22.4.2 External Failure" title="Direct link to 22.4.2 External Failure" translate=no>​</a></h4>
+<ul>
+<li class="">Defects found <strong>after delivery</strong></li>
+</ul>
+<p><strong>Examples:</strong></p>
+<ul>
+<li class="">Customer complaints</li>
+<li class="">Product replacement</li>
+<li class="">Maintenance and support</li>
+<li class="">Warranty costs</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-insight-1>🔁 Key Insight<a href=#-key-insight-1 class=hash-link aria-label="Direct link to 🔁 Key Insight" title="Direct link to 🔁 Key Insight" translate=no>​</a></h3>
+<ul>
+<li class="">Total Cost of Quality =
+<strong>Prevention + Appraisal + Failure Costs</strong></li>
+</ul>
+<p>👉 Better prevention → lower failure cost → overall cost reduces</p>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=23-software-quality-assurance-sqa>23. Software Quality Assurance (SQA)<a href=#23-software-quality-assurance-sqa class=hash-link aria-label="Direct link to 23. Software Quality Assurance (SQA)" title="Direct link to 23. Software Quality Assurance (SQA)" translate=no>​</a></h2>
+<p>SQA ensures that software is developed with <strong>high quality by following proper standards, processes, and practices</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=231-definition>23.1 Definition<a href=#231-definition class=hash-link aria-label="Direct link to 23.1 Definition" title="Direct link to 23.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Software Quality Assurance is defined as:</p>
+<ul>
+<li class=""><strong>Conformance to explicitly stated requirements</strong></li>
+<li class=""><strong>Adherence to documented standards</strong></li>
+<li class=""><strong>Meeting implicit expectations of professional software</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Key Idea:</strong></p>
+<ul>
+<li class="">
+<p>Quality is measured against:</p>
+<ul>
+<li class="">Requirements</li>
+<li class="">Standards</li>
+<li class="">User expectations</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=232-key-points>23.2 Key Points<a href=#232-key-points class=hash-link aria-label="Direct link to 23.2 Key Points" title="Direct link to 23.2 Key Points" translate=no>​</a></h3>
+<ul>
+<li class="">Requirements are the <strong>foundation of quality</strong></li>
+<li class="">Following standards is <strong>essential for consistency</strong></li>
+<li class="">Implicit requirements (like usability, reliability) also matter</li>
+</ul>
+<p><strong>Focus:</strong></p>
+<ul>
+<li class="">Prevent defects</li>
+<li class="">Improve development process</li>
+<li class="">Ensure product quality</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=233-sqa-group>23.3 SQA Group<a href=#233-sqa-group class=hash-link aria-label="Direct link to 23.3 SQA Group" title="Direct link to 23.3 SQA Group" translate=no>​</a></h3>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=2331-composition>23.3.1 Composition<a href=#2331-composition class=hash-link aria-label="Direct link to 23.3.1 Composition" title="Direct link to 23.3.1 Composition" translate=no>​</a></h4>
+<ul>
+<li class="">
+<p>SQA group consists of:</p>
+<ul>
+<li class="">Software engineers</li>
+<li class="">Project managers</li>
+<li class="">Customers</li>
+<li class="">Quality specialists</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=2332-responsibilities>23.3.2 Responsibilities<a href=#2332-responsibilities class=hash-link aria-label="Direct link to 23.3.2 Responsibilities" title="Direct link to 23.3.2 Responsibilities" translate=no>​</a></h4>
+<ul>
+<li class="">Prepare SQA plan</li>
+<li class="">Define standards and procedures</li>
+<li class="">Conduct audits and reviews</li>
+<li class="">Monitor development process</li>
+<li class="">Report quality issues</li>
+<li class="">Maintain documentation</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Help team deliver a <strong>high-quality software product</strong></li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=24-role-of-sqa-group>24. Role of SQA Group<a href=#24-role-of-sqa-group class=hash-link aria-label="Direct link to 24. Role of SQA Group" title="Direct link to 24. Role of SQA Group" translate=no>​</a></h2>
+<p>The SQA Group ensures that <strong>software development follows defined standards and processes</strong> to achieve high quality.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=241-sqa-plan-preparation>24.1 SQA Plan Preparation<a href=#241-sqa-plan-preparation class=hash-link aria-label="Direct link to 24.1 SQA Plan Preparation" title="Direct link to 24.1 SQA Plan Preparation" translate=no>​</a></h3>
+<ul>
+<li class="">Prepares a <strong>Software Quality Assurance (SQA) Plan</strong> during project planning</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Evaluations to be performed</li>
+<li class="">Audits and reviews</li>
+<li class="">Applicable standards</li>
+<li class="">Error reporting procedures</li>
+<li class="">Documents to be produced</li>
+<li class="">Feedback mechanisms</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=242-process-participation>24.2 Process Participation<a href=#242-process-participation class=hash-link aria-label="Direct link to 24.2 Process Participation" title="Direct link to 24.2 Process Participation" translate=no>​</a></h3>
+<ul>
+<li class="">Participates in defining the <strong>software development process</strong></li>
+</ul>
+<p><strong>Role:</strong></p>
+<ul>
+<li class="">
+<p>Helps establish:</p>
+<ul>
+<li class="">Methods</li>
+<li class="">Procedures</li>
+<li class="">Standards</li>
+</ul>
+</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=243-compliance-review>24.3 Compliance Review<a href=#243-compliance-review class=hash-link aria-label="Direct link to 24.3 Compliance Review" title="Direct link to 24.3 Compliance Review" translate=no>​</a></h3>
+<ul>
+<li class="">Reviews development activities to ensure <strong>process compliance</strong></li>
+</ul>
+<p><strong>Checks:</strong></p>
+<ul>
+<li class="">Adherence to standards</li>
+<li class="">Proper implementation of procedures</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=244-audit-activities>24.4 Audit Activities<a href=#244-audit-activities class=hash-link aria-label="Direct link to 24.4 Audit Activities" title="Direct link to 24.4 Audit Activities" translate=no>​</a></h3>
+<ul>
+<li class="">Conducts <strong>audits of software work products</strong></li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Verify compliance with defined processes</li>
+<li class="">Identify deviations</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=245-work-product-review>24.5 Work Product Review<a href=#245-work-product-review class=hash-link aria-label="Direct link to 24.5 Work Product Review" title="Direct link to 24.5 Work Product Review" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>Reviews selected work products such as:</p>
+<ul>
+<li class="">Requirements</li>
+<li class="">Design documents</li>
+<li class="">Code</li>
+</ul>
+</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Ensure quality and correctness</li>
+<li class="">Detect defects early</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=25-software-reliability>25. Software Reliability<a href=#25-software-reliability class=hash-link aria-label="Direct link to 25. Software Reliability" title="Direct link to 25. Software Reliability" translate=no>​</a></h2>
+<p>Software Reliability refers to how <strong>dependably software performs without failure</strong> over a period of time in a given environment.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=251-definition>25.1 Definition<a href=#251-definition class=hash-link aria-label="Direct link to 25.1 Definition" title="Direct link to 25.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">Software Reliability is defined as the <strong>probability of failure-free operation</strong> of a program for a specified time under specified conditions</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=252-failure-concept>25.2 Failure Concept<a href=#252-failure-concept class=hash-link aria-label="Direct link to 25.2 Failure Concept" title="Direct link to 25.2 Failure Concept" translate=no>​</a></h3>
+<ul>
+<li class="">A <strong>failure</strong> occurs when software does <strong>not meet its requirements</strong></li>
+</ul>
+<p><strong>Key Points:</strong></p>
+<ul>
+<li class="">Failure = deviation from expected behavior</li>
+<li class="">Fixing one failure may sometimes introduce new errors</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=253-importance>25.3 Importance<a href=#253-importance class=hash-link aria-label="Direct link to 25.3 Importance" title="Direct link to 25.3 Importance" translate=no>​</a></h3>
+<ul>
+<li class="">Builds <strong>user trust</strong></li>
+<li class="">Reduces system crashes</li>
+<li class="">Saves time and cost</li>
+<li class="">Ensures consistent performance</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Deliver software that works correctly and reliably over time</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=26-measures-of-reliability-and-availability>26. Measures of Reliability and Availability<a href=#26-measures-of-reliability-and-availability class=hash-link aria-label="Direct link to 26. Measures of Reliability and Availability" title="Direct link to 26. Measures of Reliability and Availability" translate=no>​</a></h2>
+<p>These metrics are used to <strong>quantify software reliability and system performance over time</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=261-mtbf-mean-time-between-failures>26.1 MTBF (Mean Time Between Failures)<a href=#261-mtbf-mean-time-between-failures class=hash-link aria-label="Direct link to 26.1 MTBF (Mean Time Between Failures)" title="Direct link to 26.1 MTBF (Mean Time Between Failures)" translate=no>​</a></h3>
+<ul>
+<li class="">MTBF represents the <strong>average time between two consecutive failures</strong></li>
+</ul>
+<p><strong>Formula:</strong></p>
+<ul>
+<li class="">MTBF = MTTF + MTTR</li>
+</ul>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">Higher MTBF → more reliable system</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=262-mttf-mean-time-to-failure>26.2 MTTF (Mean Time to Failure)<a href=#262-mttf-mean-time-to-failure class=hash-link aria-label="Direct link to 26.2 MTTF (Mean Time to Failure)" title="Direct link to 26.2 MTTF (Mean Time to Failure)" translate=no>​</a></h3>
+<ul>
+<li class="">MTTF is the <strong>average time the system operates before a failure occurs</strong></li>
+</ul>
+<p><strong>Used for:</strong></p>
+<ul>
+<li class="">Non-repairable systems</li>
+</ul>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">Higher MTTF → longer failure-free operation</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=263-mttr-mean-time-to-repair>26.3 MTTR (Mean Time to Repair)<a href=#263-mttr-mean-time-to-repair class=hash-link aria-label="Direct link to 26.3 MTTR (Mean Time to Repair)" title="Direct link to 26.3 MTTR (Mean Time to Repair)" translate=no>​</a></h3>
+<ul>
+<li class="">MTTR is the <strong>average time required to fix a failure</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Detection time</li>
+<li class="">Repair time</li>
+<li class="">Recovery time</li>
+</ul>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">Lower MTTR → faster recovery</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=264-availability-formula>26.4 Availability Formula<a href=#264-availability-formula class=hash-link aria-label="Direct link to 26.4 Availability Formula" title="Direct link to 26.4 Availability Formula" translate=no>​</a></h3>
+<p><span class=katex><span class=katex-mathml><math xmlns=http://www.w3.org/1998/Math/MathML><semantics><mrow><mi>A</mi><mi>v</mi><mi>a</mi><mi>i</mi><mi>l</mi><mi>a</mi><mi>b</mi><mi>i</mi><mi>l</mi><mi>i</mi><mi>t</mi><mi>y</mi><mo>=</mo><mfrac><mrow><mi>M</mi><mi>T</mi><mi>T</mi><mi>F</mi></mrow><mrow><mi>M</mi><mi>T</mi><mi>T</mi><mi>F</mi><mo>+</mo><mi>M</mi><mi>T</mi><mi>T</mi><mi>R</mi></mrow></mfrac></mrow><annotation encoding=application/x-tex>Availability=\frac{MTTF}{MTTF+MTTR}</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=base><span class=strut style=height:0.8889em;vertical-align:-0.1944em></span><span class="mord mathnormal">A</span><span class="mord mathnormal" style=margin-right:0.0359em>v</span><span class="mord mathnormal">ai</span><span class="mord mathnormal" style=margin-right:0.0197em>l</span><span class="mord mathnormal">abi</span><span class="mord mathnormal" style=margin-right:0.0197em>l</span><span class="mord mathnormal">i</span><span class="mord mathnormal">t</span><span class="mord mathnormal" style=margin-right:0.0359em>y</span><span class=mspace style=margin-right:0.2778em></span><span class=mrel>=</span><span class=mspace style=margin-right:0.2778em></span></span><span class=base><span class=strut style=height:1.2757em;vertical-align:-0.4033em></span><span class=mord><span class="mopen nulldelimiter"></span><span class=mfrac><span class="vlist-t vlist-t2"><span class=vlist-r><span class=vlist style=height:0.8723em><span style=top:-2.655em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style=margin-right:0.109em>M</span><span class="mord mathnormal mtight" style=margin-right:0.1389em>T</span><span class="mord mathnormal mtight" style=margin-right:0.1389em>T</span><span class="mord mathnormal mtight" style=margin-right:0.1389em>F</span><span class="mbin mtight">+</span><span class="mord mathnormal mtight" style=margin-right:0.109em>M</span><span class="mord mathnormal mtight" style=margin-right:0.1389em>T</span><span class="mord mathnormal mtight" style=margin-right:0.1389em>T</span><span class="mord mathnormal mtight" style=margin-right:0.0077em>R</span></span></span></span><span style=top:-3.23em><span class=pstrut style=height:3em></span><span class=frac-line style=border-bottom-width:0.04em></span></span><span style=top:-3.394em><span class=pstrut style=height:3em></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style=margin-right:0.109em>M</span><span class="mord mathnormal mtight" style=margin-right:0.1389em>T</span><span class="mord mathnormal mtight" style=margin-right:0.1389em>T</span><span class="mord mathnormal mtight" style=margin-right:0.1389em>F</span></span></span></span></span><span class=vlist-s>​</span></span><span class=vlist-r><span class=vlist style=height:0.4033em><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p><strong>Meaning:</strong></p>
+<ul>
+<li class="">Availability shows the <strong>probability that the system is operational at a given time</strong></li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=-key-insight-2>🔁 Key Insight<a href=#-key-insight-2 class=hash-link aria-label="Direct link to 🔁 Key Insight" title="Direct link to 🔁 Key Insight" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p>High reliability system:</p>
+<ul>
+<li class="">High MTTF</li>
+<li class="">Low MTTR</li>
+<li class="">High Availability</li>
+</ul>
+</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=27-quality-standards>27. Quality Standards<a href=#27-quality-standards class=hash-link aria-label="Direct link to 27. Quality Standards" title="Direct link to 27. Quality Standards" translate=no>​</a></h2>
+<p>Quality Standards define the <strong>guidelines and rules</strong> that ensure software is developed and maintained with <strong>consistent quality</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=271-sqa-standards-classification>27.1 SQA Standards Classification<a href=#271-sqa-standards-classification class=hash-link aria-label="Direct link to 27.1 SQA Standards Classification" title="Direct link to 27.1 SQA Standards Classification" translate=no>​</a></h3>
+<p>SQA standards are broadly classified into two categories:</p>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=2711-management-standards>27.1.1 Management Standards<a href=#2711-management-standards class=hash-link aria-label="Direct link to 27.1.1 Management Standards" title="Direct link to 27.1.1 Management Standards" translate=no>​</a></h4>
+<ul>
+<li class="">Focus on <strong>organizational and managerial aspects</strong> of quality</li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Project planning</li>
+<li class="">Quality policies</li>
+<li class="">Resource management</li>
+<li class="">Organizational procedures</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Ensure proper management and control of software development</li>
+</ul>
+<hr/>
 <h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=2712-process-standards>27.1.2 Process Standards<a href=#2712-process-standards class=hash-link aria-label="Direct link to 27.1.2 Process Standards" title="Direct link to 27.1.2 Process Standards" translate=no>​</a></h4>
+<ul>
+<li class="">Focus on <strong>technical and development processes</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Development methodologies</li>
+<li class="">Coding standards</li>
+<li class="">Testing procedures</li>
+<li class="">Documentation practices</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Ensure consistency and quality in software processes</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=28-quality-management-standards>28. Quality Management Standards<a href=#28-quality-management-standards class=hash-link aria-label="Direct link to 28. Quality Management Standards" title="Direct link to 28. Quality Management Standards" translate=no>​</a></h2>
+<p>Quality Management Standards define how an <strong>organization manages processes, resources, and practices</strong> to ensure consistent software quality.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=281-organizational-focus>28.1 Organizational Focus<a href=#281-organizational-focus class=hash-link aria-label="Direct link to 28.1 Organizational Focus" title="Direct link to 28.1 Organizational Focus" translate=no>​</a></h3>
+<ul>
+<li class="">Emphasis on <strong>organization-wide quality improvement</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Establishing quality policies</li>
+<li class="">Continuous process improvement</li>
+<li class="">Customer satisfaction focus</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Build a culture of quality across the organization</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=282-infrastructure-requirements>28.2 Infrastructure Requirements<a href=#282-infrastructure-requirements class=hash-link aria-label="Direct link to 28.2 Infrastructure Requirements" title="Direct link to 28.2 Infrastructure Requirements" translate=no>​</a></h3>
+<ul>
+<li class="">Requires proper <strong>supporting structure and resources</strong></li>
+</ul>
+<p><strong>Includes:</strong></p>
+<ul>
+<li class="">Trained personnel</li>
+<li class="">Defined processes and procedures</li>
+<li class="">Tools and technologies</li>
+<li class="">Documentation systems</li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Ensure smooth implementation of quality standards</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=283-examples-iso-9000-cmm>28.3 Examples (ISO 9000, CMM)<a href=#283-examples-iso-9000-cmm class=hash-link aria-label="Direct link to 28.3 Examples (ISO 9000, CMM)" title="Direct link to 28.3 Examples (ISO 9000, CMM)" translate=no>​</a></h3>
+<ul>
+<li class="">
+<p><strong>ISO 9000 Series</strong></p>
+<ul>
+<li class="">International standards for <strong>quality management systems</strong></li>
+<li class="">Focus on documentation and process control</li>
+</ul>
+</li>
+<li class="">
+<p><strong>CMM (Capability Maturity Model)</strong></p>
+<ul>
+<li class="">
+<p>Framework to assess <strong>process maturity levels</strong></p>
+</li>
+<li class="">
+<p>Levels range from:</p>
+<ul>
+<li class="">Initial → Repeatable → Defined → Managed → Optimizing</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Improve process capability and software quality</li>
+</ul>
 <hr/>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=29-iso-9001-certification>29. ISO 9001 Certification<a href=#29-iso-9001-certification class=hash-link aria-label="Direct link to 29. ISO 9001 Certification" title="Direct link to 29. ISO 9001 Certification" translate=no>​</a></h2>
+<p>ISO 9001 Certification ensures that an organization follows a <strong>standardized Quality Management System (QMS)</strong>.</p>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=291-definition>29.1 Definition<a href=#291-definition class=hash-link aria-label="Direct link to 29.1 Definition" title="Direct link to 29.1 Definition" translate=no>​</a></h3>
+<ul>
+<li class="">ISO 9001 is an <strong>international standard for quality management systems</strong></li>
+</ul>
+<p><strong>Purpose:</strong></p>
+<ul>
+<li class="">Ensure consistent product/service quality</li>
+<li class="">Improve customer satisfaction</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=292-iso-organization>29.2 ISO Organization<a href=#292-iso-organization class=hash-link aria-label="Direct link to 29.2 ISO Organization" title="Direct link to 29.2 ISO Organization" translate=no>​</a></h3>
+<ul>
+<li class="">ISO (International Organization for Standardization) is a <strong>global body</strong> that develops standards</li>
+</ul>
+<p><strong>Characteristics:</strong></p>
+<ul>
+<li class="">Works with national standard organizations</li>
+<li class="">Publishes international quality standards</li>
+</ul>
+<hr/>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=293-standard-development-process>29.3 Standard Development Process<a href=#293-standard-development-process class=hash-link aria-label="Direct link to 29.3 Standard Development Process" title="Direct link to 29.3 Standard Development Process" translate=no>​</a></h3>
-<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=294-certification-process>29.4 Certification Process<a href=#294-certification-process class=hash-link aria-label="Direct link to 29.4 Certification Process" title="Direct link to 29.4 Certification Process" translate=no>​</a></h3></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/ankur3-101106/docs/SE/u6.mdx target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/SE/u5><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Unit - 5</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/SE/u7><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Unit - 7</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#software-testing--quality-assurance class="table-of-contents__link toc-highlight">Software Testing & Quality Assurance</a><li><a href=#1-software-testing-concepts class="table-of-contents__link toc-highlight">1. Software Testing Concepts</a><ul><li><a href=#11-definition-of-testing class="table-of-contents__link toc-highlight">1.1 Definition of Testing</a><li><a href=#12-objectives-of-testing class="table-of-contents__link toc-highlight">1.2 Objectives of Testing</a><li><a href=#13-testing-techniques-overview class="table-of-contents__link toc-highlight">1.3 Testing Techniques Overview</a><li><a href=#14-interface-testing-guidelines class="table-of-contents__link toc-highlight">1.4 Interface Testing Guidelines</a><li><a href=#15-object-oriented-testing class="table-of-contents__link toc-highlight">1.5 Object-Oriented Testing</a><li><a href=#16-case-tool-support class="table-of-contents__link toc-highlight">1.6 CASE Tool Support</a></ul><li><a href=#2-psychology-of-testing class="table-of-contents__link toc-highlight">2. Psychology of Testing</a><ul><li><a href=#21-traceability-to-requirements class="table-of-contents__link toc-highlight">2.1 Traceability to Requirements</a><li><a href=#22-early-test-planning class="table-of-contents__link toc-highlight">2.2 Early Test Planning</a><li><a href=#23-pareto-principle class="table-of-contents__link toc-highlight">2.3 Pareto Principle</a><li><a href=#24-testing-from-small-to-large class="table-of-contents__link toc-highlight">2.4 Testing from Small to Large</a><li><a href=#25-exhaustive-testing-limitation class="table-of-contents__link toc-highlight">2.5 Exhaustive Testing Limitation</a><li><a href=#26-independent-testing class="table-of-contents__link toc-highlight">2.6 Independent Testing</a></ul><li><a href=#3-software-testing-phases class="table-of-contents__link toc-highlight">3. Software Testing Phases</a><ul><li><a href=#31-component-testing class="table-of-contents__link toc-highlight">3.1 Component Testing</a><ul><li><a href=#311-developer-based-testing class="table-of-contents__link toc-highlight">3.1.1 Developer-Based Testing</a><li><a href=#312-unit-level-focus class="table-of-contents__link toc-highlight">3.1.2 Unit-Level Focus</a></ul><li><a href=#32-integration-testing class="table-of-contents__link toc-highlight">3.2 Integration Testing</a><ul><li><a href=#321-subsystem-testing class="table-of-contents__link toc-highlight">3.2.1 Subsystem Testing</a><li><a href=#322-system-specification-based-testing class="table-of-contents__link toc-highlight">3.2.2 System Specification-Based Testing</a></ul></ul><li><a href=#4-testing-process class="table-of-contents__link toc-highlight">4. Testing Process</a><ul><li><a href=#41-test-case-design class="table-of-contents__link toc-highlight">4.1 Test Case Design</a><li><a href=#42-test-data-preparation class="table-of-contents__link toc-highlight">4.2 Test Data Preparation</a><li><a href=#43-test-execution class="table-of-contents__link toc-highlight">4.3 Test Execution</a><li><a href=#44-result-comparison class="table-of-contents__link toc-highlight">4.4 Result Comparison</a><li><a href=#45-test-reporting class="table-of-contents__link toc-highlight">4.5 Test Reporting</a></ul><li><a href=#5-test-planning class="table-of-contents__link toc-highlight">5. Test Planning</a><ul><li><a href=#51-definition-of-test-plan class="table-of-contents__link toc-highlight">5.1 Definition of Test Plan</a><li><a href=#52-importance-of-test-planning class="table-of-contents__link toc-highlight">5.2 Importance of Test Planning</a><li><a href=#53-test-planning-activities class="table-of-contents__link toc-highlight">5.3 Test Planning Activities</a><ul><li><a href=#531-scope-and-risk-identification class="table-of-contents__link toc-highlight">5.3.1 Scope and Risk Identification</a><li><a href=#532-test-strategy-documentation class="table-of-contents__link toc-highlight">5.3.2 Test Strategy Documentation</a><li><a href=#533-entry-and-exit-criteria class="table-of-contents__link toc-highlight">5.3.3 Entry and Exit Criteria</a><li><a href=#534-test-estimation class="table-of-contents__link toc-highlight">5.3.4 Test Estimation</a><li><a href=#535-scheduling-and-evaluation class="table-of-contents__link toc-highlight">5.3.5 Scheduling and Evaluation</a><li><a href=#536-test-documentation class="table-of-contents__link toc-highlight">5.3.6 Test Documentation</a></ul></ul><li><a href=#6-test-case-design class="table-of-contents__link toc-highlight">6. Test Case Design</a><ul><li><a href=#61-purpose-of-test-case-design class="table-of-contents__link toc-highlight">6.1 Purpose of Test Case Design</a><li><a href=#62-completeness-of-testing class="table-of-contents__link toc-highlight">6.2 Completeness of Testing</a><li><a href=#63-black-box-testing-approach class="table-of-contents__link toc-highlight">6.3 Black-Box Testing Approach</a><li><a href=#64-white-box-testing-approach class="table-of-contents__link toc-highlight">6.4 White-Box Testing Approach</a></ul><li><a href=#7-test-execution class="table-of-contents__link toc-highlight">7. Test Execution</a><ul><li><a href=#71-execution-process class="table-of-contents__link toc-highlight">7.1 Execution Process</a><li><a href=#72-test-selection-based-on-risk class="table-of-contents__link toc-highlight">7.2 Test Selection Based on Risk</a><li><a href=#73-test-assignment class="table-of-contents__link toc-highlight">7.3 Test Assignment</a><li><a href=#74-bug-reporting class="table-of-contents__link toc-highlight">7.4 Bug Reporting</a><li><a href=#75-issue-resolution class="table-of-contents__link toc-highlight">7.5 Issue Resolution</a><li><a href=#76-status-reporting class="table-of-contents__link toc-highlight">7.6 Status Reporting</a></ul><li><a href=#8-levels-of-testing class="table-of-contents__link toc-highlight">8. Levels of Testing</a><ul><li><a href=#81-functional-testing class="table-of-contents__link toc-highlight">8.1 Functional Testing</a><ul><li><a href=#811-definition class="table-of-contents__link toc-highlight">8.1.1 Definition</a><li><a href=#812-steps-in-functional-testing class="table-of-contents__link toc-highlight">8.1.2 Steps in Functional Testing</a></ul><li><a href=#82-non-functional-testing class="table-of-contents__link toc-highlight">8.2 Non-Functional Testing</a><ul><li><a href=#821-performance-testing class="table-of-contents__link toc-highlight">8.2.1 Performance Testing</a><li><a href=#822-load-testing class="table-of-contents__link toc-highlight">8.2.2 Load Testing</a><li><a href=#823-stress-testing class="table-of-contents__link toc-highlight">8.2.3 Stress Testing</a><li><a href=#824-usability-testing class="table-of-contents__link toc-highlight">8.2.4 Usability Testing</a><li><a href=#825-security-testing class="table-of-contents__link toc-highlight">8.2.5 Security Testing</a><li><a href=#826-portability-testing class="table-of-contents__link toc-highlight">8.2.6 Portability Testing</a></ul></ul><li><a href=#9-unit-testing class="table-of-contents__link toc-highlight">9. Unit Testing</a><ul><li><a href=#91-definition class="table-of-contents__link toc-highlight">9.1 Definition</a><li><a href=#92-developer-responsibility class="table-of-contents__link toc-highlight">9.2 Developer Responsibility</a><li><a href=#93-test-data-usage class="table-of-contents__link toc-highlight">9.3 Test Data Usage</a><li><a href=#94-isolation-of-units class="table-of-contents__link toc-highlight">9.4 Isolation of Units</a></ul><li><a href=#10-integration-testing class="table-of-contents__link toc-highlight">10. Integration Testing</a><ul><li><a href=#101-definition class="table-of-contents__link toc-highlight">10.1 Definition</a><li><a href=#102-bottom-up-integration class="table-of-contents__link toc-highlight">10.2 Bottom-Up Integration</a><li><a href=#103-top-down-integration class="table-of-contents__link toc-highlight">10.3 Top-Down Integration</a></ul><li><a href=#11-system-testing class="table-of-contents__link toc-highlight">11. System Testing</a><ul><li><a href=#111-definition class="table-of-contents__link toc-highlight">11.1 Definition</a><li><a href=#112-importance class="table-of-contents__link toc-highlight">11.2 Importance</a><li><a href=#113-real-environment-testing class="table-of-contents__link toc-highlight">11.3 Real Environment Testing</a><li><a href=#114-requirement-validation class="table-of-contents__link toc-highlight">11.4 Requirement Validation</a></ul><li><a href=#12-black-box-testing class="table-of-contents__link toc-highlight">12. Black-Box Testing</a><ul><li><a href=#121-definition class="table-of-contents__link toc-highlight">12.1 Definition</a><li><a href=#122-characteristics class="table-of-contents__link toc-highlight">12.2 Characteristics</a><li><a href=#123-functional-testing-basis class="table-of-contents__link toc-highlight">12.3 Functional Testing Basis</a><li><a href=#124-error-categories class="table-of-contents__link toc-highlight">12.4 Error Categories</a><ul><li><a href=#1241-missing-functions class="table-of-contents__link toc-highlight">12.4.1 Missing Functions</a><li><a href=#1242-interface-errors class="table-of-contents__link toc-highlight">12.4.2 Interface Errors</a><li><a href=#1243-data-structure-errors class="table-of-contents__link toc-highlight">12.4.3 Data Structure Errors</a><li><a href=#1244-performance-errors class="table-of-contents__link toc-highlight">12.4.4 Performance Errors</a><li><a href=#1245-initialization-errors class="table-of-contents__link toc-highlight">12.4.5 Initialization Errors</a></ul></ul><li><a href=#13-boundary-value-analysis-bva class="table-of-contents__link toc-highlight">13. Boundary Value Analysis (BVA)</a><ul><li><a href=#131-definition class="table-of-contents__link toc-highlight">13.1 Definition</a><li><a href=#132-input-domain-testing class="table-of-contents__link toc-highlight">13.2 Input Domain Testing</a><li><a href=#133-output-domain-testing class="table-of-contents__link toc-highlight">13.3 Output Domain Testing</a><li><a href=#134-guidelines class="table-of-contents__link toc-highlight">13.4 Guidelines</a><ul><li><a href=#1341-range-boundaries class="table-of-contents__link toc-highlight">13.4.1 Range Boundaries</a><li><a href=#1342-min-max-values class="table-of-contents__link toc-highlight">13.4.2 Min-Max Values</a><li><a href=#1343-internal-data-structures class="table-of-contents__link toc-highlight">13.4.3 Internal Data Structures</a></ul></ul><li><a href=#14-pairwise-testing class="table-of-contents__link toc-highlight">14. Pairwise Testing</a><ul><li><a href=#141-definition class="table-of-contents__link toc-highlight">14.1 Definition</a><li><a href=#142-permutation-and-combination-method class="table-of-contents__link toc-highlight">14.2 Permutation and Combination Method</a><li><a href=#143-parameter-combinations class="table-of-contents__link toc-highlight">14.3 Parameter Combinations</a><li><a href=#144-advantages class="table-of-contents__link toc-highlight">14.4 Advantages</a><li><a href=#145-disadvantages class="table-of-contents__link toc-highlight">14.5 Disadvantages</a></ul><li><a href=#15-state-based-testing class="table-of-contents__link toc-highlight">15. State-Based Testing</a><ul><li><a href=#151-object-modeling class="table-of-contents__link toc-highlight">15.1 Object Modeling</a><li><a href=#152-relationship-graphs class="table-of-contents__link toc-highlight">15.2 Relationship Graphs</a><li><a href=#153-node-and-link-representation class="table-of-contents__link toc-highlight">15.3 Node and Link Representation</a><ul><li><a href=#1531-directed-links class="table-of-contents__link toc-highlight">15.3.1 Directed Links</a><li><a href=#1532-bidirectional-links class="table-of-contents__link toc-highlight">15.3.2 Bidirectional Links</a><li><a href=#1533-parallel-links class="table-of-contents__link toc-highlight">15.3.3 Parallel Links</a></ul><li><a href=#154-graph-based-testing-methods class="table-of-contents__link toc-highlight">15.4 Graph-Based Testing Methods</a><ul><li><a href=#1541-transaction-flow-modeling class="table-of-contents__link toc-highlight">15.4.1 Transaction Flow Modeling</a><li><a href=#1542-finite-state-modeling class="table-of-contents__link toc-highlight">15.4.2 Finite State Modeling</a><li><a href=#1543-data-flow-modeling class="table-of-contents__link toc-highlight">15.4.3 Data Flow Modeling</a><li><a href=#1544-timing-modeling class="table-of-contents__link toc-highlight">15.4.4 Timing Modeling</a></ul></ul><li><a href=#16-white-box-testing class="table-of-contents__link toc-highlight">16. White-Box Testing</a><ul><li><a href=#161-definition class="table-of-contents__link toc-highlight">16.1 Definition</a><li><a href=#162-control-structure-testing class="table-of-contents__link toc-highlight">16.2 Control Structure Testing</a><li><a href=#163-path-coverage class="table-of-contents__link toc-highlight">16.3 Path Coverage</a><li><a href=#164-loop-testing class="table-of-contents__link toc-highlight">16.4 Loop Testing</a><li><a href=#165-data-structure-validation class="table-of-contents__link toc-highlight">16.5 Data Structure Validation</a></ul><li><a href=#17-basis-path-testing class="table-of-contents__link toc-highlight">17. Basis Path Testing</a><ul><li><a href=#171-definition class="table-of-contents__link toc-highlight">17.1 Definition</a><li><a href=#172-flow-graph-notation class="table-of-contents__link toc-highlight">17.2 Flow Graph Notation</a><ul><li><a href=#1721-nodes class="table-of-contents__link toc-highlight">17.2.1 Nodes</a><li><a href=#1722-edges class="table-of-contents__link toc-highlight">17.2.2 Edges</a><li><a href=#1723-regions class="table-of-contents__link toc-highlight">17.2.3 Regions</a><li><a href=#1724-predicate-nodes class="table-of-contents__link toc-highlight">17.2.4 Predicate Nodes</a></ul><li><a href=#173-independent-paths class="table-of-contents__link toc-highlight">17.3 Independent Paths</a><li><a href=#174-cyclomatic-complexity class="table-of-contents__link toc-highlight">17.4 Cyclomatic Complexity</a><ul><li><a href=#1741-formula-e---n--2 class="table-of-contents__link toc-highlight">17.4.1 Formula (E - N + 2)</a><li><a href=#1742-formula-p--1 class="table-of-contents__link toc-highlight">17.4.2 Formula (P + 1)</a><li><a href=#1743-regions-method class="table-of-contents__link toc-highlight">17.4.3 Regions Method</a></ul><li><a href=#175-deriving-test-cases class="table-of-contents__link toc-highlight">17.5 Deriving Test Cases</a><ul><li><a href=#1751-flow-graph-creation class="table-of-contents__link toc-highlight">17.5.1 Flow Graph Creation</a><li><a href=#1752-complexity-calculation class="table-of-contents__link toc-highlight">17.5.2 Complexity Calculation</a><li><a href=#1753-path-identification class="table-of-contents__link toc-highlight">17.5.3 Path Identification</a><li><a href=#1754-test-case-generation class="table-of-contents__link toc-highlight">17.5.4 Test Case Generation</a></ul></ul><li><a href=#18-graph-matrices class="table-of-contents__link toc-highlight">18. Graph Matrices</a><ul><li><a href=#181-definition class="table-of-contents__link toc-highlight">18.1 Definition</a><li><a href=#182-matrix-representation class="table-of-contents__link toc-highlight">18.2 Matrix Representation</a><li><a href=#183-link-weights class="table-of-contents__link toc-highlight">18.3 Link Weights</a><li><a href=#184-connection-matrix class="table-of-contents__link toc-highlight">18.4 Connection Matrix</a><li><a href=#185-complexity-calculation-using-matrix class="table-of-contents__link toc-highlight">18.5 Complexity Calculation Using Matrix</a></ul><li><a href=#19-quality-concepts class="table-of-contents__link toc-highlight">19. Quality Concepts</a><ul><li><a href=#191-definition-of-quality class="table-of-contents__link toc-highlight">19.1 Definition of Quality</a><li><a href=#192-quality-of-design class="table-of-contents__link toc-highlight">19.2 Quality of Design</a><li><a href=#193-quality-of-conformance class="table-of-contents__link toc-highlight">19.3 Quality of Conformance</a><li><a href=#194-user-satisfaction class="table-of-contents__link toc-highlight">19.4 User Satisfaction</a></ul><li><a href=#20-quality-control class="table-of-contents__link toc-highlight">20. Quality Control</a><ul><li><a href=#201-definition class="table-of-contents__link toc-highlight">20.1 Definition</a><li><a href=#202-inspection-and-review class="table-of-contents__link toc-highlight">20.2 Inspection and Review</a><li><a href=#203-feedback-mechanism class="table-of-contents__link toc-highlight">20.3 Feedback Mechanism</a></ul><li><a href=#21-quality-assurance-qa class="table-of-contents__link toc-highlight">21. Quality Assurance (QA)</a><ul><li><a href=#211-definition class="table-of-contents__link toc-highlight">21.1 Definition</a><li><a href=#212-role-of-qa class="table-of-contents__link toc-highlight">21.2 Role of QA</a><li><a href=#213-management-responsibilities class="table-of-contents__link toc-highlight">21.3 Management Responsibilities</a></ul><li><a href=#22-cost-of-quality class="table-of-contents__link toc-highlight">22. Cost of Quality</a><ul><li><a href=#221-definition class="table-of-contents__link toc-highlight">22.1 Definition</a><li><a href=#222-prevention-cost class="table-of-contents__link toc-highlight">22.2 Prevention Cost</a><li><a href=#223-appraisal-cost class="table-of-contents__link toc-highlight">22.3 Appraisal Cost</a><li><a href=#224-failure-cost class="table-of-contents__link toc-highlight">22.4 Failure Cost</a><ul><li><a href=#2241-internal-failure class="table-of-contents__link toc-highlight">22.4.1 Internal Failure</a><li><a href=#2242-external-failure class="table-of-contents__link toc-highlight">22.4.2 External Failure</a></ul></ul><li><a href=#23-software-quality-assurance-sqa class="table-of-contents__link toc-highlight">23. Software Quality Assurance (SQA)</a><ul><li><a href=#231-definition class="table-of-contents__link toc-highlight">23.1 Definition</a><li><a href=#232-key-points class="table-of-contents__link toc-highlight">23.2 Key Points</a><li><a href=#233-sqa-group class="table-of-contents__link toc-highlight">23.3 SQA Group</a><ul><li><a href=#2331-composition class="table-of-contents__link toc-highlight">23.3.1 Composition</a><li><a href=#2332-responsibilities class="table-of-contents__link toc-highlight">23.3.2 Responsibilities</a></ul></ul><li><a href=#24-role-of-sqa-group class="table-of-contents__link toc-highlight">24. Role of SQA Group</a><ul><li><a href=#241-sqa-plan-preparation class="table-of-contents__link toc-highlight">24.1 SQA Plan Preparation</a><li><a href=#242-process-participation class="table-of-contents__link toc-highlight">24.2 Process Participation</a><li><a href=#243-compliance-review class="table-of-contents__link toc-highlight">24.3 Compliance Review</a><li><a href=#244-audit-activities class="table-of-contents__link toc-highlight">24.4 Audit Activities</a><li><a href=#245-work-product-review class="table-of-contents__link toc-highlight">24.5 Work Product Review</a></ul><li><a href=#25-software-reliability class="table-of-contents__link toc-highlight">25. Software Reliability</a><ul><li><a href=#251-definition class="table-of-contents__link toc-highlight">25.1 Definition</a><li><a href=#252-failure-concept class="table-of-contents__link toc-highlight">25.2 Failure Concept</a><li><a href=#253-importance class="table-of-contents__link toc-highlight">25.3 Importance</a></ul><li><a href=#26-measures-of-reliability-and-availability class="table-of-contents__link toc-highlight">26. Measures of Reliability and Availability</a><ul><li><a href=#261-mtbf-mean-time-between-failures class="table-of-contents__link toc-highlight">26.1 MTBF (Mean Time Between Failures)</a><li><a href=#262-mttf-mean-time-to-failure class="table-of-contents__link toc-highlight">26.2 MTTF (Mean Time to Failure)</a><li><a href=#263-mttr-mean-time-to-repair class="table-of-contents__link toc-highlight">26.3 MTTR (Mean Time to Repair)</a><li><a href=#264-availability-formula class="table-of-contents__link toc-highlight">26.4 Availability Formula</a></ul><li><a href=#27-quality-standards class="table-of-contents__link toc-highlight">27. Quality Standards</a><ul><li><a href=#271-sqa-standards-classification class="table-of-contents__link toc-highlight">27.1 SQA Standards Classification</a><ul><li><a href=#2711-management-standards class="table-of-contents__link toc-highlight">27.1.1 Management Standards</a><li><a href=#2712-process-standards class="table-of-contents__link toc-highlight">27.1.2 Process Standards</a></ul></ul><li><a href=#28-quality-management-standards class="table-of-contents__link toc-highlight">28. Quality Management Standards</a><ul><li><a href=#281-organizational-focus class="table-of-contents__link toc-highlight">28.1 Organizational Focus</a><li><a href=#282-infrastructure-requirements class="table-of-contents__link toc-highlight">28.2 Infrastructure Requirements</a><li><a href=#283-examples-iso-9000-cmm class="table-of-contents__link toc-highlight">28.3 Examples (ISO 9000, CMM)</a></ul><li><a href=#29-iso-9001-certification class="table-of-contents__link toc-highlight">29. ISO 9001 Certification</a><ul><li><a href=#291-definition class="table-of-contents__link toc-highlight">29.1 Definition</a><li><a href=#292-iso-organization class="table-of-contents__link toc-highlight">29.2 ISO Organization</a><li><a href=#293-standard-development-process class="table-of-contents__link toc-highlight">29.3 Standard Development Process</a><li><a href=#294-certification-process class="table-of-contents__link toc-highlight">29.4 Certification Process</a></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro>Notes</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog>Blog</a><li class=footer__item><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Ankur</div></div></div></footer></div></body>
+<ul>
+<li class="">Standards are developed through a <strong>structured process</strong></li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li class="">Proposal of new standard</li>
+<li class="">Draft preparation</li>
+<li class="">Review by experts</li>
+<li class="">Approval and publication</li>
+</ol>
+<p><strong>Goal:</strong></p>
+<ul>
+<li class="">Ensure global acceptance and consistency</li>
+</ul>
+<hr/>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=294-certification-process>29.4 Certification Process<a href=#294-certification-process class=hash-link aria-label="Direct link to 29.4 Certification Process" title="Direct link to 29.4 Certification Process" translate=no>​</a></h3>
+<ul>
+<li class="">Process to obtain ISO 9001 certification:</li>
+</ul>
+<p><strong>Steps:</strong></p>
+<ol>
+<li class="">Develop and implement QMS</li>
+<li class="">Document processes and procedures</li>
+<li class="">Conduct internal audits</li>
+<li class="">Apply for certification</li>
+<li class="">External audit by certification body</li>
+<li class="">Certification granted if compliant</li>
+</ol>
+<p><strong>Outcome:</strong></p>
+<ul>
+<li class="">Organization is officially recognized for maintaining quality standards</li>
+</ul>
+<hr/></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/ankur3-101106/docs/SE/u6.mdx target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/SE/u5><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>Unit - 5</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/SE/u7><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Unit - 7</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#software-testing--quality-assurance class="table-of-contents__link toc-highlight">Software Testing & Quality Assurance</a><li><a href=#1-software-testing-concepts class="table-of-contents__link toc-highlight">1. Software Testing Concepts</a><ul><li><a href=#11-definition-of-testing class="table-of-contents__link toc-highlight">1.1 Definition of Testing</a><li><a href=#12-objectives-of-testing class="table-of-contents__link toc-highlight">1.2 Objectives of Testing</a><li><a href=#13-testing-techniques-overview class="table-of-contents__link toc-highlight">1.3 Testing Techniques Overview</a><li><a href=#14-interface-testing-guidelines class="table-of-contents__link toc-highlight">1.4 Interface Testing Guidelines</a><li><a href=#15-object-oriented-testing class="table-of-contents__link toc-highlight">1.5 Object-Oriented Testing</a><li><a href=#16-case-tool-support class="table-of-contents__link toc-highlight">1.6 CASE Tool Support</a></ul><li><a href=#2-psychology-of-testing class="table-of-contents__link toc-highlight">2. Psychology of Testing</a><ul><li><a href=#21-traceability-to-requirements class="table-of-contents__link toc-highlight">2.1 Traceability to Requirements</a><li><a href=#22-early-test-planning class="table-of-contents__link toc-highlight">2.2 Early Test Planning</a><li><a href=#23-pareto-principle class="table-of-contents__link toc-highlight">2.3 Pareto Principle</a><li><a href=#24-testing-from-small-to-large class="table-of-contents__link toc-highlight">2.4 Testing from Small to Large</a><li><a href=#25-exhaustive-testing-limitation class="table-of-contents__link toc-highlight">2.5 Exhaustive Testing Limitation</a><li><a href=#26-independent-testing class="table-of-contents__link toc-highlight">2.6 Independent Testing</a></ul><li><a href=#3-software-testing-phases class="table-of-contents__link toc-highlight">3. Software Testing Phases</a><ul><li><a href=#31-component-testing class="table-of-contents__link toc-highlight">3.1 Component Testing</a><ul><li><a href=#311-developer-based-testing class="table-of-contents__link toc-highlight">3.1.1 Developer-Based Testing</a><li><a href=#312-unit-level-focus class="table-of-contents__link toc-highlight">3.1.2 Unit-Level Focus</a></ul><li><a href=#32-integration-testing class="table-of-contents__link toc-highlight">3.2 Integration Testing</a><ul><li><a href=#321-subsystem-testing class="table-of-contents__link toc-highlight">3.2.1 Subsystem Testing</a><li><a href=#322-system-specification-based-testing class="table-of-contents__link toc-highlight">3.2.2 System Specification-Based Testing</a></ul></ul><li><a href=#4-testing-process class="table-of-contents__link toc-highlight">4. Testing Process</a><ul><li><a href=#41-test-case-design class="table-of-contents__link toc-highlight">4.1 Test Case Design</a><li><a href=#42-test-data-preparation class="table-of-contents__link toc-highlight">4.2 Test Data Preparation</a><li><a href=#43-test-execution class="table-of-contents__link toc-highlight">4.3 Test Execution</a><li><a href=#44-result-comparison class="table-of-contents__link toc-highlight">4.4 Result Comparison</a><li><a href=#45-test-reporting class="table-of-contents__link toc-highlight">4.5 Test Reporting</a></ul><li><a href=#5-test-planning class="table-of-contents__link toc-highlight">5. Test Planning</a><ul><li><a href=#51-definition-of-test-plan class="table-of-contents__link toc-highlight">5.1 Definition of Test Plan</a><li><a href=#52-importance-of-test-planning class="table-of-contents__link toc-highlight">5.2 Importance of Test Planning</a><li><a href=#53-test-planning-activities class="table-of-contents__link toc-highlight">5.3 Test Planning Activities</a><ul><li><a href=#531-scope-and-risk-identification class="table-of-contents__link toc-highlight">5.3.1 Scope and Risk Identification</a><li><a href=#532-test-strategy-documentation class="table-of-contents__link toc-highlight">5.3.2 Test Strategy Documentation</a><li><a href=#533-entry-and-exit-criteria class="table-of-contents__link toc-highlight">5.3.3 Entry and Exit Criteria</a><li><a href=#534-test-estimation class="table-of-contents__link toc-highlight">5.3.4 Test Estimation</a><li><a href=#535-scheduling-and-evaluation class="table-of-contents__link toc-highlight">5.3.5 Scheduling and Evaluation</a><li><a href=#536-test-documentation class="table-of-contents__link toc-highlight">5.3.6 Test Documentation</a></ul></ul><li><a href=#6-test-case-design class="table-of-contents__link toc-highlight">6. Test Case Design</a><ul><li><a href=#61-purpose-of-test-case-design class="table-of-contents__link toc-highlight">6.1 Purpose of Test Case Design</a><li><a href=#62-completeness-of-testing class="table-of-contents__link toc-highlight">6.2 Completeness of Testing</a><li><a href=#63-black-box-testing-approach class="table-of-contents__link toc-highlight">6.3 Black-Box Testing Approach</a><li><a href=#64-white-box-testing-approach class="table-of-contents__link toc-highlight">6.4 White-Box Testing Approach</a></ul><li><a href=#7-test-execution class="table-of-contents__link toc-highlight">7. Test Execution</a><ul><li><a href=#71-execution-process class="table-of-contents__link toc-highlight">7.1 Execution Process</a><li><a href=#72-test-selection-based-on-risk class="table-of-contents__link toc-highlight">7.2 Test Selection Based on Risk</a><li><a href=#73-test-assignment class="table-of-contents__link toc-highlight">7.3 Test Assignment</a><li><a href=#74-bug-reporting class="table-of-contents__link toc-highlight">7.4 Bug Reporting</a><li><a href=#75-issue-resolution class="table-of-contents__link toc-highlight">7.5 Issue Resolution</a><li><a href=#76-status-reporting class="table-of-contents__link toc-highlight">7.6 Status Reporting</a></ul><li><a href=#8-levels-of-testing class="table-of-contents__link toc-highlight">8. Levels of Testing</a><ul><li><a href=#81-functional-testing class="table-of-contents__link toc-highlight">8.1 Functional Testing</a><ul><li><a href=#811-definition class="table-of-contents__link toc-highlight">8.1.1 Definition</a><li><a href=#812-steps-in-functional-testing class="table-of-contents__link toc-highlight">8.1.2 Steps in Functional Testing</a></ul><li><a href=#82-non-functional-testing class="table-of-contents__link toc-highlight">8.2 Non-Functional Testing</a><ul><li><a href=#821-performance-testing class="table-of-contents__link toc-highlight">8.2.1 Performance Testing</a><li><a href=#822-load-testing class="table-of-contents__link toc-highlight">8.2.2 Load Testing</a><li><a href=#823-stress-testing class="table-of-contents__link toc-highlight">8.2.3 Stress Testing</a><li><a href=#824-usability-testing class="table-of-contents__link toc-highlight">8.2.4 Usability Testing</a><li><a href=#825-security-testing class="table-of-contents__link toc-highlight">8.2.5 Security Testing</a><li><a href=#826-portability-testing class="table-of-contents__link toc-highlight">8.2.6 Portability Testing</a></ul></ul><li><a href=#9-unit-testing class="table-of-contents__link toc-highlight">9. Unit Testing</a><ul><li><a href=#91-definition class="table-of-contents__link toc-highlight">9.1 Definition</a><li><a href=#92-developer-responsibility class="table-of-contents__link toc-highlight">9.2 Developer Responsibility</a><li><a href=#93-test-data-usage class="table-of-contents__link toc-highlight">9.3 Test Data Usage</a><li><a href=#94-isolation-of-units class="table-of-contents__link toc-highlight">9.4 Isolation of Units</a></ul><li><a href=#10-integration-testing class="table-of-contents__link toc-highlight">10. Integration Testing</a><ul><li><a href=#101-definition class="table-of-contents__link toc-highlight">10.1 Definition</a><li><a href=#102-bottom-up-integration class="table-of-contents__link toc-highlight">10.2 Bottom-Up Integration</a><li><a href=#103-top-down-integration class="table-of-contents__link toc-highlight">10.3 Top-Down Integration</a></ul><li><a href=#11-system-testing class="table-of-contents__link toc-highlight">11. System Testing</a><ul><li><a href=#111-definition class="table-of-contents__link toc-highlight">11.1 Definition</a><li><a href=#112-importance class="table-of-contents__link toc-highlight">11.2 Importance</a><li><a href=#113-real-environment-testing class="table-of-contents__link toc-highlight">11.3 Real Environment Testing</a><li><a href=#114-requirement-validation class="table-of-contents__link toc-highlight">11.4 Requirement Validation</a></ul><li><a href=#12-black-box-testing class="table-of-contents__link toc-highlight">12. Black-Box Testing</a><ul><li><a href=#121-definition class="table-of-contents__link toc-highlight">12.1 Definition</a><li><a href=#122-characteristics class="table-of-contents__link toc-highlight">12.2 Characteristics</a><li><a href=#123-functional-testing-basis class="table-of-contents__link toc-highlight">12.3 Functional Testing Basis</a><li><a href=#124-error-categories class="table-of-contents__link toc-highlight">12.4 Error Categories</a><ul><li><a href=#1241-missing-functions class="table-of-contents__link toc-highlight">12.4.1 Missing Functions</a><li><a href=#1242-interface-errors class="table-of-contents__link toc-highlight">12.4.2 Interface Errors</a><li><a href=#1243-data-structure-errors class="table-of-contents__link toc-highlight">12.4.3 Data Structure Errors</a><li><a href=#1244-performance-errors class="table-of-contents__link toc-highlight">12.4.4 Performance Errors</a><li><a href=#1245-initialization-errors class="table-of-contents__link toc-highlight">12.4.5 Initialization Errors</a></ul></ul><li><a href=#13-boundary-value-analysis-bva class="table-of-contents__link toc-highlight">13. Boundary Value Analysis (BVA)</a><ul><li><a href=#131-definition class="table-of-contents__link toc-highlight">13.1 Definition</a><li><a href=#132-input-domain-testing class="table-of-contents__link toc-highlight">13.2 Input Domain Testing</a><li><a href=#133-output-domain-testing class="table-of-contents__link toc-highlight">13.3 Output Domain Testing</a><li><a href=#134-guidelines class="table-of-contents__link toc-highlight">13.4 Guidelines</a><ul><li><a href=#1341-range-boundaries class="table-of-contents__link toc-highlight">13.4.1 Range Boundaries</a><li><a href=#1342-min-max-values class="table-of-contents__link toc-highlight">13.4.2 Min-Max Values</a><li><a href=#1343-internal-data-structures class="table-of-contents__link toc-highlight">13.4.3 Internal Data Structures</a></ul></ul><li><a href=#14-pairwise-testing class="table-of-contents__link toc-highlight">14. Pairwise Testing</a><ul><li><a href=#141-definition class="table-of-contents__link toc-highlight">14.1 Definition</a><li><a href=#142-permutation-and-combination-method class="table-of-contents__link toc-highlight">14.2 Permutation and Combination Method</a><li><a href=#143-parameter-combinations class="table-of-contents__link toc-highlight">14.3 Parameter Combinations</a><li><a href=#144-advantages class="table-of-contents__link toc-highlight">14.4 Advantages</a><li><a href=#145-disadvantages class="table-of-contents__link toc-highlight">14.5 Disadvantages</a></ul><li><a href=#15-state-based-testing class="table-of-contents__link toc-highlight">15. State-Based Testing</a><ul><li><a href=#151-object-modeling class="table-of-contents__link toc-highlight">15.1 Object Modeling</a><li><a href=#152-relationship-graphs class="table-of-contents__link toc-highlight">15.2 Relationship Graphs</a><li><a href=#153-node-and-link-representation class="table-of-contents__link toc-highlight">15.3 Node and Link Representation</a><ul><li><a href=#1531-directed-links class="table-of-contents__link toc-highlight">15.3.1 Directed Links</a><li><a href=#1532-bidirectional-links class="table-of-contents__link toc-highlight">15.3.2 Bidirectional Links</a><li><a href=#1533-parallel-links class="table-of-contents__link toc-highlight">15.3.3 Parallel Links</a></ul><li><a href=#154-graph-based-testing-methods class="table-of-contents__link toc-highlight">15.4 Graph-Based Testing Methods</a><ul><li><a href=#1541-transaction-flow-modeling class="table-of-contents__link toc-highlight">15.4.1 Transaction Flow Modeling</a><li><a href=#1542-finite-state-modeling class="table-of-contents__link toc-highlight">15.4.2 Finite State Modeling</a><li><a href=#1543-data-flow-modeling class="table-of-contents__link toc-highlight">15.4.3 Data Flow Modeling</a><li><a href=#1544-timing-modeling class="table-of-contents__link toc-highlight">15.4.4 Timing Modeling</a></ul></ul><li><a href=#16-white-box-testing class="table-of-contents__link toc-highlight">16. White-Box Testing</a><ul><li><a href=#161-definition class="table-of-contents__link toc-highlight">16.1 Definition</a><li><a href=#162-control-structure-testing class="table-of-contents__link toc-highlight">16.2 Control Structure Testing</a><li><a href=#163-path-coverage class="table-of-contents__link toc-highlight">16.3 Path Coverage</a><li><a href=#164-loop-testing class="table-of-contents__link toc-highlight">16.4 Loop Testing</a><li><a href=#165-data-structure-validation class="table-of-contents__link toc-highlight">16.5 Data Structure Validation</a></ul><li><a href=#17-basis-path-testing class="table-of-contents__link toc-highlight">17. Basis Path Testing</a><ul><li><a href=#171-definition class="table-of-contents__link toc-highlight">17.1 Definition</a><li><a href=#172-flow-graph-notation class="table-of-contents__link toc-highlight">17.2 Flow Graph Notation</a><ul><li><a href=#1721-nodes class="table-of-contents__link toc-highlight">17.2.1 Nodes</a><li><a href=#1722-edges class="table-of-contents__link toc-highlight">17.2.2 Edges</a><li><a href=#1723-regions class="table-of-contents__link toc-highlight">17.2.3 Regions</a><li><a href=#1724-predicate-nodes class="table-of-contents__link toc-highlight">17.2.4 Predicate Nodes</a></ul><li><a href=#173-independent-paths class="table-of-contents__link toc-highlight">17.3 Independent Paths</a><li><a href=#174-cyclomatic-complexity class="table-of-contents__link toc-highlight">17.4 Cyclomatic Complexity</a><ul><li><a href=#1741-formula-e---n--2 class="table-of-contents__link toc-highlight">17.4.1 Formula (E - N + 2)</a><li><a href=#1742-formula-p--1 class="table-of-contents__link toc-highlight">17.4.2 Formula (P + 1)</a><li><a href=#1743-regions-method class="table-of-contents__link toc-highlight">17.4.3 Regions Method</a></ul><li><a href=#175-deriving-test-cases class="table-of-contents__link toc-highlight">17.5 Deriving Test Cases</a><ul><li><a href=#1751-flow-graph-creation class="table-of-contents__link toc-highlight">17.5.1 Flow Graph Creation</a><li><a href=#1752-complexity-calculation class="table-of-contents__link toc-highlight">17.5.2 Complexity Calculation</a><li><a href=#1753-path-identification class="table-of-contents__link toc-highlight">17.5.3 Path Identification</a><li><a href=#1754-test-case-generation class="table-of-contents__link toc-highlight">17.5.4 Test Case Generation</a></ul><li><a href=#-summary-insight class="table-of-contents__link toc-highlight">🔁 Summary Insight</a></ul><li><a href=#18-graph-matrices class="table-of-contents__link toc-highlight">18. Graph Matrices</a><ul><li><a href=#181-definition class="table-of-contents__link toc-highlight">18.1 Definition</a><li><a href=#182-matrix-representation class="table-of-contents__link toc-highlight">18.2 Matrix Representation</a><li><a href=#183-link-weights class="table-of-contents__link toc-highlight">18.3 Link Weights</a><li><a href=#184-connection-matrix class="table-of-contents__link toc-highlight">18.4 Connection Matrix</a><li><a href=#185-complexity-calculation-using-matrix class="table-of-contents__link toc-highlight">18.5 Complexity Calculation Using Matrix</a><li><a href=#-key-insight class="table-of-contents__link toc-highlight">🔁 Key Insight</a></ul><li><a href=#19-quality-concepts class="table-of-contents__link toc-highlight">19. Quality Concepts</a><ul><li><a href=#191-definition-of-quality class="table-of-contents__link toc-highlight">19.1 Definition of Quality</a><li><a href=#192-quality-of-design class="table-of-contents__link toc-highlight">19.2 Quality of Design</a><li><a href=#193-quality-of-conformance class="table-of-contents__link toc-highlight">19.3 Quality of Conformance</a><li><a href=#194-user-satisfaction class="table-of-contents__link toc-highlight">19.4 User Satisfaction</a></ul><li><a href=#20-quality-control class="table-of-contents__link toc-highlight">20. Quality Control</a><ul><li><a href=#201-definition class="table-of-contents__link toc-highlight">20.1 Definition</a><li><a href=#202-inspection-and-review class="table-of-contents__link toc-highlight">20.2 Inspection and Review</a><li><a href=#203-feedback-mechanism class="table-of-contents__link toc-highlight">20.3 Feedback Mechanism</a></ul><li><a href=#21-quality-assurance-qa class="table-of-contents__link toc-highlight">21. Quality Assurance (QA)</a><ul><li><a href=#211-definition class="table-of-contents__link toc-highlight">21.1 Definition</a><li><a href=#212-role-of-qa class="table-of-contents__link toc-highlight">21.2 Role of QA</a><li><a href=#213-management-responsibilities class="table-of-contents__link toc-highlight">21.3 Management Responsibilities</a></ul><li><a href=#22-cost-of-quality class="table-of-contents__link toc-highlight">22. Cost of Quality</a><ul><li><a href=#221-definition class="table-of-contents__link toc-highlight">22.1 Definition</a><li><a href=#222-prevention-cost class="table-of-contents__link toc-highlight">22.2 Prevention Cost</a><li><a href=#223-appraisal-cost class="table-of-contents__link toc-highlight">22.3 Appraisal Cost</a><li><a href=#224-failure-cost class="table-of-contents__link toc-highlight">22.4 Failure Cost</a><ul><li><a href=#2241-internal-failure class="table-of-contents__link toc-highlight">22.4.1 Internal Failure</a><li><a href=#2242-external-failure class="table-of-contents__link toc-highlight">22.4.2 External Failure</a></ul><li><a href=#-key-insight-1 class="table-of-contents__link toc-highlight">🔁 Key Insight</a></ul><li><a href=#23-software-quality-assurance-sqa class="table-of-contents__link toc-highlight">23. Software Quality Assurance (SQA)</a><ul><li><a href=#231-definition class="table-of-contents__link toc-highlight">23.1 Definition</a><li><a href=#232-key-points class="table-of-contents__link toc-highlight">23.2 Key Points</a><li><a href=#233-sqa-group class="table-of-contents__link toc-highlight">23.3 SQA Group</a><ul><li><a href=#2331-composition class="table-of-contents__link toc-highlight">23.3.1 Composition</a><li><a href=#2332-responsibilities class="table-of-contents__link toc-highlight">23.3.2 Responsibilities</a></ul></ul><li><a href=#24-role-of-sqa-group class="table-of-contents__link toc-highlight">24. Role of SQA Group</a><ul><li><a href=#241-sqa-plan-preparation class="table-of-contents__link toc-highlight">24.1 SQA Plan Preparation</a><li><a href=#242-process-participation class="table-of-contents__link toc-highlight">24.2 Process Participation</a><li><a href=#243-compliance-review class="table-of-contents__link toc-highlight">24.3 Compliance Review</a><li><a href=#244-audit-activities class="table-of-contents__link toc-highlight">24.4 Audit Activities</a><li><a href=#245-work-product-review class="table-of-contents__link toc-highlight">24.5 Work Product Review</a></ul><li><a href=#25-software-reliability class="table-of-contents__link toc-highlight">25. Software Reliability</a><ul><li><a href=#251-definition class="table-of-contents__link toc-highlight">25.1 Definition</a><li><a href=#252-failure-concept class="table-of-contents__link toc-highlight">25.2 Failure Concept</a><li><a href=#253-importance class="table-of-contents__link toc-highlight">25.3 Importance</a></ul><li><a href=#26-measures-of-reliability-and-availability class="table-of-contents__link toc-highlight">26. Measures of Reliability and Availability</a><ul><li><a href=#261-mtbf-mean-time-between-failures class="table-of-contents__link toc-highlight">26.1 MTBF (Mean Time Between Failures)</a><li><a href=#262-mttf-mean-time-to-failure class="table-of-contents__link toc-highlight">26.2 MTTF (Mean Time to Failure)</a><li><a href=#263-mttr-mean-time-to-repair class="table-of-contents__link toc-highlight">26.3 MTTR (Mean Time to Repair)</a><li><a href=#264-availability-formula class="table-of-contents__link toc-highlight">26.4 Availability Formula</a><li><a href=#-key-insight-2 class="table-of-contents__link toc-highlight">🔁 Key Insight</a></ul><li><a href=#27-quality-standards class="table-of-contents__link toc-highlight">27. Quality Standards</a><ul><li><a href=#271-sqa-standards-classification class="table-of-contents__link toc-highlight">27.1 SQA Standards Classification</a><ul><li><a href=#2711-management-standards class="table-of-contents__link toc-highlight">27.1.1 Management Standards</a><li><a href=#2712-process-standards class="table-of-contents__link toc-highlight">27.1.2 Process Standards</a></ul></ul><li><a href=#28-quality-management-standards class="table-of-contents__link toc-highlight">28. Quality Management Standards</a><ul><li><a href=#281-organizational-focus class="table-of-contents__link toc-highlight">28.1 Organizational Focus</a><li><a href=#282-infrastructure-requirements class="table-of-contents__link toc-highlight">28.2 Infrastructure Requirements</a><li><a href=#283-examples-iso-9000-cmm class="table-of-contents__link toc-highlight">28.3 Examples (ISO 9000, CMM)</a></ul><li><a href=#29-iso-9001-certification class="table-of-contents__link toc-highlight">29. ISO 9001 Certification</a><ul><li><a href=#291-definition class="table-of-contents__link toc-highlight">29.1 Definition</a><li><a href=#292-iso-organization class="table-of-contents__link toc-highlight">29.2 ISO Organization</a><li><a href=#293-standard-development-process class="table-of-contents__link toc-highlight">29.3 Standard Development Process</a><li><a href=#294-certification-process class="table-of-contents__link toc-highlight">29.4 Certification Process</a></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro>Notes</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Community</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog>Blog</a><li class=footer__item><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Ankur</div></div></div></footer></div></body>
