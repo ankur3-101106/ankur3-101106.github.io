@@ -2057,12 +2057,14 @@
         position: sticky;
         top: 0
     }
+
     .navbar__inner {
         background: rgba(13, 17, 23, 0.05);
 
         backdrop-filter: blur(var(--blur-amount, 8px)) saturate(180%);
         -webkit-backdrop-filter: blur(var(--blur-amount, 8px)) saturate(180%);
     }
+
     .navbar__inner {
         flex-wrap: wrap;
         justify-content: space-between;
@@ -4103,8 +4105,12 @@ html[data-theme=light] h4 {
     color: #ffce97
 }
 
+html[data-theme=light] [class*=cardContainer] h2 {
+    color: #a75a01
+}
+
 [class*=cardContainer]:hover {
-    border-color: rgba(77, 255, 0, .416);
+    border-color: #8cff00;
     transition: transform .6s;
     transform: scale(1.02)
 }
@@ -4122,6 +4128,36 @@ html[data-theme=dark] h1 {
     background: linear-gradient(90deg, #ff4dff, #0ff);
     -webkit-background-clip: text;
     background-clip: text
+}
+
+hr {
+    background-image: url(/assets/images/colors-7e6c3a725cc868e20a00064fed1d85b6.jpg);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: none;
+    height: 1px
+}
+
+details {
+    background: rgba(255, 255, 255, .05);
+    border: none;
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 1rem
+}
+
+summary {
+    cursor: pointer
+}
+
+.social-icons img {
+    margin: 0 8px;
+    transition: transform .2s
+}
+
+.social-icons img:hover {
+    transform: scale(1.05)
 }
 
 .searchBar_RVTs .dropdownMenu_qbY6 {
@@ -4499,18 +4535,6 @@ html[dir=rtl] .navbar__search-input {
         max-width: 100% !important;
         padding-left: var(--ifm-spacing-horizontal) !important
     }
-}
-
-.features_t9lD {
-    align-items: center;
-    width: 100%;
-    padding: 2rem 0;
-    display: flex
-}
-
-.featureSvg_GfXr {
-    width: 200px;
-    height: 200px
 }
 
 .heroBanner_qdFl {
