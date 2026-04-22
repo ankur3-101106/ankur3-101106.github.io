@@ -2045,7 +2045,8 @@
         box-shadow: var(--ifm-navbar-shadow);
         height: var(--ifm-navbar-height);
         display: flex;
-        padding: var(--ifm-navbar-padding-horizontal);
+        padding: 0 var(--ifm-navbar-padding-horizontal);
+    
     }
 
     .navbar>.container,
