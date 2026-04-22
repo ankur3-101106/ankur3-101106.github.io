@@ -2044,7 +2044,8 @@
         background-color: var(--ifm-navbar-background-color);
         box-shadow: var(--ifm-navbar-shadow);
         height: var(--ifm-navbar-height);
-        display: flex
+        display: flex;
+        padding: var(--ifm-navbar-padding-horizontal);
     }
 
     .navbar>.container,
