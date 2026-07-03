@@ -1,5 +1,636 @@
-<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Sem-5/MFW/u1" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>Unit - 1 | Ankur's Page</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://ankur3-101106.github.io/docs/Sem-5/MFW/u1 /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Unit - 1 | Ankur's Page"/><meta data-rh=true name=description content="Meterpreter - 2"/><meta data-rh=true property=og:description content="Meterpreter - 2"/><link data-rh=true rel=icon href=/img/favicon.jpg /><link data-rh=true rel=canonical href=https://ankur3-101106.github.io/docs/Sem-5/MFW/u1 /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/Sem-5/MFW/u1 hreflang=en /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/Sem-5/MFW/u1 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/sem-5","name":"Sem 5","position":1},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/Sem-5/MFW/","name":"MFW","position":2},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/Sem-5/MFW/u1","name":"Unit - 1","position":3}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Ankur's Page RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Ankur's Page Atom Feed"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/assets/css/styles.acb81ea9.css /><script src=/assets/js/runtime~main.9600829f.js defer></script><script src=/assets/js/main.e47842fa.js defer></script></head><body><svg style="display: none;"><defs>
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Sem-5/MFW/u1" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.1"><title data-rh=true>Unit - 1 | Ankur's Page</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true property=og:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true name=twitter:image content=https://ankur3-101106.github.io/img/docusaurus-social-card.jpg /><meta data-rh=true property=og:url content=https://ankur3-101106.github.io/docs/Sem-5/MFW/u1 /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="Unit - 1 | Ankur's Page"/><meta data-rh=true name=description content="Introduction to VAPT"/><meta data-rh=true property=og:description content="Introduction to VAPT"/><link data-rh=true rel=icon href=/img/favicon.jpg /><link data-rh=true rel=canonical href=https://ankur3-101106.github.io/docs/Sem-5/MFW/u1 /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/Sem-5/MFW/u1 hreflang=en /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/Sem-5/MFW/u1 hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/sem-5","name":"Sem 5","position":1},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/Sem-5/MFW/","name":"MFW","position":2},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/Sem-5/MFW/u1","name":"Unit - 1","position":3}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Ankur's Page RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Ankur's Page Atom Feed"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/assets/css/styles.e828c7f9.css /><script src=/assets/js/runtime~main.7b66f869.js defer></script><script src=/assets/js/main.cac120ba.js defer></script></head><body><svg style="display: none;"><defs>
 <symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
 </defs></svg>
 <script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-142")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon.jpg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Ankur's Page</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/intro>Notes</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/ankur3-101106/ target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/intro><span title=Introduction class=linkLabel_WmDU>Introduction</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/sem-4><span title="Sem 4" class=categoryLinkLabel_W154>Sem 4</span></a><button aria-label="Expand sidebar category 'Sem 4'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/docs/category/sem-5><span title="Sem 5" class=categoryLinkLabel_W154>Sem 5</span></a><button aria-label="Collapse sidebar category 'Sem 5'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/docs/Sem-5/DAA/><span title=DAA class=categoryLinkLabel_W154>DAA</span></a><button aria-label="Expand sidebar category 'DAA'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/docs/Sem-5/MAS/><span title=MAS class=categoryLinkLabel_W154>MAS</span></a><button aria-label="Expand sidebar category 'MAS'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex=0 href=/docs/Sem-5/MFW/><span title=MFW class=categoryLinkLabel_W154>MFW</span></a><button aria-label="Collapse sidebar category 'MFW'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/Sem-5/MFW/u1><span title="Unit - 1" class=linkLabel_WmDU>Unit - 1</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/Sem-5/MFW/u2><span title="Unit - 2" class=linkLabel_WmDU>Unit - 2</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/Sem-5/MFW/u3><span title="Unit - 3" class=linkLabel_WmDU>Unit - 3</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/Sem-5/MFW/u4><span title="Unit - 4" class=linkLabel_WmDU>Unit - 4</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/docs/Sem-5/WAS/><span title=WAS class=categoryLinkLabel_W154>WAS</span></a><button aria-label="Expand sidebar category 'WAS'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/docs/Sem-5/QR/><span title=QR class=categoryLinkLabel_W154>QR</span></a><button aria-label="Expand sidebar category 'QR'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/docs/category/open-elective><span title="Open Elective" class=categoryLinkLabel_W154>Open Elective</span></a><button aria-label="Expand sidebar category 'Open Elective'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/format><span title="Structure Format for Unit PPT/PDF outline" class=linkLabel_WmDU>Structure Format for Unit PPT/PDF outline</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/hacks><span title=Hacks class=linkLabel_WmDU>Hacks</span></a></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/category/sem-5><span>Sem 5</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/Sem-5/MFW/><span>MFW</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>Unit - 1</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Unit - 1</h1></header>
-<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></span>TITLE</div><div class=admonitionContent_BuS1><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=meterpreter---2>Meterpreter - 2<a href=#meterpreter---2 class=hash-link aria-label="Direct link to Meterpreter - 2" title="Direct link to Meterpreter - 2" translate=no>​</a></h2></div></div></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/ankur3-101106/portfolio/tree/main/docs/Sem-5/MFW/u1.mdx target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/Sem-5/MFW/><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>MetaSploit Framework</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/Sem-5/MFW/u2><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Unit - 2</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#meterpreter---2 class="table-of-contents__link toc-highlight">Meterpreter - 2</a></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro>Notes</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Socials</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog>Blog</a><li class=footer__item><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Ankur</div></div></div></footer></div></body>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></span>TITLE</div><div class=admonitionContent_BuS1><h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=introduction-to-vapt>Introduction to VAPT<a href=#introduction-to-vapt class=hash-link aria-label="Direct link to Introduction to VAPT" title="Direct link to Introduction to VAPT" translate=no>​</a></h2></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-introduction-to-vulnerability-assessment>1. Introduction to Vulnerability Assessment<a href=#1-introduction-to-vulnerability-assessment class=hash-link aria-label="Direct link to 1. Introduction to Vulnerability Assessment" title="Direct link to 1. Introduction to Vulnerability Assessment" translate=no>​</a></h2>
+<p>Vulnerability Assessment (VA) is the systematic process of identifying, analyzing, and prioritizing security weaknesses (vulnerabilities) in systems, networks, applications, and cloud environments. It helps organizations discover security flaws before attackers can exploit them and provides recommendations for remediation.</p>
+<p>Unlike penetration testing, which actively exploits vulnerabilities, Vulnerability Assessment focuses on discovering and evaluating potential weaknesses with minimal impact on the target system.</p>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=key-characteristics>Key Characteristics<a href=#key-characteristics class=hash-link aria-label="Direct link to Key Characteristics" title="Direct link to Key Characteristics" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Continuous and proactive</strong> security assessment.</li>
+<li class="">Detects known vulnerabilities using databases like <strong>CVE</strong> and <strong>CVSS</strong>.</li>
+<li class="">Helps organizations reduce cyber risks and supports compliance with security standards.</li>
+<li class="">Forms the foundation of an effective <strong>Vulnerability Management Program</strong>.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=vulnerability-assessment-process>Vulnerability Assessment Process<a href=#vulnerability-assessment-process class=hash-link aria-label="Direct link to Vulnerability Assessment Process" title="Direct link to Vulnerability Assessment Process" translate=no>​</a></h3>
+<table><thead><tr><th>Step<th>Description<tbody><tr><td><strong>Asset Discovery</strong><td>Identify systems, applications, databases, and network devices.<tr><td><strong>Vulnerability Scanning</strong><td>Scan assets using automated tools to locate potential security weaknesses.<tr><td><strong>Analysis</strong><td>Verify scan findings and eliminate false positives.<tr><td><strong>Risk Assessment</strong><td>Determine severity using CVSS ratings and estimate business impact.<tr><td><strong>Remediation</strong><td>Apply security patches, configuration updates, or procedural controls.<tr><td><strong>Verification</strong><td>Perform rescanning to confirm vulnerabilities have been successfully resolved.</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-fundamentals-of-vulnerability-assessment>1.1 Fundamentals of Vulnerability Assessment<a href=#11-fundamentals-of-vulnerability-assessment class=hash-link aria-label="Direct link to 1.1 Fundamentals of Vulnerability Assessment" title="Direct link to 1.1 Fundamentals of Vulnerability Assessment" translate=no>​</a></h3>
+<p>The fundamentals of Vulnerability Assessment involve understanding what vulnerabilities are, how they occur, their impact on systems, and the methods used to manage them. Organizations perform assessments regularly because systems continuously change through software updates, new deployments, and configuration modifications.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=111-definition-of-vulnerability-assessment>1.1.1 Definition of Vulnerability Assessment<a href=#111-definition-of-vulnerability-assessment class=hash-link aria-label="Direct link to 1.1.1 Definition of Vulnerability Assessment" title="Direct link to 1.1.1 Definition of Vulnerability Assessment" translate=no>​</a></h4>
+<p>A <strong>Vulnerability Assessment</strong> is the systematic process of identifying, classifying, evaluating, and reporting security vulnerabilities in information systems, networks, applications, cloud environments, and IT infrastructure. It aims to discover weaknesses before malicious attackers exploit them.</p>
+<blockquote>
+<p><strong>Exam Definition:</strong> Vulnerability Assessment is the process of identifying, analyzing, and prioritizing security weaknesses in an information system to reduce security risks and improve the overall security posture.</p>
+</blockquote>
+<ul>
+<li class=""><strong>Important Features:</strong> Identifies known vulnerabilities; uses automated scanners and manual verification; measures severity; does not intentionally exploit flaws; produces detailed reports with remediation steps; can be performed internally or externally; supports continuous improvement.</li>
+<li class=""><strong>Benefits:</strong> Improves security posture; reduces attack surface; prevents cyberattacks; helps achieve regulatory compliance; protects sensitive data; supports patch management; reduces financial losses from security breaches.</li>
+<li class=""><strong>Example:</strong> Suppose a company runs an outdated web server with an unpatched Apache vulnerability. A vulnerability scanner identifies the outdated version, missing patches, weak SSL configuration, and enabled directory listing. The assessment report recommends updating Apache, disabling insecure configurations, and applying security patches.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=112-types-of-vulnerabilities>1.1.2 Types of Vulnerabilities<a href=#112-types-of-vulnerabilities class=hash-link aria-label="Direct link to 1.1.2 Types of Vulnerabilities" title="Direct link to 1.1.2 Types of Vulnerabilities" translate=no>​</a></h4>
+<p>A vulnerability is a weakness in hardware, software, network infrastructure, configuration, or human processes that attackers can exploit.</p>
+<!-- -->
+<ol>
+<li class=""><strong>Software Vulnerabilities:</strong> Arise from programming errors, insecure coding practices, or outdated software.<!-- -->
+<ul>
+<li class=""><em>Examples:</em> Buffer Overflow, SQL Injection, Cross-Site Scripting (XSS), Remote Code Execution (RCE), Memory Corruption, Race Conditions.</li>
+</ul>
+</li>
+<li class=""><strong>Network Vulnerabilities:</strong> Weaknesses that affect communication infrastructure.<!-- -->
+<ul>
+<li class=""><em>Examples:</em> Open Ports, Weak Firewall Rules, Insecure Protocols (Telnet, HTTP), Default Network Configurations, Misconfigured Routers, Lack of Network Segmentation.</li>
+</ul>
+</li>
+<li class=""><strong>Operating System Vulnerabilities:</strong> Weaknesses present in operating systems.<!-- -->
+<ul>
+<li class=""><em>Examples:</em> Missing Security Updates, Privilege Escalation Bugs, Kernel Vulnerabilities, Weak Authentication Mechanisms, Unnecessary Services Running.</li>
+</ul>
+</li>
+<li class=""><strong>Configuration Vulnerabilities:</strong> Caused by improper security configurations.<!-- -->
+<ul>
+<li class=""><em>Examples:</em> Default Passwords, Weak Password Policies, Publicly Accessible Services, Incorrect File Permissions, Anonymous FTP Access, Disabled Security Controls.</li>
+</ul>
+</li>
+<li class=""><strong>Web Application Vulnerabilities:</strong> Common vulnerabilities affecting websites and web applications.<!-- -->
+<ul>
+<li class=""><em>Examples:</em> SQL Injection, Cross-Site Scripting (XSS), Cross-Site Request ForForgery (CSRF), Command Injection, Broken Authentication, Insecure File Upload, Server-Side Request Forgery (SSRF).</li>
+</ul>
+</li>
+<li class=""><strong>Cloud Vulnerabilities:</strong> Security weaknesses in cloud environments.<!-- -->
+<ul>
+<li class=""><em>Examples:</em> Public Cloud Storage Buckets, Excessive IAM Permissions, Weak API Security, Misconfigured Security Groups, Unencrypted Data Storage.</li>
+</ul>
+</li>
+<li class=""><strong>Wireless Vulnerabilities:</strong> Weaknesses affecting wireless communication.<!-- -->
+<ul>
+<li class=""><em>Examples:</em> Weak Wi-Fi Encryption, Rogue Access Points, Evil Twin Attacks, Weak WPA Passwords, Bluetooth Exploitation.</li>
+</ul>
+</li>
+<li class=""><strong>Human Vulnerabilities:</strong> Caused by user behavior or lack of security awareness.<!-- -->
+<ul>
+<li class=""><em>Examples:</em> Phishing, Social Engineering, Weak Passwords, Insider Threats, Sharing Credentials.</li>
+</ul>
+</li>
+<li class=""><strong>Physical Vulnerabilities:</strong> Weaknesses in physical security controls.<!-- -->
+<ul>
+<li class=""><em>Examples:</em> Unlocked Server Rooms, Unauthorized Device Access, Stolen Laptops, Lack of CCTV Monitoring, Improper Disposal of Storage Devices.</li>
+</ul>
+</li>
+</ol>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=vulnerability-severity-levels>Vulnerability Severity Levels<a href=#vulnerability-severity-levels class=hash-link aria-label="Direct link to Vulnerability Severity Levels" title="Direct link to Vulnerability Severity Levels" translate=no>​</a></h5>
+<ul>
+<li class=""><strong>Critical:</strong> Immediate exploitation is possible with severe organizational impact. Fix immediately.</li>
+<li class=""><strong>High:</strong> Serious vulnerability requiring urgent remediation. Resolve as soon as possible.</li>
+<li class=""><strong>Medium:</strong> Moderate security risk with limited impact. Schedule remediation.</li>
+<li class=""><strong>Low:</strong> Minor vulnerability with low exploitation probability. Address during routine maintenance.</li>
+<li class=""><strong>Informational:</strong> Security observation with minimal or no direct risk. Monitor for future changes.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=113-objectives-of-vulnerability-assessment>1.1.3 Objectives of Vulnerability Assessment<a href=#113-objectives-of-vulnerability-assessment class=hash-link aria-label="Direct link to 1.1.3 Objectives of Vulnerability Assessment" title="Direct link to 1.1.3 Objectives of Vulnerability Assessment" translate=no>​</a></h4>
+<p>The primary objective of Vulnerability Assessment is to identify security weaknesses before attackers exploit them and to reduce the overall security risk of an organization.</p>
+<blockquote>
+<p><strong>Primary Objectives (Slides/Exam):</strong></p>
+<ol>
+<li class=""><strong>Identify Vulnerabilities:</strong> Discover security weaknesses ranging from critical design flaws to simple misconfigurations.</li>
+<li class=""><strong>Document Findings:</strong> Document discovered vulnerabilities in detail so developers can easily identify and reproduce the findings.</li>
+<li class=""><strong>Remediation Guidance:</strong> Create clear, actionable guidance to assist developers with patch application and secure configurations.</li>
+</ol>
+</blockquote>
+<ul>
+<li class=""><strong>Identify Security Weaknesses:</strong> Discover vulnerabilities in systems, applications, networks, cloud infrastructure, databases, and wireless setups.</li>
+<li class=""><strong>Reduce Security Risks:</strong> Identify and fix vulnerabilities before they become security incidents.</li>
+<li class=""><strong>Prioritize Vulnerabilities:</strong> Use risk ratings such as <strong>CVSS (Common Vulnerability Scoring System)</strong> to determine which issues require immediate attention.</li>
+<li class=""><strong>Improve Security Posture:</strong> Strengthen overall defenses by eliminating known weaknesses.</li>
+<li class=""><strong>Support Patch Management:</strong> Identify outdated software and missing patches to ensure systems remain secure.</li>
+<li class=""><strong>Meet Regulatory Compliance:</strong> Help organizations comply with standards like ISO 27001, PCI DSS, HIPAA, GDPR, and NIST.</li>
+<li class=""><strong>Protect Confidential Data:</strong> Reduce the risk of data breaches involving sensitive customer, financial, or organizational information.</li>
+<li class=""><strong>Support Risk Management:</strong> Provide management with detailed reports for informed security decision-making.</li>
+<li class=""><strong>Improve Incident Prevention:</strong> Reduce the likelihood of ransomware, malware, unauthorized access, and data theft.</li>
+<li class=""><strong>Enable Continuous Security:</strong> Perform regular assessments to detect newly discovered vulnerabilities and verify remediation efforts.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=difference-between-vulnerability-assessment-and-penetration-testing>Difference Between Vulnerability Assessment and Penetration Testing<a href=#difference-between-vulnerability-assessment-and-penetration-testing class=hash-link aria-label="Direct link to Difference Between Vulnerability Assessment and Penetration Testing" title="Direct link to Difference Between Vulnerability Assessment and Penetration Testing" translate=no>​</a></h3>
+<table><thead><tr><th>Feature<th>Vulnerability Assessment (VA)<th>Penetration Testing (PT)<tbody><tr><td><strong>Objective</strong><td>Identify security vulnerabilities.<td>Exploit vulnerabilities to determine actual risk.<tr><td><strong>Approach</strong><td>Detection and analysis.<td>Controlled exploitation.<tr><td><strong>Testing Method</strong><td>Mostly automated.<td>Mostly manual with automated support.<tr><td><strong>Exploitation</strong><td>Does not exploit vulnerabilities.<td>Actively exploits vulnerabilities.<tr><td><strong>Output</strong><td>List of vulnerabilities with severity ratings.<td>Proof of exploitation, attack paths, and business impact.<tr><td><strong>Risk</strong><td>Low operational risk.<td>Moderate risk due to controlled exploitation.<tr><td><strong>Duration</strong><td>Usually faster.<td>More time-consuming.<tr><td><strong>Frequency</strong><td>Performed regularly.<td>Performed periodically or after major changes.<tr><td><strong>Skill Requirement</strong><td>Moderate technical expertise.<td>Advanced security and ethical hacking skills.<tr><td><strong>Goal</strong><td>Reduce the attack surface.<td>Assess the effectiveness of security defenses.</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-vulnerability-assessment-process>1.2 Vulnerability Assessment Process<a href=#12-vulnerability-assessment-process class=hash-link aria-label="Direct link to 1.2 Vulnerability Assessment Process" title="Direct link to 1.2 Vulnerability Assessment Process" translate=no>​</a></h3>
+<p>The Vulnerability Assessment Process is a structured methodology used to identify, evaluate, prioritize, and remediate security weaknesses in an organization's IT infrastructure.</p>
+<!-- -->
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=phases-of-the-vulnerability-assessment-process>Phases of the Vulnerability Assessment Process<a href=#phases-of-the-vulnerability-assessment-process class=hash-link aria-label="Direct link to Phases of the Vulnerability Assessment Process" title="Direct link to Phases of the Vulnerability Assessment Process" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Asset Discovery:</strong> Identify all IT assets (Servers, Workstations, Laptops, Mobile Devices, Routers, IoT, Cloud, Databases, Apps, APIs) that require assessment.</li>
+<li class=""><strong>Asset Prioritization:</strong> Rank assets according to business value, data sensitivity, exposure to the internet, compliance needs, hosted services, recovery time objective (RTO), and financial impact.</li>
+<li class=""><strong>Vulnerability Scanning:</strong> Detect known vulnerabilities using automated or manual techniques.</li>
+<li class=""><strong>Result Analysis:</strong> Validate findings, eliminate false positives, and assess their severity.</li>
+<li class=""><strong>Remediation:</strong> Eliminate or reduce identified vulnerabilities.</li>
+<li class=""><strong>Continuous Security:</strong> Continuously monitor and reassess the environment.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=121-asset-discovery-methods>1.2.1 Asset Discovery Methods<a href=#121-asset-discovery-methods class=hash-link aria-label="Direct link to 1.2.1 Asset Discovery Methods" title="Direct link to 1.2.1 Asset Discovery Methods" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Active Discovery:</strong> Directly interacts with network hosts (e.g., via network/port scanning, service enumeration, SNMP queries, ICMP ping sweeps).<!-- -->
+<ul>
+<li class=""><em>Advantages:</em> Highly accurate asset identification; provides detailed configurations; detects live systems.</li>
+<li class=""><em>Disadvantages:</em> Generates network traffic; may trigger security alerts or firewall blocks.</li>
+</ul>
+</li>
+<li class=""><strong>Passive Discovery:</strong> Monitors network traffic non-intrusively without sending packets (e.g., via traffic analysis, packet captures, log analysis, network sensors).<!-- -->
+<ul>
+<li class=""><em>Advantages:</em> Zero impact on production systems; hidden from hosts; suitable for sensitive industrial environments.</li>
+<li class=""><em>Disadvantages:</em> Slower discovery process; may miss inactive devices.</li>
+</ul>
+</li>
+<li class=""><strong>Information Collected:</strong> IP address, hostname, MAC address, operating system, running services, open ports, installed software, device type, owner, and business function.</li>
+<li class=""><strong>Benefits:</strong> Complete asset inventory, improved network visibility, better security monitoring, and a reduced attack surface.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=122-asset-prioritization>1.2.2 Asset Prioritization<a href=#122-asset-prioritization class=hash-link aria-label="Direct link to 1.2.2 Asset Prioritization" title="Direct link to 1.2.2 Asset Prioritization" translate=no>​</a></h4>
+<p>Asset Prioritization ranks assets based on their business value and impact if compromised.</p>
+<table><thead><tr><th>Priority<th>Description<th>Example Target<th>Reason<tbody><tr><td><strong>Critical</strong><td>Business-critical systems requiring immediate protection.<td>Domain Controller / DB Server<td>Controls user access / stores sensitive business data.<tr><td><strong>High</strong><td>Important systems supporting essential operations.<td>Web Server<td>Public-facing business application.<tr><td><strong>Medium</strong><td>Standard operational systems with moderate impact.<td>Employee Laptop<td>Limited organizational impact.<tr><td><strong>Low</strong><td>Non-critical systems with limited business impact.<td>Test Machine<td>Used only for development or testing.</table>
+<ul>
+<li class=""><strong>Benefits:</strong> Efficient resource allocation, faster remediation of high-risk systems, and improved risk management.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=123-vulnerability-scanning>1.2.3 Vulnerability Scanning<a href=#123-vulnerability-scanning class=hash-link aria-label="Direct link to 1.2.3 Vulnerability Scanning" title="Direct link to 1.2.3 Vulnerability Scanning" translate=no>​</a></h4>
+<p>Vulnerability Scanning automatically detects known security weaknesses in systems, applications, and networks.</p>
+<!-- -->
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=types-of-vulnerability-scans>Types of Vulnerability Scans<a href=#types-of-vulnerability-scans class=hash-link aria-label="Direct link to Types of Vulnerability Scans" title="Direct link to Types of Vulnerability Scans" translate=no>​</a></h5>
+<ol>
+<li class=""><strong>Network Scan:</strong> Scans network devices and services to check open ports, running services, weak configurations, and protocol weaknesses.</li>
+<li class=""><strong>Host-Based Scan:</strong> Examines individual systems for missing patches, outdated software, weak password policies, and OS vulnerabilities.</li>
+<li class=""><strong>Web Application Scan:</strong> Identifies application-layer flaws such as SQL Injection, Cross-Site Scripting (XSS), CSRF, File Inclusion, and authentication issues.</li>
+<li class=""><strong>Database Scan:</strong> Checks database security for weak accounts, default credentials, excessive permissions, and missing updates.</li>
+<li class=""><strong>Cloud Security Scan:</strong> Examines cloud infrastructure for public storage buckets, weak IAM policies, misconfigured security groups, and unencrypted resources.</li>
+</ol>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=authenticated-vs-unauthenticated-scans>Authenticated vs. Unauthenticated Scans<a href=#authenticated-vs-unauthenticated-scans class=hash-link aria-label="Direct link to Authenticated vs. Unauthenticated Scans" title="Direct link to Authenticated vs. Unauthenticated Scans" translate=no>​</a></h5>
+<ul>
+<li class="">
+<p><strong>Authenticated Scan:</strong> Logs in using valid system credentials to perform a deep local assessment.</p>
+<ul>
+<li class=""><em>Pros:</em> High accuracy, low false-positive rate, detailed configurations, and local patch verification.</li>
+<li class=""><em>Cons:</em> Requires managing scan credentials.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Unauthenticated Scan:</strong> Scans from the network perspective without login credentials.</p>
+<ul>
+<li class=""><em>Pros:</em> Mimics an external attacker's view; identifies open ports and perimeter firewalls.</li>
+<li class=""><em>Cons:</em> Higher false-positive rates; cannot inspect internal system files or configurations.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Scan Engine Architecture:</strong> Comprises a <em>Scan Engine</em> (executes checks), a <em>Plugin Database</em> (library of signature checks), and a <em>Feed Update Service</em> (regularly downloads new signatures).</p>
+</li>
+<li class="">
+<p><strong>Advantages:</strong> Fast detection; large-scale assessment; consistent results; supports regular security monitoring.</p>
+</li>
+<li class="">
+<p><strong>Limitations:</strong> Produces false positives/negatives; detects only known vulnerabilities; cannot fully assess custom business logic.</p>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=124-result-analysis>1.2.4 Result Analysis<a href=#124-result-analysis class=hash-link aria-label="Direct link to 1.2.4 Result Analysis" title="Direct link to 1.2.4 Result Analysis" translate=no>​</a></h4>
+<p>Result analysis verifies and prioritizes scan findings to remove false positives, determine exploitability, evaluate business impact, and assign severity ratings.</p>
+<ul>
+<li class=""><strong>Risk Factors:</strong> CVSS score, ease of exploitation, asset importance, data sensitivity, internet exposure, and availability of exploits.</li>
+<li class=""><strong>Severity Actions:</strong> Fix <strong>Critical</strong> bugs immediately; resolve <strong>High</strong> bugs as soon as possible; schedule <strong>Medium</strong> fixes; address <strong>Low</strong> issues during routine maintenance; monitor <strong>Informational</strong> items.</li>
+</ul>
+<!-- -->
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=125-remediation>1.2.5 Remediation<a href=#125-remediation class=hash-link aria-label="Direct link to 1.2.5 Remediation" title="Direct link to 1.2.5 Remediation" translate=no>​</a></h4>
+<p>Remediation is the process of eliminating or reducing identified vulnerabilities to an acceptable level of risk.</p>
+<ul>
+<li class=""><strong>Common Techniques:</strong>
+<ul>
+<li class=""><strong>Patch Management:</strong> Install vendor-released security updates.</li>
+<li class=""><strong>Configuration Hardening:</strong> Disable unnecessary services, close unused ports, and remove default accounts.</li>
+<li class=""><strong>Software Upgrade:</strong> Replace vulnerable legacy systems with secure, supported versions.</li>
+<li class=""><strong>Network Security Controls:</strong> Deploy firewalls, IDS/IPS, network segmentation, and VPNs.</li>
+<li class=""><strong>Access Control Improvements:</strong> Enable Multi-Factor Authentication (MFA), least privilege, and review user permissions.</li>
+<li class=""><strong>Security Awareness:</strong> Educate users about phishing, password strength, social engineering, and safe browsing.</li>
+</ul>
+</li>
+<li class=""><strong>Verification:</strong> Perform rescanning, confirm vulnerabilities are fixed, update security documentation, and close remediation tickets.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=126-continuous-security>1.2.6 Continuous Security<a href=#126-continuous-security class=hash-link aria-label="Direct link to 1.2.6 Continuous Security" title="Direct link to 1.2.6 Continuous Security" translate=no>​</a></h4>
+<p>Cyber threats continuously evolve, making vulnerability assessment an ongoing process rather than a one-time activity.</p>
+<!-- -->
+<ul>
+<li class=""><strong>Continuous Security Activities:</strong> Continuous asset monitoring, scheduled vulnerability scans, log analysis, threat intelligence integration, SIEM monitoring, compliance audits, and security awareness training.</li>
+<li class=""><strong>Benefits:</strong> Early detection, reduced attack surface, faster incident response, better compliance, and improved security posture.</li>
+<li class=""><strong>Best Practices:</strong> Maintain an up-to-date asset inventory; prioritize high-value assets; run authenticated scans; validate findings; remediate critical issues promptly; verify fixes through rescanning; continuously monitor and document findings.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-penetration-testing>2. Penetration Testing<a href=#2-penetration-testing class=hash-link aria-label="Direct link to 2. Penetration Testing" title="Direct link to 2. Penetration Testing" translate=no>​</a></h2>
+<p>Penetration Testing (PT), also known as <strong>Ethical Hacking</strong>, is a controlled and authorized cybersecurity assessment in which professionals simulate real-world cyberattacks to identify and exploit vulnerabilities. It demonstrates how attackers can compromise systems and evaluates the actual business impact.</p>
+<!-- -->
+<ul>
+<li class=""><strong>Key Characteristics:</strong> Conducted with written authorization; simulates real attacker behaviors (TTPs); identifies exploitable vulnerabilities; demonstrates business impact; combines automated tools with manual testing; provides technical and executive reports.</li>
+<li class=""><strong>Goals:</strong> Identify exploitable weaknesses, evaluate security controls, measure the impact of successful attacks, verify vulnerability scanner findings, improve security posture, and meet regulatory requirements.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-introduction-to-penetration-testing>2.1 Introduction to Penetration Testing<a href=#21-introduction-to-penetration-testing class=hash-link aria-label="Direct link to 2.1 Introduction to Penetration Testing" title="Direct link to 2.1 Introduction to Penetration Testing" translate=no>​</a></h3>
+<p>Penetration Testing proactively mimics malicious attacker techniques to safely exploit vulnerabilities before they are discovered by real attackers.</p>
+<blockquote>
+<p><strong>Exam Definition:</strong> Penetration Testing is an authorized and controlled process of simulating cyberattacks to identify and exploit security vulnerabilities in order to evaluate the security of an information system.</p>
+</blockquote>
+<ul>
+<li class=""><strong>Benefits:</strong> Identifies critical security weaknesses, validates controls, reduces attack risks, improves incident response, helps achieve compliance, and protects sensitive data.</li>
+<li class=""><strong>Example:</strong> A web application has a SQL Injection vulnerability. A Vulnerability Assessment reports its presence. A Penetration Tester successfully exploits it to retrieve customer records, proving the vulnerability is exploitable and demonstrating its real-world impact.</li>
+<li class=""><strong>Major Purposes:</strong>
+<ol>
+<li class=""><strong>Identify Exploitable Vulnerabilities:</strong> Locate weaknesses attackers can actively compromise.</li>
+<li class=""><strong>Evaluate Security Controls:</strong> Assess firewalls, IDS/IPS, endpoint protection, access controls, and monitoring systems.</li>
+<li class=""><strong>Simulate Real-World Attacks:</strong> Mimic attacker techniques to test detection and response capabilities.</li>
+<li class=""><strong>Measure Business Impact:</strong> Determine how a successful exploit affects confidentiality, integrity, availability, operations, and reputation.</li>
+<li class=""><strong>Verify Scan Results:</strong> Confirm if scanner findings are exploitable to prioritize remediation.</li>
+<li class=""><strong>Improve Incident Response:</strong> Test the ability to detect, contain, and recover from cyberattacks.</li>
+<li class=""><strong>Meet Compliance:</strong> Maintain compliance with PCI DSS, ISO 27001, HIPAA, NIST, and GDPR.</li>
+<li class=""><strong>Enhance Overall Security:</strong> Provide actionable, prioritized recommendations to harden systems.</li>
+</ol>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=213-difference-between-va-and-pt-workflow>2.1.3 Difference Between VA and PT Workflow<a href=#213-difference-between-va-and-pt-workflow class=hash-link aria-label="Direct link to 2.1.3 Difference Between VA and PT Workflow" title="Direct link to 2.1.3 Difference Between VA and PT Workflow" translate=no>​</a></h4>
+<!-- -->
+<ul>
+<li class=""><strong>When to Use VA:</strong> Routine checks, patch management, compliance scanning, large-scale sweeps, and continuous vulnerability management.</li>
+<li class=""><strong>When to Use PT:</strong> Before deploying critical applications, after major infrastructure changes, following security incidents, to validate remediation, and to test security controls.</li>
+<li class=""><strong>Advantages of Combining (VAPT):</strong> Comprehensive evaluation, better prioritization, validation of scanner findings, reduced false positives, and improved risk management.</li>
+<li class=""><strong>Real-World VAPT Example:</strong> A financial institution performs a VA and discovers outdated server software, weak TLS configuration, SQL injection, and missing patches. A Penetration Tester then exploits the SQL Injection, retrieves customer data, escalates privileges to admin, demonstrates the financial impact, and provides remediation recommendations.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=22-types-of-penetration-testing>2.2 Types of Penetration Testing<a href=#22-types-of-penetration-testing class=hash-link aria-label="Direct link to 2.2 Types of Penetration Testing" title="Direct link to 2.2 Types of Penetration Testing" translate=no>​</a></h3>
+<p>Penetration testing types are classified based on the amount of information provided to the tester before the assessment.</p>
+<!-- -->
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=221-white-box-testing-clearglass-box>2.2.1 White Box Testing (Clear/Glass Box)<a href=#221-white-box-testing-clearglass-box class=hash-link aria-label="Direct link to 2.2.1 White Box Testing (Clear/Glass Box)" title="Direct link to 2.2.1 White Box Testing (Clear/Glass Box)" translate=no>​</a></h4>
+<p>Tester has complete knowledge of the target environment before testing begins.</p>
+<ul>
+<li class=""><em>Information Provided:</em> Source code, network diagrams, system architecture, user accounts, and credentials.</li>
+<li class=""><em>Characteristics:</em> Full system access; faster testing process; focuses on identifying hidden code flaws; simulates insider threats.</li>
+<li class=""><em>Advantages:</em> Comprehensive assessment, deep code/config review, covers internal and external issues.</li>
+<li class=""><em>Disadvantages:</em> Does not simulate a real external attacker, requires extensive documentation.</li>
+<li class=""><em>Example:</em> A company provides a tester with full network diagrams, admin credentials, and the web application source code to perform a detailed security assessment.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=222-black-box-testing>2.2.2 Black Box Testing<a href=#222-black-box-testing class=hash-link aria-label="Direct link to 2.2.2 Black Box Testing" title="Direct link to 2.2.2 Black Box Testing" translate=no>​</a></h4>
+<p>Tester has no prior knowledge of the target system and must gather all information from scratch.</p>
+<ul>
+<li class=""><em>Information Provided:</em> Only target domain or IP scope and Rules of Engagement (RoE).</li>
+<li class=""><em>Characteristics:</em> Starts with reconnaissance; simulates external attackers; tests perimeter defenses.</li>
+<li class=""><em>Advantages:</em> Realistic attack simulation; tests detection and response controls.</li>
+<li class=""><em>Disadvantages:</em> Time-consuming; limited visibility into internal network structures.</li>
+</ul>
+<!-- -->
+<ul>
+<li class=""><em>Example:</em> A consultant is given only the public website URL and attempts to compromise the system using public intelligence.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=223-grey-box-testing-translucent-box>2.2.3 Grey Box Testing (Translucent Box)<a href=#223-grey-box-testing-translucent-box class=hash-link aria-label="Direct link to 2.2.3 Grey Box Testing (Translucent Box)" title="Direct link to 2.2.3 Grey Box Testing (Translucent Box)" translate=no>​</a></h4>
+<p>Tester has partial knowledge of the target system (e.g., limited user credentials, basic network maps).</p>
+<ul>
+<li class=""><em>Characteristics:</em> Simulates authenticated users, contractors, or external attackers who have breached the perimeter.</li>
+<li class=""><em>Advantages:</em> Balanced testing approach, faster than Black Box, evaluates internal access controls.</li>
+<li class=""><em>Disadvantages:</em> Coverage depends on the information provided, may miss hidden architecture issues.</li>
+<li class=""><em>Example:</em> A tester receives employee-level login credentials and tests if they can perform privilege escalation or lateral movement.</li>
+</ul>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=comparison-of-testing-methodologies>Comparison of Testing Methodologies<a href=#comparison-of-testing-methodologies class=hash-link aria-label="Direct link to Comparison of Testing Methodologies" title="Direct link to Comparison of Testing Methodologies" translate=no>​</a></h5>
+<table><thead><tr><th>Feature<th>White Box<th>Black Box<th>Grey Box<tbody><tr><td><strong>Knowledge of Target</strong><td>Complete<td>None<td>Partial<tr><td><strong>Access to Source Code</strong><td>Yes<td>No<td>Limited<tr><td><strong>Credentials Provided</strong><td>Full<td>None<td>Limited<tr><td><strong>Testing Speed</strong><td>Fast<td>Slow<td>Moderate<tr><td><strong>Simulates Attacker</strong><td>Trusted Insider<td>External Attacker<td>Compromised Account / Insider<tr><td><strong>Coverage</strong><td>Highest<td>Moderate<td>High<tr><td><strong>Cost</strong><td>Lower<td>Higher<td>Moderate</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=23-penetration-testing-approaches>2.3 Penetration Testing Approaches<a href=#23-penetration-testing-approaches class=hash-link aria-label="Direct link to 2.3 Penetration Testing Approaches" title="Direct link to 2.3 Penetration Testing Approaches" translate=no>​</a></h3>
+<p>Penetration testing approaches are classified based on where the attack originates.</p>
+<!-- -->
+<ul>
+<li class=""><strong>External Penetration Testing:</strong> Targets assets exposed to the internet (Websites, VPN Gateways, Email Servers, DNS, Cloud Services, APIs, Firewalls).<!-- -->
+<ul>
+<li class=""><em>Activities:</em> Reconnaissance, port scanning, service enumeration, exploitation, web application testing.</li>
+<li class=""><em>Advantages:</em> Simulates internet-based attackers; tests perimeter and firewall controls.</li>
+<li class=""><em>Limitations:</em> Cannot assess internal configurations directly.</li>
+<li class=""><em>Example:</em> An ethical hacker attacks a public VPN gateway and web application from a remote location.</li>
+</ul>
+</li>
+<li class=""><strong>Internal Penetration Testing:</strong> Evaluates security after an attacker has already bypassed perimeter defenses or acts as an insider.<!-- -->
+<ul>
+<li class=""><em>Targets:</em> Active Directory, Domain Controllers, Database Servers, File Shares, Internal APIs, Workstations.</li>
+<li class=""><em>Activities:</em> Privilege escalation, lateral movement, network sniffing, AD enumeration, sensitive data access.</li>
+<li class=""><em>Advantages:</em> Identifies insider threats; evaluates network segmentation and internal patch levels.</li>
+<li class=""><em>Limitations:</em> Requires physical or remote internal access.</li>
+<li class=""><em>Example:</em> A tester connects a laptop to an internal office ethernet jack and attempts to gain Domain Admin privileges.</li>
+</ul>
+</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=external-vs-internal-comparison>External vs. Internal Comparison<a href=#external-vs-internal-comparison class=hash-link aria-label="Direct link to External vs. Internal Comparison" title="Direct link to External vs. Internal Comparison" translate=no>​</a></h4>
+<table><thead><tr><th>Feature<th>External Testing<th>Internal Testing<tbody><tr><td><strong>Attack Origin</strong><td>Outside the organization<td>Inside the internal network<tr><td><strong>Simulates</strong><td>External attackers<td>Insider threats, rogue employees, perimeter breaches<tr><td><strong>Focus</strong><td>Perimeter firewalls, public services<td>Internal segmentation, Active Directory, internal servers<tr><td><strong>Common Targets</strong><td>Web apps, VPN gateways, mail servers<td>Domain Controllers, Databases, Workstations</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=24-roles-and-responsibilities-of-penetration-testers>2.4 Roles and Responsibilities of Penetration Testers<a href=#24-roles-and-responsibilities-of-penetration-testers class=hash-link aria-label="Direct link to 2.4 Roles and Responsibilities of Penetration Testers" title="Direct link to 2.4 Roles and Responsibilities of Penetration Testers" translate=no>​</a></h3>
+<p>A Penetration Tester (Ethical Hacker) is responsible for identifying, validating, and exploiting security vulnerabilities under authorization to improve security.</p>
+<!-- -->
+<ul>
+<li class=""><strong>Primary Responsibilities:</strong> Define scope and RoE; perform reconnaissance; identify and exploit weaknesses; document technical steps; respect privacy; maintain data confidentiality; write technical/executive reports; provide remediation support.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=241-information-gathering-reconnaissance>2.4.1 Information Gathering (Reconnaissance)<a href=#241-information-gathering-reconnaissance class=hash-link aria-label="Direct link to 2.4.1 Information Gathering (Reconnaissance)" title="Direct link to 2.4.1 Information Gathering (Reconnaissance)" translate=no>​</a></h4>
+<p>Reconnaissance is the first stage of penetration testing.</p>
+<ul>
+<li class=""><strong>Passive Recon:</strong> Collecting info without directly contacting target hosts.<!-- -->
+<ul>
+<li class=""><em>Examples:</em> WHOIS lookups, DNS enumeration via public records, Shodan queries, social media analysis, search engine dorks, public GitHub repos.</li>
+<li class=""><em>Pros:</em> Difficult to detect; zero target impact.</li>
+</ul>
+</li>
+<li class=""><strong>Active Recon:</strong> Gathering info by directly sending packets to target systems.<!-- -->
+<ul>
+<li class=""><em>Examples:</em> Port scanning, service banner grabbing, OS detection, network routing sweeps.</li>
+<li class=""><em>Pros:</em> Provides detailed configuration details; discovers live hosts.</li>
+</ul>
+</li>
+<li class=""><strong>Information Collected:</strong> IP ranges, subdomains, open ports, running services, OS versions, employee emails, and software stacks.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=242-ethical-responsibilities>2.4.2 Ethical Responsibilities<a href=#242-ethical-responsibilities class=hash-link aria-label="Direct link to 2.4.2 Ethical Responsibilities" title="Direct link to 2.4.2 Ethical Responsibilities" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Obtain Written Authorization:</strong> Never test without a signed contract and authorization letter.</li>
+<li class=""><strong>Follow the Scope:</strong> Test only the systems and IP ranges defined in the RoE.</li>
+<li class=""><strong>Avoid Damage:</strong> Avoid disrupting services, causing DDoS, or corrupting production databases.</li>
+<li class=""><strong>Professional Integrity:</strong> Report all findings accurately without exaggeration or concealment.</li>
+<li class=""><strong>Comply with Laws:</strong> Ensure compliance with regional cybersecurity laws and regulations.</li>
+<li class=""><strong>Respect Privacy:</strong> Access only the data necessary to demonstrate the exploit; do not download PII.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=243-confidentiality>2.4.3 Confidentiality<a href=#243-confidentiality class=hash-link aria-label="Direct link to 2.4.3 Confidentiality" title="Direct link to 2.4.3 Confidentiality" translate=no>​</a></h4>
+<p>Testers must protect the sensitive data they access during assessments (credentials, source code, database files, and network maps).</p>
+<ul>
+<li class=""><em>Confidentiality Practices:</em> Sign Non-Disclosure Agreements (NDAs); encrypt sensitive files and reports; restrict access to authorized team members; securely delete testing artifacts after project completion.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=244-documentation>2.4.4 Documentation<a href=#244-documentation class=hash-link aria-label="Direct link to 2.4.4 Documentation" title="Direct link to 2.4.4 Documentation" translate=no>​</a></h4>
+<p>Documentation involves recording every activity, tool output, and command run during the assessment.</p>
+<ul>
+<li class=""><em>Information to Document:</em> Scope boundaries, tools used, exact commands, vulnerability evidence (screenshots/payloads), and replication steps.</li>
+<li class=""><em>Benefits:</em> Simplifies report writing, proves findings are reproducible, and provides legal evidence.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=245-reporting>2.4.5 Reporting<a href=#245-reporting class=hash-link aria-label="Direct link to 2.4.5 Reporting" title="Direct link to 2.4.5 Reporting" translate=no>​</a></h4>
+<p>Reporting is the final stage of a penetration test, translating findings into actionable recommendations.</p>
+<!-- -->
+<ul>
+<li class=""><strong>Report Components:</strong>
+<ol>
+<li class=""><strong>Executive Summary:</strong> High-level overview of objectives, overall security posture, key findings, business impact, and risk levels.</li>
+<li class=""><strong>Technical Details:</strong> Technical description, affected hosts, exact exploit proof of concept (PoC), and CVSS rating for each vulnerability.</li>
+<li class=""><strong>Risk Assessment:</strong> Categories (Critical, High, Medium, Low).</li>
+<li class=""><strong>Remediation Recommendations:</strong> Specific guidance to apply patches, harden configurations, or restrict privileges.</li>
+<li class=""><strong>Conclusion:</strong> High-level security trajectory.</li>
+</ol>
+</li>
+</ul>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=skills-required-for-a-penetration-tester>Skills Required for a Penetration Tester<a href=#skills-required-for-a-penetration-tester class=hash-link aria-label="Direct link to Skills Required for a Penetration Tester" title="Direct link to Skills Required for a Penetration Tester" translate=no>​</a></h5>
+<table><thead><tr><th>Technical Skills<th>Professional Skills<tbody><tr><td>Networking protocols, Operating Systems (Linux/Windows)<td>Clear communication, report writing<tr><td>Web Application Security, Programming (Python, Ruby, Bash)<td>Problem-solving, critical thinking<tr><td>Cryptography, Vulnerability Scanning, Exploitation<td>Strict ethics, time management, teamwork</table>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=25-penetration-testing-techniques>2.5 Penetration Testing Techniques<a href=#25-penetration-testing-techniques class=hash-link aria-label="Direct link to 2.5 Penetration Testing Techniques" title="Direct link to 2.5 Penetration Testing Techniques" translate=no>​</a></h3>
+<p>Organizations use a hybrid approach that balances automated speed with manual depth.</p>
+<!-- -->
+<ul>
+<li class=""><strong>Manual Penetration Testing:</strong> Done by human testers to identify complex logical flaws, verify findings, and perform exploitation.<!-- -->
+<ul>
+<li class=""><em>Pros:</em> Detects complex logic flaws; removes false positives; evaluates custom code paths.</li>
+<li class=""><em>Cons:</em> Time-consuming; expensive; highly dependent on tester skill.</li>
+<li class=""><em>Example:</em> A tester manually alters parameters to discover an IDOR vulnerability that scanners missed.</li>
+</ul>
+</li>
+<li class=""><strong>Automated Penetration Testing:</strong> Uses software tools to quickly scan systems for known vulnerability signatures.<!-- -->
+<ul>
+<li class=""><em>Pros:</em> Fast; covers large networks; repeatable; cost-effective.</li>
+<li class=""><em>Cons:</em> High false-positive rate; cannot assess custom business logic.</li>
+<li class=""><em>Common Tools:</em> Nmap (ports), Nessus (vulnerabilities), OpenVAS (vulnerability scanning), OWASP ZAP (web scanning), Nikto (web server checks).</li>
+</ul>
+</li>
+</ul>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=manual-vs-automated-comparison>Manual vs. Automated Comparison<a href=#manual-vs-automated-comparison class=hash-link aria-label="Direct link to Manual vs. Automated Comparison" title="Direct link to Manual vs. Automated Comparison" translate=no>​</a></h5>
+<table><thead><tr><th>Feature<th>Manual Testing<th>Automated Testing<tbody><tr><td><strong>Performed By</strong><td>Human Security Professional<td>Scanning Software / Scripts<tr><td><strong>Speed</strong><td>Slow (days to weeks)<td>Fast (minutes to hours)<tr><td><strong>Accuracy</strong><td>High (false positives verified)<td>Moderate (prone to false positives)<tr><td><strong>Business Logic</strong><td>Excellent analysis<td>Limited or none<tr><td><strong>Best For</strong><td>Deep application assessments<td>Regular infrastructure reviews</table>
+<!-- -->
+<blockquote>
+<p><strong>Exam Point:</strong> Automated testing provides speed and scalability, while manual testing provides accuracy and logical depth. A hybrid approach yields the most reliable security validation.</p>
+</blockquote>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=26-importance-of-penetration-testing>2.6 Importance of Penetration Testing<a href=#26-importance-of-penetration-testing class=hash-link aria-label="Direct link to 2.6 Importance of Penetration Testing" title="Direct link to 2.6 Importance of Penetration Testing" translate=no>​</a></h3>
+<p>Penetration testing validates controls, protects assets, manages brand reputation, and reduces operational risks.</p>
+<!-- -->
+<ul>
+<li class=""><strong>Security Validation:</strong> Confirms firewalls, IDS/IPS, and endpoint protection block attacks; validates patch applications. <em>Example:</em> Verifying that firewalls block unauthorized ports.</li>
+<li class=""><strong>Business Protection:</strong> Secures financial records, IP, customer data, and server uptime. <em>Example:</em> Spotting a database flaw before client records are breached.</li>
+<li class=""><strong>Reputation Management:</strong> Prevents data leaks that cause customer churn, brand damage, or public relations crises. <em>Example:</em> Avoiding public breach disclosures by patching preemptively.</li>
+<li class=""><strong>Risk Reduction:</strong> Identifies operational, financial, and compliance risks to reduce the organization's attack surface.</li>
+</ul>
+<!-- -->
+<ul>
+<li class=""><em>Example Scenarios:</em> Remediation of a critical Remote Code Execution (RCE) vulnerability before exploitation prevents total server compromise.</li>
+<li class=""><strong>Exam Point:</strong> Penetration testing is critical because it proactively validates controls, protects business assets, maintains reputation, and mitigates risks before real attacks occur.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=27-cybersecurity-myths-and-realities>2.7 Cybersecurity Myths and Realities<a href=#27-cybersecurity-myths-and-realities class=hash-link aria-label="Direct link to 2.7 Cybersecurity Myths and Realities" title="Direct link to 2.7 Cybersecurity Myths and Realities" translate=no>​</a></h3>
+<table><thead><tr><th>Myth<th>Reality<tbody><tr><td><strong>"I have a firewall, so I'm safe."</strong><td>Firewalls can be bypassed or misconfigured. Attacking web apps or using social engineering bypasses firewalls.<tr><td><strong>"My data isn't worth hacking."</strong><td>All data has value. Attackers seek personal info for identity theft, fraud, or ransomware payouts.<tr><td><strong>"I use HTTPS, so my site is secure."</strong><td>HTTPS only encrypts data in transit. It does not prevent SQLi, XSS, or logic flaws on the server.<tr><td><strong>"SMEs are safe from attacks."</strong><td>SMEs are easy targets because they have smaller security budgets. Ransomware frequently targets SMEs.<tr><td><strong>"Fake SSL certificates are harmless."</strong><td>Invalid or self-signed certificates expose users to Man-in-the-Middle (MitM) attacks.</table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-vulnerability-assessment-and-penetration-testing-vapt>3. Vulnerability Assessment and Penetration Testing (VAPT)<a href=#3-vulnerability-assessment-and-penetration-testing-vapt class=hash-link aria-label="Direct link to 3. Vulnerability Assessment and Penetration Testing (VAPT)" title="Direct link to 3. Vulnerability Assessment and Penetration Testing (VAPT)" translate=no>​</a></h2>
+<p>VAPT is a comprehensive security methodology that integrates the breadth of Vulnerability Assessment with the depth of Penetration Testing to locate, validate, and remediate security flaws.</p>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=31-introduction-and-need>3.1 Introduction and Need<a href=#31-introduction-and-need class=hash-link aria-label="Direct link to 3.1 Introduction and Need" title="Direct link to 3.1 Introduction and Need" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>VAPT Components:</strong> VA (scan to identify weaknesses) and PT (exploit to demonstrate impact).</li>
+<li class=""><strong>Objectives:</strong> Discover vulnerabilities, validate existing security controls, prioritize risks, and guide remediation.</li>
+<li class=""><strong>Why VAPT is Needed:</strong> Outpaces active threat landscapes; prevents data breaches, malware, and ransomware; meets compliance audits (PCI, ISO); validates defensive security investments.</li>
+<li class=""><strong>Benefits:</strong>
+<ul>
+<li class=""><em>Technical:</em> Detects system/application bugs, identifies misconfigurations, and validates patches.</li>
+<li class=""><em>Business:</em> Protects customer data, prevents financial losses, and builds stakeholder trust.</li>
+<li class=""><em>Security:</em> Minimizes attack surface, improves threat response, and hardens configuration controls.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=32-vapt-methodology>3.2 VAPT Methodology<a href=#32-vapt-methodology class=hash-link aria-label="Direct link to 3.2 VAPT Methodology" title="Direct link to 3.2 VAPT Methodology" translate=no>​</a></h3>
+<p>A standard VAPT engagement follows five sequential phases:</p>
+<!-- -->
+<ol>
+<li class=""><strong>Planning:</strong> Define scope, target assets, testing schedules, and obtain written authorization and the Rules of Engagement (RoE).<!-- -->
+<ul>
+<li class=""><em>Deliverables:</em> Scope Document, Testing Plan, Authorization Letter.</li>
+</ul>
+</li>
+<li class=""><strong>Vulnerability Assessment:</strong> Perform asset discovery, port scanning, service enumeration, and automated vulnerability scanning to generate a severity-rated list of weaknesses.<!-- -->
+<ul>
+<li class=""><em>Output:</em> Comprehensive scan reports, validated asset list.</li>
+</ul>
+</li>
+<li class=""><strong>Exploitation:</strong> Safely exploit identified vulnerabilities to verify they are real flaws, escalate privileges, and establish lateral movement.<!-- -->
+<ul>
+<li class=""><em>Outcome:</em> Proof of Concept (PoC) exploit steps, validation of actual impact.</li>
+</ul>
+</li>
+<li class=""><strong>Reporting:</strong> Write technical and executive summaries detailing the vulnerabilities, exploit evidence, risk levels, and specific remediation advice.<!-- -->
+<ul>
+<li class=""><em>Report Features:</em> Clear, evidence-based, actionable, and prioritized.</li>
+</ul>
+</li>
+<li class=""><strong>Remediation:</strong> Apply vendor patches, harden configurations, close unused ports, update software, and perform <strong>rescanning</strong> to verify that fixes are successful.</li>
+</ol>
+<blockquote>
+<p><strong>Exam Point:</strong> VAPT combines automated detection with manual exploitation to locate vulnerabilities, prove their severity, and implement remediation to reduce security risks.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-security-audit-framework>4. Security Audit Framework<a href=#4-security-audit-framework class=hash-link aria-label="Direct link to 4. Security Audit Framework" title="Direct link to 4. Security Audit Framework" translate=no>​</a></h2>
+<p>A <strong>Security Audit</strong> is a formal, structured evaluation of an organization's security policies, system configurations, operational processes, and compliance controls against defined standards.</p>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=41-audits-vs-vapt>4.1 Audits vs. VAPT<a href=#41-audits-vs-vapt class=hash-link aria-label="Direct link to 4.1 Audits vs. VAPT" title="Direct link to 4.1 Audits vs. VAPT" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Security Audit Definition:</strong> A formal review to ensure that security policies, standards, and regulatory compliance are properly met and enforced.</li>
+<li class=""><strong>VAPT vs. Auditing:</strong> VAPT is a technical search for exploit paths, while a Security Audit verifies administrative controls, policy adherence, and compliance status.</li>
+<li class=""><strong>Audit Objectives:</strong> Identify policy/governance gaps, check control configurations, verify regulatory compliance, and improve risk governance.</li>
+<li class=""><strong>Audit Steps:</strong> 1. Planning -> 2. Data Collection -> 3. Security Assessment -> 4. Findings Analysis -> 5. Report Writing -> 6. Corrective Action Follow-up.</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=42-security-audit-components>4.2 Security Audit Components<a href=#42-security-audit-components class=hash-link aria-label="Direct link to 4.2 Security Audit Components" title="Direct link to 4.2 Security Audit Components" translate=no>​</a></h3>
+<ol>
+<li class=""><strong>Policy Review:</strong> Reviews Information Security Policies, Password Policies, Access Control, Incident Response, Backup, and Acceptable Use procedures to check compliance and alignment.</li>
+<li class=""><strong>Configuration Assessment:</strong> Inspects servers, routers, firewalls, and databases for default passwords, unpatched systems, open services, and incorrect file permissions.</li>
+<li class=""><strong>Compliance Verification:</strong> Checks systems against regulatory and industry frameworks:<!-- -->
+<ul>
+<li class=""><em>ISO/IEC 27001:</em> Details requirements for establishing an Information Security Management System (ISMS).</li>
+<li class=""><em>PCI DSS:</em> Focuses on securing credit card transactions and cardholder data storage.</li>
+<li class=""><em>HIPAA:</em> Mandates protection of healthcare data and privacy.</li>
+<li class=""><em>GDPR:</em> Regulates user data privacy and transfer rights.</li>
+<li class=""><em>NIST Framework:</em> Provides security controls for government and enterprise assets.</li>
+</ul>
+</li>
+<li class=""><strong>Reporting and Risk Levels:</strong> The audit report logs findings, compliance status, and recommendations. Findings are ranked by risk: <strong>Critical</strong> (Immediate action), <strong>High</strong> (Serious issue), <strong>Medium</strong> (Moderate risk), <strong>Low</strong> (Minor issue), and <strong>Informational</strong> (Observation).</li>
+</ol>
+<blockquote>
+<p><strong>Exam Point:</strong> A Security Audit evaluates policies, device configurations, and regulatory compliance to check the overall effectiveness of administrative and technical security controls.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-web-application-proxies--httphttps-security>5. Web Application Proxies & HTTP/HTTPS Security<a href=#5-web-application-proxies--httphttps-security class=hash-link aria-label="Direct link to 5. Web Application Proxies & HTTP/HTTPS Security" title="Direct link to 5. Web Application Proxies & HTTP/HTTPS Security" translate=no>​</a></h2>
+<p>A Web Application Proxy is an intermediary tool that sits between the browser (client) and the web server. It intercepts, monitors, and modifies HTTP/HTTPS messages in real-time.</p>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=51-web-proxy-fundamentals>5.1 Web Proxy Fundamentals<a href=#51-web-proxy-fundamentals class=hash-link aria-label="Direct link to 5.1 Web Proxy Fundamentals" title="Direct link to 5.1 Web Proxy Fundamentals" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Primary Functions:</strong> Traffic interception, request/response monitoring, HTTP message modification, and automated security fuzzing.</li>
+<li class=""><strong>Popular Proxy Tools:</strong> Burp Suite, OWASP ZAP, Fiddler, Charles Proxy.</li>
+<li class=""><strong>Proxy Interception Details:</strong>
+<ul>
+<li class=""><em>Requests:</em> Testers view and modify URLs, parameters, cookies, headers, and authentication tokens before they reach the server.</li>
+<li class=""><em>Responses:</em> Testers view status codes, cookie settings, custom headers, error messages, and server info returned by the server.</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=52-common-uses-of-web-proxies>5.2 Common Uses of Web Proxies<a href=#52-common-uses-of-web-proxies class=hash-link aria-label="Direct link to 5.2 Common Uses of Web Proxies" title="Direct link to 5.2 Common Uses of Web Proxies" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Traffic Analysis:</strong> Monitor endpoints, parameters, API calls, and cookie exchanges to map app structure.</li>
+<li class=""><strong>Request Modification:</strong> Alter request parameters, headers, or cookies to test authorization and bypass client-side validation.<!-- -->
+<ul>
+<li class=""><em>Example:</em> Changing a request body from <code>role=user</code> to <code>role=admin</code> to test access controls.</li>
+</ul>
+</li>
+<li class=""><strong>Response Analysis:</strong> Scan server responses for data leaks, error messages, and missing headers.<!-- -->
+<ul>
+<li class=""><em>Important Response Headers:</em> <code>Content-Security-Policy</code> (CSP), <code>X-Frame-Options</code> (Clickjacking protection), <code>X-Content-Type-Options</code> (MIME sniffing block), <code>Strict-Transport-Security</code> (HSTS).</li>
+</ul>
+</li>
+<li class=""><strong>Security Testing:</strong> Execute targeted SQLi, XSS, CSRF, and authentication brute-force testing.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=53-httphttps--session-security>5.3 HTTP/HTTPS & Session Security<a href=#53-httphttps--session-security class=hash-link aria-label="Direct link to 5.3 HTTP/HTTPS & Session Security" title="Direct link to 5.3 HTTP/HTTPS & Session Security" translate=no>​</a></h3>
+<p>Understanding protocol headers and cryptographic key exchanges is vital for using web proxies.</p>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=531-http-request-methods>5.3.1 HTTP Request Methods<a href=#531-http-request-methods class=hash-link aria-label="Direct link to 5.3.1 HTTP Request Methods" title="Direct link to 5.3.1 HTTP Request Methods" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>OPTIONS:</strong> Returns the allowed HTTP methods and communication headers supported by the target resource.</li>
+<li class=""><strong>TRACE:</strong> Initiates an echo back of the received request, allowing clients to see what intermediate proxies modified.</li>
+<li class=""><strong>CONNECT:</strong> Establishes a tunnel to the target server (often used to negotiate SSL/TLS through proxies).</li>
+<li class=""><strong>DELETE:</strong> Deletes the specified resource on the server.</li>
+<li class=""><strong>PATCH:</strong> Applies partial modifications to a resource (unlike <code>PUT</code>, which replaces the entire resource).</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=532-http-header-fields>5.3.2 HTTP Header Fields<a href=#532-http-header-fields class=hash-link aria-label="Direct link to 5.3.2 HTTP Header Fields" title="Direct link to 5.3.2 HTTP Header Fields" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Server Response Headers:</strong> Sent by the server to provide metadata (e.g., <code>Server</code>, <code>WWW-Authenticate</code>, <code>Set-Cookie</code>).</li>
+<li class=""><strong>Entity Headers:</strong> Define metadata about the entity body (e.g., <code>Content-Type</code>, <code>Content-Length</code>, <code>Last-Modified</code>).</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=533-http-vs-https--key-exchange>5.3.3 HTTP vs. HTTPS & Key Exchange<a href=#533-http-vs-https--key-exchange class=hash-link aria-label="Direct link to 5.3.3 HTTP vs. HTTPS & Key Exchange" title="Direct link to 5.3.3 HTTP vs. HTTPS & Key Exchange" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>HTTP (Plaintext Risk):</strong> Sends traffic in cleartext, exposing it to packet sniffing and tampering.</li>
+<li class=""><strong>HTTPS (Secure):</strong> Uses SSL/TLS to encrypt communication.</li>
+<li class=""><strong>Cryptographic Key Exchange:</strong> During the TLS handshake, the client and server verify identity using asymmetric cryptography (public and private keys). They negotiate and derive a symmetric <strong>session key</strong> used to encrypt all application traffic, protecting it from interception.</li>
+</ul>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=534-cookies--session-management>5.3.4 Cookies & Session Management<a href=#534-cookies--session-management class=hash-link aria-label="Direct link to 5.3.4 Cookies & Session Management" title="Direct link to 5.3.4 Cookies & Session Management" translate=no>​</a></h4>
+<p>HTTP is stateless. Session tracking keeps users authenticated across requests:</p>
+<ul>
+<li class=""><strong>Cookie:</strong> A small key-value file sent by the server and stored locally by the user's browser.</li>
+<li class=""><strong>Session:</strong> Server-side data store tracking user actions, mapped to a unique session token.</li>
+<li class=""><strong>Persistent Cookie:</strong> Saved on the client disk to retain login status or preferences after the browser closes.</li>
+<li class=""><strong>Secure Cookie Flag:</strong> Instructs the browser to only transmit the cookie over encrypted HTTPS channels.</li>
+<li class=""><strong>HttpOnly Cookie Flag:</strong> Prevents client-side scripts (JavaScript) from accessing the cookie, mitigating XSS session theft.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-burp-suite>6. Burp Suite<a href=#6-burp-suite class=hash-link aria-label="Direct link to 6. Burp Suite" title="Direct link to 6. Burp Suite" translate=no>​</a></h2>
+<p>Burp Suite is the industry-standard platform for web application security assessments, providing manual and automated tools to audit HTTP/HTTPS traffic.</p>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=61-burp-suite-fundamentals>6.1 Burp Suite Fundamentals<a href=#61-burp-suite-fundamentals class=hash-link aria-label="Direct link to 6.1 Burp Suite Fundamentals" title="Direct link to 6.1 Burp Suite Fundamentals" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Key Features:</strong> Intercepts traffic, modifies requests, scans for vulnerabilities, analyzes session strength, decodes encodings, and compares responses.</li>
+<li class=""><strong>Editions:</strong>
+<ul>
+<li class=""><em>Community Edition:</em> Free; manual testing tools (Proxy, Repeater, Decoder, Comparer).</li>
+<li class=""><em>Professional Edition:</em> Paid; includes automated scanner, advanced tools, and unrestricted Intruder speeds.</li>
+<li class=""><em>Enterprise Edition:</em> Large-scale scanning, continuous automation, and centralized management.</li>
+</ul>
+</li>
+<li class=""><strong>Main Interface Tabs:</strong></li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=62-burp-suite-components>6.2 Burp Suite Components<a href=#62-burp-suite-components class=hash-link aria-label="Direct link to 6.2 Burp Suite Components" title="Direct link to 6.2 Burp Suite Components" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Proxy:</strong> Intercepts and modifies HTTP requests and responses in real-time. Sitting between the browser and server, it is the core of Burp Suite's workflow.</li>
+<li class=""><strong>Target:</strong> Builds a site map, outlines application structure, manages test scope, and displays discovered endpoints.</li>
+<li class=""><strong>Repeater:</strong> Manually alters and replays single HTTP requests, displaying responses side-by-side to verify flaws.</li>
+<li class=""><strong>Intruder:</strong> Automates customized web attacks (fuzzing inputs, brute-forcing login forms) using payloads.<!-- -->
+<ul>
+<li class=""><em>Sniper:</em> Tests one position at a time using a single list of payloads.</li>
+<li class=""><em>Battering Ram:</em> Places the same payload into all defined positions simultaneously.</li>
+<li class=""><em>Pitchfork:</em> Uses multiple lists, placing the first item of List A in position 1, and the first item of List B in position 2.</li>
+<li class=""><em>Cluster Bomb:</em> Iterates through all combinations of multiple lists (ideal for username/password pairs).</li>
+</ul>
+</li>
+<li class=""><strong>Decoder:</strong> Encodes/decodes data into formats like URL, Base64, Hex, HTML, and Binary to analyze values or write payloads.</li>
+<li class=""><strong>Comparer:</strong> Performs a word-by-word or byte-by-byte visual diff between two requests or responses.</li>
+<li class=""><strong>Sequencer:</strong> Analyzes the entropy and statistical randomness of session tokens to determine guessability.</li>
+</ul>
+<!-- -->
+<blockquote>
+<p><strong>Exam Point:</strong> Burp Suite is a web application security platform that provides Proxy, Target, Repeater, Intruder, Decoder, Comparer, and Sequencer modules to intercept and analyze web application traffic.</p>
+</blockquote>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-metasploit-framework-msf>7. Metasploit Framework (MSF)<a href=#7-metasploit-framework-msf class=hash-link aria-label="Direct link to 7. Metasploit Framework (MSF)" title="Direct link to 7. Metasploit Framework (MSF)" translate=no>​</a></h2>
+<p>The Metasploit Framework is an open-source penetration testing platform used to scan network services, validate vulnerabilities, develop exploits, and manage post-exploitation activities.</p>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=71-metasploit-fundamentals>7.1 Metasploit Fundamentals<a href=#71-metasploit-fundamentals class=hash-link aria-label="Direct link to 7.1 Metasploit Fundamentals" title="Direct link to 7.1 Metasploit Fundamentals" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Uses:</strong> Vulnerability validation, penetration testing, exploit development, and post-exploitation.</li>
+<li class=""><strong>Key Features:</strong> Large exploit database, multiple payload configurations, encoders, and automated scans.</li>
+<li class=""><strong>Architecture:</strong> Consists of modular components:</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=72-metasploit-components>7.2 Metasploit Components<a href=#72-metasploit-components class=hash-link aria-label="Direct link to 7.2 Metasploit Components" title="Direct link to 7.2 Metasploit Components" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Modules:</strong> Individual programs written to perform specific tasks.</li>
+<li class=""><strong>Exploits:</strong> Modules that leverage a vulnerability to execute arbitrary code or payloads on a target.</li>
+<li class=""><strong>Payloads:</strong> The code executed on the target after a successful exploit.<!-- -->
+<ul>
+<li class=""><em>Singles:</em> Self-contained, single-step payloads that execute a specific command (e.g., add user).</li>
+<li class=""><em>Stagers:</em> Small payloads that establish a connection back to the attacker and download the larger stage.</li>
+<li class=""><em>Stages:</em> Larger payloads containing full features loaded after the stager (e.g., Meterpreter).</li>
+<li class=""><em>Examples:</em> Meterpreter (interactive DLL-based shell), Reverse Shell, Bind Shell.</li>
+</ul>
+</li>
+<li class=""><strong>Auxiliary:</strong> Modules that perform scans, service scans, banner grabs, and fuzzing without exploiting or using payloads.</li>
+<li class=""><strong>Encoders:</strong> Obfuscate payloads to evade signature-based antivirus and IDS/IPS detection.</li>
+<li class=""><strong>Post-Exploitation:</strong> Run actions after gaining target access (gather system info, dump hashes, escalate privileges).</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=73-metasploit-installation--commands>7.3 Metasploit Installation & Commands<a href=#73-metasploit-installation--commands class=hash-link aria-label="Direct link to 7.3 Metasploit Installation & Commands" title="Direct link to 7.3 Metasploit Installation & Commands" translate=no>​</a></h3>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=windows-installation>Windows Installation<a href=#windows-installation class=hash-link aria-label="Direct link to Windows Installation" title="Direct link to Windows Installation" translate=no>​</a></h4>
+<ol>
+<li class="">Download the official Metasploit installer from Rapid7.</li>
+<li class="">Run the installer as Administrator, follow default prompts, and choose the target directory (e.g., <code>C:\metasploit</code>).</li>
+<li class="">Complete setup and launch the console from the command prompt:</li>
+</ol>
+<div class="language-powershell codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-powershell codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">msfconsole</span><br/></div></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=linux-installation>Linux Installation<a href=#linux-installation class=hash-link aria-label="Direct link to Linux Installation" title="Direct link to Linux Installation" translate=no>​</a></h4>
+<ul>
+<li class=""><strong>Kali Linux:</strong> Metasploit is pre-installed. Run <code>msfconsole</code> to verify.</li>
+<li class=""><strong>Ubuntu/Debian Installation:</strong></li>
+</ul>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token function" style=color:#d73a49>curl</span><span class="token plain"> https://raw.githubusercontent.com/rapid7/metasploit-framework/master/msfinstall </span><span class="token parameter variable" style=color:#36acaa>-o</span><span class="token plain"> msfinstall</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token function" style=color:#d73a49>chmod</span><span class="token plain"> +x msfinstall</span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token function" style=color:#d73a49>sudo</span><span class="token plain"> ./msfinstall</span><br/></div></code></pre></div></div>
+<h4 class="anchor anchorTargetStickyNavbar_Vzrq" id=verification--cli-navigation>Verification & CLI Navigation<a href=#verification--cli-navigation class=hash-link aria-label="Direct link to Verification & CLI Navigation" title="Direct link to Verification & CLI Navigation" translate=no>​</a></h4>
+<p>Check that the installation works and print its version:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">msfconsole </span><span class="token parameter variable" style=color:#36acaa>--version</span><br/></div></code></pre></div></div>
+<p>Launch the console to enter the interactive prompt:</p>
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">msfconsole</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token comment" style=color:#999988;font-style:italic># Expected Prompt: </span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">msf6 ❯</span><br/></div></code></pre></div></div>
+<h5 class="anchor anchorTargetStickyNavbar_Vzrq" id=core-console-commands>Core Console Commands<a href=#core-console-commands class=hash-link aria-label="Direct link to Core Console Commands" title="Direct link to Core Console Commands" translate=no>​</a></h5>
+<ul>
+<li class=""><code>help</code>: Display help documentation and command options.</li>
+<li class=""><code>search &lt;keyword></code>: Query the database for exploits, auxiliary modules, or payloads matching a keyword.</li>
+<li class=""><code>use &lt;module_name></code>: Load a specific exploit, auxiliary, or post module.</li>
+<li class=""><code>show options</code>: List required variables (RHOSTS, LPORT, etc.) for the current module.</li>
+<li class=""><code>run</code> / <code>exploit</code>: Execute the current module.</li>
+<li class=""><code>exit</code>: Close the console.</li>
+</ul>
+<blockquote>
+<p><strong>Exam Point:</strong> The Metasploit Framework is a modular penetration testing platform that uses exploits, payloads, auxiliary modules, encoders, and post-exploitation modules to scan, validate, and compromise remote assets.</p>
+</blockquote></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/ankur3-101106/portfolio/tree/main/docs/Sem-5/MFW/u1.mdx target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/Sem-5/MFW/><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>MetaSploit Framework</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/Sem-5/MFW/u2><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>Unit - 2</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#introduction-to-vapt class="table-of-contents__link toc-highlight">Introduction to VAPT</a><li><a href=#1-introduction-to-vulnerability-assessment class="table-of-contents__link toc-highlight">1. Introduction to Vulnerability Assessment</a><ul><li><a href=#key-characteristics class="table-of-contents__link toc-highlight">Key Characteristics</a><li><a href=#vulnerability-assessment-process class="table-of-contents__link toc-highlight">Vulnerability Assessment Process</a><li><a href=#11-fundamentals-of-vulnerability-assessment class="table-of-contents__link toc-highlight">1.1 Fundamentals of Vulnerability Assessment</a><ul><li><a href=#111-definition-of-vulnerability-assessment class="table-of-contents__link toc-highlight">1.1.1 Definition of Vulnerability Assessment</a><li><a href=#112-types-of-vulnerabilities class="table-of-contents__link toc-highlight">1.1.2 Types of Vulnerabilities</a><li><a href=#113-objectives-of-vulnerability-assessment class="table-of-contents__link toc-highlight">1.1.3 Objectives of Vulnerability Assessment</a></ul><li><a href=#difference-between-vulnerability-assessment-and-penetration-testing class="table-of-contents__link toc-highlight">Difference Between Vulnerability Assessment and Penetration Testing</a><li><a href=#12-vulnerability-assessment-process class="table-of-contents__link toc-highlight">1.2 Vulnerability Assessment Process</a><ul><li><a href=#phases-of-the-vulnerability-assessment-process class="table-of-contents__link toc-highlight">Phases of the Vulnerability Assessment Process</a><li><a href=#121-asset-discovery-methods class="table-of-contents__link toc-highlight">1.2.1 Asset Discovery Methods</a><li><a href=#122-asset-prioritization class="table-of-contents__link toc-highlight">1.2.2 Asset Prioritization</a><li><a href=#123-vulnerability-scanning class="table-of-contents__link toc-highlight">1.2.3 Vulnerability Scanning</a><li><a href=#124-result-analysis class="table-of-contents__link toc-highlight">1.2.4 Result Analysis</a><li><a href=#125-remediation class="table-of-contents__link toc-highlight">1.2.5 Remediation</a><li><a href=#126-continuous-security class="table-of-contents__link toc-highlight">1.2.6 Continuous Security</a></ul></ul><li><a href=#2-penetration-testing class="table-of-contents__link toc-highlight">2. Penetration Testing</a><ul><li><a href=#21-introduction-to-penetration-testing class="table-of-contents__link toc-highlight">2.1 Introduction to Penetration Testing</a><ul><li><a href=#213-difference-between-va-and-pt-workflow class="table-of-contents__link toc-highlight">2.1.3 Difference Between VA and PT Workflow</a></ul><li><a href=#22-types-of-penetration-testing class="table-of-contents__link toc-highlight">2.2 Types of Penetration Testing</a><ul><li><a href=#221-white-box-testing-clearglass-box class="table-of-contents__link toc-highlight">2.2.1 White Box Testing (Clear/Glass Box)</a><li><a href=#222-black-box-testing class="table-of-contents__link toc-highlight">2.2.2 Black Box Testing</a><li><a href=#223-grey-box-testing-translucent-box class="table-of-contents__link toc-highlight">2.2.3 Grey Box Testing (Translucent Box)</a></ul><li><a href=#23-penetration-testing-approaches class="table-of-contents__link toc-highlight">2.3 Penetration Testing Approaches</a><ul><li><a href=#external-vs-internal-comparison class="table-of-contents__link toc-highlight">External vs. Internal Comparison</a></ul><li><a href=#24-roles-and-responsibilities-of-penetration-testers class="table-of-contents__link toc-highlight">2.4 Roles and Responsibilities of Penetration Testers</a><ul><li><a href=#241-information-gathering-reconnaissance class="table-of-contents__link toc-highlight">2.4.1 Information Gathering (Reconnaissance)</a><li><a href=#242-ethical-responsibilities class="table-of-contents__link toc-highlight">2.4.2 Ethical Responsibilities</a><li><a href=#243-confidentiality class="table-of-contents__link toc-highlight">2.4.3 Confidentiality</a><li><a href=#244-documentation class="table-of-contents__link toc-highlight">2.4.4 Documentation</a><li><a href=#245-reporting class="table-of-contents__link toc-highlight">2.4.5 Reporting</a></ul><li><a href=#25-penetration-testing-techniques class="table-of-contents__link toc-highlight">2.5 Penetration Testing Techniques</a><li><a href=#26-importance-of-penetration-testing class="table-of-contents__link toc-highlight">2.6 Importance of Penetration Testing</a><li><a href=#27-cybersecurity-myths-and-realities class="table-of-contents__link toc-highlight">2.7 Cybersecurity Myths and Realities</a></ul><li><a href=#3-vulnerability-assessment-and-penetration-testing-vapt class="table-of-contents__link toc-highlight">3. Vulnerability Assessment and Penetration Testing (VAPT)</a><ul><li><a href=#31-introduction-and-need class="table-of-contents__link toc-highlight">3.1 Introduction and Need</a><li><a href=#32-vapt-methodology class="table-of-contents__link toc-highlight">3.2 VAPT Methodology</a></ul><li><a href=#4-security-audit-framework class="table-of-contents__link toc-highlight">4. Security Audit Framework</a><ul><li><a href=#41-audits-vs-vapt class="table-of-contents__link toc-highlight">4.1 Audits vs. VAPT</a><li><a href=#42-security-audit-components class="table-of-contents__link toc-highlight">4.2 Security Audit Components</a></ul><li><a href=#5-web-application-proxies--httphttps-security class="table-of-contents__link toc-highlight">5. Web Application Proxies & HTTP/HTTPS Security</a><ul><li><a href=#51-web-proxy-fundamentals class="table-of-contents__link toc-highlight">5.1 Web Proxy Fundamentals</a><li><a href=#52-common-uses-of-web-proxies class="table-of-contents__link toc-highlight">5.2 Common Uses of Web Proxies</a><li><a href=#53-httphttps--session-security class="table-of-contents__link toc-highlight">5.3 HTTP/HTTPS & Session Security</a><ul><li><a href=#531-http-request-methods class="table-of-contents__link toc-highlight">5.3.1 HTTP Request Methods</a><li><a href=#532-http-header-fields class="table-of-contents__link toc-highlight">5.3.2 HTTP Header Fields</a><li><a href=#533-http-vs-https--key-exchange class="table-of-contents__link toc-highlight">5.3.3 HTTP vs. HTTPS & Key Exchange</a><li><a href=#534-cookies--session-management class="table-of-contents__link toc-highlight">5.3.4 Cookies & Session Management</a></ul></ul><li><a href=#6-burp-suite class="table-of-contents__link toc-highlight">6. Burp Suite</a><ul><li><a href=#61-burp-suite-fundamentals class="table-of-contents__link toc-highlight">6.1 Burp Suite Fundamentals</a><li><a href=#62-burp-suite-components class="table-of-contents__link toc-highlight">6.2 Burp Suite Components</a></ul><li><a href=#7-metasploit-framework-msf class="table-of-contents__link toc-highlight">7. Metasploit Framework (MSF)</a><ul><li><a href=#71-metasploit-fundamentals class="table-of-contents__link toc-highlight">7.1 Metasploit Fundamentals</a><li><a href=#72-metasploit-components class="table-of-contents__link toc-highlight">7.2 Metasploit Components</a><li><a href=#73-metasploit-installation--commands class="table-of-contents__link toc-highlight">7.3 Metasploit Installation & Commands</a><ul><li><a href=#windows-installation class="table-of-contents__link toc-highlight">Windows Installation</a><li><a href=#linux-installation class="table-of-contents__link toc-highlight">Linux Installation</a><li><a href=#verification--cli-navigation class="table-of-contents__link toc-highlight">Verification & CLI Navigation</a></ul></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro>Notes</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Socials</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://stackoverflow.com/questions/tagged/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Stack Overflow<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://discordapp.com/invite/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>Discord<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/docusaurus target=_blank rel="noopener noreferrer" class=footer__link-item>X<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog>Blog</a><li class=footer__item><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Ankur</div></div></div></footer></div></body>
