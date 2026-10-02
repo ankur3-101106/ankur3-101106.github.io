@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkportfolio=self.webpackChunkportfolio||[]).push([["4889"],{86288(e,o,r){r.d(o,{createInfoServices:()=>s.v});var s=r(19511);r(69302)}}]);
